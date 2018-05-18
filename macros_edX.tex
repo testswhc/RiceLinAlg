@@ -1,0 +1,215 @@
+%\documentclass[12pt]{article}
+%
+%\usepackage{edXpsl}	% edX
+%\usepackage{amsmath, amsthm, amsfonts, amssymb, color, mathrsfs, comment}
+%\usepackage{cancel}
+%
+%%------------------------------------------
+%\parindent=0pt
+%\parskip=1ex
+%
+%\begin{document}
+%%-----------------------------------------------%
+
+\newcounter{edXtext}
+\newcounter{edXproblem}
+\newcounter{edXvideo}
+\newcounter{showhide}
+\newcounter{psetproblem}
+%\newcounter{edXvertical}
+
+
+%If seems \ifplastex needs to go after the \begin{document}
+% \newif\ifplastex 
+% \plastexfalse
+% \ifplastex
+  %% Many of these could be better handled in python. When I get the chance to understand plastex better I'll do that. JMO
+   % \def\USING{USING PLASTEX FIX MACROS}
+   \def\cancel#1{#1}
+%   \def\footnote#1{} %\par {\small{\color{red} FOOTNOTE:} #1}}
+   \def\mylabel#1{\label{#1}\tag{\value{equation}}}
+
+   \def\displaynametag{display_name}
+
+   %\def\includesvg{\includegraphics}
+   %\def\includegraphics{\edXincludegraphics}
+
+   \newcounter{mynumbereditem}
+   \newcounter{temp}
+   \def\mysecnum{\arabic{section}}
+   \def\mynumbereditemnum{\arabic{mynumbereditem}}
+   \def\mynumbereditemlabel{\mysecnum.\mynumbereditemnum}
+
+   \def\mysection#1{\section{#1}}
+
+   \newenvironment{theorem}{\addtocounter{mynumbereditem}{1}%
+\textbf{Theorem \mynumbereditemlabel.} }{\par\vspace{.5in}}
+   \newenvironment{proposition}{\addtocounter{mynumbereditem}{1}%
+\textbf{Proposition \mynumbereditemlabel.} }{\par\vspace{.5in}}
+   \newenvironment{lemma}{\addtocounter{mynumbereditem}{1}%
+\textbf{Lemma \mynumbereditemlabel.} }{\par\vspace{.5in}}
+   \newenvironment{definition}{\addtocounter{mynumbereditem}{1}%
+\textbf{Definition \mynumbereditemlabel.} }{\par\vspace{.5in}}
+   \newenvironment{remarks}{\addtocounter{mynumbereditem}{1}%
+\textbf{Remarks \mynumbereditemlabel.} }{\par\vspace{.5in}}
+   \newenvironment{corollary}{\addtocounter{mynumbereditem}{1}%
+\textbf{Corollary \mynumbereditemlabel.} }{\par\vspace{.5in}}
+   \newenvironment{remark}{\addtocounter{mynumbereditem}{1}%
+\textbf{Remark \mynumbereditemlabel.} }{\par\vspace{.5in}}
+   \newenvironment{examples}{\addtocounter{mynumbereditem}{1}%
+\textbf{Examples \mynumbereditemlabel.} }{\par\vspace{.5in}}
+   \newenvironment{example}{\addtocounter{mynumbereditem}{1}%
+\textbf{Example \mynumbereditemlabel.} }{\par\vspace{.5in}}
+   \newenvironment{exercise}{\addtocounter{mynumbereditem}{1}%
+\textbf{Exercise \mynumbereditemlabel.} }{\par\vspace{.5in}}
+
+   \newenvironment{stheorem}{\textbf{Theorem. }}{\par\vspace{.5in}}
+   \newenvironment{sproposition}{\textbf{Proposition. }}{\par\vspace{.5in}}
+   \newenvironment{slemma}{\textbf{Lemma. }}{\par\vspace{.5in}}
+   \newenvironment{sdefinition}{\textbf{Definition. }}{\par\vspace{.5in}}
+   \newenvironment{sremarks}{\textbf{Remarks. }}{\par\vspace{.5in}}
+   \newenvironment{scorollary}{\textbf{Corollary. }}{\par\vspace{.5in}}
+   \newenvironment{sremark}{\textbf{Remark. }}{\par\vspace{.5in}}
+   \newenvironment{sexamples}{\textbf{Examples. }}{\par\vspace{.5in}}
+   \newenvironment{sexample}{\textbf{Example. }}{\par\vspace{.5in}}
+   \newenvironment{sexercise}{\textbf{Exercise. }}{\par\vspace{.5in}}
+
+
+% \def\dpa{weight="1" showanswer="attempted" attempts="3"}
+
+\def\beginedxsequential#1#2{\begin{edXsection}{#1}[#2 url_name="\edxbaseoutputname-sequential"]}
+
+\def\endedxsequential{\end{edXsection} \setcounter{psetproblem}{0}}
+
+
+\def\beginedxtext#1{\refstepcounter{edXtext}\begin{edXtext}{#1}[url_name="\edxbaseoutputname-tab\theedXvertical-text\theedXtext"]}
+\def\endedxtext{\end{edXtext}}
+\def\beginedxproblem#1#2{\refstepcounter{edXproblem}\begin{edXproblem}{#1}{url_name="\edxbaseoutputname-tab\theedXvertical-problem\theedXproblem" #2}}
+\def\endedxproblem{\end{edXproblem}}
+
+%generate pset problem names
+\def\beginedxpset#1#2{\refstepcounter{edXproblem}\refstepcounter{psetproblem}\begin{edXproblem}{#1 (\thepsetproblem)}{url_name="\edxbaseoutputname-tab\theedXvertical-problem\theedXproblem" #2}}
+\def\endedxpset{\end{edXproblem}}
+
+\def\beginedxvertical#1{\begin{edXvertical}{#1}[url_name="\edxbaseoutputname-vertical\theedXvertical"]}
+\def\endedxvertical{\end{edXvertical} \setcounter{edXtext}{0} \setcounter{edXproblem}{0} \setcounter{edXvideo}{0}}
+
+
+%New-allow for source command
+\providecommand{\doedxvideo}[3][]{\refstepcounter{edXvideo}\edXvideo{#2}{#3}[url_name="\edxbaseoutputname-tab\theedXvertical-video\theedXvideo" #1]}
+
+%New wrapper.
+\newenvironment{shh}{}{}
+\def\beginedxshowhide#1{\begin{shh}\begin{edXshowhide}{#1}}  
+\def\endedxshowhide{\end{edXshowhide}\end{shh}}
+
+
+% EVH added
+% \def\edXmathlet#1{\edXxml{<iframe src="https://s3.amazonaws.com/1801-static-assets/build/#1.html" width="820 px" height="630 px" style="border:0px"/>}}
+
+%JEF added
+% \providecommand{\includesvg}[2][400]{\edXxml{<img src="images/#2.svg" width="#1 px" style="margin: 10px 25px 25px 25px; border:0px"/>}}
+\providecommand{\includesvg}[2][400]{\edXxml{<img src="/static/images/#2.svg" width="#1 px" style="margin: 10px 25px 25px 25px; border:0px"/>}}
+
+
+%-------------------------------------------------%
+
+\def\myheader#1{\noindent \textbf{#1}\par}
+
+\def\ds{\displaystyle}
+\def\Re{\mathrm{Re\,}}
+\def\Im{\mathrm{Im\,}}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\inv}{^{-1}}
+\newcommand{\eps}{\epsilon}
+\newcommand{\veca}{\mathbf{a}}
+\newcommand{\vecb}{\mathbf{b}}
+\newcommand{\vecc}{\mathbf{c}}
+\newcommand{\vecw}{\mathbf{w}}
+\newcommand{\vecv}{\mathbf{v}}
+\newcommand{\vecu}{\mathbf{u}}
+\newcommand{\vecd}{\mathbf{d}}
+\newcommand{\vece}{\mathbf{e}}
+\newcommand{\vecx}{\mathbf{x}}
+\newcommand{\veco}{\mathbf{0}}
+\newcommand{\vecy}{\mathbf{y}}
+\newcommand{\F}{{\bf {F}}}
+
+%commands for Mattuck/Jerison Problems
+% \def\qw{\qquad}
+% \def\q{\quad}
+% \def\f{\frac}
+% \def\disp{\displaystyle}
+% \def\To{\implies}
+% \def\e{\epsilon}
+% \def\t{\theta}
+% \def\D{\Delta}
+
+%These two are needed for content from David Jerison's notes
+% \def\Implies{\ \implies \ }
+% \def\Iff{\ \iff \ }
+
+\def\imgdir{images}
+%_________________________________
+
+
+
+%\def\defaultproblemattributes{attempts="5" showanswer="attempted" rerandomization="per_student"}
+
+
+% \def\qw{\qquad}
+% \def\q{\quad}
+% \def\fig{\includegraphics}
+
+% \def\inv{^{-1}}
+
+% \def\dpaA{showanswer="finished" attempts="1" rerandomize="per_student"}
+% \def\dpaB{showanswer="finished" attempts="3" rerandomize="per_student"}
+% \def\dpaC{showanswer="finished" attempts="5" rerandomize="per_student"}
+% \def\dpaD{showanswer="finished" attempts="7" rerandomize="per_student"}
+% \def\dpa#1{showanswer="finished" attempts="#1" rerandomize="per_student"}
+\def\dpa#1{showanswer="finished" attempts="#1" rerandomize="per_student"}
+% \def\dpwa[1]{showanswer="finished" weight="#1" attempts="1" rerandomize="per_student"}
+% \def\dpwb[1]{showanswer="finished" weight="#1" attempts="2" rerandomize="per_student"}
+% \def\dpwc[1]{showanswer="finished" weight="#1" attempts="3" rerandomize="per_student"}
+% \def\dpwd[1]{showanswer="finished" weight="#1" attempts="4"  rerandomize="per_student"}
+% \def\dpwe[1]{showanswer="finished" weight="#1" attempts="5" rerandomize="per_student"}
+\def\dpaZ{attempts="100" rerandomize="onreset" showanswer="attempted"}
+\def\dpadnd{showanswer="attempted" attempts="3" rerandomize="onreset"}
+\def\resetdpa#1{showanswer="attempted" attempts="#1" rerandomize="onreset"}
+
+
+%color for 18.01x
+%added by Jen
+\definecolor{blue}{cmyk}{1,1,0,0}
+\definecolor{orange}{cmyk}{0,0.5,1,0}
+
+\definecolor{bordeaux}{cmyk}{0,.84,.71,.40}
+\newcommand{\keya}{\color{bordeaux}}
+
+\definecolor{royalblue}{cmyk}{.72,.54, 0, .45}
+% \newcommand{\keyb}{\color{royalblue}}
+\newcommand{\keyb}{\color{bordeaux}}
+
+
+\protected\def\blue#1{%
+  \ifmmode
+  	{\color{blue}{#1}}
+  \else
+  	\textbf{{\color{blue}{#1}}}
+   \fi
+}
+\protected\def\red#1{%
+  \ifmmode
+  	{\color{orange}{#1}}
+  \else
+  	\textbf{{\color{orange}{#1}}}
+   \fi
+}
+
+
+

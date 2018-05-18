@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+
+\usepackage{edXpsl}	% edX
+\usepackage{amsmath, amsthm, amsfonts, amssymb, color, mathrsfs, comment}
+\usepackage{cancel}
+
+%------------------------------------------
+\parindent=0pt
+\parskip=1ex
+
+\begin{document}
+%-----------------------------------------------%
+
+\input{macros_edX.tex} %custom macros
+
+\def\defaultproblemattributes{attempts="1" showanswer="attempted" rerandomize="per_student"}
+
+% edXcourse: {course_number}{course display_name}[optional arguments like semester]
+\begin{edXcourse}{Test}{Test LinAlg}[semester="2018_Summer" info_sidebar_name="Other Documents" start="2018-01-11T12:00" end="2018-12-18T18:00" course_image="rice-logo.jpg" display_coursenumber="TestLinAlg" course_organization="TestRice" graceperiod="1800 seconds" invitation_only="true" allow_anonymous="false" mobile_available="true"  org="Rice"]
+ 
+% \begin{edXchapter}{Getting started}[url_name="cyca" start="2015-08-23T18:00"]
+%  
+
+% \def\edxbaseoutputname{edxtutorial}
+
+% \input{overview/edxTutorial.tex}
+ 
+
+% \endedxsequential
+ 
+% \end{edXchapter} 
+
+
+
+
+
+\begin{edXchapter}{Vectors and Matrices}[url_name="block1" start="2018-01-11T16:00"]
+
+\def\edxbaseoutputname{b1lineareqns}
+
+
+
+\beginedxsequential{Systems of Linear Equations}{due="2018-04-13T14:15" graded="true" format="Exercises"}
+
+
+
+
+\input{block1/sandbox.tex}
+
+% \input{comingsoon.tex}
+
+
+
+
+\endedxsequential
+
+
+
+\end{edXchapter}
+
+
+
+
+\end{edXcourse}
+\end{document}
