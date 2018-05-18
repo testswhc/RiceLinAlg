@@ -1,0 +1,30 @@
+<problem display_name="Where does it live?" linenum="68" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/vectors.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+The vector [mathjaxinline]w = \left(\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{array} \right)[/mathjaxinline] is an element of which of the following vector spaces? Click all that apply. </p>
+    <p>
+      <choiceresponse>
+        <checkboxgroup>
+          <choice correct="false" name="1">
+            <text>[mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text>[mathjaxinline]\mathbb R^3[/mathjaxinline]</text>
+          </choice>
+          <choice correct="true" name="3">
+            <text>[mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="4">
+            <text>[mathjaxinline]\mathbb R^5[/mathjaxinline]</text>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

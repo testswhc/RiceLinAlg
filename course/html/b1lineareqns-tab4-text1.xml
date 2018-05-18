@@ -1,0 +1,22 @@
+<html display_name="Elementary Row Operations" linenum="157" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/linearequations.tex">
+  <p>
+There are three types of elementary row operations that one can apply to a matrix. </p>
+  <ul class="itemize">
+    <li>
+      <p>
+Switch two rows. </p>
+    </li>
+    <li>
+      <p>
+Multiply a row by a non-zero scalar. </p>
+    </li>
+    <li>
+      <p>
+Add a scalar multiple of one row to another row. (More precisely, replace one row with the sum of itself and a scalar multiple of a different row.) </p>
+    </li>
+  </ul>
+  <p>
+If one can obtain augmented matrix [mathjaxinline]B[/mathjaxinline] from augmented matrix [mathjaxinline]A[/mathjaxinline] via a series of elementary row operations, we say that [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are <span style="color:#99182C"><b class="bf">row-equivalent.</b></span> </p>
+  <p>
+If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are row-equivalent, the system of linear equations represented by [mathjaxinline]A[/mathjaxinline] and the system of linear equations represented by [mathjaxinline]B[/mathjaxinline] have the same set of solutions. </p>
+</html>

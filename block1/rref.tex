@@ -1,0 +1,473 @@
+
+
+\beginedxvertical{Page One}
+
+\beginedxtext{Preliminaries}
+
+
+
+
+
+At the end of this sequence, and after some practice, you should be able to:
+
+\begin{itemize}
+\item Use elementary {\keyb{\bf row operations}} to put matrices into {\keyb{\bf row-reduced echelon form (RREF)}}.
+\item Interpret RREF matrices to determine {\keyb{\bf existence and uniqueness}} of solutions.  
+\end{itemize}
+
+
+For time budgeting purposes, this sequence has X videos totaling X minutes, 
+plus some questions.  
+
+
+
+
+\endedxtext
+
+\endedxvertical
+
+
+\beginedxvertical{Row-Reduced Echelon Form}
+
+\doedxvideo{RREF}{???}
+
+
+
+\endedxvertical
+
+
+\beginedxvertical{RREF Defined}
+
+\beginedxtext{Row-Reduced Echelon Form}
+
+
+A matrix is in Row-Reduced Echelon Form (RREF) if it satisfies the following conditions:
+
+\begin{itemize}
+\item All rows of all zeros are at the bottom.
+\item In any non-zero row, the first non-zero entry is 1.  (This is called a {\keyb{\bf pivot}}.) 
+\item Each pivot is the only non-zero entry in its column.
+\item A pivot in a lower row is to the right of any pivot in a higher row.  
+\end{itemize}
+
+
+
+\endedxtext
+
+
+\beginedxproblem{RREF or not?}{\dpa2}
+
+Which of the following matrices are in RREF?
+
+
+
+\edXabox{type="oldmultichoice" expect="mx1" options="mx1","mx2"}
+
+\edXsolution{  }
+
+\endedxproblem
+
+
+
+\beginedxproblem{Make it RREF}{\dpa2}
+
+The following matrix is not in RREF.
+
+
+However, you can apply a single row operation to put it into RREF.  What matrix is the
+result?  
+
+
+
+\edXabox{expect="Placeholder" options="Placeholder"}
+
+\edXsolution{  }
+
+\endedxproblem
+
+
+
+\beginedxproblem{Pivots vs. Rows}{\dpa2}
+
+True or False: If a matrix that is in RREF has 6 rows, then it must have 6 pivots.  
+
+
+\edXabox{expect="False" options="True","False"}
+
+\edXsolution{  }
+
+\endedxproblem
+
+\endedxvertical
+
+
+
+\beginedxvertical{Interpretations}
+
+\doedxvideo{The Row Reduction Algorithm}{XXX}
+
+
+
+\beginedxtext{The Row-Reduction Algorithm}
+
+The following algorithm will always work to reduce a matrix into Row-Reduced Echelon Form.  
+
+\begin{itemize}
+\item Swap two rows to get the left-most remaining non-zero entry to the topmost remaining row.  
+\item Scale that row to make its leading entry a 1.    
+\item Clear all non-zero entries in the column of that pivot (both above and below the pivot) by adding/subtracting multiples of that row to/from other rows.  
+\item With that pivot now set, repeat the procedure with the remaining rows.  
+\end{itemize}
+
+\endedxtext
+
+This is sometimes called {\keyb{\bf  Gaussian elimination}}.  
+
+\endedxvertical
+
+
+\beginedxvertical{Row-Reducing Practice}
+
+
+\beginedxproblem{Row-reduction Practice}{\dpa1}
+
+Let 
+\[
+A = \left[ \begin{array}{ccc} 0 & 1 & 2 \\ 3 & 0 & -3 \\ 2 & 2 & 5 \\ 0 & -2 & 1\end{array} \right]. \]
+
+What matrix do you get if you row-reduce $A$? 
+
+
+\edXabox{expect="Placeholder" options="Placeholder"}
+
+\edXsolution{ 
+}
+
+
+\endedxproblem
+
+
+\beginedxproblem{System}{\dpa1}
+
+Consider the augmented matrix
+\[
+A = \left[ \begin{array}{ccc:c} 0 & 1 & 2 & -1 \\ 3 & 0 & -3 & 3 \\ 
+2 & 2 & 5 & 3\\ 0 & -2 & 1 & 7\end{array} \right]. \]
+
+
+Note that the coefficient matrix is the same as the matrix $A$ from the previous question.
+
+Applying the row-reduction algorithm to this augmented matrix, what can we conclude about
+the system?  
+
+\edXabox{type="multichoice" expect="The system is consistent and has a unique solution" options="The system is consistent and has a unique solution","The system is consistent but has more than one solution","The system is inconsistent"}
+
+\edXsolution{ 
+}
+
+
+\endedxproblem
+
+
+
+\endedxvertical
+
+
+
+\beginedxvertical{Interpretations}
+
+\doedxvideo{Interpreting a RREF matrix}{XXX}
+
+%talk about 00|not 0, do another example with 00|0.   
+%note that matrix can't reduce to more than one RREF
+
+
+
+
+\beginedxproblem{Matrix 1}{\dpa1}
+
+Suppose you do some row operations to an augmented matrix, and the result is the following augmented
+matrix:
+\[
+\left[ \begin{array}{cc:c} 1 & -3 & -2 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{array} \right] \]
+
+How many free variables are there?
+\edXabox{type="numerical" expect="1"}
+
+What can you conclude about the original system of equations?  
+
+\edXabox{type="multichoice" expect="The system is inconsistent" options="The system is consistent and has a unique solution","The system is consistent but has more than one solution","The system is inconsistent"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+\beginedxproblem{Matrix 2}{\dpa1}
+
+Suppose you do some row operations to an augmented matrix, and the result is the following augmented
+matrix:
+\[  
+\left[ \begin{array}{cc:c} 1 & 0 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 0 \end{array} \right] \]
+
+
+How many free variables are there?
+\edXabox{type="numerical" expect="0"}
+
+What can you conclude about the original system of equations?  
+
+\edXabox{type="multichoice" expect="The system is consistent and has a unique solution" options="The system is consistent and has a unique solution","The system is consistent but has more than one solution","The system is inconsistent"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Matrix 3}{\dpa1}
+
+Suppose you do some row operations to an augmented matrix, and the result is the following augmented
+matrix:
+\[ 
+\left[ \begin{array}{cccc:c} 1 & 0 & 0 & 1 & -2 \\ 0 & 0 & 1 & 3 & 3 \\ 0 & 0 & 0 & 0 & 0 \end{array} \right] \]
+
+
+How many free variables are there?
+\edXabox{type="numerical" expect="2"}
+
+
+
+What can you conclude about the original system of equations?  
+
+\edXabox{type="multichoice" expect="The system is consistent but has more than one solution" options="The system is consistent and has a unique solution","The system is consistent but has more than one solution","The system is inconsistent"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Free Variables}{\dpa1}
+
+If a system of linear equations has free variables when row-reduced, is it possible for the
+system to be inconsistent?  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+\endedxvertical
+
+
+\beginedxvertical{Finding Solutions}
+
+
+
+
+\beginedxproblem{Solutions to a System}{\dpa1}
+
+Recall the augmented matrix from the last problem:
+
+\[ 
+\left[ \begin{array}{cccc:c} 1 & 0 & 0 & 1 & -2 \\ 0 & 0 & 1 & 3 & 3 \\ 0 & 0 & 0 & 0 & 0 \end{array} \right] \]
+
+Working from right to left as in the last video, what are all possible solutions to this system?
+Type the word `free' (lower-case) if the variable is a free variable.  For others, remember to use * for times and type 
+xn for the variable $x_n$.  For instance, to enter $-3x_2 + 2x_4$, type -3*x2 + 2*x4.  
+
+\edXinline{$x_4 = $}\edXabox{type="formula" expect="free" samples="free,x3,x2,x1@1,1,1,1:,4,4,4,4#10" tolerance=".001" feqin="1" inline="1"}
+
+\edXinline{$x_3 = $}\edXabox{type="formula" expect="3-3*x4" samples="free,x4,x2,x1@1,1,1,1:4,4,4,4#10" tolerance=".001" feqin="1" inline="1"}
+
+\edXinline{$x_2 = $}\edXabox{type="formula" expect="free" samples="free,x4,x3,x1@1,1,1,1:4,4,4,4#10" tolerance=".001" feqin="1" inline="1"}
+
+\edXinline{$x_1 = $}\edXabox{type="formula" expect="-2-x4" samples="free,x4,x3,x2@1,1,1,1:4,4,4,4#10" tolerance=".001" feqin="1" inline="1"}
+
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+\endedxvertical
+
+
+
+
+\beginedxvertical{Going Further}
+
+
+
+\beginedxtext{The Size of a Matrix}
+
+If a matrix $M$ has $m$ rows and $n$ columns, we say that 
+$M$ is an $m\times n$ matrix.  For instance, 
+
+\[ 
+\left[ \begin{array}{cccc:c} 1 & 0 & 0 & 1 & -2 \\ 0 & 0 & 1 & 3 & 3 \\ 0 & 0 & 0 & 0 & 0 \end{array} \right] \]
+
+is a $3\times 5$ augmented matrix, since it has 3 rows and 5 columns.  The coefficient matrix of the above system would be a $3\times 4$ matrix.  
+
+
+\endedxtext
+
+
+
+
+\beginedxproblem{Matrix Size}{\dpa1}
+
+Let 
+\[
+A = \left[ \begin{array}{ccc} 1 & -3 & -2 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \\ 0 & 0 & 0\end{array} \right]. \]
+
+What is the size of $A$? 
+\edXabox{type="multichoice" expect="$4\times 3$" options="$3\times 4$","$4\times 3$"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Maximum pivots}{\dpa1}
+
+What is the maximum number of pivots in a $6\times 3$ coefficient matrix, when row-reduced?  
+
+\edXabox{type="numerical" expect="3"}
+
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+\beginedxproblem{Maximum pivots 2}{\dpa1}
+
+What is the maximum number of pivots in a $4\times 6$ coefficient  matrix, when row-reduced?  
+
+\edXabox{type="numerical" expect="4"}
+
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+\beginedxproblem{Number of Free Variables}{\dpa1}
+
+What is the strongest statement you can make about the number of free variables in a $4\times 6$ coefficient  matrix, when row-reduced?  
+
+\edXinline{The number of free variables must be  }\edXabox{expect="at least" options="exactly","at least","at most" inline="1"} \edXabox{type="numerical" expect="2" inline="1"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+\beginedxproblem{4 Equations, 6 Variables}{\dpa1}
+
+Given the answer to the previous question, which of the following results are possible for a system of 4 linear equations in 6 variables?
+
+\edXabox{type="oldmultichoice" expect="The system is consistent but has more than one solution","The system is inconsistent" options="The system is consistent and has a unique solution","The system is consistent but has more than one solution","The system is inconsistent"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+
+\endedxvertical
+
+
+\beginedxvertical{Fields}
+
+
+
+\beginedxproblem{Real Numbers}{\dpa1}
+
+If a matrix has real number entries, will the entries stay real numbers when you 
+row-reduce it?  
+
+\edXabox{expect="Yes" options="Yes","Not necessarily"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+\beginedxproblem{Rational Numbers}{\dpa1}
+
+If a matrix has rational number entries, will the entries stay rational numbers when you 
+row-reduce it?  (Recall that rational numbers are those that can be written as fractions
+$\frac{p}{q}$,
+where $p,q$ are integers.)  
+
+\edXabox{expect="Yes" options="Yes","Not necessarily"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+\beginedxproblem{Integers}{\dpa1}
+
+If a matrix has integer entries, will the entries stay integers when you 
+row-reduce it?  
+
+\edXabox{expect="Not necessarily" options="Yes","Not necessarily"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+\doedxvideo{Fields}{XXX}
+
+
+\endedxvertical
+
+
+\beginedxvertical{Fields Defined}
+
+
+\beginedxtext{Fields}
+
+A {\keyb{\bf field}} is, essentially, a set in which one can add, subtract, multiply, and
+divide any two elements (other than dividing by zero).  The formal definition is below.  
+
+The field that we will
+most commonly use in this course is the set of real numbers $\R$.  Other fields include
+the set of complex numbers $\C$, the set of rational numbers $\Q$, and the integers modulo
+a prime $p$.  
+
+\begin{edXshowhide}{Formal Definition of a Field}
+A field is a set $F$ together with binary operations $+, \cdot$ on $F$ which satisfy the
+following conditions:
+
+\begin{itemize}
+\item Addition is associative and commutative; that is, for all $a,b,c \in F$, we have
+$a+(b+c) = (a+b)+c$ and $a+b  = b+a$.  
+\item There is an element $0 \in F$ such that $a+0 = a$ for all $a \in F$.
+\item For every $a\in F$, there is an element $-a \in F$ such that $-a + a = 0$.  
+\item Multiplication is associative and commutative; that is, for all $a,b,c \in F$, we have
+$a(bc) = (ab)c$ and $ab  = ba$.  
+\item There is a non-zero element $1 \in F$ such that $1a = a$ for all $a \in F$.  
+\item For every non-zero $a\in F$, there is an element $a\inv$ such that $a\inv a = 1$.  
+\item Multiplication distributes over addition; that is, for all $a,b,c \in F$, $a(b+c) = ab + ac$.  
+\end{itemize}
+
+\end{edXshowhide}
+
+
+
+
+\endedxtext
+
+\endedxvertical
+

@@ -1,0 +1,24 @@
+<problem display_name="RREF or not?" linenum="58" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Which of the following matrices are in RREF? </p>
+    <p>
+      <choiceresponse>
+        <checkboxgroup>
+          <choice correct="true" name="1">
+            <text>mx1</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text>mx2</text>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

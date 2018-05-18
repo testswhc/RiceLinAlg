@@ -1,0 +1,246 @@
+
+
+\beginedxvertical{Page One}
+
+\beginedxtext{Preliminaries}
+
+
+
+
+
+At the end of this sequence, and after some practice, you should be able to:
+
+\begin{itemize}
+\item Translate systems of linear equations into {\keyb{\bf augmented matrices}}.
+\item Apply elementary {\keyb{\bf row operations}} to matrices.  
+\end{itemize}
+
+
+
+For time budgeting purposes, this sequence has X videos totaling X minutes, 
+plus some questions.  
+
+
+
+
+\endedxtext
+
+\endedxvertical
+
+\beginedxvertical{Introduction}
+
+
+
+\doedxvideo{Systems of Linear Equations}{Ok7yANNCbGg}
+
+
+
+\beginedxproblem{Matrix entry}{\dpa1}
+
+Consider the following system of linear equations:
+
+\begin{eqnarray*}
+10x_1 + 30x_2 & = & 10 \\
+2x_1 + 6x_2 & = & 3 
+\end{eqnarray*}
+
+
+
+
+
+Enter the coefficient matrix for the above system.  
+
+To enter a matrix, type...
+
+
+
+
+Enter the augmented matrix for the above system.  
+
+
+
+\edXabox{expect="Placeholder" options="Placeholder"}
+
+\edXsolution{ 
+}
+
+
+\endedxproblem
+
+
+
+
+
+\endedxvertical
+
+
+
+
+
+\beginedxvertical{Doing Row Operations}
+
+\doedxvideo{Row Operations}{XXX}
+
+
+
+\beginedxproblem{Two Row Operations}{\dpa1}
+
+
+Recall the system of equations from the previous question.  
+
+
+
+\begin{eqnarray*}
+10x_1 + 30x_2 & = & 10 \\
+2x_1 + 6x_2 & = & 3 
+\end{eqnarray*}
+
+
+
+
+
+Do the following row operations to the augmented matrix.  First, multiply the first row by 
+$\frac{1}{10}$.   Then, replace the second row with the second
+row minus twice the first row.  What matrix do you get as a result?  
+
+
+\edXabox{expect="Placeholder" options="Placeholder"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+
+\beginedxproblem{System Consistency?}{\dpa1}
+
+Note the last row in your result, and think about what equation it represents.  
+Is the system consistent?  If so, does it have a unique solution?  
+
+\edXabox{type="multichoice" expect="The system is inconsistent" options="The system is consistent and has a unique solution","The system is consistent but has more than one solution","The system is inconsistent"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+\beginedxproblem{Yes or No}{\dpa2}
+
+Does a linear system of two equations in two variables always have at least one solution?
+
+\edXabox{expect="No" options="Yes","No"}
+
+\edXsolution{  }
+
+\endedxproblem
+
+
+
+
+\beginedxproblem{More Row Operations}{\dpa1}
+
+
+Consider this system of equations.  
+
+
+
+\begin{eqnarray*}
+0x_1 + 1x_2 + 1x_3 & = & 2 \\
+1x_1 + 2x_2 + 1x_3 & = & 3 \\
+2x_1 + 6x_2 + 4x_3 & = & 10 \\
+\end{eqnarray*}
+
+
+
+
+
+Do the following row operations to the augmented matrix.  First, switch the first two
+rows.  Then replace the third row with the third
+row minus twice the first row.  Next, replace the first row with the first
+row minus twice the second row.  Finally, replace the third row with the third
+row minus twice the second row.  What matrix do you get as a result?  
+
+
+\edXabox{expect="Placeholder" options="Placeholder"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+
+\beginedxproblem{System Consistency?}{\dpa1}
+
+Is the system consistent?  If so, does it have a unique solution?  
+
+\edXabox{type="multichoice" expect="The system is consistent but has more than one solution" options="The system is consistent and has a unique solution","The system is consistent but has more than one solution","The system is inconsistent"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+\endedxvertical
+
+\beginedxvertical{A Few Questions}
+
+
+\beginedxproblem{Row of All Zeros}{\dpa2}
+
+Suppose you have an augmented matrix and, after a few elementary row operations, you see
+one row that looks like this: 
+
+$\left[ \begin{array}{cccc:c} 0 & 0 & 0 & 0 & 0 \end{array} \right]$
+
+Just from the presence of that one row, what can you conclude about the overall system?  
+
+\edXabox{type="multichoice" expect="We cannot conclude anything; it will depend on the other rows" options="The system is consistent and has a unique solution","The system is consistent but has more than one solution","The system is inconsistent","We cannot conclude anything; it will depend on the other rows"}
+
+\edXsolution{  }
+
+\endedxproblem
+
+
+
+\beginedxproblem{Types of Row Operations}{\dpa2}
+
+How many types of elementary row operations are there?
+
+
+\edXabox{type="numerical" expect="3"}
+
+\edXsolution{  }
+
+\endedxproblem
+
+
+
+
+\endedxvertical
+
+\beginedxvertical{Elementary Row Operations}
+
+\beginedxtext{Elementary Row Operations}
+
+
+There are three types of elementary row operations that one can apply to a matrix.  
+
+\begin{itemize}
+\item Switch two rows.  
+\item Multiply a row by a {\underline{non-zero}} scalar.  
+\item Add a scalar multiple of one row to another row.   (More precisely, replace one row with the sum of itself and a scalar multiple of a different row.)  
+\end{itemize}
+
+If one can obtain augmented matrix $B$ from augmented matrix $A$ via a series of elementary row operations, 
+we say that $A$ and $B$ are {\keyb{\bf row-equivalent.}} 
+
+If $A$ and $B$ are row-equivalent, the system of linear equations represented by $A$ and the system of linear equations represented by $B$ have the same set of solutions.  
+
+\endedxtext
+
+
+
+\endedxvertical
+

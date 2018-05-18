@@ -1,0 +1,28 @@
+<problem display_name="List 3" linenum="144" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Consider the list of vectors [mathjaxinline]\{ v_1; v_2\}[/mathjaxinline], where [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline] are vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] as given in this picture: </p>
+    <p>
+[picture] </p>
+    <p>
+Can you find scalars [mathjaxinline]a_1, a_2[/mathjaxinline], not both zero, such that [mathjaxinline]a_1v_1 + a_2 v_2 = \mathbf{0}[/mathjaxinline]? If so, enter an example of such scalars below. If not, enter &#x2018;No'. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Placeholder')" correct="Placeholder"/>
+      </optionresponse>
+    </p>
+    <p>
+Is the list [mathjaxinline]\{ v_1; v_2\}[/mathjaxinline] linearly dependent or linearly independent? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Linearly dependent','Linearly independent')" correct="Linearly independent"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

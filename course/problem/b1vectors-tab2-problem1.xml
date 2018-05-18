@@ -1,0 +1,33 @@
+<problem display_name="Vector entry" linenum="37" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/vectors.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]v = \left(\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right)[/mathjaxinline] and let [mathjaxinline]w = \left(\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right).[/mathjaxinline] </p>
+    <p>
+What is [mathjaxinline]v+w[/mathjaxinline]? To enter a vector, type... </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Placeholder')" correct="Placeholder"/>
+      </optionresponse>
+    </p>
+    <p>
+What is [mathjaxinline]-3v[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Placeholder')" correct="Placeholder"/>
+      </optionresponse>
+    </p>
+    <p>
+What is [mathjaxinline]2w-3v[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Placeholder')" correct="Placeholder"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

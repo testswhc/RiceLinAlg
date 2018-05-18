@@ -1,0 +1,16 @@
+<html display_name="Definition of Linear Transformation" linenum="74" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/lineartransformations.tex">
+  <p>
+Let [mathjaxinline]{\bf {F}}[/mathjaxinline] be a field. A function [mathjaxinline]T: {\bf {F}}^ n \rightarrow {\bf {F}}^ m[/mathjaxinline] is a <span style="color:#99182C"><b class="bf">linear transformation</b></span> if both of the following properties hold: </p>
+  <ul class="itemize">
+    <li>
+      <p>
+For any vectors [mathjaxinline]\mathbf{v}, \mathbf{w}[/mathjaxinline] in the domain, [mathjaxinline]T(\mathbf{v}+ \mathbf{w}) = T(\mathbf{v}) + T(\mathbf{w}).[/mathjaxinline] </p>
+    </li>
+    <li>
+      <p>
+For any vector [mathjaxinline]\mathbf{v}[/mathjaxinline] in the domain, and any scalar [mathjaxinline]a\in {\bf {F}}[/mathjaxinline], [mathjaxinline]T(a\mathbf{v}) = aT(\mathbf{v})[/mathjaxinline]. </p>
+    </li>
+  </ul>
+  <p>
+Informally, if [mathjaxinline]T[/mathjaxinline] satisfies the first condition we say that &#x201C;[mathjaxinline]T[/mathjaxinline] respects vector addition", and if [mathjaxinline]T[/mathjaxinline] satisfies the second condition we say that &#x201C;[mathjaxinline]T[/mathjaxinline] respects scalar multiplication." </p>
+</html>

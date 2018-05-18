@@ -1,0 +1,42 @@
+<problem display_name="Picture Problem" linenum="120" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/vectors.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Vectors [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] are given. </p>
+    <p>
+(picture) </p>
+    <p>
+Which vector is equal to [mathjaxinline]v+w[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('A','B','C')" correct="B"/>
+      </optionresponse>
+    </p>
+    <p>
+Which vector is equal to [mathjaxinline]v-w[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('A','B','C')" correct="B"/>
+      </optionresponse>
+    </p>
+    <p>
+Which vector is equal to [mathjaxinline]w-v[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('A','B','C')" correct="B"/>
+      </optionresponse>
+    </p>
+    <p>
+Which vector is equal to [mathjaxinline]-v[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('A','B','C','D')" correct="B"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

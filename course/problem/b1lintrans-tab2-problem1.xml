@@ -1,0 +1,46 @@
+<problem display_name="System Consistency?" linenum="27" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Define the function [mathjaxinline]T[/mathjaxinline] by [mathjaxinline]T(\mathbf{x}) = A\mathbf{x}[/mathjaxinline], where [mathjaxinline]A = \left[ \begin{array}{ccc} 6 &amp;  5 &amp;  3 \\ 2 &amp;  4 &amp;  23 \end{array} \right].[/mathjaxinline] </p>
+    <p>
+What is the domain of [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> R</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> R^2</text>
+          </choice>
+          <choice correct="true" name="3">
+            <text> R^3</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+What is the codomain of [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> R</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text> R^2</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> R^3</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -1,0 +1,17 @@
+<problem display_name="Integers" linenum="384" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+If a matrix has integer entries, will the entries stay integers when you row-reduce it? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','Not necessarily')" correct="Not necessarily"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

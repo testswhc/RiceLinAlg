@@ -1,0 +1,24 @@
+<problem display_name="Shell Circumference" linenum="90" tex_filename="C:/Users/swang/Box Sync/LinAlg/latex2edx/block1/sandbox.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Given the answers to the previous question, what will the circumference of the shell be, in terms of [mathjaxinline]x[/mathjaxinline]? </p>
+    <p>
+Type * for multiplication, pi for [mathjaxinline]\pi[/mathjaxinline]. </p>
+    <p>
+      <formularesponse type="cs" samples="x@1:2#5" answer="2*pi*x">
+        <formulaequationinput>
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ The circumference is [mathjaxinline]2\pi[/mathjaxinline] times the radius.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

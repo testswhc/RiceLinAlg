@@ -1,0 +1,19 @@
+<problem display_name="Types of Row Operations" linenum="207" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/linearequations.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+How many types of elementary row operations are there? </p>
+    <p>
+      <numericalresponse answer="3">
+        <textline>
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

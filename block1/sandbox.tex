@@ -1,0 +1,229 @@
+
+
+\beginedxvertical{Page One}
+
+\beginedxtext{Preliminaries}
+
+
+For time budgeting purposes, this sequence has 3 videos totaling 11 minutes, 
+plus some questions.  
+
+Remember, when you're doing the online learning sequences, you may seek help if you 
+do not understand a video, but you should think about all of the questions 
+entirely individually.  You have pledged to do so under the Honor Code!  
+
+
+
+\begin{eqnarray*}
+2x_1 + 3x_2 & = & 1 \\
+4x_1 + 6x_2 & = & 2 
+\end{eqnarray*}
+
+\endedxtext
+
+\endedxvertical
+
+\beginedxvertical{Rotating the Other Way}
+
+
+\beginedxproblem{Rotate}{\dpa1}
+
+\includesvg[400]{shellregion}
+
+
+\begin{eqnarray*}
+2x_1 + 3x_2 & = & 1 \\
+4x_1 + 6x_2 & = & 2 
+\end{eqnarray*}
+
+Above is the graph of the region between the graph of $f(x) = x-x^3$ and the $x$ axis, for $0\le x \le 1$.  
+
+We want to calculate the volume of the solid obtained by rotating this region around the
+$y$ axis.  If we insist on calculating the volume using washers or disks, which way would
+we have to slice the region?  
+
+\edXabox{expect="Integrate with respect to y, using horizontal rectangles" options="Integrate with respect to x, using vertical rectangles","Integrate with respect to y, using horizontal rectangles","Both methods will yield
+washers or disks"}
+
+\edXsolution{ 
+Horizontal rectangles, when rotated around the $y$ axis, yield washers (or disks).  If we
+use vertical rectangles, they will form a different shape.  See the next video for more details!
+
+}
+
+\endedxproblem
+
+\doedxvideo{Rotating}{XqYl95NKsw8}
+
+\endedxvertical
+
+\beginedxvertical{Shell Volume}
+
+
+\beginedxproblem{Shell Dimensions}{\dpa1}
+
+\includesvg[400]{shellregionrect}
+
+When the region under the graph of $f(x) = x-x^3$ is rotated around the $y$ axis, the rectangle shown will 
+rotate to form a cylindrical shell.  What will the thickness of the shell be?  
+
+
+\edXabox{expect="Delta x" options="x","Delta x","f(x)","Something else"}
+
+What will the height of the shell be?  
+
+\edXabox{expect="f(x)" options="x","Delta x","f(x)","Something else"}
+
+What will the radius of the shell be?  (Technically there are two radii, and we
+are choosing the outer radius in this case, but remember that
+since the shell is thin we can think of it as having a single radius as an approximation.)  
+
+\edXabox{expect="x" options="x","Delta x","f(x)","Something else"}
+
+
+\edXsolution{ 
+The thickness of the shell comes from the thickness of the rectangle.  This is $\Delta x$.
+
+The height of the shell comes from the height of the rectangle.  This is $f(x)$.  
+
+The radius of the shell is the distance from the rectangle to the axis of rotation.  The rectangle has
+(roughly) horizontal coordinate $x$, and the axis of rotation has horizontal coordinate 0, so 
+the distance is $x$.  
+}
+
+\endedxproblem
+
+\beginedxproblem{Shell Circumference}{\dpa2}
+
+Given the answers to the previous question, what will the circumference of the shell be, in
+terms of $x$?  
+
+Type  * for multiplication, pi for $\pi$.  
+
+
+\edXabox{type="formula" expect="2*pi*x" samples="x@1:2#5" feqin="1" tolerance=".01"}
+
+\edXsolution{ The circumference is $2\pi$ times the radius. }
+
+\endedxproblem
+
+
+
+\doedxvideo{Volume with Shells}{Ctfn21CUE9o}
+
+\endedxvertical
+
+\beginedxvertical{Another Shell Volume}
+
+\beginedxproblem{Different Axis}{\dpa2}
+
+\includesvg[400]{shellregionrect2}
+
+We continue to look at the region under the graph of $f(x) = x-x^3$, between $x=0$ and $x=1$, but now we rotate it around the line $x=1$.  The rectangle shown will 
+rotate to form a cylindrical shell.  
+
+What will the height of the shell be?  
+
+
+\edXabox{type="formula" expect="x-x^3" samples="x@1:2#5" feqin="1" tolerance=".01"}
+
+What will the radius of the shell be?  
+
+\edXabox{type="formula" expect="1-x" samples="x@1:2#5" feqin="1" tolerance=".01"}
+
+
+\edXsolution{ 
+The height is the same as the height of the rectangle, so $x-x^3$.  
+
+The radius is the horizontal distance from the rectangle to the axis of rotation.  The axis of rotation
+is at $x=1$, and the rectangle has horizontal coordinate $x$, so the distance is
+$1-x$.  
+}
+
+\endedxproblem
+
+\beginedxproblem{Volume of a Shell}{\dpa2}
+
+
+Using the ``unrolling" approximation, what will the volume of the shell be? 
+
+Type Dx for $\Delta x$, pi for $\pi$, * for multiplication.  
+
+\edXabox{type="formula" expect="2*pi*(1-x)*(x-x^3)*Dx" samples="x,Dx@1,1:2,2#5" feqin="1" tolerance=".01"}
+
+
+\edXsolution{ 
+The volume of the shell when ``unrolled" is approximated by its circumference times its height
+times its thickness.  
+
+This is $2\pi(1-x)(x-x^3)\Delta x$.  
+
+}
+
+\endedxproblem
+
+\beginedxproblem{Add them up!}{\dpa2}
+
+
+When we add the volumes of all the shells up, we get a Riemann sum.  Taking the limit as the number of slices
+goes to infinity, we get an integral $\int_?^? k(x) \ dx.$  
+
+What is the function $k(x)$?
+
+\edXabox{type="formula" expect="2*pi*(1-x)*(x-x^3)" samples="x@1:2#5" feqin="1" tolerance=".01"}
+
+What is the lower limit of integration?
+
+
+\edXabox{type="numerical" expect="0"  feqin="1" tolerance=".01"}
+
+What is the upper limit of integration?
+
+\edXabox{type="numerical" expect="1"  feqin="1" tolerance=".01"}
+
+\edXsolution{ 
+Adding up and treating the total as a Riemann sum, we end up with
+\[ \int_0^1 2\pi(1-x)(x-x^3)\ dx. \]
+}
+
+\endedxproblem
+
+\endedxvertical
+
+\beginedxvertical{One Last Example}
+
+\beginedxproblem{Horizontal or Vertical}{\dpa1}
+
+\includesvg[400]{yshellsexample}
+
+Here is the region between the graphs $x = y^2$, $x+y = 6$, and $y = -1$.  We
+wish to find the volume of the solid obtained by rotating this region around the line
+$y = -1$.  
+
+If we integrate with respect to $x$, the rectangles would become what shape when rotated?
+ 
+\edXabox{expect="Disks or Washers" options="Disks or Washers","Shells","Something else"}
+
+How many different integrals would we need to set up if we did that?  
+
+\edXabox{type="numerical" expect="3"  feqin="1" tolerance=".01"}
+
+If we integrate with respect to $y$, the rectangles would become what shape when rotated?
+ 
+\edXabox{expect="Shells" options="Disks or Washers","Shells","Something else"}
+
+How many different integrals would we need to set up if we did that?  
+
+\edXabox{type="numerical" expect="1"  feqin="1" tolerance=".01"}
+
+
+\edXsolution{ See the next video! }
+
+\endedxproblem
+
+\doedxvideo{Y Shells}{hqmX3tYO3ts}
+
+% ask question - do you get shells or washers when blah is rotated?
+
+\endedxvertical
+

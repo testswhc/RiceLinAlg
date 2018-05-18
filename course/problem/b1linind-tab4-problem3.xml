@@ -1,0 +1,20 @@
+<problem display_name="Fill in the blank 2" linenum="207" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+What goes in the blank to make a correct statement? </p>
+    <p>
+If the matrix [mathjaxinline]A[/mathjaxinline] has [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinline], then there must be a free variable. </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> more rows than columns</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text> more columns than rows</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+  </text>
+</problem>

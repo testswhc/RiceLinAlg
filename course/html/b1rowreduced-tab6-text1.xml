@@ -1,0 +1,22 @@
+<html display_name="The Row-Reduction Algorithm" linenum="203" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/rref.tex">
+  <p>
+The following algorithm will always work to reduce a matrix into Row-Reduced Echelon Form. </p>
+  <ul class="itemize">
+    <li>
+      <p>
+If necessary, swap two rows to get the left-most remaining non-zero entry to the topmost row that has not yet been set. </p>
+    </li>
+    <li>
+      <p>
+If necessary, scale that row to make its leading entry a 1. </p>
+    </li>
+    <li>
+      <p>
+Clear all non-zero entries in the column of that pivot (both above and below the pivot) by adding/subtracting multiples of that row to/from other rows. </p>
+    </li>
+    <li>
+      <p>
+With that pivot now set, repeat the procedure with the remaining rows. </p>
+    </li>
+  </ul>
+</html>

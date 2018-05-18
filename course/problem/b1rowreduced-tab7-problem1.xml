@@ -1,0 +1,25 @@
+<problem display_name="Row-reduction Practice" linenum="224" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let </p>
+    <table id="a0000000016" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 0 &amp;  1 &amp;  2 \\ 3 &amp;  0 &amp;  -3 \\ 2 &amp;  2 &amp;  5 \\ 0 &amp;  -2 &amp;  1\end{array} \right].[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <p>
+What matrix do you get if you row-reduce [mathjaxinline]A[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Placeholder')" correct="Placeholder"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

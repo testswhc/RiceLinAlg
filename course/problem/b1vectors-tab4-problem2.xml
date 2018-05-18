@@ -1,0 +1,26 @@
+<problem display_name="Volume of a Shell" linenum="139" tex_filename="C:/Users/swang/Box Sync/LinAlg/latex2edx/block1/sandbox.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Using the &#x201C;unrolling" approximation, what will the volume of the shell be? </p>
+    <p>
+Type Dx for [mathjaxinline]\Delta x[/mathjaxinline], pi for [mathjaxinline]\pi[/mathjaxinline], * for multiplication. </p>
+    <p>
+      <formularesponse type="cs" samples="x,Dx@1,1:2,2#5" answer="2*pi*(1-x)*(x-x^3)*Dx">
+        <formulaequationinput>
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ The volume of the shell when &#x201C;unrolled" is approximated by its circumference times its height times its thickness. </p>
+          <p>
+This is [mathjaxinline]2\pi (1-x)(x-x^3)\Delta x[/mathjaxinline]. </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

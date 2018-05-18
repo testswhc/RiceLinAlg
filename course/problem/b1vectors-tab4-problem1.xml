@@ -1,0 +1,36 @@
+<problem display_name="Different Axis" linenum="112" tex_filename="C:/Users/swang/Box Sync/LinAlg/latex2edx/block1/sandbox.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <img src="/static/images/shellregionrect2.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+    <p>
+We continue to look at the region under the graph of [mathjaxinline]f(x) = x-x^3[/mathjaxinline], between [mathjaxinline]x=0[/mathjaxinline] and [mathjaxinline]x=1[/mathjaxinline], but now we rotate it around the line [mathjaxinline]x=1[/mathjaxinline]. The rectangle shown will rotate to form a cylindrical shell. </p>
+    <p>
+What will the height of the shell be? </p>
+    <p>
+      <formularesponse type="cs" samples="x@1:2#5" answer="x-x^3">
+        <formulaequationinput>
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+    </p>
+    <p>
+What will the radius of the shell be? </p>
+    <p>
+      <formularesponse type="cs" samples="x@1:2#5" answer="1-x">
+        <formulaequationinput>
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ The height is the same as the height of the rectangle, so [mathjaxinline]x-x^3[/mathjaxinline]. </p>
+          <p>
+The radius is the horizontal distance from the rectangle to the axis of rotation. The axis of rotation is at [mathjaxinline]x=1[/mathjaxinline], and the rectangle has horizontal coordinate [mathjaxinline]x[/mathjaxinline], so the distance is [mathjaxinline]1-x[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -1,0 +1,29 @@
+<problem display_name="Definition" linenum="52" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Which of these is the definition of linearly dependent? </p>
+    <p>
+A list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is linearly dependent if... </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="true" name="1">
+            <text> ...there exist scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline], not all zero, such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots a_ nv_ n = \mathbf{0}[/mathjaxinline].</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> ...there exist scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline], all not zero, such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots a_ nv_ n = \mathbf{0}[/mathjaxinline].</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> Both of these are the definition.</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

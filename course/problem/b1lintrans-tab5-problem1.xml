@@ -1,0 +1,33 @@
+<problem display_name="Linear Transformation? 1" linenum="96" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Define [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] by [mathjaxinline]T(\mathbf{v}) = 2\mathbf{v}[/mathjaxinline]. </p>
+    <p>
+Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(\mathbf{v}+ \mathbf{w}) = T(\mathbf{v}) + T(\mathbf{w})[/mathjaxinline] for all vectors [mathjaxinline]\mathbf{v},\mathbf{w}[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(a\mathbf{v}) = aT(\mathbf{v})[/mathjaxinline] for all vectors [mathjaxinline]\mathbf{v}[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

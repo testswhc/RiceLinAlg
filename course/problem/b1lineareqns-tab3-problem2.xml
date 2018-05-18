@@ -1,0 +1,27 @@
+<problem display_name="System Consistency?" linenum="116" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/linearequations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Note the last row in your result, and think about what equation it represents. Is the system consistent? If so, does it have a unique solution? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> The system is consistent and has a unique solution</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> The system is consistent but has more than one solution</text>
+          </choice>
+          <choice correct="true" name="3">
+            <text> The system is inconsistent</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

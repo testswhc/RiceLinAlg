@@ -1,0 +1,23 @@
+<problem display_name="Number of Free Variables" linenum="327" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+What is the strongest statement you can make about the number of free variables in a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix, when row-reduced? </p>
+    <p>
+      <p style="display:inline">The number of free variables must be </p>
+      <optionresponse inline="1">
+        <optioninput options="('exactly','at least','at most')" correct="at least" inline="1"/>
+      </optionresponse>
+      <numericalresponse inline="1" answer="2">
+        <textline inline="1">
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -1,0 +1,17 @@
+<problem display_name="Yes or No" linenum="128" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/linearequations.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Does a linear system of two equations in two variables always have at least one solution? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

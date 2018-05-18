@@ -1,0 +1,19 @@
+<problem display_name="Maximum pivots" linenum="303" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+What is the maximum number of pivots in a [mathjaxinline]6\times 3[/mathjaxinline] coefficient matrix, when row-reduced? </p>
+    <p>
+      <numericalresponse answer="3">
+        <textline>
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

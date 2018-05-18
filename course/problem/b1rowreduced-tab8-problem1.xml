@@ -1,0 +1,20 @@
+<problem display_name="Matrix Size" linenum="288" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let </p>
+    <table id="a0000000019" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  -3 &amp;  -2 \\ 0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0\end{array} \right].[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <p>
+What is the size of [mathjaxinline]A[/mathjaxinline]? <multiplechoiceresponse><choicegroup direction="vertical"><choice correct="false" name="1"><text> [mathjaxinline]3\times 4[/mathjaxinline]</text></choice><choice correct="true" name="2"><text> [mathjaxinline]4\times 3[/mathjaxinline]</text></choice></choicegroup></multiplechoiceresponse> </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

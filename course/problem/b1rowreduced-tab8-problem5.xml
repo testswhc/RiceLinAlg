@@ -1,0 +1,27 @@
+<problem display_name="4 Equations, 6 Variables" linenum="338" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Given the answer to the previous question, which of the following results are possible for a system of 4 linear equations in 6 variables? </p>
+    <p>
+      <choiceresponse>
+        <checkboxgroup>
+          <choice correct="false" name="1">
+            <text>The system is consistent and has a unique solution</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text>The system is consistent but has more than one solution</text>
+          </choice>
+          <choice correct="true" name="3">
+            <text>The system is inconsistent</text>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>
