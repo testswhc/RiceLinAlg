@@ -735,6 +735,375 @@ Applying the row-reduction algorithm to this augmented matrix, what can we concl
             </text>
           </problem>
         </vertical>
+        <vertical display_name="Interpretations" refnum="6" url_name="b1rowreduced-vertical6">
+          <video display_name="Interpreting a RREF matrix" youtube_id_1_0="cdAGco8RsOI" url_name="b1rowreduced-tab6-video1"/>
+          <problem display_name="Matrix 1" linenum="194" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p>
+              <table id="a0000000014" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{cc:c} 1 &amp;  -3 &amp;  -2 \\ 0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+How many free variables are there? <numericalresponse answer="1"><textline><responseparam type="tolerance" default="0.00001"/></textline></numericalresponse> </p>
+              <p>
+What can you conclude about the original system of equations? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> The system is consistent and has a unique solution</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> The system is consistent but has more than one solution</text>
+                    </choice>
+                    <choice correct="true" name="3">
+                      <text> The system is inconsistent</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Matrix 2" linenum="213" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p>
+              <table id="a0000000015" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{cc:c} 1 &amp;  0 &amp;  0 \\ 0 &amp;  1 &amp;  1 \\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+How many free variables are there? <numericalresponse answer="0"><textline><responseparam type="tolerance" default="0.00001"/></textline></numericalresponse> </p>
+              <p>
+What can you conclude about the original system of equations? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="true" name="1">
+                      <text> The system is consistent and has a unique solution</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> The system is consistent but has more than one solution</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> The system is inconsistent</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Matrix 3" linenum="234" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p>
+              <table id="a0000000016" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{cccc:c} 1 &amp;  0 &amp;  0 &amp;  1 &amp;  -2 \\ 0 &amp;  0 &amp;  1 &amp;  3 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+How many free variables are there? <numericalresponse answer="2"><textline><responseparam type="tolerance" default="0.00001"/></textline></numericalresponse> </p>
+              <p>
+What can you conclude about the original system of equations? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> The system is consistent and has a unique solution</text>
+                    </choice>
+                    <choice correct="true" name="2">
+                      <text> The system is consistent but has more than one solution</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> The system is inconsistent</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Free Variables" linenum="257" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+If a system of linear equations has free variables when row-reduced, is it possible for the system to be inconsistent? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Finding Solutions" refnum="7" url_name="b1rowreduced-vertical7">
+          <problem display_name="Solutions to a System" linenum="277" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Recall the augmented matrix from the last problem: </p>
+              <table id="a0000000017" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{cccc:c} 1 &amp;  0 &amp;  0 &amp;  1 &amp;  -2 \\ 0 &amp;  0 &amp;  1 &amp;  3 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+Working from right to left as in the last video, what are all possible solutions to this system? Type the word &#x2018;free' (lower-case) if the variable is a free variable. For others, remember to use * for times and type xn for the variable [mathjaxinline]x_ n[/mathjaxinline]. For instance, to enter [mathjaxinline]-3x_2 + 2x_4[/mathjaxinline], type -3*x2 + 2*x4. </p>
+              <p>
+                <p style="display:inline">[mathjaxinline]x_4 =[/mathjaxinline]</p>
+                <formularesponse inline="1" type="cs" samples="free,x3,x2,x1@1,1,1,1:,4,4,4,4#10" answer="free">
+                  <formulaequationinput inline="1">
+                    <responseparam type="tolerance" default=".001"/>
+                  </formulaequationinput>
+                </formularesponse>
+              </p>
+              <p>
+                <p style="display:inline">[mathjaxinline]x_3 =[/mathjaxinline]</p>
+                <formularesponse inline="1" type="cs" samples="free,x4,x2,x1@1,1,1,1:4,4,4,4#10" answer="3-3*x4">
+                  <formulaequationinput inline="1">
+                    <responseparam type="tolerance" default=".001"/>
+                  </formulaequationinput>
+                </formularesponse>
+              </p>
+              <p>
+                <p style="display:inline">[mathjaxinline]x_2 =[/mathjaxinline]</p>
+                <formularesponse inline="1" type="cs" samples="free,x4,x3,x1@1,1,1,1:4,4,4,4#10" answer="free">
+                  <formulaequationinput inline="1">
+                    <responseparam type="tolerance" default=".001"/>
+                  </formulaequationinput>
+                </formularesponse>
+              </p>
+              <p>
+                <p style="display:inline">[mathjaxinline]x_1 =[/mathjaxinline]</p>
+                <formularesponse inline="1" type="cs" samples="free,x4,x3,x2@1,1,1,1:4,4,4,4#10" answer="-2-x4">
+                  <formulaequationinput inline="1">
+                    <responseparam type="tolerance" default=".001"/>
+                  </formulaequationinput>
+                </formularesponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Going Further" refnum="8" url_name="b1rowreduced-vertical8">
+          <html display_name="The Size of a Matrix" linenum="312" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-text1">
+            <p>
+If a matrix [mathjaxinline]M[/mathjaxinline] has [mathjaxinline]m[/mathjaxinline] rows and [mathjaxinline]n[/mathjaxinline] columns, we say that [mathjaxinline]M[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix. For instance, </p>
+            <table id="a0000000018" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <tr>
+                <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{cccc:c} 1 &amp;  0 &amp;  0 &amp;  1 &amp;  -2 \\ 0 &amp;  0 &amp;  1 &amp;  3 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
+                <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+              </tr>
+            </table>
+            <p>
+is a [mathjaxinline]3\times 5[/mathjaxinline] augmented matrix, since it has 3 rows and 5 columns. The coefficient matrix of the above system would be a [mathjaxinline]3\times 4[/mathjaxinline] matrix. </p>
+          </html>
+          <problem display_name="Matrix Size" linenum="328" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let </p>
+              <table id="a0000000019" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  -3 &amp;  -2 \\ 0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0\end{array} \right].[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+What is the size of [mathjaxinline]A[/mathjaxinline]? <multiplechoiceresponse><choicegroup direction="vertical"><choice correct="false" name="1"><text> [mathjaxinline]3\times 4[/mathjaxinline]</text></choice><choice correct="true" name="2"><text> [mathjaxinline]4\times 3[/mathjaxinline]</text></choice></choicegroup></multiplechoiceresponse> </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Maximum pivots" linenum="343" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+What is the maximum number of pivots in a [mathjaxinline]6\times 3[/mathjaxinline] coefficient matrix, when row-reduced? </p>
+              <p>
+                <numericalresponse answer="3">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Maximum pivots 2" linenum="355" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+What is the maximum number of pivots in a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix, when row-reduced? </p>
+              <p>
+                <numericalresponse answer="4">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Number of Free Variables" linenum="367" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+What is the strongest statement you can make about the number of free variables in a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix, when row-reduced? </p>
+              <p>
+                <p style="display:inline">The number of free variables must be </p>
+                <optionresponse inline="1">
+                  <optioninput options="('exactly','at least','at most')" correct="at least" inline="1"/>
+                </optionresponse>
+                <numericalresponse inline="1" answer="2">
+                  <textline inline="1">
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="4 Equations, 6 Variables" linenum="378" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem5" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Given the answer to the previous question, which of the following results are possible for a system of 4 linear equations in 6 variables? </p>
+              <p>
+                <choiceresponse>
+                  <checkboxgroup>
+                    <choice correct="false" name="1">
+                      <text>The system is consistent and has a unique solution</text>
+                    </choice>
+                    <choice correct="true" name="2">
+                      <text>The system is consistent but has more than one solution</text>
+                    </choice>
+                    <choice correct="true" name="3">
+                      <text>The system is inconsistent</text>
+                    </choice>
+                  </checkboxgroup>
+                </choiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Fields" refnum="9" url_name="b1rowreduced-vertical9">
+          <problem display_name="Real Numbers" linenum="398" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+If a matrix has real number entries, will the entries stay real numbers when you row-reduce it? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','Not necessarily')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Rational Numbers" linenum="410" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+If a matrix has rational number entries, will the entries stay rational numbers when you row-reduce it? (Recall that rational numbers are those that can be written as fractions [mathjaxinline]\frac{p}{q}[/mathjaxinline], where [mathjaxinline]p,q[/mathjaxinline] are integers.) </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','Not necessarily')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Integers" linenum="424" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+If a matrix has integer entries, will the entries stay integers when you row-reduce it? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','Not necessarily')" correct="Not necessarily"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <video display_name="Fields" youtube_id_1_0="3e74wlqpAf4" url_name="b1rowreduced-tab9-video1"/>
+        </vertical>
+        <vertical display_name="Fields Defined" refnum="10" url_name="b1rowreduced-vertical10">
+          <html display_name="Fields" linenum="446" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab10-text1">
+            <p>
+A <span style="color:#99182C"><b class="bf">field</b></span> is, essentially, a set in which one can add, subtract, multiply, and divide any two elements (other than dividing by zero). The formal definition is below. </p>
+            <p>
+The field that we will most commonly use in this course is the set of real numbers [mathjaxinline]\mathbb R[/mathjaxinline]. Other fields include the set of complex numbers [mathjaxinline]\mathbb C[/mathjaxinline], the set of rational numbers [mathjaxinline]\mathbb Q[/mathjaxinline], and the integers modulo a prime [mathjaxinline]p[/mathjaxinline]. </p>
+          </html>
+        </vertical>
       </sequential>
       <sequential display_name="Vectors" linenum="153" tex_filename="testcourse.tex" refnum="3" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1vectors-sequential">
         <vertical display_name="Wait for it" refnum="1" url_name="b1vectors-vertical1">

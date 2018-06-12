@@ -44,6 +44,33 @@
       <problem url_name="b1rowreduced-tab5-problem1"/>
       <problem url_name="b1rowreduced-tab5-problem2"/>
     </vertical>
+    <vertical display_name="Interpretations" refnum="6" url_name="b1rowreduced-vertical6">
+      <video url_name="b1rowreduced-tab6-video1"/>
+      <problem url_name="b1rowreduced-tab6-problem1"/>
+      <problem url_name="b1rowreduced-tab6-problem2"/>
+      <problem url_name="b1rowreduced-tab6-problem3"/>
+      <problem url_name="b1rowreduced-tab6-problem4"/>
+    </vertical>
+    <vertical display_name="Finding Solutions" refnum="7" url_name="b1rowreduced-vertical7">
+      <problem url_name="b1rowreduced-tab7-problem1"/>
+    </vertical>
+    <vertical display_name="Going Further" refnum="8" url_name="b1rowreduced-vertical8">
+      <html url_name="b1rowreduced-tab8-text1"/>
+      <problem url_name="b1rowreduced-tab8-problem1"/>
+      <problem url_name="b1rowreduced-tab8-problem2"/>
+      <problem url_name="b1rowreduced-tab8-problem3"/>
+      <problem url_name="b1rowreduced-tab8-problem4"/>
+      <problem url_name="b1rowreduced-tab8-problem5"/>
+    </vertical>
+    <vertical display_name="Fields" refnum="9" url_name="b1rowreduced-vertical9">
+      <problem url_name="b1rowreduced-tab9-problem1"/>
+      <problem url_name="b1rowreduced-tab9-problem2"/>
+      <problem url_name="b1rowreduced-tab9-problem3"/>
+      <video url_name="b1rowreduced-tab9-video1"/>
+    </vertical>
+    <vertical display_name="Fields Defined" refnum="10" url_name="b1rowreduced-vertical10">
+      <html url_name="b1rowreduced-tab10-text1"/>
+    </vertical>
   </sequential>
   <sequential display_name="Vectors" linenum="153" tex_filename="testcourse.tex" refnum="3" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1vectors-sequential">
     <vertical display_name="Wait for it" refnum="1" url_name="b1vectors-vertical1">

@@ -1,4 +1,4 @@
-<problem display_name="Number of Free Variables" linenum="365" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Number of Free Variables" linenum="367" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 What is the strongest statement you can make about the number of free variables in a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix, when row-reduced? </p>
