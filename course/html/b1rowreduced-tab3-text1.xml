@@ -1,4 +1,4 @@
-<html display_name="Row-Reduced Echelon Form" linenum="41" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/rref.tex">
+<html display_name="Row-Reduced Echelon Form" linenum="41" tex_filename="./block1/rref.tex">
   <p>
 A matrix is in Row-Reduced Echelon Form (RREF) if it satisfies the following conditions: </p>
   <ul class="itemize">
@@ -8,7 +8,7 @@ All rows of all zeros are at the bottom. </p>
     </li>
     <li>
       <p>
-If a row is non-zero, its first non-zero entry is 1. (This is called a <span style="color:#99182C"><b class="bf">pivot</b></span>.) </p>
+In any non-zero row, the first non-zero entry is 1. (This is called a <span style="color:#99182C"><b class="bf">pivot</b></span>.) </p>
     </li>
     <li>
       <p>

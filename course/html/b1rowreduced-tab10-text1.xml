@@ -1,0 +1,6 @@
+<html display_name="Fields" linenum="444" tex_filename="./block1/rref.tex">
+  <p>
+A <span style="color:#99182C"><b class="bf">field</b></span> is, essentially, a set in which one can add, subtract, multiply, and divide any two elements (other than dividing by zero). The formal definition is below. </p>
+  <p>
+The field that we will most commonly use in this course is the set of real numbers [mathjaxinline]\mathbb R[/mathjaxinline]. Other fields include the set of complex numbers [mathjaxinline]\mathbb C[/mathjaxinline], the set of rational numbers [mathjaxinline]\mathbb Q[/mathjaxinline], and the integers modulo a prime [mathjaxinline]p[/mathjaxinline]. </p>
+</html>

@@ -1,0 +1,789 @@
+<xbundle>
+  <metadata/>
+  <course number="Test" display_name="Test LinAlg" semester="2018_Summer" info_sidebar_name="Other Documents" start="2018-01-11T12:00" end="2018-12-18T18:00" course_image="rice-logo.jpg" display_coursenumber="TestLinAlg" course_organization="TestRice" graceperiod="1800 seconds" invitation_only="true" allow_anonymous="false" mobile_available="true" org="Rice">
+    <chapter display_name="Vectors and Matrices" linenum="77" tex_filename="testcourse.tex" refnum="1" url_name="block1" start="2018-01-11T16:00">
+      <sequential display_name="Systems of Linear Equations" linenum="89" tex_filename="testcourse.tex" refnum="1" due="2018-04-13T14:15" graded="true" format="Exercises" url_name="b1lineareqns-sequential">
+        <vertical display_name="Page One" refnum="1" url_name="b1lineareqns-vertical1">
+          <html display_name="Preliminaries" linenum="5" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab1-text1">
+            <p>
+At the end of this sequence, and after some practice, you should be able to: </p>
+            <ul class="itemize">
+              <li>
+                <p>
+Translate systems of linear equations into <span style="color:#99182C"><b class="bf">augmented matrices</b></span>. </p>
+              </li>
+              <li>
+                <p>
+Apply elementary <span style="color:#99182C"><b class="bf">row operations</b></span> to matrices. </p>
+              </li>
+            </ul>
+            <p>
+For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
+          </html>
+        </vertical>
+        <vertical display_name="Introduction" refnum="2" url_name="b1lineareqns-vertical2">
+          <video display_name="Systems of Linear Equations" youtube_id_1_0="MNuDcFXUymE" url_name="b1lineareqns-tab2-video1"/>
+          <problem display_name="Matrix entry" linenum="39" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab2-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Consider the following system of linear equations: </p>
+              <table id="a0000000002" cellpadding="7" width="100%" cellspacing="0" class="eqnarray" style="table-layout:auto">
+                <tr id="a0000000003">
+                  <td style="width:40%; border:none">&#xA0;</td>
+                  <td style="vertical-align:middle;                                    text-align:right; border:none">
+	    [mathjaxinline]\displaystyle  10x_1 + 30x_2[/mathjaxinline]
+        </td>
+                  <td style="vertical-align:middle;                                    text-align:center; border:none">
+	    [mathjaxinline]\displaystyle  =[/mathjaxinline]
+        </td>
+                  <td style="vertical-align:middle;                                    text-align:left; border:none">
+	    [mathjaxinline]\displaystyle  10[/mathjaxinline]
+        </td>
+                  <td style="width:40%; border:none">&#xA0;</td>
+                  <td style="width:20%; border:none" class="eqnnum"/>
+                </tr>
+                <tr id="a0000000004">
+                  <td style="width:40%; border:none">&#xA0;</td>
+                  <td style="vertical-align:middle;                                    text-align:right; border:none">
+	    [mathjaxinline]\displaystyle 2x_1 + 6x_2[/mathjaxinline]
+        </td>
+                  <td style="vertical-align:middle;                                    text-align:center; border:none">
+	    [mathjaxinline]\displaystyle  =[/mathjaxinline]
+        </td>
+                  <td style="vertical-align:middle;                                    text-align:left; border:none">
+	    [mathjaxinline]\displaystyle  3[/mathjaxinline]
+        </td>
+                  <td style="width:40%; border:none">&#xA0;</td>
+                  <td style="width:20%; border:none" class="eqnnum"/>
+                </tr>
+              </table>
+              <script linenum="1" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixGrader(expect, ans):
+	tolerance = 0.01
+	ret={'ok':False}
+	ans.replace(' ','')
+	nums = ans.split(',')
+	expnums = expect.split(',')
+	if (expect == 'None') or (expect =='none'):
+		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
+	elif (nums[0] == "none") or (nums[0] == "None"):
+	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
+	else:
+		try:
+			expnum=[float(i) for i in expnums]
+			ansnum=[float(i) for i in nums]
+			explist = sorted(expnum, key=float)
+			anslist = sorted(ansnum, key=float) 
+			matching = True
+			if len(explist)!=len(anslist):
+			    if len(anslist)&lt;len(explist):
+			    	ret['msg']="You did not enter enough critical points."
+			    else:
+			    	ret['msg']="You entered too many critical points."
+		 	else:
+				for i in range(len(explist)):
+					errorcnt=0
+					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
+						matching = False
+						errorcnt+=1
+					if errorcnt != 0:
+						ret['msg']= "You have %d errors in your answer." % errorcnt
+				ret['ok']=matching
+		except:
+		    ret['msg']="Your answer should only involve decimal numbers."
+	return ret
+  
+</script>
+              <p>
+Enter the coefficient matrix for the above system. </p>
+              <p>
+To enter a matrix, type... </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+Enter the augmented matrix for the above system. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Doing Row Operations" refnum="3" url_name="b1lineareqns-vertical3">
+          <video display_name="Row Operations" youtube_id_1_0="y7WkHWviQUQ" url_name="b1lineareqns-tab3-video1"/>
+          <problem display_name="Two Row Operations" linenum="87" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Recall the system of equations from the previous question. </p>
+              <table id="a0000000005" cellpadding="7" width="100%" cellspacing="0" class="eqnarray" style="table-layout:auto">
+                <tr id="a0000000006">
+                  <td style="width:40%; border:none">&#xA0;</td>
+                  <td style="vertical-align:middle;                                    text-align:right; border:none">
+	    [mathjaxinline]\displaystyle  10x_1 + 30x_2[/mathjaxinline]
+        </td>
+                  <td style="vertical-align:middle;                                    text-align:center; border:none">
+	    [mathjaxinline]\displaystyle  =[/mathjaxinline]
+        </td>
+                  <td style="vertical-align:middle;                                    text-align:left; border:none">
+	    [mathjaxinline]\displaystyle  10[/mathjaxinline]
+        </td>
+                  <td style="width:40%; border:none">&#xA0;</td>
+                  <td style="width:20%; border:none" class="eqnnum"/>
+                </tr>
+                <tr id="a0000000007">
+                  <td style="width:40%; border:none">&#xA0;</td>
+                  <td style="vertical-align:middle;                                    text-align:right; border:none">
+	    [mathjaxinline]\displaystyle 2x_1 + 6x_2[/mathjaxinline]
+        </td>
+                  <td style="vertical-align:middle;                                    text-align:center; border:none">
+	    [mathjaxinline]\displaystyle  =[/mathjaxinline]
+        </td>
+                  <td style="vertical-align:middle;                                    text-align:left; border:none">
+	    [mathjaxinline]\displaystyle  3[/mathjaxinline]
+        </td>
+                  <td style="width:40%; border:none">&#xA0;</td>
+                  <td style="width:20%; border:none" class="eqnnum"/>
+                </tr>
+              </table>
+              <p>
+Do the following row operations to the augmented matrix. First, multiply the first row by [mathjaxinline]\frac{1}{10}[/mathjaxinline]. Then, replace the second row with the second row minus twice the first row. What matrix do you get as a result? </p>
+              <script linenum="1" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixGrader(expect, ans):
+	tolerance = 0.01
+	ret={'ok':False}
+	ans.replace(' ','')
+	nums = ans.split(',')
+	expnums = expect.split(',')
+	if (expect == 'None') or (expect =='none'):
+		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
+	elif (nums[0] == "none") or (nums[0] == "None"):
+	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
+	else:
+		try:
+			expnum=[float(i) for i in expnums]
+			ansnum=[float(i) for i in nums]
+			explist = sorted(expnum, key=float)
+			anslist = sorted(ansnum, key=float) 
+			matching = True
+			if len(explist)!=len(anslist):
+			    if len(anslist)&lt;len(explist):
+			    	ret['msg']="You did not enter enough critical points."
+			    else:
+			    	ret['msg']="You entered too many critical points."
+		 	else:
+				for i in range(len(explist)):
+					errorcnt=0
+					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
+						matching = False
+						errorcnt+=1
+					if errorcnt != 0:
+						ret['msg']= "You have %d errors in your answer." % errorcnt
+				ret['ok']=matching
+		except:
+		    ret['msg']="Your answer should only involve decimal numbers."
+	return ret
+  
+</script>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="System Consistency?" linenum="120" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Note the last row in your result, and think about what equation it represents. Is the system consistent? If so, does it have a unique solution? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> The system is consistent and has a unique solution</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> The system is consistent but has more than one solution</text>
+                    </choice>
+                    <choice correct="true" name="3">
+                      <text> The system is inconsistent</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ Test test test  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Yes or No" linenum="132" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+Does a linear system of two equations in two variables always have at least one solution? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="More Row Operations" linenum="145" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Consider this system of equations. </p>
+              <table id="a0000000008" cellpadding="7" width="100%" cellspacing="0" class="eqnarray" style="table-layout:auto">
+                <tr id="a0000000009">
+                  <td style="width:40%; border:none">&#xA0;</td>
+                  <td style="vertical-align:middle;                                    text-align:right; border:none">
+	    [mathjaxinline]\displaystyle  0x_1 + 1x_2 + 1x_3[/mathjaxinline]
+        </td>
+                  <td style="vertical-align:middle;                                    text-align:center; border:none">
+	    [mathjaxinline]\displaystyle  =[/mathjaxinline]
+        </td>
+                  <td style="vertical-align:middle;                                    text-align:left; border:none">
+	    [mathjaxinline]\displaystyle  2[/mathjaxinline]
+        </td>
+                  <td style="width:40%; border:none">&#xA0;</td>
+                  <td style="width:20%; border:none" class="eqnnum"/>
+                </tr>
+                <tr id="a0000000010">
+                  <td style="width:40%; border:none">&#xA0;</td>
+                  <td style="vertical-align:middle;                                    text-align:right; border:none">
+	    [mathjaxinline]\displaystyle 1x_1 + 2x_2 + 1x_3[/mathjaxinline]
+        </td>
+                  <td style="vertical-align:middle;                                    text-align:center; border:none">
+	    [mathjaxinline]\displaystyle  =[/mathjaxinline]
+        </td>
+                  <td style="vertical-align:middle;                                    text-align:left; border:none">
+	    [mathjaxinline]\displaystyle  3[/mathjaxinline]
+        </td>
+                  <td style="width:40%; border:none">&#xA0;</td>
+                  <td style="width:20%; border:none" class="eqnnum"/>
+                </tr>
+                <tr id="a0000000011">
+                  <td style="width:40%; border:none">&#xA0;</td>
+                  <td style="vertical-align:middle;                                    text-align:right; border:none">
+	    [mathjaxinline]\displaystyle 2x_1 + 6x_2 + 4x_3[/mathjaxinline]
+        </td>
+                  <td style="vertical-align:middle;                                    text-align:center; border:none">
+	    [mathjaxinline]\displaystyle  =[/mathjaxinline]
+        </td>
+                  <td style="vertical-align:middle;                                    text-align:left; border:none">
+	    [mathjaxinline]\displaystyle  10[/mathjaxinline]
+        </td>
+                  <td style="width:40%; border:none">&#xA0;</td>
+                  <td style="width:20%; border:none" class="eqnnum"/>
+                </tr>
+              </table>
+              <p>
+Do the following row operations to the augmented matrix. First, switch the first two rows. Then replace the third row with the third row minus twice the first row. Next, replace the first row with the first row minus twice the second row. Finally, replace the third row with the third row minus twice the second row. What matrix do you get as a result? </p>
+              <script linenum="1" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixGrader(expect, ans):
+	tolerance = 0.01
+	ret={'ok':False}
+	ans.replace(' ','')
+	nums = ans.split(',')
+	expnums = expect.split(',')
+	if (expect == 'None') or (expect =='none'):
+		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
+	elif (nums[0] == "none") or (nums[0] == "None"):
+	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
+	else:
+		try:
+			expnum=[float(i) for i in expnums]
+			ansnum=[float(i) for i in nums]
+			explist = sorted(expnum, key=float)
+			anslist = sorted(ansnum, key=float) 
+			matching = True
+			if len(explist)!=len(anslist):
+			    if len(anslist)&lt;len(explist):
+			    	ret['msg']="You did not enter enough critical points."
+			    else:
+			    	ret['msg']="You entered too many critical points."
+		 	else:
+				for i in range(len(explist)):
+					errorcnt=0
+					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
+						matching = False
+						errorcnt+=1
+					if errorcnt != 0:
+						ret['msg']= "You have %d errors in your answer." % errorcnt
+				ret['ok']=matching
+		except:
+		    ret['msg']="Your answer should only involve decimal numbers."
+	return ret
+  
+</script>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="System Consistency?" linenum="179" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem5" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Is the system consistent? If so, does it have a unique solution? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> The system is consistent and has a unique solution</text>
+                    </choice>
+                    <choice correct="true" name="2">
+                      <text> The system is consistent but has more than one solution</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> The system is inconsistent</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="A Few Questions" refnum="4" url_name="b1lineareqns-vertical4">
+          <problem display_name="Row of All Zeros" linenum="195" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab4-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+Suppose you have an augmented matrix and, after a few elementary row operations, you see one row that looks like this: </p>
+              <p>
+[mathjaxinline]\left[ \begin{array}{cccc:c} 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjaxinline] </p>
+              <p>
+Just from the presence of that one row, what can you conclude about the overall system? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> The system is consistent and has a unique solution</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> The system is consistent but has more than one solution</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> The system is inconsistent</text>
+                    </choice>
+                    <choice correct="true" name="4">
+                      <text> We cannot conclude anything; it will depend on the other rows</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Types of Row Operations" linenum="214" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab4-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+How many types of elementary row operations are there? </p>
+              <p>
+                <numericalresponse answer="3">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Elementary Row Operations" refnum="5" url_name="b1lineareqns-vertical5">
+          <html display_name="Elementary Row Operations" linenum="232" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab5-text1">
+            <p>
+There are three types of elementary row operations that one can apply to a matrix. </p>
+            <ul class="itemize">
+              <li>
+                <p>
+Switch two rows. </p>
+              </li>
+              <li>
+                <p>
+Multiply a row by a non-zero scalar. </p>
+              </li>
+              <li>
+                <p>
+Add a scalar multiple of one row to another row. (More precisely, replace one row with the sum of itself and a scalar multiple of a different row.) </p>
+              </li>
+            </ul>
+            <p>
+If one can obtain augmented matrix [mathjaxinline]B[/mathjaxinline] from augmented matrix [mathjaxinline]A[/mathjaxinline] via a series of elementary row operations, we say that [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are <span style="color:#99182C"><b class="bf">row-equivalent.</b></span> </p>
+            <p>
+If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are row-equivalent, the system of linear equations represented by [mathjaxinline]A[/mathjaxinline] and the system of linear equations represented by [mathjaxinline]B[/mathjaxinline] have the same set of solutions. </p>
+          </html>
+        </vertical>
+      </sequential>
+      <sequential display_name="Row-Reduced Form" linenum="122" tex_filename="testcourse.tex" refnum="2" due="2018-04-15T14:15" graded="true" format="Exercises" url_name="b1rowreduced-sequential">
+        <vertical display_name="Page One" refnum="1" url_name="b1rowreduced-vertical1">
+          <html display_name="Preliminaries" linenum="5" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab1-text1">
+            <p>
+At the end of this sequence, and after some practice, you should be able to: </p>
+            <ul class="itemize">
+              <li>
+                <p>
+Use elementary <span style="color:#99182C"><b class="bf">row operations</b></span> to put matrices into <span style="color:#99182C"><b class="bf">row-reduced echelon form (RREF)</b></span>. </p>
+              </li>
+              <li>
+                <p>
+Interpret RREF matrices to determine <span style="color:#99182C"><b class="bf">existence and uniqueness</b></span> of solutions. </p>
+              </li>
+            </ul>
+            <p>
+For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
+          </html>
+        </vertical>
+        <vertical display_name="Row-Reduced Echelon Form" refnum="2" url_name="b1rowreduced-vertical2">
+          <video display_name="RREF" youtube_id_1_0="Qi3O6iLhZ0E" url_name="b1rowreduced-tab2-video1"/>
+        </vertical>
+        <vertical display_name="RREF Defined" refnum="3" url_name="b1rowreduced-vertical3">
+          <html display_name="Row-Reduced Echelon Form" linenum="41" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-text1">
+            <p>
+A matrix is in Row-Reduced Echelon Form (RREF) if it satisfies the following conditions: </p>
+            <ul class="itemize">
+              <li>
+                <p>
+All rows of all zeros are at the bottom. </p>
+              </li>
+              <li>
+                <p>
+In any non-zero row, the first non-zero entry is 1. (This is called a <span style="color:#99182C"><b class="bf">pivot</b></span>.) </p>
+              </li>
+              <li>
+                <p>
+Each pivot is the only non-zero entry in its column. </p>
+              </li>
+              <li>
+                <p>
+A pivot in a lower row is to the right of any pivot in a higher row. </p>
+              </li>
+            </ul>
+          </html>
+          <problem display_name="RREF or not?" linenum="58" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+Which of the following matrices are in RREF? Click all that apply. </p>
+              <p>
+                <choiceresponse>
+                  <checkboxgroup>
+                    <choice correct="true" name="1">
+                      <text>mx1</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text>mx2</text>
+                    </choice>
+                  </checkboxgroup>
+                </choiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Make it RREF" linenum="72" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+The following matrix is not in RREF. </p>
+              <p>
+[mathjaxinline]\left[ \begin{array}{ccccc} 1 &amp;  4 &amp;  0 &amp;  0 &amp;  7 \\ 0 &amp;  0 &amp;  1 &amp;  -2 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  1 \end{array} \right][/mathjaxinline] </p>
+              <p>
+However, you can apply a single row operation to put it into RREF. What matrix is the result? </p>
+              <script linenum="1" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixGrader(expect, ans):
+	tolerance = 0.01
+	ret={'ok':False}
+	ans.replace(' ','')
+	nums = ans.split(',')
+	expnums = expect.split(',')
+	if (expect == 'None') or (expect =='none'):
+		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
+	elif (nums[0] == "none") or (nums[0] == "None"):
+	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
+	else:
+		try:
+			expnum=[float(i) for i in expnums]
+			ansnum=[float(i) for i in nums]
+			explist = sorted(expnum, key=float)
+			anslist = sorted(ansnum, key=float) 
+			matching = True
+			if len(explist)!=len(anslist):
+			    if len(anslist)&lt;len(explist):
+			    	ret['msg']="You did not enter enough critical points."
+			    else:
+			    	ret['msg']="You entered too many critical points."
+		 	else:
+				for i in range(len(explist)):
+					errorcnt=0
+					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
+						matching = False
+						errorcnt+=1
+					if errorcnt != 0:
+						ret['msg']= "You have %d errors in your answer." % errorcnt
+				ret['ok']=matching
+		except:
+		    ret['msg']="Your answer should only involve decimal numbers."
+	return ret
+  
+</script>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Pivots vs. Rows" linenum="96" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+True or False: If a matrix that is in RREF has 6 rows, then it must have 6 pivots. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('True','False')" correct="False"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Interpretations" refnum="4" url_name="b1rowreduced-vertical4">
+          <video display_name="The Row Reduction Algorithm" youtube_id_1_0="oXO9Iw9KyPo" url_name="b1rowreduced-tab4-video1"/>
+          <html display_name="The Row-Reduction Algorithm" linenum="116" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab4-text1">
+            <p>
+The following algorithm will always work to reduce a matrix into Row-Reduced Echelon Form. </p>
+            <ul class="itemize">
+              <li>
+                <p>
+Swap two rows to get the left-most remaining non-zero entry to the topmost remaining row. </p>
+              </li>
+              <li>
+                <p>
+Scale that row to make its leading entry a 1. </p>
+              </li>
+              <li>
+                <p>
+Clear all non-zero entries in the column of that pivot (both above and below the pivot) by adding/subtracting multiples of that row to/from other rows. </p>
+              </li>
+              <li>
+                <p>
+With that pivot now set, repeat the procedure with the remaining rows. </p>
+              </li>
+            </ul>
+            <p>
+This is sometimes called <span style="color:#99182C"><b class="bf">Gaussian elimination</b></span>. </p>
+          </html>
+        </vertical>
+        <vertical display_name="Row-Reducing Practice" refnum="5" url_name="b1rowreduced-vertical5">
+          <problem display_name="Row-reduction Practice" linenum="139" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let </p>
+              <table id="a0000000012" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 0 &amp;  1 &amp;  2 \\ 3 &amp;  0 &amp;  -3 \\ 2 &amp;  2 &amp;  5 \\ 0 &amp;  -2 &amp;  1\end{array} \right].[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+What matrix do you get if you row-reduce [mathjaxinline]A[/mathjaxinline]? </p>
+              <script linenum="1" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixGrader(expect, ans):
+	tolerance = 0.01
+	ret={'ok':False}
+	ans.replace(' ','')
+	nums = ans.split(',')
+	expnums = expect.split(',')
+	if (expect == 'None') or (expect =='none'):
+		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
+	elif (nums[0] == "none") or (nums[0] == "None"):
+	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
+	else:
+		try:
+			expnum=[float(i) for i in expnums]
+			ansnum=[float(i) for i in nums]
+			explist = sorted(expnum, key=float)
+			anslist = sorted(ansnum, key=float) 
+			matching = True
+			if len(explist)!=len(anslist):
+			    if len(anslist)&lt;len(explist):
+			    	ret['msg']="You did not enter enough critical points."
+			    else:
+			    	ret['msg']="You entered too many critical points."
+		 	else:
+				for i in range(len(explist)):
+					errorcnt=0
+					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
+						matching = False
+						errorcnt+=1
+					if errorcnt != 0:
+						ret['msg']= "You have %d errors in your answer." % errorcnt
+				ret['ok']=matching
+		except:
+		    ret['msg']="Your answer should only involve decimal numbers."
+	return ret
+  
+</script>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Linear System 1" linenum="158" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Consider the augmented matrix </p>
+              <table id="a0000000013" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc:c} 0 &amp;  1 &amp;  2 &amp;  -1 \\ 3 &amp;  0 &amp;  -3 &amp;  3 \\ 2 &amp;  2 &amp;  5 &amp;  3\\ 0 &amp;  -2 &amp;  1 &amp;  7\end{array} \right].[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+Note that the coefficient matrix is the same as the matrix [mathjaxinline]A[/mathjaxinline] from the previous question. </p>
+              <p>
+Applying the row-reduction algorithm to this augmented matrix, what can we conclude about the system? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="true" name="1">
+                      <text> The system is consistent and has a unique solution</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> The system is consistent but has more than one solution</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> The system is inconsistent</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+      </sequential>
+      <sequential display_name="Vectors" linenum="153" tex_filename="testcourse.tex" refnum="3" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1vectors-sequential">
+        <vertical display_name="Wait for it" refnum="1" url_name="b1vectors-vertical1">
+          <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1vectors-tab1-text1">
+            <p>
+Coming soon! </p>
+          </html>
+        </vertical>
+      </sequential>
+      <sequential display_name="Linear Combinations and Span" linenum="188" tex_filename="testcourse.tex" refnum="4" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1lincombos-sequential">
+        <vertical display_name="Wait for it" refnum="1" url_name="b1lincombos-vertical1">
+          <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1lincombos-tab1-text1">
+            <p>
+Coming soon! </p>
+          </html>
+        </vertical>
+      </sequential>
+      <sequential display_name="Matrix-Vector Multiplication" linenum="221" tex_filename="testcourse.tex" refnum="5" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1matrixvector-sequential">
+        <vertical display_name="Wait for it" refnum="1" url_name="b1matrixvector-vertical1">
+          <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1matrixvector-tab1-text1">
+            <p>
+Coming soon! </p>
+          </html>
+        </vertical>
+      </sequential>
+      <sequential display_name="Linear Independence" linenum="250" tex_filename="testcourse.tex" refnum="6" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">
+        <vertical display_name="Wait for it" refnum="1" url_name="b1linind-vertical1">
+          <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1linind-tab1-text1">
+            <p>
+Coming soon! </p>
+          </html>
+        </vertical>
+      </sequential>
+      <sequential display_name="Linear Transformations" linenum="283" tex_filename="testcourse.tex" refnum="7" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1lintrans-sequential">
+        <vertical display_name="Wait for it" refnum="1" url_name="b1lintrans-vertical1">
+          <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1lintrans-tab1-text1">
+            <p>
+Coming soon! </p>
+          </html>
+        </vertical>
+      </sequential>
+      <sequential display_name="Into and Onto" linenum="314" tex_filename="testcourse.tex" refnum="8" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
+        <vertical display_name="Wait for it" refnum="1" url_name="b1intoonto-vertical1">
+          <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1intoonto-tab1-text1">
+            <p>
+Coming soon! </p>
+          </html>
+        </vertical>
+      </sequential>
+    </chapter>
+  </course>
+</xbundle>

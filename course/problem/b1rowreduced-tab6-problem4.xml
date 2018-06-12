@@ -1,0 +1,17 @@
+<problem display_name="Free Variables" linenum="255" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+If a system of linear equations has free variables when row-reduced, is it possible for the system to be inconsistent? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -1,7 +1,7 @@
-<problem display_name="Vector entry" linenum="37" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/vectors.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Vector entry" linenum="37" tex_filename="./block1/vectors.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-Let [mathjaxinline]v = \left(\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right)[/mathjaxinline] and let [mathjaxinline]w = \left(\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right).[/mathjaxinline] </p>
+Let [mathjaxinline]v = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and let [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right].[/mathjaxinline] </p>
     <p>
 What is [mathjaxinline]v+w[/mathjaxinline]? To enter a vector, type... </p>
     <p>
