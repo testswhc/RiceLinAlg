@@ -1,10 +1,10 @@
-<html display_name="Preliminaries" linenum="5" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/vectors.tex">
+<html display_name="Preliminaries" linenum="5" tex_filename="./block1/vectors.tex">
   <p>
 At the end of this sequence, and after some practice, you should be able to: </p>
   <ul class="itemize">
     <li>
       <p>
-Compute elementary vector operations. </p>
+Compute elementary vector operations in [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p>
     </li>
     <li>
       <p>
