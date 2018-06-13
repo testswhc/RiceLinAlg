@@ -1,4 +1,4 @@
-<problem display_name="Where does it live?" linenum="68" tex_filename="./block1/vectors.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Where does it live?" linenum="74" tex_filename="./block1/vectors.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 The vector [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] is an element of which of the following vector spaces? Click all that apply. </p>

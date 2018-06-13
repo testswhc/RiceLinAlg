@@ -1102,15 +1102,294 @@ If a matrix has integer entries, will the entries stay integers when you row-red
 A <span style="color:#99182C"><b class="bf">field</b></span> is, essentially, a set in which one can add, subtract, multiply, and divide any two elements (other than dividing by zero). The formal definition is below. </p>
             <p>
 The field that we will most commonly use in this course is the set of real numbers [mathjaxinline]\mathbb R[/mathjaxinline]. Other fields include the set of complex numbers [mathjaxinline]\mathbb C[/mathjaxinline], the set of rational numbers [mathjaxinline]\mathbb Q[/mathjaxinline], and the integers modulo a prime [mathjaxinline]p[/mathjaxinline]. </p>
+            <p>
+              <div class="hideshowbox">
+                <h4 onclick="hideshow(this);" style="margin: 0px">Formal Definition of a Field<span class="icon-caret-down toggleimage"/></h4>
+                <div class="hideshowcontent">
+                  <p>
+A field is a set [mathjaxinline]F[/mathjaxinline] together with binary operations [mathjaxinline]+, \cdot[/mathjaxinline] on [mathjaxinline]F[/mathjaxinline] which satisfy the following conditions: </p>
+                  <ul class="itemize">
+                    <li>
+                      <p>
+Addition is associative and commutative; that is, for all [mathjaxinline]a,b,c \in F[/mathjaxinline], we have [mathjaxinline]a+(b+c) = (a+b)+c[/mathjaxinline] and [mathjaxinline]a+b = b+a[/mathjaxinline]. </p>
+                    </li>
+                    <li>
+                      <p>
+There is an element [mathjaxinline]0 \in F[/mathjaxinline] such that [mathjaxinline]a+0 = a[/mathjaxinline] for all [mathjaxinline]a \in F[/mathjaxinline]. </p>
+                    </li>
+                    <li>
+                      <p>
+For every [mathjaxinline]a\in F[/mathjaxinline], there is an element [mathjaxinline]-a \in F[/mathjaxinline] such that [mathjaxinline]-a + a = 0[/mathjaxinline]. </p>
+                    </li>
+                    <li>
+                      <p>
+Multiplication is associative and commutative; that is, for all [mathjaxinline]a,b,c \in F[/mathjaxinline], we have [mathjaxinline]a(bc) = (ab)c[/mathjaxinline] and [mathjaxinline]ab = ba[/mathjaxinline]. </p>
+                    </li>
+                    <li>
+                      <p>
+There is a non-zero element [mathjaxinline]1 \in F[/mathjaxinline] such that [mathjaxinline]1a = a[/mathjaxinline] for all [mathjaxinline]a \in F[/mathjaxinline]. </p>
+                    </li>
+                    <li>
+                      <p>
+For every non-zero [mathjaxinline]a\in F[/mathjaxinline], there is an element [mathjaxinline]a^{-1}[/mathjaxinline] such that [mathjaxinline]a^{-1}a = 1[/mathjaxinline]. </p>
+                    </li>
+                    <li>
+                      <p>
+Multiplication distributes over addition; that is, for all [mathjaxinline]a,b,c \in F[/mathjaxinline], [mathjaxinline]a(b+c) = ab + ac[/mathjaxinline]. </p>
+                    </li>
+                  </ul>
+                </div>
+                <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                  <a href="javascript: {return false;}">Show</a>
+                </p>
+              </div>
+            </p>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </html>
         </vertical>
       </sequential>
       <sequential display_name="Vectors" linenum="153" tex_filename="testcourse.tex" refnum="3" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1vectors-sequential">
-        <vertical display_name="Wait for it" refnum="1" url_name="b1vectors-vertical1">
-          <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1vectors-tab1-text1">
+        <vertical display_name="Page One" refnum="1" url_name="b1vectors-vertical1">
+          <html display_name="Preliminaries" linenum="5" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab1-text1">
             <p>
-Coming soon! </p>
+At the end of this sequence, and after some practice, you should be able to: </p>
+            <ul class="itemize">
+              <li>
+                <p>
+Compute elementary vector operations in [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p>
+              </li>
+              <li>
+                <p>
+Describe the geometry of vector operations. </p>
+              </li>
+            </ul>
+            <p>
+For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
           </html>
+        </vertical>
+        <vertical display_name="The Template Vector Space" refnum="2" url_name="b1vectors-vertical2">
+          <video display_name="R^n" youtube_id_1_0="3QM3Lg15Hi8" url_name="b1vectors-tab2-video1"/>
+          <problem display_name="Vector entry" linenum="37" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab2-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]v = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and let [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right].[/mathjaxinline] </p>
+              <p>
+What is [mathjaxinline]v+w[/mathjaxinline]? </p>
+              <p>
+To enter a vector, type... (instructions forthcoming) </p>
+              <script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def MatrixGrader(expect, ans):
+	tolerance = 0.01
+	ret={'ok':False}
+	ans.replace(' ','')
+	nums = ans.split(',')
+	expnums = expect.split(',')
+	if (expect == 'None') or (expect =='none'):
+		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
+	elif (nums[0] == "none") or (nums[0] == "None"):
+	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
+	else:
+		try:
+			expnum=[float(i) for i in expnums]
+			ansnum=[float(i) for i in nums]
+			explist = sorted(expnum, key=float)
+			anslist = sorted(ansnum, key=float) 
+			matching = True
+			if len(explist)!=len(anslist):
+			    if len(anslist)&lt;len(explist):
+			    	ret['msg']="You did not enter enough critical points."
+			    else:
+			    	ret['msg']="You entered too many critical points."
+		 	else:
+				for i in range(len(explist)):
+					errorcnt=0
+					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
+						matching = False
+						errorcnt+=1
+					if errorcnt != 0:
+						ret['msg']= "You have %d errors in your answer." % errorcnt
+				ret['ok']=matching
+		except:
+		    ret['msg']="Your answer should only involve decimal numbers."
+	return ret
+  
+</script>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+What is [mathjaxinline]-3v[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+What is [mathjaxinline]2w-3v[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Where does it live?" linenum="74" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab2-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+The vector [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] is an element of which of the following vector spaces? Click all that apply. </p>
+              <p>
+                <choiceresponse>
+                  <checkboxgroup>
+                    <choice correct="false" name="1">
+                      <text>[mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text>[mathjaxinline]\mathbb R^3[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="true" name="3">
+                      <text>[mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="4">
+                      <text>[mathjaxinline]\mathbb R^5[/mathjaxinline]</text>
+                    </choice>
+                  </checkboxgroup>
+                </choiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Points and Arrows" refnum="3" url_name="b1vectors-vertical3">
+          <html display_name="R^n" linenum="96" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab3-text1">
+            <p>
+For a non-negative integer [mathjaxinline]n[/mathjaxinline], [mathjaxinline]\mathbb R^ n[/mathjaxinline] is defined to be the set </p>
+            <table id="a0000000020" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <tr>
+                <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left\{ \left[\begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right] \  : \  a_1, a_2, \ldots a_ n \in \mathbb R\right\} .[/mathjax]</td>
+                <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+              </tr>
+            </table>
+            <p>
+ With addition and scalar multiplication as defined previously, [mathjaxinline]\mathbb R^ n[/mathjaxinline] is an example of a vector space over the field [mathjaxinline]\mathbb R[/mathjaxinline]. </p>
+          </html>
+          <html display_name="Notes on Notation" linenum="112" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab3-text2">
+            <p>
+The vector [mathjaxinline]\left[\begin{array}{c} 0 \\ 0 \\ \vdots \\ 0 \end{array} \right] \in \mathbb R^ n[/mathjaxinline] is called the <span style="color:#99182C"><b class="bf">zero vector</b></span>. (In fact, every vector space, not just [mathjaxinline]\mathbb R^ n[/mathjaxinline], has a zero vector.) </p>
+            <p>
+To distinguish it from the scalar 0, in print we will denote the zero vector by [mathjaxinline]\mathbf{0}[/mathjaxinline]. When handwritten, we will usually write the zero vector as a zero with an arrow over it, like [mathjaxinline]\vec{0}[/mathjaxinline]. Other letters that represent vectors will not have the arrow notation, however; we will typically use letters like [mathjaxinline]u,v,w,x[/mathjaxinline] for vectors, while letters like [mathjaxinline]a,b,c[/mathjaxinline] will represent scalars. </p>
+            <p>
+Be careful! The zero vector in the space [mathjaxinline]\mathbb R^3[/mathjaxinline] is [mathjaxinline]\mathbf{0}= \left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right],[/mathjaxinline] whereas the zero vector in the space [mathjaxinline]\mathbb R^4[/mathjaxinline] is [mathjaxinline]\mathbf{0}= \left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array} \right].[/mathjaxinline] Even though we use the same symbol, these are different objects! One has to judge from context which space any given [mathjaxinline]\mathbf{0}[/mathjaxinline] lies in. </p>
+          </html>
+          <video display_name="Geometry of R^n" youtube_id_1_0="4P4qoU2s1Rs" url_name="b1vectors-tab3-video1"/>
+          <problem display_name="Picture Problem" linenum="140" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab3-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+Vectors [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] are given. </p>
+              <center>
+                <img src="/static/images/c1s3vectoraddsubtract.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+              </center>
+              <p>
+Which vector is equal to [mathjaxinline]v+w[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('a','b','c','d','e','f','g','h')" correct="g"/>
+                </optionresponse>
+              </p>
+              <p>
+Which vector is equal to [mathjaxinline]v-w[/mathjaxinline]? </p>
+              <p><optionresponse><optioninput options="('a','b','c','d','e','f','g','h')" correct="a"/></optionresponse> Which vector is equal to [mathjaxinline]w-v[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('a','b','c','d','e','f','g','h')" correct="d"/>
+                </optionresponse>
+              </p>
+              <p>
+Which vector is equal to [mathjaxinline]-v[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('a','b','c','d','e','f','g','h')" correct="c"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Beyond R^n" refnum="4" url_name="b1vectors-vertical4">
+          <video display_name="Other Vector Spaces" youtube_id_1_0="P0vitfigkm4" url_name="b1vectors-tab4-video1"/>
+        </vertical>
+        <vertical display_name="Vector Spaces" refnum="5" url_name="b1vectors-vertical5">
+          <html display_name="Vector Spaces" linenum="181" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab5-text1">
+            <p>
+A <span style="color:#99182C"><b class="bf">vector space</b></span> over a field [mathjaxinline]F[/mathjaxinline] is, essentially, a set [mathjaxinline]V[/mathjaxinline] in which one can do vector addition and scalar multiplication. For a more formal definition, see below. </p>
+            <p>
+A vector space [mathjaxinline]V[/mathjaxinline] over a field [mathjaxinline]F[/mathjaxinline] is a set, together with an addition operation on [mathjaxinline]V[/mathjaxinline] and a scalar multiplication of elements of [mathjaxinline]F[/mathjaxinline] on elements of [mathjaxinline]V[/mathjaxinline], that satisfies the following conditions: </p>
+            <ul class="itemize">
+              <li>
+                <p>
+Addition in [mathjaxinline]V[/mathjaxinline] is associative and commutative; that is, for all [mathjaxinline]u,v,w \in V[/mathjaxinline], we have [mathjaxinline]u+(v+w) = (u+v)+w[/mathjaxinline] and [mathjaxinline]u+v = v+u[/mathjaxinline]. </p>
+              </li>
+              <li>
+                <p>
+There is an element [mathjaxinline]\mathbf{0}\in V[/mathjaxinline] such that [mathjaxinline]v+\mathbf{0}= v[/mathjaxinline] for all [mathjaxinline]v \in V[/mathjaxinline]. </p>
+              </li>
+              <li>
+                <p>
+For every [mathjaxinline]v\in V[/mathjaxinline], there is an element [mathjaxinline]-v \in V[/mathjaxinline] such that [mathjaxinline]-v + v = \mathbf{0}[/mathjaxinline]. </p>
+              </li>
+              <li>
+                <p>
+[mathjaxinline]1v = v[/mathjaxinline] for all [mathjaxinline]v \in V[/mathjaxinline]. </p>
+              </li>
+              <li>
+                <p>
+Scalar multiplication distributes over addition; that is, for all [mathjaxinline]a \in F[/mathjaxinline] and [mathjaxinline]u,v \in V[/mathjaxinline], , [mathjaxinline]a(u+v) = au + av[/mathjaxinline]. </p>
+              </li>
+              <li>
+                <p>
+Scalar addition distributes as well; that is, for all [mathjaxinline]a,b \in F[/mathjaxinline] and [mathjaxinline]v \in V[/mathjaxinline], , [mathjaxinline](a+b)v = av + bv[/mathjaxinline]. </p>
+              </li>
+              <li>
+                <p>
+For all [mathjaxinline]a,b \in F[/mathjaxinline], and [mathjaxinline]v\in V[/mathjaxinline], we have [mathjaxinline]a(bv) = (ab)v[/mathjaxinline]. </p>
+              </li>
+            </ul>
+          </html>
+          <problem display_name="Vector Spaces" linenum="212" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab5-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+True or False: The only vector spaces over the scalar field [mathjaxinline]\mathbb R[/mathjaxinline] are the spaces [mathjaxinline]\mathbb R^ n[/mathjaxinline] for [mathjaxinline]n&gt; 0[/mathjaxinline]. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('True','False')" correct="False"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
         </vertical>
       </sequential>
       <sequential display_name="Linear Combinations and Span" linenum="188" tex_filename="testcourse.tex" refnum="4" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1lincombos-sequential">

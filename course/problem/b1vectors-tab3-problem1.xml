@@ -1,4 +1,4 @@
-<problem display_name="Picture Problem" linenum="134" tex_filename="./block1/vectors.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Picture Problem" linenum="140" tex_filename="./block1/vectors.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Vectors [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] are given. </p>
@@ -9,28 +9,22 @@ Vectors [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] ar
 Which vector is equal to [mathjaxinline]v+w[/mathjaxinline]? </p>
     <p>
       <optionresponse>
-        <optioninput options="('A','B','C')" correct="B"/>
+        <optioninput options="('a','b','c','d','e','f','g','h')" correct="g"/>
       </optionresponse>
     </p>
     <p>
 Which vector is equal to [mathjaxinline]v-w[/mathjaxinline]? </p>
+    <p><optionresponse><optioninput options="('a','b','c','d','e','f','g','h')" correct="a"/></optionresponse> Which vector is equal to [mathjaxinline]w-v[/mathjaxinline]? </p>
     <p>
       <optionresponse>
-        <optioninput options="('A','B','C')" correct="B"/>
-      </optionresponse>
-    </p>
-    <p>
-Which vector is equal to [mathjaxinline]w-v[/mathjaxinline]? </p>
-    <p>
-      <optionresponse>
-        <optioninput options="('A','B','C')" correct="B"/>
+        <optioninput options="('a','b','c','d','e','f','g','h')" correct="d"/>
       </optionresponse>
     </p>
     <p>
 Which vector is equal to [mathjaxinline]-v[/mathjaxinline]? </p>
     <p>
       <optionresponse>
-        <optioninput options="('A','B','C','D')" correct="B"/>
+        <optioninput options="('a','b','c','d','e','f','g','h')" correct="c"/>
       </optionresponse>
     </p>
     <p>

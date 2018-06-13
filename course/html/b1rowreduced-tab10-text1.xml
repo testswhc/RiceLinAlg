@@ -3,4 +3,48 @@
 A <span style="color:#99182C"><b class="bf">field</b></span> is, essentially, a set in which one can add, subtract, multiply, and divide any two elements (other than dividing by zero). The formal definition is below. </p>
   <p>
 The field that we will most commonly use in this course is the set of real numbers [mathjaxinline]\mathbb R[/mathjaxinline]. Other fields include the set of complex numbers [mathjaxinline]\mathbb C[/mathjaxinline], the set of rational numbers [mathjaxinline]\mathbb Q[/mathjaxinline], and the integers modulo a prime [mathjaxinline]p[/mathjaxinline]. </p>
+  <p>
+    <div class="hideshowbox">
+      <h4 onclick="hideshow(this);" style="margin: 0px">Formal Definition of a Field<span class="icon-caret-down toggleimage"/></h4>
+      <div class="hideshowcontent">
+        <p>
+A field is a set [mathjaxinline]F[/mathjaxinline] together with binary operations [mathjaxinline]+, \cdot[/mathjaxinline] on [mathjaxinline]F[/mathjaxinline] which satisfy the following conditions: </p>
+        <ul class="itemize">
+          <li>
+            <p>
+Addition is associative and commutative; that is, for all [mathjaxinline]a,b,c \in F[/mathjaxinline], we have [mathjaxinline]a+(b+c) = (a+b)+c[/mathjaxinline] and [mathjaxinline]a+b = b+a[/mathjaxinline]. </p>
+          </li>
+          <li>
+            <p>
+There is an element [mathjaxinline]0 \in F[/mathjaxinline] such that [mathjaxinline]a+0 = a[/mathjaxinline] for all [mathjaxinline]a \in F[/mathjaxinline]. </p>
+          </li>
+          <li>
+            <p>
+For every [mathjaxinline]a\in F[/mathjaxinline], there is an element [mathjaxinline]-a \in F[/mathjaxinline] such that [mathjaxinline]-a + a = 0[/mathjaxinline]. </p>
+          </li>
+          <li>
+            <p>
+Multiplication is associative and commutative; that is, for all [mathjaxinline]a,b,c \in F[/mathjaxinline], we have [mathjaxinline]a(bc) = (ab)c[/mathjaxinline] and [mathjaxinline]ab = ba[/mathjaxinline]. </p>
+          </li>
+          <li>
+            <p>
+There is a non-zero element [mathjaxinline]1 \in F[/mathjaxinline] such that [mathjaxinline]1a = a[/mathjaxinline] for all [mathjaxinline]a \in F[/mathjaxinline]. </p>
+          </li>
+          <li>
+            <p>
+For every non-zero [mathjaxinline]a\in F[/mathjaxinline], there is an element [mathjaxinline]a^{-1}[/mathjaxinline] such that [mathjaxinline]a^{-1}a = 1[/mathjaxinline]. </p>
+          </li>
+          <li>
+            <p>
+Multiplication distributes over addition; that is, for all [mathjaxinline]a,b,c \in F[/mathjaxinline], [mathjaxinline]a(b+c) = ab + ac[/mathjaxinline]. </p>
+          </li>
+        </ul>
+      </div>
+      <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+        <a href="javascript: {return false;}">Show</a>
+      </p>
+    </div>
+  </p>
+  <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+  <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
 </html>
