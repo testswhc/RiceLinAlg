@@ -1,4 +1,4 @@
-<problem display_name="System Consistency?" linenum="116" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/linearequations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="System Consistency?" linenum="120" tex_filename="./block1/linearequations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Note the last row in your result, and think about what equation it represents. Is the system consistent? If so, does it have a unique solution? </p>
@@ -20,7 +20,10 @@ Note the last row in your result, and think about what equation it represents. I
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ Test test test  </p>
+        </font>
       </solution>
     </p>
   </text>

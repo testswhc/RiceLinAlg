@@ -1,4 +1,4 @@
-<problem display_name="Matrix entry" linenum="38" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/linearequations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Matrix entry" linenum="39" tex_filename="./block1/linearequations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Consider the following system of linear equations: </p>
@@ -32,10 +32,52 @@ Consider the following system of linear equations: </p>
         <td style="width:20%; border:none" class="eqnnum"/>
       </tr>
     </table>
+    <script linenum="1" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixGrader(expect, ans):
+	tolerance = 0.01
+	ret={'ok':False}
+	ans.replace(' ','')
+	nums = ans.split(',')
+	expnums = expect.split(',')
+	if (expect == 'None') or (expect =='none'):
+		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
+	elif (nums[0] == "none") or (nums[0] == "None"):
+	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
+	else:
+		try:
+			expnum=[float(i) for i in expnums]
+			ansnum=[float(i) for i in nums]
+			explist = sorted(expnum, key=float)
+			anslist = sorted(ansnum, key=float) 
+			matching = True
+			if len(explist)!=len(anslist):
+			    if len(anslist)&lt;len(explist):
+			    	ret['msg']="You did not enter enough critical points."
+			    else:
+			    	ret['msg']="You entered too many critical points."
+		 	else:
+				for i in range(len(explist)):
+					errorcnt=0
+					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
+						matching = False
+						errorcnt+=1
+					if errorcnt != 0:
+						ret['msg']= "You have %d errors in your answer." % errorcnt
+				ret['ok']=matching
+		except:
+		    ret['msg']="Your answer should only involve decimal numbers."
+	return ret
+  
+</script>
     <p>
 Enter the coefficient matrix for the above system. </p>
     <p>
 To enter a matrix, type... </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Placeholder')" correct="Placeholder"/>
+      </optionresponse>
+    </p>
     <p>
 Enter the augmented matrix for the above system. </p>
     <p>

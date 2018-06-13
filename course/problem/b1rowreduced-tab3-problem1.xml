@@ -1,7 +1,7 @@
-<problem display_name="RREF or not?" linenum="58" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="RREF or not?" linenum="58" tex_filename="./block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
-Which of the following matrices are in RREF? </p>
+Which of the following matrices are in RREF? Click all that apply. </p>
     <p>
       <choiceresponse>
         <checkboxgroup>

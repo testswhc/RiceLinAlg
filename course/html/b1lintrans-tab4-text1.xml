@@ -1,4 +1,4 @@
-<html display_name="Definition of Linear Transformation" linenum="74" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/lineartransformations.tex">
+<html display_name="Definition of Linear Transformation" linenum="74" tex_filename="./block1/lineartransformations.tex">
   <p>
 Let [mathjaxinline]{\bf {F}}[/mathjaxinline] be a field. A function [mathjaxinline]T: {\bf {F}}^ n \rightarrow {\bf {F}}^ m[/mathjaxinline] is a <span style="color:#99182C"><b class="bf">linear transformation</b></span> if both of the following properties hold: </p>
   <ul class="itemize">

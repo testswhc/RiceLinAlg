@@ -1,4 +1,4 @@
-<problem display_name="Real Numbers" linenum="358" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Real Numbers" linenum="398" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 If a matrix has real number entries, will the entries stay real numbers when you row-reduce it? </p>
