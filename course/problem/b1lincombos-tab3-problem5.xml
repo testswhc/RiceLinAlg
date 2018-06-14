@@ -1,20 +1,42 @@
-<problem display_name="Linear Combo 5" linenum="126" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Linear Combo 5" linenum="130" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-Let [mathjaxinline]f[/mathjaxinline] denote the polynomial [mathjaxinline]x^3 + 1[/mathjaxinline], and let [mathjaxinline]g[/mathjaxinline] denote the polynomial [mathjaxinline]x^2 - x[/mathjaxinline]. Recall that the set of polynomials is a vector space over [mathjaxinline]\mathbb R[/mathjaxinline], so [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] are vectors in that vector space. </p>
+Let [mathjaxinline]f[/mathjaxinline] denote the polynomial [mathjaxinline]t^3 + 1[/mathjaxinline], and let [mathjaxinline]g[/mathjaxinline] denote the polynomial [mathjaxinline]t^2 - t[/mathjaxinline]. Recall that the set of polynomials is a vector space over [mathjaxinline]\mathbb R[/mathjaxinline], so [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] are vectors in that vector space. </p>
     <p>
-Let [mathjaxinline]h[/mathjaxinline] denote [mathjaxinline]17x^3 + 2x^2 - 2x + 17[/mathjaxinline]. Can you write [mathjaxinline]h[/mathjaxinline] as a linear combination [mathjaxinline]h = a_1 f + a_2 g[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p>
+Let [mathjaxinline]h[/mathjaxinline] denote [mathjaxinline]17t^3 + 2t^2 - 2t + 17[/mathjaxinline]. Can you write [mathjaxinline]h[/mathjaxinline] as a linear combination [mathjaxinline]h = a_1 f + a_2 g[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <p style="display:inline">[mathjaxinline]a_1=[/mathjaxinline] </p>
+      <formularesponse inline="1" type="cs" samples="No@1:5#5" answer="17">
+        <formulaequationinput inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+      <br/>
+      <p style="display:inline">[mathjaxinline]a_2=[/mathjaxinline] </p>
+      <formularesponse inline="1" type="cs" samples="No@1:5#5" answer="2">
+        <formulaequationinput inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+      <br/>
     </p>
     <p>
-Let [mathjaxinline]h[/mathjaxinline] denote [mathjaxinline]3x^4 + 3x[/mathjaxinline]. Can you write [mathjaxinline]h[/mathjaxinline] as a linear combination [mathjaxinline]h = a_1 f + a_2 g[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p>
+Let [mathjaxinline]h[/mathjaxinline] denote [mathjaxinline]3t^4 + 3t[/mathjaxinline]. Can you write [mathjaxinline]h[/mathjaxinline] as a linear combination [mathjaxinline]h = a_1 f + a_2 g[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <p style="display:inline">[mathjaxinline]a_1=[/mathjaxinline] </p>
+      <formularesponse inline="1" type="cs" samples="No@1:5#5" answer="No">
+        <formulaequationinput inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+      <br/>
+      <p style="display:inline">[mathjaxinline]a_2=[/mathjaxinline] </p>
+      <formularesponse inline="1" type="cs" samples="No@1:5#5" answer="No">
+        <formulaequationinput inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+      <br/>
     </p>
     <p>
       <solution>

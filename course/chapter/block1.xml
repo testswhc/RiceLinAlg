@@ -96,8 +96,37 @@
     </vertical>
   </sequential>
   <sequential display_name="Linear Combinations and Span" linenum="188" tex_filename="testcourse.tex" refnum="4" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1lincombos-sequential">
-    <vertical display_name="Wait for it" refnum="1" url_name="b1lincombos-vertical1">
+    <vertical display_name="Page One" refnum="1" url_name="b1lincombos-vertical1">
       <html url_name="b1lincombos-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Introduction to Linear Combinations" refnum="2" url_name="b1lincombos-vertical2">
+      <video url_name="b1lincombos-tab2-video1"/>
+      <html url_name="b1lincombos-tab2-text1"/>
+    </vertical>
+    <vertical display_name="Linear Combinations" refnum="3" url_name="b1lincombos-vertical3">
+      <problem url_name="b1lincombos-tab3-problem1"/>
+      <problem url_name="b1lincombos-tab3-problem2"/>
+      <problem url_name="b1lincombos-tab3-problem3"/>
+      <problem url_name="b1lincombos-tab3-problem4"/>
+      <problem url_name="b1lincombos-tab3-problem5"/>
+    </vertical>
+    <vertical display_name="Is it a linear combination?" refnum="4" url_name="b1lincombos-vertical4">
+      <video url_name="b1lincombos-tab4-video1"/>
+      <problem url_name="b1lincombos-tab4-problem1"/>
+    </vertical>
+    <vertical display_name="Span as Noun" refnum="5" url_name="b1lincombos-vertical5">
+      <video url_name="b1lincombos-tab5-video1"/>
+    </vertical>
+    <vertical display_name="Span Questions" refnum="6" url_name="b1lincombos-vertical6">
+      <html url_name="b1lincombos-tab6-text1"/>
+      <problem url_name="b1lincombos-tab6-problem1"/>
+      <problem url_name="b1lincombos-tab6-problem2"/>
+    </vertical>
+    <vertical display_name="Span as Verb" refnum="7" url_name="b1lincombos-vertical7">
+      <video url_name="b1lincombos-tab7-video1"/>
+      <html url_name="b1lincombos-tab7-text1"/>
+      <html url_name="b1lincombos-tab7-text2"/>
+      <problem url_name="b1lincombos-tab7-problem1"/>
     </vertical>
   </sequential>
   <sequential display_name="Matrix-Vector Multiplication" linenum="221" tex_filename="testcourse.tex" refnum="5" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1matrixvector-sequential">
