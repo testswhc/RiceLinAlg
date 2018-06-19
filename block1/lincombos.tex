@@ -12,7 +12,7 @@ At the end of this sequence, and after some practice, you should be able to:
 
 \begin{itemize}
 \item Describe the span of some lists of vectors.
-\item Determine whether a list of vectors in $\R^m$ spans $\R^m$.  
+\item Determine whether a list of vectors in $\Re^m$ spans $\Re^m$.  
 \end{itemize}
 
 
@@ -29,7 +29,7 @@ plus some questions.
 
 \beginedxvertical{Introduction to Linear Combinations}
 
-\doedxvideo{Linear Combinations}{???}
+\doedxvideo{Linear Combinations}{uupJBrWff-c}
 
 \beginedxtext{Definition of Linear Combination}
 
@@ -51,13 +51,14 @@ in $V$ is a vector of the form $a_1v_1 + a_2v_2 + \ldots + a_n v_n$, where the $
 
 
 Let $v_1 = \left[\begin{array}{c} 2 \\ 3  \\ 4 \end{array} \right]$ and  
-$v_2 = \left[\begin{array}{c} 1 \\ -1  \\ 0 \end{array} \right]$ be vectors in $\R^3$.
+$v_2 = \left[\begin{array}{c} 1 \\ -1  \\ 0 \end{array} \right]$ be vectors in $\Re^3$.
 
 Can you write the vector $x  = \left[\begin{array}{c} -4 \\ -6  \\ -8 \end{array} \right]$
 as a linear combination $x = a_1 v_1 + a_2 v_2$?  If so, enter possible values for $a_1$ and
 $a_2$.  If not, enter No in both boxes.  
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+\edXinline{$a_1= $ }\edXabox{type="formula" expect="-2" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
+\edXinline{$a_2= $ }\edXabox{type="formula" expect="0" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
 
 
 \edXsolution{ 
@@ -70,13 +71,15 @@ $a_2$.  If not, enter No in both boxes.
 
 
 Let $v_1 = \left[\begin{array}{c} 2 \\ 3  \\ 4 \end{array} \right]$ and  
-$v_2 = \left[\begin{array}{c} 1 \\ -1  \\ 0 \end{array} \right] $  be vectors in $\R^3$.
+$v_2 = \left[\begin{array}{c} 1 \\ -1  \\ 0 \end{array} \right] $  be vectors in $\Re^3$.
 
-Can you write the zero vector in $\R^3$
-as a linear combination $\veco = a_1 v_1 + a_2 v_2$?  If so, enter possible values for $a_1$ and
+Can you write the zero vector in $\Re^3$
+as a linear combination $\vec0 = a_1 v_1 + a_2 v_2$?  If so, enter possible values for $a_1$ and
 $a_2$.  If not, enter No in both boxes.  
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+\edXinline{$a_1= $ }\edXabox{type="formula" expect="0" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
+\edXinline{$a_2= $ }\edXabox{type="formula" expect="0" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
+
 
 
 \edXsolution{ 
@@ -90,7 +93,7 @@ $a_2$.  If not, enter No in both boxes.
 
 
 Let $v_1 = \left[\begin{array}{c} 2 \\ 3  \\ 4 \end{array} \right]$ and  
-$v_2 = \left[\begin{array}{c} 1 \\ -1  \\ 0 \end{array} \right]$  be vectors in $\R^3$.
+$v_2 = \left[\begin{array}{c} 1 \\ -1  \\ 0 \end{array} \right]$  be vectors in $\Re^3$.
 
 Can you write $v_2$
 as a linear combination of $v_1$?   
@@ -108,14 +111,15 @@ as a linear combination of $v_1$?
 \beginedxproblem{Linear Combo 4}{\dpa1}
 
 \begin{center}
-\includesvg[300]{placeholder}   
+\includesvg[300]{c1s4lincombo}   
 \end{center}
 
-Given the picture above in $\R^2$, 
+Given the picture above in $\Re^2$, 
 can you write $w$ as a linear combination $w = a_1 v_1 + a_2 v_2$?  If so, enter possible values for $a_1$ and
 $a_2$.  If not, enter No in both boxes.  
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+\edXinline{$a_1= $ }\edXabox{type="formula" expect="2" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
+\edXinline{$a_2= $ }\edXabox{type="formula" expect="-1" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
 
 
 \edXsolution{ 
@@ -126,21 +130,25 @@ $a_2$.  If not, enter No in both boxes.
 \beginedxproblem{Linear Combo 5}{\dpa1}
 
 
-Let $f$ denote the polynomial $x^3  + 1$, and let $g$ denote the
-polynomial $x^2 - x$.  Recall that the set of polynomials is a vector space over $\R$, so $f$ and $g$
+Let $f$ denote the polynomial $t^3  + 1$, and let $g$ denote the
+polynomial $t^2 - t$.  Recall that the set of polynomials is a vector space over $\Re$, so $f$ and $g$
 are vectors in that vector space.  
 
-Let $h$ denote $17x^3 + 2x^2 - 2x + 17$.
+Let $h$ denote $17t^3 + 2t^2 - 2t + 17$.
 Can you write $h$  as a linear combination $h = a_1 f + a_2 g$?  If so, enter possible values for $a_1$ and
 $a_2$.  If not, enter No in both boxes.  
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+\edXinline{$a_1= $ }\edXabox{type="formula" expect="17" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
+\edXinline{$a_2= $ }\edXabox{type="formula" expect="2" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
 
-Let $h$ denote $3x^4 + 3x$.
+
+Let $h$ denote $3t^4 + 3t$.
 Can you write $h$  as a linear combination $h = a_1 f + a_2 g$?  If so, enter possible values for $a_1$ and
 $a_2$.  If not, enter No in both boxes.  
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+\edXinline{$a_1= $ }\edXabox{type="formula" expect="No" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
+\edXinline{$a_2= $ }\edXabox{type="formula" expect="No" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
+
 
 \edXsolution{ 
 }
@@ -170,21 +178,23 @@ $a_2$.  If not, enter No in both boxes.
 
 
 
-\doedxvideo{Linear Combinations in R^n}{???}
+\doedxvideo{Linear Combinations in $Re^n$}{???}
 
 
 \beginedxproblem{Linear Combo 6}{\dpa1}
 
 
 Let $v_1 = \left[\begin{array}{c} 1 \\ 3  \\ 1 \end{array} \right]$ and  
-$v_2 = \left[\begin{array}{c} 3 \\ 10  \\ 2 \end{array} \right]$  be vectors in $\R^3$.
+$v_2 = \left[\begin{array}{c} 3 \\ 10  \\ 2 \end{array} \right]$  be vectors in $\Re^3$.
 
 Use row reduction to determine the answer to the following: 
 Can you write $w = \left[\begin{array}{c} 1 \\ 5 \\ -1 \end{array} \right]$
 as a linear combination $w = a_1 v_1 + a_2 v_2$?  If so, enter possible values for $a_1$ and
 $a_2$.  If not, enter No in both boxes.  
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+
+\edXinline{$a_1= $ }\edXabox{type="formula" expect="-5" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
+\edXinline{$a_2= $ }\edXabox{type="formula" expect="2" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
 
 
 \edXsolution{ 
@@ -199,7 +209,7 @@ $a_2$.  If not, enter No in both boxes.
 \beginedxvertical{Span as Noun}
 
 
-\doedxvideo{Span as a Noun}{???}
+\doedxvideo{Span as a Noun}{BhyIFSpOcRs}
 
 \endedxvertical
 
@@ -213,7 +223,7 @@ the {\keyb{\bf span}} of $\{v_1; v_2; \ldots v_n\}$ to be the set of all linear 
 of  $v_1, v_2, \ldots v_n$.  In other words, 
 \[ \mathrm{Span}\{v_1; v_2; \ldots v_n\} = \{a_1 v_1  + a_2 v_2 + \ldots + a_nv_n  : a_i \in F \}.\]
 
-The span of a list with zero vectors is defined to be $\{\veco\}$.  
+The span of a list with zero vectors is defined to be $\{\vec0\}$.  
 
 % In $\R^m$,...
 
@@ -264,23 +274,86 @@ Is $u \in \mathrm{Span}\{v_1; v_2; v_3; v_4 \}$?
 \beginedxvertical{Span as Verb}
 
 
-\doedxvideo{Span as a Verb}{???}
+\doedxvideo{Span as a Verb}{SNkX6dX7MKo}
 
 
 \beginedxtext{Span (Verb)}
 
 
-In $\R^m$,...
+Given vectors $v_1, v_2, \ldots v_n$ in a vector space $V$ over a field $F$, we say that the list $\{v_1; v_2; \ldots v_n\}$ {\keyb{\bf spans}} $V$ if 
+the span of the list of vectors is all of $V$.
 
-
-\endedxtext
-
-\beginedxtext{Theorem on Spanning in R^m}
-
-
-In $\R^n$,...
 
 
 \endedxtext
+
+\beginedxtext{Spanning in $Re^m$}
+
+If $\{v_1; v_2; \ldots v_n\}$ is a list of vectors in $\Re^m$, the list spans $\Re^m$ if and only if 
+the matrix 
+\[ A = \left[ \begin{array}{cccc} | & | & & | \\ 
+v_1 & v_2 & \cdots & v_n \\
+ | & | & & | \end{array} \right] \]
+ row reduces to have a pivot in every row.  
+ 
+If $n<m$, then it is impossible for the list $\{v_1; v_2; \ldots v_n\}$ to span $\Re^m$.    
+
+\endedxtext
+
+
+\beginedxproblem{Does the list span?}{\dpa3}
+
+
+\begin{itemize}
+\item
+List A: $\left\{ \left[ \begin{array}{c} 1 \\ 7 \end{array} \right] ; 
+\left[ \begin{array}{c} 2 \\ 14  \end{array} \right] ; 
+\left[ \begin{array}{c} -3 \\ -21  \end{array} \right] \right\} $
+
+\item
+List B: $\left\{  \left[ \begin{array}{c} 1 \\ 1 \\ 1 \end{array} \right] ; 
+\left[ \begin{array}{c} 1 \\ 1 \\ 0 \end{array} \right] ;
+\left[ \begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right]  \right\}
+$
+
+\item
+List C: $\left\{  \left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] ; 
+\left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] ;
+\left[ \begin{array}{c} 2 \\ 5 \\ 7 \end{array} \right] ;
+\left[ \begin{array}{c} 2 \\ 1 \\ 0 \end{array} \right] \right\} $
+
+\item
+List D: $\left\{ \left[ \begin{array}{c} 1 \\ 2 \\ 3 \\ 4\end{array} \right] ; 
+\left[ \begin{array}{c} 2 \\ 3 \\ 5 \\ 7\end{array} \right] ; 
+\left[ \begin{array}{c} 12 \\ 23 \\ 35 \\ 58\end{array} \right] \right\} $
+
+
+\item
+List E: $\left\{ \left[ \begin{array}{c} 1 \\ 2 \\ 0 \\ 4\end{array} \right] ; 
+\left[ \begin{array}{c} 2 \\ 13 \\ 0 \\ 7\end{array} \right] ; 
+\left[ \begin{array}{c} 0 \\ 1 \\ 0 \\ -3\end{array} \right] ; 
+\left[ \begin{array}{c} 15 \\ -2 \\ 0 \\ 2\end{array} \right] ; 
+\left[ \begin{array}{c} 5 \\ 3 \\ 0 \\ 11\end{array} \right]  \right\}$
+
+
+
+\item
+List F: $\left\{ \left[ \begin{array}{c} 1 \\ 3 \\ 8 \end{array} \right] ; 
+\left[ \begin{array}{c} 2 \\ 6 \\ 16 \end{array} \right] ;
+\left[ \begin{array}{c} 1 \\ 2 \\ 8 \end{array} \right] ; 
+\left[ \begin{array}{c} 0 \\ 1 \\ 8 \end{array} \right] \right\} $
+\end{itemize}
+
+Given above are six lists of vectors.  {\keyb{\bf Without doing any row reduction}}, you should be able to pick out three lists
+that do not span their respective $\Re^m$ spaces.  Which three?  
+
+
+\edXabox{type="oldmultichoice" expect="A","D","E" options="A","B","C","D","E","F"}
+
+\edXsolution{  }
+
+\endedxproblem
+
+
 
 \endedxvertical
