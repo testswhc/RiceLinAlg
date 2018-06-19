@@ -12,7 +12,7 @@ At the end of this sequence, and after some practice, you should be able to:
 
 \begin{itemize}
 \item Describe the span of some lists of vectors.
-\item Determine whether a list of vectors in $\R^m$ spans $\R^m$.  
+\item Determine whether a list of vectors in $\Re^m$ spans $\Re^m$.  
 \end{itemize}
 
 
@@ -51,7 +51,7 @@ in $V$ is a vector of the form $a_1v_1 + a_2v_2 + \ldots + a_n v_n$, where the $
 
 
 Let $v_1 = \left[\begin{array}{c} 2 \\ 3  \\ 4 \end{array} \right]$ and  
-$v_2 = \left[\begin{array}{c} 1 \\ -1  \\ 0 \end{array} \right]$ be vectors in $\R^3$.
+$v_2 = \left[\begin{array}{c} 1 \\ -1  \\ 0 \end{array} \right]$ be vectors in $\Re^3$.
 
 Can you write the vector $x  = \left[\begin{array}{c} -4 \\ -6  \\ -8 \end{array} \right]$
 as a linear combination $x = a_1 v_1 + a_2 v_2$?  If so, enter possible values for $a_1$ and
@@ -71,10 +71,10 @@ $a_2$.  If not, enter No in both boxes.
 
 
 Let $v_1 = \left[\begin{array}{c} 2 \\ 3  \\ 4 \end{array} \right]$ and  
-$v_2 = \left[\begin{array}{c} 1 \\ -1  \\ 0 \end{array} \right] $  be vectors in $\R^3$.
+$v_2 = \left[\begin{array}{c} 1 \\ -1  \\ 0 \end{array} \right] $  be vectors in $\Re^3$.
 
-Can you write the zero vector in $\R^3$
-as a linear combination $\veco = a_1 v_1 + a_2 v_2$?  If so, enter possible values for $a_1$ and
+Can you write the zero vector in $\Re^3$
+as a linear combination $\vec0 = a_1 v_1 + a_2 v_2$?  If so, enter possible values for $a_1$ and
 $a_2$.  If not, enter No in both boxes.  
 
 \edXinline{$a_1= $ }\edXabox{type="formula" expect="0" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
@@ -93,7 +93,7 @@ $a_2$.  If not, enter No in both boxes.
 
 
 Let $v_1 = \left[\begin{array}{c} 2 \\ 3  \\ 4 \end{array} \right]$ and  
-$v_2 = \left[\begin{array}{c} 1 \\ -1  \\ 0 \end{array} \right]$  be vectors in $\R^3$.
+$v_2 = \left[\begin{array}{c} 1 \\ -1  \\ 0 \end{array} \right]$  be vectors in $\Re^3$.
 
 Can you write $v_2$
 as a linear combination of $v_1$?   
@@ -114,12 +114,14 @@ as a linear combination of $v_1$?
 \includesvg[300]{c1s4lincombo}   
 \end{center}
 
-Given the picture above in $\R^2$, 
+Given the picture above in $\Re^2$, 
 can you write $w$ as a linear combination $w = a_1 v_1 + a_2 v_2$?  If so, enter possible values for $a_1$ and
 $a_2$.  If not, enter No in both boxes.  
 
+
 \edXinline{$a_1= $ }\edXabox{type="formula" expect="-1" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
 \edXinline{$a_2= $ }\edXabox{type="formula" expect="2" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
+
 
 
 \edXsolution{ 
@@ -131,6 +133,7 @@ $a_2$.  If not, enter No in both boxes.
 
 
 Let $f$ denote the polynomial $t^3  + 1$, and let $g$ denote the
+
 polynomial $t^2 - t$.  Recall that the set of polynomials is a vector space over $\R$, so $f$ and $g$
 are vectors in that vector space.  
 
@@ -178,14 +181,14 @@ $a_2$.  If not, enter No in both boxes.
 
 
 
-\doedxvideo{Linear Combinations in R^n}{???}
+\doedxvideo{Linear Combinations in $Re^n$}{???}
 
 
 \beginedxproblem{Linear Combo 6}{\dpa1}
 
 
 Let $v_1 = \left[\begin{array}{c} 1 \\ 3  \\ 1 \end{array} \right]$ and  
-$v_2 = \left[\begin{array}{c} 3 \\ 10  \\ 2 \end{array} \right]$  be vectors in $\R^3$.
+$v_2 = \left[\begin{array}{c} 3 \\ 10  \\ 2 \end{array} \right]$  be vectors in $\Re^3$.
 
 Use row reduction to determine the answer to the following: 
 Can you write $w = \left[\begin{array}{c} 1 \\ 5 \\ -1 \end{array} \right]$
@@ -223,7 +226,7 @@ the {\keyb{\bf span}} of $\{v_1; v_2; \ldots v_n\}$ to be the set of all linear 
 of  $v_1, v_2, \ldots v_n$.  In other words, 
 \[ \mathrm{Span}\{v_1; v_2; \ldots v_n\} = \{a_1 v_1  + a_2 v_2 + \ldots + a_nv_n  : a_i \in F \}.\]
 
-The span of a list with zero vectors is defined to be $\{\veco\}$.  
+The span of a list with zero vectors is defined to be $\{\vec0\}$.  
 
 % In $\R^m$,...
 
@@ -287,6 +290,7 @@ the span of the list of vectors is all of $V$.
 
 \endedxtext
 
+
 \beginedxtext{Spanning in R^m}
 
 If $\{v_1; v_2; \ldots v_n\}$ is a list of vectors in $\R^m$, the list spans $\R^m$ if and only if 
@@ -296,7 +300,9 @@ v_1 & v_2 & \cdots & v_n \\
  | & | & & | \end{array} \right] \]
  row reduces to have a pivot in every row.  
  
+
 If $n<m$, then it is impossible for the list $\{v_1; v_2; \ldots v_n\}$ to span $\R^m$.    
+
 
 \endedxtext
 
@@ -346,6 +352,7 @@ List F: $\left\{ \left[ \begin{array}{c} 1 \\ 3 \\ 8 \end{array} \right] ;
 
 Given above are six lists of vectors.  {\keyb{\bf Without doing any row reduction}}, you should be able to pick out three lists
 that do not span their respective $\R^m$ spaces.  Which three?  
+
 
 
 \edXabox{type="oldmultichoice" expect="A","D","E" options="A","B","C","D","E","F"}
