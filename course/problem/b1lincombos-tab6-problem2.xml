@@ -1,4 +1,4 @@
-<problem display_name="Span Question 2" linenum="244" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Span Question 2" linenum="254" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Now determine if [mathjaxinline]u = \left[\begin{array}{c} 301.34 \\ -234.8 \\ \pi \end{array} \right][/mathjaxinline] is in the span of [mathjaxinline]\{ v_1; v_2; v_3; v_4 \}[/mathjaxinline]. Try to avoid doing any additional calculation! </p>

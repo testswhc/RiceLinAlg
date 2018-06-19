@@ -118,8 +118,10 @@ Given the picture above in $\Re^2$,
 can you write $w$ as a linear combination $w = a_1 v_1 + a_2 v_2$?  If so, enter possible values for $a_1$ and
 $a_2$.  If not, enter No in both boxes.  
 
-\edXinline{$a_1= $ }\edXabox{type="formula" expect="2" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
-\edXinline{$a_2= $ }\edXabox{type="formula" expect="-1" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
+
+\edXinline{$a_1= $ }\edXabox{type="formula" expect="-1" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
+\edXinline{$a_2= $ }\edXabox{type="formula" expect="2" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
+
 
 
 \edXsolution{ 
@@ -131,7 +133,8 @@ $a_2$.  If not, enter No in both boxes.
 
 
 Let $f$ denote the polynomial $t^3  + 1$, and let $g$ denote the
-polynomial $t^2 - t$.  Recall that the set of polynomials is a vector space over $\Re$, so $f$ and $g$
+
+polynomial $t^2 - t$.  Recall that the set of polynomials is a vector space over $\R$, so $f$ and $g$
 are vectors in that vector space.  
 
 Let $h$ denote $17t^3 + 2t^2 - 2t + 17$.
@@ -287,16 +290,19 @@ the span of the list of vectors is all of $V$.
 
 \endedxtext
 
-\beginedxtext{Spanning in $Re^m$}
 
-If $\{v_1; v_2; \ldots v_n\}$ is a list of vectors in $\Re^m$, the list spans $\Re^m$ if and only if 
+\beginedxtext{Spanning in R^m}
+
+If $\{v_1; v_2; \ldots v_n\}$ is a list of vectors in $\R^m$, the list spans $\R^m$ if and only if 
 the matrix 
 \[ A = \left[ \begin{array}{cccc} | & | & & | \\ 
 v_1 & v_2 & \cdots & v_n \\
  | & | & & | \end{array} \right] \]
  row reduces to have a pivot in every row.  
  
-If $n<m$, then it is impossible for the list $\{v_1; v_2; \ldots v_n\}$ to span $\Re^m$.    
+
+If $n<m$, then it is impossible for the list $\{v_1; v_2; \ldots v_n\}$ to span $\R^m$.    
+
 
 \endedxtext
 
@@ -345,7 +351,8 @@ List F: $\left\{ \left[ \begin{array}{c} 1 \\ 3 \\ 8 \end{array} \right] ;
 \end{itemize}
 
 Given above are six lists of vectors.  {\keyb{\bf Without doing any row reduction}}, you should be able to pick out three lists
-that do not span their respective $\Re^m$ spaces.  Which three?  
+that do not span their respective $\R^m$ spaces.  Which three?  
+
 
 
 \edXabox{type="oldmultichoice" expect="A","D","E" options="A","B","C","D","E","F"}

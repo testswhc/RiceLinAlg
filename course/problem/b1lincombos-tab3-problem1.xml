@@ -5,9 +5,20 @@ Let [mathjaxinline]v_1 = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][
     <p>
 Can you write the vector [mathjaxinline]x = \left[\begin{array}{c} -4 \\ -6 \\ -8 \end{array} \right][/mathjaxinline] as a linear combination [mathjaxinline]x = a_1 v_1 + a_2 v_2[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <p style="display:inline">[mathjaxinline]a_1=[/mathjaxinline] </p>
+      <formularesponse inline="1" type="cs" samples="No@1:5#5" answer="-2">
+        <formulaequationinput inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+      <br/>
+      <p style="display:inline">[mathjaxinline]a_2=[/mathjaxinline] </p>
+      <formularesponse inline="1" type="cs" samples="No@1:5#5" answer="0">
+        <formulaequationinput inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+      <br/>
     </p>
     <p>
       <solution>
