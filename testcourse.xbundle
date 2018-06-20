@@ -1311,10 +1311,10 @@ Which vector is equal to [mathjaxinline]v+w[/mathjaxinline]? </p>
               </p>
               <p>
 Which vector is equal to [mathjaxinline]v-w[/mathjaxinline]? </p>
-              <p><optionresponse><optioninput options="('a','b','c','d','e','f','g','h')" correct="a"/></optionresponse> Which vector is equal to [mathjaxinline]w-v[/mathjaxinline]? </p>
+              <p><optionresponse><optioninput options="('a','b','c','d','e','f','g','h')" correct="d"/></optionresponse> Which vector is equal to [mathjaxinline]w-v[/mathjaxinline]? </p>
               <p>
                 <optionresponse>
-                  <optioninput options="('a','b','c','d','e','f','g','h')" correct="d"/>
+                  <optioninput options="('a','b','c','d','e','f','g','h')" correct="a"/>
                 </optionresponse>
               </p>
               <p>
@@ -1501,7 +1501,7 @@ Can you write [mathjaxinline]v_2[/mathjaxinline] as a linear combination of [mat
           <problem display_name="Linear Combo 4" linenum="111" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab3-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <center>
-                <img src="/static/images/placeholder.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+                <img src="/static/images/c1s4lincombo.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
               </center>
               <p>
 Given the picture above in [mathjaxinline]\mathbb R^2[/mathjaxinline], can you write [mathjaxinline]w[/mathjaxinline] as a linear combination [mathjaxinline]w = a_1 v_1 + a_2 v_2[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p>
