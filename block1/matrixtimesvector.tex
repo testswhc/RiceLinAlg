@@ -28,35 +28,49 @@ plus some questions.
 \endedxvertical
 
 
-\beginedxvertical{The Template Vector Space}
+\beginedxvertical{Defining Matrix-Vector Multiplication}
 
-\doedxvideo{Rn}{???}
-
-
+\doedxvideo{Matrix-Vector Multiplication}{RsoteOVSoh4}
 
 
-\beginedxproblem{Vector entry}{\dpa1}
+\beginedxtext{Matrix times Vector}
+
+If $A$ is an $m\times n$ matrix
+\[ A = \left[ \begin{array}{cccc} | & | & & | \\ 
+v_1 & v_2 & \cdots & v_n \\
+ | & | & & | \end{array} \right], \] and $x$ is the vector $x = \left[\begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_n
+\end{array} \right],$ then 
+the product $Ax$ is defined to be 
+\[ Ax = a_1 v_1 + a_2 v_2 + \ldots + a_n v_n.\]
 
 
-Let $v = \left[\begin{array}{c} 2 \\ 3  \\ 4 \end{array} \right]$ and let 
-$w = \left[\begin{array}{c} 1 \\ -1  \\ 0 \end{array} \right].$
+\endedxtext
+
+\endedxvertical
 
 
-What is $v+w$?  
-To enter a vector, type...
+
+
+
+\beginedxvertical{Multiplication Practice}
+
+\beginedxproblem{Products}{\dpa1}
+
+
+Let  \[A = \left[ \begin{array}{cccc} 2 & 1 & 0 & 1\\ 
+0 & 3 & -1 & -1 \\
+5 & 0 & 3 & 1 \end{array} \right] ,\]
+and let $x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \\4
+\end{array} \right].$  What is $Ax$?  
+
+\input{vectorentry.tex}
 
 \edXabox{expect="Placeholder" options="Placeholder"}
 
-What is $-3v$?  
-
-
-
-\edXabox{expect="Placeholder" options="Placeholder"}
-
-What is $2w-3v$?  
+Let $y = \left[\begin{array}{c} 0 \\ 0 \\ 1 \\0
+\end{array} \right].$   What is $Ay$?  
 
 \edXabox{expect="Placeholder" options="Placeholder"}
-
 
 \edXsolution{ 
 }
@@ -66,13 +80,36 @@ What is $2w-3v$?
 
 
 
-\beginedxproblem{Where does it live?}{\dpa2}
+\beginedxproblem{Where does it live?}{\dpa1}
 
-The vector $w = \left[\begin{array}{c} 1 \\ -1  \\ 0 \\ 0 \end{array} \right]$  is 
-an element of which of the following vector spaces?  Click all that apply.  
+Suppose $A$ is a $6\times 4$ matrix.  In order for the product $Ax$ to be defined, the vector $x$ must live
+in what space?  
 
 
-\edXabox{type="oldmultichoice" expect="$\R^4$" options="$\R^2$","$\R^3$","$\R^4$","$\R^5$"}
+\edXabox{type="multichoice" expect="$\R^4$" options="$\R^4$","$\R^6$","Either of these is fine"}
+
+The resulting product $Ax$ will be an element of which space?  
+
+\edXabox{type="multichoice" expect="$\R^4$" options="$\R^4$","$\R^6$","Either of these is fine"}
+
+\edXsolution{  }
+
+\endedxproblem
+
+
+
+\beginedxproblem{Products and Spans}{\dpa1}
+
+
+
+True or false: If $A$ is an $m\times n$ matrix
+\[ A = \left[ \begin{array}{cccc} | & | & & | \\ 
+v_1 & v_2 & \cdots & v_n \\
+ | & | & & | \end{array} \right], \]
+ and $x$ is any vector in $\R^n$, then the resulting product $Ax$ must be in $\mathrm{Span}\{v_1; v_2; \ldots v_n\}$.  
+
+\edXabox{expect="True" options="True","False"}
+
 
 \edXsolution{  }
 
@@ -82,80 +119,75 @@ an element of which of the following vector spaces?  Click all that apply.
 
 
 
-
 \endedxvertical
 
 
-\beginedxvertical{Points and Arrows}
 
-\beginedxtext{R^n}
+\beginedxvertical{Matrix-Vector Equations}
 
-
-For a non-negative integer $n$, $\R^n$ is defined to be the set 
-\[
-\left\{\left[\begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_n
-\end{array} \right] \ : \ a_1, a_2, \ldots a_n \in \R \right\}. \]  
-With addition and scalar multiplication as defined previously, 
-$\R^n$ is an example of a vector
-space over the field $\R$.  
+\doedxvideo{Matrix-Vector Equations}{???}
 
 
-\endedxtext
+\beginedxproblem{Solving Matrix-Vector Equations}{\dpa1}
+
+
+Let  \[A = \left[ \begin{array}{cc} 1 & 2  \\ 
+1 & 3 \\
+3 & -1 \end{array} \right] ,\]
+and let $v = \left[\begin{array}{c} 3 \\ 2 \\ 16 
+\end{array} \right].$  The equation $Ax = v$ has exactly one solution -- what is it?  
+
+\input{vectorentry.tex}
+
+\edXabox{expect="Placeholder" options="Placeholder"}
+
+Let $w = \left[\begin{array}{c} 3 \\ -4 \\ 7 
+\end{array} \right].$  With the same $A$ as above, how many solutions does $Ax = w$ have?
+
+\edXabox{expect="No solutions" options="Exactly one solution","More than one solution","No solutions"}
+
+\edXsolution{ 
+}
+
+
+\endedxproblem
 
 
 
-\beginedxtext{Notes on Notation}
-
-The vector $\left[\begin{array}{c} 0 \\ 0 \\ \vdots \\ 0
-\end{array} \right] \in \R^n$ is called the {\keyb{\bf zero vector}}.  (In fact,
-every vector space, not just $\R^n$, has a zero vector.)  
-
-To distinguish it from the scalar 0, in print we will denote the zero vector
-by $\veco$.  When handwritten, we will usually write the zero vector as a 
-zero with an arrow over it, like $\vec{0}$.  Other letters that represent vectors will
-not have the arrow notation, however; we will usually use letters like $u,v,w,x$ for 
-vectors, while letters like $a,b,c$ will represent scalars.  
+\beginedxproblem{Another Matrix-Vector Equation}{\dpa1}
 
 
-Be careful!  The zero vector in the space $\R^3$ is 
-$\veco  = \left[\begin{array}{c} 0 \\ 0 \\  0
-\end{array} \right],$ whereas the zero vector in the space 
-$\R^4$ is 
-$\veco  = \left[\begin{array}{c} 0 \\ 0 \\ 0 \\  0
-\end{array} \right].$  Even though we use the same symbol, these are different objects!  
-One has to judge from context which space any given $\veco$ lies in.  
+Let $A$ be a $3\times 4$ matrix with columns $v_1, v_2, v_3, v_4$.  That is, 
+ \[ A = \left[ \begin{array}{cccc} | & | & | & | \\ 
+v_1 & v_2 & v_3 & v_4 \\
+ | & | & | & | \end{array} \right]. \]
+Find a solution to the equation $Ax = v_2$.   
  
-\endedxtext
+\input{vectorentry.tex}
+
+\edXabox{expect="Placeholder" options="Placeholder"}
+
+\edXsolution{ 
+}
 
 
-\doedxvideo{Geometry of R^n}{???}
+\endedxproblem
 
 
-
-\beginedxproblem{Picture Problem}{\dpa2}
-
-Vectors $v$ and $w$ are given.  
-
-(picture)
-
-Which vector is equal to $v+w$?    
+\beginedxproblem{Always Consistent?}{\dpa1}
 
 
-\edXabox{expect="B" options="A","B","C"}
+Let $A$ be a $4\times 3$ matrix.  There is a specific 
+vector $v$ for which you can conclude the equation $Ax = v$ has a solution, even without knowing
+anything else about $A$.  What is this vector $v$?  
 
-Which vector is equal to $v-w$?    
+\input{vectorentry.tex}
 
-\edXabox{expect="B" options="A","B","C"}
+\edXabox{expect="Placeholder" options="Placeholder"}
 
-Which vector is equal to $w-v$?    
+\edXsolution{ 
+}
 
-\edXabox{expect="B" options="A","B","C"}
-
-Which vector is equal to $-v$?    
-
-\edXabox{expect="B" options="A","B","C","D"}
-
-\edXsolution{  }
 
 \endedxproblem
 
@@ -163,57 +195,58 @@ Which vector is equal to $-v$?
 \endedxvertical
 
 
-\beginedxvertical{Beyond R^n}
-
-\doedxvideo{Other Vector Spaces}{XXX}
-
-\endedxvertical
-
-
-\beginedxvertical{Vector Spaces}
-
-\beginedxtext{Vector Spaces}
-
-A {\keyb{\bf vector space}} over a field $F$ is, essentially, a set $V$ in which one can 
-do vector addition and scalar multiplication.  For a more formal definition, see below. 
-
-\begin{edXshowhide}{Formal Definition of a Vector Space}
-
-
-A vector space $V$ over a field $F$ is a set, together with an addition operation on $V$
-and a scalar multiplication of elements of $F$ on elements of $V$, that satisfies
-the following conditions:
-
-\begin{itemize}
-\item Addition in $V$ is associative and commutative; that is, for all $u,v,w \in V$, we have
-$u+(v+w) = (u+v)+w$ and $u+v  = v+u$.  
-\item There is an element $\veco \in V$ such that $v+\veco = v$ for all $v \in V$.
-\item For every $v\in V$, there is an element $-v \in V$ such that $-v + v = \veco$.  
-\item $1v = v$ for all $v \in V$.  
-\item Scalar multiplication distributes over addition; that is, for all $a \in F$ and $u,v \in V$, , $a(u+v) = au + av$.  
-\item Scalar addition distributes as well; that is, for all $a,b \in F$ and $v \in V$, , $(a+b)v = av + bv$.  
-\item For all $a,b \in F$, and $v\in V$, we have $a(bv) = (ab)v$.  
-\end{itemize}
-
-\end{edXshowhide}
 
 
 
+\beginedxvertical{Multiplication Properties}
 
+\doedxvideo{Why do we call it multiplication?}{e67R6kfSRo4}
+
+
+
+\beginedxtext{Properties of Matrix Multiplication}
+
+For any $m\times n$ vector $A$, vectors $w,x \in \R^n$, and scalar $a$, we have that 
+\[A(w+x) = Aw + Ax\] and
+\[A(ax) = a(Ax).\]
+  
 \endedxtext
 
 
-\beginedxproblem{Vector Spaces}{\dpa2}
+\beginedxproblem{Consistent Matrix-Vector Equations}{\dpa1}
 
-True or False: The only vector spaces over the scalar field $\R$ are the spaces
-$\R^n$ for $n> 0$.  
 
-\edXabox{expect="False" options="True","False"}
+Let $A$ be a $4\times 3$ matrix.  Suppose that $x = \left[\begin{array}{c} 1 \\ 2 \\ 3 
+\end{array} \right]$ is a solution to the equation $Ax = v$, and suppose that 
+$x = \left[\begin{array}{c}  2 \\ -1 \\4
+\end{array} \right]$ is a solution to the equation $Ax = w$.  
 
-\edXsolution{  }
+Find a solution to the equation $Ax = v+w$.  
+
+ 
+\input{vectorentry.tex}
+
+\edXabox{expect="Placeholder" options="Placeholder"}
+
+\edXsolution{ 
+}
+
+
+\endedxproblem
+
+\beginedxproblem{Consistent Matrix-Vector Equations 2}{\dpa1}
+
+
+Let $A$ be a $4\times 3$ matrix.  Suppose that  the equation $Ax = v$ is consistent.  Must the
+equation $Ax = 4v$ be consistent?  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+\edXsolution{ 
+}
+
 
 \endedxproblem
 
 
 \endedxvertical
-

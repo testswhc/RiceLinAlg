@@ -14,10 +14,10 @@ Which vector is equal to [mathjaxinline]v+w[/mathjaxinline]? </p>
     </p>
     <p>
 Which vector is equal to [mathjaxinline]v-w[/mathjaxinline]? </p>
-    <p><optionresponse><optioninput options="('a','b','c','d','e','f','g','h')" correct="a"/></optionresponse> Which vector is equal to [mathjaxinline]w-v[/mathjaxinline]? </p>
+    <p><optionresponse><optioninput options="('a','b','c','d','e','f','g','h')" correct="d"/></optionresponse> Which vector is equal to [mathjaxinline]w-v[/mathjaxinline]? </p>
     <p>
       <optionresponse>
-        <optioninput options="('a','b','c','d','e','f','g','h')" correct="d"/>
+        <optioninput options="('a','b','c','d','e','f','g','h')" correct="a"/>
       </optionresponse>
     </p>
     <p>
