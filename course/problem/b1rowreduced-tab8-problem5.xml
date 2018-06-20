@@ -1,4 +1,4 @@
-<problem display_name="4 Equations, 6 Variables" linenum="378" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="4 Equations, 6 Variables" linenum="445" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Given the answer to the previous question, which of the following results are possible for a system of 4 linear equations in 6 variables? </p>
@@ -20,7 +20,10 @@ Given the answer to the previous question, which of the following results are po
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+The existence of free variables rules out the possibility for unique solutions. But, we know that a system with free variables may be consistent or inconsistent.  </p>
+        </font>
       </solution>
     </p>
   </text>

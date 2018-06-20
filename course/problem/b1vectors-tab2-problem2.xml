@@ -1,4 +1,4 @@
-<problem display_name="Where does it live?" linenum="74" tex_filename="./block1/vectors.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Where does it live?" linenum="84" tex_filename="./block1/vectors.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 The vector [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] is an element of which of the following vector spaces? Click all that apply. </p>
@@ -23,7 +23,12 @@ The vector [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{arra
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+The vector [mathjaxinline]w[/mathjaxinline] has 4 real entries. Thus, it is an element of [mathjaxinline]\mathbb R^4[/mathjaxinline]. </p>
+          <p>
+It is not an element of (for instance) [mathjaxinline]\mathbb R^2[/mathjaxinline]. The vector [mathjaxinline]\left[\begin{array}{c} 1 \\ -1 \end{array} \right][/mathjaxinline] is an element of [mathjaxinline]\mathbb R^2[/mathjaxinline], but this is not the same as [mathjaxinline]w[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>

@@ -1,8 +1,8 @@
-<problem display_name="Solutions to a System" linenum="277" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Solutions to a System" linenum="343" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Recall the augmented matrix from the last problem: </p>
-    <table id="a0000000017" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <table id="a0000000039" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
       <tr>
         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{cccc:c} 1 &amp;  0 &amp;  0 &amp;  1 &amp;  -2 \\ 0 &amp;  0 &amp;  1 &amp;  3 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -45,7 +45,10 @@ Working from right to left as in the last video, what are all possible solutions
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+Working from right to left, we first see that there is not a pivot in the column corresponding the [mathjaxinline]x_4[/mathjaxinline]. Thus, [mathjaxinline]x_4[/mathjaxinline] is free. We then see a pivot in the column corresponding to [mathjaxinline]x_3[/mathjaxinline], and corresponding equaion is [mathjaxinline]0x_1+0x_2+1x_3+3x_4=3[/mathjaxinline]. This gives [mathjaxinline]x_3=3-3x_4[/mathjaxinline]. Next, there is not a pivot in the column corresponding to [mathjaxinline]x_2[/mathjaxinline], and thus [mathjaxinline]x_2[/mathjaxinline] is free. Finally, there is a pivot in the column corrsponding to [mathjaxinline]x_1[/mathjaxinline] and the corresponding equation is [mathjaxinline]1x_1+0x_2+0x_3+1x_4=-2[/mathjaxinline]. This gives [mathjaxinline]x_1=-2-x_4[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>

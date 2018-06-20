@@ -8,7 +8,7 @@ Describe the span of some lists of vectors. </p>
     </li>
     <li>
       <p>
-Determine whether a list of vectors in [mathjaxinline]\mathbb R^ m[/mathjaxinline] spans [mathjaxinline]\mathbb R^ m[/mathjaxinline]. </p>
+Determine whether a list of vectors in [mathjaxinline]\mathrm{Re\, }^ m[/mathjaxinline] spans [mathjaxinline]\mathrm{Re\, }^ m[/mathjaxinline]. </p>
     </li>
   </ul>
   <p>

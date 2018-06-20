@@ -1,4 +1,4 @@
-<problem display_name="Pivots vs. Rows" linenum="96" tex_filename="./block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Pivots vs. Rows" linenum="101" tex_filename="./block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 True or False: If a matrix that is in RREF has 6 rows, then it must have 6 pivots. </p>
@@ -10,7 +10,10 @@ True or False: If a matrix that is in RREF has 6 rows, then it must have 6 pivot
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+In fact, a matrix with [mathjaxinline]6[/mathjaxinline] rows may have any number of pivots between [mathjaxinline]0[/mathjaxinline] and [mathjaxinline]6[/mathjaxinline]. For example, the [mathjaxinline]6\times 6[/mathjaxinline] zero matrix has 6 rows, and zero pivots, while the [mathjaxinline]6\times 6[/mathjaxinline] matrix [mathjaxinline]\left[ \begin{array}{cccccc} 1 &amp;  0 &amp;  0 &amp;  0 &amp;  0&amp; 0 \\ 0 &amp;  1 &amp;  0 &amp;  0 &amp;  0&amp; 0 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  0&amp; 0 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0&amp; 0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1&amp; 0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0&amp; 0 \\ \end{array} \right][/mathjaxinline] has 6 rows and 5 pivots. </p>
+        </font>
       </solution>
     </p>
   </text>

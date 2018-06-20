@@ -1,4 +1,4 @@
-<problem display_name="Span Question" linenum="234" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Span Question" linenum="237" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]v_1 = \left[\begin{array}{c} 1 \\ 1 \\ 0 \end{array} \right][/mathjaxinline], [mathjaxinline]v_2 = \left[\begin{array}{c} 0 \\ -1 \\ 2 \end{array} \right][/mathjaxinline], [mathjaxinline]v_3 = \left[\begin{array}{c} -1 \\ -2 \\ 3 \end{array} \right][/mathjaxinline], and [mathjaxinline]v_4 = \left[\begin{array}{c} -2 \\ -5 \\ 8 \end{array} \right][/mathjaxinline]. </p>

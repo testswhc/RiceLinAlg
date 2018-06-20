@@ -1,7 +1,7 @@
-<html display_name="Spanning in R^m" linenum="290" tex_filename="./block1/lincombos.tex">
+<html display_name="Spanning in R^m" linenum="294" tex_filename="./block1/lincombos.tex">
   <p>
 If [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is a list of vectors in [mathjaxinline]\mathbb R^ m[/mathjaxinline], the list spans [mathjaxinline]\mathbb R^ m[/mathjaxinline] if and only if the matrix </p>
-  <table id="a0000000022" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+  <table id="a0000000045" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
     <tr>
       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp; &amp;  | \\ v_1 &amp;  v_2 &amp;  \cdots &amp;  v_ n \\ | &amp;  | &amp; &amp;  | \end{array} \right][/mathjax]</td>
       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
