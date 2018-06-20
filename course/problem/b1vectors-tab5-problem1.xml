@@ -1,4 +1,4 @@
-<problem display_name="Vector Spaces" linenum="212" tex_filename="./block1/vectors.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Vector Spaces" linenum="224" tex_filename="./block1/vectors.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 True or False: The only vector spaces over the scalar field [mathjaxinline]\mathbb R[/mathjaxinline] are the spaces [mathjaxinline]\mathbb R^ n[/mathjaxinline] for [mathjaxinline]n&gt; 0[/mathjaxinline]. </p>
@@ -10,7 +10,10 @@ True or False: The only vector spaces over the scalar field [mathjaxinline]\math
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+False. We have seen other examples such as the set of polynomials.  </p>
+        </font>
       </solution>
     </p>
   </text>

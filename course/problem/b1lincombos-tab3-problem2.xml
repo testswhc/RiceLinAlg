@@ -1,9 +1,9 @@
 <problem display_name="Linear Combo 2" linenum="70" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-Let [mathjaxinline]v_1 = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p>
+Let [mathjaxinline]v_1 = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathrm{Re\, }^3[/mathjaxinline]. </p>
     <p>
-Can you write the zero vector in [mathjaxinline]\mathbb R^3[/mathjaxinline] as a linear combination [mathjaxinline]\mathbf{0}= a_1 v_1 + a_2 v_2[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p>
+Can you write the zero vector in [mathjaxinline]\mathrm{Re\, }^3[/mathjaxinline] as a linear combination [mathjaxinline]\vec0 = a_1 v_1 + a_2 v_2[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p>
     <p>
       <p style="display:inline">[mathjaxinline]a_1=[/mathjaxinline] </p>
       <formularesponse inline="1" type="cs" samples="No@1:5#5" answer="0">

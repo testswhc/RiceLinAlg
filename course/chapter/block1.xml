@@ -72,7 +72,7 @@
       <html url_name="b1rowreduced-tab10-text1"/>
     </vertical>
   </sequential>
-  <sequential display_name="Vectors" linenum="153" tex_filename="testcourse.tex" refnum="3" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1vectors-sequential">
+  <sequential display_name="Vectors" linenum="151" tex_filename="testcourse.tex" refnum="3" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1vectors-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b1vectors-vertical1">
       <html url_name="b1vectors-tab1-text1"/>
     </vertical>
@@ -95,7 +95,7 @@
       <problem url_name="b1vectors-tab5-problem1"/>
     </vertical>
   </sequential>
-  <sequential display_name="Linear Combinations and Span" linenum="188" tex_filename="testcourse.tex" refnum="4" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1lincombos-sequential">
+  <sequential display_name="Linear Combinations and Span" linenum="180" tex_filename="testcourse.tex" refnum="4" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1lincombos-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b1lincombos-vertical1">
       <html url_name="b1lincombos-tab1-text1"/>
     </vertical>
@@ -129,22 +129,22 @@
       <problem url_name="b1lincombos-tab7-problem1"/>
     </vertical>
   </sequential>
-  <sequential display_name="Matrix-Vector Multiplication" linenum="221" tex_filename="testcourse.tex" refnum="5" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1matrixvector-sequential">
+  <sequential display_name="Matrix-Vector Multiplication" linenum="213" tex_filename="testcourse.tex" refnum="5" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1matrixvector-sequential">
     <vertical display_name="Wait for it" refnum="1" url_name="b1matrixvector-vertical1">
       <html url_name="b1matrixvector-tab1-text1"/>
     </vertical>
   </sequential>
-  <sequential display_name="Linear Independence" linenum="250" tex_filename="testcourse.tex" refnum="6" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">
+  <sequential display_name="Linear Independence" linenum="242" tex_filename="testcourse.tex" refnum="6" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">
     <vertical display_name="Wait for it" refnum="1" url_name="b1linind-vertical1">
       <html url_name="b1linind-tab1-text1"/>
     </vertical>
   </sequential>
-  <sequential display_name="Linear Transformations" linenum="283" tex_filename="testcourse.tex" refnum="7" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1lintrans-sequential">
+  <sequential display_name="Linear Transformations" linenum="275" tex_filename="testcourse.tex" refnum="7" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1lintrans-sequential">
     <vertical display_name="Wait for it" refnum="1" url_name="b1lintrans-vertical1">
       <html url_name="b1lintrans-tab1-text1"/>
     </vertical>
   </sequential>
-  <sequential display_name="Into and Onto" linenum="314" tex_filename="testcourse.tex" refnum="8" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
+  <sequential display_name="Into and Onto" linenum="306" tex_filename="testcourse.tex" refnum="8" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
     <vertical display_name="Wait for it" refnum="1" url_name="b1intoonto-vertical1">
       <html url_name="b1intoonto-tab1-text1"/>
     </vertical>

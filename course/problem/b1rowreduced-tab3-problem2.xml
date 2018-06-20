@@ -51,7 +51,12 @@ def MatrixGrader(expect, ans):
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+Note that the matrix currently satisfies all conditions except &#x201C;Each pivot is the only non-zero entry in its column", for there is a [mathjaxinline]-2[/mathjaxinline] above the pivot in the third row. We can add two times row three to row two and replace row 2 with the result. Doing so, we obtain </p>
+          <p>
+[mathjaxinline]\left[ \begin{array}{ccccc} 1 &amp;  4 &amp;  0 &amp;  0 &amp;  7 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  5 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  1 \end{array} \right].[/mathjaxinline] </p>
+        </font>
       </solution>
     </p>
   </text>
