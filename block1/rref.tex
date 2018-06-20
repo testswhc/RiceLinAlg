@@ -87,7 +87,12 @@ result?
 
 \edXabox{expect="Placeholder" options="Placeholder"}
 
-\edXsolution{  }
+\edXsolution{Note that the matrix currently satisfies all conditions except "Each pivot is the only non-zero entry in its column", for there is a $-2$ above the pivot in the third row.  We can add two time row three to row two and replace row 2 with the result.  Doing so, we obtain
+
+$\left[ \begin{array}{ccccc} 1 & 4 & 0 & 0 & 7 \\
+0 & 0 & 1 & 0 & 5 \\
+0 & 0 & 0 & 1 & 1
+ \end{array} \right]$}
 
 \endedxproblem
 
@@ -100,7 +105,14 @@ True or False: If a matrix that is in RREF has 6 rows, then it must have 6 pivot
 
 \edXabox{expect="False" options="True","False"}
 
-\edXsolution{  }
+\edXsolution{In fact, a matrix with $6$ rows may have any number of pivots between $0$ and $6$.  For example, the $6\times 6$ zero matrix has 6 rows, and zero pivots, while the $6\times 6$ matrix  $\left[ \begin{array}{cccccc} 
+ 1 & 0 & 0 & 0 & 0&0 \\
+ 0 & 1 & 0 & 0 & 0&0 \\
+ 0 & 0 & 1 & 0 & 0&0 \\
+ 0 & 0 & 0 & 1 & 0&0 \\
+ 0 & 0 & 0 & 0 & 1&0 \\
+ 0 & 0 & 0 & 0 & 0&0 \\
+ \end{array} \right]$ has 6 rows and 5 pivots.}
 
 \endedxproblem
 
@@ -148,7 +160,36 @@ What matrix do you get if you row-reduce $A$?
 
 \edXabox{expect="Placeholder" options="Placeholder"}
 
-\edXsolution{ 
+\edXsolution{ \begin{itemize}
+\item Swap two rows to get the left-most remaining non-zero entry to the topmost remaining row.  
+\item Scale that row to make its leading entry a 1.    
+\item Clear all non-zero entries in the column of that pivot (both above and below the pivot) by adding/subtracting multiples of that row to/from other rows.  
+\item With that pivot now set, repeat the procedure with the remaining rows.  
+\end{itemize}
+
+\[
+A = \left[ \begin{array}{ccc} 0 & 1 & 2 \\ 3 & 0 & -3 \\ 2 & 2 & 5 \\ 0 & -2 & 1\end{array} \right]. \]
+
+\begin{itemize}
+    \item Swap R1 and R2:
+    \[\left[ \begin{array}{ccc} 3 & 0 & -3 \\ 0 & 1 & 2 \\ 2 & 2 & 5 \\ 0 & -2 & 1\end{array} \right]. \]
+    
+    \item Scale the new R1 by $\frac{1}{3}$:
+     \[\left[ \begin{array}{ccc} 1 & 0 & -1 \\ 0 & 1 & 2 \\ 2 & 2 & 5 \\ 0 & -2 & 1\end{array} \right]. \]
+     
+     \item Subtract twice R1 from R3 and replace R3 to clear the non-zero entry below the pivot in the first row:
+     \[\left[ \begin{array}{ccc} 1 & 0 & -1 \\ 0 & 1 & 2 \\ 0 & 2 & 7 \\ 0 & -2 & 1\end{array} \right]. \]
+     
+    \item We focus on the remaining rows.  The left-most nonzero entries are in row 2 and 3, and the leading entry of the second row is already 1, so we do not need to perform any swap or scaling to satisfy the conditions in the first and second step of the algorithm.\\
+    Now, we clear the non-zero entry in the third row below this pivot by replacing R3 with R3$-2\cdot$R2.  We also clear the non-zero entry in the fourth row below this pivot by replacing R4 with R4$+2\cdot $R2.
+     \[\left[ \begin{array}{ccc} 1 & 0 & -1 \\ 0 & 1 & 2 \\ 0 & 0 & 3 \\ 0 & 0 & 5\end{array} \right]. \]
+     \item Now, the first left-most non-zero entry is already in the topmost remaining row (row 3), so we scale it by $\frac{1}{3}$ to obtain
+     \[\left[ \begin{array}{ccc} 1 & 0 & -1 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \\ 0 & 0 & 5\end{array} \right]. \]
+     \item Finally, we clear the non-zero entries above and below that pivot by replacing R1 with R1$+$R3, replacing R2 with R2$-2\cdot$R3 and replacing R4 with R4$-5\cdot$R3.
+     \[\left[ \begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0\end{array} \right]. \]
+     
+\end{itemize}
+We can then check that this final matrix satisfies the conditions of RREF.  Applying the algorithm to this final matrix will not require any row operations.
 }
 
 
@@ -170,7 +211,29 @@ the system?
 
 \edXabox{type="multichoice" expect="The system is consistent and has a unique solution" options="The system is consistent and has a unique solution","The system is consistent but has more than one solution","The system is inconsistent"}
 
-\edXsolution{ 
+\edXsolution{After repeating the first 3 steps from above to this matrix, we obtain
+\[
+A = \left[ \begin{array}{ccc:c} 1 & 0 & -1 & 1 \\ 0 & 1 & 2 & -1 \\ 
+0 & 2 & 7 & 1\\ 0 & -2 & 1 & 7\end{array} \right]. \].
+
+Repeating step 4, we obtain
+
+\[
+A = \left[ \begin{array}{ccc:c} 1 & 0 & -1 & 1 \\ 0 & 1 & 2 & -1 \\ 
+0 & 0 & 3 & 3\\ 0 & 0 & 5 & 5\end{array} \right]. \].
+
+Repeating step 5, we obtain
+\[
+A = \left[ \begin{array}{ccc:c} 1 & 0 & -1 & 1 \\ 0 & 1 & 2 & -1 \\ 
+0 & 0 & 1 & 1\\ 0 & 0 & 5 & 5\end{array} \right]. \].
+
+And, finally, repeating step 6, we obtain
+
+\[
+A = \left[ \begin{array}{ccc:c} 1 & 0 & 0 & 2 \\ 0 & 1 & 0 & -3 \\ 
+0 & 0 & 1 & 1\\ 0 & 0 & 0 & 0\end{array} \right]. \].
+
+%Again, not sure what verbiage to use here.  Note that if the system were inconsistent, in RREF, we would see a row with three entries of "0", followed by a nonzero entry. Thus, a solution exists.  Since there are 3 variables and 3 pivot columns, there aren't any free varaibles, and we conclude that the solution is unique.
 }
 
 
@@ -205,7 +268,7 @@ What can you conclude about the original system of equations?
 
 \edXabox{type="multichoice" expect="The system is inconsistent" options="The system is consistent and has a unique solution","The system is consistent but has more than one solution","The system is inconsistent"}
 
-\edXsolution{ 
+\edXsolution{The second row corresponds to an equation of the form $0x+0y=1$, which has no solutions.  Thus, the original system will also have no solutions.  A system without any solutions certainly cannot have infinitely many solutions, and thus cannot have any free variables. 
 }
 
 \endedxproblem
@@ -225,7 +288,7 @@ What can you conclude about the original system of equations?
 
 \edXabox{type="multichoice" expect="The system is consistent and has a unique solution" options="The system is consistent and has a unique solution","The system is consistent but has more than one solution","The system is inconsistent"}
 
-\edXsolution{ 
+\edXsolution{The original system cooresponds to 3 equations in 2 variables.  Since there are two pivot positions in the RREF and 2 variables, we can conclude that there are $2-2=0$ free variables.  Thus, the original system is consistent and has a unique solution.
 }
 
 \endedxproblem
@@ -248,7 +311,7 @@ What can you conclude about the original system of equations?
 
 \edXabox{type="multichoice" expect="The system is consistent but has more than one solution" options="The system is consistent and has a unique solution","The system is consistent but has more than one solution","The system is inconsistent"}
 
-\edXsolution{ 
+\edXsolution{The original system corresponds to 3 equations in 4 variables.  Since there are 2 pivot positions in the RREF, there are $4-2=2$ free variables.  Thus, the original system is consistent, but the existance of free variables ensures that any solution to the original system is not unique.
 }
 
 \endedxproblem
@@ -256,12 +319,12 @@ What can you conclude about the original system of equations?
 
 \beginedxproblem{Free Variables}{\dpa1}
 
-If a system of linear equations has free variables when row-reduced, is it possible for the
-system to be inconsistent?  
+If a system of linear equations has free variables when row-reduced, is it possible for the system to be inconsistent?  
 
 \edXabox{expect="Yes" options="Yes","No"}
 
-\edXsolution{ 
+\edXsolution{We previously saw a system of 3 linear equations in 2 variables with the following augmented matrix in RREF \[
+\left[ \begin{array}{cc:c} 1 & -3 & -2 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{array} \right] \]  The pivot in the last column of the second row indicates that there are no solutions, and the system is inconsistent.  The first row indicates that $x_1=-2+3x_2$, and there is not a pivot in the column corresponding the $x_2$.  Thus, there is a free variable.
 }
 
 \endedxproblem
@@ -294,7 +357,7 @@ xn for the variable $x_n$.  For instance, to enter $-3x_2 + 2x_4$, type -3*x2 + 
 \edXinline{$x_1 = $}\edXabox{type="formula" expect="-2-x4" samples="free,x4,x3,x2@1,1,1,1:4,4,4,4#10" tolerance=".001" feqin="1" inline="1"}
 
 
-\edXsolution{ 
+\edXsolution{Working from right to left, we first see that there is not a pivot in the column corresponding the $x_4$.  Thus, $x_4$ is free.  We then see a pivot in the column corresponding to $x_3$, and corresponding equaion is $0x_1+0x_2+1x_3+3x_4=3$.  This gives $x_3=3-3x_4$.  Next, there is not a pivot in the column corresponding to $x_2$, and thus $x_2$ is free.   Finally, there is a pivot in the column corrsponding to $x_1$ and the corresponding equation is $1x_1+0x_2+0x_3+1x_4=-2$.  This gives $x_1=-2-x_4$.
 }
 
 \endedxproblem
@@ -334,7 +397,7 @@ A = \left[ \begin{array}{ccc} 1 & -3 & -2 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \\ 0 & 0 & 0
 What is the size of $A$? 
 \edXabox{type="multichoice" expect="$4\times 3$" options="$3\times 4$","$4\times 3$"}
 
-\edXsolution{ 
+\edXsolution{We see that $A$ has 4 rows and 3 columns.  The first entry of $m\times n$ corresponds to the number of rows, while the second corresponds to number of columns. 
 }
 
 \endedxproblem
@@ -347,7 +410,7 @@ What is the maximum number of pivots in a $6\times 3$ coefficient matrix, when r
 \edXabox{type="numerical" expect="3"}
 
 
-\edXsolution{ 
+\edXsolution{By definition, there is at most one pivot in each row.  Also, there aren't any non-zero entries above or below a pivot.  Thus, there is at most one pivot in each column.  So, the maximum number of pivots corresponds to the minimum of the number of rows and the number of columns.
 }
 
 \endedxproblem
@@ -359,7 +422,7 @@ What is the maximum number of pivots in a $4\times 6$ coefficient  matrix, when 
 \edXabox{type="numerical" expect="4"}
 
 
-\edXsolution{ 
+\edXsolution{Again, by definition, there is at most one pivot in each row.  Also, there aren't any non-zero entries above or below a pivot.  Thus, there is at most one pivot in each column.  So, the maximum number of pivots corresponds to the minimum of the number of rows and the number of columns.
 }
 
 \endedxproblem
@@ -370,7 +433,7 @@ What is the strongest statement you can make about the number of free variables 
 
 \edXinline{The number of free variables must be  }\edXabox{expect="at least" options="exactly","at least","at most" inline="1"} \edXabox{type="numerical" expect="2" inline="1"}
 
-\edXsolution{ 
+\edXsolution{We know that a $4\times 6$ coefficient matrix corresponds to a system of equations with 6 variables.  By the previous problem, we know that there is at most 4 pivots.  Thus, there is at least $6-4=2$ free variables.  Now, we can have as many as 6 free variables (consider the zero matrix as a coefficient matrix).  You can come up with examples of matrices with any number between 0 and 4 pivots, and thus any number between 2 and 6 free variables.
 }
 
 \endedxproblem
@@ -381,7 +444,7 @@ Given the answer to the previous question, which of the following results are po
 
 \edXabox{type="oldmultichoice" expect="The system is consistent but has more than one solution","The system is inconsistent" options="The system is consistent and has a unique solution","The system is consistent but has more than one solution","The system is inconsistent"}
 
-\edXsolution{ 
+\edXsolution{The existence of free variables rules out the possibility for unique solutions.  But, we know that a system with free variables may be consistent or inconsistent.
 }
 
 \endedxproblem
@@ -402,7 +465,7 @@ row-reduce it?
 
 \edXabox{expect="Yes" options="Yes","Not necessarily"}
 
-\edXsolution{ 
+\edXsolution{Yes.  The only acceptable row operations are multiplication by a scalar, addition, and subraction.  In the case of a matrix with real entries, row-reducing will not require a non-real scalar.   The sum, product and difference of two real numbers is also rational.  Thus, under each of these operations, the entries will remain real.
 }
 
 \endedxproblem
@@ -416,7 +479,7 @@ where $p,q$ are integers.)
 
 \edXabox{expect="Yes" options="Yes","Not necessarily"}
 
-\edXsolution{ 
+\edXsolution{Yes.  The only acceptable row operations are multiplication by a scalar, addition, and subraction.  In the case of a matrix with rational entries, row-reducing will not require a non-rational scalar.   The sum, product and difference of two rational numbers is also rational.  Thus, under each of these operations, the entries will remain rational.
 }
 
 \endedxproblem
@@ -428,7 +491,7 @@ row-reduce it?
 
 \edXabox{expect="Not necessarily" options="Yes","Not necessarily"}
 
-\edXsolution{ 
+\edXsolution{No.  For example, to put  \[\left[ \begin{array}{ccc} 1 & 2 & 1 \\ 0 & 1 & 1 \end{array} \right]. \] into RREF, we replace R2 by R2$-\frac{1}{2}\cdot$R1. 
 }
 
 \endedxproblem
