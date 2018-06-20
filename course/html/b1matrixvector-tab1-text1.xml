@@ -1,4 +1,20 @@
-<html display_name="Coming Soon" linenum="5" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/comingsoon.tex">
+<html display_name="Preliminaries" linenum="5" tex_filename="./block1/matrixtimesvector.tex">
   <p>
-Coming soon! </p>
+At the end of this sequence, and after some practice, you should be able to: </p>
+  <ul class="itemize">
+    <li>
+      <p>
+Compute the product of a matrix with a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p>
+    </li>
+    <li>
+      <p>
+Solve matrix-vector equations. </p>
+    </li>
+    <li>
+      <p>
+Relate matrix-vector equations with span and linear combinations. </p>
+    </li>
+  </ul>
+  <p>
+For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
 </html>

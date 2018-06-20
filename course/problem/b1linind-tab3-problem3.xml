@@ -1,4 +1,4 @@
-<problem display_name="List 3" linenum="144" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="List 3" linenum="144" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Consider the list of vectors [mathjaxinline]\{ v_1; v_2\}[/mathjaxinline], where [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline] are vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] as given in this picture: </p>

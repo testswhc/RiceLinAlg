@@ -1,0 +1,8 @@
+<html display_name="Notes on Notation" linenum="125" tex_filename="./block1/vectors.tex">
+  <p>
+The vector [mathjaxinline]\left[\begin{array}{c} 0 \\ 0 \\ \vdots \\ 0 \end{array} \right] \in \mathbb R^ n[/mathjaxinline] is called the <span style="color:#99182C"><b class="bf">zero vector</b></span>. (In fact, every vector space, not just [mathjaxinline]\mathbb R^ n[/mathjaxinline], has a zero vector.) </p>
+  <p>
+To distinguish it from the scalar 0, in print we will denote the zero vector by [mathjaxinline]\mathbf{0}[/mathjaxinline]. When handwritten, we will usually write the zero vector as a zero with an arrow over it, like [mathjaxinline]\vec{0}[/mathjaxinline]. Other letters that represent vectors will not have the arrow notation, however; we will typically use letters like [mathjaxinline]u,v,w,x[/mathjaxinline] for vectors, while letters like [mathjaxinline]a,b,c[/mathjaxinline] will represent scalars. </p>
+  <p>
+Be careful! The zero vector in the space [mathjaxinline]\mathbb R^3[/mathjaxinline] is [mathjaxinline]\mathbf{0}= \left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right],[/mathjaxinline] whereas the zero vector in the space [mathjaxinline]\mathbb R^4[/mathjaxinline] is [mathjaxinline]\mathbf{0}= \left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array} \right].[/mathjaxinline] Even though we use the same symbol, these are different objects! One has to judge from context which space any given [mathjaxinline]\mathbf{0}[/mathjaxinline] lies in. </p>
+</html>

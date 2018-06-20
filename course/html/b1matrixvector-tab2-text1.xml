@@ -1,0 +1,18 @@
+<html display_name="Matrix times Vector" linenum="36" tex_filename="./block1/matrixtimesvector.tex">
+  <p>
+If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix </p>
+  <table id="a0000000046" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <tr>
+      <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp; &amp;  | \\ v_1 &amp;  v_2 &amp;  \cdots &amp;  v_ n \\ | &amp;  | &amp; &amp;  | \end{array} \right],[/mathjax]</td>
+      <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+    </tr>
+  </table>
+  <p>
+ and [mathjaxinline]x[/mathjaxinline] is the vector [mathjaxinline]x = \left[\begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right],[/mathjaxinline] then the product [mathjaxinline]Ax[/mathjaxinline] is defined to be </p>
+  <table id="a0000000047" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <tr>
+      <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]Ax = a_1 v_1 + a_2 v_2 + \ldots + a_ n v_ n.[/mathjax]</td>
+      <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+    </tr>
+  </table>
+</html>

@@ -1,0 +1,12 @@
+<html display_name="Span (Noun)" linenum="222" tex_filename="./block1/lincombos.tex">
+  <p>
+Given vectors [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] over a field [mathjaxinline]F[/mathjaxinline], we define the <span style="color:#99182C"><b class="bf">span</b></span> of [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] to be the set of all linear combinations of [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline]. In other words, </p>
+  <table id="a0000000044" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <tr>
+      <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Span}\{ v_1; v_2; \ldots v_ n\}  = \{ a_1 v_1 + a_2 v_2 + \ldots + a_ nv_ n : a_ i \in F \} .[/mathjax]</td>
+      <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+    </tr>
+  </table>
+  <p>
+The span of a list with zero vectors is defined to be [mathjaxinline]\{ \vec0\}[/mathjaxinline]. </p>
+</html>

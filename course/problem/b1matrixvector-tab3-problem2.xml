@@ -1,0 +1,44 @@
+<problem display_name="Where does it live?" linenum="83" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]6\times 4[/mathjaxinline] matrix. In order for the product [mathjaxinline]Ax[/mathjaxinline] to be defined, the vector [mathjaxinline]x[/mathjaxinline] must live in what space? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="true" name="1">
+            <text> [mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> [mathjaxinline]\mathbb R^6[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> Either of these is fine</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+The resulting product [mathjaxinline]Ax[/mathjaxinline] will be an element of which space? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="true" name="1">
+            <text> [mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> [mathjaxinline]\mathbb R^6[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> Either of these is fine</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

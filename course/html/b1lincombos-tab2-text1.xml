@@ -1,0 +1,4 @@
+<html display_name="Definition of Linear Combination" linenum="34" tex_filename="./block1/lincombos.tex">
+  <p>
+Let [mathjaxinline]V[/mathjaxinline] be a vector space over a field [mathjaxinline]F[/mathjaxinline]. A <span style="color:#99182C"><b class="bf">linear combination</b></span> of a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in [mathjaxinline]V[/mathjaxinline] is a vector of the form [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ n v_ n[/mathjaxinline], where the [mathjaxinline]a_ i[/mathjaxinline] are scalars in [mathjaxinline]F[/mathjaxinline]. </p>
+</html>

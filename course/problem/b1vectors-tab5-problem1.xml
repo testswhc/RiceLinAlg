@@ -1,46 +1,18 @@
-<problem display_name="Horizontal or Vertical" linenum="189" tex_filename="C:/Users/swang/Box Sync/LinAlg/latex2edx/block1/sandbox.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Vector Spaces" linenum="224" tex_filename="./block1/vectors.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
-    <img src="/static/images/yshellsexample.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px"/>
     <p>
-Here is the region between the graphs [mathjaxinline]x = y^2[/mathjaxinline], [mathjaxinline]x+y = 6[/mathjaxinline], and [mathjaxinline]y = -1[/mathjaxinline]. We wish to find the volume of the solid obtained by rotating this region around the line [mathjaxinline]y = -1[/mathjaxinline]. </p>
-    <p>
-If we integrate with respect to [mathjaxinline]x[/mathjaxinline], the rectangles would become what shape when rotated? </p>
+True or False: The only vector spaces over the scalar field [mathjaxinline]\mathbb R[/mathjaxinline] are the spaces [mathjaxinline]\mathbb R^ n[/mathjaxinline] for [mathjaxinline]n&gt; 0[/mathjaxinline]. </p>
     <p>
       <optionresponse>
-        <optioninput options="('Disks or Washers','Shells','Something else')" correct="Disks or Washers"/>
+        <optioninput options="('True','False')" correct="False"/>
       </optionresponse>
-    </p>
-    <p>
-How many different integrals would we need to set up if we did that? </p>
-    <p>
-      <numericalresponse answer="3">
-        <textline>
-          <responseparam type="tolerance" default=".01"/>
-        </textline>
-      </numericalresponse>
-    </p>
-    <p>
-If we integrate with respect to [mathjaxinline]y[/mathjaxinline], the rectangles would become what shape when rotated? </p>
-    <p>
-      <optionresponse>
-        <optioninput options="('Disks or Washers','Shells','Something else')" correct="Shells"/>
-      </optionresponse>
-    </p>
-    <p>
-How many different integrals would we need to set up if we did that? </p>
-    <p>
-      <numericalresponse answer="1">
-        <textline>
-          <responseparam type="tolerance" default=".01"/>
-        </textline>
-      </numericalresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
- See the next video!  </p>
+False. We have seen other examples such as the set of polynomials.  </p>
         </font>
       </solution>
     </p>

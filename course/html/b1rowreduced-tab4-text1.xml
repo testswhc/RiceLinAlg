@@ -1,0 +1,24 @@
+<html display_name="The Row-Reduction Algorithm" linenum="128" tex_filename="./block1/rref.tex">
+  <p>
+The following algorithm will always work to reduce a matrix into Row-Reduced Echelon Form. </p>
+  <ul class="itemize">
+    <li>
+      <p>
+Swap two rows to get the left-most remaining non-zero entry to the topmost remaining row. </p>
+    </li>
+    <li>
+      <p>
+Scale that row to make its leading entry a 1. </p>
+    </li>
+    <li>
+      <p>
+Clear all non-zero entries in the column of that pivot (both above and below the pivot) by adding/subtracting multiples of that row to/from other rows. </p>
+    </li>
+    <li>
+      <p>
+With that pivot now set, repeat the procedure with the remaining rows. </p>
+    </li>
+  </ul>
+  <p>
+This is sometimes called <span style="color:#99182C"><b class="bf">Gaussian elimination</b></span>. </p>
+</html>

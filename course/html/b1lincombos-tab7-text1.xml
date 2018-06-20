@@ -1,0 +1,4 @@
+<html display_name="Span (Verb)" linenum="283" tex_filename="./block1/lincombos.tex">
+  <p>
+Given vectors [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] over a field [mathjaxinline]F[/mathjaxinline], we say that the list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] <span style="color:#99182C"><b class="bf">spans</b></span> [mathjaxinline]V[/mathjaxinline] if the span of the list of vectors is all of [mathjaxinline]V[/mathjaxinline]. </p>
+</html>

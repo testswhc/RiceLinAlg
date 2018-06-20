@@ -29,7 +29,7 @@ plus some questions.
 
 \beginedxvertical{The Template Vector Space}
 
-\doedxvideo{Rn}{???}
+\doedxvideo{R^n}{3QM3Lg15Hi8}
 
 
 
@@ -42,7 +42,11 @@ $w = \left[\begin{array}{c} 1 \\ -1  \\ 0 \end{array} \right].$
 
 
 What is $v+w$?  
-To enter a vector, type...
+
+To enter a vector, type... (instructions forthcoming)
+
+
+\input{vectorentry.tex}
 
 \edXabox{expect="Placeholder" options="Placeholder"}
 
@@ -54,10 +58,22 @@ What is $-3v$?
 
 What is $2w-3v$?  
 
+
+
 \edXabox{expect="Placeholder" options="Placeholder"}
 
 
 \edXsolution{ 
+
+$v+w = \left[\begin{array}{c} 2+1 \\ 3+(-1)  \\ 4+0 \end{array} \right]=\left[\begin{array}{c} 3 \\ 2  \\ 4 \end{array} \right]$
+
+
+$-3v = \left[\begin{array}{c} (-3)2 \\ (-3)3  \\ (-3)4 \end{array} \right]=\left[\begin{array}{c} -6 \\ -9  \\ -12 \end{array} \right]$
+
+
+$2w-3v=\left[\begin{array}{c} 2\cdot 1 \\ 2\cdot (-1)  \\ 2\cdot 0 \end{array} \right]+\left[\begin{array}{c} (-3)2 \\ (-3)3  \\ (-3)4 \end{array} \right]=\left[\begin{array}{c} 2 \\ -2  \\ 0 \end{array} \right]+
+\left[\begin{array}{c} -6 \\ -9  \\ -12 \end{array} \right]=\left[\begin{array}{c} -4 \\ -11  \\ -12 \end{array} \right]$
+
 }
 
 
@@ -73,7 +89,10 @@ an element of which of the following vector spaces?  Click all that apply.
 
 \edXabox{type="oldmultichoice" expect="$\R^4$" options="$\R^2$","$\R^3$","$\R^4$","$\R^5$"}
 
-\edXsolution{  }
+\edXsolution{The vector $w$ has 4 real entries.  Thus, it is an element of $\R^4$.
+
+It is not an element of (for instance) $\R^2$.  The vector $\left[\begin{array}{c} 1 \\ -1   \end{array} \right]$
+is an element of $\R^2$, but this is not the same as $w$.  }
 
 \endedxproblem
 
@@ -127,7 +146,7 @@ One has to judge from context which space any given $\veco$ lies in.
 \endedxtext
 
 
-\doedxvideo{Geometry of R^n}{???}
+\doedxvideo{Geometry of R^n}{4P4qoU2s1Rs}
 
 
 
@@ -136,27 +155,25 @@ One has to judge from context which space any given $\veco$ lies in.
 Vectors $v$ and $w$ are given.  
 
 \begin{center}
-\includesvg[300]{c1s3vectoraddsubtract}
+\includesvg[450]{c1s3vectoraddsubtract}
 \end{center}
 
 Which vector is equal to $v+w$?    
 
-
-\edXabox{expect="B" options="A","B","C"}
+\edXabox{expect="g" options="a","b","c","d","e","f","g","h"}
 
 Which vector is equal to $v-w$?    
 
-\edXabox{expect="B" options="A","B","C"}
-
+\edXabox{expect="d" options="a","b","c","d","e","f","g","h"}
 Which vector is equal to $w-v$?    
 
-\edXabox{expect="B" options="A","B","C"}
+\edXabox{expect="a" options="a","b","c","d","e","f","g","h"}
 
 Which vector is equal to $-v$?    
 
-\edXabox{expect="B" options="A","B","C","D"}
+\edXabox{expect="c" options="a","b","c","d","e","f","g","h"}
 
-\edXsolution{  }
+\edXsolution{If we align the tip of $w$ and the tail of $v$, we obtain $g$.  Now, $-w$ swaps the tip and tail of $w$, so to find $v-w$, we fix $v$, align the tip of $w$ with the tip of $v$ and draw a vector from the tail of $v$ to the tail of $w$.  To find $w-v$, we repeat the above with the roles of $w$ and $v$ swapped.  Or, we can note that $w-v=-(v-w)$ and $-d=a$.  Finally, $-v$ is the vector with the same magnitude as $v$, but opposite direction to $v$.}
 
 \endedxproblem
 
@@ -166,7 +183,7 @@ Which vector is equal to $-v$?
 
 \beginedxvertical{Beyond R^n}
 
-\doedxvideo{Other Vector Spaces}{XXX}
+\doedxvideo{Other Vector Spaces}{P0vitfigkm4}
 
 \endedxvertical
 
@@ -178,7 +195,7 @@ Which vector is equal to $-v$?
 A {\keyb{\bf vector space}} over a field $F$ is, essentially, a set $V$ in which one can 
 do vector addition and scalar multiplication.  For a more formal definition, see below. 
 
-\begin{edXshowhide}{Formal Definition of a Vector Space}
+% \begin{edXshowhide}{Formal Definition of a Vector Space}
 
 
 A vector space $V$ over a field $F$ is a set, together with an addition operation on $V$
@@ -196,7 +213,7 @@ $u+(v+w) = (u+v)+w$ and $u+v  = v+u$.
 \item For all $a,b \in F$, and $v\in V$, we have $a(bv) = (ab)v$.  
 \end{itemize}
 
-\end{edXshowhide}
+% \end{edXshowhide}
 
 
 
@@ -211,7 +228,7 @@ $\R^n$ for $n> 0$.
 
 \edXabox{expect="False" options="True","False"}
 
-\edXsolution{  }
+\edXsolution{False.  We have seen other examples such as the set of polynomials. }
 
 \endedxproblem
 

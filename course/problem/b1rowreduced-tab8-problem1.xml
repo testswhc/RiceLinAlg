@@ -1,8 +1,8 @@
-<problem display_name="Matrix Size" linenum="288" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Matrix Size" linenum="394" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let </p>
-    <table id="a0000000019" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <table id="a0000000041" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
       <tr>
         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  -3 &amp;  -2 \\ 0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0\end{array} \right].[/mathjax]</td>
         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -13,7 +13,10 @@ What is the size of [mathjaxinline]A[/mathjaxinline]? <multiplechoiceresponse><c
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+We see that [mathjaxinline]A[/mathjaxinline] has 4 rows and 3 columns. The first entry of [mathjaxinline]m\times n[/mathjaxinline] corresponds to the number of rows, while the second corresponds to number of columns.  </p>
+        </font>
       </solution>
     </p>
   </text>
