@@ -130,21 +130,49 @@
     </vertical>
   </sequential>
   <sequential display_name="Matrix-Vector Multiplication" linenum="213" tex_filename="testcourse.tex" refnum="5" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1matrixvector-sequential">
-    <vertical display_name="Wait for it" refnum="1" url_name="b1matrixvector-vertical1">
+    <vertical display_name="Page One" refnum="1" url_name="b1matrixvector-vertical1">
       <html url_name="b1matrixvector-tab1-text1"/>
     </vertical>
+    <vertical display_name="Defining Matrix-Vector Multiplication" refnum="2" url_name="b1matrixvector-vertical2">
+      <video url_name="b1matrixvector-tab2-video1"/>
+      <html url_name="b1matrixvector-tab2-text1"/>
+    </vertical>
+    <vertical display_name="Multiplication Practice" refnum="3" url_name="b1matrixvector-vertical3">
+      <problem url_name="b1matrixvector-tab3-problem1"/>
+      <problem url_name="b1matrixvector-tab3-problem2"/>
+      <problem url_name="b1matrixvector-tab3-problem3"/>
+    </vertical>
+    <vertical display_name="Matrix-Vector Equations" refnum="4" url_name="b1matrixvector-vertical4">
+      <video url_name="b1matrixvector-tab4-video1"/>
+      <problem url_name="b1matrixvector-tab4-problem1"/>
+      <problem url_name="b1matrixvector-tab4-problem2"/>
+      <problem url_name="b1matrixvector-tab4-problem3"/>
+      <problem url_name="b1matrixvector-tab4-problem4"/>
+    </vertical>
+    <vertical display_name="Solution Sets" refnum="5" url_name="b1matrixvector-vertical5">
+      <video url_name="b1matrixvector-tab5-video1"/>
+      <problem url_name="b1matrixvector-tab5-problem1"/>
+      <problem url_name="b1matrixvector-tab5-problem2"/>
+      <problem url_name="b1matrixvector-tab5-problem3"/>
+    </vertical>
+    <vertical display_name="Multiplication Properties" refnum="6" url_name="b1matrixvector-vertical6">
+      <video url_name="b1matrixvector-tab6-video1"/>
+      <html url_name="b1matrixvector-tab6-text1"/>
+      <problem url_name="b1matrixvector-tab6-problem1"/>
+      <problem url_name="b1matrixvector-tab6-problem2"/>
+    </vertical>
   </sequential>
-  <sequential display_name="Linear Independence" linenum="242" tex_filename="testcourse.tex" refnum="6" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">
+  <sequential display_name="Linear Independence" linenum="248" tex_filename="testcourse.tex" refnum="6" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">
     <vertical display_name="Wait for it" refnum="1" url_name="b1linind-vertical1">
       <html url_name="b1linind-tab1-text1"/>
     </vertical>
   </sequential>
-  <sequential display_name="Linear Transformations" linenum="275" tex_filename="testcourse.tex" refnum="7" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1lintrans-sequential">
+  <sequential display_name="Linear Transformations" linenum="281" tex_filename="testcourse.tex" refnum="7" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1lintrans-sequential">
     <vertical display_name="Wait for it" refnum="1" url_name="b1lintrans-vertical1">
       <html url_name="b1lintrans-tab1-text1"/>
     </vertical>
   </sequential>
-  <sequential display_name="Into and Onto" linenum="306" tex_filename="testcourse.tex" refnum="8" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
+  <sequential display_name="Into and Onto" linenum="312" tex_filename="testcourse.tex" refnum="8" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
     <vertical display_name="Wait for it" refnum="1" url_name="b1intoonto-vertical1">
       <html url_name="b1intoonto-tab1-text1"/>
     </vertical>

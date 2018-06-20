@@ -1533,7 +1533,14 @@ What is [mathjaxinline]2w-3v[/mathjaxinline]? </p>
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+[mathjaxinline]v+w = \left[\begin{array}{c} 2+1 \\ 3+(-1) \\ 4+0 \end{array} \right]=\left[\begin{array}{c} 3 \\ 2 \\ 4 \end{array} \right][/mathjaxinline] </p>
+                    <p>
+[mathjaxinline]-3v = \left[\begin{array}{c} (-3)2 \\ (-3)3 \\ (-3)4 \end{array} \right]=\left[\begin{array}{c} -6 \\ -9 \\ -12 \end{array} \right][/mathjaxinline] </p>
+                    <p>
+[mathjaxinline]2w-3v=\left[\begin{array}{c} 2\cdot 1 \\ 2\cdot (-1) \\ 2\cdot 0 \end{array} \right]+\left[\begin{array}{c} (-3)2 \\ (-3)3 \\ (-3)4 \end{array} \right]=\left[\begin{array}{c} 2 \\ -2 \\ 0 \end{array} \right]+ \left[\begin{array}{c} -6 \\ -9 \\ -12 \end{array} \right]=\left[\begin{array}{c} -4 \\ -11 \\ -12 \end{array} \right][/mathjaxinline] </p>
+                  </font>
                 </solution>
               </p>
             </text>
@@ -2060,14 +2067,608 @@ Given above are six lists of vectors. <span style="color:#99182C"><b class="bf">
         </vertical>
       </sequential>
       <sequential display_name="Matrix-Vector Multiplication" linenum="213" tex_filename="testcourse.tex" refnum="5" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1matrixvector-sequential">
-        <vertical display_name="Wait for it" refnum="1" url_name="b1matrixvector-vertical1">
-          <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1matrixvector-tab1-text1">
+        <vertical display_name="Page One" refnum="1" url_name="b1matrixvector-vertical1">
+          <html display_name="Preliminaries" linenum="5" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab1-text1">
             <p>
-Coming soon! </p>
+At the end of this sequence, and after some practice, you should be able to: </p>
+            <ul class="itemize">
+              <li>
+                <p>
+Compute the product of a matrix with a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p>
+              </li>
+              <li>
+                <p>
+Solve matrix-vector equations. </p>
+              </li>
+              <li>
+                <p>
+Relate matrix-vector equations with span and linear combinations. </p>
+              </li>
+            </ul>
+            <p>
+For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
           </html>
         </vertical>
+        <vertical display_name="Defining Matrix-Vector Multiplication" refnum="2" url_name="b1matrixvector-vertical2">
+          <video display_name="Matrix-Vector Multiplication" youtube_id_1_0="RsoteOVSoh4" url_name="b1matrixvector-tab2-video1"/>
+          <html display_name="Matrix times Vector" linenum="36" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab2-text1">
+            <p>
+If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix </p>
+            <table id="a0000000046" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <tr>
+                <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp; &amp;  | \\ v_1 &amp;  v_2 &amp;  \cdots &amp;  v_ n \\ | &amp;  | &amp; &amp;  | \end{array} \right],[/mathjax]</td>
+                <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+              </tr>
+            </table>
+            <p>
+ and [mathjaxinline]x[/mathjaxinline] is the vector [mathjaxinline]x = \left[\begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right],[/mathjaxinline] then the product [mathjaxinline]Ax[/mathjaxinline] is defined to be </p>
+            <table id="a0000000047" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <tr>
+                <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]Ax = a_1 v_1 + a_2 v_2 + \ldots + a_ n v_ n.[/mathjax]</td>
+                <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+              </tr>
+            </table>
+          </html>
+        </vertical>
+        <vertical display_name="Multiplication Practice" refnum="3" url_name="b1matrixvector-vertical3">
+          <problem display_name="Products" linenum="57" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let </p>
+              <table id="a0000000048" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} 2 &amp;  1 &amp;  0 &amp;  1\\ 0 &amp;  3 &amp;  -1 &amp;  -1 \\ 5 &amp;  0 &amp;  3 &amp;  1 \end{array} \right] ,[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+ and let [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ax[/mathjaxinline]? </p>
+              <script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def MatrixGrader(expect, ans):
+	tolerance = 0.01
+	ret={'ok':False}
+	ans.replace(' ','')
+	nums = ans.split(',')
+	expnums = expect.split(',')
+	if (expect == 'None') or (expect =='none'):
+		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
+	elif (nums[0] == "none") or (nums[0] == "None"):
+	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
+	else:
+		try:
+			expnum=[float(i) for i in expnums]
+			ansnum=[float(i) for i in nums]
+			explist = sorted(expnum, key=float)
+			anslist = sorted(ansnum, key=float) 
+			matching = True
+			if len(explist)!=len(anslist):
+			    if len(anslist)&lt;len(explist):
+			    	ret['msg']="You did not enter enough critical points."
+			    else:
+			    	ret['msg']="You entered too many critical points."
+		 	else:
+				for i in range(len(explist)):
+					errorcnt=0
+					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
+						matching = False
+						errorcnt+=1
+					if errorcnt != 0:
+						ret['msg']= "You have %d errors in your answer." % errorcnt
+				ret['ok']=matching
+		except:
+		    ret['msg']="Your answer should only involve decimal numbers."
+	return ret
+  
+</script>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+Let [mathjaxinline]y = \left[\begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ay[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Where does it live?" linenum="83" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]6\times 4[/mathjaxinline] matrix. In order for the product [mathjaxinline]Ax[/mathjaxinline] to be defined, the vector [mathjaxinline]x[/mathjaxinline] must live in what space? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="true" name="1">
+                      <text> [mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> [mathjaxinline]\mathbb R^6[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> Either of these is fine</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+The resulting product [mathjaxinline]Ax[/mathjaxinline] will be an element of which space? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="true" name="1">
+                      <text> [mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> [mathjaxinline]\mathbb R^6[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> Either of these is fine</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Products and Spans" linenum="101" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+True or false: If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix </p>
+              <table id="a0000000049" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp; &amp;  | \\ v_1 &amp;  v_2 &amp;  \cdots &amp;  v_ n \\ | &amp;  | &amp; &amp;  | \end{array} \right],[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+ and [mathjaxinline]x[/mathjaxinline] is any vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline], then the resulting product [mathjaxinline]Ax[/mathjaxinline] must be in [mathjaxinline]\mathrm{Span}\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline]. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('True','False')" correct="True"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Matrix-Vector Equations" refnum="4" url_name="b1matrixvector-vertical4">
+          <video display_name="Matrix-Vector Equations" youtube_id_1_0="????" url_name="b1matrixvector-tab4-video1"/>
+          <problem display_name="Solving Matrix-Vector Equations" linenum="131" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let </p>
+              <table id="a0000000050" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cc} 1 &amp;  2 \\ 1 &amp;  3 \\ 3 &amp;  -1 \end{array} \right] ,[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+ and let [mathjaxinline]v = \left[\begin{array}{c} 3 \\ 2 \\ 16 \end{array} \right].[/mathjaxinline] The equation [mathjaxinline]Ax = v[/mathjaxinline] has exactly one solution &#x2013; what is it? </p>
+              <script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def MatrixGrader(expect, ans):
+	tolerance = 0.01
+	ret={'ok':False}
+	ans.replace(' ','')
+	nums = ans.split(',')
+	expnums = expect.split(',')
+	if (expect == 'None') or (expect =='none'):
+		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
+	elif (nums[0] == "none") or (nums[0] == "None"):
+	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
+	else:
+		try:
+			expnum=[float(i) for i in expnums]
+			ansnum=[float(i) for i in nums]
+			explist = sorted(expnum, key=float)
+			anslist = sorted(ansnum, key=float) 
+			matching = True
+			if len(explist)!=len(anslist):
+			    if len(anslist)&lt;len(explist):
+			    	ret['msg']="You did not enter enough critical points."
+			    else:
+			    	ret['msg']="You entered too many critical points."
+		 	else:
+				for i in range(len(explist)):
+					errorcnt=0
+					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
+						matching = False
+						errorcnt+=1
+					if errorcnt != 0:
+						ret['msg']= "You have %d errors in your answer." % errorcnt
+				ret['ok']=matching
+		except:
+		    ret['msg']="Your answer should only involve decimal numbers."
+	return ret
+  
+</script>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+Let [mathjaxinline]w = \left[\begin{array}{c} 3 \\ -4 \\ 7 \end{array} \right].[/mathjaxinline] With the same [mathjaxinline]A[/mathjaxinline] as above, how many solutions does [mathjaxinline]Ax = w[/mathjaxinline] have? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Exactly one solution','More than one solution','No solutions')" correct="No solutions"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Another Matrix-Vector Equation" linenum="157" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinline] matrix with columns [mathjaxinline]v_1, v_2, v_3, v_4[/mathjaxinline]. That is, </p>
+              <table id="a0000000051" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp;  | &amp;  | \\ v_1 &amp;  v_2 &amp;  v_3 &amp;  v_4 \\ | &amp;  | &amp;  | &amp;  | \end{array} \right].[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+ Find a solution to the equation [mathjaxinline]Ax = v_2[/mathjaxinline]. </p>
+              <script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def MatrixGrader(expect, ans):
+	tolerance = 0.01
+	ret={'ok':False}
+	ans.replace(' ','')
+	nums = ans.split(',')
+	expnums = expect.split(',')
+	if (expect == 'None') or (expect =='none'):
+		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
+	elif (nums[0] == "none") or (nums[0] == "None"):
+	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
+	else:
+		try:
+			expnum=[float(i) for i in expnums]
+			ansnum=[float(i) for i in nums]
+			explist = sorted(expnum, key=float)
+			anslist = sorted(ansnum, key=float) 
+			matching = True
+			if len(explist)!=len(anslist):
+			    if len(anslist)&lt;len(explist):
+			    	ret['msg']="You did not enter enough critical points."
+			    else:
+			    	ret['msg']="You entered too many critical points."
+		 	else:
+				for i in range(len(explist)):
+					errorcnt=0
+					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
+						matching = False
+						errorcnt+=1
+					if errorcnt != 0:
+						ret['msg']= "You have %d errors in your answer." % errorcnt
+				ret['ok']=matching
+		except:
+		    ret['msg']="Your answer should only involve decimal numbers."
+	return ret
+  
+</script>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Always Consistent?" linenum="177" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. There is a specific vector [mathjaxinline]v[/mathjaxinline] for which you can conclude the equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution, even without knowing anything else about [mathjaxinline]A[/mathjaxinline]. What is this vector [mathjaxinline]v[/mathjaxinline]? </p>
+              <script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def MatrixGrader(expect, ans):
+	tolerance = 0.01
+	ret={'ok':False}
+	ans.replace(' ','')
+	nums = ans.split(',')
+	expnums = expect.split(',')
+	if (expect == 'None') or (expect =='none'):
+		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
+	elif (nums[0] == "none") or (nums[0] == "None"):
+	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
+	else:
+		try:
+			expnum=[float(i) for i in expnums]
+			ansnum=[float(i) for i in nums]
+			explist = sorted(expnum, key=float)
+			anslist = sorted(ansnum, key=float) 
+			matching = True
+			if len(explist)!=len(anslist):
+			    if len(anslist)&lt;len(explist):
+			    	ret['msg']="You did not enter enough critical points."
+			    else:
+			    	ret['msg']="You entered too many critical points."
+		 	else:
+				for i in range(len(explist)):
+					errorcnt=0
+					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
+						matching = False
+						errorcnt+=1
+					if errorcnt != 0:
+						ret['msg']= "You have %d errors in your answer." % errorcnt
+				ret['ok']=matching
+		except:
+		    ret['msg']="Your answer should only involve decimal numbers."
+	return ret
+  
+</script>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Solution Set" linenum="194" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let </p>
+              <table id="a0000000052" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} 2 &amp;  1 &amp;  0 &amp;  1\\ 0 &amp;  3 &amp;  -1 &amp;  -1 \\ 5 &amp;  0 &amp;  3 &amp;  1 \end{array} \right] ,[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+ and let [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ax[/mathjaxinline]? </p>
+              <script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def MatrixGrader(expect, ans):
+	tolerance = 0.01
+	ret={'ok':False}
+	ans.replace(' ','')
+	nums = ans.split(',')
+	expnums = expect.split(',')
+	if (expect == 'None') or (expect =='none'):
+		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
+	elif (nums[0] == "none") or (nums[0] == "None"):
+	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
+	else:
+		try:
+			expnum=[float(i) for i in expnums]
+			ansnum=[float(i) for i in nums]
+			explist = sorted(expnum, key=float)
+			anslist = sorted(ansnum, key=float) 
+			matching = True
+			if len(explist)!=len(anslist):
+			    if len(anslist)&lt;len(explist):
+			    	ret['msg']="You did not enter enough critical points."
+			    else:
+			    	ret['msg']="You entered too many critical points."
+		 	else:
+				for i in range(len(explist)):
+					errorcnt=0
+					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
+						matching = False
+						errorcnt+=1
+					if errorcnt != 0:
+						ret['msg']= "You have %d errors in your answer." % errorcnt
+				ret['ok']=matching
+		except:
+		    ret['msg']="Your answer should only involve decimal numbers."
+	return ret
+  
+</script>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+Let [mathjaxinline]y = \left[\begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ay[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Solution Sets" refnum="5" url_name="b1matrixvector-vertical5">
+          <video display_name="Solving Ax = 0" youtube_id_1_0="???" url_name="b1matrixvector-tab5-video1"/>
+          <problem display_name="Non-trivial Solutions" linenum="233" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinline] matrix. The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has the solution [mathjaxinline]x = \mathbf{0}[/mathjaxinline], which we call the <span style="color:#99182C"><b class="bf">trivial solution.</b></span> If there are no solutions other than the trivial solutions, how many pivots must [mathjaxinline]A[/mathjaxinline] have when row-reduced? </p>
+              <p>
+                <numericalresponse answer="4">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Find a Solution Set" linenum="249" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let </p>
+              <table id="a0000000053" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} 1 &amp;  1 &amp;  0 &amp;  -1\\ 5 &amp;  6 &amp;  -1 &amp;  1 \end{array} \right].[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+ Find a list of vectors whose span is the set of solutions to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. </p>
+              <p>
+Enter the list of vectors below, separated by semicolons. For instance, to enter the list [mathjaxinline]\{ \left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right]; \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] \}[/mathjaxinline], type &lt;1,0,1&gt;;&lt;1,2,3&gt;. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Other Solution Sets" linenum="274" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+True or false: If [mathjaxinline]S[/mathjaxinline] is the solution set to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline], then the solution set to [mathjaxinline]Ax = v[/mathjaxinline] must be a translation of [mathjaxinline]S[/mathjaxinline]. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('True','False')" correct="False"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Multiplication Properties" refnum="6" url_name="b1matrixvector-vertical6">
+          <video display_name="Why do we call it multiplication?" youtube_id_1_0="e67R6kfSRo4" url_name="b1matrixvector-tab6-video1"/>
+          <html display_name="Properties of Matrix Multiplication" linenum="301" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-text1">
+            <p>
+For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathjaxinline], vectors [mathjaxinline]w,x \in \mathbb R^ n[/mathjaxinline], and scalar [mathjaxinline]a[/mathjaxinline], we have that </p>
+            <table id="a0000000054" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <tr>
+                <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A(w+x) = Aw + Ax[/mathjax]</td>
+                <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+              </tr>
+            </table>
+            <p>
+ and </p>
+            <table id="a0000000055" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <tr>
+                <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A(ax) = a(Ax).[/mathjax]</td>
+                <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+              </tr>
+            </table>
+          </html>
+          <problem display_name="Consistent Matrix-Vector Equations" linenum="310" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline], and suppose that [mathjaxinline]x = \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = w[/mathjaxinline]. </p>
+              <p>
+Find a solution to the equation [mathjaxinline]Ax = v+w[/mathjaxinline]. </p>
+              <script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def MatrixGrader(expect, ans):
+	tolerance = 0.01
+	ret={'ok':False}
+	ans.replace(' ','')
+	nums = ans.split(',')
+	expnums = expect.split(',')
+	if (expect == 'None') or (expect =='none'):
+		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
+	elif (nums[0] == "none") or (nums[0] == "None"):
+	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
+	else:
+		try:
+			expnum=[float(i) for i in expnums]
+			ansnum=[float(i) for i in nums]
+			explist = sorted(expnum, key=float)
+			anslist = sorted(ansnum, key=float) 
+			matching = True
+			if len(explist)!=len(anslist):
+			    if len(anslist)&lt;len(explist):
+			    	ret['msg']="You did not enter enough critical points."
+			    else:
+			    	ret['msg']="You entered too many critical points."
+		 	else:
+				for i in range(len(explist)):
+					errorcnt=0
+					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
+						matching = False
+						errorcnt+=1
+					if errorcnt != 0:
+						ret['msg']= "You have %d errors in your answer." % errorcnt
+				ret['ok']=matching
+		except:
+		    ret['msg']="Your answer should only involve decimal numbers."
+	return ret
+  
+</script>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Placeholder')" correct="Placeholder"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Consistent Matrix-Vector Equations 2" linenum="331" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that the equation [mathjaxinline]Ax = v[/mathjaxinline] is consistent. Must the equation [mathjaxinline]Ax = 4v[/mathjaxinline] be consistent? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
       </sequential>
-      <sequential display_name="Linear Independence" linenum="242" tex_filename="testcourse.tex" refnum="6" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">
+      <sequential display_name="Linear Independence" linenum="248" tex_filename="testcourse.tex" refnum="6" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">
         <vertical display_name="Wait for it" refnum="1" url_name="b1linind-vertical1">
           <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1linind-tab1-text1">
             <p>
@@ -2075,7 +2676,7 @@ Coming soon! </p>
           </html>
         </vertical>
       </sequential>
-      <sequential display_name="Linear Transformations" linenum="275" tex_filename="testcourse.tex" refnum="7" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1lintrans-sequential">
+      <sequential display_name="Linear Transformations" linenum="281" tex_filename="testcourse.tex" refnum="7" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1lintrans-sequential">
         <vertical display_name="Wait for it" refnum="1" url_name="b1lintrans-vertical1">
           <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1lintrans-tab1-text1">
             <p>
@@ -2083,7 +2684,7 @@ Coming soon! </p>
           </html>
         </vertical>
       </sequential>
-      <sequential display_name="Into and Onto" linenum="306" tex_filename="testcourse.tex" refnum="8" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
+      <sequential display_name="Into and Onto" linenum="312" tex_filename="testcourse.tex" refnum="8" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
         <vertical display_name="Wait for it" refnum="1" url_name="b1intoonto-vertical1">
           <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1intoonto-tab1-text1">
             <p>

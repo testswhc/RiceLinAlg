@@ -1,0 +1,19 @@
+<problem display_name="Non-trivial Solutions" linenum="233" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinline] matrix. The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has the solution [mathjaxinline]x = \mathbf{0}[/mathjaxinline], which we call the <span style="color:#99182C"><b class="bf">trivial solution.</b></span> If there are no solutions other than the trivial solutions, how many pivots must [mathjaxinline]A[/mathjaxinline] have when row-reduced? </p>
+    <p>
+      <numericalresponse answer="4">
+        <textline>
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

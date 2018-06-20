@@ -1,0 +1,25 @@
+<problem display_name="Products and Spans" linenum="101" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or false: If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix </p>
+    <table id="a0000000049" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp; &amp;  | \\ v_1 &amp;  v_2 &amp;  \cdots &amp;  v_ n \\ | &amp;  | &amp; &amp;  | \end{array} \right],[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <p>
+ and [mathjaxinline]x[/mathjaxinline] is any vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline], then the resulting product [mathjaxinline]Ax[/mathjaxinline] must be in [mathjaxinline]\mathrm{Span}\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline]. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>
