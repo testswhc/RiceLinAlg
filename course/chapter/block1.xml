@@ -147,7 +147,6 @@
       <problem url_name="b1matrixvector-tab4-problem1"/>
       <problem url_name="b1matrixvector-tab4-problem2"/>
       <problem url_name="b1matrixvector-tab4-problem3"/>
-      <problem url_name="b1matrixvector-tab4-problem4"/>
     </vertical>
     <vertical display_name="Solution Sets" refnum="5" url_name="b1matrixvector-vertical5">
       <video url_name="b1matrixvector-tab5-video1"/>

@@ -1,0 +1,221 @@
+
+
+\beginedxvertical{Page One}
+
+\beginedxtext{Preliminaries}
+
+
+
+
+
+At the end of this sequence, and after some practice, you should be able to:
+
+\begin{itemize}
+\item Describe the geometric properties of orthogonal projections.  
+\item Compute orthogonal projections.  
+\item Apply the Gram-Schmidt Algorithm to find orthogonal bases. 
+\end{itemize}
+
+For time budgeting purposes, this sequence has 4 videos totaling 14 minutes, 
+plus some questions.  
+
+
+
+\endedxtext
+
+\endedxvertical
+
+
+
+\beginedxvertical{Introducing Projections}
+
+
+\beginedxproblem{Closest Vector}{\dpa1}
+
+Consider the vector $v = 
+ \left[\begin{array}{c}
+3 \\
+4 \\
+7
+\end{array} \right] \in \R^3$.  Let $W$ be the subspace of $\R^3$ given by 
+\[ W = \left\{  \left[\begin{array}{c}
+a_1 \\
+a_2 \\
+0
+\end{array} \right] : a_1, a_2 
+in \R \right\}. \]
+(In other words, $W$ is the $x-y$ plane inside $\R^3$.)  What is the closest vector to $v$ inside $W$?  
+
+\begin{center}
+\includesvg[300]{placeholderimage}   
+\end{center}
+
+
+\input{vectorentry.tex}
+
+\edXabox{expect="Placeholder" options="Placeholder"}
+
+
+\edXsolution{ 
+}
+
+
+\endedxproblem
+
+\doedxvideo{Orthogonal Projections}{???}
+
+\beginedxproblem{Examining the Projection Formula 1}{\dpa1}
+
+Let's examine the formula for the projection given in the video.  
+
+What kind of object is $\langle v, w_i \rangle$?  
+\edXabox{expect="Scalar" options="Scalar","Vector,"Matrix"}
+
+\edXsolution{ 
+}
+
+
+\endedxproblem
+
+
+\beginedxproblem{Examining the Projection Formula 2}{\dpa1}
+
+What kind of object is $\langle v, w_i \rangle w_i$?  
+
+\edXabox{expect="Vector" options="Scalar","Vector,"Matrix"}
+
+\edXsolution{ 
+}
+
+
+\endedxproblem
+
+\beginedxproblem{Examining the Projection Formula 3}{\dpa1}
+
+What kind of object is $\ds \sum_{i=1}^k \langle v, w_i \rangle w_i$?  
+
+\edXabox{expect="Vector" options="Scalar","Vector,"Matrix"}
+
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+\endedxvertical
+
+
+
+
+
+\beginedxvertical{Orthogonal Projection Theorem}
+
+\doedxvideo{Orthogonal Projections Proven}{???}
+
+
+\beginedxproblem{Remembering the Conditions}{\dpa1}
+
+True or false: If $\{w_1; w_2;  \ldots w_k\}$ is an orthogonal basis of the 
+subspace $W \subset V$, and $v\in V$, then the orthogonal projection of $v$ onto $W$ is given by 
+$\ds \sum_{i=1}^k \langle v, w_i \rangle w_i$. 
+
+\edXabox{expect="False" options="True","False"}
+
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+
+
+
+\endedxvertical
+
+
+
+
+
+\beginedxvertical{Orthogonal Projections in Full Generality}
+
+
+\doedxvideo{Orthogonal Projections with Orthogonal Basis}{???}
+
+
+\beginedxtext{Orthogonal Projection Theorem}
+
+Let $V$ be a vector space with an inner product, and let $v\in V$.  
+
+If $\{w_1; w_2; \ldots w_k\}$ is an orthogonal basis of a subspace $W$, then 
+the vector 
+\[ \hat{v} = \sum_{i=1}^k \frac{\langle v, w_i \rangle}{\langle w_i, w_i \rangle} w_i \]
+is the {\keyb{\bf orthogonal projection}} of $v$ onto $W$, sometimes denoted $\mathrm{Proj}_W (v)$,
+and has the following properties: 
+
+\begin{enumerate}
+\item $\hat{v} \in W$.
+\item $v - \hat{v}$ is orthogonal to every vector in $W$. 
+\item $\hat{v}$ is the unique vector having the previous two properties.  
+\item $\hat{v}$ is the closest vector to $v$ in $W$.  
+\end{enumerate}
+
+\endedxtext
+
+\beginedxproblem{Projection Practice 1}{\dpa1}
+
+
+Let $W$ be the subspace of $\R^4$ spanned by the list $\{w_1; w_2; w_3\}$, where 
+$w_1 = \left[\begin{array}{c} 1 \\ 1 \\ 1 \\ -2 
+\end{array} \right]$, $w_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 
+\end{array} \right], $ and $w_3 = \left[\begin{array}{c} 1 \\ 1 \\ 2 \\ 2 
+\end{array} \right]. $  Note that $\{w_1; w_2; w_3\}$ is an orthogonal list.  
+
+Let $v = \left[\begin{array}{c} 2 \\ 2 \\ -3 \\ 4 
+\end{array} \right].$  What is the closest vector to $v$ in $W$?  
+
+\input{vectorentry.tex}
+
+\edXabox{expect="Placeholder" options="Placeholder"}
+
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Projection Practice 2}{\dpa1}
+
+Recall that $C[0,1]$ is the vector space of continuous functions on the interval $[0,1]$, and that
+we have an inner product on that vector space given by $\langle f, g \rangle = \int_0^1 f(x)g(x) \ dx$.  
+
+
+Let $W$ be the subspace of $C[0,1]$ which is the span of a single function 
+$f(x) = x$.  
+
+Let $g(x) = x^2$.  What is the orthogonal projection of $g$ onto $W$?  
+
+
+\edXabox{type="formula" expect="" samples="x@1:5#5" feqin="1" tolerance=".01"}\\
+
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+\endedxvertical
+
+
+
+
+
+\beginedxvertical{Fourier Approximations}
+
+\doedxvideo{Fourier Approximations}{???}
+
+\endedxvertical
+
