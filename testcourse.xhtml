@@ -1133,7 +1133,7 @@ At the end of this sequence, and after some practice, you should be able to: </p
 <li><p>
 Describe the span of some lists of vectors. </p></li>
 <li><p>
-Determine whether a list of vectors in [mathjaxinline]\mathrm{Re\, }^ m[/mathjaxinline] spans [mathjaxinline]\mathrm{Re\, }^ m[/mathjaxinline]. </p></li>
+Determine whether a list of vectors in [mathjaxinline]\mathbb R^ m[/mathjaxinline] spans [mathjaxinline]\mathbb R^ m[/mathjaxinline]. </p></li>
 </ul><p>
 For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p></html></p></vertical>   </p><p>
 <vertical display_name="Introduction to Linear Combinations" attrib_string="url_name=&quot;b1lincombos-vertical2&quot;" refnum="2"><p>
@@ -1141,7 +1141,7 @@ For time budgeting purposes, this sequence has X videos totaling X minutes, plus
 Let [mathjaxinline]V[/mathjaxinline] be a vector space over a field [mathjaxinline]F[/mathjaxinline]. A <span style="color:#99182C"><b class="bf">linear combination</b></span> of a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in [mathjaxinline]V[/mathjaxinline] is a vector of the form [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ n v_ n[/mathjaxinline], where the [mathjaxinline]a_ i[/mathjaxinline] are scalars in [mathjaxinline]F[/mathjaxinline]. </p></html></p></vertical>   </p><p>
 <vertical display_name="Linear Combinations" attrib_string="url_name=&quot;b1lincombos-vertical3&quot;" refnum="3"><p>
 <problem display_name="Linear Combo 1" attrib_string="url_name=&quot;b1lincombos-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="50" tex_filename="./block1/lincombos.tex"><text><p>
-Let [mathjaxinline]v_1 = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathrm{Re\, }^3[/mathjaxinline]. </p><p>
+Let [mathjaxinline]v_1 = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p><p>
 Can you write the vector [mathjaxinline]x = \left[\begin{array}{c} -4 \\ -6 \\ -8 \end{array} \right][/mathjaxinline] as a linear combination [mathjaxinline]x = a_1 v_1 + a_2 v_2[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p><p>
 <p style="display:inline">[mathjaxinline]a_1=[/mathjaxinline] </p><formularesponse inline="1" type="cs" samples="No@1:5#5" answer="-2">
   <formulaequationinput inline="1">
@@ -1152,10 +1152,11 @@ Can you write the vector [mathjaxinline]x = \left[\begin{array}{c} -4 \\ -6 \\ -
     <responseparam type="tolerance" default=".01"/>
   </formulaequationinput>
 </formularesponse><br /></p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Linear Combo 2" attrib_string="url_name=&quot;b1lincombos-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="70" tex_filename="./block1/lincombos.tex"><text><p>
-Let [mathjaxinline]v_1 = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathrm{Re\, }^3[/mathjaxinline]. </p><p>
-Can you write the zero vector in [mathjaxinline]\mathrm{Re\, }^3[/mathjaxinline] as a linear combination [mathjaxinline]\vec0 = a_1 v_1 + a_2 v_2[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ We may notice that [mathjaxinline]x[/mathjaxinline] is a scalar multiple of [mathjaxinline]v_1[/mathjaxinline]: <br /><br />[mathjaxinline]-2 \cdot \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right] = \left[\begin{array}{c} -4 \\ -6 \\ -8 \end{array} \right][/mathjaxinline] <br />[mathjaxinline]-2 \cdot \, \, \, \, \, \,  v_1 \, \, \, \, \, = \, \, \, \, \, \, \, \, \, \, x[/mathjaxinline] <br /><br />It follows immediately that [mathjaxinline]a_1=-2[/mathjaxinline],[mathjaxinline]a_2= 0[/mathjaxinline] is a solution. </p></font></solution></p></text></problem></p><p>
+<problem display_name="Linear Combo 2" attrib_string="url_name=&quot;b1lincombos-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="74" tex_filename="./block1/lincombos.tex"><text><p>
+Let [mathjaxinline]v_1 = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p><p>
+Can you write the zero vector in [mathjaxinline]\mathbb R^3[/mathjaxinline] as a linear combination [mathjaxinline]\mathbf{0}= a_1 v_1 + a_2 v_2[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p><p>
 <p style="display:inline">[mathjaxinline]a_1=[/mathjaxinline] </p><formularesponse inline="1" type="cs" samples="No@1:5#5" answer="0">
   <formulaequationinput inline="1">
     <responseparam type="tolerance" default=".01"/>
@@ -1165,16 +1166,18 @@ Can you write the zero vector in [mathjaxinline]\mathrm{Re\, }^3[/mathjaxinline]
     <responseparam type="tolerance" default=".01"/>
   </formulaequationinput>
 </formularesponse><br /></p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Linear Combo 3" attrib_string="url_name=&quot;b1lincombos-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="92" tex_filename="./block1/lincombos.tex"><text><p>
-Let [mathjaxinline]v_1 = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathrm{Re\, }^3[/mathjaxinline]. </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ For any set of vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline], we can always combine them to obtain the zero vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] by simply setting all of the coefficients to zero.  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Linear Combo 3" attrib_string="url_name=&quot;b1lincombos-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="97" tex_filename="./block1/lincombos.tex"><text><p>
+Let [mathjaxinline]v_1 = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p><p>
 Can you write [mathjaxinline]v_2[/mathjaxinline] as a linear combination of [mathjaxinline]v_1[/mathjaxinline]? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="No"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Linear Combo 4" attrib_string="url_name=&quot;b1lincombos-tab3-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="111" tex_filename="./block1/lincombos.tex"><text><center> <edxxml><img src="/static/images/c1s4lincombo.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
-Given the picture above in [mathjaxinline]\mathrm{Re\, }^2[/mathjaxinline], can you write [mathjaxinline]w[/mathjaxinline] as a linear combination [mathjaxinline]w = a_1 v_1 + a_2 v_2[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ A "yes" answer here would imply that some scalar, multiplied by [mathjaxinline]v_1[/mathjaxinline], equals [mathjaxinline]v_2[/mathjaxinline]. If [mathjaxinline]c \cdot v_1 = v_2[/mathjaxinline], then each entry of [mathjaxinline]v_1[/mathjaxinline], times [mathjaxinline]c[/mathjaxinline], equals its respective entry in [mathjaxinline]v_2[/mathjaxinline]: <br /><br />[mathjaxinline]c \cdot 2 = 1[/mathjaxinline],    [mathjaxinline]c \cdot 3 = -1[/mathjaxinline],    and [mathjaxinline]c \cdot 4 = 0[/mathjaxinline]. <br /><br />We can see that this is inconsistent; for example, the third equation implies [mathjaxinline]c = 0[/mathjaxinline], and yet that would not satisfy the first or second equation.  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Linear Combo 4" attrib_string="url_name=&quot;b1lincombos-tab3-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="116" tex_filename="./block1/lincombos.tex"><text><center> <edxxml><img src="/static/images/c1s4lincombo.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
+Given the picture above in [mathjaxinline]\mathbb R^2[/mathjaxinline], can you write [mathjaxinline]w[/mathjaxinline] as a linear combination [mathjaxinline]w = a_1 v_1 + a_2 v_2[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p><p>
 <p style="display:inline">[mathjaxinline]a_1=[/mathjaxinline] </p><formularesponse inline="1" type="cs" samples="No@1:5#5" answer="-1">
   <formulaequationinput inline="1">
     <responseparam type="tolerance" default=".01"/>
@@ -1184,34 +1187,36 @@ Given the picture above in [mathjaxinline]\mathrm{Re\, }^2[/mathjaxinline], can 
     <responseparam type="tolerance" default=".01"/>
   </formulaequationinput>
 </formularesponse><br /></p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Linear Combo 5" attrib_string="url_name=&quot;b1lincombos-tab3-problem5&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="132" tex_filename="./block1/lincombos.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Notice how the grid of parallelograms shows us where we can expect to end up by applying [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline] by various amounts; each lattice point is a linear combination, with integer coefficients, of [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline]. The question is, what combination of [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline] gives us the same net effect as [mathjaxinline]w[/mathjaxinline]? Since the head of [mathjaxinline]w[/mathjaxinline] lies on a lattice point of the grid, we can simply count our way to the answer: a movement of -1 spaces in the [mathjaxinline]v_1[/mathjaxinline] direction, and a movement of 2 spaces in the [mathjaxinline]v_2[/mathjaxinline] direction, takes us from the tail to the head of [mathjaxinline]w[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Linear Combo 5" attrib_string="url_name=&quot;b1lincombos-tab3-problem5&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="138" tex_filename="./block1/lincombos.tex"><text><p>
 Let [mathjaxinline]f[/mathjaxinline] denote the polynomial [mathjaxinline]t^3 + 1[/mathjaxinline], and let [mathjaxinline]g[/mathjaxinline] denote the </p><p>
 polynomial [mathjaxinline]t^2 - t[/mathjaxinline]. Recall that the set of polynomials is a vector space over [mathjaxinline]\mathbb R[/mathjaxinline], so [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] are vectors in that vector space. </p><p>
 Let [mathjaxinline]h[/mathjaxinline] denote [mathjaxinline]17t^3 + 2t^2 - 2t + 17[/mathjaxinline]. Can you write [mathjaxinline]h[/mathjaxinline] as a linear combination [mathjaxinline]h = a_1 f + a_2 g[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p><p>
-<p style="display:inline">[mathjaxinline]a_1=[/mathjaxinline] </p><formularesponse inline="1" type="cs" samples="No@1:5#5" answer="17">
+<p style="display:inline">[mathjaxinline]a_1=[/mathjaxinline] </p><formularesponse inline="1" type="cs" samples="No,t@1,1:5,5#10" answer="17">
   <formulaequationinput inline="1">
     <responseparam type="tolerance" default=".01"/>
   </formulaequationinput>
-</formularesponse><br /><p style="display:inline">[mathjaxinline]a_2=[/mathjaxinline] </p><formularesponse inline="1" type="cs" samples="No@1:5#5" answer="2">
-  <formulaequationinput inline="1">
-    <responseparam type="tolerance" default=".01"/>
-  </formulaequationinput>
-</formularesponse><br /></p><p>
-Let [mathjaxinline]h[/mathjaxinline] denote [mathjaxinline]3t^4 + 3t[/mathjaxinline]. Can you write [mathjaxinline]h[/mathjaxinline] as a linear combination [mathjaxinline]h = a_1 f + a_2 g[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p><p>
-<p style="display:inline">[mathjaxinline]a_1=[/mathjaxinline] </p><formularesponse inline="1" type="cs" samples="No@1:5#5" answer="No">
-  <formulaequationinput inline="1">
-    <responseparam type="tolerance" default=".01"/>
-  </formulaequationinput>
-</formularesponse><br /><p style="display:inline">[mathjaxinline]a_2=[/mathjaxinline] </p><formularesponse inline="1" type="cs" samples="No@1:5#5" answer="No">
+</formularesponse><br /><p style="display:inline">[mathjaxinline]a_2=[/mathjaxinline] </p><formularesponse inline="1" type="cs" samples="No,t@1,1:5,5#10" answer="2">
   <formulaequationinput inline="1">
     <responseparam type="tolerance" default=".01"/>
   </formulaequationinput>
 </formularesponse><br /></p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+Let [mathjaxinline]j[/mathjaxinline] denote [mathjaxinline]3t^4 + 3t[/mathjaxinline]. Can you write [mathjaxinline]j[/mathjaxinline] as a linear combination [mathjaxinline]j = a_1 f + a_2 g[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p><p>
+<p style="display:inline">[mathjaxinline]a_1=[/mathjaxinline] </p><formularesponse inline="1" type="cs" samples="No,t@1,1:4,5#10" answer="No">
+  <formulaequationinput inline="1">
+    <responseparam type="tolerance" default=".01"/>
+  </formulaequationinput>
+</formularesponse><br /><p style="display:inline">[mathjaxinline]a_2=[/mathjaxinline] </p><formularesponse inline="1" type="cs" samples="No,t@1,1:5,5#10" answer="No">
+  <formulaequationinput inline="1">
+    <responseparam type="tolerance" default=".01"/>
+  </formulaequationinput>
+</formularesponse><br /></p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ For the first question, a little bit of trial and error gives us that [mathjaxinline]h = 17f + 2g[/mathjaxinline]. <br /><br />In the second problem, we are asked to combine [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] to make a polynomial with a quartic term (one that involves [mathjaxinline]t^4[/mathjaxinline]). There is no way to multiply [mathjaxinline]f[/mathjaxinline] or [mathjaxinline]g[/mathjaxinline] by a scalar to get a quartic term. It is true that [mathjaxinline]j = 3t\cdot f + 0g,[/mathjaxinline] but [mathjaxinline]3t[/mathjaxinline] is not a scalar. </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Is it a linear combination?" attrib_string="url_name=&quot;b1lincombos-vertical4&quot;" refnum="4"><p>
-<video display_name="Linear Combinations in &lt;math&gt;$Re^ n$&lt;/math&gt;" youtube_id_1_0="???" attrib_string="url_name=&quot;b1lincombos-tab4-video1&quot; "></video><problem display_name="Linear Combo 6" attrib_string="url_name=&quot;b1lincombos-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="187" tex_filename="./block1/lincombos.tex"><text><p>
-Let [mathjaxinline]v_1 = \left[\begin{array}{c} 1 \\ 3 \\ 1 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 3 \\ 10 \\ 2 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathrm{Re\, }^3[/mathjaxinline]. </p><p>
+<video display_name="Linear Combinations in &lt;math&gt;$R^ n$&lt;/math&gt;" youtube_id_1_0="???" attrib_string="url_name=&quot;b1lincombos-tab4-video1&quot; "></video><problem display_name="Linear Combo 6" attrib_string="url_name=&quot;b1lincombos-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="200" tex_filename="./block1/lincombos.tex"><text><p>
+Let [mathjaxinline]v_1 = \left[\begin{array}{c} 1 \\ 3 \\ 1 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 3 \\ 10 \\ 2 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p><p>
 Use row reduction to determine the answer to the following: Can you write [mathjaxinline]w = \left[\begin{array}{c} 1 \\ 5 \\ -1 \end{array} \right][/mathjaxinline] as a linear combination [mathjaxinline]w = a_1 v_1 + a_2 v_2[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p><p>
 <p style="display:inline">[mathjaxinline]a_1=[/mathjaxinline] </p><formularesponse inline="1" type="cs" samples="No@1:5#5" answer="-5">
   <formulaequationinput inline="1">
@@ -1222,35 +1227,39 @@ Use row reduction to determine the answer to the following: Can you write [mathj
     <responseparam type="tolerance" default=".01"/>
   </formulaequationinput>
 </formularesponse><br /></p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+With the vectors [mathjaxinline]v_1[/mathjaxinline], [mathjaxinline]v_2[/mathjaxinline], and [mathjaxinline]w[/mathjaxinline], form an augmented matrix: <br /><br />[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  3 &amp;  1 \\ 3 &amp;  10 &amp;  5 \\ 1 &amp;  2 &amp;  -1 \end{array} \right][/mathjaxinline] <br /><br />Multiply the first row by -3, and add this to the second row: <br /><br />[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  3 &amp;  1 \\ 0 &amp;  1 &amp;  2 \\ 1 &amp;  2 &amp;  -1 \end{array} \right][/mathjaxinline] <br /><br />Multiply the first row by -1, and add this to the third row: <br /><br />[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  3 &amp;  1 \\ 0 &amp;  1 &amp;  2 \\ 0 &amp;  -1 &amp;  -2 \end{array} \right][/mathjaxinline] <br /><br />Add the second row to the third row: <br /><br />[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  3 &amp;  1 \\ 0 &amp;  1 &amp;  2 \\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjaxinline] <br /><br />Multiply the second row by -3, and add this to the first row: <br /><br />[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  0 &amp;  -5 \\ 0 &amp;  1 &amp;  2 \\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjaxinline] <br /><br />We've fully row reduced the matrix; we see that the system is consistent and that [mathjaxinline]a_1 = -5[/mathjaxinline] and [mathjaxinline]a_2 = 2[/mathjaxinline]. (Note also that we have no free variables; our solution, given by the right side of the augmented matrix, is unique.) <br /><br />You can verify your solution by computing [mathjaxinline]-5v_1 + 2v_2[/mathjaxinline]; you should get [mathjaxinline]w[/mathjaxinline]. </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Span as Noun" attrib_string="url_name=&quot;b1lincombos-vertical5&quot;" refnum="5"><p>
 <video display_name="Span as a Noun" youtube_id_1_0="BhyIFSpOcRs" attrib_string="url_name=&quot;b1lincombos-tab5-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Span Questions" attrib_string="url_name=&quot;b1lincombos-vertical6&quot;" refnum="6"><p>
-<html display_name="Span (Noun)" attrib_string="url_name=&quot;b1lincombos-tab6-text1&quot;" linenum="222" tex_filename="./block1/lincombos.tex"><p>
+<html display_name="Span (Noun)" attrib_string="url_name=&quot;b1lincombos-tab6-text1&quot;" linenum="266" tex_filename="./block1/lincombos.tex"><p>
 Given vectors [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] over a field [mathjaxinline]F[/mathjaxinline], we define the <span style="color:#99182C"><b class="bf">span</b></span> of [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] to be the set of all linear combinations of [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline]. In other words, </p><table id="a0000000044" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\mathrm{Span}\{ v_1; v_2; \ldots v_ n\}  = \{ a_1 v_1 + a_2 v_2 + \ldots + a_ nv_ n : a_ i \in F \} .[/mathjax]</td>
 </tr>
 </table><p>
-The span of a list with zero vectors is defined to be [mathjaxinline]\{ \vec0\}[/mathjaxinline]. </p></html></p><p>
-<problem display_name="Span Question" attrib_string="url_name=&quot;b1lincombos-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="237" tex_filename="./block1/lincombos.tex"><text><p>
+The span of a list with zero vectors is defined to be [mathjaxinline]\{ \mathbf{0}\}[/mathjaxinline]. </p></html></p><p>
+<problem display_name="Span Question" attrib_string="url_name=&quot;b1lincombos-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="281" tex_filename="./block1/lincombos.tex"><text><p>
 Let [mathjaxinline]v_1 = \left[\begin{array}{c} 1 \\ 1 \\ 0 \end{array} \right][/mathjaxinline], [mathjaxinline]v_2 = \left[\begin{array}{c} 0 \\ -1 \\ 2 \end{array} \right][/mathjaxinline], [mathjaxinline]v_3 = \left[\begin{array}{c} -1 \\ -2 \\ 3 \end{array} \right][/mathjaxinline], and [mathjaxinline]v_4 = \left[\begin{array}{c} -2 \\ -5 \\ 8 \end{array} \right][/mathjaxinline]. </p><p>
 Use row reduction to determine if [mathjaxinline]w = \left[\begin{array}{c} 3 \\ 1 \\ 3 \end{array} \right][/mathjaxinline] is in the span of [mathjaxinline]\{ v_1; v_2; v_3; v_4 \}[/mathjaxinline]. Is [mathjaxinline]w \in \mathrm{Span}\{ v_1; v_2; v_3; v_4 \}[/mathjaxinline]? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="Yes"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Span Question 2" attrib_string="url_name=&quot;b1lincombos-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="257" tex_filename="./block1/lincombos.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ The question is equivalent to asking about the consistency of a system of linear equations given by the following augmented matrix: <br /><br />[mathjaxinline]\left[\begin{array}{cccc:c} 1 &amp;  0 &amp;  -1 &amp;  -2 &amp;  3 \\ 1 &amp;  -1 &amp;  -2 &amp;  -5 &amp;  1 \\ 0 &amp;  2 &amp;  3 &amp;  8 &amp;  3 \end{array} \right][/mathjaxinline] <br /><br />We will row reduce this matrix. Then we'll see if the row reduced augmented matrix represents a consistent system of equations. If so, then the above augmented matrix also represents a consistent system, and [mathjaxinline]w[/mathjaxinline] is in the span of the given set of vectors. <br /><br />Multiply the first row by -1, and add this to the second row: <br /><br />[mathjaxinline]\left[\begin{array}{cccc:c} 1 &amp;  0 &amp;  -1 &amp;  -2 &amp;  3 \\ 0 &amp;  -1 &amp;  -1 &amp;  -3 &amp;  -2 \\ 0 &amp;  2 &amp;  3 &amp;  8 &amp;  3 \end{array} \right][/mathjaxinline] <br /><br />Multiply the second row by 2, and add this to the third row: <br /><br />[mathjaxinline]\left[\begin{array}{cccc:c} 1 &amp;  0 &amp;  -1 &amp;  -2 &amp;  3 \\ 0 &amp;  -1 &amp;  -1 &amp;  -3 &amp;  -2 \\ 0 &amp;  0 &amp;  1 &amp;  2 &amp;  -1 \end{array} \right][/mathjaxinline] <br /><br />We could stop here. Our matrix now has 3 pivots for its 3 rows. It must represent a consistent system of equations. Here we will continue the process of row reduction, but only for the purpose of elucidating our claim.<br />Add the third row to the second row: <br /><br />[mathjaxinline]\left[\begin{array}{cccc:c} 1 &amp;  0 &amp;  -1 &amp;  -2 &amp;  3 \\ 0 &amp;  -1 &amp;  0 &amp;  -1 &amp;  -3 \\ 0 &amp;  0 &amp;  1 &amp;  2 &amp;  -1 \end{array} \right][/mathjaxinline] <br /><br />Add the third row to the first row: <br /><br />[mathjaxinline]\left[\begin{array}{cccc:c} 1 &amp;  0 &amp;  0 &amp;  0 &amp;  2 \\ 0 &amp;  -1 &amp;  0 &amp;  -1 &amp;  -3 \\ 0 &amp;  0 &amp;  1 &amp;  2 &amp;  -1 \end{array} \right][/mathjaxinline] <br /><br />For good measure, multiply the second row by -1: <br /><br />[mathjaxinline]\left[\begin{array}{cccc:c} 1 &amp;  0 &amp;  0 &amp;  0 &amp;  2 \\ 0 &amp;  1 &amp;  0 &amp;  1 &amp;  3 \\ 0 &amp;  0 &amp;  1 &amp;  2 &amp;  -1 \end{array} \right][/mathjaxinline] <br /><br />The above is consistent, as there is no row of all zeros followed by a non-zero in the right column. Therefore, [mathjaxinline]w[/mathjaxinline] is in the span of the given set of vectors.  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Span Question 2" attrib_string="url_name=&quot;b1lincombos-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="337" tex_filename="./block1/lincombos.tex"><text><p>
 Now determine if [mathjaxinline]u = \left[\begin{array}{c} 301.34 \\ -234.8 \\ \pi \end{array} \right][/mathjaxinline] is in the span of [mathjaxinline]\{ v_1; v_2; v_3; v_4 \}[/mathjaxinline]. Try to avoid doing any additional calculation! </p><p>
 Is [mathjaxinline]u \in \mathrm{Span}\{ v_1; v_2; v_3; v_4 \}[/mathjaxinline]? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="Yes"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ The question is equivalent to asking about the consistency of a system of linear equations given by the following augmented matrix: [mathjaxinline]\left[\begin{array}{cccc:c} 1 &amp;  0 &amp;  -1 &amp;  -2 &amp;  301.34 \\ 1 &amp;  -1 &amp;  -2 &amp;  -5 &amp;  -234.8 \\ 0 &amp;  2 &amp;  3 &amp;  8 &amp;  \pi \end{array} \right][/mathjaxinline]. </p><p>
+However, we don't need to do any new row-reduction &#8211; from our previous calculation, we know that when we row-reduce the coefficient part, there will be no row of all zeros in the row-reduced coefficient matrix (put another way, there will be a pivot in every row). Hence, in the augmented matrix, there can be no row of all zeros followed by a non-zero in the right-most column. The system must be consistent, so [mathjaxinline]u[/mathjaxinline] is in [mathjaxinline]\mathrm{Span}\{ v_1; v_2; v_3; v_4 \}[/mathjaxinline]. This will be true for any vector in [mathjaxinline]\mathbb R^3[/mathjaxinline], not just [mathjaxinline]u[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Span as Verb" attrib_string="url_name=&quot;b1lincombos-vertical7&quot;" refnum="7"><p>
-<video display_name="Span as a Verb" youtube_id_1_0="SNkX6dX7MKo" attrib_string="url_name=&quot;b1lincombos-tab7-video1&quot; "></video><html display_name="Span (Verb)" attrib_string="url_name=&quot;b1lincombos-tab7-text1&quot;" linenum="283" tex_filename="./block1/lincombos.tex"><p>
+<video display_name="Span as a Verb" youtube_id_1_0="SNkX6dX7MKo" attrib_string="url_name=&quot;b1lincombos-tab7-video1&quot; "></video><html display_name="Span (Verb)" attrib_string="url_name=&quot;b1lincombos-tab7-text1&quot;" linenum="371" tex_filename="./block1/lincombos.tex"><p>
 Given vectors [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] over a field [mathjaxinline]F[/mathjaxinline], we say that the list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] <span style="color:#99182C"><b class="bf">spans</b></span> [mathjaxinline]V[/mathjaxinline] if the span of the list of vectors is all of [mathjaxinline]V[/mathjaxinline]. </p></html></p><p>
-<html display_name="Spanning in R^m" attrib_string="url_name=&quot;b1lincombos-tab7-text2&quot;" linenum="294" tex_filename="./block1/lincombos.tex"><p>
+<html display_name="Spanning in R^m" attrib_string="url_name=&quot;b1lincombos-tab7-text2&quot;" linenum="382" tex_filename="./block1/lincombos.tex"><p>
 If [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is a list of vectors in [mathjaxinline]\mathbb R^ m[/mathjaxinline], the list spans [mathjaxinline]\mathbb R^ m[/mathjaxinline] if and only if the matrix </p><table id="a0000000045" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp; &amp;  | \\ v_1 &amp;  v_2 &amp;  \cdots &amp;  v_ n \\ | &amp;  | &amp; &amp;  | \end{array} \right][/mathjax]</td>
@@ -1258,7 +1267,7 @@ If [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is a list of vector
 </table><p>
  row reduces to have a pivot in every row. </p><p>
 If [mathjaxinline]n&lt;m[/mathjaxinline], then it is impossible for the list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] to span [mathjaxinline]\mathbb R^ m[/mathjaxinline]. </p></html></p><p>
-<problem display_name="Does the list span?" attrib_string="url_name=&quot;b1lincombos-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="310" tex_filename="./block1/lincombos.tex"><text><ul class="itemize">
+<problem display_name="Does the list span?" attrib_string="url_name=&quot;b1lincombos-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="398" tex_filename="./block1/lincombos.tex"><text><ul class="itemize">
 
 <li><p>
 List A: [mathjaxinline]\left\{  \left[ \begin{array}{c} 1 \\ 7 \end{array} \right] ; \left[ \begin{array}{c} 2 \\ 14 \end{array} \right] ; \left[ \begin{array}{c} -3 \\ -21 \end{array} \right] \right\}[/mathjaxinline] </p></li>
@@ -1296,7 +1305,8 @@ Given above are six lists of vectors. <span style="color:#99182C"><b class="bf">
     </choice>
   </checkboxgroup>
 </choiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>    </p></sequential> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ List A has three vectors that are scalar multiples of each other; they all lie on the same line. Thus any linear combination of them also lies on the line, so they cannot span all of [mathjaxinline]\mathbb R^2[/mathjaxinline].<br />List D contains three vectors. Since these vectors are in [mathjaxinline]\mathbb R^4[/mathjaxinline], there aren't enough of them to span the whole space.<br />List E has five vectors in [mathjaxinline]\mathbb R^4[/mathjaxinline]. This may seem promising, but notice that all five of them have zero as the third entry. Any vector in [mathjaxinline]\mathbb R^4[/mathjaxinline] with a non-zero third entry cannot be expressed as a linear combination of these vectors, so they don't span all of [mathjaxinline]\mathbb R^4[/mathjaxinline]. </p></font></solution></p></text></problem></p></vertical>    </p></sequential> </p><p>
 <sequential display_name="Matrix-Vector Multiplication" attrib_string="due=&quot;2016-04-18T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b1matrixvector-sequential&quot;" linenum="213" tex_filename="testcourse.tex" refnum="5"><p>
 <vertical display_name="Page One" attrib_string="url_name=&quot;b1matrixvector-vertical1&quot;" refnum="1"><p>
 <html display_name="Preliminaries" attrib_string="url_name=&quot;b1matrixvector-tab1-text1&quot;" linenum="5" tex_filename="./block1/matrixtimesvector.tex"><p>
@@ -1555,60 +1565,9 @@ def MatrixGrader(expect, ans):
 <optionresponse>
   <optioninput options="('Placeholder')" correct="Placeholder"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Solution Set" attrib_string="url_name=&quot;b1matrixvector-tab4-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="194" tex_filename="./block1/matrixtimesvector.tex"><text><p>
-Let </p><table id="a0000000052" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]A = \left[ \begin{array}{cccc} 2 &amp;  1 &amp;  0 &amp;  1\\ 0 &amp;  3 &amp;  -1 &amp;  -1 \\ 5 &amp;  0 &amp;  3 &amp;  1 \end{array} \right] ,[/mathjax]</td>
-</tr>
-</table><p>
- and let [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ax[/mathjaxinline]? </p><script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
-def MatrixGrader(expect, ans):
-	tolerance = 0.01
-	ret={'ok':False}
-	ans.replace(' ','')
-	nums = ans.split(',')
-	expnums = expect.split(',')
-	if (expect == 'None') or (expect =='none'):
-		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
-	elif (nums[0] == "none") or (nums[0] == "None"):
-	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
-	else:
-		try:
-			expnum=[float(i) for i in expnums]
-			ansnum=[float(i) for i in nums]
-			explist = sorted(expnum, key=float)
-			anslist = sorted(ansnum, key=float) 
-			matching = True
-			if len(explist)!=len(anslist):
-			    if len(anslist)&lt;len(explist):
-			    	ret['msg']="You did not enter enough critical points."
-			    else:
-			    	ret['msg']="You entered too many critical points."
-		 	else:
-				for i in range(len(explist)):
-					errorcnt=0
-					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
-						matching = False
-						errorcnt+=1
-					if errorcnt != 0:
-						ret['msg']= "You have %d errors in your answer." % errorcnt
-				ret['ok']=matching
-		except:
-		    ret['msg']="Your answer should only involve decimal numbers."
-	return ret
-  
-</script><p>
-<optionresponse>
-  <optioninput options="('Placeholder')" correct="Placeholder"/>
-</optionresponse> </p><p>
-Let [mathjaxinline]y = \left[\begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ay[/mathjaxinline]? </p><p>
-<optionresponse>
-  <optioninput options="('Placeholder')" correct="Placeholder"/>
-</optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Solution Sets" attrib_string="url_name=&quot;b1matrixvector-vertical5&quot;" refnum="5"><p>
-<video display_name="Solving Ax = 0" youtube_id_1_0="???" attrib_string="url_name=&quot;b1matrixvector-tab5-video1&quot; "></video><problem display_name="Non-trivial Solutions" attrib_string="url_name=&quot;b1matrixvector-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="233" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<video display_name="Solving Ax = 0" youtube_id_1_0="???" attrib_string="url_name=&quot;b1matrixvector-tab5-video1&quot; "></video><problem display_name="Non-trivial Solutions" attrib_string="url_name=&quot;b1matrixvector-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="210" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinline] matrix. The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has the solution [mathjaxinline]x = \mathbf{0}[/mathjaxinline], which we call the <span style="color:#99182C"><b class="bf">trivial solution.</b></span> If there are no solutions other than the trivial solutions, how many pivots must [mathjaxinline]A[/mathjaxinline] have when row-reduced? </p><p>
 <numericalresponse answer="4">
   <textline>
@@ -1616,8 +1575,8 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinlin
   </textline>
 </numericalresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Find a Solution Set" attrib_string="url_name=&quot;b1matrixvector-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="249" tex_filename="./block1/matrixtimesvector.tex"><text><p>
-Let </p><table id="a0000000053" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<problem display_name="Find a Solution Set" attrib_string="url_name=&quot;b1matrixvector-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="226" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+Let </p><table id="a0000000052" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{cccc} 1 &amp;  1 &amp;  0 &amp;  -1\\ 5 &amp;  6 &amp;  -1 &amp;  1 \end{array} \right].[/mathjax]</td>
 </tr>
@@ -1628,25 +1587,25 @@ Enter the list of vectors below, separated by semicolons. For instance, to enter
   <optioninput options="('Placeholder')" correct="Placeholder"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Other Solution Sets" attrib_string="url_name=&quot;b1matrixvector-tab5-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="274" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<problem display_name="Other Solution Sets" attrib_string="url_name=&quot;b1matrixvector-tab5-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="251" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 True or false: If [mathjaxinline]S[/mathjaxinline] is the solution set to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline], then the solution set to [mathjaxinline]Ax = v[/mathjaxinline] must be a translation of [mathjaxinline]S[/mathjaxinline]. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="False"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Multiplication Properties" attrib_string="url_name=&quot;b1matrixvector-vertical6&quot;" refnum="6"><p>
-<video display_name="Why do we call it multiplication?" youtube_id_1_0="e67R6kfSRo4" attrib_string="url_name=&quot;b1matrixvector-tab6-video1&quot; "></video><html display_name="Properties of Matrix Multiplication" attrib_string="url_name=&quot;b1matrixvector-tab6-text1&quot;" linenum="301" tex_filename="./block1/matrixtimesvector.tex"><p>
-For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathjaxinline], vectors [mathjaxinline]w,x \in \mathbb R^ n[/mathjaxinline], and scalar [mathjaxinline]a[/mathjaxinline], we have that </p><table id="a0000000054" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<video display_name="Why do we call it multiplication?" youtube_id_1_0="e67R6kfSRo4" attrib_string="url_name=&quot;b1matrixvector-tab6-video1&quot; "></video><html display_name="Properties of Matrix Multiplication" attrib_string="url_name=&quot;b1matrixvector-tab6-text1&quot;" linenum="278" tex_filename="./block1/matrixtimesvector.tex"><p>
+For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathjaxinline], vectors [mathjaxinline]w,x \in \mathbb R^ n[/mathjaxinline], and scalar [mathjaxinline]a[/mathjaxinline], we have that </p><table id="a0000000053" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A(w+x) = Aw + Ax[/mathjax]</td>
 </tr>
 </table><p>
- and </p><table id="a0000000055" class="equation" width="100%" cellspacing="0" cellpadding="7">
+ and </p><table id="a0000000054" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A(ax) = a(Ax).[/mathjax]</td>
 </tr>
 </table></html></p><p>
-<problem display_name="Consistent Matrix-Vector Equations" attrib_string="url_name=&quot;b1matrixvector-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="310" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<problem display_name="Consistent Matrix-Vector Equations" attrib_string="url_name=&quot;b1matrixvector-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="287" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline], and suppose that [mathjaxinline]x = \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = w[/mathjaxinline]. </p><p>
 Find a solution to the equation [mathjaxinline]Ax = v+w[/mathjaxinline]. </p><script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
 def MatrixGrader(expect, ans):
@@ -1689,7 +1648,7 @@ def MatrixGrader(expect, ans):
   <optioninput options="('Placeholder')" correct="Placeholder"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Consistent Matrix-Vector Equations 2" attrib_string="url_name=&quot;b1matrixvector-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="331" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<problem display_name="Consistent Matrix-Vector Equations 2" attrib_string="url_name=&quot;b1matrixvector-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="308" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that the equation [mathjaxinline]Ax = v[/mathjaxinline] is consistent. Must the equation [mathjaxinline]Ax = 4v[/mathjaxinline] be consistent? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="Yes"/>

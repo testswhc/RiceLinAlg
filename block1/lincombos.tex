@@ -64,7 +64,7 @@ $a_2$.  If not, enter No in both boxes.
 \edXsolution{ We may notice that $x$ is a scalar multiple of $v_1$: 
 \\ \\$-2 \cdot \left[\begin{array}{c} 2 \\ 3  \\ 4 \end{array} \right] =  \left[\begin{array}{c} -4 \\ -6  \\ -8 \end{array} \right]$
 \\ $-2 \cdot \,\,\,\,\,\, v_1 \,\,\,\,\,= \,\,\,\,\,\,\,\,\,\,x$
-\\ \\It follows immediately that (-2, 0) is a solution. 
+\\ \\It follows immediately that $a_1=-2$,$a_2= 0$ is a solution. 
 
 }
 
@@ -86,7 +86,8 @@ $a_2$.  If not, enter No in both boxes.
 
 
 
-\edXsolution{ For any set of vectors in $\R^n$, we can always combine them to obtain the zero vector in $\R^n$ by simply setting all of the coefficients to zero. Note that for certain sets of vectors in $\R^n$, it is also possible to write the zero vector as a linear combination with non-zero coefficients: e.g., \\ $1 \cdot \left[\begin{array}{c} 3  \\ 4 \end{array} \right] + -1 \cdot \left[\begin{array}{c} -3  \\ \\  -4 \end{array} \right] = \veco$. 
+\edXsolution{ For any set of vectors in $\R^n$, we can always combine them to obtain the zero vector in $\R^n$ by simply setting all of the coefficients to zero. 
+%Note that for certain sets of vectors in $\R^n$, it is also possible to write the zero vector as a linear combination with non-zero coefficients: e.g., \\ $1 \cdot \left[\begin{array}{c} 3  \\ 4 \end{array} \right] + -1 \cdot \left[\begin{array}{c} -3  \\ \\  -4 \end{array} \right] = \veco$. 
 }
 
 
@@ -128,7 +129,8 @@ $a_2$.  If not, enter No in both boxes.
 
 
 
-\edXsolution{ Notice how the grid of parallelograms shows us where we can expect to end up by applying $v_1$ and $v_2$ by various amounts; each lattice point is a linear combination, with integer coefficients, of $v_1$ and $v_2$. The question is, what combination of $v_1$ and $v_2$ gives us the same net effect as $w$? Since the head of $w$ lies on a lattice point of the grid, we can simply count our way to the answer: a movement of -1 spaces in the $v_1$ direction, and a movement of 2 spaces in the $v_2$ direction, takes us from the tail to the head of $w$. \\ Notice also that we can make these moves in either order to accomplish the same thing; after all, addition is commutative, and by making a series of moves on this grid, we are simply adding vectors.
+\edXsolution{ Notice how the grid of parallelograms shows us where we can expect to end up by applying $v_1$ and $v_2$ by various amounts; each lattice point is a linear combination, with integer coefficients, of $v_1$ and $v_2$. The question is, what combination of $v_1$ and $v_2$ gives us the same net effect as $w$? Since the head of $w$ lies on a lattice point of the grid, we can simply count our way to the answer: a movement of -1 spaces in the $v_1$ direction, and a movement of 2 spaces in the $v_2$ direction, takes us from the tail to the head of $w$. 
+%\\ Notice also that we can make these moves in either order to accomplish the same thing; after all, addition is commutative, and by making a series of moves on this grid, we are simply adding vectors.
 }
 
 \endedxproblem
@@ -145,28 +147,26 @@ Let $h$ denote $17t^3 + 2t^2 - 2t + 17$.
 Can you write $h$  as a linear combination $h = a_1 f + a_2 g$?  If so, enter possible values for $a_1$ and
 $a_2$.  If not, enter No in both boxes.  
 
-\edXinline{$a_1= $ }\edXabox{type="formula" expect="17" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
-\edXinline{$a_2= $ }\edXabox{type="formula" expect="2" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
+\edXinline{$a_1= $ }\edXabox{type="formula" expect="17" samples="No,t@1,1:5,5#10" feqin="1" tolerance=".01" inline="1"}\\
+\edXinline{$a_2= $ }\edXabox{type="formula" expect="2" samples="No,t@1,1:5,5#10" feqin="1" tolerance=".01" inline="1"}\\
 
 
-Let $h$ denote $3t^4 + 3t$.
-Can you write $h$  as a linear combination $h = a_1 f + a_2 g$?  If so, enter possible values for $a_1$ and
+Let $j$ denote $3t^4 + 3t$.
+Can you write $j$  as a linear combination $j = a_1 f + a_2 g$?  If so, enter possible values for $a_1$ and
 $a_2$.  If not, enter No in both boxes.  
 
-\edXinline{$a_1= $ }\edXabox{type="formula" expect="No" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
-\edXinline{$a_2= $ }\edXabox{type="formula" expect="No" samples="No@1:5#5" feqin="1" tolerance=".01" inline="1"}\\
+\edXinline{$a_1= $ }\edXabox{type="formula" expect="No" samples="No,t@1,1:4,5#10" feqin="1" tolerance=".01" inline="1"}\\
+\edXinline{$a_2= $ }\edXabox{type="formula" expect="No" samples="No,t@1,1:5,5#10" feqin="1" tolerance=".01" inline="1"}\\
 
 
 \edXsolution{ 
-The coefficients of $h$ can be thought of as a vector: \\ \\ $v_h = \left[\begin{array}{c} 17 \\ 2  \\ -2 \\ 17 \end{array} \right]$. \\ \\ It may help to think the same way about the coefficients of $f$ and $g$, as vectors in $\R^4$: \\ \\ $v_f = \left[\begin{array}{c} 1 \\ 0  \\ 0 \\ 1 \end{array} \right]$ and $v_g = \left[\begin{array}{c} 0 \\ 1  \\ -1 \\ 0 \end{array} \right]$. \\ \\ 
-The question, then, is equivalent to asking if $v_h$ is a linear combination of $v_f$ and $v_g$. The zeros in $v_f$ and $v_g$ lead us to the solution; for example, because the first entry of $v_g$ is zero, and we need a combination of 17 for the first entry of $v_h$, we know that $a_1$ must be 17. (Analogously, because $g$ has no cubic term, and we need a combination of $17t^3$ for the first term of $h$, we know that 17 times the cubic term $t^3$ in $f$ is the only way to do the job.)
+For the first question, a little bit of trial and error gives us that $h = 17f + 2g$.  
+% The coefficients of $h$ can be thought of as a vector: \\ \\ $v_h = \left[\begin{array}{c} 17 \\ 2  \\ -2 \\ 17 \end{array} \right]$. \\ \\ It may help to think the same way about the coefficients of $f$ and $g$, as vectors in $\R^4$: \\ \\ $v_f = \left[\begin{array}{c} 1 \\ 0  \\ 0 \\ 1 \end{array} \right]$ and $v_g = \left[\begin{array}{c} 0 \\ 1  \\ -1 \\ 0 \end{array} \right]$. \\ \\ 
+% The question, then, is equivalent to asking if $v_h$ is a linear combination of $v_f$ and $v_g$. The zeros in $v_f$ and $v_g$ lead us to the solution; for example, because the first entry of $v_g$ is zero, and we need a combination of 17 for the first entry of $v_h$, we know that $a_1$ must be 17. (Analogously, because $g$ has no cubic term, and we need a combination of $17t^3$ for the first term of $h$, we know that 17 times the cubic term $t^3$ in $f$ is the only way to do the job.)
 \\ \\ 
-In the second problem, we are asked to combine $f$ and $g$ to make a polynomial with a quartic term. There is no way to multiply a scalar by something other than a quartic term to get a quartic term; i.e., since $f$ and $g$ have no term of degree 4, no combination of them will equal $h$. (If we want to think about vectors, analogously: in this problem, \\ \\
-$v_h = \left[\begin{array}{c} 3 \\ 0  \\ 0 \\ 3 \\ 0 \end{array} \right]$
-,  $v_f = \left[\begin{array}{c} 0 \\ 1 \\ 0  \\ 0 \\ 1 \end{array} \right]$
-, and  $v_g = \left[\begin{array}{c} 0 \\ 0 \\ 1 \\ -1  \\ 0 \end{array} \right]$;
-\\ \\ 
-$v_f$ and $v_g$ have leading entries of zeros, and no linear combination of zeros will equal a non-zero.)
+In the second problem, we are asked to combine $f$ and $g$ to make a polynomial with a quartic term (one that involves $t^4$). There is no way to multiply $f$ or $g$ by a scalar to get a quartic term.  It is true that 
+$j = 3t\cdot f + 0g,$ but $3t$ is not a scalar.  
+
 }
 
 
@@ -215,37 +215,35 @@ $a_2$.  If not, enter No in both boxes.
 
 \edXsolution{ 
 
-We are solving the matrix equation:
-\\ \\ 
-$\left[\begin{array}{cc} v_1 & v_2 \end{array} \right] \cdot \left[\begin{array}{c} a_1 \\ a_2 \end{array} \right] = 
-\left[\begin{array}{c} w \end{array} \right]$
-\\ \\ 
+% We are solving the system given by the augmented 
+% \\ \\ 
+% $\left[\begin{array}{cc} v_1 & v_2 \end{array} \right] \cdot \left[\begin{array}{c} a_1 \\ a_2 \end{array} \right] = 
+% \left[\begin{array}{c} w \end{array} \right]$
+% \\ \\ 
 With the vectors $v_1$, $v_2$, and $w$, form an augmented matrix:
 \\ \\ 
-$\left[\begin{array}{cc|c} 1 & 3 & 1 \\ 3 & 10 & 5 \\ 1 & 2 & -1  \end{array} \right]$
+$\left[\begin{array}{cc:c} 1 & 3 & 1 \\ 3 & 10 & 5 \\ 1 & 2 & -1  \end{array} \right]$
 \\ \\ 
 Multiply the first row by -3, and add this to the second row:
 \\ \\ 
-$\left[\begin{array}{cc|c}  1 & 3 & 1 \\ 0 & 1 & 2 \\ 1 & 2 & -1 \end{array} \right]$
+$\left[\begin{array}{cc:c}  1 & 3 & 1 \\ 0 & 1 & 2 \\ 1 & 2 & -1 \end{array} \right]$
 \\ \\ 
 Multiply the first row by -1, and add this to the third row:
 \\ \\ 
-$\left[\begin{array}{cc|c} 1 & 3 & 1 \\ 0 & 1 & 2 \\ 0 & -1 & -2 \end{array} \right]$
+$\left[\begin{array}{cc:c} 1 & 3 & 1 \\ 0 & 1 & 2 \\ 0 & -1 & -2 \end{array} \right]$
 \\ \\ 
 Add the second row to the third row:
 \\ \\ 
-$\left[\begin{array}{cc|c} 1 & 3 & 1 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{array} \right]$
+$\left[\begin{array}{cc:c} 1 & 3 & 1 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{array} \right]$
 \\ \\ 
 Multiply the second row by -3, and add this to the first row:
 \\ \\ 
-$\left[\begin{array}{cc|c} 1 & 0 & -5 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{array} \right]$
+$\left[\begin{array}{cc:c} 1 & 0 & -5 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{array} \right]$
 \\ \\ 
-We've fully row reduced the matrix. There are two pivots, and the original system contained two variables ($a_1$ and $a_2$), so we have no free variables; our solution, given by the right side of the augmented matrix, is unique.
+We've fully row reduced the matrix; we see that the system is consistent and that $a_1 = -5$ and $a_2 = 2$.  
+(Note also that we have no free variables; our solution, given by the right side of the augmented matrix, is unique.)
 \\ \\ 
-You can verify your solution by substituting it in the original equation:
-\\ \\ 
-$\left[\begin{array}{cc} 1 & 3 \\ 3 & 10 \\ 1 & 2 \end{array} \right] \cdot \left[\begin{array}{c} -5 \\ 2 \end{array} \right] = \left[\begin{array}{c} 1 \\ 5 \\ -1 \end{array} \right]$
-
+You can verify your solution by computing $-5v_1 + 2v_2$; you should get $w$.  
 
 }
 
@@ -295,45 +293,42 @@ is in the span of $\{v_1; v_2; v_3; v_4 \}$.  Is $w \in \mathrm{Span}\{v_1; v_2;
 
 
 \edXsolution{ 
-We are determining whether this matrix equation is consistent:
+The question is equivalent to asking about the consistency of a 
+system of linear equations given by the following augmented matrix:
 \\ \\ 
-$\left[\begin{array}{cccc} v_1 & v_2 & v_3 & v_4 \end{array} \right] \cdot \left[\begin{array}{c} a_1 \\ a_2 \\ a_3 \\ a_4 \end{array} \right] = w$
-\\ \\ 
-If the above is consistent, then $w$ is in the span of the given set of vectors: $v_1$, $v_2$, $v_3$, and $v_4$.\\
-We represent the above with an augmented matrix:
-\\ \\ 
-$\left[\begin{array}{cccc|c} 1 & 0 & -1 & -2 & 3 \\ 1 & -1 & -2 & -5 & 1 \\ 0 & 2 & 3 & 8 & 3 \end{array} \right]$
+$\left[\begin{array}{cccc:c} 1 & 0 & -1 & -2 & 3 \\ 1 & -1 & -2 & -5 & 1 \\ 0 & 2 & 3 & 8 & 3 \end{array} \right]$
 \\ \\ 
 We will row reduce this matrix. Then we'll see if the row reduced augmented matrix represents a consistent system of equations. If so, then the above augmented matrix also represents a consistent system, and $w$ is in the span of the given set of vectors. \\ \\
 Multiply the first row by -1, and add this to the second row:
 \\ \\ 
-$\left[\begin{array}{cccc|c} 1 & 0 & -1 & -2 & 3 \\ 0 & -1 & -1 & -3 & -2 \\ 0 & 2 & 3 & 8 & 3 \end{array} \right]$
+$\left[\begin{array}{cccc:c} 1 & 0 & -1 & -2 & 3 \\ 0 & -1 & -1 & -3 & -2 \\ 0 & 2 & 3 & 8 & 3 \end{array} \right]$
 \\ \\ 
 Multiply the second row by 2, and add this to the third row:
 \\ \\ 
-$\left[\begin{array}{cccc|c} 1 & 0 & -1 & -2 & 3 \\ 0 & -1 & -1 & -3 & -2 \\ 0 & 0 & 1 & 2 & -1 \end{array} \right]$
+$\left[\begin{array}{cccc:c} 1 & 0 & -1 & -2 & 3 \\ 0 & -1 & -1 & -3 & -2 \\ 0 & 0 & 1 & 2 & -1 \end{array} \right]$
 \\ \\
 We could stop here. Our matrix now has 3 pivots for its 3 rows. It must represent a consistent system of equations. Here we will continue the process of row reduction, but only for the purpose of elucidating our claim.\\
 Add the third row to the second row:
 \\ \\
-$\left[\begin{array}{cccc|c} 1 & 0 & -1 & -2 & 3 \\ 0 & -1 & 0 & -1 & -3 \\ 0 & 0 & 1 & 2 & -1 \end{array} \right]$
+$\left[\begin{array}{cccc:c} 1 & 0 & -1 & -2 & 3 \\ 0 & -1 & 0 & -1 & -3 \\ 0 & 0 & 1 & 2 & -1 \end{array} \right]$
 \\ \\
 Add the third row to the first row:
 \\ \\
-$\left[\begin{array}{cccc|c} 1 & 0 & 0 & 0 & 2 \\ 0 & -1 & 0 & -1 & -3 \\ 0 & 0 & 1 & 2 & -1 \end{array} \right]$
+$\left[\begin{array}{cccc:c} 1 & 0 & 0 & 0 & 2 \\ 0 & -1 & 0 & -1 & -3 \\ 0 & 0 & 1 & 2 & -1 \end{array} \right]$
 \\ \\
 For good measure, multiply the second row by -1:
 \\ \\
-$\left[\begin{array}{cccc|c} 1 & 0 & 0 & 0 & 2 \\ 0 & 1 & 0 & 1 & 3 \\ 0 & 0 & 1 & 2 & -1 \end{array} \right]$
+$\left[\begin{array}{cccc:c} 1 & 0 & 0 & 0 & 2 \\ 0 & 1 & 0 & 1 & 3 \\ 0 & 0 & 1 & 2 & -1 \end{array} \right]$
 \\ \\
-The first three columns are now the identity matrix. Suppose we multiply the left side of our augmented matrix by our variable vector, in the manner of our original equation:
-\\ \\
-$\left[\begin{array}{cccc} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 2 \end{array} \right] \cdot \left[\begin{array}{c} a_1 \\ a_2 \\ a_3 \\ a_4 \end{array} \right] =  \left[\begin{array}{c} 2 \\ 3 \\ -1 \end{array} \right]$
-\\ \\
-$\left[\begin{array}{c} a_1 \\ a_2 + a_4 \\ a_3 + 2a_4 \end{array} \right] =  \left[\begin{array}{c} 2 \\ 3 \\ -1 \end{array} \right]$
-\\ \\
-The above is clearly consistent: we can of course choose $a_1 = 2$, $a_2 = 3$, $a_3 = -1$, and $a_4 = 0$. Therefore, the original equation is consistent, and $w$ is in the span of the given set of vectors. \\ 
-We knew we were on our way to this result when we had a pivot in every row, because in such a case, we can continue to row reduce until our matrix contains $\mathbb{I}$ as a submatrix. At that point (just as above), our system will be consistent no matter what the right hand side is. We can conclude that the given set of vectors must span all of $\R^3$, and indeed, any matrix with m rows and m pivots must span all of $\R^m$. 
+% The first three columns are now the identity matrix. Suppose we multiply the left side of our augmented matrix by our variable vector, in the manner of our original equation:
+% \\ \\
+% $\left[\begin{array}{cccc} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 2 \end{array} \right] \cdot \left[\begin{array}{c} a_1 \\ a_2 \\ a_3 \\ a_4 \end{array} \right] =  \left[\begin{array}{c} 2 \\ 3 \\ -1 \end{array} \right]$
+% \\ \\
+% $\left[\begin{array}{c} a_1 \\ a_2 + a_4 \\ a_3 + 2a_4 \end{array} \right] =  \left[\begin{array}{c} 2 \\ 3 \\ -1 \end{array} \right]$
+% \\ \\
+The above is consistent, as there is no row of all zeros followed by a non-zero in the right column. Therefore, $w$ is in the span of the given set of vectors. 
+% \\ 
+% We knew we were on our way to this result when we had a pivot in every row, because in such a case, we can continue to row reduce until our matrix contains $\mathbb{I}$ as a submatrix. At that point (just as above), our system will be consistent no matter what the right hand side is. We can conclude that the given set of vectors must span all of $\R^3$, and indeed, any matrix with m rows and m pivots must span all of $\R^m$. 
 }
 
 
@@ -350,8 +345,14 @@ Is $u \in \mathrm{Span}\{v_1; v_2; v_3; v_4 \}$?
 
 
 \edXsolution{ 
-We've already determined that the given set of vectors spans all of $\R^3$ (see the discussion in the solution of Span Question 1). Therefore, vector $u$ is in the span. 
+The question is equivalent to asking about the consistency of a 
+system of linear equations given by the following augmented matrix:
+$\left[\begin{array}{cccc:c} 1 & 0 & -1 & -2 & 301.34 \\ 1 & -1 & -2 & -5 & -234.8 \\ 0 & 2 & 3 & 8 & \pi \end{array} \right]$.
 
+However, we don't need to do any new row-reduction -- from our previous calculation, we know that when we row-reduce the coefficient part, there will be no row of all zeros in the row-reduced coefficient matrix (put another way, there will be a pivot in every row).  
+Hence, in the augmented matrix,
+ there can be no row of all zeros followed by a non-zero in the right-most column.  The system must be consistent, so $u$ is in $\mathrm{Span}\{v_1; v_2; v_3; v_4 \}$.  This will be true
+for any vector in $\R^3$, not just $u$.  
 }
 
 
@@ -445,8 +446,9 @@ that do not span their respective $\R^m$ spaces.  Which three?
 \edXabox{type="oldmultichoice" expect="A","D","E" options="A","B","C","D","E","F"}
 
 \edXsolution{
-List A has three vectors that are scalar multiples of each other; no two of them are linearly independent. These vectors are in $\R^2$, yet they only span a 1-dimensional subspace.\\
-List D contains three vectors. Any n vectors can span at most an n-dimensional subspace. Since these vectors are in $\R^4$, there aren't enough of them to span the whole space.\\
+List A has three vectors that are scalar multiples of each other; they all lie on the same line. Thus any
+linear combination of them also lies on the line, so they cannot span all of $\R^2$.\\
+List D contains three vectors.  Since these vectors are in $\R^4$, there aren't enough of them to span the whole space.\\
 List E has five vectors in $\R^4$. This may seem promising, but notice that all five of them have zero as the third entry. Any vector in $\R^4$ with a non-zero third entry cannot be expressed as a linear combination of these vectors, so they don't span all of $\R^4$.
 
 }

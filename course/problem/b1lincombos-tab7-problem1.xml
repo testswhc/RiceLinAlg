@@ -1,4 +1,4 @@
-<problem display_name="Does the list span?" linenum="310" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+<problem display_name="Does the list span?" linenum="398" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <ul class="itemize">
       <li>
@@ -55,7 +55,10 @@ Given above are six lists of vectors. <span style="color:#99182C"><b class="bf">
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ List A has three vectors that are scalar multiples of each other; they all lie on the same line. Thus any linear combination of them also lies on the line, so they cannot span all of [mathjaxinline]\mathbb R^2[/mathjaxinline].<br/>List D contains three vectors. Since these vectors are in [mathjaxinline]\mathbb R^4[/mathjaxinline], there aren't enough of them to span the whole space.<br/>List E has five vectors in [mathjaxinline]\mathbb R^4[/mathjaxinline]. This may seem promising, but notice that all five of them have zero as the third entry. Any vector in [mathjaxinline]\mathbb R^4[/mathjaxinline] with a non-zero third entry cannot be expressed as a linear combination of these vectors, so they don't span all of [mathjaxinline]\mathbb R^4[/mathjaxinline]. </p>
+        </font>
       </solution>
     </p>
   </text>
