@@ -2204,15 +2204,30 @@ Let [mathjaxinline]y = \left[\begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \righ
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ [mathjaxinline]Ax = 1 \cdot \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + 2 \cdot \left[ \begin{array}{c} 1 \\ 3 \\ 0 \end{array} \right] + 3 \cdot \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] + 4 \cdot \left[ \begin{array}{c} 1 \\ -1 \\ 1 \end{array} \right][/mathjaxinline] <br/><br/></p>
+                    <p>
+[mathjaxinline]= \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + \left[ \begin{array}{c} 2 \\ 6 \\ 0 \end{array} \right] + \left[ \begin{array}{c} 0 \\ -3 \\ 9 \end{array} \right] + \left[ \begin{array}{c} 4 \\ -4 \\ 4 \end{array} \right][/mathjaxinline] <br/><br/></p>
+                    <p>
+[mathjaxinline]= \left[ \begin{array}{c} 8 \\ -1 \\ 18 \end{array} \right][/mathjaxinline] <br/><br/></p>
+                    <p>
+[mathjaxinline]Ay = 0 \cdot \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + 0 \cdot \left[ \begin{array}{c} 1 \\ 3 \\ 0 \end{array} \right] + 1 \cdot \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] + 0 \cdot \left[ \begin{array}{c} 1 \\ -1 \\ 1 \end{array} \right][/mathjaxinline] <br/><br/></p>
+                    <p>
+[mathjaxinline]= \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] + \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] + \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] + \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] <br/><br/></p>
+                    <p>
+[mathjaxinline]= \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right][/mathjaxinline] <br/><br/></p>
+                    <p>
+Note the special nature of vector [mathjaxinline]y[/mathjaxinline]. We can see that the product [mathjaxinline]Ay[/mathjaxinline] will equal the third column of [mathjaxinline]A[/mathjaxinline] for not just this matrix, but any matrix [mathjaxinline]A[/mathjaxinline] with four columns. </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Where does it live?" linenum="83" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Where does it live?" linenum="113" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
-Suppose [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]6\times 4[/mathjaxinline] matrix. In order for the product [mathjaxinline]Ax[/mathjaxinline] to be defined, the vector [mathjaxinline]x[/mathjaxinline] must live in what space? </p>
+Suppose [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]6\times 4[/mathjaxinline] real matrix. In order for the product [mathjaxinline]Ax[/mathjaxinline] to be defined, the vector [mathjaxinline]x[/mathjaxinline] must live in what space? </p>
               <p>
                 <multiplechoiceresponse>
                   <choicegroup direction="vertical">
@@ -2233,10 +2248,10 @@ The resulting product [mathjaxinline]Ax[/mathjaxinline] will be an element of wh
               <p>
                 <multiplechoiceresponse>
                   <choicegroup direction="vertical">
-                    <choice correct="true" name="1">
+                    <choice correct="false" name="1">
                       <text> [mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
                     </choice>
-                    <choice correct="false" name="2">
+                    <choice correct="true" name="2">
                       <text> [mathjaxinline]\mathbb R^6[/mathjaxinline]</text>
                     </choice>
                     <choice correct="false" name="3">
@@ -2248,12 +2263,15 @@ The resulting product [mathjaxinline]Ax[/mathjaxinline] will be an element of wh
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+For the matrix-vector product to be defined, the number of columns of the first matrix must equal the number of entries in the vector (otherwise, the mechanics just don't work). Our matrix [mathjaxinline]A[/mathjaxinline] has 4 columns, so [mathjaxinline]x[/mathjaxinline] must then live in [mathjaxinline]\mathbb R^4[/mathjaxinline]. <br/>Furthermore, if a matrix-vector product is defined, the result will have the same number of rows as the matrix. Our product [mathjaxinline]Ax[/mathjaxinline] will therefore be a vector living in [mathjaxinline]\mathbb R^6[/mathjaxinline]. </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Products and Spans" linenum="101" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Products and Spans" linenum="136" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or false: If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix </p>
@@ -2273,15 +2291,18 @@ True or false: If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times 
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+The span of a list of vectors is the set of all linear combinations of those vectors. [mathjaxinline]Ax[/mathjaxinline] is defined to be a linear combination of the columns of [mathjaxinline]A[/mathjaxinline], and so it is in the span of those columns. </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
         </vertical>
         <vertical display_name="Matrix-Vector Equations" refnum="4" url_name="b1matrixvector-vertical4">
-          <video display_name="Matrix-Vector Equations" youtube_id_1_0="????" url_name="b1matrixvector-tab4-video1"/>
-          <problem display_name="Solving Matrix-Vector Equations" linenum="131" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <video display_name="Matrix-Vector Equations" youtube_id_1_0="HeeVmk25QNU" url_name="b1matrixvector-tab4-video1"/>
+          <problem display_name="Solving Matrix-Vector Equations" linenum="171" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -2345,12 +2366,15 @@ Let [mathjaxinline]w = \left[\begin{array}{c} 3 \\ -4 \\ 7 \end{array} \right].[
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ We will row reduce the augmented matrix: <br/><br/>[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 1 &amp;  3 &amp;  2\\ 3 &amp;  -1 &amp;  16 \end{array} \right][/mathjaxinline] <br/><br/>Multiply the first row by -1, and add this to the second row: <br/><br/>[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  -1\\ 3 &amp;  -1 &amp;  16 \end{array} \right][/mathjaxinline] <br/><br/>Multiply the first row by -3, and add this to the third row: <br/><br/>[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  -1\\ 0 &amp;  -7 &amp;  7 \end{array} \right][/mathjaxinline] <br/><br/>Multiply the second row by 7, and add this to the third row: <br/><br/>[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  -1\\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjaxinline] <br/><br/>Multiply the second row by -2, and add this to the first row: <br/><br/>[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  0 &amp;  5 \\ 0 &amp;  1 &amp;  -1\\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjaxinline] <br/><br/>Our vector [mathjaxinline]x[/mathjaxinline] is given by the last column. <br/><br/>We can perform the same steps to answer the second question:<br/><br/>[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 1 &amp;  3 &amp;  -4\\ 3 &amp;  -1 &amp;  7 \end{array} \right][/mathjaxinline] <br/><br/>[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  -7\\ 3 &amp;  -1 &amp;  7 \end{array} \right][/mathjaxinline] <br/><br/>[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  -7\\ 0 &amp;  -7 &amp;  -2 \end{array} \right][/mathjaxinline] <br/><br/>[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  -7\\ 0 &amp;  0 &amp;  -51 \end{array} \right][/mathjaxinline] <br/><br/>We can stop here. The last row of the augmented matrix implies the equation [mathjaxinline]x_1 \cdot 0 + x_2 \cdot 0 = -51[/mathjaxinline], which has no solution. Therefore, the original equation has no solution.  </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Another Matrix-Vector Equation" linenum="157" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Another Matrix-Vector Equation" linenum="213" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinline] matrix with columns [mathjaxinline]v_1, v_2, v_3, v_4[/mathjaxinline]. That is, </p>
@@ -2407,12 +2431,15 @@ def MatrixGrader(expect, ans):
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ We need not perform any row reduction here. Our desired result [mathjaxinline]v_2[/mathjaxinline] can be written <br/><br/>[mathjaxinline]0\cdot v_1 + 1\cdot v_2 + 0\cdot v_3 + 0\cdot v_4[/mathjaxinline] , so <br/><br/>[mathjaxinline]x = \left[ \begin{array}{c} 0 \\ 1 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] is a solution to the equation. </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Always Consistent?" linenum="177" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Always Consistent?" linenum="237" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. There is a specific vector [mathjaxinline]v[/mathjaxinline] for which you can conclude the equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution, even without knowing anything else about [mathjaxinline]A[/mathjaxinline]. What is this vector [mathjaxinline]v[/mathjaxinline]? </p>
@@ -2461,7 +2488,10 @@ def MatrixGrader(expect, ans):
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] always has at least one solution, namely [mathjaxinline]x = \mathbf{0}[/mathjaxinline]. Since [mathjaxinline]A[/mathjaxinline] has 4 columns, [mathjaxinline]v[/mathjaxinline] is the zero vector in [mathjaxinline]\mathbb R^4[/mathjaxinline] specifically. </p>
+                  </font>
                 </solution>
               </p>
             </text>
@@ -2469,7 +2499,7 @@ def MatrixGrader(expect, ans):
         </vertical>
         <vertical display_name="Solution Sets" refnum="5" url_name="b1matrixvector-vertical5">
           <video display_name="Solving Ax = 0" youtube_id_1_0="???" url_name="b1matrixvector-tab5-video1"/>
-          <problem display_name="Non-trivial Solutions" linenum="210" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Non-trivial Solutions" linenum="273" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinline] matrix. The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has the solution [mathjaxinline]x = \mathbf{0}[/mathjaxinline], which we call the <span style="color:#99182C"><b class="bf">trivial solution.</b></span> If there are no solutions other than the trivial solutions, how many pivots must [mathjaxinline]A[/mathjaxinline] have when row-reduced? </p>
@@ -2483,12 +2513,15 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinlin
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ The vector [mathjaxinline]x[/mathjaxinline] lives in [mathjaxinline]\mathbb R^4[/mathjaxinline], so there are four variables in this equation. If the trivial solution is the unique solution, then we cannot have free variables when the augmented matrix [mathjaxinline]\left[ \begin{array}{c:c} A &amp;  \mathbf{0}\end{array} \right][/mathjaxinline] is row-reduced. That means [mathjaxinline]A[/mathjaxinline] will have a pivot in each of its four columns.  </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Find a Solution Set" linenum="226" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Find a Solution Set" linenum="299" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -2510,12 +2543,27 @@ Enter the list of vectors below, separated by semicolons. For instance, to enter
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ We row reduce the matrix [mathjaxinline]A[/mathjaxinline]: <br/><br/>[mathjaxinline]\left[ \begin{array}{cccc} 1 &amp;  1 &amp;  0 &amp;  -1 \\ 5 &amp;  6 &amp;  -1 &amp;  1 \end{array} \right][/mathjaxinline] <br/><br/>Multiply the first row by -5, and add this to the second: <br/><br/>[mathjaxinline]\left[ \begin{array}{cccc} 1 &amp;  1 &amp;  0 &amp;  -1 \\ 0 &amp;  1 &amp;  -1 &amp;  6 \end{array} \right][/mathjaxinline] <br/><br/>Multiply the second row by -1, and add this to the first: <br/><br/>[mathjaxinline]\left[ \begin{array}{cccc} 1 &amp;  0 &amp;  1 &amp;  -7 \\ 0 &amp;  1 &amp;  -1 &amp;  6 \end{array} \right][/mathjaxinline] <br/><br/>Ordinarily, to solve a matrix equation, we would row reduce an augmented matrix, with the vector from the right hand side of the equation as the last column of the matrix. However, since the right hand side of the equation is the zero vector, row operations would have no effect on it. This tells us that if [mathjaxinline]A'[/mathjaxinline] is the row-reduced version of [mathjaxinline]A[/mathjaxinline], then the set of solutions to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] is the same as the set of solutions to [mathjaxinline]A'x = \mathbf{0}[/mathjaxinline].<br/>We have 2 free variables; call them [mathjaxinline]x_3[/mathjaxinline] and [mathjaxinline]x_4[/mathjaxinline]. We can get solutions to our equation by choosing any values we like for [mathjaxinline]x_3[/mathjaxinline] and [mathjaxinline]x_4[/mathjaxinline], substituting, and solving for [mathjaxinline]x_1[/mathjaxinline] and [mathjaxinline]x_2[/mathjaxinline]. We get [mathjaxinline]x_1 = -x_3 + 7x_4[/mathjaxinline] and [mathjaxinline]x_2 = x_3 - 6x_4[/mathjaxinline]. </p>
+                    <p>
+Hence the general solution is </p>
+                    <table id="a0000000053" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                      <tr>
+                        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{c} x_1 \\ x_2 \\ x_3 \\ x_4 \end{array}\right] = \left[ \begin{array}{c} -x_3 + 7x_4 \\ x_3 - 6x_4 \\ x_3 \\ x_4 \end{array}\right] = x_3 \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array}\right] + x_4 \left[ \begin{array}{c} 7 \\ - 6 \\ 0 \\ 1 \end{array}\right],[/mathjax]</td>
+                        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                      </tr>
+                    </table>
+                    <p>
+ for any [mathjaxinline]x_3,\x _4 \in \mathbb R[/mathjaxinline]. Hence the set of solutions is the span of [mathjaxinline]\left\{  \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array} \right]; \left[ \begin{array}{c} 7 \\ -6 \\ 0 \\ 1 \end{array} \right]\} .[/mathjaxinline] </p>
+                    <p>
+(Note that this is not the only list that spans the solution set, but it is the one that is simplest to find.) </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Other Solution Sets" linenum="251" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Other Solution Sets" linenum="346" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or false: If [mathjaxinline]S[/mathjaxinline] is the solution set to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline], then the solution set to [mathjaxinline]Ax = v[/mathjaxinline] must be a translation of [mathjaxinline]S[/mathjaxinline]. </p>
@@ -2527,7 +2575,12 @@ True or false: If [mathjaxinline]S[/mathjaxinline] is the solution set to [mathj
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+If the solution set to [mathjaxinline]Ax = v[/mathjaxinline] is empty (i.e. if [mathjaxinline]v[/mathjaxinline] is not a linear combination of the columns of [mathjaxinline]A[/mathjaxinline]), then it can't be a translation of [mathjaxinline]S[/mathjaxinline], which is sure to contain at least one solution (the zero vector). </p>
+                    <p>
+If [mathjaxinline]Ax = v[/mathjaxinline] is consistent, then the solution set will be a translation of [mathjaxinline]S[/mathjaxinline]. </p>
+                  </font>
                 </solution>
               </p>
             </text>
@@ -2535,10 +2588,10 @@ True or false: If [mathjaxinline]S[/mathjaxinline] is the solution set to [mathj
         </vertical>
         <vertical display_name="Multiplication Properties" refnum="6" url_name="b1matrixvector-vertical6">
           <video display_name="Why do we call it multiplication?" youtube_id_1_0="e67R6kfSRo4" url_name="b1matrixvector-tab6-video1"/>
-          <html display_name="Properties of Matrix Multiplication" linenum="278" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-text1">
+          <html display_name="Properties of Matrix Multiplication" linenum="379" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-text1">
             <p>
 For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathjaxinline], vectors [mathjaxinline]w,x \in \mathbb R^ n[/mathjaxinline], and scalar [mathjaxinline]a[/mathjaxinline], we have that </p>
-            <table id="a0000000053" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000054" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A(w+x) = Aw + Ax[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -2546,14 +2599,14 @@ For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathja
             </table>
             <p>
  and </p>
-            <table id="a0000000054" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000055" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A(ax) = a(Ax).[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
               </tr>
             </table>
           </html>
-          <problem display_name="Consistent Matrix-Vector Equations" linenum="287" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Consistent Matrix-Vector Equations" linenum="388" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline], and suppose that [mathjaxinline]x = \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = w[/mathjaxinline]. </p>
@@ -2604,12 +2657,15 @@ def MatrixGrader(expect, ans):
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ We are given: <br/><br/>[mathjaxinline]A \cdot \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] = v[/mathjaxinline] <br/><br/>[mathjaxinline]A \cdot \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = w[/mathjaxinline] <br/><br/>Adding these equations, we get <br/><br/>[mathjaxinline]A \cdot \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + A \cdot \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \cdot \Bigg( \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] \Bigg) = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \cdot \left[\begin{array}{c} 3 \\ 1 \\ 7 \end{array} \right] = v + w[/mathjaxinline] <br/><br/></p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Consistent Matrix-Vector Equations 2" linenum="308" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Consistent Matrix-Vector Equations 2" linenum="417" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that the equation [mathjaxinline]Ax = v[/mathjaxinline] is consistent. Must the equation [mathjaxinline]Ax = 4v[/mathjaxinline] be consistent? </p>
@@ -2621,7 +2677,12 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinlin
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ We can show it with algebra. Suppose [mathjaxinline]y[/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline]. Then [mathjaxinline]Ay = v[/mathjaxinline], so [mathjaxinline]4Ay = 4v[/mathjaxinline] and [mathjaxinline]A (4y) = 4v.[/mathjaxinline] Thus [mathjaxinline]4y[/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = 4v[/mathjaxinline]. </p>
+                    <p>
+Intuitively, if we can produce [mathjaxinline]v[/mathjaxinline] by linear combination of the columns of [mathjaxinline]A[/mathjaxinline], we can simply scale the weights of the linear combination to produce any scaling [mathjaxinline]cv[/mathjaxinline] of [mathjaxinline]v[/mathjaxinline]. </p>
+                  </font>
                 </solution>
               </p>
             </text>
