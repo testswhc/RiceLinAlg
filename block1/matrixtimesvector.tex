@@ -112,7 +112,7 @@ Note the special nature of vector $y$. We can see that the product $Ay$ will equ
 
 \beginedxproblem{Where does it live?}{\dpa1}
 
-Suppose $A$ is a $6\times 4$ matrix.  In order for the product $Ax$ to be defined, the vector $x$ must live
+Suppose $A$ is a $6\times 4$ real matrix.  In order for the product $Ax$ to be defined, the vector $x$ must live
 in what space?  
 
 
@@ -124,8 +124,8 @@ The resulting product $Ax$ will be an element of which space?
 
 \edXsolution{ 
 
-For a matrix product to be defined, the number of columns of the first matrix must equal the number of rows of the second matrix (otherwise, the mechanics just don't work). Our matrix $A$ has 4 columns, so any matrix following it in a product must have 4 rows. If what follows $A$ in the product is a column vector, that vector must then live in $\R^4$. \\
-Furthermore, if a matrix product is defined, the result will have the same number of rows as the first matrix, and the same number of columns as the second; i.e., a matrix with dimensions a x b times a matrix with dimensions b x c will equal a matrix with dimensions a x c. Our product $Ax$ will therefore have dimensions 6 x 1 (a vector living in $\R^6$).
+For the matrix-vector product to be defined, the number of columns of the first matrix must equal the number of entries in the vector (otherwise, the mechanics just don't work). Our matrix $A$ has 4 columns, so $x$ must then live in $\R^4$. \\
+Furthermore, if a matrix-vector product is defined, the result will have the same number of rows as the matrix. Our product $Ax$ will therefore  be a vector living in $\R^6$. 
 
  }
 
@@ -148,14 +148,8 @@ v_1 & v_2 & \cdots & v_n \\
 
 \edXsolution{ 
 
-The span of a set of vectors is the set of all linear combinations of those vectors. By multiplying $A$ by any vector $x$ in $\R^n$, we are combining the columns of $A$ with the entries of $x$ as weights:
-\\ \\ 
-$A \cdot x = \left[ \begin{array}{cccc} | & | & & | \\ 
-v_1 & v_2 & \cdots & v_n \\
-| & | & & | \end{array} \right] \cdot \left[ \begin{array}{c} x_1 \\ x_2 \\ \vdots \\ x_n \end{array} \right] $
-\\ \\
-$ = x_1 v_1 + x_2 v_2 + \dots + x_n v_n $ \\ \\
-This is a linear combination of the columns of $A$, and so it is in the span of those columns. 
+The span of a list of vectors is the set of all linear combinations of those vectors. 
+$Ax$ is defined to be a linear combination of the columns of $A$, and so it is in the span of those columns. 
 
  }
 
@@ -171,7 +165,7 @@ This is a linear combination of the columns of $A$, and so it is in the span of 
 
 \beginedxvertical{Matrix-Vector Equations}
 
-\doedxvideo{Matrix-Vector Equations}{????}
+\doedxvideo{Matrix-Vector Equations}{HeeVmk25QNU}
 
 
 \beginedxproblem{Solving Matrix-Vector Equations}{\dpa1}
@@ -194,21 +188,21 @@ Let $w = \left[\begin{array}{c} 3 \\ -4 \\ 7
 
 \edXsolution{ 
 We will row reduce the augmented matrix: \\ \\
-$ \left[\begin{array}{cc|c} 1 & 2 & 3 \\ 1 & 3 & 2\\ 3 & -1 & 16 \end{array} \right] $ \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 1 & 3 & 2\\ 3 & -1 & 16 \end{array} \right] $ \\ \\
 Multiply the first row by -1, and add this to the second row: \\ \\
-$ \left[\begin{array}{cc|c} 1 & 2 & 3 \\ 0 & 1 & -1\\ 3 & -1 & 16 \end{array} \right] $ \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 0 & 1 & -1\\ 3 & -1 & 16 \end{array} \right] $ \\ \\
 Multiply the first row by -3, and add this to the third row: \\ \\
-$ \left[\begin{array}{cc|c} 1 & 2 & 3 \\ 0 & 1 & -1\\ 0 & -7 & 7 \end{array} \right] $ \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 0 & 1 & -1\\ 0 & -7 & 7 \end{array} \right] $ \\ \\
 Multiply the second row by 7, and add this to the third row: \\ \\
-$ \left[\begin{array}{cc|c} 1 & 2 & 3 \\ 0 & 1 & -1\\ 0 & 0 & 0 \end{array} \right] $ \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 0 & 1 & -1\\ 0 & 0 & 0 \end{array} \right] $ \\ \\
 Multiply the second row by -2, and add this to the first row: \\ \\
-$ \left[\begin{array}{cc|c} 1 & 0 & 5 \\ 0 & 1 & -1\\ 0 & 0 & 0 \end{array} \right] $ \\ \\
+$ \left[\begin{array}{cc:c} 1 & 0 & 5 \\ 0 & 1 & -1\\ 0 & 0 & 0 \end{array} \right] $ \\ \\
 Our vector $x$ is given by the last column. \\ \\
 We can perform the same steps to answer the second question:\\ \\
-$ \left[\begin{array}{cc|c} 1 & 2 & 3 \\ 1 & 3 & -4\\ 3 & -1 & 7 \end{array} \right] $ \\ \\
-$ \left[\begin{array}{cc|c} 1 & 2 & 3 \\ 0 & 1 & -7\\ 3 & -1 & 7 \end{array} \right] $ \\ \\
-$ \left[\begin{array}{cc|c} 1 & 2 & 3 \\ 0 & 1 & -7\\ 0 & -7 & -2 \end{array} \right] $ \\ \\
-$ \left[\begin{array}{cc|c} 1 & 2 & 3 \\ 0 & 1 & -7\\ 0 & 0 & -51 \end{array} \right] $ \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 1 & 3 & -4\\ 3 & -1 & 7 \end{array} \right] $ \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 0 & 1 & -7\\ 3 & -1 & 7 \end{array} \right] $ \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 0 & 1 & -7\\ 0 & -7 & -2 \end{array} \right] $ \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 0 & 1 & -7\\ 0 & 0 & -51 \end{array} \right] $ \\ \\
 We can stop here. The last row of the augmented matrix implies the equation $x_1 \cdot 0 + x_2 \cdot 0 = -51$, which has no solution. Therefore, the original equation has no solution.
 }
 
@@ -230,7 +224,7 @@ Find a solution to the equation $Ax = v_2$.
 \edXabox{expect="Placeholder" options="Placeholder"}
 
 \edXsolution{ 
-We need not perform any algebra here. Our desired result $v_2$ can be written \\ \\
+We need not perform any row reduction here. Our desired result $v_2$ can be written \\ \\
 $0\cdot v_1 + 1\cdot v_2 + 0\cdot v_3 + 0\cdot v_4$ ,  so \\ \\
 $x =  \left[ \begin{array}{c} 0 \\ 1 \\ 0 \\ 0 \end{array} \right] $ is a solution to the equation.
 
@@ -253,7 +247,7 @@ anything else about $A$.  What is this vector $v$?
 
 \edXsolution{ 
 
-The equation $Ax = \veco$ always has at least one solution, namely $x = \veco$. Since $A$ has 4 columns, v is the zero vector in $\R^4$.
+The equation $Ax = \veco$ always has at least one solution, namely $x = \veco$. Since $A$ has 4 columns, $v$ is the zero vector in $\R^4$ specifically.
 
 }
 
@@ -286,11 +280,16 @@ how many pivots must $A$ have when row-reduced?
 \edXabox{type="numerical" expect="4"}
 
 \edXsolution{ 
-The vector $x$ lives in $\R^4$, so there are four variables in this equation. Suppose matrix $A$ has fewer than 4 pivots when row-reduced. Since the number of free variables in an equation equals the number of variables minus the number of pivots, we would then have a positive number of free variables. \\ \\ 
-e.g.: \\
-$\left[ \begin{array}{cccc} 1&0&0&-2  \\  0&1&0&1 \\ 0&0&1&5 \\ 0&0&0&0 \\ 0&0&0&0 \\ 0&0&0&0    \end{array} \right] \cdot  \left[ \begin{array}{c} x_1 \\ x_2 \\ x_3 \\ x_4 \end{array} \right]  = \left[ \begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array} \right] $ \\ \\
-Suppose this is our result upon row reducing our matrix $A$. It is convenient here to declare that $x_4$ is the free variable. We can choose any value we like for $x_4$, and substitute to solve for the others. (If we choose $x_4 = 0$, we get the trivial solution for $x$.) In this way, we would have infinitely many solutions to the equation. \\ \\
-Since it is given that only the trivial solution exists, we therefore can't have fewer than 4 pivots, and since more than 4 is impossible in a 6 x 4 matrix, we must have exactly 4.  
+The vector $x$ lives in $\R^4$, so there are four variables in this equation.  If the trivial solution is
+the unique solution, then we cannot have free variables when the augmented
+matrix $\left[ \begin{array}{c:c} A & \veco \end{array} \right]$ is row-reduced.  That means $A$ will have
+a pivot in each of its four columns.  
+%  
+% Suppose matrix $A$ has fewer than 4 pivots when row-reduced. Since the number of free variables in an equation equals the number of variables minus the number of pivots, we would then have a positive number of free variables. \\ \\ 
+% e.g.: \\
+% $\left[ \begin{array}{cccc} 1&0&0&-2  \\  0&1&0&1 \\ 0&0&1&5 \\ 0&0&0&0 \\ 0&0&0&0 \\ 0&0&0&0    \end{array} \right] \cdot  \left[ \begin{array}{c} x_1 \\ x_2 \\ x_3 \\ x_4 \end{array} \right]  = \left[ \begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array} \right] $ \\ \\
+% Suppose this is our result upon row reducing our matrix $A$. It is convenient here to declare that $x_4$ is the free variable. We can choose any value we like for $x_4$, and substitute to solve for the others. (If we choose $x_4 = 0$, we get the trivial solution for $x$.) In this way, we would have infinitely many solutions to the equation. \\ \\
+% Since it is given that only the trivial solution exists, we therefore can't have fewer than 4 pivots, and since more than 4 is impossible in a 6 x 4 matrix, we must have exactly 4.  
 }
 
 \endedxproblem
@@ -321,30 +320,21 @@ $\left[ \begin{array}{cccc} 1 & 1 & 0 & -1 \\  0 & 1 & -1 & 6 \end{array} \right
 Multiply the second row by -1, and add this to the first: \\ \\
 $\left[ \begin{array}{cccc} 1 & 0 & 1 & -7 \\  0 & 1 & -1 & 6 \end{array} \right]$ \\ \\
 Ordinarily, to solve a matrix equation, we would row reduce an augmented matrix, with the vector from the right hand side of the equation as the last column of the matrix. However, since the right hand side of the equation is the zero vector, row operations would have no effect on it. This tells us that if $A'$ is the row-reduced version of $A$, then the set of solutions to $Ax = \veco$ is the same as the set of solutions to $A'x = \veco$.\\
-We have 4 variables and 2 pivots, so we have 4-2 = 2 free variables. We call $x_3$ and $x_4$ our free variables. We can get solutions to our equation by choosing any values we like for $x_3$ and $x_4$, substituting, and solving for $x_1$ and $x_2$. 
-However, we need to do more than just generate some solutions; we need to characterize the entire solution set. Since there are 2 free variables, our solution set will be the span of 2 linearly independent vectors. We simply choose $x_3$ = 1 , $x_4$ = 0  and $x_3$ = 0, $x_4$ = 1 to generate two solutions to the equation that are guaranteed to be linearly independent. \\ \\
-Generating the first solution: \\ \\
-$ x_1 \cdot \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] + 
-x_2 \cdot \left[ \begin{array}{c} 0 \\ 1 \end{array} \right] +
-1 \cdot \left[ \begin{array}{c} 1 \\ -1 \end{array} \right] +
-0 \cdot \left[ \begin{array}{c} -7 \\ 6 \end{array} \right] =
-\left[ \begin{array}{c} 0 \\ 0 \end{array} \right]$ \\ \\
-gives us \\ \\
-$x_1 + 1 = 0$	and		$x_2 - 1 = 0$ \\ \\
-and our first particular solution is \\ \\
-$\left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array} \right] .$ \\ \\
-Generating the second solution: \\ \\
-$ x_1 \cdot \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] + 
-x_2 \cdot \left[ \begin{array}{c} 0 \\ 1 \end{array} \right] +
-0 \cdot \left[ \begin{array}{c} 1 \\ -1 \end{array} \right] +
-1 \cdot \left[ \begin{array}{c} -7 \\ 6 \end{array} \right] =
-\left[ \begin{array}{c} 0 \\ 0 \end{array} \right]$ \\ \\
-gives us \\ \\
-$x_1 - 7 = 0$	and		$x_2 + 6 = 0$ \\ \\
-and our second particular solution is \\ \\
-$\left[ \begin{array}{c} 7 \\ -6 \\ 0 \\ 1 \end{array} \right]$ . \\ \\
-You may have noticed that the columns of the row reduced matrix are coming very close to directly handing us these solutions. \\
-The solution set to the original equation is then the span of the two vectors generated above.
+We have 2 free variables; call them $x_3$ and $x_4$. We can get solutions to our equation by choosing any values we like for $x_3$ and $x_4$, substituting, and solving for $x_1$ and $x_2$.  We get
+$x_1 = -x_3 + 7x_4$ and $x_2 = x_3 - 6x_4$.  
+
+Hence the general solution is \[
+\left[ \begin{array}{c} x_1 \\ x_2 \\ x_3 \\ x_4 \end{array}\right] = 
+\left[ \begin{array}{c} -x_3 + 7x_4 \\ x_3 - 6x_4 \\ x_3 \\ x_4 \end{array}\right] = 
+x_3 \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array}\right] + 
+x_4 \left[ \begin{array}{c} 7 \\ - 6 \\ 0 \\ 1 \end{array}\right],
+\]
+for any $x_3,\x_4 \in \R$.  Hence the set of solutions is the span of  
+$\left\{ \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array} \right]; 
+\left[ \begin{array}{c} 7 \\ -6 \\ 0 \\ 1 \end{array} \right]\}.$
+
+(Note that this is not the only list that spans the solution set, but it is the one that is simplest to find.)
+
 }
 
 
@@ -366,6 +356,8 @@ $Ax = v$ must be a translation of $S$.
 \edXsolution{ 
 
 If the solution set to $Ax = v$ is empty (i.e. if $v$ is not a linear combination of the columns of $A$), then it can't be a translation of $S$, which is sure to contain at least one solution (the zero vector). 
+
+If $Ax = v$ is consistent, then the solution set will be a translation of $S$.  
 
  }
 
@@ -431,11 +423,10 @@ equation $Ax = 4v$ be consistent?
 \edXabox{expect="Yes" options="Yes","No"}
 
 \edXsolution{ 
-We can show it with algebra: \\ \\
+We can show it with algebra.  Suppose $y$ is a solution to the equation $Ax = v$.  Then
+$Ay = v$, so $4Ay = 4v$ and $A (4y) = 4v.$  Thus $4y$ is a solution to the equation $Ax = 4v$.  
 
-$Ax = v \,\,\,\,\,\,\, \Rightarrow  \,\,\,\,\,\,\, 4Ax = 4v \,\,\,\,\,\,\, \Rightarrow  \,\,\,\,\,\,\, A \cdot 4x = 4v$ \\ \\
-
-...because it is generally true that $cA \cdot B = A \cdot cB$ for scalar $c$ and matrices $A$ and $B$.
+% ...because it is generally true that $cA \cdot B = A \cdot cB$ for scalar $c$ and matrices $A$ and $B$.
 Intuitively, if we can produce $v$ by linear combination of the columns of $A$, we can simply scale the weights of the linear combination to produce any scaling $cv$ of $v$. 
 
 	
