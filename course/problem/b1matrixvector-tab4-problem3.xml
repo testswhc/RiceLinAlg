@@ -1,4 +1,4 @@
-<problem display_name="Always Consistent?" linenum="177" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Always Consistent?" linenum="237" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. There is a specific vector [mathjaxinline]v[/mathjaxinline] for which you can conclude the equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution, even without knowing anything else about [mathjaxinline]A[/mathjaxinline]. What is this vector [mathjaxinline]v[/mathjaxinline]? </p>
@@ -47,7 +47,10 @@ def MatrixGrader(expect, ans):
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] always has at least one solution, namely [mathjaxinline]x = \mathbf{0}[/mathjaxinline]. Since [mathjaxinline]A[/mathjaxinline] has 4 columns, [mathjaxinline]v[/mathjaxinline] is the zero vector in [mathjaxinline]\mathbb R^4[/mathjaxinline] specifically. </p>
+        </font>
       </solution>
     </p>
   </text>

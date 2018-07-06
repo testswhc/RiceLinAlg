@@ -1,4 +1,4 @@
-<problem display_name="Products and Spans" linenum="101" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Products and Spans" linenum="136" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 True or false: If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix </p>
@@ -18,7 +18,10 @@ True or false: If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times 
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+The span of a list of vectors is the set of all linear combinations of those vectors. [mathjaxinline]Ax[/mathjaxinline] is defined to be a linear combination of the columns of [mathjaxinline]A[/mathjaxinline], and so it is in the span of those columns. </p>
+        </font>
       </solution>
     </p>
   </text>

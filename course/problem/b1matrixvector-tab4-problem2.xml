@@ -1,4 +1,4 @@
-<problem display_name="Another Matrix-Vector Equation" linenum="157" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Another Matrix-Vector Equation" linenum="213" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinline] matrix with columns [mathjaxinline]v_1, v_2, v_3, v_4[/mathjaxinline]. That is, </p>
@@ -55,7 +55,10 @@ def MatrixGrader(expect, ans):
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ We need not perform any row reduction here. Our desired result [mathjaxinline]v_2[/mathjaxinline] can be written <br/><br/>[mathjaxinline]0\cdot v_1 + 1\cdot v_2 + 0\cdot v_3 + 0\cdot v_4[/mathjaxinline] , so <br/><br/>[mathjaxinline]x = \left[ \begin{array}{c} 0 \\ 1 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] is a solution to the equation. </p>
+        </font>
       </solution>
     </p>
   </text>

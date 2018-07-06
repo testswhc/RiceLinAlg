@@ -1,4 +1,4 @@
-<problem display_name="Consistent Matrix-Vector Equations" linenum="287" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Consistent Matrix-Vector Equations" linenum="388" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline], and suppose that [mathjaxinline]x = \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = w[/mathjaxinline]. </p>
@@ -49,7 +49,10 @@ def MatrixGrader(expect, ans):
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ We are given: <br/><br/>[mathjaxinline]A \cdot \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] = v[/mathjaxinline] <br/><br/>[mathjaxinline]A \cdot \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = w[/mathjaxinline] <br/><br/>Adding these equations, we get <br/><br/>[mathjaxinline]A \cdot \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + A \cdot \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \cdot \Bigg( \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] \Bigg) = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \cdot \left[\begin{array}{c} 3 \\ 1 \\ 7 \end{array} \right] = v + w[/mathjaxinline] <br/><br/></p>
+        </font>
       </solution>
     </p>
   </text>
