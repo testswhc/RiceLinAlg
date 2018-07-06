@@ -1,37 +1,42 @@
+Some instructions on matrix entry go here...
+
 \begin{edXscript}
-def MatrixGrader(expect, ans):
-	tolerance = 0.01
-	ret={'ok':False}
-	ans.replace(' ','')
-	nums = ans.split(',')
-	expnums = expect.split(',')
-	if (expect == 'None') or (expect =='none'):
-		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
-	elif (nums[0] == "none") or (nums[0] == "None"):
-	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
-	else:
-		try:
-			expnum=[float(i) for i in expnums]
-			ansnum=[float(i) for i in nums]
-			explist = sorted(expnum, key=float)
-			anslist = sorted(ansnum, key=float) 
-			matching = True
-			if len(explist)!=len(anslist):
-			    if len(anslist)<len(explist):
-			    	ret['msg']="You did not enter enough critical points."
-			    else:
-			    	ret['msg']="You entered too many critical points."
-		 	else:
-				for i in range(len(explist)):
-					errorcnt=0
-					if (explist[i]-anslist[i]>tolerance) or (-explist[i]+anslist[i]>tolerance):
-						matching = False
-						errorcnt+=1
-					if errorcnt != 0:
-						ret['msg']= "You have %d errors in your answer." % errorcnt
-				ret['ok']=matching
-		except:
-		    ret['msg']="Your answer should only involve decimal numbers."
-	return ret
+import ast
+import numpy as np 
+  
+def test_vector(expect, ans):
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &lt;1,2,3&gt;
+		list_ans = ans.replace('&lt;', '[').replace('&gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret
   
 \end{edXscript}
