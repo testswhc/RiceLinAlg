@@ -1,0 +1,445 @@
+<document>
+
+<div class="navigation">
+
+
+
+</div>
+
+<div><p>
+<course number="Test" display_name="Test LinAlg" attrib_string="semester=&quot;2018_Summer&quot; info_sidebar_name=&quot;Other Documents&quot; start=&quot;2018-01-11T12:00&quot; end=&quot;2018-12-18T18:00&quot; course_image=&quot;rice-logo.jpg&quot; display_coursenumber=&quot;TestLinAlg&quot; course_organization=&quot;TestRice&quot; graceperiod=&quot;1800 seconds&quot; invitation_only=&quot;true&quot; allow_anonymous=&quot;false&quot; mobile_available=&quot;true&quot; org=&quot;Rice&quot;"><p>
+<chapter display_name="Vectors and Matrices" attrib_string="url_name=&quot;block1&quot; start=&quot;2018-01-11T16:00&quot;" linenum="73" tex_filename="testcourse2.tex" refnum="1"><p>
+<sequential display_name="Systems sdof Linear Equations" attrib_string="due=&quot;2018-12-18T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b1lineareqns-sequential&quot;" linenum="85" tex_filename="testcourse2.tex" refnum="1"><p>
+<vertical display_name="Page One" attrib_string="url_name=&quot;b1lineareqns-vertical1&quot;" refnum="1"><p>
+<html display_name="Preliminaries" attrib_string="url_name=&quot;b1lineareqns-tab1-text1&quot;" linenum="5" tex_filename="./block1/linearequations.tex"><p>
+At the end of this sequence, and after some practice, you should be able to: </p><ul class="itemize">
+
+<li><p>
+Translate systems of linear equations into <span style="color:#99182C"><b class="bf">augmented matrices</b></span>. </p></li>
+<li><p>
+Apply elementary <span style="color:#99182C"><b class="bf">row operations</b></span> to matrices. </p></li>
+</ul><p>
+For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p></html></p></vertical>   </p><p>
+<vertical display_name="Introduction" attrib_string="url_name=&quot;b1lineareqns-vertical2&quot;" refnum="2"><p>
+<video display_name="Systems of Linear Equations" youtube_id_1_0="MNuDcFXUymE" attrib_string="url_name=&quot;b1lineareqns-tab2-video1&quot; "></video><problem display_name="Matrix entry" attrib_string="url_name=&quot;b1lineareqns-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="39" tex_filename="./block1/linearequations.tex"><text><p>
+Consider the following system of linear equations: </p><table id="a0000000002" cellpadding="7" width="100%" cellspacing="0" class="eqnarray">
+<tr id="a0000000003">
+    
+    <td style="width:40%">&#160;</td>
+    
+    
+        <td style="vertical-align:middle;                                    text-align:right">
+	    [mathjaxinline]\displaystyle  10x_1 + 30x_2[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:center">
+	    [mathjaxinline]\displaystyle  =[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:left">
+	    [mathjaxinline]\displaystyle  10[/mathjaxinline]
+        </td>
+    
+    
+    
+    <td style="width:40%">&#160;</td>
+    <td style="width:20%" class="eqnnum">&#160;</td>
+</tr><tr id="a0000000004">
+    
+    <td style="width:40%">&#160;</td>
+    
+    
+        <td style="vertical-align:middle;                                    text-align:right">
+	    [mathjaxinline]\displaystyle 2x_1 + 6x_2[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:center">
+	    [mathjaxinline]\displaystyle  =[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:left">
+	    [mathjaxinline]\displaystyle  3[/mathjaxinline]
+        </td>
+    
+    
+    
+    <td style="width:40%">&#160;</td>
+    <td style="width:20%" class="eqnnum">&#160;</td>
+</tr>
+</table><p>
+Enter the coefficient matrix for the above system. </p><p>
+Some instructions on matrix entry go here... </p><script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<customresponse cfn="MatrixEntry" expect="[[10,30],[2,6]]">
+  <textline correct_answer="[[10,30],[2,6]]"/>
+</customresponse> </p><p>
+Enter the augmented matrix for the above system. </p><p>
+<customresponse cfn="MatrixEntry" expect="[[10,30,10],[2,6,3]]">
+  <textline correct_answer="[[10,30,10],[2,6,3]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+The coefficient matrix is given by </p><table id="a0000000005" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{cc} 10 &amp;  30 \\ 2 &amp;  6 \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+ The augmented matrix is given by </p><table id="a0000000006" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{cc:c} 10 &amp;  30 &amp; 10 \\ 2 &amp;  6 &amp; 3 \end{array} \right].[/mathjax]</td>
+</tr>
+</table></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Doing Row Operations" attrib_string="url_name=&quot;b1lineareqns-vertical3&quot;" refnum="3"><p>
+<video display_name="Row Operations" youtube_id_1_0="y7WkHWviQUQ" attrib_string="url_name=&quot;b1lineareqns-tab3-video1&quot; "></video><problem display_name="Two Row Operations" attrib_string="url_name=&quot;b1lineareqns-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="93" tex_filename="./block1/linearequations.tex"><text><p>
+Recall the system of equations from the previous question. </p><table id="a0000000007" cellpadding="7" width="100%" cellspacing="0" class="eqnarray">
+<tr id="a0000000008">
+    
+    <td style="width:40%">&#160;</td>
+    
+    
+        <td style="vertical-align:middle;                                    text-align:right">
+	    [mathjaxinline]\displaystyle  10x_1 + 30x_2[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:center">
+	    [mathjaxinline]\displaystyle  =[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:left">
+	    [mathjaxinline]\displaystyle  10[/mathjaxinline]
+        </td>
+    
+    
+    
+    <td style="width:40%">&#160;</td>
+    <td style="width:20%" class="eqnnum">&#160;</td>
+</tr><tr id="a0000000009">
+    
+    <td style="width:40%">&#160;</td>
+    
+    
+        <td style="vertical-align:middle;                                    text-align:right">
+	    [mathjaxinline]\displaystyle 2x_1 + 6x_2[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:center">
+	    [mathjaxinline]\displaystyle  =[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:left">
+	    [mathjaxinline]\displaystyle  3[/mathjaxinline]
+        </td>
+    
+    
+    
+    <td style="width:40%">&#160;</td>
+    <td style="width:20%" class="eqnnum">&#160;</td>
+</tr>
+</table><p>
+Do the following row operations to the augmented matrix. First, multiply the first row by [mathjaxinline]\frac{1}{10}[/mathjaxinline]. Then, replace the second row with the second row minus twice the first row. What matrix do you get as a result? </p><p>
+Some instructions on matrix entry go here... </p><script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<optionresponse>
+  <optioninput options="('Placeholder')" correct="Placeholder"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+The result is </p><table id="a0000000010" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{cc:c} 1 &amp;  3 &amp;  1 \\ 0 &amp;  0 &amp;  1 \\ \end{array} \right].[/mathjax]</td>
+</tr>
+</table></font></solution></p></text></problem></p><p>
+<problem display_name="System Consistency?" attrib_string="url_name=&quot;b1lineareqns-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="128" tex_filename="./block1/linearequations.tex"><text><p>
+Note the last row in your result, and think about what equation it represents. Is the system consistent? If so, does it have a unique solution? </p><p>
+<multiplechoiceresponse>
+  <choicegroup direction="vertical">
+    <choice correct="false" name="1">
+      <text> The system is consistent and has a unique solution</text>
+    </choice>
+    <choice correct="false" name="2">
+      <text> The system is consistent but has more than one solution</text>
+    </choice>
+    <choice correct="true" name="3">
+      <text> The system is inconsistent</text>
+    </choice>
+  </choicegroup>
+</multiplechoiceresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+The last row represents [mathjaxinline]0x_1+0x_2=1[/mathjaxinline]. There are no values of [mathjaxinline]x_1[/mathjaxinline] and [mathjaxinline]x_2[/mathjaxinline] that satisfy this equation.  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Yes or No" attrib_string="url_name=&quot;b1lineareqns-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="140" tex_filename="./block1/linearequations.tex"><text><p>
+Does a linear system of two equations in two variables always have at least one solution? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="No"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+The previous problem gives an example that has no solutions. </p></font></solution></p></text></problem></p><p>
+<problem display_name="More Row Operations" attrib_string="url_name=&quot;b1lineareqns-tab3-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="153" tex_filename="./block1/linearequations.tex"><text><p>
+Consider this system of equations. </p><table id="a0000000011" cellpadding="7" width="100%" cellspacing="0" class="eqnarray">
+<tr id="a0000000012">
+    
+    <td style="width:40%">&#160;</td>
+    
+    
+        <td style="vertical-align:middle;                                    text-align:right">
+	    [mathjaxinline]\displaystyle  0x_1 + 1x_2 - 1x_3[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:center">
+	    [mathjaxinline]\displaystyle  =[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:left">
+	    [mathjaxinline]\displaystyle  1[/mathjaxinline]
+        </td>
+    
+    
+    
+    <td style="width:40%">&#160;</td>
+    <td style="width:20%" class="eqnnum">&#160;</td>
+</tr><tr id="a0000000013">
+    
+    <td style="width:40%">&#160;</td>
+    
+    
+        <td style="vertical-align:middle;                                    text-align:right">
+	    [mathjaxinline]\displaystyle 1x_1 + 2x_2 - 2x_3[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:center">
+	    [mathjaxinline]\displaystyle  =[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:left">
+	    [mathjaxinline]\displaystyle  1[/mathjaxinline]
+        </td>
+    
+    
+    
+    <td style="width:40%">&#160;</td>
+    <td style="width:20%" class="eqnnum">&#160;</td>
+</tr><tr id="a0000000014">
+    
+    <td style="width:40%">&#160;</td>
+    
+    
+        <td style="vertical-align:middle;                                    text-align:right">
+	    [mathjaxinline]\displaystyle 2x_1 + 6x_2 - 6x_3[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:center">
+	    [mathjaxinline]\displaystyle  =[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:left">
+	    [mathjaxinline]\displaystyle  4[/mathjaxinline]
+        </td>
+    
+    
+    
+    <td style="width:40%">&#160;</td>
+    <td style="width:20%" class="eqnnum">&#160;</td>
+</tr>
+</table><p>
+Do the following row operations to the augmented matrix. First, switch the first two rows. Then replace the third row with the third row minus twice the first row. Next, replace the first row with the first row minus twice the second row. Finally, replace the third row with the third row minus twice the second row. What matrix do you get as a result? </p><p>
+Some instructions on matrix entry go here... </p><script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<optionresponse>
+  <optioninput options="('Placeholder')" correct="Placeholder"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ We begin with </p><table id="a0000000015" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{ccc:c} 0&amp; 1&amp; -1&amp; 1 \\ 1&amp; 2&amp; -2&amp; 1\\ 2&amp; 6&amp; -6&amp; 4\\ \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+Performing the given row operations in order, we obtain </p><table id="a0000000016" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{ccc:c} 1&amp; 2&amp; -2&amp; 1\\ 0&amp; 1&amp; -1&amp; 1 \\ 2&amp; 6&amp; -6&amp; 4 \end{array} \right],[/mathjax]</td>
+</tr>
+</table><table id="a0000000017" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{ccc:c} 1&amp; 2&amp; -2&amp; 1\\ 0&amp; 1&amp; -1&amp; 1 \\ 0&amp; 2&amp; -2&amp; 2 \end{array} \right],[/mathjax]</td>
+</tr>
+</table><table id="a0000000018" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{ccc:c} 1&amp; 0&amp; 0&amp; -1\\ 0&amp; 1&amp; -1&amp; 1 \\ 0&amp; 2&amp; -2&amp; 2 \end{array} \right],[/mathjax]</td>
+</tr>
+</table><table id="a0000000019" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{ccc:c} 1&amp; 0&amp; 0&amp; -1\\ 0&amp; 1&amp; -1&amp; 1 \\ 0&amp; 0&amp; 0&amp; 0\\ \end{array} \right].[/mathjax]</td>
+</tr>
+</table></font></solution></p></text></problem></p><p>
+<problem display_name="System Consistency?" attrib_string="url_name=&quot;b1lineareqns-tab3-problem5&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="211" tex_filename="./block1/linearequations.tex"><text><p>
+Write down the equations corresponding to the last matrix. Is there a triple [mathjaxinline](x_1,x_2,x_3)[/mathjaxinline] that satisfies these equations (in other words, is the system consistent)? If so, is the solution unique? </p><p>
+<multiplechoiceresponse>
+  <choicegroup direction="vertical">
+    <choice correct="false" name="1">
+      <text> The system is consistent and has a unique solution</text>
+    </choice>
+    <choice correct="true" name="2">
+      <text> The system is consistent but has more than one solution</text>
+    </choice>
+    <choice correct="false" name="3">
+      <text> The system is inconsistent</text>
+    </choice>
+  </choicegroup>
+</multiplechoiceresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+The equations are [mathjaxinline]x_1 = -1[/mathjaxinline], [mathjaxinline]x_2 - x_3 = 1[/mathjaxinline], and [mathjaxinline]0 = 0[/mathjaxinline]. There are many triples [mathjaxinline](x_1, x_2, x_3)[/mathjaxinline] that satisfy these equations; for instance, [mathjaxinline](-1, 1, 0)[/mathjaxinline] and [mathjaxinline](-1, 2, 1)[/mathjaxinline] are two solutions.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="A Few Questions" attrib_string="url_name=&quot;b1lineareqns-vertical4&quot;" refnum="4"><p>
+<problem display_name="Row of All Zeros" attrib_string="url_name=&quot;b1lineareqns-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="229" tex_filename="./block1/linearequations.tex"><text><p>
+Suppose you have an augmented matrix and, after a few elementary row operations, you see one row that looks like this: </p><p>
+[mathjaxinline]\left[ \begin{array}{cccc:c} 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjaxinline] </p><p>
+Just from the presence of that one row, what can you conclude about the overall system? </p><p>
+<multiplechoiceresponse>
+  <choicegroup direction="vertical">
+    <choice correct="false" name="1">
+      <text> The system is consistent and has a unique solution</text>
+    </choice>
+    <choice correct="false" name="2">
+      <text> The system is consistent but has more than one solution</text>
+    </choice>
+    <choice correct="false" name="3">
+      <text> The system is inconsistent</text>
+    </choice>
+    <choice correct="true" name="4">
+      <text> We cannot conclude anything; it will depend on the other rows</text>
+    </choice>
+  </choicegroup>
+</multiplechoiceresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+The previous problem gave us an example of a system that is consistent, but has more than one solution. The augmented matrix </p><table id="a0000000020" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{cc:c} 1&amp; 0&amp; 1 \\ 0&amp; 1&amp; 2\\ 0&amp; 0&amp; 0\\ \end{array} \right][/mathjax]</td>
+</tr>
+</table><p>
+ is an example of a consistent system with a unique solution. </p><p>
+We may also have an inconsistent system such as </p><table id="a0000000021" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{cc:c} 1&amp; 0&amp; 1 \\ 0&amp; 0&amp; 1\\ 0&amp; 0&amp; 0\\ \end{array} \right][/mathjax]</td>
+</tr>
+</table></font></solution></p></text></problem></p><p>
+<problem display_name="Types of Row Operations" attrib_string="url_name=&quot;b1lineareqns-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="258" tex_filename="./block1/linearequations.tex"><text><p>
+How many types of elementary row operations are there? </p><p>
+<numericalresponse answer="3">
+  <textline>
+    <responseparam type="tolerance" default="0.00001"/>
+  </textline>
+</numericalresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><ul class="itemize">
+
+<li><p>
+Switch two rows. </p></li>
+<li><p>
+Multiply a row by a non-zero scalar. </p></li>
+<li><p>
+Add a scalar multiple of one row to another row. (More precisely, replace one row with the sum of itself and a scalar multiple of a different row.) </p></li>
+</ul></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Elementary Row Operations" attrib_string="url_name=&quot;b1lineareqns-vertical5&quot;" refnum="5"><p>
+<html display_name="Elementary Row Operations" attrib_string="url_name=&quot;b1lineareqns-tab5-text1&quot;" linenum="280" tex_filename="./block1/linearequations.tex"><p>
+There are three types of elementary row operations that one can apply to a matrix. </p><ul class="itemize">
+
+<li><p>
+Switch two rows. </p></li>
+<li><p>
+Multiply a row by a non-zero scalar. </p></li>
+<li><p>
+Add a scalar multiple of one row to another row. (More precisely, replace one row with the sum of itself and a scalar multiple of a different row.) </p></li>
+</ul><p>
+If one can obtain augmented matrix [mathjaxinline]B[/mathjaxinline] from augmented matrix [mathjaxinline]A[/mathjaxinline] via a series of elementary row operations, we say that [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are <span style="color:#99182C"><b class="bf">row-equivalent.</b></span> </p><p>
+If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are row-equivalent, the system of linear equations represented by [mathjaxinline]A[/mathjaxinline] and the system of linear equations represented by [mathjaxinline]B[/mathjaxinline] have the same set of solutions. </p></html></p></vertical>   </p></sequential> </p></chapter> </p></course> </p></div>
+
+
+
+
+
+<div class="navigation">
+
+
+
+</div>
+
+</document>

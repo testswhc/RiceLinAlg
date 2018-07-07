@@ -2,7 +2,7 @@
   <metadata/>
   <course number="Test" display_name="Test LinAlg" semester="2018_Summer" info_sidebar_name="Other Documents" start="2018-01-11T12:00" end="2018-12-18T18:00" course_image="rice-logo.jpg" display_coursenumber="TestLinAlg" course_organization="TestRice" graceperiod="1800 seconds" invitation_only="true" allow_anonymous="false" mobile_available="true" org="Rice">
     <chapter display_name="Vectors and Matrices" linenum="77" tex_filename="testcourse.tex" refnum="1" url_name="block1" start="2018-01-11T16:00">
-      <sequential display_name="Systems of Linear Equations" linenum="89" tex_filename="testcourse.tex" refnum="1" due="2018-04-13T14:15" graded="true" format="Exercises" url_name="b1lineareqns-sequential">
+      <sequential display_name="Systems of Linear Equations" linenum="89" tex_filename="testcourse.tex" refnum="1" due="2018-12-13T14:15" graded="true" format="Exercises" url_name="b1lineareqns-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1lineareqns-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab1-text1">
             <p>
@@ -57,58 +57,42 @@ Consider the following system of linear equations: </p>
                   <td style="width:20%; border:none" class="eqnnum"/>
                 </tr>
               </table>
-              <script linenum="1" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
-def MatrixGrader(expect, ans):
-	tolerance = 0.01
-	ret={'ok':False}
-	ans.replace(' ','')
-	nums = ans.split(',')
-	expnums = expect.split(',')
-	if (expect == 'None') or (expect =='none'):
-		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
-	elif (nums[0] == "none") or (nums[0] == "None"):
-	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
-	else:
-		try:
-			expnum=[float(i) for i in expnums]
-			ansnum=[float(i) for i in nums]
-			explist = sorted(expnum, key=float)
-			anslist = sorted(ansnum, key=float) 
-			matching = True
-			if len(explist)!=len(anslist):
-			    if len(anslist)&lt;len(explist):
-			    	ret['msg']="You did not enter enough critical points."
-			    else:
-			    	ret['msg']="You entered too many critical points."
-		 	else:
-				for i in range(len(explist)):
-					errorcnt=0
-					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
-						matching = False
-						errorcnt+=1
-					if errorcnt != 0:
-						ret['msg']= "You have %d errors in your answer." % errorcnt
-				ret['ok']=matching
-		except:
-		    ret['msg']="Your answer should only involve decimal numbers."
-	return ret
-  
-</script>
               <p>
 Enter the coefficient matrix for the above system. </p>
               <p>
-To enter a matrix, type... </p>
+Some instructions on matrix entry go here... </p>
+              <script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script>
               <p>
-                <optionresponse>
-                  <optioninput options="('Placeholder')" correct="Placeholder"/>
-                </optionresponse>
+                <customresponse cfn="MatrixEntry" expect="[[10,30],[2,6]]">
+                  <textline correct_answer="[[10,30],[2,6]]"/>
+                </customresponse>
               </p>
               <p>
 Enter the augmented matrix for the above system. </p>
               <p>
-                <optionresponse>
-                  <optioninput options="('Placeholder')" correct="Placeholder"/>
-                </optionresponse>
+                <customresponse cfn="MatrixEntry" expect="[[10,30,10],[2,6,3]]">
+                  <textline correct_answer="[[10,30,10],[2,6,3]]"/>
+                </customresponse>
               </p>
               <p>
                 <solution>
@@ -138,7 +122,7 @@ The coefficient matrix is given by </p>
         </vertical>
         <vertical display_name="Doing Row Operations" refnum="3" url_name="b1lineareqns-vertical3">
           <video display_name="Row Operations" youtube_id_1_0="y7WkHWviQUQ" url_name="b1lineareqns-tab3-video1"/>
-          <problem display_name="Two Row Operations" linenum="92" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Two Row Operations" linenum="93" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Recall the system of equations from the previous question. </p>
@@ -174,42 +158,28 @@ Recall the system of equations from the previous question. </p>
               </table>
               <p>
 Do the following row operations to the augmented matrix. First, multiply the first row by [mathjaxinline]\frac{1}{10}[/mathjaxinline]. Then, replace the second row with the second row minus twice the first row. What matrix do you get as a result? </p>
-              <script linenum="1" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
-def MatrixGrader(expect, ans):
-	tolerance = 0.01
-	ret={'ok':False}
-	ans.replace(' ','')
-	nums = ans.split(',')
-	expnums = expect.split(',')
-	if (expect == 'None') or (expect =='none'):
-		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
-	elif (nums[0] == "none") or (nums[0] == "None"):
-	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
-	else:
-		try:
-			expnum=[float(i) for i in expnums]
-			ansnum=[float(i) for i in nums]
-			explist = sorted(expnum, key=float)
-			anslist = sorted(ansnum, key=float) 
-			matching = True
-			if len(explist)!=len(anslist):
-			    if len(anslist)&lt;len(explist):
-			    	ret['msg']="You did not enter enough critical points."
-			    else:
-			    	ret['msg']="You entered too many critical points."
-		 	else:
-				for i in range(len(explist)):
-					errorcnt=0
-					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
-						matching = False
-						errorcnt+=1
-					if errorcnt != 0:
-						ret['msg']= "You have %d errors in your answer." % errorcnt
-				ret['ok']=matching
-		except:
-		    ret['msg']="Your answer should only involve decimal numbers."
-	return ret
-  
+              <p>
+Some instructions on matrix entry go here... </p>
+              <script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
 </script>
               <p>
                 <optionresponse>
@@ -233,7 +203,7 @@ The result is </p>
               </p>
             </text>
           </problem>
-          <problem display_name="System Consistency?" linenum="127" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="System Consistency?" linenum="128" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Note the last row in your result, and think about what equation it represents. Is the system consistent? If so, does it have a unique solution? </p>
@@ -263,7 +233,7 @@ The last row represents [mathjaxinline]0x_1+0x_2=1[/mathjaxinline]. There are no
               </p>
             </text>
           </problem>
-          <problem display_name="Yes or No" linenum="139" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Yes or No" linenum="140" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Does a linear system of two equations in two variables always have at least one solution? </p>
@@ -283,7 +253,7 @@ The previous problem gives an example that has no solutions. </p>
               </p>
             </text>
           </problem>
-          <problem display_name="More Row Operations" linenum="152" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="More Row Operations" linenum="153" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Consider this system of equations. </p>
@@ -333,42 +303,28 @@ Consider this system of equations. </p>
               </table>
               <p>
 Do the following row operations to the augmented matrix. First, switch the first two rows. Then replace the third row with the third row minus twice the first row. Next, replace the first row with the first row minus twice the second row. Finally, replace the third row with the third row minus twice the second row. What matrix do you get as a result? </p>
-              <script linenum="1" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
-def MatrixGrader(expect, ans):
-	tolerance = 0.01
-	ret={'ok':False}
-	ans.replace(' ','')
-	nums = ans.split(',')
-	expnums = expect.split(',')
-	if (expect == 'None') or (expect =='none'):
-		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
-	elif (nums[0] == "none") or (nums[0] == "None"):
-	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
-	else:
-		try:
-			expnum=[float(i) for i in expnums]
-			ansnum=[float(i) for i in nums]
-			explist = sorted(expnum, key=float)
-			anslist = sorted(ansnum, key=float) 
-			matching = True
-			if len(explist)!=len(anslist):
-			    if len(anslist)&lt;len(explist):
-			    	ret['msg']="You did not enter enough critical points."
-			    else:
-			    	ret['msg']="You entered too many critical points."
-		 	else:
-				for i in range(len(explist)):
-					errorcnt=0
-					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
-						matching = False
-						errorcnt+=1
-					if errorcnt != 0:
-						ret['msg']= "You have %d errors in your answer." % errorcnt
-				ret['ok']=matching
-		except:
-		    ret['msg']="Your answer should only involve decimal numbers."
-	return ret
-  
+              <p>
+Some instructions on matrix entry go here... </p>
+              <script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
 </script>
               <p>
                 <optionresponse>
@@ -418,7 +374,7 @@ Performing the given row operations in order, we obtain </p>
               </p>
             </text>
           </problem>
-          <problem display_name="System Consistency?" linenum="210" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem5" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="System Consistency?" linenum="211" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab3-problem5" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Write down the equations corresponding to the last matrix. Is there a triple [mathjaxinline](x_1,x_2,x_3)[/mathjaxinline] that satisfies these equations (in other words, is the system consistent)? If so, is the solution unique? </p>
@@ -450,7 +406,7 @@ The equations are [mathjaxinline]x_1 = -1[/mathjaxinline], [mathjaxinline]x_2 - 
           </problem>
         </vertical>
         <vertical display_name="A Few Questions" refnum="4" url_name="b1lineareqns-vertical4">
-          <problem display_name="Row of All Zeros" linenum="228" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab4-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Row of All Zeros" linenum="229" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab4-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Suppose you have an augmented matrix and, after a few elementary row operations, you see one row that looks like this: </p>
@@ -503,7 +459,7 @@ We may also have an inconsistent system such as </p>
               </p>
             </text>
           </problem>
-          <problem display_name="Types of Row Operations" linenum="257" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab4-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Types of Row Operations" linenum="258" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab4-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 How many types of elementary row operations are there? </p>
@@ -539,7 +495,7 @@ Add a scalar multiple of one row to another row. (More precisely, replace one ro
           </problem>
         </vertical>
         <vertical display_name="Elementary Row Operations" refnum="5" url_name="b1lineareqns-vertical5">
-          <html display_name="Elementary Row Operations" linenum="279" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab5-text1">
+          <html display_name="Elementary Row Operations" linenum="280" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab5-text1">
             <p>
 There are three types of elementary row operations that one can apply to a matrix. </p>
             <ul class="itemize">
@@ -563,7 +519,7 @@ If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are row
           </html>
         </vertical>
       </sequential>
-      <sequential display_name="Row-Reduced Form" linenum="122" tex_filename="testcourse.tex" refnum="2" due="2018-04-15T14:15" graded="true" format="Exercises" url_name="b1rowreduced-sequential">
+      <sequential display_name="Row-Reduced Form" linenum="122" tex_filename="testcourse.tex" refnum="2" due="2018-12-15T14:15" graded="true" format="Lab" url_name="b1rowreduced-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1rowreduced-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab1-text1">
             <p>
@@ -640,42 +596,28 @@ The following matrix is not in RREF. </p>
 [mathjaxinline]\left[ \begin{array}{ccccc} 1 &amp;  4 &amp;  0 &amp;  0 &amp;  7 \\ 0 &amp;  0 &amp;  1 &amp;  -2 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  1 \end{array} \right][/mathjaxinline] </p>
               <p>
 However, you can apply a single row operation to put it into RREF. What matrix is the result? </p>
-              <script linenum="1" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
-def MatrixGrader(expect, ans):
-	tolerance = 0.01
-	ret={'ok':False}
-	ans.replace(' ','')
-	nums = ans.split(',')
-	expnums = expect.split(',')
-	if (expect == 'None') or (expect =='none'):
-		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
-	elif (nums[0] == "none") or (nums[0] == "None"):
-	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
-	else:
-		try:
-			expnum=[float(i) for i in expnums]
-			ansnum=[float(i) for i in nums]
-			explist = sorted(expnum, key=float)
-			anslist = sorted(ansnum, key=float) 
-			matching = True
-			if len(explist)!=len(anslist):
-			    if len(anslist)&lt;len(explist):
-			    	ret['msg']="You did not enter enough critical points."
-			    else:
-			    	ret['msg']="You entered too many critical points."
-		 	else:
-				for i in range(len(explist)):
-					errorcnt=0
-					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
-						matching = False
-						errorcnt+=1
-					if errorcnt != 0:
-						ret['msg']= "You have %d errors in your answer." % errorcnt
-				ret['ok']=matching
-		except:
-		    ret['msg']="Your answer should only involve decimal numbers."
-	return ret
-  
+              <p>
+Some instructions on matrix entry go here... </p>
+              <script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
 </script>
               <p>
                 <optionresponse>
@@ -756,42 +698,28 @@ Let </p>
               </table>
               <p>
 What matrix do you get if you row-reduce [mathjaxinline]A[/mathjaxinline]? </p>
-              <script linenum="1" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
-def MatrixGrader(expect, ans):
-	tolerance = 0.01
-	ret={'ok':False}
-	ans.replace(' ','')
-	nums = ans.split(',')
-	expnums = expect.split(',')
-	if (expect == 'None') or (expect =='none'):
-		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
-	elif (nums[0] == "none") or (nums[0] == "None"):
-	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
-	else:
-		try:
-			expnum=[float(i) for i in expnums]
-			ansnum=[float(i) for i in nums]
-			explist = sorted(expnum, key=float)
-			anslist = sorted(ansnum, key=float) 
-			matching = True
-			if len(explist)!=len(anslist):
-			    if len(anslist)&lt;len(explist):
-			    	ret['msg']="You did not enter enough critical points."
-			    else:
-			    	ret['msg']="You entered too many critical points."
-		 	else:
-				for i in range(len(explist)):
-					errorcnt=0
-					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
-						matching = False
-						errorcnt+=1
-					if errorcnt != 0:
-						ret['msg']= "You have %d errors in your answer." % errorcnt
-				ret['ok']=matching
-		except:
-		    ret['msg']="Your answer should only involve decimal numbers."
-	return ret
-  
+              <p>
+Some instructions on matrix entry go here... </p>
+              <script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
 </script>
               <p>
                 <optionresponse>
@@ -1445,7 +1373,7 @@ Multiplication distributes over addition; that is, for all [mathjaxinline]a,b,c 
           </html>
         </vertical>
       </sequential>
-      <sequential display_name="Vectors" linenum="151" tex_filename="testcourse.tex" refnum="3" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1vectors-sequential">
+      <sequential display_name="Vectors" linenum="151" tex_filename="testcourse.tex" refnum="3" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1vectors-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1vectors-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab1-text1">
             <p>
@@ -1706,7 +1634,7 @@ False. We have seen other examples such as the set of polynomials.  </p>
           </problem>
         </vertical>
       </sequential>
-      <sequential display_name="Linear Combinations and Span" linenum="180" tex_filename="testcourse.tex" refnum="4" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1lincombos-sequential">
+      <sequential display_name="Linear Combinations and Span" linenum="180" tex_filename="testcourse.tex" refnum="4" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1lincombos-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1lincombos-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab1-text1">
             <p>
@@ -2095,7 +2023,7 @@ Given above are six lists of vectors. <span style="color:#99182C"><b class="bf">
           </problem>
         </vertical>
       </sequential>
-      <sequential display_name="Matrix-Vector Multiplication" linenum="213" tex_filename="testcourse.tex" refnum="5" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1matrixvector-sequential">
+      <sequential display_name="Matrix-Vector Multiplication" linenum="213" tex_filename="testcourse.tex" refnum="5" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1matrixvector-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1matrixvector-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab1-text1">
             <p>
@@ -2206,13 +2134,13 @@ Let [mathjaxinline]y = \left[\begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \righ
                   <font color="blue">Answer: </font>
                   <font color="blue">
                     <p>
- [mathjaxinline]Ax = 1 \cdot \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + 2 \cdot \left[ \begin{array}{c} 1 \\ 3 \\ 0 \end{array} \right] + 3 \cdot \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] + 4 \cdot \left[ \begin{array}{c} 1 \\ -1 \\ 1 \end{array} \right][/mathjaxinline] <br/><br/></p>
+ [mathjaxinline]Ax = 1 \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + 2 \left[ \begin{array}{c} 1 \\ 3 \\ 0 \end{array} \right] + 3 \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] + 4 \left[ \begin{array}{c} 1 \\ -1 \\ 1 \end{array} \right][/mathjaxinline] <br/><br/></p>
                     <p>
 [mathjaxinline]= \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + \left[ \begin{array}{c} 2 \\ 6 \\ 0 \end{array} \right] + \left[ \begin{array}{c} 0 \\ -3 \\ 9 \end{array} \right] + \left[ \begin{array}{c} 4 \\ -4 \\ 4 \end{array} \right][/mathjaxinline] <br/><br/></p>
                     <p>
 [mathjaxinline]= \left[ \begin{array}{c} 8 \\ -1 \\ 18 \end{array} \right][/mathjaxinline] <br/><br/></p>
                     <p>
-[mathjaxinline]Ay = 0 \cdot \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + 0 \cdot \left[ \begin{array}{c} 1 \\ 3 \\ 0 \end{array} \right] + 1 \cdot \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] + 0 \cdot \left[ \begin{array}{c} 1 \\ -1 \\ 1 \end{array} \right][/mathjaxinline] <br/><br/></p>
+[mathjaxinline]Ay = 0 \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + 0 \left[ \begin{array}{c} 1 \\ 3 \\ 0 \end{array} \right] + 1 \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] + 0 \left[ \begin{array}{c} 1 \\ -1 \\ 1 \end{array} \right][/mathjaxinline] <br/><br/></p>
                     <p>
 [mathjaxinline]= \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] + \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] + \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] + \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] <br/><br/></p>
                     <p>
@@ -2433,7 +2361,7 @@ def MatrixGrader(expect, ans):
                   <font color="blue">Answer: </font>
                   <font color="blue">
                     <p>
- We need not perform any row reduction here. Our desired result [mathjaxinline]v_2[/mathjaxinline] can be written <br/><br/>[mathjaxinline]0\cdot v_1 + 1\cdot v_2 + 0\cdot v_3 + 0\cdot v_4[/mathjaxinline] , so <br/><br/>[mathjaxinline]x = \left[ \begin{array}{c} 0 \\ 1 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] is a solution to the equation. </p>
+ We need not perform any row reduction here. Our desired result [mathjaxinline]v_2[/mathjaxinline] can be written <br/><br/>[mathjaxinline]0v_1 + 1 v_2 + 0 v_3 + 0 v_4[/mathjaxinline] , so <br/><br/>[mathjaxinline]x = \left[ \begin{array}{c} 0 \\ 1 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] is a solution to the equation. </p>
                   </font>
                 </solution>
               </p>
@@ -2659,7 +2587,7 @@ def MatrixGrader(expect, ans):
                   <font color="blue">Answer: </font>
                   <font color="blue">
                     <p>
- We are given: <br/><br/>[mathjaxinline]A \cdot \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] = v[/mathjaxinline] <br/><br/>[mathjaxinline]A \cdot \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = w[/mathjaxinline] <br/><br/>Adding these equations, we get <br/><br/>[mathjaxinline]A \cdot \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + A \cdot \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \cdot \Bigg( \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] \Bigg) = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \cdot \left[\begin{array}{c} 3 \\ 1 \\ 7 \end{array} \right] = v + w[/mathjaxinline] <br/><br/></p>
+ We are given: <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] = v[/mathjaxinline] <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = w[/mathjaxinline] <br/><br/>Adding these equations, we get <br/><br/>[mathjaxinline]A t \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \Bigg( \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] \Bigg) = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 3 \\ 1 \\ 7 \end{array} \right] = v + w[/mathjaxinline] <br/><br/></p>
                   </font>
                 </solution>
               </p>
@@ -2689,7 +2617,7 @@ Intuitively, if we can produce [mathjaxinline]v[/mathjaxinline] by linear combin
           </problem>
         </vertical>
       </sequential>
-      <sequential display_name="Linear Independence" linenum="248" tex_filename="testcourse.tex" refnum="6" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">
+      <sequential display_name="Linear Independence" linenum="248" tex_filename="testcourse.tex" refnum="6" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">
         <vertical display_name="Wait for it" refnum="1" url_name="b1linind-vertical1">
           <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1linind-tab1-text1">
             <p>
@@ -2697,7 +2625,7 @@ Coming soon! </p>
           </html>
         </vertical>
       </sequential>
-      <sequential display_name="Linear Transformations" linenum="281" tex_filename="testcourse.tex" refnum="7" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1lintrans-sequential">
+      <sequential display_name="Linear Transformations" linenum="281" tex_filename="testcourse.tex" refnum="7" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1lintrans-sequential">
         <vertical display_name="Wait for it" refnum="1" url_name="b1lintrans-vertical1">
           <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1lintrans-tab1-text1">
             <p>
@@ -2705,7 +2633,7 @@ Coming soon! </p>
           </html>
         </vertical>
       </sequential>
-      <sequential display_name="Into and Onto" linenum="312" tex_filename="testcourse.tex" refnum="8" due="2016-04-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
+      <sequential display_name="Into and Onto" linenum="312" tex_filename="testcourse.tex" refnum="8" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
         <vertical display_name="Wait for it" refnum="1" url_name="b1intoonto-vertical1">
           <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1intoonto-tab1-text1">
             <p>
