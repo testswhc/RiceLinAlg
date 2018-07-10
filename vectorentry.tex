@@ -1,4 +1,4 @@
-To enter a vector such as $\left[\begin{array}{c} 1 \\ 2  \\ 3 \end{array} \right]$, you can either 
+To enter a vector such as $\left[\begin{array}{c} 1 \\ 2  \\ 3 \end{array} \right]$, you can either:
 \begin{itemize}
 \item
 enter it as 
@@ -10,7 +10,7 @@ or, you can enter it as <1,2,3>
 Use decimals only.  
 
 \begin{edXscript}
-def VectorGrader(expect, ans):
+def VectorEntry(expect, ans):
 	import ast
 	import numpy as np 
   	atol = 0.01
@@ -27,8 +27,7 @@ def VectorGrader(expect, ans):
   			ret['ok'] = True
   		else:
   		# More error message. Will improve this part
-  			ret['msg'] = 'something is wrong' 
-  			
+  			ret['msg'] = 'something is wrong'   			
 	#except SyntaxError:
 		#ret['msg'] = 'Wrong input format'
 	except SyntaxError:
@@ -45,7 +44,5 @@ def VectorGrader(expect, ans):
   			ret['msg'] = 'something is wrong' 
   	except:
   		ret['msg'] = 'Wrong input format'
-  	return ret
-	
-  
+  	return ret 
 \end{edXscript}

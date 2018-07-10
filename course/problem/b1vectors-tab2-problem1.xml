@@ -3,64 +3,74 @@
     <p>
 Let [mathjaxinline]v = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and let [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right].[/mathjaxinline] </p>
     <p>
-What is [mathjaxinline]v+w[/mathjaxinline]? </p>
+What is [mathjaxinline]v+w[/mathjaxinline]? To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either </p>
+    <ul class="itemize">
+      <li>
+        <p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
+      </li>
+      <li>
+        <p>
+or, you can enter it as &lt;1,2,3&gt; </p>
+      </li>
+    </ul>
     <p>
-To enter a vector, type... (instructions forthcoming) </p>
-    <script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
-def MatrixGrader(expect, ans):
-	tolerance = 0.01
-	ret={'ok':False}
-	ans.replace(' ','')
-	nums = ans.split(',')
-	expnums = expect.split(',')
-	if (expect == 'None') or (expect =='none'):
-		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
-	elif (nums[0] == "none") or (nums[0] == "None"):
-	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
-	else:
-		try:
-			expnum=[float(i) for i in expnums]
-			ansnum=[float(i) for i in nums]
-			explist = sorted(expnum, key=float)
-			anslist = sorted(ansnum, key=float) 
-			matching = True
-			if len(explist)!=len(anslist):
-			    if len(anslist)&lt;len(explist):
-			    	ret['msg']="You did not enter enough critical points."
-			    else:
-			    	ret['msg']="You entered too many critical points."
-		 	else:
-				for i in range(len(explist)):
-					errorcnt=0
-					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
-						matching = False
-						errorcnt+=1
-					if errorcnt != 0:
-						ret['msg']= "You have %d errors in your answer." % errorcnt
-				ret['ok']=matching
-		except:
-		    ret['msg']="Your answer should only involve decimal numbers."
-	return ret
-  
+Use decimals only. </p>
+    <script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
 </script>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <customresponse cfn="VectorEntry" expect="[[3],[2],[4]]">
+        <textline correct_answer="[[3],[2],[4]]"/>
+      </customresponse>
     </p>
     <p>
 What is [mathjaxinline]-3v[/mathjaxinline]? </p>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <customresponse cfn="VectorEntry" expect="[[-6],[-9],[-12]]">
+        <textline correct_answer="[[-6],[-9],[-12]]"/>
+      </customresponse>
     </p>
     <p>
 What is [mathjaxinline]2w-3v[/mathjaxinline]? </p>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <customresponse cfn="VectorEntry" expect="[[-4],[-11],[-12]]">
+        <textline correct_answer="[[-4],[-11],[-12]]"/>
+      </customresponse>
     </p>
     <p>
       <solution>
