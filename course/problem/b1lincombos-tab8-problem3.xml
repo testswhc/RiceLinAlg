@@ -1,0 +1,65 @@
+<problem display_name="Does the list span?" linenum="459" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>
+    <ul class="itemize">
+      <li>
+        <p>
+List A: [mathjaxinline]\left\{  \left[ \begin{array}{c} 1 \\ 7 \end{array} \right] ; \left[ \begin{array}{c} 2 \\ 14 \end{array} \right] ; \left[ \begin{array}{c} -3 \\ -21 \end{array} \right] \right\}[/mathjaxinline] </p>
+      </li>
+      <li>
+        <p>
+List B: [mathjaxinline]\left\{  \left[ \begin{array}{c} 1 \\ 1 \\ 1 \end{array} \right] ; \left[ \begin{array}{c} 1 \\ 1 \\ 0 \end{array} \right] ; \left[ \begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right] \right\}[/mathjaxinline] </p>
+      </li>
+      <li>
+        <p>
+List C: [mathjaxinline]\left\{  \left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] ; \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] ; \left[ \begin{array}{c} 2 \\ 5 \\ 7 \end{array} \right] ; \left[ \begin{array}{c} 2 \\ 1 \\ 0 \end{array} \right] \right\}[/mathjaxinline] </p>
+      </li>
+      <li>
+        <p>
+List D: [mathjaxinline]\left\{  \left[ \begin{array}{c} 1 \\ 2 \\ 3 \\ 4\end{array} \right] ; \left[ \begin{array}{c} 2 \\ 3 \\ 5 \\ 7\end{array} \right] ; \left[ \begin{array}{c} 12 \\ 23 \\ 35 \\ 58\end{array} \right] \right\}[/mathjaxinline] </p>
+      </li>
+      <li>
+        <p>
+List E: [mathjaxinline]\left\{  \left[ \begin{array}{c} 1 \\ 2 \\ 0 \\ 4\end{array} \right] ; \left[ \begin{array}{c} 2 \\ 13 \\ 0 \\ 7\end{array} \right] ; \left[ \begin{array}{c} 0 \\ 1 \\ 0 \\ -3\end{array} \right] ; \left[ \begin{array}{c} 15 \\ -2 \\ 0 \\ 2\end{array} \right] ; \left[ \begin{array}{c} 5 \\ 3 \\ 0 \\ 11\end{array} \right] \right\}[/mathjaxinline] </p>
+      </li>
+      <li>
+        <p>
+List F: [mathjaxinline]\left\{  \left[ \begin{array}{c} 1 \\ 3 \\ 8 \end{array} \right] ; \left[ \begin{array}{c} 2 \\ 6 \\ 16 \end{array} \right] ; \left[ \begin{array}{c} 1 \\ 2 \\ 8 \end{array} \right] ; \left[ \begin{array}{c} 0 \\ 1 \\ 8 \end{array} \right] \right\}[/mathjaxinline] </p>
+      </li>
+    </ul>
+    <p>
+Given above are six lists of vectors. <span style="color:#99182C"><b class="bf">Without doing any row reduction</b></span>, you should be able to pick out three lists that do not span their respective [mathjaxinline]\mathbb R^ m[/mathjaxinline] spaces. Which three? </p>
+    <p>
+      <choiceresponse>
+        <checkboxgroup>
+          <choice correct="true" name="1">
+            <text>A</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text>B</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text>C</text>
+          </choice>
+          <choice correct="true" name="4">
+            <text>D</text>
+          </choice>
+          <choice correct="true" name="5">
+            <text>E</text>
+          </choice>
+          <choice correct="false" name="6">
+            <text>F</text>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ List A has three vectors that are scalar multiples of each other; they all lie on the same line. Thus any linear combination of them also lies on the line, so they cannot span all of [mathjaxinline]\mathbb R^2[/mathjaxinline].<br/>List D contains three vectors. Since these vectors are in [mathjaxinline]\mathbb R^4[/mathjaxinline], there aren't enough of them to span the whole space.<br/>List E has five vectors in [mathjaxinline]\mathbb R^4[/mathjaxinline]. This may seem promising, but notice that all five of them have zero as the third entry. Any vector in [mathjaxinline]\mathbb R^4[/mathjaxinline] with a non-zero third entry cannot be expressed as a linear combination of these vectors, so they don't span all of [mathjaxinline]\mathbb R^4[/mathjaxinline]. </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>
