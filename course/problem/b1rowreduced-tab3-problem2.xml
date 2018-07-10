@@ -1,4 +1,4 @@
-<problem display_name="Make it RREF" linenum="72" tex_filename="./block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Make it RREF" linenum="73" tex_filename="./block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 The following matrix is not in RREF. </p>
@@ -32,9 +32,9 @@ def MatrixEntry(expect, ans):
   	return ret
 </script>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <customresponse cfn="MatrixEntry" expect="[[1,4,0,0,7],[0,0,1,0,5],[0,0,0,1,1]]">
+        <textline correct_answer="[[1,4,0,0,7],[0,0,1,0,5],[0,0,0,1,1]]"/>
+      </customresponse>
     </p>
     <p>
       <solution>

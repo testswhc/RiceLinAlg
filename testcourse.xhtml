@@ -473,7 +473,7 @@ Which of the following matrices are in RREF? Click all that apply. </p><p>
   </checkboxgroup>
 </choiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Make it RREF" attrib_string="url_name=&quot;b1rowreduced-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="72" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Make it RREF" attrib_string="url_name=&quot;b1rowreduced-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="73" tex_filename="./block1/rref.tex"><text><p>
 The following matrix is not in RREF. </p><p>
 [mathjaxinline]\left[ \begin{array}{ccccc} 1 &amp;  4 &amp;  0 &amp;  0 &amp;  7 \\ 0 &amp;  0 &amp;  1 &amp;  -2 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  1 \end{array} \right][/mathjaxinline] </p><p>
 However, you can apply a single row operation to put it into RREF. What matrix is the result? </p><p>
@@ -499,13 +499,13 @@ def MatrixEntry(expect, ans):
 		ret['msg'] = 'Wrong input format'
   	return ret
 </script><p>
-<optionresponse>
-  <optioninput options="('Placeholder')" correct="Placeholder"/>
-</optionresponse> </p><p>
+<customresponse cfn="MatrixEntry" expect="[[1,4,0,0,7],[0,0,1,0,5],[0,0,0,1,1]]">
+  <textline correct_answer="[[1,4,0,0,7],[0,0,1,0,5],[0,0,0,1,1]]"/>
+</customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 Note that the matrix currently satisfies all conditions except “Each pivot is the only non-zero entry in its column", for there is a [mathjaxinline]-2[/mathjaxinline] above the pivot in the third row. We can add two times row three to row two and replace row 2 with the result. Doing so, we obtain </p><p>
 [mathjaxinline]\left[ \begin{array}{ccccc} 1 &amp;  4 &amp;  0 &amp;  0 &amp;  7 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  5 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  1 \end{array} \right].[/mathjaxinline] </p></font></solution></p></text></problem></p><p>
-<problem display_name="Pivots vs. Rows" attrib_string="url_name=&quot;b1rowreduced-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="101" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Pivots vs. Rows" attrib_string="url_name=&quot;b1rowreduced-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="102" tex_filename="./block1/rref.tex"><text><p>
 True or False: If a matrix that is in RREF has 6 rows, then it must have 6 pivots. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="False"/>
@@ -513,7 +513,7 @@ True or False: If a matrix that is in RREF has 6 rows, then it must have 6 pivot
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 In fact, a matrix with [mathjaxinline]6[/mathjaxinline] rows may have any number of pivots between [mathjaxinline]0[/mathjaxinline] and [mathjaxinline]6[/mathjaxinline]. For example, the [mathjaxinline]6\times 6[/mathjaxinline] zero matrix has 6 rows, and zero pivots, while the [mathjaxinline]6\times 6[/mathjaxinline] matrix [mathjaxinline]\left[ \begin{array}{cccccc} 1 &amp;  0 &amp;  0 &amp;  0 &amp;  0&amp; 0 \\ 0 &amp;  1 &amp;  0 &amp;  0 &amp;  0&amp; 0 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  0&amp; 0 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0&amp; 0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1&amp; 0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0&amp; 0 \\ \end{array} \right][/mathjaxinline] has 6 rows and 5 pivots. </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Interpretations" attrib_string="url_name=&quot;b1rowreduced-vertical4&quot;" refnum="4"><p>
-<video display_name="The Row Reduction Algorithm" youtube_id_1_0="oXO9Iw9KyPo" attrib_string="url_name=&quot;b1rowreduced-tab4-video1&quot; "></video><html display_name="The Row-Reduction Algorithm" attrib_string="url_name=&quot;b1rowreduced-tab4-text1&quot;" linenum="128" tex_filename="./block1/rref.tex"><p>
+<video display_name="The Row Reduction Algorithm" youtube_id_1_0="oXO9Iw9KyPo" attrib_string="url_name=&quot;b1rowreduced-tab4-video1&quot; "></video><html display_name="The Row-Reduction Algorithm" attrib_string="url_name=&quot;b1rowreduced-tab4-text1&quot;" linenum="129" tex_filename="./block1/rref.tex"><p>
 The following algorithm will always work to reduce a matrix into Row-Reduced Echelon Form. </p><ul class="itemize">
 
 <li><p>
@@ -527,7 +527,7 @@ With that pivot now set, repeat the procedure with the remaining rows. </p></li>
 </ul><p>
 This is sometimes called <span style="color:#99182C"><b class="bf">Gaussian elimination</b></span>. </p></html></p></vertical>   </p><p>
 <vertical display_name="Row-Reducing Practice" attrib_string="url_name=&quot;b1rowreduced-vertical5&quot;" refnum="5"><p>
-<problem display_name="Row-reduction Practice" attrib_string="url_name=&quot;b1rowreduced-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="151" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Row-reduction Practice" attrib_string="url_name=&quot;b1rowreduced-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="152" tex_filename="./block1/rref.tex"><text><p>
 Let </p><table id="a0000000022" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 0 &amp;  1 &amp;  2 \\ 3 &amp;  0 &amp;  -3 \\ 2 &amp;  2 &amp;  5 \\ 0 &amp;  -2 &amp;  1\end{array} \right].[/mathjax]</td>
@@ -556,9 +556,9 @@ def MatrixEntry(expect, ans):
 		ret['msg'] = 'Wrong input format'
   	return ret
 </script><p>
-<optionresponse>
-  <optioninput options="('Placeholder')" correct="Placeholder"/>
-</optionresponse> </p><p>
+<customresponse cfn="MatrixEntry" expect="[[1,0,0],[0,1,0],[0,0,1],[0,0,0]]">
+  <textline correct_answer="[[1,0,0],[0,1,0],[0,0,1],[0,0,0]]"/>
+</customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><ul class="itemize">
 
 <li><p>
@@ -613,7 +613,7 @@ Finally, we clear the non-zero entries above and below that pivot by replacing R
 </table></li>
 </ul><p>
  We can then check that this final matrix satisfies the conditions of RREF. Applying the algorithm to this final matrix will not require any row operations.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Linear System 1" attrib_string="url_name=&quot;b1rowreduced-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="199" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Linear System 1" attrib_string="url_name=&quot;b1rowreduced-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="200" tex_filename="./block1/rref.tex"><text><p>
 Consider the augmented matrix </p><table id="a0000000030" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{ccc:c} 0 &amp;  1 &amp;  2 &amp;  -1 \\ 3 &amp;  0 &amp;  -3 &amp;  3 \\ 2 &amp;  2 &amp;  5 &amp;  3\\ 0 &amp;  -2 &amp;  1 &amp;  7\end{array} \right].[/mathjax]</td>
@@ -661,7 +661,7 @@ And, finally, repeating step 6, we obtain </p><table id="a0000000034" class="equ
 . </p><p>
 This represents the equations [mathjaxinline]x_1 = 2[/mathjaxinline], [mathjaxinline]x_2 = -3[/mathjaxinline], [mathjaxinline]x_3 = 1[/mathjaxinline], and [mathjaxinline]0=0[/mathjaxinline]. Thus there is a unique solution [mathjaxinline](x_1, x_2, x_3) = (2,-3,1)[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Interpretations" attrib_string="url_name=&quot;b1rowreduced-vertical6&quot;" refnum="6"><p>
-<video display_name="Interpreting a RREF matrix" youtube_id_1_0="cdAGco8RsOI" attrib_string="url_name=&quot;b1rowreduced-tab6-video1&quot; "></video><problem display_name="Matrix 1" attrib_string="url_name=&quot;b1rowreduced-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="258" tex_filename="./block1/rref.tex"><text><p>
+<video display_name="Interpreting a RREF matrix" youtube_id_1_0="cdAGco8RsOI" attrib_string="url_name=&quot;b1rowreduced-tab6-video1&quot; "></video><problem display_name="Matrix 1" attrib_string="url_name=&quot;b1rowreduced-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="259" tex_filename="./block1/rref.tex"><text><p>
 Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p><table id="a0000000035" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\left[ \begin{array}{cc:c} 1 &amp;  -3 &amp;  -2 \\ 0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
@@ -688,7 +688,7 @@ What can you conclude about the original system of equations? </p><p>
 </multiplechoiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The second row corresponds to an equation of the form [mathjaxinline]0x+0y=1[/mathjaxinline], which has no solutions. Thus, the original system will also have no solutions. This is true even though the second column has no pivot and is therefore a free variable.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Matrix 2" attrib_string="url_name=&quot;b1rowreduced-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="278" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Matrix 2" attrib_string="url_name=&quot;b1rowreduced-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="279" tex_filename="./block1/rref.tex"><text><p>
 Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p><table id="a0000000036" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\left[ \begin{array}{cc:c} 1 &amp;  0 &amp;  0 \\ 0 &amp;  1 &amp;  1 \\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
@@ -715,7 +715,7 @@ What can you conclude about the original system of equations? </p><p>
 </multiplechoiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The original system corresponds to 3 equations in 2 variables. Since there are two pivot positions in the RREF and 2 variables, we can conclude that there are [mathjaxinline]2-2=0[/mathjaxinline] free variables. Thus, the original system is consistent and has a unique solution.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Matrix 3" attrib_string="url_name=&quot;b1rowreduced-tab6-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="299" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Matrix 3" attrib_string="url_name=&quot;b1rowreduced-tab6-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="300" tex_filename="./block1/rref.tex"><text><p>
 Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p><table id="a0000000037" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\left[ \begin{array}{cccc:c} 1 &amp;  0 &amp;  0 &amp;  1 &amp;  -2 \\ 0 &amp;  0 &amp;  1 &amp;  3 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
@@ -742,7 +742,7 @@ What can you conclude about the original system of equations? </p><p>
 </multiplechoiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The original system corresponds to 3 equations in 4 variables. Since there are 2 pivot positions in the RREF, there are [mathjaxinline]4-2=2[/mathjaxinline] free variables. Since there is no row of zeros followed by a non-zero entry, the system is consistent, but the existence of free variables ensures that any solution to the system is not unique.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Free Variables" attrib_string="url_name=&quot;b1rowreduced-tab6-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="323" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Free Variables" attrib_string="url_name=&quot;b1rowreduced-tab6-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="324" tex_filename="./block1/rref.tex"><text><p>
 If a system of linear equations has free variables when row-reduced, is it possible for the system to be inconsistent? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="Yes"/>
@@ -755,7 +755,7 @@ We previously saw a system of 3 linear equations in 2 variables with the followi
 </table><p>
  There is no pivot in the column corresponding to [mathjaxinline]x_2[/mathjaxinline]. Thus, there is a free variable. However, the second row indicates that there are no solutions, and the system is inconsistent.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Finding Solutions" attrib_string="url_name=&quot;b1rowreduced-vertical7&quot;" refnum="7"><p>
-<problem display_name="Solutions to a System" attrib_string="url_name=&quot;b1rowreduced-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="343" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Solutions to a System" attrib_string="url_name=&quot;b1rowreduced-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="344" tex_filename="./block1/rref.tex"><text><p>
 Recall the augmented matrix from the last problem: </p><table id="a0000000039" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\left[ \begin{array}{cccc:c} 1 &amp;  0 &amp;  0 &amp;  1 &amp;  -2 \\ 0 &amp;  0 &amp;  1 &amp;  3 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
@@ -785,14 +785,14 @@ Working from right to left as in the last video, what are all possible solutions
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 Working from right to left, we first see that there is not a pivot in the column corresponding the [mathjaxinline]x_4[/mathjaxinline]. Thus, [mathjaxinline]x_4[/mathjaxinline] is free. We then see a pivot in the column corresponding to [mathjaxinline]x_3[/mathjaxinline], and corresponding equaion is [mathjaxinline]0x_1+0x_2+1x_3+3x_4=3[/mathjaxinline]. This gives [mathjaxinline]x_3=3-3x_4[/mathjaxinline]. Next, there is not a pivot in the column corresponding to [mathjaxinline]x_2[/mathjaxinline], and thus [mathjaxinline]x_2[/mathjaxinline] is free. Finally, there is a pivot in the column corrsponding to [mathjaxinline]x_1[/mathjaxinline] and the corresponding equation is [mathjaxinline]1x_1+0x_2+0x_3+1x_4=-2[/mathjaxinline]. This gives [mathjaxinline]x_1=-2-x_4[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Going Further" attrib_string="url_name=&quot;b1rowreduced-vertical8&quot;" refnum="8"><p>
-<html display_name="The Size of a Matrix" attrib_string="url_name=&quot;b1rowreduced-tab8-text1&quot;" linenum="378" tex_filename="./block1/rref.tex"><p>
+<html display_name="The Size of a Matrix" attrib_string="url_name=&quot;b1rowreduced-tab8-text1&quot;" linenum="379" tex_filename="./block1/rref.tex"><p>
 If a matrix [mathjaxinline]M[/mathjaxinline] has [mathjaxinline]m[/mathjaxinline] rows and [mathjaxinline]n[/mathjaxinline] columns, we say that [mathjaxinline]M[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix. For instance, </p><table id="a0000000040" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\left[ \begin{array}{cccc:c} 1 &amp;  0 &amp;  0 &amp;  1 &amp;  -2 \\ 0 &amp;  0 &amp;  1 &amp;  3 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
 </tr>
 </table><p>
 is a [mathjaxinline]3\times 5[/mathjaxinline] augmented matrix, since it has 3 rows and 5 columns. The coefficient matrix of the above system would be a [mathjaxinline]3\times 4[/mathjaxinline] matrix. </p></html></p><p>
-<problem display_name="Matrix Size" attrib_string="url_name=&quot;b1rowreduced-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="394" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Matrix Size" attrib_string="url_name=&quot;b1rowreduced-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="395" tex_filename="./block1/rref.tex"><text><p>
 Let </p><table id="a0000000041" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  -3 &amp;  -2 \\ 0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0\end{array} \right].[/mathjax]</td>
@@ -810,7 +810,7 @@ What is the size of [mathjaxinline]A[/mathjaxinline]? <multiplechoiceresponse>
 </multiplechoiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 We see that [mathjaxinline]A[/mathjaxinline] has 4 rows and 3 columns. The first entry of [mathjaxinline]m\times n[/mathjaxinline] corresponds to the number of rows, while the second corresponds to number of columns.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Maximum pivots" attrib_string="url_name=&quot;b1rowreduced-tab8-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="409" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Maximum pivots" attrib_string="url_name=&quot;b1rowreduced-tab8-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="410" tex_filename="./block1/rref.tex"><text><p>
 What is the maximum number of pivots in a [mathjaxinline]6\times 3[/mathjaxinline] coefficient matrix, when row-reduced? </p><p>
 <numericalresponse answer="3">
   <textline>
@@ -819,7 +819,7 @@ What is the maximum number of pivots in a [mathjaxinline]6\times 3[/mathjaxinlin
 </numericalresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 There aren't any non-zero entries above or below a pivot. Thus, there is at most one pivot in each column. Thus there can be no more than 3 pivots. There are enough rows that this is possible to attain.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Maximum pivots 2" attrib_string="url_name=&quot;b1rowreduced-tab8-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="421" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Maximum pivots 2" attrib_string="url_name=&quot;b1rowreduced-tab8-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="422" tex_filename="./block1/rref.tex"><text><p>
 What is the maximum number of pivots in a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix, when row-reduced? </p><p>
 <numericalresponse answer="4">
   <textline>
@@ -828,7 +828,7 @@ What is the maximum number of pivots in a [mathjaxinline]4\times 6[/mathjaxinlin
 </numericalresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 By definition, there is at most one pivot in each row. So there can be at most 4 pivots. There are enough columns that this is possible to attain.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Number of Free Variables" attrib_string="url_name=&quot;b1rowreduced-tab8-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="434" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Number of Free Variables" attrib_string="url_name=&quot;b1rowreduced-tab8-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="435" tex_filename="./block1/rref.tex"><text><p>
 What is the strongest statement you can make about the number of free variables in a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix, when row-reduced? </p><p>
 <p style="display:inline">The number of free variables must be </p><optionresponse inline="1">
   <optioninput options="('exactly','at least','at most')" correct="at least" inline="1"/>
@@ -839,7 +839,7 @@ What is the strongest statement you can make about the number of free variables 
 </numericalresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 We know that a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix corresponds to a system of equations with 6 variables. By the previous problem, we know that there are at most 4 pivots. Thus, there are at least [mathjaxinline]6-4=2[/mathjaxinline] free variables. Now, we can have as many as 6 free variables (consider the zero matrix as a coefficient matrix). You can come up with examples of matrices with any number between 0 and 4 pivots, and thus any number between 2 and 6 free variables.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="4 Equations, 6 Variables" attrib_string="url_name=&quot;b1rowreduced-tab8-problem5&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="445" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="4 Equations, 6 Variables" attrib_string="url_name=&quot;b1rowreduced-tab8-problem5&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="446" tex_filename="./block1/rref.tex"><text><p>
 Given the answer to the previous question, which of the following results are possible for a system of 4 linear equations in 6 variables? </p><p>
 <choiceresponse>
   <checkboxgroup>
@@ -857,21 +857,21 @@ Given the answer to the previous question, which of the following results are po
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The existence of free variables rules out the possibility for unique solutions. But, we know that a system with free variables may be consistent or inconsistent.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Fields" attrib_string="url_name=&quot;b1rowreduced-vertical9&quot;" refnum="9"><p>
-<problem display_name="Real Numbers" attrib_string="url_name=&quot;b1rowreduced-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="465" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Real Numbers" attrib_string="url_name=&quot;b1rowreduced-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="466" tex_filename="./block1/rref.tex"><text><p>
 If a matrix has real number entries, will the entries stay real numbers when you row-reduce it? </p><p>
 <optionresponse>
   <optioninput options="('Yes','Not necessarily')" correct="Yes"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 Yes. The only acceptable row operations are multiplication by a scalar, addition, and subraction. In the case of a matrix with real entries, row-reducing will not require a non-real scalar. The sum, product and difference of two real numbers is also rational. Thus, under each of these operations, the entries will remain real.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Rational Numbers" attrib_string="url_name=&quot;b1rowreduced-tab9-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="477" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Rational Numbers" attrib_string="url_name=&quot;b1rowreduced-tab9-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="478" tex_filename="./block1/rref.tex"><text><p>
 If a matrix has rational number entries, will the entries stay rational numbers when you row-reduce it? (Recall that rational numbers are those that can be written as fractions [mathjaxinline]\frac{p}{q}[/mathjaxinline], where [mathjaxinline]p,q[/mathjaxinline] are integers.) </p><p>
 <optionresponse>
   <optioninput options="('Yes','Not necessarily')" correct="Yes"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 Yes. The only acceptable row operations are multiplication by a scalar, addition, and subraction. In the case of a matrix with rational entries, row-reducing will not require a non-rational scalar. The sum, product and difference of two rational numbers is also rational. Thus, under each of these operations, the entries will remain rational.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Integers" attrib_string="url_name=&quot;b1rowreduced-tab9-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="491" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Integers" attrib_string="url_name=&quot;b1rowreduced-tab9-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="492" tex_filename="./block1/rref.tex"><text><p>
 If a matrix has integer entries, will the entries stay integers when you row-reduce it? </p><p>
 <optionresponse>
   <optioninput options="('Yes','Not necessarily')" correct="Not necessarily"/>
@@ -885,7 +885,7 @@ No. For example, to put </p><table id="a0000000042" class="equation" width="100%
  into RREF, we have to multiply Row 1 by [mathjaxinline]\frac{1}{2}[/mathjaxinline], which will create a non-integer entry.  </p></font></solution></p></text></problem></p><p>
 <video display_name="Fields" youtube_id_1_0="3e74wlqpAf4" attrib_string="url_name=&quot;b1rowreduced-tab9-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Fields Defined" attrib_string="url_name=&quot;b1rowreduced-vertical10&quot;" refnum="10"><p>
-<html display_name="Fields" attrib_string="url_name=&quot;b1rowreduced-tab10-text1&quot;" linenum="513" tex_filename="./block1/rref.tex"><p>
+<html display_name="Fields" attrib_string="url_name=&quot;b1rowreduced-tab10-text1&quot;" linenum="514" tex_filename="./block1/rref.tex"><p>
 A <span style="color:#99182C"><b class="bf">field</b></span> is, essentially, a set in which one can add, subtract, multiply, and divide any two elements (other than dividing by zero). The formal definition is below. </p><p>
 The field that we will most commonly use in this course is the set of real numbers [mathjaxinline]\mathbb R[/mathjaxinline]. Other fields include the set of complex numbers [mathjaxinline]\mathbb C[/mathjaxinline], the set of rational numbers [mathjaxinline]\mathbb Q[/mathjaxinline], and the integers modulo a prime [mathjaxinline]p[/mathjaxinline]. </p><p>
 <edxshowhide description="Formal Definition of a Field"><p>
@@ -920,7 +920,7 @@ For time budgeting purposes, this sequence has X videos totaling X minutes, plus
 <vertical display_name="The Template Vector Space" attrib_string="url_name=&quot;b1vectors-vertical2&quot;" refnum="2"><p>
 <video display_name="R^n" youtube_id_1_0="3QM3Lg15Hi8" attrib_string="url_name=&quot;b1vectors-tab2-video1&quot; "></video><problem display_name="Vector entry" attrib_string="url_name=&quot;b1vectors-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="37" tex_filename="./block1/vectors.tex"><text><p>
 Let [mathjaxinline]v = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and let [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right].[/mathjaxinline] </p><p>
-What is [mathjaxinline]v+w[/mathjaxinline]? To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either </p><ul class="itemize">
+What is [mathjaxinline]v+w[/mathjaxinline]? To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
 
 <li><p>
 enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
@@ -1275,7 +1275,7 @@ Let </p><table id="a0000000048" class="equation" width="100%" cellspacing="0" ce
 </tr>
 </table><p>
  and let [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ax[/mathjaxinline]? </p><p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either </p><ul class="itemize">
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
 
 <li><p>
 enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
@@ -1385,7 +1385,7 @@ Let </p><table id="a0000000050" class="equation" width="100%" cellspacing="0" ce
 </tr>
 </table><p>
  and let [mathjaxinline]v = \left[\begin{array}{c} 3 \\ 2 \\ 16 \end{array} \right].[/mathjaxinline] The equation [mathjaxinline]Ax = v[/mathjaxinline] has exactly one solution &#8211; what is it? </p><p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either </p><ul class="itemize">
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
 
 <li><p>
 enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
@@ -1445,7 +1445,7 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinlin
 </tr>
 </table><p>
  Find a solution to the equation [mathjaxinline]Ax = v_2[/mathjaxinline]. </p><p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either </p><ul class="itemize">
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
 
 <li><p>
 enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
@@ -1496,7 +1496,7 @@ def VectorEntry(expect, ans):
  We need not perform any row reduction here. Our desired result [mathjaxinline]v_2[/mathjaxinline] can be written <br /><br />[mathjaxinline]0v_1 + 1 v_2 + 0 v_3 + 0 v_4[/mathjaxinline] , so <br /><br />[mathjaxinline]x = \left[ \begin{array}{c} 0 \\ 1 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] is a solution to the equation. </p></font></solution></p></text></problem></p><p>
 <problem display_name="Always Consistent?" attrib_string="url_name=&quot;b1matrixvector-tab4-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="237" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. There is a specific vector [mathjaxinline]v[/mathjaxinline] for which you can conclude the equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution, even without knowing anything else about [mathjaxinline]A[/mathjaxinline]. What is this vector [mathjaxinline]v[/mathjaxinline]? </p><p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either </p><ul class="itemize">
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
 
 <li><p>
 enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
@@ -1598,7 +1598,7 @@ For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathja
 <problem display_name="Consistent Matrix-Vector Equations" attrib_string="url_name=&quot;b1matrixvector-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="388" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline], and suppose that [mathjaxinline]x = \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = w[/mathjaxinline]. </p><p>
 Find a solution to the equation [mathjaxinline]Ax = v+w[/mathjaxinline]. </p><p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either </p><ul class="itemize">
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
 
 <li><p>
 enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>

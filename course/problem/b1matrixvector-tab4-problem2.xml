@@ -11,7 +11,7 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinlin
     <p>
  Find a solution to the equation [mathjaxinline]Ax = v_2[/mathjaxinline]. </p>
     <p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either </p>
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
     <ul class="itemize">
       <li>
         <p>

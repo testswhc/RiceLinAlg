@@ -395,6 +395,67 @@ If $n<m$, then it is impossible for the list $\{v_1; v_2; \ldots v_n\}$ to span 
 \endedxtext
 
 
+\endedxvertical
+
+
+\beginedxvertical{Questions about spanning}
+
+
+
+\beginedxproblem{Spanning Question}{\dpa1}
+
+Consider the following vectors in $\R^2$.  
+
+\begin{center}
+\includesvg[300]{c1s4lincombo2}   
+\end{center}
+
+Is $u$ an element of $\mathrm{Span}\{v_1; v_2\}$?  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+
+Is $w$ an element of $\mathrm{Span}\{v_1; v_2\}$?  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+
+Is every vector in $\R^2$ an element of $\mathrm{Span}\{v_1; v_2\}$?  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+Does the list $\{v_1; v_2\}$ span $\R^2$?  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+\edXsolution{ 
+From the parallelogram grid, we can see that $u = -2v_1 - 2v_2$ and $w = 2v_1 + 4v_2$, so both are in the span of 
+$\{v_1;v_2\}$.  Indeed, every vector
+in $\R^2$ will be somewhere on this grid, and therefore will be in $\mathrm{Span}\{v_1;v_2\}$.  Therefore this list
+spans $\R^2$.  
+}
+
+
+\endedxproblem
+
+\beginedxproblem{Spanning Question 2}{\dpa1}
+
+
+Does every list of two non-zero vectors in $\R^2$ span $\R^2$?  
+
+\edXabox{expect="No" options="Yes","No"}
+
+\edXsolution{ 
+If the two vectors are scalar multiples of each other, then they lie along the same line, and their span cannot
+include anything off that line.  
+}
+
+
+\endedxproblem
+
+
+
+
 \beginedxproblem{Does the list span?}{\dpa3}
 
 

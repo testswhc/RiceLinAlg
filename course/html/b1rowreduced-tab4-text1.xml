@@ -1,4 +1,4 @@
-<html display_name="The Row-Reduction Algorithm" linenum="128" tex_filename="./block1/rref.tex">
+<html display_name="The Row-Reduction Algorithm" linenum="129" tex_filename="./block1/rref.tex">
   <p>
 The following algorithm will always work to reduce a matrix into Row-Reduced Echelon Form. </p>
   <ul class="itemize">

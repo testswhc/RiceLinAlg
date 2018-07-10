@@ -1,4 +1,4 @@
-<problem display_name="Row-reduction Practice" linenum="151" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Row-reduction Practice" linenum="152" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let </p>
@@ -36,9 +36,9 @@ def MatrixEntry(expect, ans):
   	return ret
 </script>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <customresponse cfn="MatrixEntry" expect="[[1,0,0],[0,1,0],[0,0,1],[0,0,0]]">
+        <textline correct_answer="[[1,0,0],[0,1,0],[0,0,1],[0,0,0]]"/>
+      </customresponse>
     </p>
     <p>
       <solution>

@@ -1,4 +1,4 @@
-<problem display_name="Matrix 2" linenum="278" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Matrix 2" linenum="279" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p>

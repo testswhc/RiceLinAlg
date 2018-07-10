@@ -11,7 +11,7 @@ Let </p>
     <p>
  and let [mathjaxinline]v = \left[\begin{array}{c} 3 \\ 2 \\ 16 \end{array} \right].[/mathjaxinline] The equation [mathjaxinline]Ax = v[/mathjaxinline] has exactly one solution &#x2013; what is it? </p>
     <p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either </p>
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
     <ul class="itemize">
       <li>
         <p>
