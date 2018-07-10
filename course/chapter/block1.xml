@@ -126,7 +126,11 @@
       <video url_name="b1lincombos-tab7-video1"/>
       <html url_name="b1lincombos-tab7-text1"/>
       <html url_name="b1lincombos-tab7-text2"/>
-      <problem url_name="b1lincombos-tab7-problem1"/>
+    </vertical>
+    <vertical display_name="Questions about spanning" refnum="8" url_name="b1lincombos-vertical8">
+      <problem url_name="b1lincombos-tab8-problem1"/>
+      <problem url_name="b1lincombos-tab8-problem2"/>
+      <problem url_name="b1lincombos-tab8-problem3"/>
     </vertical>
   </sequential>
   <sequential display_name="Matrix-Vector Multiplication" linenum="213" tex_filename="testcourse.tex" refnum="5" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1matrixvector-sequential">

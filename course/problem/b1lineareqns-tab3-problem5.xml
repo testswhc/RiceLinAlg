@@ -1,4 +1,4 @@
-<problem display_name="System Consistency?" linenum="211" tex_filename="./block1/linearequations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="System Consistency?" linenum="214" tex_filename="./block1/linearequations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Write down the equations corresponding to the last matrix. Is there a triple [mathjaxinline](x_1,x_2,x_3)[/mathjaxinline] that satisfies these equations (in other words, is the system consistent)? If so, is the solution unique? </p>

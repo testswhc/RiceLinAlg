@@ -1,4 +1,4 @@
-<problem display_name="Make it RREF" linenum="72" tex_filename="./block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Make it RREF" linenum="73" tex_filename="./block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 The following matrix is not in RREF. </p>
@@ -7,8 +7,10 @@ The following matrix is not in RREF. </p>
     <p>
 However, you can apply a single row operation to put it into RREF. What matrix is the result? </p>
     <p>
-Some instructions on matrix entry go here... </p>
-    <script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p>
+    <p>
+Use decimals only. </p>
+    <script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -30,9 +32,9 @@ def MatrixEntry(expect, ans):
   	return ret
 </script>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <customresponse cfn="MatrixEntry" expect="[[1,4,0,0,7],[0,0,1,0,5],[0,0,0,1,1]]">
+        <textline correct_answer="[[1,4,0,0,7],[0,0,1,0,5],[0,0,0,1,1]]"/>
+      </customresponse>
     </p>
     <p>
       <solution>

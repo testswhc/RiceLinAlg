@@ -1,4 +1,4 @@
-<problem display_name="Row-reduction Practice" linenum="151" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Row-reduction Practice" linenum="152" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let </p>
@@ -11,8 +11,10 @@ Let </p>
     <p>
 What matrix do you get if you row-reduce [mathjaxinline]A[/mathjaxinline]? </p>
     <p>
-Some instructions on matrix entry go here... </p>
-    <script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p>
+    <p>
+Use decimals only. </p>
+    <script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -34,9 +36,9 @@ def MatrixEntry(expect, ans):
   	return ret
 </script>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <customresponse cfn="MatrixEntry" expect="[[1,0,0],[0,1,0],[0,0,1],[0,0,0]]">
+        <textline correct_answer="[[1,0,0],[0,1,0],[0,0,1],[0,0,0]]"/>
+      </customresponse>
     </p>
     <p>
       <solution>

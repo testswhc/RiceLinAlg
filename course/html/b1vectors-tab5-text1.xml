@@ -1,4 +1,4 @@
-<html display_name="Vector Spaces" linenum="193" tex_filename="./block1/vectors.tex">
+<html display_name="Vector Spaces" linenum="191" tex_filename="./block1/vectors.tex">
   <p>
 A <span style="color:#99182C"><b class="bf">vector space</b></span> over a field [mathjaxinline]F[/mathjaxinline] is, essentially, a set [mathjaxinline]V[/mathjaxinline] in which one can do vector addition and scalar multiplication. For a more formal definition, see below. </p>
   <p>

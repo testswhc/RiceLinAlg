@@ -112,7 +112,8 @@ row minus twice the first row.  What matrix do you get as a result?
 
 \input{matrixentry.tex}
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[1,3,1],[0,0,1]]"}
+
 
 \edXsolution{The result is \[  \left[ \begin{array}{cc:c}
 1 & 3 & 1 \\
@@ -175,7 +176,9 @@ row minus twice the second row.  What matrix do you get as a result?
 
 \input{matrixentry.tex}
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[1,0,0,-1],[0,1,-1,1],[0,0,0,0]]"}
+
 
 \edXsolution{ We begin with \[ \left[ \begin{array}{ccc:c}
 0&1&-1&1 \\

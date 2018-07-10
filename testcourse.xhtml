@@ -21,7 +21,7 @@ Apply elementary <span style="color:#99182C"><b class="bf">row operations</b></s
 </ul><p>
 For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p></html></p></vertical>   </p><p>
 <vertical display_name="Introduction" attrib_string="url_name=&quot;b1lineareqns-vertical2&quot;" refnum="2"><p>
-<video display_name="Systems of Linear Equations" youtube_id_1_0="MNuDcFXUymE" attrib_string="url_name=&quot;b1lineareqns-tab2-video1&quot; "></video><problem display_name="Matrix entry" attrib_string="url_name=&quot;b1lineareqns-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="39" tex_filename="./block1/linearequations.tex"><text><p>
+<video display_name="Systems of Linear Equations" youtube_id_1_0="MNuDcFXUymE" attrib_string="url_name=&quot;b1lineareqns-tab2-video1&quot; "></video><problem display_name="Matrix entry" attrib_string="url_name=&quot;b1lineareqns-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="39" tex_filename="./block1/linearequations.tex"><text><p>
 Consider the following system of linear equations: </p><table id="a0000000002" cellpadding="7" width="100%" cellspacing="0" class="eqnarray">
 <tr id="a0000000003">
     
@@ -76,7 +76,8 @@ Consider the following system of linear equations: </p><table id="a0000000002" c
 </tr>
 </table><p>
 Enter the coefficient matrix for the above system. </p><p>
-Some instructions on matrix entry go here... </p><script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p><p>
+Use decimals only. </p><script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -171,7 +172,8 @@ Recall the system of equations from the previous question. </p><table id="a00000
 </tr>
 </table><p>
 Do the following row operations to the augmented matrix. First, multiply the first row by [mathjaxinline]\frac{1}{10}[/mathjaxinline]. Then, replace the second row with the second row minus twice the first row. What matrix do you get as a result? </p><p>
-Some instructions on matrix entry go here... </p><script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p><p>
+Use decimals only. </p><script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -192,16 +194,16 @@ def MatrixEntry(expect, ans):
 		ret['msg'] = 'Wrong input format'
   	return ret
 </script><p>
-<optionresponse>
-  <optioninput options="('Placeholder')" correct="Placeholder"/>
-</optionresponse> </p><p>
+<customresponse cfn="MatrixEntry" expect="[[1,3,1],[0,0,1]]">
+  <textline correct_answer="[[1,3,1],[0,0,1]]"/>
+</customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The result is </p><table id="a0000000010" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\left[ \begin{array}{cc:c} 1 &amp;  3 &amp;  1 \\ 0 &amp;  0 &amp;  1 \\ \end{array} \right].[/mathjax]</td>
 </tr>
 </table></font></solution></p></text></problem></p><p>
-<problem display_name="System Consistency?" attrib_string="url_name=&quot;b1lineareqns-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="128" tex_filename="./block1/linearequations.tex"><text><p>
+<problem display_name="System Consistency?" attrib_string="url_name=&quot;b1lineareqns-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="129" tex_filename="./block1/linearequations.tex"><text><p>
 Note the last row in your result, and think about what equation it represents. Is the system consistent? If so, does it have a unique solution? </p><p>
 <multiplechoiceresponse>
   <choicegroup direction="vertical">
@@ -218,14 +220,14 @@ Note the last row in your result, and think about what equation it represents. I
 </multiplechoiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The last row represents [mathjaxinline]0x_1+0x_2=1[/mathjaxinline]. There are no values of [mathjaxinline]x_1[/mathjaxinline] and [mathjaxinline]x_2[/mathjaxinline] that satisfy this equation.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Yes or No" attrib_string="url_name=&quot;b1lineareqns-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="140" tex_filename="./block1/linearequations.tex"><text><p>
+<problem display_name="Yes or No" attrib_string="url_name=&quot;b1lineareqns-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="141" tex_filename="./block1/linearequations.tex"><text><p>
 Does a linear system of two equations in two variables always have at least one solution? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="No"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The previous problem gives an example that has no solutions. </p></font></solution></p></text></problem></p><p>
-<problem display_name="More Row Operations" attrib_string="url_name=&quot;b1lineareqns-tab3-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="153" tex_filename="./block1/linearequations.tex"><text><p>
+<problem display_name="More Row Operations" attrib_string="url_name=&quot;b1lineareqns-tab3-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="154" tex_filename="./block1/linearequations.tex"><text><p>
 Consider this system of equations. </p><table id="a0000000011" cellpadding="7" width="100%" cellspacing="0" class="eqnarray">
 <tr id="a0000000012">
     
@@ -305,7 +307,8 @@ Consider this system of equations. </p><table id="a0000000011" cellpadding="7" w
 </tr>
 </table><p>
 Do the following row operations to the augmented matrix. First, switch the first two rows. Then replace the third row with the third row minus twice the first row. Next, replace the first row with the first row minus twice the second row. Finally, replace the third row with the third row minus twice the second row. What matrix do you get as a result? </p><p>
-Some instructions on matrix entry go here... </p><script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p><p>
+Use decimals only. </p><script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -326,9 +329,9 @@ def MatrixEntry(expect, ans):
 		ret['msg'] = 'Wrong input format'
   	return ret
 </script><p>
-<optionresponse>
-  <optioninput options="('Placeholder')" correct="Placeholder"/>
-</optionresponse> </p><p>
+<customresponse cfn="MatrixEntry" expect="[[1,0,0,-1],[0,1,-1,1],[0,0,0,0]]">
+  <textline correct_answer="[[1,0,0,-1],[0,1,-1,1],[0,0,0,0]]"/>
+</customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  We begin with </p><table id="a0000000015" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
@@ -352,7 +355,7 @@ Performing the given row operations in order, we obtain </p><table id="a00000000
     <td class="equation">[mathjax]\left[ \begin{array}{ccc:c} 1&amp; 0&amp; 0&amp; -1\\ 0&amp; 1&amp; -1&amp; 1 \\ 0&amp; 0&amp; 0&amp; 0\\ \end{array} \right].[/mathjax]</td>
 </tr>
 </table></font></solution></p></text></problem></p><p>
-<problem display_name="System Consistency?" attrib_string="url_name=&quot;b1lineareqns-tab3-problem5&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="211" tex_filename="./block1/linearequations.tex"><text><p>
+<problem display_name="System Consistency?" attrib_string="url_name=&quot;b1lineareqns-tab3-problem5&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="214" tex_filename="./block1/linearequations.tex"><text><p>
 Write down the equations corresponding to the last matrix. Is there a triple [mathjaxinline](x_1,x_2,x_3)[/mathjaxinline] that satisfies these equations (in other words, is the system consistent)? If so, is the solution unique? </p><p>
 <multiplechoiceresponse>
   <choicegroup direction="vertical">
@@ -370,7 +373,7 @@ Write down the equations corresponding to the last matrix. Is there a triple [ma
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The equations are [mathjaxinline]x_1 = -1[/mathjaxinline], [mathjaxinline]x_2 - x_3 = 1[/mathjaxinline], and [mathjaxinline]0 = 0[/mathjaxinline]. There are many triples [mathjaxinline](x_1, x_2, x_3)[/mathjaxinline] that satisfy these equations; for instance, [mathjaxinline](-1, 1, 0)[/mathjaxinline] and [mathjaxinline](-1, 2, 1)[/mathjaxinline] are two solutions.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="A Few Questions" attrib_string="url_name=&quot;b1lineareqns-vertical4&quot;" refnum="4"><p>
-<problem display_name="Row of All Zeros" attrib_string="url_name=&quot;b1lineareqns-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="229" tex_filename="./block1/linearequations.tex"><text><p>
+<problem display_name="Row of All Zeros" attrib_string="url_name=&quot;b1lineareqns-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="232" tex_filename="./block1/linearequations.tex"><text><p>
 Suppose you have an augmented matrix and, after a few elementary row operations, you see one row that looks like this: </p><p>
 [mathjaxinline]\left[ \begin{array}{cccc:c} 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjaxinline] </p><p>
 Just from the presence of that one row, what can you conclude about the overall system? </p><p>
@@ -402,7 +405,7 @@ We may also have an inconsistent system such as </p><table id="a0000000021" clas
     <td class="equation">[mathjax]\left[ \begin{array}{cc:c} 1&amp; 0&amp; 1 \\ 0&amp; 0&amp; 1\\ 0&amp; 0&amp; 0\\ \end{array} \right][/mathjax]</td>
 </tr>
 </table></font></solution></p></text></problem></p><p>
-<problem display_name="Types of Row Operations" attrib_string="url_name=&quot;b1lineareqns-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="258" tex_filename="./block1/linearequations.tex"><text><p>
+<problem display_name="Types of Row Operations" attrib_string="url_name=&quot;b1lineareqns-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="261" tex_filename="./block1/linearequations.tex"><text><p>
 How many types of elementary row operations are there? </p><p>
 <numericalresponse answer="3">
   <textline>
@@ -419,7 +422,7 @@ Multiply a row by a non-zero scalar. </p></li>
 Add a scalar multiple of one row to another row. (More precisely, replace one row with the sum of itself and a scalar multiple of a different row.) </p></li>
 </ul></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Elementary Row Operations" attrib_string="url_name=&quot;b1lineareqns-vertical5&quot;" refnum="5"><p>
-<html display_name="Elementary Row Operations" attrib_string="url_name=&quot;b1lineareqns-tab5-text1&quot;" linenum="280" tex_filename="./block1/linearequations.tex"><p>
+<html display_name="Elementary Row Operations" attrib_string="url_name=&quot;b1lineareqns-tab5-text1&quot;" linenum="283" tex_filename="./block1/linearequations.tex"><p>
 There are three types of elementary row operations that one can apply to a matrix. </p><ul class="itemize">
 
 <li><p>
@@ -470,11 +473,12 @@ Which of the following matrices are in RREF? Click all that apply. </p><p>
   </checkboxgroup>
 </choiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Make it RREF" attrib_string="url_name=&quot;b1rowreduced-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="72" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Make it RREF" attrib_string="url_name=&quot;b1rowreduced-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="73" tex_filename="./block1/rref.tex"><text><p>
 The following matrix is not in RREF. </p><p>
 [mathjaxinline]\left[ \begin{array}{ccccc} 1 &amp;  4 &amp;  0 &amp;  0 &amp;  7 \\ 0 &amp;  0 &amp;  1 &amp;  -2 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  1 \end{array} \right][/mathjaxinline] </p><p>
 However, you can apply a single row operation to put it into RREF. What matrix is the result? </p><p>
-Some instructions on matrix entry go here... </p><script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p><p>
+Use decimals only. </p><script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -495,13 +499,13 @@ def MatrixEntry(expect, ans):
 		ret['msg'] = 'Wrong input format'
   	return ret
 </script><p>
-<optionresponse>
-  <optioninput options="('Placeholder')" correct="Placeholder"/>
-</optionresponse> </p><p>
+<customresponse cfn="MatrixEntry" expect="[[1,4,0,0,7],[0,0,1,0,5],[0,0,0,1,1]]">
+  <textline correct_answer="[[1,4,0,0,7],[0,0,1,0,5],[0,0,0,1,1]]"/>
+</customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 Note that the matrix currently satisfies all conditions except “Each pivot is the only non-zero entry in its column", for there is a [mathjaxinline]-2[/mathjaxinline] above the pivot in the third row. We can add two times row three to row two and replace row 2 with the result. Doing so, we obtain </p><p>
 [mathjaxinline]\left[ \begin{array}{ccccc} 1 &amp;  4 &amp;  0 &amp;  0 &amp;  7 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  5 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  1 \end{array} \right].[/mathjaxinline] </p></font></solution></p></text></problem></p><p>
-<problem display_name="Pivots vs. Rows" attrib_string="url_name=&quot;b1rowreduced-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="101" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Pivots vs. Rows" attrib_string="url_name=&quot;b1rowreduced-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="102" tex_filename="./block1/rref.tex"><text><p>
 True or False: If a matrix that is in RREF has 6 rows, then it must have 6 pivots. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="False"/>
@@ -509,7 +513,7 @@ True or False: If a matrix that is in RREF has 6 rows, then it must have 6 pivot
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 In fact, a matrix with [mathjaxinline]6[/mathjaxinline] rows may have any number of pivots between [mathjaxinline]0[/mathjaxinline] and [mathjaxinline]6[/mathjaxinline]. For example, the [mathjaxinline]6\times 6[/mathjaxinline] zero matrix has 6 rows, and zero pivots, while the [mathjaxinline]6\times 6[/mathjaxinline] matrix [mathjaxinline]\left[ \begin{array}{cccccc} 1 &amp;  0 &amp;  0 &amp;  0 &amp;  0&amp; 0 \\ 0 &amp;  1 &amp;  0 &amp;  0 &amp;  0&amp; 0 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  0&amp; 0 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0&amp; 0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1&amp; 0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0&amp; 0 \\ \end{array} \right][/mathjaxinline] has 6 rows and 5 pivots. </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Interpretations" attrib_string="url_name=&quot;b1rowreduced-vertical4&quot;" refnum="4"><p>
-<video display_name="The Row Reduction Algorithm" youtube_id_1_0="oXO9Iw9KyPo" attrib_string="url_name=&quot;b1rowreduced-tab4-video1&quot; "></video><html display_name="The Row-Reduction Algorithm" attrib_string="url_name=&quot;b1rowreduced-tab4-text1&quot;" linenum="128" tex_filename="./block1/rref.tex"><p>
+<video display_name="The Row Reduction Algorithm" youtube_id_1_0="oXO9Iw9KyPo" attrib_string="url_name=&quot;b1rowreduced-tab4-video1&quot; "></video><html display_name="The Row-Reduction Algorithm" attrib_string="url_name=&quot;b1rowreduced-tab4-text1&quot;" linenum="129" tex_filename="./block1/rref.tex"><p>
 The following algorithm will always work to reduce a matrix into Row-Reduced Echelon Form. </p><ul class="itemize">
 
 <li><p>
@@ -523,14 +527,15 @@ With that pivot now set, repeat the procedure with the remaining rows. </p></li>
 </ul><p>
 This is sometimes called <span style="color:#99182C"><b class="bf">Gaussian elimination</b></span>. </p></html></p></vertical>   </p><p>
 <vertical display_name="Row-Reducing Practice" attrib_string="url_name=&quot;b1rowreduced-vertical5&quot;" refnum="5"><p>
-<problem display_name="Row-reduction Practice" attrib_string="url_name=&quot;b1rowreduced-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="151" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Row-reduction Practice" attrib_string="url_name=&quot;b1rowreduced-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="152" tex_filename="./block1/rref.tex"><text><p>
 Let </p><table id="a0000000022" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 0 &amp;  1 &amp;  2 \\ 3 &amp;  0 &amp;  -3 \\ 2 &amp;  2 &amp;  5 \\ 0 &amp;  -2 &amp;  1\end{array} \right].[/mathjax]</td>
 </tr>
 </table><p>
 What matrix do you get if you row-reduce [mathjaxinline]A[/mathjaxinline]? </p><p>
-Some instructions on matrix entry go here... </p><script linenum="3" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p><p>
+Use decimals only. </p><script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -551,9 +556,9 @@ def MatrixEntry(expect, ans):
 		ret['msg'] = 'Wrong input format'
   	return ret
 </script><p>
-<optionresponse>
-  <optioninput options="('Placeholder')" correct="Placeholder"/>
-</optionresponse> </p><p>
+<customresponse cfn="MatrixEntry" expect="[[1,0,0],[0,1,0],[0,0,1],[0,0,0]]">
+  <textline correct_answer="[[1,0,0],[0,1,0],[0,0,1],[0,0,0]]"/>
+</customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><ul class="itemize">
 
 <li><p>
@@ -608,7 +613,7 @@ Finally, we clear the non-zero entries above and below that pivot by replacing R
 </table></li>
 </ul><p>
  We can then check that this final matrix satisfies the conditions of RREF. Applying the algorithm to this final matrix will not require any row operations.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Linear System 1" attrib_string="url_name=&quot;b1rowreduced-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="199" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Linear System 1" attrib_string="url_name=&quot;b1rowreduced-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="200" tex_filename="./block1/rref.tex"><text><p>
 Consider the augmented matrix </p><table id="a0000000030" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{ccc:c} 0 &amp;  1 &amp;  2 &amp;  -1 \\ 3 &amp;  0 &amp;  -3 &amp;  3 \\ 2 &amp;  2 &amp;  5 &amp;  3\\ 0 &amp;  -2 &amp;  1 &amp;  7\end{array} \right].[/mathjax]</td>
@@ -656,7 +661,7 @@ And, finally, repeating step 6, we obtain </p><table id="a0000000034" class="equ
 . </p><p>
 This represents the equations [mathjaxinline]x_1 = 2[/mathjaxinline], [mathjaxinline]x_2 = -3[/mathjaxinline], [mathjaxinline]x_3 = 1[/mathjaxinline], and [mathjaxinline]0=0[/mathjaxinline]. Thus there is a unique solution [mathjaxinline](x_1, x_2, x_3) = (2,-3,1)[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Interpretations" attrib_string="url_name=&quot;b1rowreduced-vertical6&quot;" refnum="6"><p>
-<video display_name="Interpreting a RREF matrix" youtube_id_1_0="cdAGco8RsOI" attrib_string="url_name=&quot;b1rowreduced-tab6-video1&quot; "></video><problem display_name="Matrix 1" attrib_string="url_name=&quot;b1rowreduced-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="258" tex_filename="./block1/rref.tex"><text><p>
+<video display_name="Interpreting a RREF matrix" youtube_id_1_0="cdAGco8RsOI" attrib_string="url_name=&quot;b1rowreduced-tab6-video1&quot; "></video><problem display_name="Matrix 1" attrib_string="url_name=&quot;b1rowreduced-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="259" tex_filename="./block1/rref.tex"><text><p>
 Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p><table id="a0000000035" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\left[ \begin{array}{cc:c} 1 &amp;  -3 &amp;  -2 \\ 0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
@@ -683,7 +688,7 @@ What can you conclude about the original system of equations? </p><p>
 </multiplechoiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The second row corresponds to an equation of the form [mathjaxinline]0x+0y=1[/mathjaxinline], which has no solutions. Thus, the original system will also have no solutions. This is true even though the second column has no pivot and is therefore a free variable.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Matrix 2" attrib_string="url_name=&quot;b1rowreduced-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="278" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Matrix 2" attrib_string="url_name=&quot;b1rowreduced-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="279" tex_filename="./block1/rref.tex"><text><p>
 Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p><table id="a0000000036" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\left[ \begin{array}{cc:c} 1 &amp;  0 &amp;  0 \\ 0 &amp;  1 &amp;  1 \\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
@@ -710,7 +715,7 @@ What can you conclude about the original system of equations? </p><p>
 </multiplechoiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The original system corresponds to 3 equations in 2 variables. Since there are two pivot positions in the RREF and 2 variables, we can conclude that there are [mathjaxinline]2-2=0[/mathjaxinline] free variables. Thus, the original system is consistent and has a unique solution.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Matrix 3" attrib_string="url_name=&quot;b1rowreduced-tab6-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="299" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Matrix 3" attrib_string="url_name=&quot;b1rowreduced-tab6-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="300" tex_filename="./block1/rref.tex"><text><p>
 Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p><table id="a0000000037" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\left[ \begin{array}{cccc:c} 1 &amp;  0 &amp;  0 &amp;  1 &amp;  -2 \\ 0 &amp;  0 &amp;  1 &amp;  3 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
@@ -737,7 +742,7 @@ What can you conclude about the original system of equations? </p><p>
 </multiplechoiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The original system corresponds to 3 equations in 4 variables. Since there are 2 pivot positions in the RREF, there are [mathjaxinline]4-2=2[/mathjaxinline] free variables. Since there is no row of zeros followed by a non-zero entry, the system is consistent, but the existence of free variables ensures that any solution to the system is not unique.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Free Variables" attrib_string="url_name=&quot;b1rowreduced-tab6-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="323" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Free Variables" attrib_string="url_name=&quot;b1rowreduced-tab6-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="324" tex_filename="./block1/rref.tex"><text><p>
 If a system of linear equations has free variables when row-reduced, is it possible for the system to be inconsistent? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="Yes"/>
@@ -750,7 +755,7 @@ We previously saw a system of 3 linear equations in 2 variables with the followi
 </table><p>
  There is no pivot in the column corresponding to [mathjaxinline]x_2[/mathjaxinline]. Thus, there is a free variable. However, the second row indicates that there are no solutions, and the system is inconsistent.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Finding Solutions" attrib_string="url_name=&quot;b1rowreduced-vertical7&quot;" refnum="7"><p>
-<problem display_name="Solutions to a System" attrib_string="url_name=&quot;b1rowreduced-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="343" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Solutions to a System" attrib_string="url_name=&quot;b1rowreduced-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="344" tex_filename="./block1/rref.tex"><text><p>
 Recall the augmented matrix from the last problem: </p><table id="a0000000039" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\left[ \begin{array}{cccc:c} 1 &amp;  0 &amp;  0 &amp;  1 &amp;  -2 \\ 0 &amp;  0 &amp;  1 &amp;  3 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
@@ -780,14 +785,14 @@ Working from right to left as in the last video, what are all possible solutions
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 Working from right to left, we first see that there is not a pivot in the column corresponding the [mathjaxinline]x_4[/mathjaxinline]. Thus, [mathjaxinline]x_4[/mathjaxinline] is free. We then see a pivot in the column corresponding to [mathjaxinline]x_3[/mathjaxinline], and corresponding equaion is [mathjaxinline]0x_1+0x_2+1x_3+3x_4=3[/mathjaxinline]. This gives [mathjaxinline]x_3=3-3x_4[/mathjaxinline]. Next, there is not a pivot in the column corresponding to [mathjaxinline]x_2[/mathjaxinline], and thus [mathjaxinline]x_2[/mathjaxinline] is free. Finally, there is a pivot in the column corrsponding to [mathjaxinline]x_1[/mathjaxinline] and the corresponding equation is [mathjaxinline]1x_1+0x_2+0x_3+1x_4=-2[/mathjaxinline]. This gives [mathjaxinline]x_1=-2-x_4[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Going Further" attrib_string="url_name=&quot;b1rowreduced-vertical8&quot;" refnum="8"><p>
-<html display_name="The Size of a Matrix" attrib_string="url_name=&quot;b1rowreduced-tab8-text1&quot;" linenum="378" tex_filename="./block1/rref.tex"><p>
+<html display_name="The Size of a Matrix" attrib_string="url_name=&quot;b1rowreduced-tab8-text1&quot;" linenum="379" tex_filename="./block1/rref.tex"><p>
 If a matrix [mathjaxinline]M[/mathjaxinline] has [mathjaxinline]m[/mathjaxinline] rows and [mathjaxinline]n[/mathjaxinline] columns, we say that [mathjaxinline]M[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix. For instance, </p><table id="a0000000040" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\left[ \begin{array}{cccc:c} 1 &amp;  0 &amp;  0 &amp;  1 &amp;  -2 \\ 0 &amp;  0 &amp;  1 &amp;  3 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
 </tr>
 </table><p>
 is a [mathjaxinline]3\times 5[/mathjaxinline] augmented matrix, since it has 3 rows and 5 columns. The coefficient matrix of the above system would be a [mathjaxinline]3\times 4[/mathjaxinline] matrix. </p></html></p><p>
-<problem display_name="Matrix Size" attrib_string="url_name=&quot;b1rowreduced-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="394" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Matrix Size" attrib_string="url_name=&quot;b1rowreduced-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="395" tex_filename="./block1/rref.tex"><text><p>
 Let </p><table id="a0000000041" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  -3 &amp;  -2 \\ 0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0\end{array} \right].[/mathjax]</td>
@@ -805,7 +810,7 @@ What is the size of [mathjaxinline]A[/mathjaxinline]? <multiplechoiceresponse>
 </multiplechoiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 We see that [mathjaxinline]A[/mathjaxinline] has 4 rows and 3 columns. The first entry of [mathjaxinline]m\times n[/mathjaxinline] corresponds to the number of rows, while the second corresponds to number of columns.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Maximum pivots" attrib_string="url_name=&quot;b1rowreduced-tab8-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="409" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Maximum pivots" attrib_string="url_name=&quot;b1rowreduced-tab8-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="410" tex_filename="./block1/rref.tex"><text><p>
 What is the maximum number of pivots in a [mathjaxinline]6\times 3[/mathjaxinline] coefficient matrix, when row-reduced? </p><p>
 <numericalresponse answer="3">
   <textline>
@@ -814,7 +819,7 @@ What is the maximum number of pivots in a [mathjaxinline]6\times 3[/mathjaxinlin
 </numericalresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 There aren't any non-zero entries above or below a pivot. Thus, there is at most one pivot in each column. Thus there can be no more than 3 pivots. There are enough rows that this is possible to attain.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Maximum pivots 2" attrib_string="url_name=&quot;b1rowreduced-tab8-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="421" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Maximum pivots 2" attrib_string="url_name=&quot;b1rowreduced-tab8-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="422" tex_filename="./block1/rref.tex"><text><p>
 What is the maximum number of pivots in a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix, when row-reduced? </p><p>
 <numericalresponse answer="4">
   <textline>
@@ -823,7 +828,7 @@ What is the maximum number of pivots in a [mathjaxinline]4\times 6[/mathjaxinlin
 </numericalresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 By definition, there is at most one pivot in each row. So there can be at most 4 pivots. There are enough columns that this is possible to attain.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Number of Free Variables" attrib_string="url_name=&quot;b1rowreduced-tab8-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="434" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Number of Free Variables" attrib_string="url_name=&quot;b1rowreduced-tab8-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="435" tex_filename="./block1/rref.tex"><text><p>
 What is the strongest statement you can make about the number of free variables in a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix, when row-reduced? </p><p>
 <p style="display:inline">The number of free variables must be </p><optionresponse inline="1">
   <optioninput options="('exactly','at least','at most')" correct="at least" inline="1"/>
@@ -834,7 +839,7 @@ What is the strongest statement you can make about the number of free variables 
 </numericalresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 We know that a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix corresponds to a system of equations with 6 variables. By the previous problem, we know that there are at most 4 pivots. Thus, there are at least [mathjaxinline]6-4=2[/mathjaxinline] free variables. Now, we can have as many as 6 free variables (consider the zero matrix as a coefficient matrix). You can come up with examples of matrices with any number between 0 and 4 pivots, and thus any number between 2 and 6 free variables.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="4 Equations, 6 Variables" attrib_string="url_name=&quot;b1rowreduced-tab8-problem5&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="445" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="4 Equations, 6 Variables" attrib_string="url_name=&quot;b1rowreduced-tab8-problem5&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="446" tex_filename="./block1/rref.tex"><text><p>
 Given the answer to the previous question, which of the following results are possible for a system of 4 linear equations in 6 variables? </p><p>
 <choiceresponse>
   <checkboxgroup>
@@ -852,21 +857,21 @@ Given the answer to the previous question, which of the following results are po
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The existence of free variables rules out the possibility for unique solutions. But, we know that a system with free variables may be consistent or inconsistent.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Fields" attrib_string="url_name=&quot;b1rowreduced-vertical9&quot;" refnum="9"><p>
-<problem display_name="Real Numbers" attrib_string="url_name=&quot;b1rowreduced-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="465" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Real Numbers" attrib_string="url_name=&quot;b1rowreduced-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="466" tex_filename="./block1/rref.tex"><text><p>
 If a matrix has real number entries, will the entries stay real numbers when you row-reduce it? </p><p>
 <optionresponse>
   <optioninput options="('Yes','Not necessarily')" correct="Yes"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 Yes. The only acceptable row operations are multiplication by a scalar, addition, and subraction. In the case of a matrix with real entries, row-reducing will not require a non-real scalar. The sum, product and difference of two real numbers is also rational. Thus, under each of these operations, the entries will remain real.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Rational Numbers" attrib_string="url_name=&quot;b1rowreduced-tab9-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="477" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Rational Numbers" attrib_string="url_name=&quot;b1rowreduced-tab9-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="478" tex_filename="./block1/rref.tex"><text><p>
 If a matrix has rational number entries, will the entries stay rational numbers when you row-reduce it? (Recall that rational numbers are those that can be written as fractions [mathjaxinline]\frac{p}{q}[/mathjaxinline], where [mathjaxinline]p,q[/mathjaxinline] are integers.) </p><p>
 <optionresponse>
   <optioninput options="('Yes','Not necessarily')" correct="Yes"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 Yes. The only acceptable row operations are multiplication by a scalar, addition, and subraction. In the case of a matrix with rational entries, row-reducing will not require a non-rational scalar. The sum, product and difference of two rational numbers is also rational. Thus, under each of these operations, the entries will remain rational.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Integers" attrib_string="url_name=&quot;b1rowreduced-tab9-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="491" tex_filename="./block1/rref.tex"><text><p>
+<problem display_name="Integers" attrib_string="url_name=&quot;b1rowreduced-tab9-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="492" tex_filename="./block1/rref.tex"><text><p>
 If a matrix has integer entries, will the entries stay integers when you row-reduce it? </p><p>
 <optionresponse>
   <optioninput options="('Yes','Not necessarily')" correct="Not necessarily"/>
@@ -880,7 +885,7 @@ No. For example, to put </p><table id="a0000000042" class="equation" width="100%
  into RREF, we have to multiply Row 1 by [mathjaxinline]\frac{1}{2}[/mathjaxinline], which will create a non-integer entry.  </p></font></solution></p></text></problem></p><p>
 <video display_name="Fields" youtube_id_1_0="3e74wlqpAf4" attrib_string="url_name=&quot;b1rowreduced-tab9-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Fields Defined" attrib_string="url_name=&quot;b1rowreduced-vertical10&quot;" refnum="10"><p>
-<html display_name="Fields" attrib_string="url_name=&quot;b1rowreduced-tab10-text1&quot;" linenum="513" tex_filename="./block1/rref.tex"><p>
+<html display_name="Fields" attrib_string="url_name=&quot;b1rowreduced-tab10-text1&quot;" linenum="514" tex_filename="./block1/rref.tex"><p>
 A <span style="color:#99182C"><b class="bf">field</b></span> is, essentially, a set in which one can add, subtract, multiply, and divide any two elements (other than dividing by zero). The formal definition is below. </p><p>
 The field that we will most commonly use in this course is the set of real numbers [mathjaxinline]\mathbb R[/mathjaxinline]. Other fields include the set of complex numbers [mathjaxinline]\mathbb C[/mathjaxinline], the set of rational numbers [mathjaxinline]\mathbb Q[/mathjaxinline], and the integers modulo a prime [mathjaxinline]p[/mathjaxinline]. </p><p>
 <edxshowhide description="Formal Definition of a Field"><p>
@@ -915,60 +920,66 @@ For time budgeting purposes, this sequence has X videos totaling X minutes, plus
 <vertical display_name="The Template Vector Space" attrib_string="url_name=&quot;b1vectors-vertical2&quot;" refnum="2"><p>
 <video display_name="R^n" youtube_id_1_0="3QM3Lg15Hi8" attrib_string="url_name=&quot;b1vectors-tab2-video1&quot; "></video><problem display_name="Vector entry" attrib_string="url_name=&quot;b1vectors-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="37" tex_filename="./block1/vectors.tex"><text><p>
 Let [mathjaxinline]v = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and let [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right].[/mathjaxinline] </p><p>
-What is [mathjaxinline]v+w[/mathjaxinline]? </p><p>
-To enter a vector, type... (instructions forthcoming) </p><script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
-def MatrixGrader(expect, ans):
-	tolerance = 0.01
-	ret={'ok':False}
-	ans.replace(' ','')
-	nums = ans.split(',')
-	expnums = expect.split(',')
-	if (expect == 'None') or (expect =='none'):
-		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
-	elif (nums[0] == "none") or (nums[0] == "None"):
-	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
-	else:
-		try:
-			expnum=[float(i) for i in expnums]
-			ansnum=[float(i) for i in nums]
-			explist = sorted(expnum, key=float)
-			anslist = sorted(ansnum, key=float) 
-			matching = True
-			if len(explist)!=len(anslist):
-			    if len(anslist)&lt;len(explist):
-			    	ret['msg']="You did not enter enough critical points."
-			    else:
-			    	ret['msg']="You entered too many critical points."
-		 	else:
-				for i in range(len(explist)):
-					errorcnt=0
-					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
-						matching = False
-						errorcnt+=1
-					if errorcnt != 0:
-						ret['msg']= "You have %d errors in your answer." % errorcnt
-				ret['ok']=matching
-		except:
-		    ret['msg']="Your answer should only involve decimal numbers."
-	return ret
-  
+What is [mathjaxinline]v+w[/mathjaxinline]? To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
+
+<li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
+<li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li>
+</ul><p>
+Use decimals only. </p><script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
 </script><p>
-<optionresponse>
-  <optioninput options="('Placeholder')" correct="Placeholder"/>
-</optionresponse> </p><p>
+<customresponse cfn="VectorEntry" expect="[[3],[2],[4]]">
+  <textline correct_answer="[[3],[2],[4]]"/>
+</customresponse> </p><p>
 What is [mathjaxinline]-3v[/mathjaxinline]? </p><p>
-<optionresponse>
-  <optioninput options="('Placeholder')" correct="Placeholder"/>
-</optionresponse> </p><p>
+<customresponse cfn="VectorEntry" expect="[[-6],[-9],[-12]]">
+  <textline correct_answer="[[-6],[-9],[-12]]"/>
+</customresponse> </p><p>
 What is [mathjaxinline]2w-3v[/mathjaxinline]? </p><p>
-<optionresponse>
-  <optioninput options="('Placeholder')" correct="Placeholder"/>
-</optionresponse> </p><p>
+<customresponse cfn="VectorEntry" expect="[[-4],[-11],[-12]]">
+  <textline correct_answer="[[-4],[-11],[-12]]"/>
+</customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 [mathjaxinline]v+w = \left[\begin{array}{c} 2+1 \\ 3+(-1) \\ 4+0 \end{array} \right]=\left[\begin{array}{c} 3 \\ 2 \\ 4 \end{array} \right][/mathjaxinline] </p><p>
 [mathjaxinline]-3v = \left[\begin{array}{c} (-3)2 \\ (-3)3 \\ (-3)4 \end{array} \right]=\left[\begin{array}{c} -6 \\ -9 \\ -12 \end{array} \right][/mathjaxinline] </p><p>
 [mathjaxinline]2w-3v=\left[\begin{array}{c} 2\cdot 1 \\ 2\cdot (-1) \\ 2\cdot 0 \end{array} \right]+\left[\begin{array}{c} (-3)2 \\ (-3)3 \\ (-3)4 \end{array} \right]=\left[\begin{array}{c} 2 \\ -2 \\ 0 \end{array} \right]+ \left[\begin{array}{c} -6 \\ -9 \\ -12 \end{array} \right]=\left[\begin{array}{c} -4 \\ -11 \\ -12 \end{array} \right][/mathjaxinline] </p></font></solution></p></text></problem></p><p>
-<problem display_name="Where does it live?" attrib_string="url_name=&quot;b1vectors-tab2-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="84" tex_filename="./block1/vectors.tex"><text><p>
+<problem display_name="Where does it live?" attrib_string="url_name=&quot;b1vectors-tab2-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="82" tex_filename="./block1/vectors.tex"><text><p>
 The vector [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] is an element of which of the following vector spaces? Click all that apply. </p><p>
 <choiceresponse>
   <checkboxgroup>
@@ -990,18 +1001,18 @@ The vector [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{arra
 The vector [mathjaxinline]w[/mathjaxinline] has 4 real entries. Thus, it is an element of [mathjaxinline]\mathbb R^4[/mathjaxinline]. </p><p>
 It is not an element of (for instance) [mathjaxinline]\mathbb R^2[/mathjaxinline]. The vector [mathjaxinline]\left[\begin{array}{c} 1 \\ -1 \end{array} \right][/mathjaxinline] is an element of [mathjaxinline]\mathbb R^2[/mathjaxinline], but this is not the same as [mathjaxinline]w[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Points and Arrows" attrib_string="url_name=&quot;b1vectors-vertical3&quot;" refnum="3"><p>
-<html display_name="R^n" attrib_string="url_name=&quot;b1vectors-tab3-text1&quot;" linenum="109" tex_filename="./block1/vectors.tex"><p>
+<html display_name="R^n" attrib_string="url_name=&quot;b1vectors-tab3-text1&quot;" linenum="107" tex_filename="./block1/vectors.tex"><p>
 For a non-negative integer [mathjaxinline]n[/mathjaxinline], [mathjaxinline]\mathbb R^ n[/mathjaxinline] is defined to be the set </p><table id="a0000000043" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\left\{ \left[\begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right] \  : \  a_1, a_2, \ldots a_ n \in \mathbb R\right\} .[/mathjax]</td>
 </tr>
 </table><p>
  With addition and scalar multiplication as defined previously, [mathjaxinline]\mathbb R^ n[/mathjaxinline] is an example of a vector space over the field [mathjaxinline]\mathbb R[/mathjaxinline]. </p></html></p><p>
-<html display_name="Notes on Notation" attrib_string="url_name=&quot;b1vectors-tab3-text2&quot;" linenum="125" tex_filename="./block1/vectors.tex"><p>
+<html display_name="Notes on Notation" attrib_string="url_name=&quot;b1vectors-tab3-text2&quot;" linenum="123" tex_filename="./block1/vectors.tex"><p>
 The vector [mathjaxinline]\left[\begin{array}{c} 0 \\ 0 \\ \vdots \\ 0 \end{array} \right] \in \mathbb R^ n[/mathjaxinline] is called the <span style="color:#99182C"><b class="bf">zero vector</b></span>. (In fact, every vector space, not just [mathjaxinline]\mathbb R^ n[/mathjaxinline], has a zero vector.) </p><p>
 To distinguish it from the scalar 0, in print we will denote the zero vector by [mathjaxinline]\mathbf{0}[/mathjaxinline]. When handwritten, we will usually write the zero vector as a zero with an arrow over it, like [mathjaxinline]\vec{0}[/mathjaxinline]. Other letters that represent vectors will not have the arrow notation, however; we will typically use letters like [mathjaxinline]u,v,w,x[/mathjaxinline] for vectors, while letters like [mathjaxinline]a,b,c[/mathjaxinline] will represent scalars. </p><p>
 Be careful! The zero vector in the space [mathjaxinline]\mathbb R^3[/mathjaxinline] is [mathjaxinline]\mathbf{0}= \left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right],[/mathjaxinline] whereas the zero vector in the space [mathjaxinline]\mathbb R^4[/mathjaxinline] is [mathjaxinline]\mathbf{0}= \left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array} \right].[/mathjaxinline] Even though we use the same symbol, these are different objects! One has to judge from context which space any given [mathjaxinline]\mathbf{0}[/mathjaxinline] lies in. </p></html></p><p>
-<video display_name="Geometry of R^n" youtube_id_1_0="4P4qoU2s1Rs" attrib_string="url_name=&quot;b1vectors-tab3-video1&quot; "></video><problem display_name="Picture Problem" attrib_string="url_name=&quot;b1vectors-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="153" tex_filename="./block1/vectors.tex"><text><p>
+<video display_name="Geometry of R^n" youtube_id_1_0="4P4qoU2s1Rs" attrib_string="url_name=&quot;b1vectors-tab3-video1&quot; "></video><problem display_name="Picture Problem" attrib_string="url_name=&quot;b1vectors-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="151" tex_filename="./block1/vectors.tex"><text><p>
 Vectors [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] are given. </p><center> <edxxml><img src="/static/images/c1s3vectoraddsubtract.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
 Which vector is equal to [mathjaxinline]v+w[/mathjaxinline]? </p><p>
 <optionresponse>
@@ -1023,7 +1034,7 @@ If we align the tip of [mathjaxinline]w[/mathjaxinline] and the tail of [mathjax
 <vertical display_name="Beyond R^n" attrib_string="url_name=&quot;b1vectors-vertical4&quot;" refnum="4"><p>
 <video display_name="Other Vector Spaces" youtube_id_1_0="P0vitfigkm4" attrib_string="url_name=&quot;b1vectors-tab4-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Vector Spaces" attrib_string="url_name=&quot;b1vectors-vertical5&quot;" refnum="5"><p>
-<html display_name="Vector Spaces" attrib_string="url_name=&quot;b1vectors-tab5-text1&quot;" linenum="193" tex_filename="./block1/vectors.tex"><p>
+<html display_name="Vector Spaces" attrib_string="url_name=&quot;b1vectors-tab5-text1&quot;" linenum="191" tex_filename="./block1/vectors.tex"><p>
 A <span style="color:#99182C"><b class="bf">vector space</b></span> over a field [mathjaxinline]F[/mathjaxinline] is, essentially, a set [mathjaxinline]V[/mathjaxinline] in which one can do vector addition and scalar multiplication. For a more formal definition, see below. </p><p>
 A vector space [mathjaxinline]V[/mathjaxinline] over a field [mathjaxinline]F[/mathjaxinline] is a set, together with an addition operation on [mathjaxinline]V[/mathjaxinline] and a scalar multiplication of elements of [mathjaxinline]F[/mathjaxinline] on elements of [mathjaxinline]V[/mathjaxinline], that satisfies the following conditions: </p><ul class="itemize">
 
@@ -1042,7 +1053,7 @@ Scalar addition distributes as well; that is, for all [mathjaxinline]a,b \in F[/
 <li><p>
 For all [mathjaxinline]a,b \in F[/mathjaxinline], and [mathjaxinline]v\in V[/mathjaxinline], we have [mathjaxinline]a(bv) = (ab)v[/mathjaxinline]. </p></li>
 </ul></html></p><p>
-<problem display_name="Vector Spaces" attrib_string="url_name=&quot;b1vectors-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="224" tex_filename="./block1/vectors.tex"><text><p>
+<problem display_name="Vector Spaces" attrib_string="url_name=&quot;b1vectors-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="222" tex_filename="./block1/vectors.tex"><text><p>
 True or False: The only vector spaces over the scalar field [mathjaxinline]\mathbb R[/mathjaxinline] are the spaces [mathjaxinline]\mathbb R^ n[/mathjaxinline] for [mathjaxinline]n&gt; 0[/mathjaxinline]. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="False"/>
@@ -1190,8 +1201,36 @@ If [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is a list of vector
 </tr>
 </table><p>
  row reduces to have a pivot in every row. </p><p>
-If [mathjaxinline]n&lt;m[/mathjaxinline], then it is impossible for the list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] to span [mathjaxinline]\mathbb R^ m[/mathjaxinline]. </p></html></p><p>
-<problem display_name="Does the list span?" attrib_string="url_name=&quot;b1lincombos-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="398" tex_filename="./block1/lincombos.tex"><text><ul class="itemize">
+If [mathjaxinline]n&lt;m[/mathjaxinline], then it is impossible for the list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] to span [mathjaxinline]\mathbb R^ m[/mathjaxinline]. </p></html></p></vertical>   </p><p>
+<vertical display_name="Questions about spanning" attrib_string="url_name=&quot;b1lincombos-vertical8&quot;" refnum="8"><p>
+<problem display_name="Spanning Question" attrib_string="url_name=&quot;b1lincombos-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="405" tex_filename="./block1/lincombos.tex"><text><p>
+Consider the following vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline]. </p><center> <edxxml><img src="/static/images/c1s4lincombo2.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
+Is [mathjaxinline]u[/mathjaxinline] an element of [mathjaxinline]\mathrm{Span}\{ v_1; v_2\}[/mathjaxinline]? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+Is [mathjaxinline]w[/mathjaxinline] an element of [mathjaxinline]\mathrm{Span}\{ v_1; v_2\}[/mathjaxinline]? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+Is every vector in [mathjaxinline]\mathbb R^2[/mathjaxinline] an element of [mathjaxinline]\mathrm{Span}\{ v_1; v_2\}[/mathjaxinline]? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+Does the list [mathjaxinline]\{ v_1; v_2\}[/mathjaxinline] span [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ From the parallelogram grid, we can see that [mathjaxinline]u = -2v_1 - 2v_2[/mathjaxinline] and [mathjaxinline]w = 2v_1 + 4v_2[/mathjaxinline], so both are in the span of [mathjaxinline]\{ v_1;v_2\}[/mathjaxinline]. Indeed, every vector in [mathjaxinline]\mathbb R^2[/mathjaxinline] will be somewhere on this grid, and therefore will be in [mathjaxinline]\mathrm{Span}\{ v_1;v_2\}[/mathjaxinline]. Therefore this list spans [mathjaxinline]\mathbb R^2[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Spanning Question 2" attrib_string="url_name=&quot;b1lincombos-tab8-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="441" tex_filename="./block1/lincombos.tex"><text><p>
+Does every list of two non-zero vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] span [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="No"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ If the two vectors are scalar multiples of each other, then they lie along the same line, and their span cannot include anything off that line.  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Does the list span?" attrib_string="url_name=&quot;b1lincombos-tab8-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="459" tex_filename="./block1/lincombos.tex"><text><ul class="itemize">
 
 <li><p>
 List A: [mathjaxinline]\left\{  \left[ \begin{array}{c} 1 \\ 7 \end{array} \right] ; \left[ \begin{array}{c} 2 \\ 14 \end{array} \right] ; \left[ \begin{array}{c} -3 \\ -21 \end{array} \right] \right\}[/mathjaxinline] </p></li>
@@ -1263,42 +1302,50 @@ Let </p><table id="a0000000048" class="equation" width="100%" cellspacing="0" ce
     <td class="equation">[mathjax]A = \left[ \begin{array}{cccc} 2 &amp;  1 &amp;  0 &amp;  1\\ 0 &amp;  3 &amp;  -1 &amp;  -1 \\ 5 &amp;  0 &amp;  3 &amp;  1 \end{array} \right] ,[/mathjax]</td>
 </tr>
 </table><p>
- and let [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ax[/mathjaxinline]? </p><script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
-def MatrixGrader(expect, ans):
-	tolerance = 0.01
-	ret={'ok':False}
-	ans.replace(' ','')
-	nums = ans.split(',')
-	expnums = expect.split(',')
-	if (expect == 'None') or (expect =='none'):
-		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
-	elif (nums[0] == "none") or (nums[0] == "None"):
-	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
-	else:
-		try:
-			expnum=[float(i) for i in expnums]
-			ansnum=[float(i) for i in nums]
-			explist = sorted(expnum, key=float)
-			anslist = sorted(ansnum, key=float) 
-			matching = True
-			if len(explist)!=len(anslist):
-			    if len(anslist)&lt;len(explist):
-			    	ret['msg']="You did not enter enough critical points."
-			    else:
-			    	ret['msg']="You entered too many critical points."
-		 	else:
-				for i in range(len(explist)):
-					errorcnt=0
-					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
-						matching = False
-						errorcnt+=1
-					if errorcnt != 0:
-						ret['msg']= "You have %d errors in your answer." % errorcnt
-				ret['ok']=matching
-		except:
-		    ret['msg']="Your answer should only involve decimal numbers."
-	return ret
-  
+ and let [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ax[/mathjaxinline]? </p><p>
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
+
+<li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
+<li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li>
+</ul><p>
+Use decimals only. </p><script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
 </script><p>
 <optionresponse>
   <optioninput options="('Placeholder')" correct="Placeholder"/>
@@ -1365,42 +1412,50 @@ Let </p><table id="a0000000050" class="equation" width="100%" cellspacing="0" ce
     <td class="equation">[mathjax]A = \left[ \begin{array}{cc} 1 &amp;  2 \\ 1 &amp;  3 \\ 3 &amp;  -1 \end{array} \right] ,[/mathjax]</td>
 </tr>
 </table><p>
- and let [mathjaxinline]v = \left[\begin{array}{c} 3 \\ 2 \\ 16 \end{array} \right].[/mathjaxinline] The equation [mathjaxinline]Ax = v[/mathjaxinline] has exactly one solution &#8211; what is it? </p><script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
-def MatrixGrader(expect, ans):
-	tolerance = 0.01
-	ret={'ok':False}
-	ans.replace(' ','')
-	nums = ans.split(',')
-	expnums = expect.split(',')
-	if (expect == 'None') or (expect =='none'):
-		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
-	elif (nums[0] == "none") or (nums[0] == "None"):
-	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
-	else:
-		try:
-			expnum=[float(i) for i in expnums]
-			ansnum=[float(i) for i in nums]
-			explist = sorted(expnum, key=float)
-			anslist = sorted(ansnum, key=float) 
-			matching = True
-			if len(explist)!=len(anslist):
-			    if len(anslist)&lt;len(explist):
-			    	ret['msg']="You did not enter enough critical points."
-			    else:
-			    	ret['msg']="You entered too many critical points."
-		 	else:
-				for i in range(len(explist)):
-					errorcnt=0
-					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
-						matching = False
-						errorcnt+=1
-					if errorcnt != 0:
-						ret['msg']= "You have %d errors in your answer." % errorcnt
-				ret['ok']=matching
-		except:
-		    ret['msg']="Your answer should only involve decimal numbers."
-	return ret
-  
+ and let [mathjaxinline]v = \left[\begin{array}{c} 3 \\ 2 \\ 16 \end{array} \right].[/mathjaxinline] The equation [mathjaxinline]Ax = v[/mathjaxinline] has exactly one solution &#8211; what is it? </p><p>
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
+
+<li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
+<li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li>
+</ul><p>
+Use decimals only. </p><script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
 </script><p>
 <optionresponse>
   <optioninput options="('Placeholder')" correct="Placeholder"/>
@@ -1417,42 +1472,50 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinlin
     <td class="equation">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp;  | &amp;  | \\ v_1 &amp;  v_2 &amp;  v_3 &amp;  v_4 \\ | &amp;  | &amp;  | &amp;  | \end{array} \right].[/mathjax]</td>
 </tr>
 </table><p>
- Find a solution to the equation [mathjaxinline]Ax = v_2[/mathjaxinline]. </p><script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
-def MatrixGrader(expect, ans):
-	tolerance = 0.01
-	ret={'ok':False}
-	ans.replace(' ','')
-	nums = ans.split(',')
-	expnums = expect.split(',')
-	if (expect == 'None') or (expect =='none'):
-		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
-	elif (nums[0] == "none") or (nums[0] == "None"):
-	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
-	else:
-		try:
-			expnum=[float(i) for i in expnums]
-			ansnum=[float(i) for i in nums]
-			explist = sorted(expnum, key=float)
-			anslist = sorted(ansnum, key=float) 
-			matching = True
-			if len(explist)!=len(anslist):
-			    if len(anslist)&lt;len(explist):
-			    	ret['msg']="You did not enter enough critical points."
-			    else:
-			    	ret['msg']="You entered too many critical points."
-		 	else:
-				for i in range(len(explist)):
-					errorcnt=0
-					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
-						matching = False
-						errorcnt+=1
-					if errorcnt != 0:
-						ret['msg']= "You have %d errors in your answer." % errorcnt
-				ret['ok']=matching
-		except:
-		    ret['msg']="Your answer should only involve decimal numbers."
-	return ret
-  
+ Find a solution to the equation [mathjaxinline]Ax = v_2[/mathjaxinline]. </p><p>
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
+
+<li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
+<li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li>
+</ul><p>
+Use decimals only. </p><script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
 </script><p>
 <optionresponse>
   <optioninput options="('Placeholder')" correct="Placeholder"/>
@@ -1460,42 +1523,50 @@ def MatrixGrader(expect, ans):
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  We need not perform any row reduction here. Our desired result [mathjaxinline]v_2[/mathjaxinline] can be written <br /><br />[mathjaxinline]0v_1 + 1 v_2 + 0 v_3 + 0 v_4[/mathjaxinline] , so <br /><br />[mathjaxinline]x = \left[ \begin{array}{c} 0 \\ 1 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] is a solution to the equation. </p></font></solution></p></text></problem></p><p>
 <problem display_name="Always Consistent?" attrib_string="url_name=&quot;b1matrixvector-tab4-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="237" tex_filename="./block1/matrixtimesvector.tex"><text><p>
-Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. There is a specific vector [mathjaxinline]v[/mathjaxinline] for which you can conclude the equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution, even without knowing anything else about [mathjaxinline]A[/mathjaxinline]. What is this vector [mathjaxinline]v[/mathjaxinline]? </p><script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
-def MatrixGrader(expect, ans):
-	tolerance = 0.01
-	ret={'ok':False}
-	ans.replace(' ','')
-	nums = ans.split(',')
-	expnums = expect.split(',')
-	if (expect == 'None') or (expect =='none'):
-		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
-	elif (nums[0] == "none") or (nums[0] == "None"):
-	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
-	else:
-		try:
-			expnum=[float(i) for i in expnums]
-			ansnum=[float(i) for i in nums]
-			explist = sorted(expnum, key=float)
-			anslist = sorted(ansnum, key=float) 
-			matching = True
-			if len(explist)!=len(anslist):
-			    if len(anslist)&lt;len(explist):
-			    	ret['msg']="You did not enter enough critical points."
-			    else:
-			    	ret['msg']="You entered too many critical points."
-		 	else:
-				for i in range(len(explist)):
-					errorcnt=0
-					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
-						matching = False
-						errorcnt+=1
-					if errorcnt != 0:
-						ret['msg']= "You have %d errors in your answer." % errorcnt
-				ret['ok']=matching
-		except:
-		    ret['msg']="Your answer should only involve decimal numbers."
-	return ret
-  
+Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. There is a specific vector [mathjaxinline]v[/mathjaxinline] for which you can conclude the equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution, even without knowing anything else about [mathjaxinline]A[/mathjaxinline]. What is this vector [mathjaxinline]v[/mathjaxinline]? </p><p>
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
+
+<li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
+<li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li>
+</ul><p>
+Use decimals only. </p><script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
 </script><p>
 <optionresponse>
   <optioninput options="('Placeholder')" correct="Placeholder"/>
@@ -1554,42 +1625,50 @@ For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathja
 </table></html></p><p>
 <problem display_name="Consistent Matrix-Vector Equations" attrib_string="url_name=&quot;b1matrixvector-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="388" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline], and suppose that [mathjaxinline]x = \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = w[/mathjaxinline]. </p><p>
-Find a solution to the equation [mathjaxinline]Ax = v+w[/mathjaxinline]. </p><script linenum="1" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
-def MatrixGrader(expect, ans):
-	tolerance = 0.01
-	ret={'ok':False}
-	ans.replace(' ','')
-	nums = ans.split(',')
-	expnums = expect.split(',')
-	if (expect == 'None') or (expect =='none'):
-		ret['ok']= (nums[0] == 'None') or (nums[0]=='none')
-	elif (nums[0] == "none") or (nums[0] == "None"):
-	    ret['msg']="There are critical points!  your answer should involve decimal numbers only!"
-	else:
-		try:
-			expnum=[float(i) for i in expnums]
-			ansnum=[float(i) for i in nums]
-			explist = sorted(expnum, key=float)
-			anslist = sorted(ansnum, key=float) 
-			matching = True
-			if len(explist)!=len(anslist):
-			    if len(anslist)&lt;len(explist):
-			    	ret['msg']="You did not enter enough critical points."
-			    else:
-			    	ret['msg']="You entered too many critical points."
-		 	else:
-				for i in range(len(explist)):
-					errorcnt=0
-					if (explist[i]-anslist[i]&gt;tolerance) or (-explist[i]+anslist[i]&gt;tolerance):
-						matching = False
-						errorcnt+=1
-					if errorcnt != 0:
-						ret['msg']= "You have %d errors in your answer." % errorcnt
-				ret['ok']=matching
-		except:
-		    ret['msg']="Your answer should only involve decimal numbers."
-	return ret
-  
+Find a solution to the equation [mathjaxinline]Ax = v+w[/mathjaxinline]. </p><p>
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
+
+<li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
+<li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li>
+</ul><p>
+Use decimals only. </p><script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
 </script><p>
 <optionresponse>
   <optioninput options="('Placeholder')" correct="Placeholder"/>
