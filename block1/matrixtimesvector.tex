@@ -374,6 +374,72 @@ If $Ax = v$ is consistent, then the solution set will be a translation of $S$.
 
 
 
+\beginedxvertical{Spans and Matrix-Vector Equations}
+
+
+\beginedxproblem{Span as Noun}{\dpa1}
+
+     
+
+Let $A$ be a $m\times n$ matrix.  A vector $v$ is in the span of the columns of $A$ if and only 
+the equation $Ax = v$ has:  
+
+\edXabox{expect="at least one solution" options="no solutions","exactly one solution","at least one solution","more
+than one solution"}
+
+
+\edXsolution{ 
+The vector $v$ is in the span of the columns of $A$ if there is at least one way to write it as a linear
+combination of the columns of $A$, or in other words if there is at least one $x$ which satisfies $Ax = v$.  
+
+ }
+
+\endedxproblem
+
+\beginedxproblem{Span as Verb}{\dpa1}
+
+Let $A$ be a $m\times n$ matrix.  The columns of $A$ span $\R^m$ if and only if:
+
+\edXabox{type="multichoice" expect="For every vector $v\in \R^m$, the equation $Ax = v$ has at least one solution" options="For every vector $v\in \R^m$, the equation $Ax = v$ has exactly one solution","For every vector $v\in \R^m$, the equation $Ax = v$ has at least one solution","For every vector $v\in \R^m$, the equation $Ax = v$ has at most one solution","For some vector $v\in \R^m$, the equation $Ax = v$ has exactly one solution","For some vector $v\in \R^m$, the equation $Ax = v$ has at least one solution","For some vector $v\in \R^m$, the equation $Ax = v$ has at most one solution"}
+
+
+
+\edXsolution{ 
+In order for the columns of $A$ to span $\R^m$, every vector $v\in \R^m$ needs to be in the span of 
+the columns.  By the previous problem, this is equivalent to having at least one solution to 
+the equation $Ax=v$ for every vector $v \in \R^m$.  
+
+
+ }
+
+\endedxproblem
+
+
+\beginedxproblem{Always has Solutions}{\dpa1}
+
+In light of the previous problem, for 
+which sizes of matrix $A$ would it be impossible for $Ax = v$ to have at least one solution for every
+$v \in \R^5$?  Click all that apply.  
+
+\edXabox{type="oldmultichoice" expect="$5\times 2$","$5\times 4$" options="$5\times 2$","$5\times 4$","$5\times 5$","$5\times 7$"}
+
+
+
+\edXsolution{ 
+If there are fewer than 5 columns, then it is impossible for the columns of $A$ to span $\R^5$.  Therefore,
+by the previous problem, the equation $Ax=v$ cannot be consistent for every $v\in \R^5$; there must be some
+vectors $v\in \R^5$ for which it is inconsistent.  
+
+ }
+
+\endedxproblem
+
+\endedxvertical
+
+
+
+
+
 \beginedxvertical{Multiplication Properties}
 
 \doedxvideo{Why do we call it multiplication?}{e67R6kfSRo4}

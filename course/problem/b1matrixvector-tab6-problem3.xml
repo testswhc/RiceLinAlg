@@ -1,0 +1,33 @@
+<problem display_name="Always has Solutions" linenum="418" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+In light of the previous problem, for which sizes of matrix [mathjaxinline]A[/mathjaxinline] would it be impossible for [mathjaxinline]Ax = v[/mathjaxinline] to have at least one solution for every [mathjaxinline]v \in \mathbb R^5[/mathjaxinline]? Click all that apply. </p>
+    <p>
+      <choiceresponse>
+        <checkboxgroup>
+          <choice correct="true" name="1">
+            <text>[mathjaxinline]5\times 2[/mathjaxinline]</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text>[mathjaxinline]5\times 4[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text>[mathjaxinline]5\times 5[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="4">
+            <text>[mathjaxinline]5\times 7[/mathjaxinline]</text>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ If there are fewer than 5 columns, then it is impossible for the columns of [mathjaxinline]A[/mathjaxinline] to span [mathjaxinline]\mathbb R^5[/mathjaxinline]. Therefore, by the previous problem, the equation [mathjaxinline]Ax=v[/mathjaxinline] cannot be consistent for every [mathjaxinline]v\in \mathbb R^5[/mathjaxinline]; there must be some vectors [mathjaxinline]v\in \mathbb R^5[/mathjaxinline] for which it is inconsistent. </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

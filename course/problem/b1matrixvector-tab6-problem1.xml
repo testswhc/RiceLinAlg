@@ -1,57 +1,18 @@
-<problem display_name="Consistent Matrix-Vector Equations" linenum="392" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Span as Noun" linenum="380" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline], and suppose that [mathjaxinline]x = \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = w[/mathjaxinline]. </p>
+Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinline] matrix. A vector [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline] if and only the equation [mathjaxinline]Ax = v[/mathjaxinline] has: </p>
     <p>
-Find a solution to the equation [mathjaxinline]Ax = v+w[/mathjaxinline]. </p>
-    <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
-def VectorEntry(expect, ans):
-	import ast
-	import numpy as np 
-  	atol = 0.01
-	list_expect = ast.literal_eval(expect)
-	vec_expect = np.matrix(list_expect)
-  	ret = {"ok":False}
-	try:
-  		# input format [[1],[2],[3]]
-		list_ans = ast.literal_eval(ans)
-		vec_ans = np.matrix(list_ans)
-  		if vec_ans.shape != vec_expect.shape:
-  			ret['msg'] = 'Wrong shape of vector!'
-  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
-  			ret['ok'] = True
-  		else:
-  		# More error message. Will improve this part
-  			ret['msg'] = 'something is wrong'   			
-	#except SyntaxError:
-		#ret['msg'] = 'Wrong input format'
-	except SyntaxError:
-  		# input format &amp;lt;1,2,3&amp;gt;
-		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
-		list_ans = ast.literal_eval(list_ans)
-		vec_ans = np.transpose(np.matrix(list_ans))
-  		if vec_ans.shape != vec_expect.shape:
-  			ret['msg'] = 'Wrong shape of vector!'
-  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
-  			ret['ok'] = True
-  		else:
-    		# More error message. Will improve this part
-  			ret['msg'] = 'something is wrong' 
-  	except:
-  		ret['msg'] = 'Wrong input format'
-  	return ret 
-</script>
-    <p>
-      <customresponse cfn="VectorEntry" expect="[[3],[1],[7]]">
-        <textline correct_answer="[[3],[1],[7]]"/>
-      </customresponse>
+      <optionresponse>
+        <optioninput options="('no solutions','exactly one solution','at least one solution','more than one solution')" correct="at least one solution"/>
+      </optionresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
- We are given: <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] = v[/mathjaxinline] <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = w[/mathjaxinline] <br/><br/>Adding these equations, we get <br/><br/>[mathjaxinline]A t \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \Bigg( \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] \Bigg) = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 3 \\ 1 \\ 7 \end{array} \right] = v + w[/mathjaxinline] <br/><br/></p>
+ The vector [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline] if there is at least one way to write it as a linear combination of the columns of [mathjaxinline]A[/mathjaxinline], or in other words if there is at least one [mathjaxinline]x[/mathjaxinline] which satisfies [mathjaxinline]Ax = v[/mathjaxinline]. </p>
         </font>
       </solution>
     </p>

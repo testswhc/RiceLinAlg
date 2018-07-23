@@ -1588,37 +1588,49 @@ If we align the tip of [mathjaxinline]w[/mathjaxinline] and the tail of [mathjax
             <p>
 A <span style="color:#99182C"><b class="bf">vector space</b></span> over a field [mathjaxinline]F[/mathjaxinline] is, essentially, a set [mathjaxinline]V[/mathjaxinline] in which one can do vector addition and scalar multiplication. For a more formal definition, see below. </p>
             <p>
+              <div class="hideshowbox">
+                <h4 onclick="hideshow(this);" style="margin: 0px">Formal Definition of a Vector Space<span class="icon-caret-down toggleimage"/></h4>
+                <div class="hideshowcontent">
+                  <p>
 A vector space [mathjaxinline]V[/mathjaxinline] over a field [mathjaxinline]F[/mathjaxinline] is a set, together with an addition operation on [mathjaxinline]V[/mathjaxinline] and a scalar multiplication of elements of [mathjaxinline]F[/mathjaxinline] on elements of [mathjaxinline]V[/mathjaxinline], that satisfies the following conditions: </p>
-            <ul class="itemize">
-              <li>
-                <p>
+                  <ul class="itemize">
+                    <li>
+                      <p>
 Addition in [mathjaxinline]V[/mathjaxinline] is associative and commutative; that is, for all [mathjaxinline]u,v,w \in V[/mathjaxinline], we have [mathjaxinline]u+(v+w) = (u+v)+w[/mathjaxinline] and [mathjaxinline]u+v = v+u[/mathjaxinline]. </p>
-              </li>
-              <li>
-                <p>
+                    </li>
+                    <li>
+                      <p>
 There is an element [mathjaxinline]\mathbf{0}\in V[/mathjaxinline] such that [mathjaxinline]v+\mathbf{0}= v[/mathjaxinline] for all [mathjaxinline]v \in V[/mathjaxinline]. </p>
-              </li>
-              <li>
-                <p>
+                    </li>
+                    <li>
+                      <p>
 For every [mathjaxinline]v\in V[/mathjaxinline], there is an element [mathjaxinline]-v \in V[/mathjaxinline] such that [mathjaxinline]-v + v = \mathbf{0}[/mathjaxinline]. </p>
-              </li>
-              <li>
-                <p>
+                    </li>
+                    <li>
+                      <p>
 [mathjaxinline]1v = v[/mathjaxinline] for all [mathjaxinline]v \in V[/mathjaxinline]. </p>
-              </li>
-              <li>
-                <p>
+                    </li>
+                    <li>
+                      <p>
 Scalar multiplication distributes over addition; that is, for all [mathjaxinline]a \in F[/mathjaxinline] and [mathjaxinline]u,v \in V[/mathjaxinline], , [mathjaxinline]a(u+v) = au + av[/mathjaxinline]. </p>
-              </li>
-              <li>
-                <p>
+                    </li>
+                    <li>
+                      <p>
 Scalar addition distributes as well; that is, for all [mathjaxinline]a,b \in F[/mathjaxinline] and [mathjaxinline]v \in V[/mathjaxinline], , [mathjaxinline](a+b)v = av + bv[/mathjaxinline]. </p>
-              </li>
-              <li>
-                <p>
+                    </li>
+                    <li>
+                      <p>
 For all [mathjaxinline]a,b \in F[/mathjaxinline], and [mathjaxinline]v\in V[/mathjaxinline], we have [mathjaxinline]a(bv) = (ab)v[/mathjaxinline]. </p>
-              </li>
-            </ul>
+                    </li>
+                  </ul>
+                </div>
+                <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                  <a href="javascript: {return false;}">Show</a>
+                </p>
+              </div>
+            </p>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </html>
           <problem display_name="Vector Spaces" linenum="222" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab5-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
@@ -2607,9 +2619,103 @@ If [mathjaxinline]Ax = v[/mathjaxinline] is consistent, then the solution set wi
             </text>
           </problem>
         </vertical>
-        <vertical display_name="Multiplication Properties" refnum="6" url_name="b1matrixvector-vertical6">
-          <video display_name="Why do we call it multiplication?" youtube_id_1_0="e67R6kfSRo4" url_name="b1matrixvector-tab6-video1"/>
-          <html display_name="Properties of Matrix Multiplication" linenum="383" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-text1">
+        <vertical display_name="Spans and Matrix-Vector Equations" refnum="6" url_name="b1matrixvector-vertical6">
+          <problem display_name="Span as Noun" linenum="380" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinline] matrix. A vector [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline] if and only the equation [mathjaxinline]Ax = v[/mathjaxinline] has: </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('no solutions','exactly one solution','at least one solution','more than one solution')" correct="at least one solution"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ The vector [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline] if there is at least one way to write it as a linear combination of the columns of [mathjaxinline]A[/mathjaxinline], or in other words if there is at least one [mathjaxinline]x[/mathjaxinline] which satisfies [mathjaxinline]Ax = v[/mathjaxinline]. </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Span as Verb" linenum="399" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinline] matrix. The columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ m[/mathjaxinline] if and only if: </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> For every vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has exactly one solution</text>
+                    </choice>
+                    <choice correct="true" name="2">
+                      <text> For every vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has at least one solution</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> For every vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has at most one solution</text>
+                    </choice>
+                    <choice correct="false" name="4">
+                      <text> For some vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has exactly one solution</text>
+                    </choice>
+                    <choice correct="false" name="5">
+                      <text> For some vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has at least one solution</text>
+                    </choice>
+                    <choice correct="false" name="6">
+                      <text> For some vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has at most one solution</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ In order for the columns of [mathjaxinline]A[/mathjaxinline] to span [mathjaxinline]\mathbb R^ m[/mathjaxinline], every vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline] needs to be in the span of the columns. By the previous problem, this is equivalent to having at least one solution to the equation [mathjaxinline]Ax=v[/mathjaxinline] for every vector [mathjaxinline]v \in \mathbb R^ m[/mathjaxinline]. </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Always has Solutions" linenum="418" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+In light of the previous problem, for which sizes of matrix [mathjaxinline]A[/mathjaxinline] would it be impossible for [mathjaxinline]Ax = v[/mathjaxinline] to have at least one solution for every [mathjaxinline]v \in \mathbb R^5[/mathjaxinline]? Click all that apply. </p>
+              <p>
+                <choiceresponse>
+                  <checkboxgroup>
+                    <choice correct="true" name="1">
+                      <text>[mathjaxinline]5\times 2[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="true" name="2">
+                      <text>[mathjaxinline]5\times 4[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text>[mathjaxinline]5\times 5[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="4">
+                      <text>[mathjaxinline]5\times 7[/mathjaxinline]</text>
+                    </choice>
+                  </checkboxgroup>
+                </choiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ If there are fewer than 5 columns, then it is impossible for the columns of [mathjaxinline]A[/mathjaxinline] to span [mathjaxinline]\mathbb R^5[/mathjaxinline]. Therefore, by the previous problem, the equation [mathjaxinline]Ax=v[/mathjaxinline] cannot be consistent for every [mathjaxinline]v\in \mathbb R^5[/mathjaxinline]; there must be some vectors [mathjaxinline]v\in \mathbb R^5[/mathjaxinline] for which it is inconsistent. </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Multiplication Properties" refnum="7" url_name="b1matrixvector-vertical7">
+          <video display_name="Why do we call it multiplication?" youtube_id_1_0="e67R6kfSRo4" url_name="b1matrixvector-tab7-video1"/>
+          <html display_name="Properties of Matrix Multiplication" linenum="449" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-text1">
             <p>
 For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathjaxinline], vectors [mathjaxinline]w,x \in \mathbb R^ n[/mathjaxinline], and scalar [mathjaxinline]a[/mathjaxinline], we have that </p>
             <table id="a0000000054" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
@@ -2627,7 +2733,7 @@ For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathja
               </tr>
             </table>
           </html>
-          <problem display_name="Consistent Matrix-Vector Equations" linenum="392" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Consistent Matrix-Vector Equations" linenum="458" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline], and suppose that [mathjaxinline]x = \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = w[/mathjaxinline]. </p>
@@ -2686,7 +2792,7 @@ def VectorEntry(expect, ans):
               </p>
             </text>
           </problem>
-          <problem display_name="Consistent Matrix-Vector Equations 2" linenum="423" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Consistent Matrix-Vector Equations 2" linenum="489" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that the equation [mathjaxinline]Ax = v[/mathjaxinline] is consistent. Must the equation [mathjaxinline]Ax = 4v[/mathjaxinline] be consistent? </p>
