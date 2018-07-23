@@ -1,20 +1,37 @@
-<problem display_name="Consistent Matrix-Vector Equations 2" linenum="417" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Span as Verb" linenum="399" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that the equation [mathjaxinline]Ax = v[/mathjaxinline] is consistent. Must the equation [mathjaxinline]Ax = 4v[/mathjaxinline] be consistent? </p>
+Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinline] matrix. The columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ m[/mathjaxinline] if and only if: </p>
     <p>
-      <optionresponse>
-        <optioninput options="('Yes','No')" correct="Yes"/>
-      </optionresponse>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> For every vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has exactly one solution</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text> For every vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has at least one solution</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> For every vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has at most one solution</text>
+          </choice>
+          <choice correct="false" name="4">
+            <text> For some vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has exactly one solution</text>
+          </choice>
+          <choice correct="false" name="5">
+            <text> For some vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has at least one solution</text>
+          </choice>
+          <choice correct="false" name="6">
+            <text> For some vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has at most one solution</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
- We can show it with algebra. Suppose [mathjaxinline]y[/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline]. Then [mathjaxinline]Ay = v[/mathjaxinline], so [mathjaxinline]4Ay = 4v[/mathjaxinline] and [mathjaxinline]A (4y) = 4v.[/mathjaxinline] Thus [mathjaxinline]4y[/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = 4v[/mathjaxinline]. </p>
-          <p>
-Intuitively, if we can produce [mathjaxinline]v[/mathjaxinline] by linear combination of the columns of [mathjaxinline]A[/mathjaxinline], we can simply scale the weights of the linear combination to produce any scaling [mathjaxinline]cv[/mathjaxinline] of [mathjaxinline]v[/mathjaxinline]. </p>
+ In order for the columns of [mathjaxinline]A[/mathjaxinline] to span [mathjaxinline]\mathbb R^ m[/mathjaxinline], every vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline] needs to be in the span of the columns. By the previous problem, this is equivalent to having at least one solution to the equation [mathjaxinline]Ax=v[/mathjaxinline] for every vector [mathjaxinline]v \in \mathbb R^ m[/mathjaxinline]. </p>
         </font>
       </solution>
     </p>
