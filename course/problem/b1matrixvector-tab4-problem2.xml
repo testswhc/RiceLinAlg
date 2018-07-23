@@ -1,4 +1,4 @@
-<problem display_name="Another Matrix-Vector Equation" linenum="213" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Another Matrix-Vector Equation" linenum="215" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinline] matrix with columns [mathjaxinline]v_1, v_2, v_3, v_4[/mathjaxinline]. That is, </p>
@@ -10,21 +10,7 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinlin
     </table>
     <p>
  Find a solution to the equation [mathjaxinline]Ax = v_2[/mathjaxinline]. </p>
-    <p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
-    <ul class="itemize">
-      <li>
-        <p>
-enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
-      </li>
-      <li>
-        <p>
-or, you can enter it as &lt;1,2,3&gt; </p>
-      </li>
-    </ul>
-    <p>
-Use decimals only. </p>
-    <script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+    <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
 	import numpy as np 
@@ -62,9 +48,9 @@ def VectorEntry(expect, ans):
   	return ret 
 </script>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <customresponse cfn="VectorEntry" expect="[[0],[1],[0],[0]]">
+        <textline correct_answer="[[0],[1],[0],[0]]"/>
+      </customresponse>
     </p>
     <p>
       <solution>

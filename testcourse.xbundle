@@ -160,11 +160,7 @@ Recall the system of equations from the previous question. </p>
               </table>
               <p>
 Do the following row operations to the augmented matrix. First, multiply the first row by [mathjaxinline]\frac{1}{10}[/mathjaxinline]. Then, replace the second row with the second row minus twice the first row. What matrix do you get as a result? </p>
-              <p>
-To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p>
-              <p>
-Use decimals only. </p>
-              <script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+              <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -307,11 +303,7 @@ Consider this system of equations. </p>
               </table>
               <p>
 Do the following row operations to the augmented matrix. First, switch the first two rows. Then replace the third row with the third row minus twice the first row. Next, replace the first row with the first row minus twice the second row. Finally, replace the third row with the third row minus twice the second row. What matrix do you get as a result? </p>
-              <p>
-To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p>
-              <p>
-Use decimals only. </p>
-              <script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+              <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -706,11 +698,7 @@ Let </p>
               </table>
               <p>
 What matrix do you get if you row-reduce [mathjaxinline]A[/mathjaxinline]? </p>
-              <p>
-To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p>
-              <p>
-Use decimals only. </p>
-              <script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+              <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -1858,7 +1846,7 @@ Let [mathjaxinline]j[/mathjaxinline] denote [mathjaxinline]3t^4 + 3t[/mathjaxinl
           </problem>
         </vertical>
         <vertical display_name="Is it a linear combination?" refnum="4" url_name="b1lincombos-vertical4">
-          <video display_name="Linear Combinations in &lt;math&gt;$R^ n$&lt;/math&gt;" youtube_id_1_0="???" url_name="b1lincombos-tab4-video1"/>
+          <video display_name="Linear Combinations in R^n" youtube_id_1_0="v8XhmvbzIEU" url_name="b1lincombos-tab4-video1"/>
           <problem display_name="Linear Combo 6" linenum="200" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
@@ -2038,13 +2026,16 @@ Does every list of two non-zero vectors in [mathjaxinline]\mathbb R^2[/mathjaxin
                   <font color="blue">Answer: </font>
                   <font color="blue">
                     <p>
- If the two vectors are scalar multiples of each other, then they lie along the same line, and their span cannot include anything off that line.  </p>
+ If the two vectors are scalar multiples of each other, then they lie along the same line, and their span cannot include anything off that line. For instance, in the following picture, [mathjaxinline]w[/mathjaxinline] is not a linear combination of [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline]. </p>
+                    <center>
+                      <img src="/static/images/c1s4lincombo2.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+                    </center>
                   </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Does the list span?" linenum="459" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab8-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Does the list span?" linenum="465" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab8-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <ul class="itemize">
                 <li>
@@ -2344,21 +2335,7 @@ Let </p>
               </table>
               <p>
  and let [mathjaxinline]v = \left[\begin{array}{c} 3 \\ 2 \\ 16 \end{array} \right].[/mathjaxinline] The equation [mathjaxinline]Ax = v[/mathjaxinline] has exactly one solution &#x2013; what is it? </p>
-              <p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
-              <ul class="itemize">
-                <li>
-                  <p>
-enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
-                </li>
-                <li>
-                  <p>
-or, you can enter it as &lt;1,2,3&gt; </p>
-                </li>
-              </ul>
-              <p>
-Use decimals only. </p>
-              <script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+              <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
 	import numpy as np 
@@ -2396,9 +2373,9 @@ def VectorEntry(expect, ans):
   	return ret 
 </script>
               <p>
-                <optionresponse>
-                  <optioninput options="('Placeholder')" correct="Placeholder"/>
-                </optionresponse>
+                <customresponse cfn="VectorEntry" expect="[[5],[-1]]">
+                  <textline correct_answer="[[5],[-1]]"/>
+                </customresponse>
               </p>
               <p>
 Let [mathjaxinline]w = \left[\begin{array}{c} 3 \\ -4 \\ 7 \end{array} \right].[/mathjaxinline] With the same [mathjaxinline]A[/mathjaxinline] as above, how many solutions does [mathjaxinline]Ax = w[/mathjaxinline] have? </p>
@@ -2418,7 +2395,7 @@ Let [mathjaxinline]w = \left[\begin{array}{c} 3 \\ -4 \\ 7 \end{array} \right].[
               </p>
             </text>
           </problem>
-          <problem display_name="Another Matrix-Vector Equation" linenum="213" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Another Matrix-Vector Equation" linenum="215" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinline] matrix with columns [mathjaxinline]v_1, v_2, v_3, v_4[/mathjaxinline]. That is, </p>
@@ -2430,21 +2407,7 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinlin
               </table>
               <p>
  Find a solution to the equation [mathjaxinline]Ax = v_2[/mathjaxinline]. </p>
-              <p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
-              <ul class="itemize">
-                <li>
-                  <p>
-enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
-                </li>
-                <li>
-                  <p>
-or, you can enter it as &lt;1,2,3&gt; </p>
-                </li>
-              </ul>
-              <p>
-Use decimals only. </p>
-              <script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+              <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
 	import numpy as np 
@@ -2482,9 +2445,9 @@ def VectorEntry(expect, ans):
   	return ret 
 </script>
               <p>
-                <optionresponse>
-                  <optioninput options="('Placeholder')" correct="Placeholder"/>
-                </optionresponse>
+                <customresponse cfn="VectorEntry" expect="[[0],[1],[0],[0]]">
+                  <textline correct_answer="[[0],[1],[0],[0]]"/>
+                </customresponse>
               </p>
               <p>
                 <solution>
@@ -2497,25 +2460,11 @@ def VectorEntry(expect, ans):
               </p>
             </text>
           </problem>
-          <problem display_name="Always Consistent?" linenum="237" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Always Consistent?" linenum="240" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. There is a specific vector [mathjaxinline]v[/mathjaxinline] for which you can conclude the equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution, even without knowing anything else about [mathjaxinline]A[/mathjaxinline]. What is this vector [mathjaxinline]v[/mathjaxinline]? </p>
-              <p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
-              <ul class="itemize">
-                <li>
-                  <p>
-enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
-                </li>
-                <li>
-                  <p>
-or, you can enter it as &lt;1,2,3&gt; </p>
-                </li>
-              </ul>
-              <p>
-Use decimals only. </p>
-              <script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+              <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
 	import numpy as np 
@@ -2553,9 +2502,9 @@ def VectorEntry(expect, ans):
   	return ret 
 </script>
               <p>
-                <optionresponse>
-                  <optioninput options="('Placeholder')" correct="Placeholder"/>
-                </optionresponse>
+                <customresponse cfn="VectorEntry" expect="[[0],[0],[0],[0]]">
+                  <textline correct_answer="[[0],[0],[0],[0]]"/>
+                </customresponse>
               </p>
               <p>
                 <solution>
@@ -2571,7 +2520,7 @@ The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] always has at least 
         </vertical>
         <vertical display_name="Solution Sets" refnum="5" url_name="b1matrixvector-vertical5">
           <video display_name="Solving Ax = 0" youtube_id_1_0="???" url_name="b1matrixvector-tab5-video1"/>
-          <problem display_name="Non-trivial Solutions" linenum="273" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Non-trivial Solutions" linenum="277" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinline] matrix. The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has the solution [mathjaxinline]x = \mathbf{0}[/mathjaxinline], which we call the <span style="color:#99182C"><b class="bf">trivial solution.</b></span> If there are no solutions other than the trivial solutions, how many pivots must [mathjaxinline]A[/mathjaxinline] have when row-reduced? </p>
@@ -2593,7 +2542,7 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinlin
               </p>
             </text>
           </problem>
-          <problem display_name="Find a Solution Set" linenum="299" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Find a Solution Set" linenum="303" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -2635,7 +2584,7 @@ Hence the general solution is </p>
               </p>
             </text>
           </problem>
-          <problem display_name="Other Solution Sets" linenum="346" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Other Solution Sets" linenum="350" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or false: If [mathjaxinline]S[/mathjaxinline] is the solution set to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline], then the solution set to [mathjaxinline]Ax = v[/mathjaxinline] must be a translation of [mathjaxinline]S[/mathjaxinline]. </p>
@@ -2660,7 +2609,7 @@ If [mathjaxinline]Ax = v[/mathjaxinline] is consistent, then the solution set wi
         </vertical>
         <vertical display_name="Multiplication Properties" refnum="6" url_name="b1matrixvector-vertical6">
           <video display_name="Why do we call it multiplication?" youtube_id_1_0="e67R6kfSRo4" url_name="b1matrixvector-tab6-video1"/>
-          <html display_name="Properties of Matrix Multiplication" linenum="379" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-text1">
+          <html display_name="Properties of Matrix Multiplication" linenum="383" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-text1">
             <p>
 For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathjaxinline], vectors [mathjaxinline]w,x \in \mathbb R^ n[/mathjaxinline], and scalar [mathjaxinline]a[/mathjaxinline], we have that </p>
             <table id="a0000000054" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
@@ -2678,27 +2627,13 @@ For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathja
               </tr>
             </table>
           </html>
-          <problem display_name="Consistent Matrix-Vector Equations" linenum="388" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Consistent Matrix-Vector Equations" linenum="392" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline], and suppose that [mathjaxinline]x = \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = w[/mathjaxinline]. </p>
               <p>
 Find a solution to the equation [mathjaxinline]Ax = v+w[/mathjaxinline]. </p>
-              <p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
-              <ul class="itemize">
-                <li>
-                  <p>
-enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
-                </li>
-                <li>
-                  <p>
-or, you can enter it as &lt;1,2,3&gt; </p>
-                </li>
-              </ul>
-              <p>
-Use decimals only. </p>
-              <script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+              <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
 	import numpy as np 
@@ -2736,9 +2671,9 @@ def VectorEntry(expect, ans):
   	return ret 
 </script>
               <p>
-                <optionresponse>
-                  <optioninput options="('Placeholder')" correct="Placeholder"/>
-                </optionresponse>
+                <customresponse cfn="VectorEntry" expect="[[3],[1],[7]]">
+                  <textline correct_answer="[[3],[1],[7]]"/>
+                </customresponse>
               </p>
               <p>
                 <solution>
@@ -2751,7 +2686,7 @@ def VectorEntry(expect, ans):
               </p>
             </text>
           </problem>
-          <problem display_name="Consistent Matrix-Vector Equations 2" linenum="417" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Consistent Matrix-Vector Equations 2" linenum="423" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that the equation [mathjaxinline]Ax = v[/mathjaxinline] is consistent. Must the equation [mathjaxinline]Ax = 4v[/mathjaxinline] be consistent? </p>

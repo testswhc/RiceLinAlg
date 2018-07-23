@@ -1,24 +1,10 @@
-<problem display_name="Consistent Matrix-Vector Equations" linenum="388" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Consistent Matrix-Vector Equations" linenum="392" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline], and suppose that [mathjaxinline]x = \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = w[/mathjaxinline]. </p>
     <p>
 Find a solution to the equation [mathjaxinline]Ax = v+w[/mathjaxinline]. </p>
-    <p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
-    <ul class="itemize">
-      <li>
-        <p>
-enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
-      </li>
-      <li>
-        <p>
-or, you can enter it as &lt;1,2,3&gt; </p>
-      </li>
-    </ul>
-    <p>
-Use decimals only. </p>
-    <script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+    <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
 	import numpy as np 
@@ -56,9 +42,9 @@ def VectorEntry(expect, ans):
   	return ret 
 </script>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <customresponse cfn="VectorEntry" expect="[[3],[1],[7]]">
+        <textline correct_answer="[[3],[1],[7]]"/>
+      </customresponse>
     </p>
     <p>
       <solution>

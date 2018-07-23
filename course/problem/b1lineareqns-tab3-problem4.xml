@@ -48,11 +48,7 @@ Consider this system of equations. </p>
     </table>
     <p>
 Do the following row operations to the augmented matrix. First, switch the first two rows. Then replace the third row with the third row minus twice the first row. Next, replace the first row with the first row minus twice the second row. Finally, replace the third row with the third row minus twice the second row. What matrix do you get as a result? </p>
-    <p>
-To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p>
-    <p>
-Use decimals only. </p>
-    <script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+    <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 

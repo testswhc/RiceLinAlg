@@ -10,11 +10,7 @@ Let </p>
     </table>
     <p>
 What matrix do you get if you row-reduce [mathjaxinline]A[/mathjaxinline]? </p>
-    <p>
-To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p>
-    <p>
-Use decimals only. </p>
-    <script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+    <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
