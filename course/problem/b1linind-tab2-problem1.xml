@@ -1,7 +1,7 @@
 <problem display_name="Existence vs. Uniqueness" linenum="34" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
-Given a matrix [mathjaxinline]A[/mathjaxinline], consider the equation [mathjaxinline]A\mathbf{x}= \mathbf{0}[/mathjaxinline]. </p>
+Given a matrix [mathjaxinline]A[/mathjaxinline], consider the equation [mathjaxinline]A\vecx = \mathbf{0}[/mathjaxinline]. </p>
     <p>
 Regarding such equations, we have discussed two main questions: the existence question (does there exist at least one solution?) and the uniqueness question (is there at most one solution?). For this equation, one of these questions always has the same answer, no matter what [mathjaxinline]A[/mathjaxinline] is. Which question does not always have the same answer? </p>
     <p>

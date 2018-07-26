@@ -1,4 +1,6 @@
-<html display_name="Definition of Linearly Independent" linenum="77" tex_filename="./block1/linearindependence.tex">
+<html display_name="Definition of Linearly Independent and Dependent" linenum="77" tex_filename="./block1/linearindependence.tex">
   <p>
-We say that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] are <span style="color:#99182C"><b class="bf">linearly independent</b></span> if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p>
+We say that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is <span style="color:#99182C"><b class="bf">linearly independent</b></span> if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p>
+  <p>
+A list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is <span style="color:#99182C"><b class="bf">linearly dependent</b></span> if there are scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline], not all zero, such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline]. </p>
 </html>
