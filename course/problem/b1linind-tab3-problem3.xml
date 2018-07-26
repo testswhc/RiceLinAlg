@@ -1,11 +1,9 @@
-<problem display_name="List 3" linenum="144" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="List 3" linenum="149" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-Consider the list of vectors [mathjaxinline]\{ v_1; v_2\}[/mathjaxinline], where [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline] are vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] as given in this picture: </p>
+Let [mathjaxinline]\mathbb {P}[/mathjaxinline] be the vector space of polynomials with real coefficients in the variable [mathjaxinline]t[/mathjaxinline]. Consider the list of vectors [mathjaxinline]\{ f; g\}[/mathjaxinline], where [mathjaxinline]f(t) = 1+t[/mathjaxinline] and [mathjaxinline]g(t) = t+t^2[/mathjaxinline] are vectors in [mathjaxinline]\mathbb {P}[/mathjaxinline]. </p>
     <p>
-[picture] </p>
-    <p>
-Can you find scalars [mathjaxinline]a_1, a_2[/mathjaxinline], not both zero, such that [mathjaxinline]a_1v_1 + a_2 v_2 = \mathbf{0}[/mathjaxinline]? If so, enter an example of such scalars below. If not, enter &#x2018;No'. </p>
+Can you find scalars [mathjaxinline]a_1, a_2[/mathjaxinline], not both zero, such that [mathjaxinline]a_1f + a_2 g = \mathbf{0}[/mathjaxinline]? If so, enter an example of such scalars below. If not, type &#x2018;No'. </p>
     <p>
       <optionresponse>
         <optioninput options="('Placeholder')" correct="Placeholder"/>

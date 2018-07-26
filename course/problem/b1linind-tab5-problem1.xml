@@ -1,53 +1,26 @@
-<problem display_name="Quick Picks" linenum="240" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Proving Linear Independence" linenum="212" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
-Without doing any row-reduction, you should be able to pick out three of the following lists of vectors that are linearly dependent. Which three? </p>
-    <ol class="enumerate">
-      <li value="1">
-        <p>
-[mathjaxinline]\left( \begin{array}{c} 1 \\ 1 \\ 1 \end{array} \right) , \left( \begin{array}{c} 1 \\ 1 \\ 0 \end{array} \right) , \left( \begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right)[/mathjaxinline] </p>
-      </li>
-      <li value="2">
-        <p>
-[mathjaxinline]\left( \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right) , \left( \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right) , \left( \begin{array}{c} 2 \\ 5 \\ 7 \end{array} \right)[/mathjaxinline] </p>
-      </li>
-      <li value="3">
-        <p>
-[mathjaxinline]\left( \begin{array}{c} 1 \\ 2 \\ 1 \\ 4\end{array} \right) , \left( \begin{array}{c} 2 \\ 13 \\ 3 \\ 7\end{array} \right) , \left( \begin{array}{c} 0 \\ 1 \\ 5 \\ -3\end{array} \right) , \left( \begin{array}{c} 15 \\ -2 \\ 6 \\ 2\end{array} \right) , \left( \begin{array}{c} 5 \\ 3 \\ 8 \\ 11\end{array} \right)[/mathjaxinline] </p>
-      </li>
-      <li value="4">
-        <p>
-[mathjaxinline]\left( \begin{array}{c} 2 \\ 3 \\ 5 \\ 7 \\ 11 \end{array} \right) , \left( \begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \\ 5 \end{array} \right) , \left( \begin{array}{c} 2 \\ 4 \\ 6 \\ 8 \\ 10 \end{array} \right) , \left( \begin{array}{c} 1 \\ 1 \\ 2 \\ 3 \\ 5 \end{array} \right)[/mathjaxinline] </p>
-      </li>
-      <li value="5">
-        <p>
-[mathjaxinline]\left( \begin{array}{c} 0 \\ 1 \\ 0\\ 2 \\ 3 \\ 0 \end{array} \right) , \left( \begin{array}{c} 0 \\ 2 \\ 0\\ 7 \\ 1 \\ 0 \end{array} \right) , \left( \begin{array}{c} 0 \\ 12 \\ 0\\ 23 \\ 35 \\ 0 \end{array} \right)[/mathjaxinline] </p>
-      </li>
-      <li value="6">
-        <p>
-[mathjaxinline]\left( \begin{array}{c} 1 \\ 1 \\ 1 \\ 1 \end{array} \right) , \left( \begin{array}{c} 1 \\ 1 \\ 2 \\ 1 \end{array} \right) , \left( \begin{array}{c} 1 \\ 1 \\ 1 \\ 2 \end{array} \right)[/mathjaxinline] </p>
-      </li>
-    </ol>
+Before we start in on the proposition, let's think about the definition of linear independence. Recall that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is linearly independent if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p>
+    <p>
+Which of the following would be a way to prove that a list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is linearly independent? Check all that apply. </p>
     <p>
       <choiceresponse>
         <checkboxgroup>
-          <choice correct="true" name="1">
-            <text>A</text>
+          <choice correct="false" name="1">
+            <text>Assume that [mathjaxinline]a_ i = 0[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline], and show [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline]</text>
           </choice>
           <choice correct="false" name="2">
-            <text>B</text>
+            <text>Assume that [mathjaxinline]a_ i \ne 0[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline], and show [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n \ne \mathbf{0}[/mathjaxinline]</text>
           </choice>
-          <choice correct="false" name="3">
-            <text>C</text>
+          <choice correct="true" name="3">
+            <text>Assume that [mathjaxinline]a_ i \ne 0[/mathjaxinline] for at least one [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline], and show [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n \ne \mathbf{0}[/mathjaxinline]</text>
           </choice>
-          <choice correct="false" name="4">
-            <text>D</text>
+          <choice correct="true" name="4">
+            <text>Assume that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline], and show that [mathjaxinline]a_ i = 0[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline]</text>
           </choice>
           <choice correct="false" name="5">
-            <text>E</text>
-          </choice>
-          <choice correct="false" name="6">
-            <text>F</text>
+            <text>Assume that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n \ne \mathbf{0}[/mathjaxinline], and show that [mathjaxinline]a_ i \ne 0[/mathjaxinline] for at least one [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline]</text>
           </choice>
         </checkboxgroup>
       </choiceresponse>
