@@ -1,11 +1,29 @@
-<problem display_name="True or False" linenum="248" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Proving Linear Independence" linenum="246" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
-True or False: Suppose the list [mathjaxinline]\{ v_1; v_2; v_3; v_4\}[/mathjaxinline] is linearly dependent. Then [mathjaxinline]v_4[/mathjaxinline] must be in the span of [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline]. </p>
+Let's think about the definition of linear independence. Recall that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is linearly independent if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p>
     <p>
-      <optionresponse>
-        <optioninput options="('True','False')" correct="False"/>
-      </optionresponse>
+Which of the following would be a way to prove that a list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is linearly independent? Check all that apply. </p>
+    <p>
+      <choiceresponse>
+        <checkboxgroup>
+          <choice correct="false" name="1">
+            <text>Assume that [mathjaxinline]a_ i = 0[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline], and show [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text>Assume that [mathjaxinline]a_ i \ne 0[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline], and show [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n \ne \mathbf{0}[/mathjaxinline]</text>
+          </choice>
+          <choice correct="true" name="3">
+            <text>Assume that [mathjaxinline]a_ i \ne 0[/mathjaxinline] for at least one [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline], and show [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n \ne \mathbf{0}[/mathjaxinline]</text>
+          </choice>
+          <choice correct="true" name="4">
+            <text>Assume that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline], and show that [mathjaxinline]a_ i = 0[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="5">
+            <text>Assume that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n \ne \mathbf{0}[/mathjaxinline], and show that [mathjaxinline]a_ i \ne 0[/mathjaxinline] for at least one [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline]</text>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
     </p>
     <p>
       <solution>
