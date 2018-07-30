@@ -1,0 +1,61 @@
+{
+    "course/course": {
+        "allow_anonymous": false, 
+        "course_image": "rice-logo.jpg", 
+        "discussion_topics": {
+            "General": {
+                "id": "i4x-Rice-Test-course-2018_Summer"
+            }
+        }, 
+        "display_coursenumber": "TestLinAlg", 
+        "display_name": "Test LinAlg", 
+        "end": "2018-12-18T18:00:00Z", 
+        "graceperiod": "1800 seconds", 
+        "info_sidebar_name": "Other Documents", 
+        "invitation_only": true, 
+        "minimum_grade_credit": 0.8, 
+        "mobile_available": true, 
+        "start": "2018-01-11T12:00:00Z", 
+        "tabs": [
+            {
+                "course_staff_only": false, 
+                "name": "Home", 
+                "type": "course_info"
+            }, 
+            {
+                "course_staff_only": false, 
+                "name": "Course", 
+                "type": "courseware"
+            }, 
+            {
+                "course_staff_only": false, 
+                "name": "Textbooks", 
+                "type": "textbooks"
+            }, 
+            {
+                "course_staff_only": false, 
+                "name": "Discussion", 
+                "type": "discussion"
+            }, 
+            {
+                "course_staff_only": true, 
+                "name": "Wiki", 
+                "type": "wiki"
+            }, 
+            {
+                "course_staff_only": false, 
+                "name": "Progress", 
+                "type": "progress"
+            }
+        ], 
+        "xml_attributes": {
+            "course_organization": "TestRice", 
+            "filename": [
+                "course/2018_Summer.xml", 
+                "course/2018_Summer.xml"
+            ], 
+            "number": "Test", 
+            "semester": "2018_Summer"
+        }
+    }
+}

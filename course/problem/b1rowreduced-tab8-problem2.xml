@@ -1,4 +1,4 @@
-<problem display_name="Maximum pivots" linenum="343" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Maximum pivots" linenum="410" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 What is the maximum number of pivots in a [mathjaxinline]6\times 3[/mathjaxinline] coefficient matrix, when row-reduced? </p>
@@ -12,7 +12,10 @@ What is the maximum number of pivots in a [mathjaxinline]6\times 3[/mathjaxinlin
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+There aren't any non-zero entries above or below a pivot. Thus, there is at most one pivot in each column. Thus there can be no more than 3 pivots. There are enough rows that this is possible to attain.  </p>
+        </font>
       </solution>
     </p>
   </text>

@@ -1,0 +1,42 @@
+<problem display_name="Find a Solution Set" linenum="303" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let </p>
+    <table id="a0000000052" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} 1 &amp;  1 &amp;  0 &amp;  -1\\ 5 &amp;  6 &amp;  -1 &amp;  1 \end{array} \right].[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <p>
+ Find a list of vectors whose span is the set of solutions to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. </p>
+    <p>
+Enter the list of vectors below, separated by semicolons. For instance, to enter the list [mathjaxinline]\{ \left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right]; \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] \}[/mathjaxinline], type &lt;1,0,1&gt;;&lt;1,2,3&gt;. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Placeholder')" correct="Placeholder"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ We row reduce the matrix [mathjaxinline]A[/mathjaxinline]: <br/><br/>[mathjaxinline]\left[ \begin{array}{cccc} 1 &amp;  1 &amp;  0 &amp;  -1 \\ 5 &amp;  6 &amp;  -1 &amp;  1 \end{array} \right][/mathjaxinline] <br/><br/>Multiply the first row by -5, and add this to the second: <br/><br/>[mathjaxinline]\left[ \begin{array}{cccc} 1 &amp;  1 &amp;  0 &amp;  -1 \\ 0 &amp;  1 &amp;  -1 &amp;  6 \end{array} \right][/mathjaxinline] <br/><br/>Multiply the second row by -1, and add this to the first: <br/><br/>[mathjaxinline]\left[ \begin{array}{cccc} 1 &amp;  0 &amp;  1 &amp;  -7 \\ 0 &amp;  1 &amp;  -1 &amp;  6 \end{array} \right][/mathjaxinline] <br/><br/>Ordinarily, to solve a matrix equation, we would row reduce an augmented matrix, with the vector from the right hand side of the equation as the last column of the matrix. However, since the right hand side of the equation is the zero vector, row operations would have no effect on it. This tells us that if [mathjaxinline]A'[/mathjaxinline] is the row-reduced version of [mathjaxinline]A[/mathjaxinline], then the set of solutions to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] is the same as the set of solutions to [mathjaxinline]A'x = \mathbf{0}[/mathjaxinline].<br/>We have 2 free variables; call them [mathjaxinline]x_3[/mathjaxinline] and [mathjaxinline]x_4[/mathjaxinline]. We can get solutions to our equation by choosing any values we like for [mathjaxinline]x_3[/mathjaxinline] and [mathjaxinline]x_4[/mathjaxinline], substituting, and solving for [mathjaxinline]x_1[/mathjaxinline] and [mathjaxinline]x_2[/mathjaxinline]. We get [mathjaxinline]x_1 = -x_3 + 7x_4[/mathjaxinline] and [mathjaxinline]x_2 = x_3 - 6x_4[/mathjaxinline]. </p>
+          <p>
+Hence the general solution is </p>
+          <table id="a0000000053" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{c} x_1 \\ x_2 \\ x_3 \\ x_4 \end{array}\right] = \left[ \begin{array}{c} -x_3 + 7x_4 \\ x_3 - 6x_4 \\ x_3 \\ x_4 \end{array}\right] = x_3 \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array}\right] + x_4 \left[ \begin{array}{c} 7 \\ - 6 \\ 0 \\ 1 \end{array}\right],[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ for any [mathjaxinline]x_3,\x _4 \in \mathbb R[/mathjaxinline]. Hence the set of solutions is the span of [mathjaxinline]\left\{  \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array} \right]; \left[ \begin{array}{c} 7 \\ -6 \\ 0 \\ 1 \end{array} \right]\} .[/mathjaxinline] </p>
+          <p>
+(Note that this is not the only list that spans the solution set, but it is the one that is simplest to find.) </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

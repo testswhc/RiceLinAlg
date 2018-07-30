@@ -1,0 +1,289 @@
+
+
+\beginedxvertical{Page One}
+
+\beginedxtext{Preliminaries}
+
+
+At the end of this sequence, and after some practice, you should be able to:
+
+\begin{itemize}
+\item Understand the definition of linear transformation.  
+\item Be able to determine whether a function between vector spaces is a linear transformations. 
+\item Recognize basic properties of linear transformations.
+\end{itemize}
+
+For time budgeting purposes, this sequence has 4 videos totaling 14 minutes, 
+plus some questions.  
+
+% Remember, when you're doing the online learning sequences, you may seek help if you 
+% do not understand a video, but you should think about all of the questions 
+% entirely individually.  You have pledged to do so under the Honor Code!  
+
+
+\endedxtext
+
+\endedxvertical
+
+\beginedxvertical{Introduction}
+
+
+
+\doedxvideo{Functions}{nMrAAozL4F0}
+
+
+\beginedxproblem{System Consistency?}{\dpa1}
+
+Define the function $T$ by $T(\vecx) = A\vecx$, where $A = \left[ \begin{array}{ccc}
+6 & 5 & 3 \\
+2 & 4 &  23 
+\end{array} \right].$
+
+What is the domain of $T$?
+
+\edXabox{type="multichoice" expect="$\R^3$" options="$\R$","$\R^2$","$\R^3$"}
+
+What is the codomain of $T$?
+
+\edXabox{type="multichoice" expect="$\R^2$" options="$\R$","$\R^2$","$\R^3$"}
+
+\edXsolution{ 
+
+}
+
+\endedxproblem
+
+
+
+\endedxvertical
+
+
+
+
+
+\beginedxvertical{Defining Linear Transformations}
+
+\doedxvideo{Linear Transformations}{ASQadpJlL94}
+%example: rotations, non-example: something quadratic
+
+
+\endedxvertical
+
+
+
+
+
+
+
+
+
+\beginedxvertical{Linear Transformation Definition}
+
+\beginedxtext{Definition of Linear Transformation}
+
+Let $\F$ be a field.  A function $T: \F^n \rightarrow \F^m$ is a {\keyb{\bf linear transformation}}
+if both of the following properties hold:
+
+\begin{itemize}
+\item For any vectors $\vecv, \vecw$ in the domain, $T(\vecv + \vecw) = T(\vecv) + T(\vecw).$ 
+\item For any vector $\vecv$ in the domain, and any scalar $a\in \F$, $T(a\vecv) = aT(\vecv)$.    
+\end{itemize}
+
+Informally, if $T$ satisfies the first condition we say that ``$T$ respects vector addition", and 
+if $T$ satisfies the second condition we say that ``$T$ respects scalar multiplication."  
+
+\endedxtext
+
+\endedxvertical
+
+
+\beginedxvertical{Some Examples and Non-examples}
+
+
+
+\beginedxproblem{Linear Transformation? 1}{\dpa1}
+
+Define $T: \R^3 \rightarrow \R^3$ by $T(\vecv) = 2\vecv$.  
+
+Does $T$ respect vector addition?  That is, is $T(\vecv + \vecw) = T(\vecv) + T(\vecw)$ for all 
+vectors $\vecv,\vecw$?
+Try a couple of specific numerical examples if you're not sure.  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+Does $T$ respect scalar multiplication?  
+That is, is $T(a\vecv) = aT(\vecv)$ for all vectors $\vecv$ and scalars $a$?
+Try a couple of specific numerical examples if you're not sure.  
+
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+Is $T$ a linear transformation?
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Linear Transformation? 2}{\dpa1}
+
+Define $T: \R^2 \rightarrow \R^2$ by $T(\vecv) = \veco$.  
+
+Does $T$ respect vector addition?  That is, is $T(\vecv + \vecw) = T(\vecv) + T(\vecw)$ for all 
+vectors $\vecv,\vecw$?
+Try a couple of specific numerical examples if you're not sure.  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+Does $T$ respect scalar multiplication?  
+That is, is $T(a\vecv) = aT(\vecv)$ for all vectors $\vecv$ and scalars $a$?
+Try a couple of specific numerical examples if you're not sure.  
+
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+Is $T$ a linear transformation?
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+\beginedxproblem{Linear Transformation? 3}{\dpa1}
+
+Define $T: \R^2 \rightarrow \R^2$ by $T(\vecv) = \left[\begin{array}{c}
+4 \\
+0 
+\end{array} \right]$.  
+
+Does $T$ respect vector addition?  That is, is $T(\vecv + \vecw) = T(\vecv) + T(\vecw)$ for all 
+vectors $\vecv,\vecw$?
+Try a couple of specific numerical examples if you're not sure.  
+
+\edXabox{expect="No" options="Yes","No"}
+
+Does $T$ respect scalar multiplication?  
+That is, is $T(a\vecv) = aT(\vecv)$ for all vectors $\vecv$ and scalars $a$?
+Try a couple of specific numerical examples if you're not sure.  
+
+
+\edXabox{expect="No" options="Yes","No"}
+
+Is $T$ a linear transformation?
+
+\edXabox{expect="No" options="Yes","No"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+\endedxvertical
+
+
+\beginedxvertical{More Linear Transformations}
+
+\doedxvideo{A Linear Transformation outside of R^n}{Pyv9GXNYJ44}
+
+
+
+\beginedxproblem{Linear Transformation? 4}{\dpa1}
+
+Define $T: \mathbb{P} \rightarrow \R$ by $T(f) = f(1)$.  
+
+To get a sense of how $T$ works, let's do a quick example.  Suppose $f$ is the element of 
+$\mathbb{P}$ given by $f(t) = 2t^2 -5$.  
+What is $T(f)$?  
+
+\edXabox{type="numerical" expect="-3"}
+
+
+Does $T$ respect vector addition?  That is, is $T(f+g) = T(f) + T(g)$ for all 
+vectors $f,g \in \mathbb{P}$?
+Try a couple of specific numerical examples if you're not sure.  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+Does $T$ respect scalar multiplication?  
+That is, is $T(af) = aT(f)$ for all vectors $f \in \mathbb{P}$ and scalars $a$?
+Try a couple of specific numerical examples if you're not sure.  
+
+
+\edXabox{expect=Yes" options="Yes","No"}
+
+Is $T$ a linear transformation?
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+
+\endedxvertical
+
+
+\beginedxvertical{Linear Transformations Properties}
+
+\doedxvideo{Linear Transformation Properties}{oe4fgdPAsgA}
+
+
+
+
+\beginedxproblem{Linear Transformation Practice}{\dpa1}
+
+Suppose $T: \mathbb{P} \rightarrow \R^2$ is a linear transformation.  Let $f,g\mathbb{P}$ be
+the polynomials given by $f(t) = t^2$ and $g(t) = t$.  
+
+Suppose that $T(f) = \left[\begin{array}{c} 1 \\ 2  \end{array} \right]$
+and $T(g) = \left[\begin{array}{c} 2 \\ -1  \end{array} \right]$
+
+
+
+If $h \in \mathbb{P}$ is the polynomial given by $h(t) = -2t^2$, what must $T(h)$ be?
+
+\input{vectorentry.tex}
+
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[-2],[-4]]"}
+
+
+If $j \in \mathbb{P}$ is the polynomial given by $h(t) = 3t^2-t$, what must $T(j)$ be?
+
+\input{vectorentry.tex}
+
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[1],[7]]"}
+
+
+\edXsolution{ 
+}
+
+
+\endedxproblem
+
+
+
+\endedxvertical
+
+
+% \beginedxvertical{Linear Transformations Properties}
+
+% \doedxvideo{Matrix Multiplication as a Linear Transformation}{jMRJ-efZOJs}
+
+
+
+% \endedxvertical
+
+
+
+
+

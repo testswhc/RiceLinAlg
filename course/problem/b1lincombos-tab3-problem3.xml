@@ -1,4 +1,4 @@
-<problem display_name="Linear Combo 3" linenum="92" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Linear Combo 3" linenum="97" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]v_1 = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p>
@@ -12,7 +12,10 @@ Can you write [mathjaxinline]v_2[/mathjaxinline] as a linear combination of [mat
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ A "yes" answer here would imply that some scalar, multiplied by [mathjaxinline]v_1[/mathjaxinline], equals [mathjaxinline]v_2[/mathjaxinline]. If [mathjaxinline]c \cdot v_1 = v_2[/mathjaxinline], then each entry of [mathjaxinline]v_1[/mathjaxinline], times [mathjaxinline]c[/mathjaxinline], equals its respective entry in [mathjaxinline]v_2[/mathjaxinline]: <br/><br/>[mathjaxinline]c \cdot 2 = 1[/mathjaxinline], &#x2009;&#x2009; [mathjaxinline]c \cdot 3 = -1[/mathjaxinline], &#x2009;&#x2009; and [mathjaxinline]c \cdot 4 = 0[/mathjaxinline]. <br/><br/>We can see that this is inconsistent; for example, the third equation implies [mathjaxinline]c = 0[/mathjaxinline], and yet that would not satisfy the first or second equation.  </p>
+        </font>
       </solution>
     </p>
   </text>

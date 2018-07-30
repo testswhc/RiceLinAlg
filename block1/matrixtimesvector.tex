@@ -73,6 +73,36 @@ Let $y = \left[\begin{array}{c} 0 \\ 0 \\ 1 \\0
 \edXabox{expect="Placeholder" options="Placeholder"}
 
 \edXsolution{ 
+$Ax =
+1 \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + 
+2 \left[ \begin{array}{c} 1 \\ 3 \\ 0 \end{array} \right] +
+3  \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] +
+4 \left[ \begin{array}{c} 1 \\ -1  \\ 1 \end{array} \right] $ \\ \\
+
+$ = 
+\left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + 
+\left[ \begin{array}{c} 2 \\ 6 \\ 0 \end{array} \right] +
+\left[ \begin{array}{c} 0 \\ -3 \\ 9 \end{array} \right] +
+\left[ \begin{array}{c} 4 \\ -4  \\ 4 \end{array} \right] $ \\ \\
+
+$ = \left[ \begin{array}{c} 8 \\ -1 \\ 18 \end{array} \right] $ \\ \\
+	
+$Ay =
+0  \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + 
+0  \left[ \begin{array}{c} 1 \\ 3 \\ 0 \end{array} \right] +
+1  \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] +
+0  \left[ \begin{array}{c} 1 \\ -1  \\ 1 \end{array} \right] $ \\ \\
+
+$ = 
+\left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] + 
+\left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] +
+\left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] +
+\left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] $ \\ \\
+
+$ = \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] $ \\ \\
+
+Note the special nature of vector $y$. We can see that the product $Ay$ will equal the third column of $A$ for not just this matrix, but any matrix $A$ with four columns. 
+	
 }
 
 
@@ -82,7 +112,7 @@ Let $y = \left[\begin{array}{c} 0 \\ 0 \\ 1 \\0
 
 \beginedxproblem{Where does it live?}{\dpa1}
 
-Suppose $A$ is a $6\times 4$ matrix.  In order for the product $Ax$ to be defined, the vector $x$ must live
+Suppose $A$ is a $6\times 4$ real matrix.  In order for the product $Ax$ to be defined, the vector $x$ must live
 in what space?  
 
 
@@ -90,9 +120,14 @@ in what space?
 
 The resulting product $Ax$ will be an element of which space?  
 
-\edXabox{type="multichoice" expect="$\R^4$" options="$\R^4$","$\R^6$","Either of these is fine"}
+\edXabox{type="multichoice" expect="$\R^6$" options="$\R^4$","$\R^6$","Either of these is fine"}
 
-\edXsolution{  }
+\edXsolution{ 
+
+For the matrix-vector product to be defined, the number of columns of the first matrix must equal the number of entries in the vector (otherwise, the mechanics just don't work). Our matrix $A$ has 4 columns, so $x$ must then live in $\R^4$. \\
+Furthermore, if a matrix-vector product is defined, the result will have the same number of rows as the matrix. Our product $Ax$ will therefore  be a vector living in $\R^6$. 
+
+ }
 
 \endedxproblem
 
@@ -100,7 +135,7 @@ The resulting product $Ax$ will be an element of which space?
 
 \beginedxproblem{Products and Spans}{\dpa1}
 
-
+     
 
 True or false: If $A$ is an $m\times n$ matrix
 \[ A = \left[ \begin{array}{cccc} | & | & & | \\ 
@@ -111,7 +146,12 @@ v_1 & v_2 & \cdots & v_n \\
 \edXabox{expect="True" options="True","False"}
 
 
-\edXsolution{  }
+\edXsolution{ 
+
+The span of a list of vectors is the set of all linear combinations of those vectors. 
+$Ax$ is defined to be a linear combination of the columns of $A$, and so it is in the span of those columns. 
+
+ }
 
 \endedxproblem
 
@@ -125,7 +165,7 @@ v_1 & v_2 & \cdots & v_n \\
 
 \beginedxvertical{Matrix-Vector Equations}
 
-\doedxvideo{Matrix-Vector Equations}{???}
+\doedxvideo{Matrix-Vector Equations}{HeeVmk25QNU}
 
 
 \beginedxproblem{Solving Matrix-Vector Equations}{\dpa1}
@@ -137,9 +177,11 @@ Let  \[A = \left[ \begin{array}{cc} 1 & 2  \\
 and let $v = \left[\begin{array}{c} 3 \\ 2 \\ 16 
 \end{array} \right].$  The equation $Ax = v$ has exactly one solution -- what is it?  
 
-\input{vectorentry.tex}
+\input{vectorentry2.tex}
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[5],[-1]]"}
+
 
 Let $w = \left[\begin{array}{c} 3 \\ -4 \\ 7 
 \end{array} \right].$  With the same $A$ as above, how many solutions does $Ax = w$ have?
@@ -147,11 +189,27 @@ Let $w = \left[\begin{array}{c} 3 \\ -4 \\ 7
 \edXabox{expect="No solutions" options="Exactly one solution","More than one solution","No solutions"}
 
 \edXsolution{ 
+We will row reduce the augmented matrix: \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 1 & 3 & 2\\ 3 & -1 & 16 \end{array} \right] $ \\ \\
+Multiply the first row by -1, and add this to the second row: \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 0 & 1 & -1\\ 3 & -1 & 16 \end{array} \right] $ \\ \\
+Multiply the first row by -3, and add this to the third row: \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 0 & 1 & -1\\ 0 & -7 & 7 \end{array} \right] $ \\ \\
+Multiply the second row by 7, and add this to the third row: \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 0 & 1 & -1\\ 0 & 0 & 0 \end{array} \right] $ \\ \\
+Multiply the second row by -2, and add this to the first row: \\ \\
+$ \left[\begin{array}{cc:c} 1 & 0 & 5 \\ 0 & 1 & -1\\ 0 & 0 & 0 \end{array} \right] $ \\ \\
+Our vector $x$ is given by the last column. \\ \\
+We can perform the same steps to answer the second question:\\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 1 & 3 & -4\\ 3 & -1 & 7 \end{array} \right] $ \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 0 & 1 & -7\\ 3 & -1 & 7 \end{array} \right] $ \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 0 & 1 & -7\\ 0 & -7 & -2 \end{array} \right] $ \\ \\
+$ \left[\begin{array}{cc:c} 1 & 2 & 3 \\ 0 & 1 & -7\\ 0 & 0 & -51 \end{array} \right] $ \\ \\
+We can stop here. The last row of the augmented matrix implies the equation $x_1 \cdot 0 + x_2 \cdot 0 = -51$, which has no solution. Therefore, the original equation has no solution.
 }
 
 
 \endedxproblem
-
 
 
 \beginedxproblem{Another Matrix-Vector Equation}{\dpa1}
@@ -163,11 +221,16 @@ v_1 & v_2 & v_3 & v_4 \\
  | & | & | & | \end{array} \right]. \]
 Find a solution to the equation $Ax = v_2$.   
  
-\input{vectorentry.tex}
+\input{vectorentry2.tex}
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+\edXabox{type="custom" cfn="VectorEntry" expect="[[0],[1],[0],[0]]"}
+
 
 \edXsolution{ 
+We need not perform any row reduction here. Our desired result $v_2$ can be written \\ \\
+$0v_1 + 1 v_2 + 0 v_3 + 0 v_4$ ,  so \\ \\
+$x =  \left[ \begin{array}{c} 0 \\ 1 \\ 0 \\ 0 \end{array} \right] $ is a solution to the equation.
+
 }
 
 
@@ -181,16 +244,195 @@ Let $A$ be a $4\times 3$ matrix.  There is a specific
 vector $v$ for which you can conclude the equation $Ax = v$ has a solution, even without knowing
 anything else about $A$.  What is this vector $v$?  
 
-\input{vectorentry.tex}
+\input{vectorentry2.tex}
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+\edXabox{type="custom" cfn="VectorEntry" expect="[[0],[0],[0],[0]]"}
+
 
 \edXsolution{ 
+
+The equation $Ax = \veco$ always has at least one solution, namely $x = \veco$. Since $A$ has 4 columns, $v$ is the zero vector in $\R^4$ specifically.
+
 }
 
 
 \endedxproblem
 
+
+
+
+\endedxvertical
+
+
+
+
+
+\beginedxvertical{Solution Sets}
+
+\doedxvideo{Solving Ax = 0}{HeeVmk25QNU}
+
+
+
+
+\beginedxproblem{Non-trivial Solutions}{\dpa1}
+
+Let $A$ be a $6\times 4$ matrix.  The equation $Ax = \veco$ has the solution $x = \veco$, which we
+call the  {\keyb{\bf trivial solution.}}  If there are no solutions other than the trivial solutions,
+how many pivots must $A$ have when row-reduced?  
+
+
+\edXabox{type="numerical" expect="4"}
+
+\edXsolution{ 
+The vector $x$ lives in $\R^4$, so there are four variables in this equation.  If the trivial solution is
+the unique solution, then we cannot have free variables when the augmented
+matrix $\left[ \begin{array}{c:c} A & \veco \end{array} \right]$ is row-reduced.  That means $A$ will have
+a pivot in each of its four columns.  
+%  
+% Suppose matrix $A$ has fewer than 4 pivots when row-reduced. Since the number of free variables in an equation equals the number of variables minus the number of pivots, we would then have a positive number of free variables. \\ \\ 
+% e.g.: \\
+% $\left[ \begin{array}{cccc} 1&0&0&-2  \\  0&1&0&1 \\ 0&0&1&5 \\ 0&0&0&0 \\ 0&0&0&0 \\ 0&0&0&0    \end{array} \right] \cdot  \left[ \begin{array}{c} x_1 \\ x_2 \\ x_3 \\ x_4 \end{array} \right]  = \left[ \begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array} \right] $ \\ \\
+% Suppose this is our result upon row reducing our matrix $A$. It is convenient here to declare that $x_4$ is the free variable. We can choose any value we like for $x_4$, and substitute to solve for the others. (If we choose $x_4 = 0$, we get the trivial solution for $x$.) In this way, we would have infinitely many solutions to the equation. \\ \\
+% Since it is given that only the trivial solution exists, we therefore can't have fewer than 4 pivots, and since more than 4 is impossible in a 6 x 4 matrix, we must have exactly 4.  
+}
+
+\endedxproblem
+
+
+
+\beginedxproblem{Find a Solution Set}{\dpa1}
+
+
+Let  \[A = \left[ \begin{array}{cccc} 1 & 1 & 0 & -1\\ 
+5 & 6 & -1 & 1 \end{array} \right].\]  Find a list
+of vectors whose span is the set of solutions to $Ax = \veco$.  
+
+Enter the list of vectors below, separated by semicolons.  For instance, 
+to enter the list $\{\left[\begin{array}{c} 1 \\ 0 \\ 1
+\end{array} \right]; \left[\begin{array}{c} 1 \\ 2 \\ 3
+\end{array} \right] \}$, type <1,0,1>;<1,2,3>.  
+
+%requires new grading program
+
+\edXabox{expect="Placeholder" options="Placeholder"}
+
+\edXsolution{ 
+We row reduce the matrix $A$: \\ \\
+$\left[ \begin{array}{cccc} 1 & 1 & 0 & -1 \\  5 & 6 & -1 & 1 \end{array} \right]$ \\ \\
+Multiply the first row by -5, and add this to the second: \\ \\
+$\left[ \begin{array}{cccc} 1 & 1 & 0 & -1 \\  0 & 1 & -1 & 6 \end{array} \right]$ \\ \\
+Multiply the second row by -1, and add this to the first: \\ \\
+$\left[ \begin{array}{cccc} 1 & 0 & 1 & -7 \\  0 & 1 & -1 & 6 \end{array} \right]$ \\ \\
+Ordinarily, to solve a matrix equation, we would row reduce an augmented matrix, with the vector from the right hand side of the equation as the last column of the matrix. However, since the right hand side of the equation is the zero vector, row operations would have no effect on it. This tells us that if $A'$ is the row-reduced version of $A$, then the set of solutions to $Ax = \veco$ is the same as the set of solutions to $A'x = \veco$.\\
+We have 2 free variables; call them $x_3$ and $x_4$. We can get solutions to our equation by choosing any values we like for $x_3$ and $x_4$, substituting, and solving for $x_1$ and $x_2$.  We get
+$x_1 = -x_3 + 7x_4$ and $x_2 = x_3 - 6x_4$.  
+
+Hence the general solution is \[
+\left[ \begin{array}{c} x_1 \\ x_2 \\ x_3 \\ x_4 \end{array}\right] = 
+\left[ \begin{array}{c} -x_3 + 7x_4 \\ x_3 - 6x_4 \\ x_3 \\ x_4 \end{array}\right] = 
+x_3 \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array}\right] + 
+x_4 \left[ \begin{array}{c} 7 \\ - 6 \\ 0 \\ 1 \end{array}\right],
+\]
+for any $x_3,\x_4 \in \R$.  Hence the set of solutions is the span of  
+$\left\{ \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array} \right]; 
+\left[ \begin{array}{c} 7 \\ -6 \\ 0 \\ 1 \end{array} \right]\}.$
+
+(Note that this is not the only list that spans the solution set, but it is the one that is simplest to find.)
+
+}
+
+
+\endedxproblem
+
+
+
+
+\beginedxproblem{Other Solution Sets}{\dpa1}
+
+     
+
+True or false: If $S$ is the solution set to $Ax = \veco$, then the solution set to 
+$Ax = v$ must be a translation of $S$.  
+
+\edXabox{expect="False" options="True","False"}
+
+
+\edXsolution{ 
+
+If the solution set to $Ax = v$ is empty (i.e. if $v$ is not a linear combination of the columns of $A$), then it can't be a translation of $S$, which is sure to contain at least one solution (the zero vector). 
+
+If $Ax = v$ is consistent, then the solution set will be a translation of $S$.  
+
+ }
+
+\endedxproblem
+
+
+\endedxvertical
+
+
+
+
+
+\beginedxvertical{Spans and Matrix-Vector Equations}
+
+
+\beginedxproblem{Span as Noun}{\dpa1}
+
+     
+
+Let $A$ be a $m\times n$ matrix.  A vector $v$ is in the span of the columns of $A$ if and only 
+the equation $Ax = v$ has:  
+
+\edXabox{expect="at least one solution" options="no solutions","exactly one solution","at least one solution","more
+than one solution"}
+
+
+\edXsolution{ 
+The vector $v$ is in the span of the columns of $A$ if there is at least one way to write it as a linear
+combination of the columns of $A$, or in other words if there is at least one $x$ which satisfies $Ax = v$.  
+
+ }
+
+\endedxproblem
+
+\beginedxproblem{Span as Verb}{\dpa1}
+
+Let $A$ be a $m\times n$ matrix.  The columns of $A$ span $\R^m$ if and only if:
+
+\edXabox{type="multichoice" expect="For every vector $v\in \R^m$, the equation $Ax = v$ has at least one solution" options="For every vector $v\in \R^m$, the equation $Ax = v$ has exactly one solution","For every vector $v\in \R^m$, the equation $Ax = v$ has at least one solution","For every vector $v\in \R^m$, the equation $Ax = v$ has at most one solution","For some vector $v\in \R^m$, the equation $Ax = v$ has exactly one solution","For some vector $v\in \R^m$, the equation $Ax = v$ has at least one solution","For some vector $v\in \R^m$, the equation $Ax = v$ has at most one solution"}
+
+
+
+\edXsolution{ 
+In order for the columns of $A$ to span $\R^m$, every vector $v\in \R^m$ needs to be in the span of 
+the columns.  By the previous problem, this is equivalent to having at least one solution to 
+the equation $Ax=v$ for every vector $v \in \R^m$.  
+
+
+ }
+
+\endedxproblem
+
+
+\beginedxproblem{Always has Solutions}{\dpa1}
+
+In light of the previous problem, for 
+which sizes of matrix $A$ would it be impossible for $Ax = v$ to have at least one solution for every
+$v \in \R^5$?  Click all that apply.  
+
+\edXabox{type="oldmultichoice" expect="$5\times 2$","$5\times 4$" options="$5\times 2$","$5\times 4$","$5\times 5$","$5\times 7$"}
+
+
+
+\edXsolution{ 
+If there are fewer than 5 columns, then it is impossible for the columns of $A$ to span $\R^5$.  Therefore,
+by the previous problem, the equation $Ax=v$ cannot be consistent for every $v\in \R^5$; there must be some
+vectors $v\in \R^5$ for which it is inconsistent.  
+
+ }
+
+\endedxproblem
 
 \endedxvertical
 
@@ -224,11 +466,21 @@ $x = \left[\begin{array}{c}  2 \\ -1 \\4
 Find a solution to the equation $Ax = v+w$.  
 
  
-\input{vectorentry.tex}
+\input{vectorentry2.tex}
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[3],[1],[7]]"}
+
 
 \edXsolution{ 
+We are given: \\ \\
+$A \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] = v$ \\ \\
+$A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = w$ \\ \\
+Adding these equations, we get \\ \\
+$A t \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + A  \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = v + w$ \\ \\
+$A \Bigg( \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] \Bigg) = v + w$ \\ \\
+$A  \left[\begin{array}{c} 3 \\ 1 \\ 7 \end{array} \right] = v + w$ \\ \\
+
 }
 
 
@@ -243,6 +495,13 @@ equation $Ax = 4v$ be consistent?
 \edXabox{expect="Yes" options="Yes","No"}
 
 \edXsolution{ 
+We can show it with algebra.  Suppose $y$ is a solution to the equation $Ax = v$.  Then
+$Ay = v$, so $4Ay = 4v$ and $A (4y) = 4v.$  Thus $4y$ is a solution to the equation $Ax = 4v$.  
+
+% ...because it is generally true that $cA \cdot B = A \cdot cB$ for scalar $c$ and matrices $A$ and $B$.
+Intuitively, if we can produce $v$ by linear combination of the columns of $A$, we can simply scale the weights of the linear combination to produce any scaling $cv$ of $v$. 
+
+	
 }
 
 

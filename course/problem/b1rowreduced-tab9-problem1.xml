@@ -1,4 +1,4 @@
-<problem display_name="Real Numbers" linenum="398" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Real Numbers" linenum="466" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 If a matrix has real number entries, will the entries stay real numbers when you row-reduce it? </p>
@@ -10,7 +10,10 @@ If a matrix has real number entries, will the entries stay real numbers when you
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+Yes. The only acceptable row operations are multiplication by a scalar, addition, and subraction. In the case of a matrix with real entries, row-reducing will not require a non-real scalar. The sum, product and difference of two real numbers is also rational. Thus, under each of these operations, the entries will remain real.  </p>
+        </font>
       </solution>
     </p>
   </text>

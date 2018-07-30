@@ -1,0 +1,26 @@
+<problem display_name="Fill in the blank 3" linenum="324" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Putting the previous two statements together, what goes in the blank to make a correct statement? </p>
+    <p>
+A list of [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinline] cannot be linearly independent. </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> 3 vectors in [mathjaxinline]\mathbb R^5[/mathjaxinline]</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text> 5 vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline]</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">  </font>
+      </solution>
+    </p>
+  </text>
+</problem>

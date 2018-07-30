@@ -1,7 +1,7 @@
-<problem display_name="System Consistency?" linenum="179" tex_filename="./block1/linearequations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="System Consistency?" linenum="214" tex_filename="./block1/linearequations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-Is the system consistent? If so, does it have a unique solution? </p>
+Write down the equations corresponding to the last matrix. Is there a triple [mathjaxinline](x_1,x_2,x_3)[/mathjaxinline] that satisfies these equations (in other words, is the system consistent)? If so, is the solution unique? </p>
     <p>
       <multiplechoiceresponse>
         <choicegroup direction="vertical">
@@ -20,7 +20,10 @@ Is the system consistent? If so, does it have a unique solution? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+The equations are [mathjaxinline]x_1 = -1[/mathjaxinline], [mathjaxinline]x_2 - x_3 = 1[/mathjaxinline], and [mathjaxinline]0 = 0[/mathjaxinline]. There are many triples [mathjaxinline](x_1, x_2, x_3)[/mathjaxinline] that satisfy these equations; for instance, [mathjaxinline](-1, 1, 0)[/mathjaxinline] and [mathjaxinline](-1, 2, 1)[/mathjaxinline] are two solutions.  </p>
+        </font>
       </solution>
     </p>
   </text>

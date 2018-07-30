@@ -1,0 +1,20 @@
+<problem display_name="Span as Noun" linenum="380" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinline] matrix. A vector [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline] if and only the equation [mathjaxinline]Ax = v[/mathjaxinline] has: </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('no solutions','exactly one solution','at least one solution','more than one solution')" correct="at least one solution"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ The vector [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline] if there is at least one way to write it as a linear combination of the columns of [mathjaxinline]A[/mathjaxinline], or in other words if there is at least one [mathjaxinline]x[/mathjaxinline] which satisfies [mathjaxinline]Ax = v[/mathjaxinline]. </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

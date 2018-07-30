@@ -1,4 +1,4 @@
-<problem display_name="System Consistency?" linenum="120" tex_filename="./block1/linearequations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="System Consistency?" linenum="129" tex_filename="./block1/linearequations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Note the last row in your result, and think about what equation it represents. Is the system consistent? If so, does it have a unique solution? </p>
@@ -22,7 +22,7 @@ Note the last row in your result, and think about what equation it represents. I
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
- Test test test  </p>
+The last row represents [mathjaxinline]0x_1+0x_2=1[/mathjaxinline]. There are no values of [mathjaxinline]x_1[/mathjaxinline] and [mathjaxinline]x_2[/mathjaxinline] that satisfy this equation.  </p>
         </font>
       </solution>
     </p>

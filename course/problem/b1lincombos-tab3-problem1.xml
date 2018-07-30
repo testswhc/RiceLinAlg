@@ -23,7 +23,10 @@ Can you write the vector [mathjaxinline]x = \left[\begin{array}{c} -4 \\ -6 \\ -
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ We may notice that [mathjaxinline]x[/mathjaxinline] is a scalar multiple of [mathjaxinline]v_1[/mathjaxinline]: <br/><br/>[mathjaxinline]-2 \cdot \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right] = \left[\begin{array}{c} -4 \\ -6 \\ -8 \end{array} \right][/mathjaxinline] <br/>[mathjaxinline]-2 \cdot \, \, \, \, \, \,  v_1 \, \, \, \, \, = \, \, \, \, \, \, \, \, \, \, x[/mathjaxinline] <br/><br/>It follows immediately that [mathjaxinline]a_1=-2[/mathjaxinline],[mathjaxinline]a_2= 0[/mathjaxinline] is a solution. </p>
+        </font>
       </solution>
     </p>
   </text>

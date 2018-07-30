@@ -1,0 +1,98 @@
+<problem display_name="Products" linenum="57" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let </p>
+    <table id="a0000000048" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} 2 &amp;  1 &amp;  0 &amp;  1\\ 0 &amp;  3 &amp;  -1 &amp;  -1 \\ 5 &amp;  0 &amp;  3 &amp;  1 \end{array} \right] ,[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <p>
+ and let [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ax[/mathjaxinline]? </p>
+    <p>
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
+    <ul class="itemize">
+      <li>
+        <p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
+      </li>
+      <li>
+        <p>
+or, you can enter it as &lt;1,2,3&gt; </p>
+      </li>
+    </ul>
+    <p>
+Use decimals only. </p>
+    <script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script>
+    <p>
+      <optionresponse>
+        <optioninput options="('Placeholder')" correct="Placeholder"/>
+      </optionresponse>
+    </p>
+    <p>
+Let [mathjaxinline]y = \left[\begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ay[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Placeholder')" correct="Placeholder"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ [mathjaxinline]Ax = 1 \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + 2 \left[ \begin{array}{c} 1 \\ 3 \\ 0 \end{array} \right] + 3 \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] + 4 \left[ \begin{array}{c} 1 \\ -1 \\ 1 \end{array} \right][/mathjaxinline] <br/><br/></p>
+          <p>
+[mathjaxinline]= \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + \left[ \begin{array}{c} 2 \\ 6 \\ 0 \end{array} \right] + \left[ \begin{array}{c} 0 \\ -3 \\ 9 \end{array} \right] + \left[ \begin{array}{c} 4 \\ -4 \\ 4 \end{array} \right][/mathjaxinline] <br/><br/></p>
+          <p>
+[mathjaxinline]= \left[ \begin{array}{c} 8 \\ -1 \\ 18 \end{array} \right][/mathjaxinline] <br/><br/></p>
+          <p>
+[mathjaxinline]Ay = 0 \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + 0 \left[ \begin{array}{c} 1 \\ 3 \\ 0 \end{array} \right] + 1 \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] + 0 \left[ \begin{array}{c} 1 \\ -1 \\ 1 \end{array} \right][/mathjaxinline] <br/><br/></p>
+          <p>
+[mathjaxinline]= \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] + \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] + \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] + \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] <br/><br/></p>
+          <p>
+[mathjaxinline]= \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right][/mathjaxinline] <br/><br/></p>
+          <p>
+Note the special nature of vector [mathjaxinline]y[/mathjaxinline]. We can see that the product [mathjaxinline]Ay[/mathjaxinline] will equal the third column of [mathjaxinline]A[/mathjaxinline] for not just this matrix, but any matrix [mathjaxinline]A[/mathjaxinline] with four columns. </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

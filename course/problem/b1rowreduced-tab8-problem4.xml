@@ -1,4 +1,4 @@
-<problem display_name="Number of Free Variables" linenum="367" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Number of Free Variables" linenum="435" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 What is the strongest statement you can make about the number of free variables in a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix, when row-reduced? </p>
@@ -16,7 +16,10 @@ What is the strongest statement you can make about the number of free variables 
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+We know that a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix corresponds to a system of equations with 6 variables. By the previous problem, we know that there are at most 4 pivots. Thus, there are at least [mathjaxinline]6-4=2[/mathjaxinline] free variables. Now, we can have as many as 6 free variables (consider the zero matrix as a coefficient matrix). You can come up with examples of matrices with any number between 0 and 4 pivots, and thus any number between 2 and 6 free variables.  </p>
+        </font>
       </solution>
     </p>
   </text>

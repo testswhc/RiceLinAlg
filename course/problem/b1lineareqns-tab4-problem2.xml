@@ -1,4 +1,4 @@
-<problem display_name="Types of Row Operations" linenum="214" tex_filename="./block1/linearequations.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Types of Row Operations" linenum="261" tex_filename="./block1/linearequations.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 How many types of elementary row operations are there? </p>
@@ -12,7 +12,22 @@ How many types of elementary row operations are there? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <ul class="itemize">
+            <li>
+              <p>
+Switch two rows. </p>
+            </li>
+            <li>
+              <p>
+Multiply a row by a non-zero scalar. </p>
+            </li>
+            <li>
+              <p>
+Add a scalar multiple of one row to another row. (More precisely, replace one row with the sum of itself and a scalar multiple of a different row.) </p>
+            </li>
+          </ul>
+        </font>
       </solution>
     </p>
   </text>
