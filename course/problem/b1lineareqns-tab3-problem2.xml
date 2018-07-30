@@ -1,4 +1,4 @@
-<problem display_name="System Consistency?" linenum="127" tex_filename="./block1/linearequations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="System Consistency?" linenum="129" tex_filename="./block1/linearequations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Note the last row in your result, and think about what equation it represents. Is the system consistent? If so, does it have a unique solution? </p>

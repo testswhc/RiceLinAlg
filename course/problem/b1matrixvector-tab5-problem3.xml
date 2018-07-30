@@ -1,4 +1,4 @@
-<problem display_name="Other Solution Sets" linenum="274" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Other Solution Sets" linenum="350" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 True or false: If [mathjaxinline]S[/mathjaxinline] is the solution set to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline], then the solution set to [mathjaxinline]Ax = v[/mathjaxinline] must be a translation of [mathjaxinline]S[/mathjaxinline]. </p>
@@ -10,7 +10,12 @@ True or false: If [mathjaxinline]S[/mathjaxinline] is the solution set to [mathj
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+If the solution set to [mathjaxinline]Ax = v[/mathjaxinline] is empty (i.e. if [mathjaxinline]v[/mathjaxinline] is not a linear combination of the columns of [mathjaxinline]A[/mathjaxinline]), then it can't be a translation of [mathjaxinline]S[/mathjaxinline], which is sure to contain at least one solution (the zero vector). </p>
+          <p>
+If [mathjaxinline]Ax = v[/mathjaxinline] is consistent, then the solution set will be a translation of [mathjaxinline]S[/mathjaxinline]. </p>
+        </font>
       </solution>
     </p>
   </text>

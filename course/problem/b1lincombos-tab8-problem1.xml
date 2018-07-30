@@ -1,0 +1,46 @@
+<problem display_name="Spanning Question" linenum="405" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Consider the following vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline]. </p>
+    <center>
+      <img src="/static/images/c1s4lincombo2.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+    </center>
+    <p>
+Is [mathjaxinline]u[/mathjaxinline] an element of [mathjaxinline]\mathrm{Span}\{ v_1; v_2\}[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Is [mathjaxinline]w[/mathjaxinline] an element of [mathjaxinline]\mathrm{Span}\{ v_1; v_2\}[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Is every vector in [mathjaxinline]\mathbb R^2[/mathjaxinline] an element of [mathjaxinline]\mathrm{Span}\{ v_1; v_2\}[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Does the list [mathjaxinline]\{ v_1; v_2\}[/mathjaxinline] span [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ From the parallelogram grid, we can see that [mathjaxinline]u = -2v_1 - 2v_2[/mathjaxinline] and [mathjaxinline]w = 2v_1 + 4v_2[/mathjaxinline], so both are in the span of [mathjaxinline]\{ v_1;v_2\}[/mathjaxinline]. Indeed, every vector in [mathjaxinline]\mathbb R^2[/mathjaxinline] will be somewhere on this grid, and therefore will be in [mathjaxinline]\mathrm{Span}\{ v_1;v_2\}[/mathjaxinline]. Therefore this list spans [mathjaxinline]\mathbb R^2[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

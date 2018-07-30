@@ -46,7 +46,7 @@ what $A$ is.  Which question does not always have the same answer?
 
 \endedxproblem
 
-\doedxvideo{Linear Independence}{???}
+\doedxvideo{Linear Independence}{jQSgCZwOKQU}
 
 
 \beginedxproblem{Definition}{\dpa1}
@@ -74,12 +74,15 @@ $a_1, a_2, \ldots a_n$, all not zero, such that $a_1v_1 + a_2v_2 + \ldots a_nv_n
 \beginedxvertical{Linear Independence Problems}
 
 
-\beginedxtext{Definition of Linearly Independent}
+\beginedxtext{Definitions of Linearly Independent and Dependent}
 
-We say that a list of vectors $\{v_1; v_2; \ldots v_n\}$ in a vector space $V$ are 
+We say that a list of vectors $\{v_1; v_2; \ldots v_n\}$ in a vector space $V$ is 
 {\keyb{\bf linearly independent}} if the only way to pick scalars $a_1, a_2, \ldots a_n$ such that
 $a_1v_1 + a_2v_2 + \ldots + a_nv_n = \veco$ is if $a_1 = a_2 = \ldots = a_n = 0$.  
 
+A list of vectors $\{v_1; v_2; \ldots v_n\}$ in a vector space $V$ is 
+{\keyb{\bf linearly dependent}} if there are scalars $a_1, a_2, \ldots a_n$, not all zero, such that
+$a_1v_1 + a_2v_2 + \ldots + a_nv_n = \veco$.  
 
 
 \endedxtext
@@ -89,9 +92,9 @@ $a_1v_1 + a_2v_2 + \ldots + a_nv_n = \veco$ is if $a_1 = a_2 = \ldots = a_n = 0$
 
 Consider the list of vectors $\{v_1; v_2; v_3\}$, where
 
-\[v_1 = \left(\begin{array}{c} 1 \\ -1  \\ 0 \\ 0 \end{array} \right), 
-v_2 = \left(\begin{array}{c} 2 \\ -1  \\ 3 \\ 5 \end{array} \right),  
-v_3 = \left(\begin{array}{c} -3 \\ 3  \\ 0 \\ 0 \end{array} \right). \]
+\[v_1 = \left[\begin{array}{c} 1 \\ -1  \\ 0 \\ 0 \end{array} \right], 
+v_2 = \left[\begin{array}{c} 2 \\ -1  \\ 3 \\ 5 \end{array} \right],  
+v_3 = \left[\begin{array}{c} -3 \\ 3  \\ 0 \\ 0 \end{array} \right]. \]
 
 Can you find scalars $a_1, a_2, a_3$, not all zero, such that 
 $a_1v_1 + a_2 v_2 + a_3 v_3 = \veco$?  If so, enter an example of such scalars below.
@@ -119,9 +122,9 @@ Is the list $\{v_1; v_2; v_3\}$ linearly dependent or linearly independent?
 
 Consider the list of vectors $\{v_1; v_2; v_3\}$, where
 
-\[v_1 = \left(\begin{array}{c} 1 \\ -1  \\ 3 \\ 4 \\5 \end{array} \right), 
-v_2 = \left(\begin{array}{c} 0 \\ 0  \\ 0 \\ 0 \\ 0 \end{array} \right),  
-v_3 = \left(\begin{array}{c} -3 \\ 3  \\ 3 \\ 5 \\ 1 \end{array} \right). \]
+\[v_1 = \left[\begin{array}{c} 1 \\ -1  \\ 3 \\ 4 \\5 \end{array} \right], 
+v_2 = \left[\begin{array}{c} 0 \\ 0  \\ 0 \\ 0 \\ 0 \end{array} \right],  
+v_3 = \left[\begin{array}{c} -3 \\ 3  \\ 3 \\ 5 \\ 1 \end{array} \right]. \]
 
 Can you find scalars $a_1, a_2, a_3$, not all zero, such that 
 $a_1v_1 + a_2 v_2 + a_3 v_3 = \veco$?  If so, enter an example of such scalars below.
@@ -141,17 +144,18 @@ Is the list $\{v_1; v_2; v_3\}$ linearly dependent or linearly independent?
 \endedxproblem
 
 
+
+
 \beginedxproblem{List 3}{\dpa1}
 
 
-Consider the list of vectors $\{v_1; v_2\}$, where $v_1$ and $v_2$ are
-vectors in $\R^2$ as given in this picture:
-
-[picture]
+Let $\mathbb{P}$ be the vector space of polynomials with real coefficients in the variable $t$.  
+Consider the list of vectors $\{f; g\}$, where $f(t) = 1+t$ and $g(t) = t+t^2$ are
+vectors in $\mathbb{P}$.
 
 Can you find scalars $a_1, a_2$, not both zero, such that 
-$a_1v_1 + a_2 v_2 = \veco$?  If so, enter an example of such scalars below.
-If not, enter `No'.  
+$a_1f + a_2 g = \veco$?  If so, enter an example of such scalars below.
+If not, type `No'.  
 
 \edXabox{expect="Placeholder" options="Placeholder"}
 
@@ -167,29 +171,126 @@ Is the list $\{v_1; v_2\}$ linearly dependent or linearly independent?
 \endedxproblem
 
 
+
 \endedxvertical
 
 
-\beginedxvertical{Determining Linear Independence}
 
 
-
-\doedxvideo{Determining Linear Independence}{???}
-
+\beginedxvertical{Geometry of Linear Independence}
 
 
-\beginedxproblem{Independent? 1}{\dpa2}
-
-Is the following list of vectors linearly independent?
-
-\[v_1 = \left(\begin{array}{c} 1 \\ -1  \\ 3 \\ 4 \\5 \end{array} \right), 
-v_2 = \left(\begin{array}{c} 2 \\ 1  \\ 3 \\ 1 \\ 3 \end{array} \right),  
-v_3 = \left(\begin{array}{c} 3 \\ 3  \\ 3 \\ -2 \\ 1 \end{array} \right). \]
+\doedxvideo{Linear Independence for Small Sets}{Mw04hBXVtho}
 
 
-\edXabox{expect="Linearly dependent" options="Linearly dependent","Linearly independent"}
+\beginedxproblem{More Lists}{\dpa3}
+
+
+Consider the vectors $v_1, v_2, v_3 \in \R^2$ as given in this picture:
+
+
+\begin{center}
+\includesvg[300]{c1s6threevectors}   
+\end{center}
+
+Which of the following lists are linearly independent?  Click all that apply.  
+
+
+\edXabox{type="oldmultichoice" expect="$\{v_1\}$","$\{v_1;v_2\}$","$\{v_2;v_3\}$" options="$\{\veco\}$","$\{v_1\}$","$\{v_1;v_2\}$","$\{v_1;v_3\}$","$\{v_2;v_3\}$","$\{v_3;v_3\}$","$\{v_1; v_2; v_3\}$"}
+
+
+\edXsolution{ 
+}
+
 
 \endedxproblem
+
+
+
+\doedxvideo{A Proposition}{NMB5tCmE2UE}
+
+\endedxvertical
+
+\beginedxvertical{Linear Dependence Proposition}
+
+\beginedxtext{Linear Dependence Equivalent Condition}
+
+Let $\{v_1; v_2; \ldots v_n\}$ be vectors in a vector space $V$.  The list is linearly dependent
+if and only if one of the vectors in the list can be expressed as a linear combination of the other 
+vectors.  
+
+\endedxtext
+
+\beginedxproblem{True or False}{\dpa1}
+
+
+True or False: Suppose the list $\{v_1; v_2; v_3; v_4\}$ is linearly dependent.  Then $v_4$ must be in the 
+span of $\{v_1; v_2; v_3\}$.  
+
+\edXabox{expect="False" options="True","False"}
+
+
+\edXsolution{ 
+}
+
+
+\endedxproblem
+
+
+\endedxvertical
+
+\beginedxvertical{Determining Linear Independence in R^m}
+
+
+
+\beginedxproblem{Proving Linear Independence}{\dpa3}
+
+Let's think about the definition of linear independence.  
+Recall that a list of vectors $\{v_1; v_2; \ldots v_n\}$ in a vector space $V$ is 
+linearly independent if the only way to pick scalars $a_1, a_2, \ldots a_n$ such that
+$a_1v_1 + a_2v_2 + \ldots + a_nv_n = \veco$ is if $a_1 = a_2 = \ldots = a_n = 0$.  
+
+
+Which of the following would be a way to prove that a list $\{v_1; v_2; \ldots v_n\}$ is linearly independent?
+Check all that apply.
+
+\edXabox{type="oldmultichoice" expect="Assume that $a_i \ne 0$ for at least one $i$ from 1 to $n$, and show $a_1v_1 + a_2v_2 + \ldots + a_nv_n \ne \veco$","Assume that $a_1v_1 + a_2v_2 + \ldots + a_nv_n = \veco$, and show that $a_i = 0$ for all $i$ from 1 to $n$" options="Assume that $a_i = 0$ for all $i$ from 1 to $n$, and show $a_1v_1 + a_2v_2 + \ldots + a_nv_n = \veco$","Assume that $a_i \ne 0$ for all $i$ from 1 to $n$, and show $a_1v_1 + a_2v_2 + \ldots + a_nv_n \ne \veco$","Assume that $a_i \ne 0$ for at least one $i$ from 1 to $n$, and show $a_1v_1 + a_2v_2 + \ldots + a_nv_n \ne \veco$","Assume that $a_1v_1 + a_2v_2 + \ldots + a_nv_n = \veco$, and show that $a_i = 0$ for all $i$ from 1 to $n$","Assume that $a_1v_1 + a_2v_2 + \ldots + a_nv_n \ne \veco$, and show that $a_i \ne 0$ for at least one $i$ from 1 to $n$"}
+
+
+\edXsolution{ 
+}
+
+
+\endedxproblem
+
+
+
+\beginedxproblem{Non-trivial Solutions?}{\dpa2}
+
+Use row reduction to determine how many solutions the equation $Ax = \veco$ has, where 
+\[ A = \left[\begin{array}{ccc} 1 & 2 & 3 \\ -1 & 1 & 3 \\ 3 & 3 & 3 \\ 4 & 1 & -2 \\
+5  & 3 & 1 \end{array} \right]. \]
+
+\edXabox{expect="Infinitely many solutions" options="No solutions","Exactly one solution","Infinitely many
+solutions"}
+
+
+
+Is the list $\{v_1; v_2; v_3\}$ linearly independent, where the $v_i$ are given below?
+
+\[v_1 = \left[\begin{array}{c} 1 \\ -1  \\ 3 \\ 4 \\5 \end{array} \right], 
+v_2 = \left[\begin{array}{c} 2 \\ 1  \\ 3 \\ 1 \\ 3 \end{array} \right],  
+v_3 = \left[\begin{array}{c} 3 \\ 3  \\ 3 \\ -2 \\ 1 \end{array} \right]. \]
+
+
+\edXabox{expect="Linearly dependent" options="Linearly independent","Linearly dependent"}
+
+\edXsolution{ 
+}
+\endedxproblem
+
+
+
 
 
 \beginedxproblem{Fill in the blank}{\dpa2}
@@ -199,8 +300,10 @@ What goes in the blank to make a correct statement?
 If the matrix $A$ when row-reduced yields $\underline{\;\;\;\;\;\;\;\;\;\;}$, then
 the columns of $A$ cannot be linearly independent.  
 
-\edXabox{type="multichoice" expect="a free variable" options="a row of all zeros","a free variable","Either of the above"}
+\edXabox{type="multichoice" expect="a free variable" options="a row of all zeros","a free variable","either of the above"}
 
+\edXsolution{ 
+}
 \endedxproblem
 
 
@@ -213,27 +316,47 @@ there must be a free variable.
 
 \edXabox{type="multichoice" expect="more columns than rows" options="more rows than columns","more columns than rows"}
 
+\edXsolution{ 
+}
 \endedxproblem
 
 
 \beginedxproblem{Fill in the blank 3}{\dpa2}
 
-What goes in the blank to make a correct statement?
+Putting the previous two statements together, what goes in the blank to make a correct statement?  
 
 A list of  $\underline{\;\;\;\;\;\;\;\;\;\;}$ cannot be linearly independent.
 
-\edXabox{type="multichoice" expect="more columns than rows" options="3 vectors in $\R^5$","5 vectors in $\R^3$"}
+\edXabox{type="multichoice" expect="5 vectors in $\R^3$" options="3 vectors in $\R^5$","5 vectors in $\R^3$"}
 
+\edXsolution{ 
+}
 \endedxproblem
+
+
+\doedxvideo{Linear Independence in R^m}{???}
 
 
 \endedxvertical
 
-\beginedxvertical{The Chart}
+\beginedxvertical{Linearly Independent Lists in R^m}
 
 
+\beginedxtext{Linear Independence in R^m}
 
-\doedxvideo{Completing the Chart}{XXX}
+
+We have just shown the following results:  
+
+If $A$ is an $m\times n$ matrix with columns 
+$v_1, v_2, \ldots v_n \in \R^m$, then the list $\{v_1; v_2; \ldots v_n\}$ is linearly independent
+if and only if $A$ does not have a free variable.  
+
+If $n>m$, then any list of $n$ vectors in $\R^m$ must be linearly dependent.  
+
+
+\endedxtext
+
+
 
 
 
@@ -246,64 +369,73 @@ following lists of vectors that are linearly dependent.  Which three?
 
 
 \item
-$\left( \begin{array}{c} 1 \\ 1 \\ 1 \end{array} \right) , 
-\left( \begin{array}{c} 1 \\ 1 \\ 0 \end{array} \right) , 
-\left( \begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right) 
+$\left\{ \left[ \begin{array}{c} 1 \\ 1 \\ 1 \end{array} \right]; 
+\left[ \begin{array}{c} 1 \\ 1 \\ 0 \end{array} \right]; 
+\left[ \begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right] \right\}
 $
 
 
 \item
-$\left( \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right) , 
-\left( \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right) , 
-\left( \begin{array}{c} 2 \\ 5 \\ 7 \end{array} \right) $
+$\left\{\left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] ; 
+\left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] ; 
+\left[ \begin{array}{c} 2 \\ 5 \\ 7 \end{array} \right]\} $
 
 
 
 \item
-$\left( \begin{array}{c} 1 \\ 2 \\ 1 \\ 4\end{array} \right) , 
-\left( \begin{array}{c} 2 \\ 13 \\ 3 \\ 7\end{array} \right) , 
-\left( \begin{array}{c} 0 \\ 1 \\ 5 \\ -3\end{array} \right) , 
-\left( \begin{array}{c} 15 \\ -2 \\ 6 \\ 2\end{array} \right) , 
-\left( \begin{array}{c} 5 \\ 3 \\ 8 \\ 11\end{array} \right) $
+$\left\{\left[ \begin{array}{c} 1 \\ 2 \\ 1 \\ 4\end{array} \right] ; 
+\left[ \begin{array}{c} 2 \\ 13 \\ 3 \\ 7\end{array} \right] ; 
+\left[ \begin{array}{c} 0 \\ 1 \\ 5 \\ -3\end{array} \right] ;
+\left[ \begin{array}{c} 15 \\ -2 \\ 6 \\ 2\end{array} \right] ;
+\left[ \begin{array}{c} 5 \\ 3 \\ 8 \\ 11\end{array} \right] \right\} $
 
 
 
 \item
-$\left( \begin{array}{c} 2 \\ 3 \\ 5 \\ 7 \\ 11 \end{array} \right) ,
-\left( \begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \\5 \end{array} \right) , 
-\left( \begin{array}{c} 2 \\ 4 \\ 6 \\ 8 \\ 10 \end{array} \right) , 
-\left( \begin{array}{c} 1 \\ 1 \\ 2 \\ 3 \\ 5 \end{array} \right) $
+$\left\{\left[ \begin{array}{c} 2 \\ 3 \\ 5 \\ 7 \\ 11 \end{array} \right] ;
+\left[ \begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \\5 \end{array} \right] ;
+\left[ \begin{array}{c} 2 \\ 4 \\ 6 \\ 8 \\ 10 \end{array} \right] ; 
+\left[ \begin{array}{c} 1 \\ 1 \\ 2 \\ 3 \\ 5 \end{array} \right] \right\} $
 
 \item
-$\left( \begin{array}{c} 0 \\ 1 \\ 0\\ 2 \\ 3 \\ 0 \end{array} \right) , 
-\left( \begin{array}{c} 0 \\ 2 \\ 0\\ 7 \\ 1 \\ 0 \end{array} \right) , 
-\left( \begin{array}{c} 0 \\ 12 \\ 0\\ 23 \\ 35 \\ 0 \end{array} \right) $
+$\left\{\left[ \begin{array}{c} 0 \\ 1 \\ 0\\ 2 \\ 3 \\ 0 \end{array} \right] ;
+\left[ \begin{array}{c} 0 \\ 2 \\ 0\\ 7 \\ 1 \\ 0 \end{array} \right] ;
+\left[ \begin{array}{c} 0 \\ 12 \\ 0\\ 23 \\ 35 \\ 0 \end{array} \right] \right\}$
 
 
 \item
-$\left( \begin{array}{c} 1 \\ 1 \\ 1 \\ 1 \end{array} \right) , 
-\left( \begin{array}{c} 1 \\ 1 \\ 2 \\ 1 \end{array} \right) , 
-\left( \begin{array}{c} 1 \\ 1 \\ 1 \\ 2 \end{array} \right) 
+$\left\{\left[ \begin{array}{c} 1 \\ 1 \\ 1 \\ 1 \end{array} \right] ; 
+\left[ \begin{array}{c} 1 \\ 1 \\ 2 \\ 1 \end{array} \right] ;
+\left[ \begin{array}{c} 1 \\ 1 \\ 1 \\ 2 \end{array} \right] \right\}
 $
 \end{enumerate}
 
 
 
 
-\edXabox{type="oldmultichoice" expect="A" options="A","B","C","D","E","F"}
+\edXabox{type="oldmultichoice" expect="B","C","D" options="A","B","C","D","E","F"}
 
 \edXsolution{  }
 
 \endedxproblem
 
 
-
 \endedxvertical
 
 
-\beginedxvertical{One Last Proposition}
 
-\doedxvideo{Geometry and One Last Proposition}{XXX}
+
+
+
+
+\beginedxvertical{Summarizing}
+
+
+
+\doedxvideo{Completing the Chart}{Pumr8h6X7Gs}
+
+
+
 
 
 \endedxvertical

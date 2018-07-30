@@ -36,7 +36,7 @@ plus some questions.
 
 
 
-\beginedxproblem{Matrix entry}{\dpa1}
+\beginedxproblem{Matrix entry}{\dpa3}
 
 Consider the following system of linear equations:
 
@@ -45,22 +45,23 @@ Consider the following system of linear equations:
 2x_1 + 6x_2 & = & 3 
 \end{eqnarray*}
 
-\input{matrixentry.tex}
-
 
 
 Enter the coefficient matrix for the above system.  
 
-To enter a matrix, type...
 
+\input{matrixentry.tex}
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[10,30],[2,6]]"}
+
+% \edXabox{expect="Placeholder" options="Placeholder"}
 
 
 Enter the augmented matrix for the above system. 
 
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[10,30,10],[2,6,3]]"}
+
 
 \edXsolution{The coefficient matrix is given by \[ \left[ \begin{array}{cc}
 10 & 30 \\
@@ -109,9 +110,10 @@ Do the following row operations to the augmented matrix.  First, multiply the fi
 $\frac{1}{10}$.   Then, replace the second row with the second
 row minus twice the first row.  What matrix do you get as a result?  
 
-\input{matrixentry.tex}
+\input{matrixentry2.tex}
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[1,3,1],[0,0,1]]"}
+
 
 \edXsolution{The result is \[  \left[ \begin{array}{cc:c}
 1 & 3 & 1 \\
@@ -172,9 +174,11 @@ row minus twice the first row.  Next, replace the first row with the first
 row minus twice the second row.  Finally, replace the third row with the third
 row minus twice the second row.  What matrix do you get as a result?  
 
-\input{matrixentry.tex}
+\input{matrixentry2.tex}
 
-\edXabox{expect="Placeholder" options="Placeholder"}
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[1,0,0,-1],[0,1,-1,1],[0,0,0,0]]"}
+
 
 \edXsolution{ We begin with \[ \left[ \begin{array}{ccc:c}
 0&1&-1&1 \\

@@ -1,4 +1,20 @@
-<html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex">
+<html display_name="Preliminaries" linenum="5" tex_filename="./block1/lineartransformations.tex">
   <p>
-Coming soon! </p>
+At the end of this sequence, and after some practice, you should be able to: </p>
+  <ul class="itemize">
+    <li>
+      <p>
+Understand the definition of linear transformation. </p>
+    </li>
+    <li>
+      <p>
+Be able to determine whether a function between vector spaces is a linear transformations. </p>
+    </li>
+    <li>
+      <p>
+Recognize basic properties of linear transformations. </p>
+    </li>
+  </ul>
+  <p>
+For time budgeting purposes, this sequence has 4 videos totaling 14 minutes, plus some questions. </p>
 </html>

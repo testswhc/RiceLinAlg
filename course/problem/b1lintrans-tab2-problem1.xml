@@ -1,20 +1,20 @@
-<problem display_name="System Consistency?" linenum="27" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="System Consistency?" linenum="35" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-Define the function [mathjaxinline]T[/mathjaxinline] by [mathjaxinline]T(\mathbf{x}) = A\mathbf{x}[/mathjaxinline], where [mathjaxinline]A = \left[ \begin{array}{ccc} 6 &amp;  5 &amp;  3 \\ 2 &amp;  4 &amp;  23 \end{array} \right].[/mathjaxinline] </p>
+Define the function [mathjaxinline]T[/mathjaxinline] by [mathjaxinline]T(\vecx ) = A\vecx[/mathjaxinline], where [mathjaxinline]A = \left[ \begin{array}{ccc} 6 &amp;  5 &amp;  3 \\ 2 &amp;  4 &amp;  23 \end{array} \right].[/mathjaxinline] </p>
     <p>
 What is the domain of [mathjaxinline]T[/mathjaxinline]? </p>
     <p>
       <multiplechoiceresponse>
         <choicegroup direction="vertical">
           <choice correct="false" name="1">
-            <text> R</text>
+            <text> [mathjaxinline]\mathbb R[/mathjaxinline]</text>
           </choice>
           <choice correct="false" name="2">
-            <text> R^2</text>
+            <text> [mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
           </choice>
           <choice correct="true" name="3">
-            <text> R^3</text>
+            <text> [mathjaxinline]\mathbb R^3[/mathjaxinline]</text>
           </choice>
         </choicegroup>
       </multiplechoiceresponse>
@@ -25,13 +25,13 @@ What is the codomain of [mathjaxinline]T[/mathjaxinline]? </p>
       <multiplechoiceresponse>
         <choicegroup direction="vertical">
           <choice correct="false" name="1">
-            <text> R</text>
+            <text> [mathjaxinline]\mathbb R[/mathjaxinline]</text>
           </choice>
           <choice correct="true" name="2">
-            <text> R^2</text>
+            <text> [mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
           </choice>
           <choice correct="false" name="3">
-            <text> R^3</text>
+            <text> [mathjaxinline]\mathbb R^3[/mathjaxinline]</text>
           </choice>
         </choicegroup>
       </multiplechoiceresponse>

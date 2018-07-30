@@ -1,4 +1,4 @@
-<problem display_name="Non-trivial Solutions" linenum="233" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Non-trivial Solutions" linenum="277" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinline] matrix. The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has the solution [mathjaxinline]x = \mathbf{0}[/mathjaxinline], which we call the <span style="color:#99182C"><b class="bf">trivial solution.</b></span> If there are no solutions other than the trivial solutions, how many pivots must [mathjaxinline]A[/mathjaxinline] have when row-reduced? </p>
@@ -12,7 +12,10 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinlin
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ The vector [mathjaxinline]x[/mathjaxinline] lives in [mathjaxinline]\mathbb R^4[/mathjaxinline], so there are four variables in this equation. If the trivial solution is the unique solution, then we cannot have free variables when the augmented matrix [mathjaxinline]\left[ \begin{array}{c:c} A &amp;  \mathbf{0}\end{array} \right][/mathjaxinline] is row-reduced. That means [mathjaxinline]A[/mathjaxinline] will have a pivot in each of its four columns.  </p>
+        </font>
       </solution>
     </p>
   </text>

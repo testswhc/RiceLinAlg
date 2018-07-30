@@ -1,0 +1,218 @@
+{
+    "images_c1s3vectoraddsubtract.svg": {
+        "contentType": "image/svg+xml", 
+        "content_son": {
+            "category": "asset", 
+            "course": "TestMath355", 
+            "name": "images_c1s3vectoraddsubtract.svg", 
+            "org": "Rice_University", 
+            "revision": null, 
+            "run": "2017", 
+            "tag": "c4x"
+        }, 
+        "displayname": "c1s3vectoraddsubtract.svg", 
+        "filename": "asset-v1:Rice_University+TestMath355+2017+type@asset+block@images_c1s3vectoraddsubtract.svg", 
+        "import_path": "images/c1s3vectoraddsubtract.svg", 
+        "locked": false, 
+        "thumbnail_location": [
+            "c4x", 
+            "Rice_University", 
+            "TestMath355", 
+            "thumbnail", 
+            "images_c1s3vectoraddsubtract.svg", 
+            null
+        ]
+    }, 
+    "images_c1s3vectoraddsubtractold.svg": {
+        "contentType": "image/svg+xml", 
+        "content_son": {
+            "category": "asset", 
+            "course": "TestMath355", 
+            "name": "images_c1s3vectoraddsubtractold.svg", 
+            "org": "Rice_University", 
+            "revision": null, 
+            "run": "2017", 
+            "tag": "c4x"
+        }, 
+        "displayname": "c1s3vectoraddsubtractold.svg", 
+        "filename": "asset-v1:Rice_University+TestMath355+2017+type@asset+block@images_c1s3vectoraddsubtractold.svg", 
+        "import_path": "images/c1s3vectoraddsubtractold.svg", 
+        "locked": false, 
+        "thumbnail_location": [
+            "c4x", 
+            "Rice_University", 
+            "TestMath355", 
+            "thumbnail", 
+            "images_c1s3vectoraddsubtractold.svg", 
+            null
+        ]
+    }, 
+    "images_c1s4lincombo.svg": {
+        "contentType": "image/svg+xml", 
+        "content_son": {
+            "category": "asset", 
+            "course": "TestMath355", 
+            "name": "images_c1s4lincombo.svg", 
+            "org": "Rice_University", 
+            "revision": null, 
+            "run": "2017", 
+            "tag": "c4x"
+        }, 
+        "displayname": "c1s4lincombo.svg", 
+        "filename": "asset-v1:Rice_University+TestMath355+2017+type@asset+block@images_c1s4lincombo.svg", 
+        "import_path": "images/c1s4lincombo.svg", 
+        "locked": false, 
+        "thumbnail_location": [
+            "c4x", 
+            "Rice_University", 
+            "TestMath355", 
+            "thumbnail", 
+            "images_c1s4lincombo.svg", 
+            null
+        ]
+    }, 
+    "images_parallelogram_grid.svg": {
+        "contentType": "image/svg+xml", 
+        "content_son": {
+            "category": "asset", 
+            "course": "TestMath355", 
+            "name": "images_parallelogram_grid.svg", 
+            "org": "Rice_University", 
+            "revision": null, 
+            "run": "2017", 
+            "tag": "c4x"
+        }, 
+        "displayname": "parallelogram_grid.svg", 
+        "filename": "asset-v1:Rice_University+TestMath355+2017+type@asset+block@images_parallelogram_grid.svg", 
+        "import_path": "images/parallelogram_grid.svg", 
+        "locked": false, 
+        "thumbnail_location": [
+            "c4x", 
+            "Rice_University", 
+            "TestMath355", 
+            "thumbnail", 
+            "images_parallelogram_grid.svg", 
+            null
+        ]
+    }, 
+    "images_placeholderimage.svg": {
+        "contentType": "image/svg+xml", 
+        "content_son": {
+            "category": "asset", 
+            "course": "TestMath355", 
+            "name": "images_placeholderimage.svg", 
+            "org": "Rice_University", 
+            "revision": null, 
+            "run": "2017", 
+            "tag": "c4x"
+        }, 
+        "displayname": "placeholderimage.svg", 
+        "filename": "asset-v1:Rice_University+TestMath355+2017+type@asset+block@images_placeholderimage.svg", 
+        "import_path": "images/placeholderimage.svg", 
+        "locked": false, 
+        "thumbnail_location": [
+            "c4x", 
+            "Rice_University", 
+            "TestMath355", 
+            "thumbnail", 
+            "images_placeholderimage.svg", 
+            null
+        ]
+    }, 
+    "images_vectors002.svg": {
+        "contentType": "image/svg+xml", 
+        "content_son": {
+            "category": "asset", 
+            "course": "TestMath355", 
+            "name": "images_vectors002.svg", 
+            "org": "Rice_University", 
+            "revision": null, 
+            "run": "2017", 
+            "tag": "c4x"
+        }, 
+        "displayname": "vectors002.svg", 
+        "filename": "asset-v1:Rice_University+TestMath355+2017+type@asset+block@images_vectors002.svg", 
+        "import_path": "images/vectors002.svg", 
+        "locked": false, 
+        "thumbnail_location": [
+            "c4x", 
+            "Rice_University", 
+            "TestMath355", 
+            "thumbnail", 
+            "images_vectors002.svg", 
+            null
+        ]
+    }, 
+    "images_vectors002new.svg": {
+        "contentType": "image/svg+xml", 
+        "content_son": {
+            "category": "asset", 
+            "course": "TestMath355", 
+            "name": "images_vectors002new.svg", 
+            "org": "Rice_University", 
+            "revision": null, 
+            "run": "2017", 
+            "tag": "c4x"
+        }, 
+        "displayname": "vectors002new.svg", 
+        "filename": "asset-v1:Rice_University+TestMath355+2017+type@asset+block@images_vectors002new.svg", 
+        "import_path": "images/vectors002new.svg", 
+        "locked": false, 
+        "thumbnail_location": [
+            "c4x", 
+            "Rice_University", 
+            "TestMath355", 
+            "thumbnail", 
+            "images_vectors002new.svg", 
+            null
+        ]
+    }, 
+    "images_vectors002old.svg": {
+        "contentType": "image/svg+xml", 
+        "content_son": {
+            "category": "asset", 
+            "course": "TestMath355", 
+            "name": "images_vectors002old.svg", 
+            "org": "Rice_University", 
+            "revision": null, 
+            "run": "2017", 
+            "tag": "c4x"
+        }, 
+        "displayname": "vectors002old.svg", 
+        "filename": "asset-v1:Rice_University+TestMath355+2017+type@asset+block@images_vectors002old.svg", 
+        "import_path": "images/vectors002old.svg", 
+        "locked": false, 
+        "thumbnail_location": [
+            "c4x", 
+            "Rice_University", 
+            "TestMath355", 
+            "thumbnail", 
+            "images_vectors002old.svg", 
+            null
+        ]
+    }, 
+    "rice-logo.jpg": {
+        "contentType": "image/jpeg", 
+        "content_son": {
+            "category": "asset", 
+            "course": "TestMath355", 
+            "name": "rice-logo.jpg", 
+            "org": "Rice_University", 
+            "revision": null, 
+            "run": "2017", 
+            "tag": "c4x"
+        }, 
+        "displayname": "rice-logo.jpg", 
+        "filename": "asset-v1:Rice_University+TestMath355+2017+type@asset+block@rice-logo.jpg", 
+        "import_path": "rice-logo.jpg", 
+        "locked": false, 
+        "thumbnail_location": [
+            "c4x", 
+            "Rice_University", 
+            "TestMath355", 
+            "thumbnail", 
+            "rice-logo.jpg", 
+            null
+        ]
+    }
+}
