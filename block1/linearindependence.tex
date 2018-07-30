@@ -111,6 +111,8 @@ Is the list $\{v_1; v_2; v_3\}$ linearly dependent or linearly independent?
 
 
 \edXsolution{ 
+Notice that $v_2$ is the only vector in the set with non-zero entries in the third and fourth positions; a zero combination of these vectors therefore requires $a_2 = 0$. Then, notice that $-3 \cdot v_1 = v_3$, so that $3 \cdot v_1 + 1 \cdot v_3 = \veco$. We have that $a_1 = 3$, $a_2 = 0$, and $a_3 = 1$ is a possible set of scalars that satisfies the equation. It follows that any scalar multiple of that triple is also a set that satisfies the equation. Furthermore, it is easy to show that the coefficients can only be scalar multiples of that triple. 
+The set $\{v_1; v_2; v_3\}$ is linearly dependent because, as we've just seen, there exist sets of coefficients, not all zero, that make the above equation true. 
 }
 
 
@@ -138,7 +140,8 @@ Is the list $\{v_1; v_2; v_3\}$ linearly dependent or linearly independent?
 
 \edXabox{expect="Linearly dependent" options="Linearly dependent","Linearly independent"}
 
-\edXsolution{ 
+\edXsolution{ The first answer is immediately "yes" because we have the zero vector in our set; we can choose any non-zero value for $a_2$, and with $a_1 = 0$ and $a_3 = 0$, the above equation will still be true. We can also show that only triples of this form ($a_1$ and $a_3$ are $0$, $a_2$ is any value) will make the above equation true; since $v_1$ and $v_3$ are not scalar multiples of each other, they can't add to zero in a non-zero combination (i.e. $v_1$ and $v_3$ are linearly independent of each other).
+The set $\{v_1; v_2; v_3\}$, however, is a linearly dependent set, precisely because $v_2 = \veco$.
 }
 
 
