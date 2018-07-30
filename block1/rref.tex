@@ -59,12 +59,24 @@ A matrix is in Row-Reduced Echelon Form (RREF) if it satisfies the following con
 
 Which of the following matrices are in RREF?  Click all that apply.  
 
-%please fill in!
+\edXabox{type="oldmultichoice" 
+expect="$\left[ \begin{array}{ccccc} 1 & 9 & 8 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 
+ \end{array} \right]$" 
+ options="$\left[ \begin{array}{ccccc} 1 & 9 & 8 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 
+ \end{array} \right]$",
+ "$\left[ \begin{array}{ccccc} 1 & 0 & 3 & 4 & 5 \\
+0 & 1 & 3 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 1 
+ \end{array} \right]$"}
 
-
-\edXabox{type="oldmultichoice" expect="mx1" options="mx1","mx2"}
-
-\edXsolution{  }
+\edXsolution{The second matrix violates this part of the definition of RREF: "Each pivot is the only non-zero entry in its column." }
 
 \endedxproblem
 
@@ -271,7 +283,7 @@ What can you conclude about the original system of equations?
 \edXabox{type="multichoice" expect="The system is inconsistent" options="The system is consistent and has a unique solution","The system is consistent but has more than one solution","The system is inconsistent"}
 
 \edXsolution{The second row corresponds to an equation of the form $0x+0y=1$, which has no solutions.  Thus, the original system will also have no solutions.  This is true even though the second column has no pivot
-and is therefore a free variable.  
+and therefore represents a free variable.  
 }
 
 \endedxproblem
@@ -470,7 +482,7 @@ row-reduce it?
 
 \edXabox{expect="Yes" options="Yes","Not necessarily"}
 
-\edXsolution{Yes.  The only acceptable row operations are multiplication by a scalar, addition, and subraction.  In the case of a matrix with real entries, row-reducing will not require a non-real scalar.   The sum, product and difference of two real numbers is also rational.  Thus, under each of these operations, the entries will remain real.
+\edXsolution{Yes.  The only acceptable row operations are multiplication by a scalar, addition, and subraction.  In the case of a matrix with real entries, row-reducing will not require a non-real scalar.   The sum, product and difference of two real numbers is also real.  Thus, under each of these operations, the entries will remain real.
 }
 
 \endedxproblem
