@@ -29,23 +29,67 @@ plus some questions.
 
 
 
-\doedxvideo{Functions}{nMrAAozL4F0}
+\doedxvideo{Matrix Multiplication as Linear Transformation}{jMRJ-efZOJs}
 
 
-\beginedxproblem{System Consistency?}{\dpa1}
+\beginedxproblem{Where does it go?}{\dpa1}
 
-Define the function $T$ by $T(\vecx) = A\vecx$, where $A = \left[ \begin{array}{ccc}
-6 & 5 & 3 \\
-2 & 4 &  23 
-\end{array} \right].$
+Consider the following image.  
 
-What is the domain of $T$?
+\begin{center}
+\includesvg[400]{c1s8imageunderlintrans} 
+\end{center}
 
-\edXabox{type="multichoice" expect="$\R^3$" options="$\R$","$\R^2$","$\R^3$"}
+When we apply the linear transformation $T: \R^2 \rightarrow \R^2$ given by $T(x) = \left[ \begin{array}{cc}
+-1 & 0 \\ 0 & 1 \end{array} \right]$ to the image, which picture is the result?
 
-What is the codomain of $T$?
+\begin{center}
+\includesvg[400]{c1s8imageunderlintransAB} 
+\\
+\includesvg[400]{c1s8imageunderlintransCD} 
 
-\edXabox{type="multichoice" expect="$\R^2$" options="$\R$","$\R^2$","$\R^3$"}
+\end{center}
+
+\edXabox{expect="D" options="A","B","C","D"}
+
+
+% When we apply the linear transformation $T: \R^2 \rightarrow \R^2$ given by $T(x) = \left[ \begin{array}{cc}
+% -1 & 0 \\ 0 & -1 \end{array} \right]$ to the image, which picture is the result?
+
+% \edXabox{expect="A" options="A","B","C","D"}
+
+
+\edXsolution{ 
+
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Where does it go? 2}{\dpa1}
+
+Consider the following image.  
+
+\begin{center}
+\includesvg[400]{c1s8imageunderlintrans} 
+\end{center}
+
+When we apply the linear transformation $T: \R^2 \rightarrow \R^2$ given by $T(x) = \left[ \begin{array}{cc}
+0.5 & 0 \\ 0 & 2 \end{array} \right]$ to the image, which picture is the result?
+
+\begin{center}
+\includesvg[400]{c1s8imageunderlintransAB2} 
+
+\end{center}
+
+\edXabox{expect="B" options="A","B"}
+
+
+% When we apply the linear transformation $T: \R^2 \rightarrow \R^2$ given by $T(x) = \left[ \begin{array}{cc}
+% -1 & 0 \\ 0 & -1 \end{array} \right]$ to the image, which picture is the result?
+
+% \edXabox{expect="A" options="A","B","C","D"}
+
 
 \edXsolution{ 
 
@@ -55,216 +99,244 @@ What is the codomain of $T$?
 
 
 
+
 \endedxvertical
 
 
 
 
 
-\beginedxvertical{Defining Linear Transformations}
+\beginedxvertical{General Matrix Multiplication}
 
-\doedxvideo{Linear Transformations}{ASQadpJlL94}
+\doedxvideo{Multiplication by a General Matrix}{R1uBwxvKIXE}
 %example: rotations, non-example: something quadratic
 
 
+
+
+\beginedxproblem{The E Vectors}{\dpa1}
+
+Suppose $T: \R^4\rightarrow \R^3$ is given by 
+$T(x) = Ax$ where  
+\[ A = \left[ \begin{array}{cc} 1 & 3 & 5 & 7 \\ 2 & 0 & -1 & -1 \\ 1 & 1 & 3  & -2 \end{array} \right].\]
+
+What is $T(e_3)$?  
+
+\input{vectorentry.tex}
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[5],[-1],[3]]"}
+
+
+\edXsolution{ 
+
+}
+
+
+\endedxproblem
+
+\beginedxproblem{Find a Matrix}{\dpa1}
+
+Suppose the function $T: \R^3\rightarrow \R^2$ is given by 
+\[T\left( \left[ \begin{array}{c} a_1 \\ a_2\\ a_3 \end{array} \right] \right) =\left[ \begin{array}{c} 2a_1-a_3 \\ -a_1 + a_2 \end{array} \right] \] 
+for all vectors $\left[ \begin{array}{c} a_1 \\ a_2\\ a_3 \end{array} \right]  \in \R^3$.  
+
+For what matrix $A$ is $T(x) = Ax$ for all $x \in \R^3$?  
+
+\input{matrixentry.tex}
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[2,0,-1],[-1,1,0]]"}
+
+Is $T$ a linear transformation?  
+
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+\edXsolution{ 
+
+}
+
+
+\endedxproblem
+
+
 \endedxvertical
 
 
 
 
 
+\beginedxvertical{Matrix for Rotation}
+
+
+\beginedxproblem{Rotation}{\dpa2}
+
+For the next two problems, we will be considering the linear transformation $T: \R^2 \rightarrow \R^2$
+given by rotation counterclockwise by $45^\circ$.  
+
+
+\begin{center}
+\includesvg[400]{c1s8rotation} 
+
+\end{center}
+
+From the $45^\circ-45^\circ-9045^\circ$ triangles in the diagram, we can find that  
+$T(e_1) = \left[ \begin{array}{c} \frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right] \approx
+\left[ \begin{array}{c} 0.707 \\ 0.707 \end{array} \right]$ and
+$T(e_2) = \left[ \begin{array}{c} -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right] \approx
+\left[ \begin{array}{c} -0.707 \\ 0.707  \end{array} \right].$   
+
+What is $T\left( \left[ \begin{array}{c} 4 \\ 0 \end{array} \right] \right)$?  (Remember to use decimals only, to within two decimal places.)  
+
+\input{vectorentry2.tex}
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[2.83],[2.83]]"}
+
+
+\edXsolution{ 
+
+}
+
+
+\endedxproblem
+
+\beginedxproblem{Rotation 2}{\dpa2}
+
+
+What is $T\left( \left[ \begin{array}{c} 4 \\ 1 \end{array} \right] \right)$?  
+
+\input{vectorentry2.tex}
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[2.12],[3.54]]"}
+
+
+\edXsolution{ 
+
+}
+
+
+\endedxproblem
+
+
+\doedxvideo{Matrix for Rotation by 45 Degrees}{TN4eIiSNzcA}
+
+\beginedxproblem{Rotation 3}{\dpa2}
+
+
+If $T$ is still rotation counterclockwise by $45^\circ$, 
+what is $T\left( \left[ \begin{array}{c} 3\sqrt{2} \\ -\sqrt{2} \end{array} \right] \right)$?  
+
+\input{vectorentry2.tex}
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[4],[2]]"}
+
+
+\edXsolution{ 
+
+}
+
+
+\endedxproblem
+
+
+\endedxvertical
 
 
 
 
-\beginedxvertical{Linear Transformation Definition}
 
-\beginedxtext{Definition of Linear Transformation}
+\beginedxvertical{Standard Matrix}
 
-Let $\F$ be a field.  A function $T: \F^n \rightarrow \F^m$ is a {\keyb{\bf linear transformation}}
-if both of the following properties hold:
 
-\begin{itemize}
-\item For any vectors $\vecv, \vecw$ in the domain, $T(\vecv + \vecw) = T(\vecv) + T(\vecw).$ 
-\item For any vector $\vecv$ in the domain, and any scalar $a\in \F$, $T(a\vecv) = aT(\vecv)$.    
-\end{itemize}
 
-Informally, if $T$ satisfies the first condition we say that ``$T$ respects vector addition", and 
-if $T$ satisfies the second condition we say that ``$T$ respects scalar multiplication."  
+\doedxvideo{The Standard Matrix for a Linear Transformation}{aPUQJWsg9Vw}
+
+\beginedxtext{Standard Matrix}
+
+If $T: \R^n \rightarrow \R^m$ is a linear transformation, then there is a unique $m \times n$ matrix
+$A$ such that $T(x) = Ax$ for all $x\in \R^n$.  This matrix $A$
+is called the {\keyb{\bf standard
+matrix}} for $T$, and must be given by the formula
+\[A =  \left[ \begin{array}{cccc} | & | & & | \\ 
+T(e_1) & T(e_2) & \cdots & T(e_n) \\
+ | & | & & | \end{array} \right], \]
+ where $e_i \in \R^n$ is the vector whose $i$th entry equals 1, and all of whose other entries are 0.
 
 \endedxtext
 
 \endedxvertical
 
 
-\beginedxvertical{Some Examples and Non-examples}
 
 
 
-\beginedxproblem{Linear Transformation? 1}{\dpa1}
+\beginedxvertical{Standard Matrix Questions}
 
-Define $T: \R^3 \rightarrow \R^3$ by $T(\vecv) = 2\vecv$.  
-
-Does $T$ respect vector addition?  That is, is $T(\vecv + \vecw) = T(\vecv) + T(\vecw)$ for all 
-vectors $\vecv,\vecw$?
-Try a couple of specific numerical examples if you're not sure.  
-
-\edXabox{expect="Yes" options="Yes","No"}
-
-Does $T$ respect scalar multiplication?  
-That is, is $T(a\vecv) = aT(\vecv)$ for all vectors $\vecv$ and scalars $a$?
-Try a couple of specific numerical examples if you're not sure.  
+\beginedxproblem{True or False}{\dpa1}
 
 
-\edXabox{expect="Yes" options="Yes","No"}
+True or false: Every linear transformation from a vector space $V$ to a vector space $W$
+has a standard matrix.  
+ 
+\edXabox{expect="False" options="True","False"}
 
-Is $T$ a linear transformation?
-
-\edXabox{expect="Yes" options="Yes","No"}
 
 \edXsolution{ 
 }
+
 
 \endedxproblem
 
 
-\beginedxproblem{Linear Transformation? 2}{\dpa1}
+\beginedxproblem{Standard Matrix 1}{\dpa1}
 
-Define $T: \R^2 \rightarrow \R^2$ by $T(\vecv) = \veco$.  
+For all $v\in \R^2$, let $T(v)$ be the reflection of $v$ across the horizontal axis of $\R^2$.  
+$T$ is a linear transformation from $\R^2$ to $\R^2$.  What is its standard matrix?
+ 
+\input{matrixentry2.tex}
 
-Does $T$ respect vector addition?  That is, is $T(\vecv + \vecw) = T(\vecv) + T(\vecw)$ for all 
-vectors $\vecv,\vecw$?
-Try a couple of specific numerical examples if you're not sure.  
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[1,0],[0,-1]]"}
 
-\edXabox{expect="Yes" options="Yes","No"}
-
-Does $T$ respect scalar multiplication?  
-That is, is $T(a\vecv) = aT(\vecv)$ for all vectors $\vecv$ and scalars $a$?
-Try a couple of specific numerical examples if you're not sure.  
-
-
-\edXabox{expect="Yes" options="Yes","No"}
-
-Is $T$ a linear transformation?
-
-\edXabox{expect="Yes" options="Yes","No"}
 
 \edXsolution{ 
+
 }
 
-\endedxproblem
-
-\beginedxproblem{Linear Transformation? 3}{\dpa1}
-
-Define $T: \R^2 \rightarrow \R^2$ by $T(\vecv) = \left[\begin{array}{c}
-4 \\
-0 
-\end{array} \right]$.  
-
-Does $T$ respect vector addition?  That is, is $T(\vecv + \vecw) = T(\vecv) + T(\vecw)$ for all 
-vectors $\vecv,\vecw$?
-Try a couple of specific numerical examples if you're not sure.  
-
-\edXabox{expect="No" options="Yes","No"}
-
-Does $T$ respect scalar multiplication?  
-That is, is $T(a\vecv) = aT(\vecv)$ for all vectors $\vecv$ and scalars $a$?
-Try a couple of specific numerical examples if you're not sure.  
-
-
-\edXabox{expect="No" options="Yes","No"}
-
-Is $T$ a linear transformation?
-
-\edXabox{expect="No" options="Yes","No"}
-
-\edXsolution{ 
-}
 
 \endedxproblem
 
 
-\endedxvertical
+\beginedxproblem{Standard Matrix 2}{\dpa1}
 
+For all $v\in \R^2$, let $S(v)$ be the vector obtained by reflecting $v$ across the diagonal line $x=y$ 
+and 
+then rotating the result by $90^\circ$ counterclockwise.  
+$S$ is a linear transformation from $\R^2$ to $\R^2$.  What is its standard matrix?
+ 
+\input{matrixentry2.tex}
 
-\beginedxvertical{More Linear Transformations}
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[-1,0],[0,1]]"}
 
-\doedxvideo{A Linear Transformation outside of R^n}{Pyv9GXNYJ44}
-
-
-
-\beginedxproblem{Linear Transformation? 4}{\dpa1}
-
-Define $T: \mathbb{P} \rightarrow \R$ by $T(f) = f(1)$.  
-
-To get a sense of how $T$ works, let's do a quick example.  Suppose $f$ is the element of 
-$\mathbb{P}$ given by $f(t) = 2t^2 -5$.  
-What is $T(f)$?  
-
-\edXabox{type="numerical" expect="-3"}
-
-
-Does $T$ respect vector addition?  That is, is $T(f+g) = T(f) + T(g)$ for all 
-vectors $f,g \in \mathbb{P}$?
-Try a couple of specific numerical examples if you're not sure.  
-
-\edXabox{expect="Yes" options="Yes","No"}
-
-Does $T$ respect scalar multiplication?  
-That is, is $T(af) = aT(f)$ for all vectors $f \in \mathbb{P}$ and scalars $a$?
-Try a couple of specific numerical examples if you're not sure.  
-
-
-\edXabox{expect=Yes" options="Yes","No"}
-
-Is $T$ a linear transformation?
-
-\edXabox{expect="Yes" options="Yes","No"}
 
 \edXsolution{ 
+
 }
+
 
 \endedxproblem
 
 
 
-\endedxvertical
+\beginedxproblem{How many linear transformations?}{\dpa1}
 
+How many linear transformations $T:\R^4 \rightarrow \R^2$ satisfy 
+the conditions
+$T(e_1) = T(e_3) =  \left[\begin{array}{c} 2 \\ 3   \end{array} \right]$
+and $T(e_4) = \veco$?  
 
-\beginedxvertical{Linear Transformations Properties}
-
-\doedxvideo{Linear Transformation Properties}{oe4fgdPAsgA}
-
-
-
-
-\beginedxproblem{Linear Transformation Practice}{\dpa1}
-
-Suppose $T: \mathbb{P} \rightarrow \R^2$ is a linear transformation.  Let $f,g\mathbb{P}$ be
-the polynomials given by $f(t) = t^2$ and $g(t) = t$.  
-
-Suppose that $T(f) = \left[\begin{array}{c} 1 \\ 2  \end{array} \right]$
-and $T(g) = \left[\begin{array}{c} 2 \\ -1  \end{array} \right]$
-
-
-
-If $h \in \mathbb{P}$ is the polynomial given by $h(t) = -2t^2$, what must $T(h)$ be?
-
-\input{vectorentry.tex}
-
-
-\edXabox{type="custom" cfn="VectorEntry" expect="[[-2],[-4]]"}
-
-
-If $j \in \mathbb{P}$ is the polynomial given by $h(t) = 3t^2-t$, what must $T(j)$ be?
-
-\input{vectorentry.tex}
-
-
-\edXabox{type="custom" cfn="VectorEntry" expect="[[1],[7]]"}
-
+\edXabox{type="multichoice" expect="infinitely many" options="zero","one","more than one but finitely many","infinitely many"}
 
 \edXsolution{ 
+
 }
 
 
@@ -275,13 +347,46 @@ If $j \in \mathbb{P}$ is the polynomial given by $h(t) = 3t^2-t$, what must $T(j
 \endedxvertical
 
 
-% \beginedxvertical{Linear Transformations Properties}
-
-% \doedxvideo{Matrix Multiplication as a Linear Transformation}{jMRJ-efZOJs}
 
 
 
-% \endedxvertical
+\beginedxvertical{Back to Pictures}
+
+
+\doedxvideo{More Pictures}{8zRN403o8tg}
+
+
+
+\beginedxproblem{What is preserved?}{\dpa1}
+
+Take a look at the video again.  Which properties seem to be preserved by linear transformations
+from $\R^2$ to $\R^2$?  
+
+
+For instance, does every transformation preserve the area of regions? 
+
+\edXabox{expect="No" options="Yes","No"}
+
+
+Do lines that start parallel always go in the same direction after transformation?  
+
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+Do lines that start perpendicular remain perpendicular after transformation? 
+
+\edXabox{expect="No" options="Yes","No"}
+
+\edXsolution{  }
+
+\endedxproblem
+
+\endedxvertical
+
+
+
+
+
 
 
 

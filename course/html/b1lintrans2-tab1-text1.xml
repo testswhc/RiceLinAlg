@@ -1,4 +1,16 @@
-<html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex">
+<html display_name="Preliminaries" linenum="5" tex_filename="./block1/lineartransformationsinRn.tex">
   <p>
-Coming soon! </p>
+At the end of this sequence, and after some practice, you should be able to: </p>
+  <ul class="itemize">
+    <li>
+      <p>
+Find the standard matrix for a linear transformation from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline]. </p>
+    </li>
+    <li>
+      <p>
+Know what geometric properties are preserved by linear transformations from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline]. </p>
+    </li>
+  </ul>
+  <p>
+For time budgeting purposes, this sequence has 4 videos totaling 14 minutes, plus some questions. </p>
 </html>

@@ -239,8 +239,38 @@
     </vertical>
   </sequential>
   <sequential display_name="Linear Transformations in R^n" linenum="310" tex_filename="testcourse.tex" refnum="8" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1lintrans2-sequential">
-    <vertical display_name="Wait for it" refnum="1" url_name="b1lintrans2-vertical1">
+    <vertical display_name="Page One" refnum="1" url_name="b1lintrans2-vertical1">
       <html url_name="b1lintrans2-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Introduction" refnum="2" url_name="b1lintrans2-vertical2">
+      <video url_name="b1lintrans2-tab2-video1"/>
+      <problem url_name="b1lintrans2-tab2-problem1"/>
+      <problem url_name="b1lintrans2-tab2-problem2"/>
+    </vertical>
+    <vertical display_name="General Matrix Multiplication" refnum="3" url_name="b1lintrans2-vertical3">
+      <video url_name="b1lintrans2-tab3-video1"/>
+      <problem url_name="b1lintrans2-tab3-problem1"/>
+      <problem url_name="b1lintrans2-tab3-problem2"/>
+    </vertical>
+    <vertical display_name="Matrix for Rotation" refnum="4" url_name="b1lintrans2-vertical4">
+      <problem url_name="b1lintrans2-tab4-problem1"/>
+      <problem url_name="b1lintrans2-tab4-problem2"/>
+      <video url_name="b1lintrans2-tab4-video1"/>
+      <problem url_name="b1lintrans2-tab4-problem3"/>
+    </vertical>
+    <vertical display_name="Standard Matrix" refnum="5" url_name="b1lintrans2-vertical5">
+      <video url_name="b1lintrans2-tab5-video1"/>
+      <html url_name="b1lintrans2-tab5-text1"/>
+    </vertical>
+    <vertical display_name="Standard Matrix Questions" refnum="6" url_name="b1lintrans2-vertical6">
+      <problem url_name="b1lintrans2-tab6-problem1"/>
+      <problem url_name="b1lintrans2-tab6-problem2"/>
+      <problem url_name="b1lintrans2-tab6-problem3"/>
+      <problem url_name="b1lintrans2-tab6-problem4"/>
+    </vertical>
+    <vertical display_name="Back to Pictures" refnum="7" url_name="b1lintrans2-vertical7">
+      <video url_name="b1lintrans2-tab7-video1"/>
+      <problem url_name="b1lintrans2-tab7-problem1"/>
     </vertical>
   </sequential>
   <sequential display_name="Into and Onto" linenum="341" tex_filename="testcourse.tex" refnum="9" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">

@@ -1,0 +1,33 @@
+<problem display_name="What is preserved?" linenum="360" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Take a look at the video again. Which properties seem to be preserved by linear transformations from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>
+    <p>
+For instance, does every transformation preserve the area of regions? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+Do lines that start parallel always go in the same direction after transformation? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Do lines that start perpendicular remain perpendicular after transformation? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>
