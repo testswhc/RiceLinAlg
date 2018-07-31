@@ -1,0 +1,12 @@
+<html display_name="Standard Matrix" linenum="253" tex_filename="./block1/lineartransformationsinRn.tex">
+  <p>
+If [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation, then there is a unique [mathjaxinline]m \times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline] such that [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x\in \mathbb R^ n[/mathjaxinline]. This matrix [mathjaxinline]A[/mathjaxinline] is called the <span style="color:#99182C"><b class="bf">standard matrix</b></span> for [mathjaxinline]T[/mathjaxinline], and must be given by the formula </p>
+  <table id="a0000000062" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <tr>
+      <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp; &amp;  | \\ T(e_1) &amp;  T(e_2) &amp;  \cdots &amp;  T(e_ n) \\ | &amp;  | &amp; &amp;  | \end{array} \right],[/mathjax]</td>
+      <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+    </tr>
+  </table>
+  <p>
+ where [mathjaxinline]e_ i \in \mathbb R^ n[/mathjaxinline] is the vector whose [mathjaxinline]i[/mathjaxinline]th entry equals 1, and all of whose other entries are 0. </p>
+</html>

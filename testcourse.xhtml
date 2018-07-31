@@ -2134,9 +2134,364 @@ If [mathjaxinline]j \in \mathbb {P}[/mathjaxinline] is the polynomial given by [
 </customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p></sequential> </p><p>
 <sequential display_name="Linear Transformations in R^n" attrib_string="due=&quot;2018-12-18T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b1lintrans2-sequential&quot;" linenum="310" tex_filename="testcourse.tex" refnum="8"><p>
-<vertical display_name="Wait for it" attrib_string="url_name=&quot;b1lintrans2-vertical1&quot;" refnum="1"><p>
-<html display_name="Coming Soon" attrib_string="url_name=&quot;b1lintrans2-tab1-text1&quot;" linenum="5" tex_filename="./comingsoon.tex"><p>
-Coming soon! </p></html></p></vertical>    </p></sequential> </p><p>
+<vertical display_name="Page One" attrib_string="url_name=&quot;b1lintrans2-vertical1&quot;" refnum="1"><p>
+<html display_name="Preliminaries" attrib_string="url_name=&quot;b1lintrans2-tab1-text1&quot;" linenum="5" tex_filename="./block1/lineartransformationsinRn.tex"><p>
+At the end of this sequence, and after some practice, you should be able to: </p><ul class="itemize">
+
+<li><p>
+Find the standard matrix for a linear transformation from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline]. </p></li>
+<li><p>
+Know what geometric properties are preserved by linear transformations from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline]. </p></li>
+</ul><p>
+For time budgeting purposes, this sequence has 4 videos totaling 14 minutes, plus some questions. </p></html></p></vertical>   </p><p>
+<vertical display_name="Introduction" attrib_string="url_name=&quot;b1lintrans2-vertical2&quot;" refnum="2"><p>
+<video display_name="Matrix Multiplication as Linear Transformation" youtube_id_1_0="jMRJ-efZOJs" attrib_string="url_name=&quot;b1lintrans2-tab2-video1&quot; "></video><problem display_name="Where does it go?" attrib_string="url_name=&quot;b1lintrans2-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="35" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+Consider the following image. </p><center> <edxxml><img src="/static/images/c1s8imageunderlintrans.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
+When we apply the linear transformation [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] given by [mathjaxinline]T(x) = \left[ \begin{array}{cc} -1 &amp;  0 \\ 0 &amp;  1 \end{array} \right][/mathjaxinline] to the image, which picture is the result? </p><center><p>
+ <edxxml><img src="/static/images/c1s8imageunderlintransAB.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> <br /><edxxml><img src="/static/images/c1s8imageunderlintransCD.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </p></center><p>
+<optionresponse>
+  <optioninput options="('A','B','C','D')" correct="D"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Where does it go? 2" attrib_string="url_name=&quot;b1lintrans2-tab2-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="69" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+Consider the following image. </p><center> <edxxml><img src="/static/images/c1s8imageunderlintrans.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
+When we apply the linear transformation [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] given by [mathjaxinline]T(x) = \left[ \begin{array}{cc} 0.5 &amp;  0 \\ 0 &amp;  2 \end{array} \right][/mathjaxinline] to the image, which picture is the result? </p><center><p>
+ <edxxml><img src="/static/images/c1s8imageunderlintransAB2.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </p></center><p>
+<optionresponse>
+  <optioninput options="('A','B')" correct="B"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="General Matrix Multiplication" attrib_string="url_name=&quot;b1lintrans2-vertical3&quot;" refnum="3"><p>
+<video display_name="Multiplication by a General Matrix" youtube_id_1_0="R1uBwxvKIXE" attrib_string="url_name=&quot;b1lintrans2-tab3-video1&quot; "></video><problem display_name="The E Vectors" attrib_string="url_name=&quot;b1lintrans2-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="117" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+Suppose [mathjaxinline]T: \mathbb R^4\rightarrow \mathbb R^3[/mathjaxinline] is given by [mathjaxinline]T(x) = Ax[/mathjaxinline] where </p><table id="a0000000060" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]A = \left[ \begin{array}{cc} 1 &amp;  3 &amp;  5 &amp;  7 \\ 2 &amp;  0 &amp;  -1 &amp;  -1 \\ 1 &amp;  1 &amp;  3 &amp;  -2 \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+What is [mathjaxinline]T(e_3)[/mathjaxinline]? </p><p>
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
+
+<li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
+<li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li>
+</ul><p>
+Use decimals only. </p><script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[5],[-1],[3]]">
+  <textline correct_answer="[[5],[-1],[3]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Find a Matrix" attrib_string="url_name=&quot;b1lintrans2-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="137" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+Suppose the function [mathjaxinline]T: \mathbb R^3\rightarrow \mathbb R^2[/mathjaxinline] is given by </p><table id="a0000000061" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]T\left( \left[ \begin{array}{c} a_1 \\ a_2\\ a_3 \end{array} \right] \right) =\left[ \begin{array}{c} 2a_1-a_3 \\ -a_1 + a_2 \end{array} \right][/mathjax]</td>
+</tr>
+</table><p>
+ for all vectors [mathjaxinline]\left[ \begin{array}{c} a_1 \\ a_2\\ a_3 \end{array} \right] \in \mathbb R^3[/mathjaxinline]. </p><p>
+For what matrix [mathjaxinline]A[/mathjaxinline] is [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x \in \mathbb R^3[/mathjaxinline]? </p><p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p><p>
+Use decimals only. </p><script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<customresponse cfn="MatrixEntry" expect="[[2,0,-1],[-1,1,0]]">
+  <textline correct_answer="[[2,0,-1],[-1,1,0]]"/>
+</customresponse> </p><p>
+Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Matrix for Rotation" attrib_string="url_name=&quot;b1lintrans2-vertical4&quot;" refnum="4"><p>
+<problem display_name="Rotation" attrib_string="url_name=&quot;b1lintrans2-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="171" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+For the next two problems, we will be considering the linear transformation [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] given by rotation counterclockwise by [mathjaxinline]45^\circ[/mathjaxinline]. </p><center><p>
+ <edxxml><img src="/static/images/c1s8rotation.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </p></center><p>
+From the [mathjaxinline]45^\circ -45^\circ -9045^\circ[/mathjaxinline] triangles in the diagram, we can find that [mathjaxinline]T(e_1) = \left[ \begin{array}{c} \frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right] \approx \left[ \begin{array}{c} 0.707 \\ 0.707 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(e_2) = \left[ \begin{array}{c} -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right] \approx \left[ \begin{array}{c} -0.707 \\ 0.707 \end{array} \right].[/mathjaxinline] </p><p>
+What is [mathjaxinline]T\left( \left[ \begin{array}{c} 4 \\ 0 \end{array} \right] \right)[/mathjaxinline]? (Remember to use decimals only, to within two decimal places.) </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[2.83],[2.83]]">
+  <textline correct_answer="[[2.83],[2.83]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Rotation 2" attrib_string="url_name=&quot;b1lintrans2-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="202" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+What is [mathjaxinline]T\left( \left[ \begin{array}{c} 4 \\ 1 \end{array} \right] \right)[/mathjaxinline]? </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[2.12],[3.54]]">
+  <textline correct_answer="[[2.12],[3.54]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<video display_name="Matrix for Rotation by 45 Degrees" youtube_id_1_0="TN4eIiSNzcA" attrib_string="url_name=&quot;b1lintrans2-tab4-video1&quot; "></video><problem display_name="Rotation 3" attrib_string="url_name=&quot;b1lintrans2-tab4-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="222" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+If [mathjaxinline]T[/mathjaxinline] is still rotation counterclockwise by [mathjaxinline]45^\circ[/mathjaxinline], what is [mathjaxinline]T\left( \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] \right)[/mathjaxinline]? </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[4],[2]]">
+  <textline correct_answer="[[4],[2]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Standard Matrix" attrib_string="url_name=&quot;b1lintrans2-vertical5&quot;" refnum="5"><p>
+<video display_name="The Standard Matrix for a Linear Transformation" youtube_id_1_0="aPUQJWsg9Vw" attrib_string="url_name=&quot;b1lintrans2-tab5-video1&quot; "></video><html display_name="Standard Matrix" attrib_string="url_name=&quot;b1lintrans2-tab5-text1&quot;" linenum="253" tex_filename="./block1/lineartransformationsinRn.tex"><p>
+If [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation, then there is a unique [mathjaxinline]m \times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline] such that [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x\in \mathbb R^ n[/mathjaxinline]. This matrix [mathjaxinline]A[/mathjaxinline] is called the <span style="color:#99182C"><b class="bf">standard matrix</b></span> for [mathjaxinline]T[/mathjaxinline], and must be given by the formula </p><table id="a0000000062" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp; &amp;  | \\ T(e_1) &amp;  T(e_2) &amp;  \cdots &amp;  T(e_ n) \\ | &amp;  | &amp; &amp;  | \end{array} \right],[/mathjax]</td>
+</tr>
+</table><p>
+ where [mathjaxinline]e_ i \in \mathbb R^ n[/mathjaxinline] is the vector whose [mathjaxinline]i[/mathjaxinline]th entry equals 1, and all of whose other entries are 0. </p></html></p></vertical>   </p><p>
+<vertical display_name="Standard Matrix Questions" attrib_string="url_name=&quot;b1lintrans2-vertical6&quot;" refnum="6"><p>
+<problem display_name="True or False" attrib_string="url_name=&quot;b1lintrans2-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="274" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+True or false: Every linear transformation from a vector space [mathjaxinline]V[/mathjaxinline] to a vector space [mathjaxinline]W[/mathjaxinline] has a standard matrix. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="False"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Standard Matrix 1" attrib_string="url_name=&quot;b1lintrans2-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="290" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+For all [mathjaxinline]v\in \mathbb R^2[/mathjaxinline], let [mathjaxinline]T(v)[/mathjaxinline] be the reflection of [mathjaxinline]v[/mathjaxinline] across the horizontal axis of [mathjaxinline]\mathbb R^2[/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] is a linear transformation from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]. What is its standard matrix? </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<customresponse cfn="MatrixEntry" expect="[[1,0],[0,-1]]">
+  <textline correct_answer="[[1,0],[0,-1]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Standard Matrix 2" attrib_string="url_name=&quot;b1lintrans2-tab6-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="308" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+For all [mathjaxinline]v\in \mathbb R^2[/mathjaxinline], let [mathjaxinline]S(v)[/mathjaxinline] be the vector obtained by reflecting [mathjaxinline]v[/mathjaxinline] across the diagonal line [mathjaxinline]x=y[/mathjaxinline] and then rotating the result by [mathjaxinline]90^\circ[/mathjaxinline] counterclockwise. [mathjaxinline]S[/mathjaxinline] is a linear transformation from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]. What is its standard matrix? </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<customresponse cfn="MatrixEntry" expect="[[-1,0],[0,1]]">
+  <textline correct_answer="[[-1,0],[0,1]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="How many linear transformations?" attrib_string="url_name=&quot;b1lintrans2-tab6-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="329" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+How many linear transformations [mathjaxinline]T:\mathbb R^4 \rightarrow \mathbb R^2[/mathjaxinline] satisfy the conditions </p><table id="a0000000063" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]T(e_1) = T(e_3) = \left[\begin{array}{c} 2 \\ 3 \end{array} \right][/mathjax]</td>
+</tr>
+</table><p>
+ and [mathjaxinline]T(e_4) = \mathbf{0}[/mathjaxinline]? </p><p>
+<multiplechoiceresponse>
+  <choicegroup direction="vertical">
+    <choice correct="false" name="1">
+      <text> zero</text>
+    </choice>
+    <choice correct="false" name="2">
+      <text> one</text>
+    </choice>
+    <choice correct="false" name="3">
+      <text> more than one but finitely many</text>
+    </choice>
+    <choice correct="true" name="4">
+      <text> infinitely many</text>
+    </choice>
+  </choicegroup>
+</multiplechoiceresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Back to Pictures" attrib_string="url_name=&quot;b1lintrans2-vertical7&quot;" refnum="7"><p>
+<video display_name="More Pictures" youtube_id_1_0="8zRN403o8tg" attrib_string="url_name=&quot;b1lintrans2-tab7-video1&quot; "></video><problem display_name="What is preserved?" attrib_string="url_name=&quot;b1lintrans2-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="360" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+Take a look at the video again. Which properties seem to be preserved by linear transformations from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p><p>
+For instance, does every transformation preserve the area of regions? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="No"/>
+</optionresponse> </p><p>
+Do lines that start parallel always go in the same direction after transformation? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+Do lines that start perpendicular remain perpendicular after transformation? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="No"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p></sequential> </p><p>
 <sequential display_name="Into and Onto" attrib_string="due=&quot;2018-12-18T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b1intoonto-sequential&quot;" linenum="341" tex_filename="testcourse.tex" refnum="9"><p>
 <vertical display_name="Wait for it" attrib_string="url_name=&quot;b1intoonto-vertical1&quot;" refnum="1"><p>
 <html display_name="Coming Soon" attrib_string="url_name=&quot;b1intoonto-tab1-text1&quot;" linenum="5" tex_filename="./comingsoon.tex"><p>

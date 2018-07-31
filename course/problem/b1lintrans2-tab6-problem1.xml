@@ -1,0 +1,17 @@
+<problem display_name="True or False" linenum="274" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or false: Every linear transformation from a vector space [mathjaxinline]V[/mathjaxinline] to a vector space [mathjaxinline]W[/mathjaxinline] has a standard matrix. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>
