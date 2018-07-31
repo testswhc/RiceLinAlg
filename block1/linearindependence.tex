@@ -141,9 +141,8 @@ Is the list $\{v_1; v_2; v_3\}$ linearly dependent or linearly independent?
 \edXabox{expect="Linearly dependent" options="Linearly dependent","Linearly independent"}
 
 \edXsolution{ The first answer is immediately "yes" because we have the zero vector in our set; we can choose any non-zero value for $a_2$, and with $a_1 = 0$ and $a_3 = 0$, the above equation will still be true. We can also show that only triples of this form ($a_1$ and $a_3$ are $0$, $a_2$ is any value) will make the above equation true; since $v_1$ and $v_3$ are not scalar multiples of each other, they can't add to zero in a non-zero combination (i.e. $v_1$ and $v_3$ are linearly independent of each other).
-The set $\{v_1; v_2; v_3\}$, however, is a linearly dependent set, precisely because $v_2 = \veco$.
+The set $\{v_1; v_2; v_3\}$, however, is a linearly dependent set, because due to $v_2 = \veco$, there exist sets of coefficients, not all zero, that make the above equation true. 
 }
-
 
 \endedxproblem
 
@@ -168,7 +167,7 @@ Is the list $\{v_1; v_2\}$ linearly dependent or linearly independent?
 
 \edXabox{expect="Linearly independent" options="Linearly dependent","Linearly independent"}
 
-\edXsolution{ 
+\edXsolution{ In the case of two vectors, we can usually determine whether they are linearly independent or not by examination. If we see that the vectors are scalar multiples of each other, we know it will be possible to add non-zero multiples of them to get zero, and they are therefore linearly dependent as a set. If we see that they are not scalar multiples of each other, we know there can't be a way to add non-zero multiples of them to get zero, and they are therefore linearly independent. The case of $f$ and $g$ above is the latter situation; no scalar, multiplied by $f$, would give us $g$.
 }
 
 
@@ -203,7 +202,7 @@ Which of the following lists are linearly independent?  Click all that apply.
 \edXabox{type="oldmultichoice" expect="$\{v_1\}$","$\{v_1;v_2\}$","$\{v_2;v_3\}$" options="$\{\veco\}$","$\{v_1\}$","$\{v_1;v_2\}$","$\{v_1;v_3\}$","$\{v_2;v_3\}$","$\{v_3;v_3\}$","$\{v_1; v_2; v_3\}$"}
 
 
-\edXsolution{ 
+\edXsolution{ The zero vector is not linearly independent as a set because $a_1 \cdot \veco = \veco$ for any scalar $a_1$. $v_1$ is linearly independent as a set because $v_1$ is not the zero vector, and therefore $a_1 \cdot v_1 = \veco$ implies $a_1 = 0$. It can be seen that $v_1$ is not collinear with $v_2$, and likewise not with $v_3$, and so $\{v_1;v_2\}$ is linearly independent and $\{v_1;v_3\}$ is linearly independent. $v_2$ and $v_3$ appear to be collinear, so $\{v_2;v_3\}$ is not linearly independent(i.e. suppose $v_3 = 2\cdot v_2$; then 2\cdot v_2 + -1 \cdot v_3 = 0). $v_3$ is of course collinear with itself, so $\{v_3;v_3\}$ is not linearly independent. Finally, since $\{v_2;v_3\}$ is not linearly independent and is a subset of $\{v_1;v_2;v_3\}$, this last set cannot be linearly independent.  
 }
 
 
@@ -234,7 +233,7 @@ span of $\{v_1; v_2; v_3\}$.
 \edXabox{expect="False" options="True","False"}
 
 
-\edXsolution{ 
+\edXsolution{ The conclusion is too specific. We proved that if our list is linearly dependent, then at least one of the vectors will be in the span of the others. We can't claim that a particular vector in the list is in the span of the rest of the list, or that all vectors are in the spans of their list complements (without knowing more). Consider the problem on the previous tab with $v_1$, $v_2$, and $v_3$: it appears that $v_3$ is not in the span of $v_1$ and $v_2$, and yet the set of three is linearly dependent.
 }
 
 
@@ -262,6 +261,11 @@ Check all that apply.
 
 
 \edXsolution{ 
+The approach in choice 1 won't prove linear independence, because the conclusion will be true regardless of the vectors in the list.
+The approach in choice 2 won't prove linear independence, because even if our vector list passes the test in choice 2, there may yet exist some set of coefficients, not all zero but containing at least one zero, that gives a zero linear combination (i.e., the list could still be linearly dependent).
+The approach in choice 3 will prove linear independence. If it's true that every set of coefficients, not all zero, will give a non-zero linear combination, then the only way to get a zero linear combination is with all zero coefficients, which is the definition of linear independence. 
+The approach in choice 4 will prove linear independence. It directly uses the conditional statement in the definition (if hypothesis, then conclustion), assuming the hypothesis to be true, and wanting this to result in the conclusion. (Notice that choices 3 and 4 are just contrapositives of each other.)
+The approach in choice 5 won't prove linear independence, because the conclusion will be true regardless of the vectors in the list.
 }
 
 
