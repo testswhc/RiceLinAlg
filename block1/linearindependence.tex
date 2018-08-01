@@ -294,6 +294,12 @@ v_3 = \left[\begin{array}{c} 3 \\ 3  \\ 3 \\ -2 \\ 1 \end{array} \right]. \]
 \edXabox{expect="Linearly dependent" options="Linearly independent","Linearly dependent"}
 
 \edXsolution{ 
+First, we remind that there must always exist at least one solution to $Ax = \veco$. We will either have exactly one solution (and that solution will be $\veco$), or we will have infinitely many solutions (e.g., any scalar multiple of a solution to $Ax = \veco$ is also a solution to $Ax = \veco$). 
+After row reduction, we have:
+$A = \left[\begin{array}{ccc} 1 & 0 & -1 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \\
+0  & 0 & 0 \end{array} \right]$
+We have only two pivots. The third column represents a free variable; $x_3$ can equal anything we choose. The equation has infinitely many solutions.
+Note that, in the product $A \cdot x$, the columns of the matrix $A$ are vectors that are combined with the entries of $x$ as the weights:  $Ax = x_1v_1 + x_2v_2 + x_3v_3$. We have therefore shown that there are infinitely many sets $\{x_1; x_2; x_3\}$ that satisfy $x_1v_1 + x_2v_2 + x_3v_3 = 0$, and by definition, the list $\{v_1; v_2; v_3\}$ is linearly dependent.  
 }
 \endedxproblem
 
@@ -310,8 +316,21 @@ the columns of $A$ cannot be linearly independent.
 
 \edXabox{type="multichoice" expect="a free variable" options="a row of all zeros","a free variable","either of the above"}
 
-\edXsolution{ 
+\edXsolution{ A free variable can be chosen to equal anything in a solution to $Ax = \veco$; therefore, the presence of a free variable implies that the columns of $A$ are not linearly independent.
+
+Now suppose we have a 5x3 matrix, so that the columns represent 3 vectors in R5:
+$\left[\begin{array}{ccc} 1 & 1 & 1 \\ 2 & 4 & 8 \\ 3 & 9 & 27 \\ 4 & 16 & 64 \\
+5  & 25 & 125 \end{array} \right]$
+
+If the columns are linearly independent, we have no free variables, and so there must be a pivot in every column. Since every pivot in row-reduced form is the only non-zero entry in its column, the row-reduced form of the matrix can only look like this:
+
+$\left[\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \\
+0 & 0 & 0 \end{array} \right]$
+
+So, a row-reduced matrix with linearly independent columns can have a row of all zeros, and in particular, if there are more rows than columns, it is guaranteed to have such a row.
+
 }
+
 \endedxproblem
 
 
@@ -325,7 +344,9 @@ there must be a free variable.
 \edXabox{type="multichoice" expect="more columns than rows" options="more rows than columns","more columns than rows"}
 
 \edXsolution{ 
+Every row has at most one pivot, and every column has at most one pivot. Therefore, whichever is fewer, the number of rows or the number of columns, represents an upper bound on the possible number of pivots of a matrix. For this reason, if there are more columns than rows, there can't be a pivot in every column. As we've seen before, a column without a pivot represents a free variable. So a system with a coefficient matrix with more columns than rows must have a free variable. If there are more rows than columns, it is possible that every column has a pivot, and that there are no free variables in the system.
 }
+
 \endedxproblem
 
 
@@ -337,7 +358,8 @@ A list of  $\underline{\;\;\;\;\;\;\;\;\;\;}$ cannot be linearly independent.
 
 \edXabox{type="multichoice" expect="5 vectors in $\R^3$" options="3 vectors in $\R^5$","5 vectors in $\R^3$"}
 
-\edXsolution{ 
+\edXsolution{
+A list of 5 vectors in $\R^3$ can be written as a 3x5 matrix, which has more columns than rows. As we've established, if such a matrix serves as the coefficient matrix of a system, the system will have a free variable, which means that the columns of the matrix are linearly dependent. 
 }
 \endedxproblem
 
@@ -423,7 +445,8 @@ $
 
 \edXabox{type="oldmultichoice" expect="B","C","D" options="A","B","C","D","E","F"}
 
-\edXsolution{  }
+\edXsolution{ Choice B has the zero vector and is therefore linearly dependent. Choice C has 5 vectors in $\R^4$ and is therefore linearly dependent (expressed as a matrix, there would be more columns than rows). Choice E has a pair of collinear vectors: the third vector is twice the second vector. The list in choice E is therefore linearly dependent. 
+}
 
 \endedxproblem
 
