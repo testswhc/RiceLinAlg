@@ -111,8 +111,8 @@ Is the list $\{v_1; v_2; v_3\}$ linearly dependent or linearly independent?
 
 
 \edXsolution{ 
-Notice that $v_2$ is the only vector in the set with non-zero entries in the third and fourth positions; a zero combination of these vectors therefore requires $a_2 = 0$. Then, notice that $-3 \cdot v_1 = v_3$, so that $3 \cdot v_1 + 1 \cdot v_3 = \veco$. We have that $a_1 = 3$, $a_2 = 0$, and $a_3 = 1$ is a possible set of scalars that satisfies the equation. It follows that any scalar multiple of that triple is also a set that satisfies the equation. Furthermore, it is easy to show that the coefficients can only be scalar multiples of that triple. 
-The set $\{v_1; v_2; v_3\}$ is linearly dependent because, as we've just seen, there exist sets of coefficients, not all zero, that make the above equation true. 
+Notice that $v_2$ is the only vector in the set with non-zero entries in the third and fourth positions; a zero combination of these vectors therefore requires $a_2 = 0$. Then, notice that $-3 \cdot v_1 = v_3$, so that $3 \cdot v_1 + 1 \cdot v_3 = \veco$. We have that $a_1 = 3$, $a_2 = 0$, and $a_3 = 1$ is a possible set of scalars that satisfies the equation. It follows that any scalar multiple of that triple is also a set that satisfies the equation. Furthermore, it is easy to show that the coefficients that satisfy the equation can only be scalar multiples of that triple. 
+\\The set $\{v_1; v_2; v_3\}$ is linearly dependent because, as we've just seen, there exist sets of coefficients, not all zero, that make the above equation true. 
 }
 
 
@@ -140,8 +140,7 @@ Is the list $\{v_1; v_2; v_3\}$ linearly dependent or linearly independent?
 
 \edXabox{expect="Linearly dependent" options="Linearly dependent","Linearly independent"}
 
-\edXsolution{ The first answer is immediately "yes" because we have the zero vector in our set; we can choose any non-zero value for $a_2$, and with $a_1 = 0$ and $a_3 = 0$, the above equation will still be true. We can also show that only triples of this form ($a_1$ and $a_3$ are $0$, $a_2$ is any value) will make the above equation true; since $v_1$ and $v_3$ are not scalar multiples of each other, they can't add to zero in a non-zero combination (i.e. $v_1$ and $v_3$ are linearly independent of each other).
-The set $\{v_1; v_2; v_3\}$, however, is a linearly dependent set, because due to $v_2 = \veco$, there exist sets of coefficients, not all zero, that make the above equation true. 
+\edXsolution{ The first answer is immediately "yes" because we have the zero vector in our set; we can choose any non-zero value for $a_2$, and with $a_1 = 0$ and $a_3 = 0$, the above equation will still be true. Because there exist sets of coefficients, not all zero, that make the above equation true, the set $\{v_1; v_2; v_3\}$ is a linearly dependent set.
 }
 
 \endedxproblem
@@ -167,7 +166,7 @@ Is the list $\{v_1; v_2\}$ linearly dependent or linearly independent?
 
 \edXabox{expect="Linearly independent" options="Linearly dependent","Linearly independent"}
 
-\edXsolution{ In the case of two vectors, we can usually determine whether they are linearly independent or not by examination. If we see that the vectors are scalar multiples of each other, we know it will be possible to add non-zero multiples of them to get zero, and they are therefore linearly dependent as a set. If we see that they are not scalar multiples of each other, we know there can't be a way to add non-zero multiples of them to get zero, and they are therefore linearly independent. The case of $f$ and $g$ above is the latter situation; no scalar, multiplied by $f$, would give us $g$.
+\edXsolution{ In the case of two vectors, we can determine whether they are linearly independent or not by examination. If we see that the vectors are scalar multiples of each other, we know it will be possible to add non-zero multiples of them to get zero, and they are therefore linearly dependent as a set. If we see that they are not scalar multiples of each other, we know there can't be a way to add non-zero multiples of them to get zero, and they are therefore linearly independent. The case of $f$ and $g$ above is the latter situation; no scalar, multiplied by $f$, would give us $g$.
 }
 
 
@@ -202,7 +201,7 @@ Which of the following lists are linearly independent?  Click all that apply.
 \edXabox{type="oldmultichoice" expect="$\{v_1\}$","$\{v_1;v_2\}$","$\{v_2;v_3\}$" options="$\{\veco\}$","$\{v_1\}$","$\{v_1;v_2\}$","$\{v_1;v_3\}$","$\{v_2;v_3\}$","$\{v_3;v_3\}$","$\{v_1; v_2; v_3\}$"}
 
 
-\edXsolution{ The zero vector is not linearly independent as a set because $a_1 \cdot \veco = \veco$ for any scalar $a_1$. $v_1$ is linearly independent as a set because $v_1$ is not the zero vector, and therefore $a_1 \cdot v_1 = \veco$ implies $a_1 = 0$. It can be seen that $v_1$ is not collinear with $v_2$, and likewise not with $v_3$, and so $\{v_1;v_2\}$ is linearly independent and $\{v_1;v_3\}$ is linearly independent. $v_2$ and $v_3$ appear to be collinear, so $\{v_2;v_3\}$ is not linearly independent(i.e. suppose $v_3 = 2\cdot v_2$; then 2\cdot v_2 + -1 \cdot v_3 = 0). $v_3$ is of course collinear with itself, so $\{v_3;v_3\}$ is not linearly independent. Finally, since $\{v_2;v_3\}$ is not linearly independent and is a subset of $\{v_1;v_2;v_3\}$, this last set cannot be linearly independent.  
+\edXsolution{ The zero vector is not linearly independent as a set because $a_1 \cdot \veco = \veco$ for any scalar $a_1$. \\$v_1$ is linearly independent as a set because $v_1$ is not the zero vector, and therefore $a_1 \cdot v_1 = \veco$ implies $a_1 = 0$. \\It can be seen on the diagram that $v_1$ is not collinear with $v_2$, and likewise not with $v_3$, and so $\{v_1;v_2\}$ is linearly independent and $\{v_1;v_3\}$ is linearly independent. \\$v_2$ and $v_3$ appear to be collinear, so $\{v_2;v_3\}$ is not linearly independent(i.e. suppose $v_3 = 2\cdot v_2$; then 2\cdot v_2 + -1 \cdot v_3 = 0). \\$v_3$ is of course collinear with itself, so $\{v_3;v_3\}$ is not linearly independent. \\Finally, since $\{v_2;v_3\}$ is not linearly independent and is a subset of $\{v_1;v_2;v_3\}$, this last set cannot be linearly independent.  
 }
 
 
@@ -262,10 +261,10 @@ Check all that apply.
 
 \edXsolution{ 
 The approach in choice 1 won't prove linear independence, because the conclusion will be true regardless of the vectors in the list.
-The approach in choice 2 won't prove linear independence, because even if our vector list passes the test in choice 2, there may yet exist some set of coefficients, not all zero but containing at least one zero, that gives a zero linear combination (i.e., the list could still be linearly dependent).
-The approach in choice 3 will prove linear independence. If it's true that every set of coefficients, not all zero, will give a non-zero linear combination, then the only way to get a zero linear combination is with all zero coefficients, which is the definition of linear independence. 
-The approach in choice 4 will prove linear independence. It directly uses the conditional statement in the definition (if hypothesis, then conclustion), assuming the hypothesis to be true, and wanting this to result in the conclusion. (Notice that choices 3 and 4 are just contrapositives of each other.)
-The approach in choice 5 won't prove linear independence, because the conclusion will be true regardless of the vectors in the list.
+\\The approach in choice 2 won't prove linear independence, because even if our vector list passes the test in choice 2, there may yet exist some set of coefficients, not all zero but containing at least one zero, that gives a zero linear combination (i.e., the list could still be linearly dependent).
+\\The approach in choice 3 will prove linear independence. If it's true that every set of coefficients, not all zero, will give a non-zero linear combination, then the only way to get a zero linear combination is with all zero coefficients, which is the definition of linear independence. 
+\\The approach in choice 4 will prove linear independence. It simply uses the definition. (Notice that choices 3 and 4 are just contrapositives of each other.)
+\\The approach in choice 5 won't prove linear independence, because the conclusion will be true regardless of the vectors in the list.
 }
 
 
@@ -295,10 +294,10 @@ v_3 = \left[\begin{array}{c} 3 \\ 3  \\ 3 \\ -2 \\ 1 \end{array} \right]. \]
 
 \edXsolution{ 
 First, we remind that there must always exist at least one solution to $Ax = \veco$. We will either have exactly one solution (and that solution will be $\veco$), or we will have infinitely many solutions (e.g., any scalar multiple of a solution to $Ax = \veco$ is also a solution to $Ax = \veco$). 
-After row reduction, we have:
+\\After row reduction, we have:
 $A = \left[\begin{array}{ccc} 1 & 0 & -1 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \\
 0  & 0 & 0 \end{array} \right]$
-We have only two pivots. The third column represents a free variable; $x_3$ can equal anything we choose. The equation has infinitely many solutions.
+\\We have only two pivots. The third column represents a free variable; $x_3$ can equal anything we choose. The equation has infinitely many solutions.
 Note that, in the product $A \cdot x$, the columns of the matrix $A$ are vectors that are combined with the entries of $x$ as the weights:  $Ax = x_1v_1 + x_2v_2 + x_3v_3$. We have therefore shown that there are infinitely many sets $\{x_1; x_2; x_3\}$ that satisfy $x_1v_1 + x_2v_2 + x_3v_3 = 0$, and by definition, the list $\{v_1; v_2; v_3\}$ is linearly dependent.  
 }
 \endedxproblem
@@ -318,16 +317,16 @@ the columns of $A$ cannot be linearly independent.
 
 \edXsolution{ A free variable can be chosen to equal anything in a solution to $Ax = \veco$; therefore, the presence of a free variable implies that the columns of $A$ are not linearly independent.
 
-Now suppose we have a 5x3 matrix, so that the columns represent 3 vectors in R5:
-$\left[\begin{array}{ccc} 1 & 1 & 1 \\ 2 & 4 & 8 \\ 3 & 9 & 27 \\ 4 & 16 & 64 \\
+\\Now suppose we have a 5x3 matrix, so that the columns represent 3 vectors in $\R^5$:
+\\$\left[\begin{array}{ccc} 1 & 1 & 1 \\ 2 & 4 & 8 \\ 3 & 9 & 27 \\ 4 & 16 & 64 \\
 5  & 25 & 125 \end{array} \right]$
 
-If the columns are linearly independent, we have no free variables, and so there must be a pivot in every column. Since every pivot in row-reduced form is the only non-zero entry in its column, the row-reduced form of the matrix can only look like this:
+\\If the columns are linearly independent, we have no free variables, and so there must be a pivot in every column. Since every pivot in row-reduced form is the only non-zero entry in its column, the row-reduced form of the matrix can only look like this:
 
-$\left[\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \\
+\\$\left[\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \\
 0 & 0 & 0 \end{array} \right]$
 
-So, a row-reduced matrix with linearly independent columns can have a row of all zeros, and in particular, if there are more rows than columns, it is guaranteed to have such a row.
+\\So, a row-reduced matrix with linearly independent columns can have a row of all zeros, and in particular, if there are more rows than columns, it is guaranteed to have such a row.
 
 }
 
