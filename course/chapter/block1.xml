@@ -193,13 +193,14 @@
     <vertical display_name="Linear Dependence Proposition" refnum="5" url_name="b1linind-vertical5">
       <html url_name="b1linind-tab5-text1"/>
       <problem url_name="b1linind-tab5-problem1"/>
+      <problem url_name="b1linind-tab5-problem2"/>
+      <problem url_name="b1linind-tab5-problem3"/>
     </vertical>
     <vertical display_name="Determining Linear Independence in R^m" refnum="6" url_name="b1linind-vertical6">
       <problem url_name="b1linind-tab6-problem1"/>
       <problem url_name="b1linind-tab6-problem2"/>
       <problem url_name="b1linind-tab6-problem3"/>
       <problem url_name="b1linind-tab6-problem4"/>
-      <problem url_name="b1linind-tab6-problem5"/>
       <video url_name="b1linind-tab6-video1"/>
     </vertical>
     <vertical display_name="Linearly Independent Lists in R^m" refnum="7" url_name="b1linind-vertical7">

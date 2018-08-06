@@ -1,34 +1,35 @@
-<problem display_name="Proving Linear Independence" linenum="246" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+<problem display_name="Non-trivial Solutions?" linenum="287" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
-Let's think about the definition of linear independence. Recall that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is linearly independent if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p>
+Use row reduction to determine how many solutions the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has, where </p>
+    <table id="a0000000058" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ -1 &amp;  1 &amp;  3 \\ 3 &amp;  3 &amp;  3 \\ 4 &amp;  1 &amp;  -2 \\ 5 &amp;  3 &amp;  1 \end{array} \right].[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
     <p>
-Which of the following would be a way to prove that a list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is linearly independent? Check all that apply. </p>
+      <optionresponse>
+        <optioninput options="('No solutions','Exactly one solution','Infinitely many solutions')" correct="Infinitely many solutions"/>
+      </optionresponse>
+    </p>
     <p>
-      <choiceresponse>
-        <checkboxgroup>
-          <choice correct="false" name="1">
-            <text>Assume that [mathjaxinline]a_ i = 0[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline], and show [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline]</text>
-          </choice>
-          <choice correct="false" name="2">
-            <text>Assume that [mathjaxinline]a_ i \ne 0[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline], and show [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n \ne \mathbf{0}[/mathjaxinline]</text>
-          </choice>
-          <choice correct="true" name="3">
-            <text>Assume that [mathjaxinline]a_ i \ne 0[/mathjaxinline] for at least one [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline], and show [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n \ne \mathbf{0}[/mathjaxinline]</text>
-          </choice>
-          <choice correct="true" name="4">
-            <text>Assume that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline], and show that [mathjaxinline]a_ i = 0[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline]</text>
-          </choice>
-          <choice correct="false" name="5">
-            <text>Assume that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n \ne \mathbf{0}[/mathjaxinline], and show that [mathjaxinline]a_ i \ne 0[/mathjaxinline] for at least one [mathjaxinline]i[/mathjaxinline] from 1 to [mathjaxinline]n[/mathjaxinline]</text>
-          </choice>
-        </checkboxgroup>
-      </choiceresponse>
+Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly independent, where the [mathjaxinline]v_ i[/mathjaxinline] are given below? </p>
+    <table id="a0000000059" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v_1 = \left[\begin{array}{c} 1 \\ -1 \\ 3 \\ 4 \\ 5 \end{array} \right], v_2 = \left[\begin{array}{c} 2 \\ 1 \\ 3 \\ 1 \\ 3 \end{array} \right], v_3 = \left[\begin{array}{c} 3 \\ 3 \\ 3 \\ -2 \\ 1 \end{array} \right].[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <p>
+      <optionresponse>
+        <optioninput options="('Linearly independent','Linearly dependent')" correct="Linearly dependent"/>
+      </optionresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">  </font>
       </solution>
     </p>
   </text>

@@ -3058,9 +3058,7 @@ True or False: Suppose the list [mathjaxinline]\{ v_1; v_2; v_3; v_4\}[/mathjaxi
               </p>
             </text>
           </problem>
-        </vertical>
-        <vertical display_name="Determining Linear Independence in R^m" refnum="6" url_name="b1linind-vertical6">
-          <problem display_name="Proving Linear Independence" linenum="246" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Proving Linear Independence" linenum="243" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let's think about the definition of linear independence. Recall that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is linearly independent if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p>
@@ -3095,7 +3093,29 @@ Which of the following would be a way to prove that a list [mathjaxinline]\{ v_1
               </p>
             </text>
           </problem>
-          <problem display_name="Non-trivial Solutions?" linenum="268" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Existence or Uniqueness?" linenum="265" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
+            <text>
+              <p>
+Is the linear independence of a list of vectors an existence question, or a uniqueness question? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Existence','Uniqueness')" correct="Uniqueness"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ A list of vectors is linearly independent if the <span style="color:#99182C"><b class="bf">only</b></span> way to write [mathjaxinline]\mathbf{0}[/mathjaxinline] as a linear combination of the list is when all coefficients are zero. This is a uniqueness statement.  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Determining Linear Independence in R^m" refnum="6" url_name="b1linind-vertical6">
+          <problem display_name="Non-trivial Solutions?" linenum="287" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Use row reduction to determine how many solutions the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has, where </p>
@@ -3131,12 +3151,12 @@ Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly independe
               </p>
             </text>
           </problem>
-          <problem display_name="Fill in the blank" linenum="296" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Fill in the blank" linenum="315" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 What goes in the blank to make a correct statement? </p>
               <p>
-If the matrix [mathjaxinline]A[/mathjaxinline] when row-reduced yields [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinline], then the columns of [mathjaxinline]A[/mathjaxinline] cannot be linearly independent. </p>
+If the matrix [mathjaxinline]A[/mathjaxinline] yields [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinline] when row-reduced, then the columns of [mathjaxinline]A[/mathjaxinline] cannot be linearly independent. </p>
               <p>
                 <multiplechoiceresponse>
                   <choicegroup direction="vertical">
@@ -3160,7 +3180,7 @@ If the matrix [mathjaxinline]A[/mathjaxinline] when row-reduced yields [mathjaxi
               </p>
             </text>
           </problem>
-          <problem display_name="Fill in the blank 2" linenum="310" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem4" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Fill in the blank 2" linenum="329" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 What goes in the blank to make a correct statement? </p>
@@ -3186,7 +3206,7 @@ If the matrix [mathjaxinline]A[/mathjaxinline] has [mathjaxinline]\underline{\; 
               </p>
             </text>
           </problem>
-          <problem display_name="Fill in the blank 3" linenum="324" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem5" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Fill in the blank 3" linenum="343" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem4" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Putting the previous two statements together, what goes in the blank to make a correct statement? </p>
@@ -3212,10 +3232,10 @@ A list of [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinli
               </p>
             </text>
           </problem>
-          <video display_name="Linear Independence in R^m" youtube_id_1_0="???" url_name="b1linind-tab6-video1"/>
+          <video display_name="Linear Independence in R^m" youtube_id_1_0="hjQug5gZ2JM" url_name="b1linind-tab6-video1"/>
         </vertical>
         <vertical display_name="Linearly Independent Lists in R^m" refnum="7" url_name="b1linind-vertical7">
-          <html display_name="Linear Independence in R^m" linenum="345" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab7-text1">
+          <html display_name="Linear Independence in R^m" linenum="364" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab7-text1">
             <p>
 We have just shown the following results: </p>
             <p>
@@ -3223,7 +3243,7 @@ If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinlin
             <p>
 If [mathjaxinline]n&gt;m[/mathjaxinline], then any list of [mathjaxinline]n[/mathjaxinline] vectors in [mathjaxinline]\mathbb R^ m[/mathjaxinline] must be linearly dependent. </p>
           </html>
-          <problem display_name="Quick Picks" linenum="363" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab7-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Quick Picks" linenum="382" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab7-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Without doing any row-reduction, you should be able to pick out three of the following lists of vectors that are linearly dependent. Which three? </p>
@@ -4026,12 +4046,15 @@ True or false: Every linear transformation from a vector space [mathjaxinline]V[
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ False. Only linear transformations from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline] (or, more generally, from [mathjaxinline]F^ n[/mathjaxinline] to [mathjaxinline]F^ m[/mathjaxinline] where [mathjaxinline]F[/mathjaxinline] is a field) have standard matrices.  </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Standard Matrix 1" linenum="290" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Standard Matrix 1" linenum="292" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 For all [mathjaxinline]v\in \mathbb R^2[/mathjaxinline], let [mathjaxinline]T(v)[/mathjaxinline] be the reflection of [mathjaxinline]v[/mathjaxinline] across the horizontal axis of [mathjaxinline]\mathbb R^2[/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] is a linear transformation from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]. What is its standard matrix? </p>
@@ -4069,7 +4092,7 @@ def MatrixEntry(expect, ans):
               </p>
             </text>
           </problem>
-          <problem display_name="Standard Matrix 2" linenum="308" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab6-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Standard Matrix 2" linenum="310" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab6-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 For all [mathjaxinline]v\in \mathbb R^2[/mathjaxinline], let [mathjaxinline]S(v)[/mathjaxinline] be the vector obtained by reflecting [mathjaxinline]v[/mathjaxinline] across the diagonal line [mathjaxinline]x=y[/mathjaxinline] and then rotating the result by [mathjaxinline]90^\circ[/mathjaxinline] counterclockwise. [mathjaxinline]S[/mathjaxinline] is a linear transformation from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]. What is its standard matrix? </p>
@@ -4107,18 +4130,10 @@ def MatrixEntry(expect, ans):
               </p>
             </text>
           </problem>
-          <problem display_name="How many linear transformations?" linenum="329" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab6-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="How many linear transformations?" linenum="331" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab6-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
-How many linear transformations [mathjaxinline]T:\mathbb R^4 \rightarrow \mathbb R^2[/mathjaxinline] satisfy the conditions </p>
-              <table id="a0000000063" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-                <tr>
-                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(e_1) = T(e_3) = \left[\begin{array}{c} 2 \\ 3 \end{array} \right][/mathjax]</td>
-                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
-                </tr>
-              </table>
-              <p>
- and [mathjaxinline]T(e_4) = \mathbf{0}[/mathjaxinline]? </p>
+How many linear transformations [mathjaxinline]T:\mathbb R^4 \rightarrow \mathbb R^2[/mathjaxinline] satisfy the conditions [mathjaxinline]T(e_1) = T(e_3) = \left[\begin{array}{c} 2 \\ 3 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(e_4) = \mathbf{0}[/mathjaxinline]? </p>
               <p>
                 <multiplechoiceresponse>
                   <choicegroup direction="vertical">
@@ -4148,7 +4163,7 @@ How many linear transformations [mathjaxinline]T:\mathbb R^4 \rightarrow \mathbb
         </vertical>
         <vertical display_name="Back to Pictures" refnum="7" url_name="b1lintrans2-vertical7">
           <video display_name="More Pictures" youtube_id_1_0="8zRN403o8tg" url_name="b1lintrans2-tab7-video1"/>
-          <problem display_name="What is preserved?" linenum="360" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="What is preserved?" linenum="362" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Take a look at the video again. Which properties seem to be preserved by linear transformations from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>

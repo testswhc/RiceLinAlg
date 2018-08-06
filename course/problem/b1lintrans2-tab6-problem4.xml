@@ -1,15 +1,7 @@
-<problem display_name="How many linear transformations?" linenum="329" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="How many linear transformations?" linenum="331" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-How many linear transformations [mathjaxinline]T:\mathbb R^4 \rightarrow \mathbb R^2[/mathjaxinline] satisfy the conditions </p>
-    <table id="a0000000063" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-      <tr>
-        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(e_1) = T(e_3) = \left[\begin{array}{c} 2 \\ 3 \end{array} \right][/mathjax]</td>
-        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
-      </tr>
-    </table>
-    <p>
- and [mathjaxinline]T(e_4) = \mathbf{0}[/mathjaxinline]? </p>
+How many linear transformations [mathjaxinline]T:\mathbb R^4 \rightarrow \mathbb R^2[/mathjaxinline] satisfy the conditions [mathjaxinline]T(e_1) = T(e_3) = \left[\begin{array}{c} 2 \\ 3 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(e_4) = \mathbf{0}[/mathjaxinline]? </p>
     <p>
       <multiplechoiceresponse>
         <choicegroup direction="vertical">
