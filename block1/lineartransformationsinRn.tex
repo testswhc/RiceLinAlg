@@ -59,7 +59,11 @@ When we apply the linear transformation $T: \R^2 \rightarrow \R^2$ given by $T(x
 % \edXabox{expect="A" options="A","B","C","D"}
 
 
-\edXsolution{ 
+\edXsolution{We see that $T\Bigg(\left[ \begin{array}{c}
+a\\ b\end{array} \right]\Bigg)=\left[ \begin{array}{cc}
+-1 & 0 \\ 0 & 1 \end{array} \right]\left[ \begin{array}{c}
+a\\ b\end{array}\right]=\left[ \begin{array}{c}
+-a\\ b\end{array}\right]$ and thus $T$ reflects the original image over the $y-$axis.
 
 }
 
@@ -91,7 +95,11 @@ When we apply the linear transformation $T: \R^2 \rightarrow \R^2$ given by $T(x
 % \edXabox{expect="A" options="A","B","C","D"}
 
 
-\edXsolution{ 
+\edXsolution{We see that $T\Bigg(\left[ \begin{array}{c}
+a\\ b\end{array} \right]\Bigg)=\left[ \begin{array}{cc}
+0.5 & 0 \\ 0 & 2 \end{array} \right]\left[ \begin{array}{c}
+a\\ b\end{array}\right]=\left[ \begin{array}{c}
+0.5a\\ 2b\end{array}\right]$, and thus scales the original image by a factor 0.5 in the $x$ direction and a factor of 2 in the $y$ direction.
 
 }
 
@@ -120,6 +128,8 @@ Suppose $T: \R^4\rightarrow \R^3$ is given by
 $T(x) = Ax$ where  
 \[ A = \left[ \begin{array}{cc} 1 & 3 & 5 & 7 \\ 2 & 0 & -1 & -1 \\ 1 & 1 & 3  & -2 \end{array} \right].\]
 
+%I dont know if I should edit problems... but it seems that the above should be {cccc} not {cc}
+
 What is $T(e_3)$?  
 
 \input{vectorentry.tex}
@@ -127,7 +137,7 @@ What is $T(e_3)$?
 \edXabox{type="custom" cfn="VectorEntry" expect="[[5],[-1],[3]]"}
 
 
-\edXsolution{ 
+\edXsolution{ Since $T: \R^4\rightarrow \R^3$, we know from context that $e_3=\left[ \begin{array}{c} 0 & 0 & 1 & 0 \end{array} \right].$  Then $T(e_3)=\left[ \begin{array}{cccc} 1 & 3 & 5 & 7 \\ 2 & 0 & -1 & -1 \\ 1 & 1 & 3  & -2 \end{array} \right]\left[ \begin{array}{c} 0 & 0 & 1 & 0 \end{array} \right]$.
 
 }
 
@@ -140,6 +150,8 @@ Suppose the function $T: \R^3\rightarrow \R^2$ is given by
 \[T\left( \left[ \begin{array}{c} a_1 \\ a_2\\ a_3 \end{array} \right] \right) =\left[ \begin{array}{c} 2a_1-a_3 \\ -a_1 + a_2 \end{array} \right] \] 
 for all vectors $\left[ \begin{array}{c} a_1 \\ a_2\\ a_3 \end{array} \right]  \in \R^3$.  
 
+%In the actual program, the directins for how students to enter the matrix includes an augmented matrix.  This seems a bit confusing.
+
 For what matrix $A$ is $T(x) = Ax$ for all $x \in \R^3$?  
 
 \input{matrixentry.tex}
@@ -151,7 +163,9 @@ Is $T$ a linear transformation?
 
 \edXabox{expect="Yes" options="Yes","No"}
 
-\edXsolution{ 
+\edXsolution{ First, consider the vector $e_1$.  Then $a_1=1$, $a_2=0$ and $a_3=0$, so $T(e_1)=\left[ \begin{array}{c} 2 \\ -1 \end{array} \right]$.   As the lecture (at minute 2:00) implies, this is the first column of $A$.  Similarly, the second column is given by $T(e_2)=\left[ \begin{array}{c} 0 \\ 1 \end{array} \right]$, and the third column by $T(e_3)=\left[ \begin{array}{c} -1 \\ 0 \end{array} \right]$.\\
+
+Since $T$ is expressed by a matrix with real entries, it is a linear transformation.
 
 }
 
@@ -179,6 +193,8 @@ given by rotation counterclockwise by $45^\circ$.
 
 \end{center}
 
+%Is the first sentence below as you intended? Should it be "$45^\circ, 45^\circ, 90^\circ$ triangles"?
+
 From the $45^\circ-45^\circ-9045^\circ$ triangles in the diagram, we can find that  
 $T(e_1) = \left[ \begin{array}{c} \frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right] \approx
 \left[ \begin{array}{c} 0.707 \\ 0.707 \end{array} \right]$ and
@@ -192,7 +208,8 @@ What is $T\left( \left[ \begin{array}{c} 4 \\ 0 \end{array} \right] \right)$?  (
 \edXabox{type="custom" cfn="VectorEntry" expect="[[2.83],[2.83]]"}
 
 
-\edXsolution{ 
+\edXsolution{ Since $T$ is a linear transformation, $T\left( \left[ \begin{array}{c} 4 \\ 0 \end{array} \right] \right)=4\cdot T\left( \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] \right)=4\cdot T(e_1)=4\left[ \begin{array}{c} \frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right]= \left[ \begin{array}{c} 2\sqrt{2} \\ 2\sqrt{2}  \end{array} \right]\approx
+\left[ \begin{array}{c} 2.83 \\ 2.83 \end{array} \right]$.
 
 }
 
@@ -209,7 +226,8 @@ What is $T\left( \left[ \begin{array}{c} 4 \\ 1 \end{array} \right] \right)$?
 \edXabox{type="custom" cfn="VectorEntry" expect="[[2.12],[3.54]]"}
 
 
-\edXsolution{ 
+\edXsolution{ Since $T$ is a linear transformation, $T\left( \left[ \begin{array}{c} 4 \\ 1 \end{array} \right] \right)=T(4e_1+e_2)=4T(e_1)+T(e_2)=4\cdot \left[ \begin{array}{c} \frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right]+\left[ \begin{array}{c} -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right] \approx
+\left[ \begin{array}{c} 2.12 \\ 3.54 \end{array} \right]$.
 
 }
 
@@ -230,7 +248,7 @@ what is $T\left( \left[ \begin{array}{c} 3\sqrt{2} \\ -\sqrt{2} \end{array} \rig
 \edXabox{type="custom" cfn="VectorEntry" expect="[[4],[2]]"}
 
 
-\edXsolution{ 
+\edXsolution{ Again, by linearity properties, $T\left( \left[ \begin{array}{c} 3\sqrt{2} \\ -\sqrt{2} \end{array} \right] \right)=3\sqrt{2}\cdot T(e_1)+-\sqrt{2}\cdot T(e_2)=3\sqrt{2}\cdot \left[ \begin{array}{c} \frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right]+-\sqrt{2}\cdot \left[ \begin{array}{c} -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right]=\left[ \begin{array}{c} 4\\2  \end{array} \right]$.
 
 }
 
@@ -299,7 +317,7 @@ $T$ is a linear transformation from $\R^2$ to $\R^2$.  What is its standard matr
 \edXabox{type="custom" cfn="MatrixEntry" expect="[[1,0],[0,-1]]"}
 
 
-\edXsolution{ 
+\edXsolution{ If $T$ is a reflection across the horizontal axis, then $e_1$ is fixed by $T$ and thus the first column of the standard matrix is $T(e_1)=e_1$.  Now, $e_2$ is reflected to $-e_2$, and thus the second column of the standard matrix is $T(e_2)=-e_2$
 
 }
 
@@ -319,7 +337,7 @@ $S$ is a linear transformation from $\R^2$ to $\R^2$.  What is its standard matr
 \edXabox{type="custom" cfn="MatrixEntry" expect="[[-1,0],[0,1]]"}
 
 
-\edXsolution{ 
+\edXsolution{ First, under the reflection, $e_1$ is taken to $e_2$.  Then, under the rotation, this vector is taken to $-e_1$.  Thus, $S(e_1)=-e_1$.  Similarly, $e_2$ is first taken to $e_1$ and then to $e_2$, and thus $S(e_2)=e_2$.
 
 }
 
@@ -337,7 +355,7 @@ and $T(e_4) = \veco$?
 
 \edXabox{type="multichoice" expect="infinitely many" options="zero","one","more than one but finitely many","infinitely many"}
 
-\edXsolution{ 
+\edXsolution{ This question is equivalent to asking 'how many $2\times 4$ matrices, $A$, with entries in $\R$, satisfy $A\cdot e_1=A\cdot e_2=\left[\begin{array}{c} 2 \\ 3   \end{array} \right]$ and $A\cdot e_4=\veco$?'.  The first equality forces the first and second columns of $A$ to both be $\left[\begin{array}{c} 2 \\ 3   \end{array} \right]$, and the second equality forces the forth column of $A$ to be $\veco$, but the third column of $A$ is free to have any real entries.
 
 }
 
@@ -379,7 +397,11 @@ Do lines that start perpendicular remain perpendicular after transformation?
 
 \edXabox{expect="No" options="Yes","No"}
 
-\edXsolution{  }
+\edXsolution{We will give a counterexample to show that area is not preserved.  Suppose you have a square with the bottom and left edges given by the vectors $e_1$ and $e_2$ respectively.  This square has area 1.  If we have a transformation that scales by a factor of 2 in both the $x$ and $y$ direction, then the new square has sides given by the vectors $2e_1$ and $2e_2$.  This image has area 4.\\
+
+Note that we can treat each point, $(x,y)$, as a vector in standard position $\left[\begin{array}{c}  x\\ y   \end{array} \right]$.  Now, suppose $\ell_1$ and $\ell_2$ are two parallel lines.  If $\ell_1$ consists of points $p_1=\left[\begin{array}{c}  x\\ mx+b_1   \end{array} \right]$ then $\ell_2$ consists of points $p_2=\left[\begin{array}{c}  x\\ mx+b_2   \end{array} \right]$.  We will find the image of two points on each line and use these points to show the slope of the image lines, $T(\ell_i)$, are the same.   If $T$ is a linear transformation with standard matrix $A=\left[\begin{array}{cc} a & c\\ b& d   \end{array} \right]$, then $T(\ell_1)$ contains the points $T(\left[\begin{array}{c}  0\\ b_1   \end{array} \right])=\left[\begin{array}{cc} a & c\\ b& d   \end{array} \right]\left[\begin{array}{c}  0\\ b_1   \end{array} \right]=\left[\begin{array}{c}  cb_1\\ db_1   \end{array} \right]$, and $T(\left[\begin{array}{c}  1\\ m+b_1   \end{array} \right])=\left[\begin{array}{cc} a & c\\ b& d   \end{array} \right]\left[\begin{array}{c}  1\\ m+b_1   \end{array} \right]=\left[\begin{array}{c}  a+cm+cb_1\\ b+dm+db_1   \end{array} \right]$.  Thus, $T(\ell_1)$ has slope $\frac{b+dm+db_1-db_1}{a+cm+cb_1-cb_1}=\frac{b+dm}{a+cm}$.  Similarly $T(\ell_2)$ contains the points $\left[\begin{array}{c}  cb_2\\ db_2  \end{array} \right]$ and $\left[\begin{array}{c} a+cm+cb_2\\ b+dm+db_2  \end{array} \right]$, so $T(\ell_2)$ has slope $\frac{b+dm+db_1-db_1}{a+cm+cb_1-cb_1}=\frac{b+dm}{a+cm}$.  Therefore, we see that the image of the two lines have the same slope.\\
+
+At time 2:12 in the video, we see an example of perpendicular lines not remaining perpendicular after a transformation.}
 
 \endedxproblem
 
