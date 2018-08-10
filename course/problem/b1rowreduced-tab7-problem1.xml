@@ -1,8 +1,8 @@
-<problem display_name="Solutions to a System" linenum="356" tex_filename="./block1/rref.tex" showanswer="finished" attempts="8" rerandomize="per_student">
+<problem display_name="Solutions to a System" linenum="389" tex_filename="./block1/rref.tex" showanswer="finished" attempts="8" rerandomize="per_student">
   <text>
     <p>
 Recall the augmented matrix from the last problem: </p>
-    <table id="a0000000039" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <table id="a0000000042" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
       <tr>
         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{cccc:c} 1 &amp;  0 &amp;  0 &amp;  1 &amp;  -2 \\ 0 &amp;  0 &amp;  1 &amp;  3 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>

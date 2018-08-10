@@ -14,7 +14,7 @@ Regarding such equations, we have discussed two main questions: the existence qu
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
-Because [mathjaxinline]A\cdot \mathbf{0}= \mathbf{0}[/mathjaxinline] always, the answer to the existence question is always "yes" for this equation. It's not always the case, however, that the zero vector is the only solution; for some matrices, some other combination of the columns of [mathjaxinline]A[/mathjaxinline] will also give zero. When a matrix [mathjaxinline]A[/mathjaxinline] does in fact have a unique solution to [mathjaxinline]A\vecx = \mathbf{0}[/mathjaxinline], that makes [mathjaxinline]A[/mathjaxinline] a special type of matrix, as we'll see in this section. </p>
+Because [mathjaxinline]A\cdot \mathbf{0}= \mathbf{0}[/mathjaxinline] always, the answer to the existence question is always "yes" for this equation. It's not always the case, however, that the zero vector is the only solution; for some matrices, some other combination of the columns of [mathjaxinline]A[/mathjaxinline] will also give zero.  </p>
         </font>
       </solution>
     </p>
