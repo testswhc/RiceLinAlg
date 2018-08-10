@@ -1,23 +1,50 @@
-<problem display_name="RREF or not?" linenum="58" tex_filename="./block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Make it RREF" linenum="85" tex_filename="./block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
-Which of the following matrices are in RREF? Click all that apply. </p>
+The following matrix is not in RREF. </p>
     <p>
-      <choiceresponse>
-        <checkboxgroup>
-          <choice correct="true" name="1">
-            <text>mx1</text>
-          </choice>
-          <choice correct="false" name="2">
-            <text>mx2</text>
-          </choice>
-        </checkboxgroup>
-      </choiceresponse>
+[mathjaxinline]\left[ \begin{array}{ccccc} 1 &amp;  4 &amp;  0 &amp;  0 &amp;  7 \\ 0 &amp;  0 &amp;  1 &amp;  -2 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  1 \end{array} \right][/mathjaxinline] </p>
+    <p>
+However, you can apply a single row operation to put it into RREF. What matrix is the result? </p>
+    <p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p>
+    <p>
+Use decimals only. </p>
+    <script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script>
+    <p>
+      <customresponse cfn="MatrixEntry" expect="[[1,4,0,0,7],[0,0,1,0,5],[0,0,0,1,1]]">
+        <textline correct_answer="[[1,4,0,0,7],[0,0,1,0,5],[0,0,0,1,1]]"/>
+      </customresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+Note that the matrix currently satisfies all conditions except &#x201C;Each pivot is the only non-zero entry in its column", for there is a [mathjaxinline]-2[/mathjaxinline] above the pivot in the third row. We can add two times row three to row two and replace row 2 with the result. Doing so, we obtain </p>
+          <p>
+[mathjaxinline]\left[ \begin{array}{ccccc} 1 &amp;  4 &amp;  0 &amp;  0 &amp;  7 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  5 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  1 \end{array} \right].[/mathjaxinline] </p>
+        </font>
       </solution>
     </p>
   </text>

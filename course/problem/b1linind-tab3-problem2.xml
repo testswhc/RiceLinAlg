@@ -1,4 +1,4 @@
-<problem display_name="List 2" linenum="120" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="List 2" linenum="123" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], where </p>
@@ -25,7 +25,10 @@ Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly dependent
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ The first answer is immediately "yes" because we have the zero vector in our set; we can choose any non-zero value for [mathjaxinline]a_2[/mathjaxinline], and with [mathjaxinline]a_1 = 0[/mathjaxinline] and [mathjaxinline]a_3 = 0[/mathjaxinline], the above equation will still be true. Because there exist sets of coefficients, not all zero, that make the above equation true, the set [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is a linearly dependent set.  </p>
+        </font>
       </solution>
     </p>
   </text>

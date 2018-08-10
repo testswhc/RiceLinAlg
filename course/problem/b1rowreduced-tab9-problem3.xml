@@ -1,4 +1,4 @@
-<problem display_name="Integers" linenum="492" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Integers" linenum="504" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 If a matrix has integer entries, will the entries stay integers when you row-reduce it? </p>

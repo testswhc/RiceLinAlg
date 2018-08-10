@@ -1,22 +1,20 @@
-<problem display_name="Row Reduction and Into" linenum="283" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Row Reduction and Onto" linenum="134" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-Let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. </p>
-    <p>
-[mathjaxinline]T[/mathjaxinline] is into if and only if [mathjaxinline]A[/mathjaxinline] row reduces to have... </p>
+Suppose [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] is onto if and only if [mathjaxinline]A[/mathjaxinline] row reduces to have... </p>
     <p>
       <multiplechoiceresponse>
         <choicegroup direction="vertical">
           <choice correct="false" name="1">
             <text> a row of all zeros</text>
           </choice>
-          <choice correct="false" name="2">
+          <choice correct="true" name="2">
             <text> no rows of all zeros</text>
           </choice>
           <choice correct="false" name="3">
             <text> a free variable</text>
           </choice>
-          <choice correct="true" name="4">
+          <choice correct="false" name="4">
             <text> no free variables</text>
           </choice>
         </choicegroup>
@@ -25,7 +23,7 @@ Let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue">  </font>
+        <font color="blue"/>
       </solution>
     </p>
   </text>

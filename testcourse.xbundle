@@ -562,31 +562,7 @@ A pivot in a lower row is to the right of any pivot in a higher row. </p>
               </li>
             </ul>
           </html>
-          <problem display_name="RREF or not?" linenum="58" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
-            <text>
-              <p>
-Which of the following matrices are in RREF? Click all that apply. </p>
-              <p>
-                <choiceresponse>
-                  <checkboxgroup>
-                    <choice correct="true" name="1">
-                      <text>mx1</text>
-                    </choice>
-                    <choice correct="false" name="2">
-                      <text>mx2</text>
-                    </choice>
-                  </checkboxgroup>
-                </choiceresponse>
-              </p>
-              <p>
-                <solution>
-                  <font color="blue">Answer: </font>
-                  <font color="blue"/>
-                </solution>
-              </p>
-            </text>
-          </problem>
-          <problem display_name="Make it RREF" linenum="73" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Make it RREF" linenum="85" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 The following matrix is not in RREF. </p>
@@ -637,7 +613,7 @@ Note that the matrix currently satisfies all conditions except &#x201C;Each pivo
               </p>
             </text>
           </problem>
-          <problem display_name="Pivots vs. Rows" linenum="102" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Pivots vs. Rows" linenum="114" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 True or False: If a matrix that is in RREF has 6 rows, then it must have 6 pivots. </p>
@@ -660,7 +636,7 @@ In fact, a matrix with [mathjaxinline]6[/mathjaxinline] rows may have any number
         </vertical>
         <vertical display_name="Interpretations" refnum="4" url_name="b1rowreduced-vertical4">
           <video display_name="The Row Reduction Algorithm" youtube_id_1_0="oXO9Iw9KyPo" url_name="b1rowreduced-tab4-video1"/>
-          <html display_name="The Row-Reduction Algorithm" linenum="129" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab4-text1">
+          <html display_name="The Row-Reduction Algorithm" linenum="141" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab4-text1">
             <p>
 The following algorithm will always work to reduce a matrix into Row-Reduced Echelon Form. </p>
             <ul class="itemize">
@@ -686,7 +662,7 @@ This is sometimes called <span style="color:#99182C"><b class="bf">Gaussian elim
           </html>
         </vertical>
         <vertical display_name="Row-Reducing Practice" refnum="5" url_name="b1rowreduced-vertical5">
-          <problem display_name="Row-reduction Practice" linenum="152" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Row-reduction Practice" linenum="164" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -821,7 +797,7 @@ Finally, we clear the non-zero entries above and below that pivot by replacing R
               </p>
             </text>
           </problem>
-          <problem display_name="Linear System 1" linenum="200" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Linear System 1" linenum="212" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Consider the augmented matrix </p>
@@ -904,7 +880,7 @@ This represents the equations [mathjaxinline]x_1 = 2[/mathjaxinline], [mathjaxin
         </vertical>
         <vertical display_name="Interpretations" refnum="6" url_name="b1rowreduced-vertical6">
           <video display_name="Interpreting a RREF matrix" youtube_id_1_0="cdAGco8RsOI" url_name="b1rowreduced-tab6-video1"/>
-          <problem display_name="Matrix 1" linenum="259" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Matrix 1" linenum="271" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p>
@@ -938,13 +914,13 @@ What can you conclude about the original system of equations? </p>
                   <font color="blue">Answer: </font>
                   <font color="blue">
                     <p>
-The second row corresponds to an equation of the form [mathjaxinline]0x+0y=1[/mathjaxinline], which has no solutions. Thus, the original system will also have no solutions. This is true even though the second column has no pivot and is therefore a free variable.  </p>
+The second row corresponds to an equation of the form [mathjaxinline]0x+0y=1[/mathjaxinline], which has no solutions. Thus, the original system will also have no solutions. This is true even though the second column has no pivot and therefore represents a free variable.  </p>
                   </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Matrix 2" linenum="279" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Matrix 2" linenum="291" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p>
@@ -984,7 +960,7 @@ The original system corresponds to 3 equations in 2 variables. Since there are t
               </p>
             </text>
           </problem>
-          <problem display_name="Matrix 3" linenum="300" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Matrix 3" linenum="312" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p>
@@ -1024,7 +1000,7 @@ The original system corresponds to 3 equations in 4 variables. Since there are 2
               </p>
             </text>
           </problem>
-          <problem display_name="Free Variables" linenum="324" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Free Variables" linenum="336" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 If a system of linear equations has free variables when row-reduced, is it possible for the system to be inconsistent? </p>
@@ -1054,7 +1030,7 @@ We previously saw a system of 3 linear equations in 2 variables with the followi
           </problem>
         </vertical>
         <vertical display_name="Finding Solutions" refnum="7" url_name="b1rowreduced-vertical7">
-          <problem display_name="Solutions to a System" linenum="344" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab7-problem1" showanswer="finished" attempts="8" rerandomize="per_student">
+          <problem display_name="Solutions to a System" linenum="356" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab7-problem1" showanswer="finished" attempts="8" rerandomize="per_student">
             <text>
               <p>
 Recall the augmented matrix from the last problem: </p>
@@ -1111,7 +1087,7 @@ Working from right to left, we first see that there is not a pivot in the column
           </problem>
         </vertical>
         <vertical display_name="Going Further" refnum="8" url_name="b1rowreduced-vertical8">
-          <html display_name="The Size of a Matrix" linenum="379" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-text1">
+          <html display_name="The Size of a Matrix" linenum="391" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-text1">
             <p>
 If a matrix [mathjaxinline]M[/mathjaxinline] has [mathjaxinline]m[/mathjaxinline] rows and [mathjaxinline]n[/mathjaxinline] columns, we say that [mathjaxinline]M[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix. For instance, </p>
             <table id="a0000000040" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
@@ -1123,7 +1099,7 @@ If a matrix [mathjaxinline]M[/mathjaxinline] has [mathjaxinline]m[/mathjaxinline
             <p>
 is a [mathjaxinline]3\times 5[/mathjaxinline] augmented matrix, since it has 3 rows and 5 columns. The coefficient matrix of the above system would be a [mathjaxinline]3\times 4[/mathjaxinline] matrix. </p>
           </html>
-          <problem display_name="Matrix Size" linenum="395" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Matrix Size" linenum="407" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -1146,7 +1122,7 @@ We see that [mathjaxinline]A[/mathjaxinline] has 4 rows and 3 columns. The first
               </p>
             </text>
           </problem>
-          <problem display_name="Maximum pivots" linenum="410" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Maximum pivots" linenum="422" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 What is the maximum number of pivots in a [mathjaxinline]6\times 3[/mathjaxinline] coefficient matrix, when row-reduced? </p>
@@ -1168,7 +1144,7 @@ There aren't any non-zero entries above or below a pivot. Thus, there is at most
               </p>
             </text>
           </problem>
-          <problem display_name="Maximum pivots 2" linenum="422" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Maximum pivots 2" linenum="434" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 What is the maximum number of pivots in a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix, when row-reduced? </p>
@@ -1190,7 +1166,7 @@ By definition, there is at most one pivot in each row. So there can be at most 4
               </p>
             </text>
           </problem>
-          <problem display_name="Number of Free Variables" linenum="435" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Number of Free Variables" linenum="447" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 What is the strongest statement you can make about the number of free variables in a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix, when row-reduced? </p>
@@ -1216,7 +1192,7 @@ We know that a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix corre
               </p>
             </text>
           </problem>
-          <problem display_name="4 Equations, 6 Variables" linenum="446" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem5" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="4 Equations, 6 Variables" linenum="458" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem5" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Given the answer to the previous question, which of the following results are possible for a system of 4 linear equations in 6 variables? </p>
@@ -1248,7 +1224,7 @@ The existence of free variables rules out the possibility for unique solutions. 
           </problem>
         </vertical>
         <vertical display_name="Fields" refnum="9" url_name="b1rowreduced-vertical9">
-          <problem display_name="Real Numbers" linenum="466" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Real Numbers" linenum="478" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 If a matrix has real number entries, will the entries stay real numbers when you row-reduce it? </p>
@@ -1262,13 +1238,13 @@ If a matrix has real number entries, will the entries stay real numbers when you
                   <font color="blue">Answer: </font>
                   <font color="blue">
                     <p>
-Yes. The only acceptable row operations are multiplication by a scalar, addition, and subraction. In the case of a matrix with real entries, row-reducing will not require a non-real scalar. The sum, product and difference of two real numbers is also rational. Thus, under each of these operations, the entries will remain real.  </p>
+Yes. The only acceptable row operations are multiplication by a scalar, addition, and subraction. In the case of a matrix with real entries, row-reducing will not require a non-real scalar. The sum, product and difference of two real numbers is also real. Thus, under each of these operations, the entries will remain real.  </p>
                   </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Rational Numbers" linenum="478" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Rational Numbers" linenum="490" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 If a matrix has rational number entries, will the entries stay rational numbers when you row-reduce it? (Recall that rational numbers are those that can be written as fractions [mathjaxinline]\frac{p}{q}[/mathjaxinline], where [mathjaxinline]p,q[/mathjaxinline] are integers.) </p>
@@ -1288,7 +1264,7 @@ Yes. The only acceptable row operations are multiplication by a scalar, addition
               </p>
             </text>
           </problem>
-          <problem display_name="Integers" linenum="492" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Integers" linenum="504" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 If a matrix has integer entries, will the entries stay integers when you row-reduce it? </p>
@@ -1319,7 +1295,7 @@ No. For example, to put </p>
           <video display_name="Fields" youtube_id_1_0="3e74wlqpAf4" url_name="b1rowreduced-tab9-video1"/>
         </vertical>
         <vertical display_name="Fields Defined" refnum="10" url_name="b1rowreduced-vertical10">
-          <html display_name="Fields" linenum="514" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab10-text1">
+          <html display_name="Fields" linenum="526" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab10-text1">
             <p>
 A <span style="color:#99182C"><b class="bf">field</b></span> is, essentially, a set in which one can add, subtract, multiply, and divide any two elements (other than dividing by zero). The formal definition is below. </p>
             <p>
@@ -2840,7 +2816,7 @@ For time budgeting purposes, this sequence has X videos totaling X minutes, plus
           </html>
         </vertical>
         <vertical display_name="Linear Independence" refnum="2" url_name="b1linind-vertical2">
-          <problem display_name="Existence vs. Uniqueness" linenum="34" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab2-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Existence vs. Uniqueness" linenum="34" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab2-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Given a matrix [mathjaxinline]A[/mathjaxinline], consider the equation [mathjaxinline]A\vecx = \mathbf{0}[/mathjaxinline]. </p>
@@ -2854,7 +2830,10 @@ Regarding such equations, we have discussed two main questions: the existence qu
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+Because [mathjaxinline]A\cdot \mathbf{0}= \mathbf{0}[/mathjaxinline] always, the answer to the existence question is always "yes" for this equation. It's not always the case, however, that the zero vector is the only solution; for some matrices, some other combination of the columns of [mathjaxinline]A[/mathjaxinline] will also give zero. When a matrix [mathjaxinline]A[/mathjaxinline] does in fact have a unique solution to [mathjaxinline]A\vecx = \mathbf{0}[/mathjaxinline], that makes [mathjaxinline]A[/mathjaxinline] a special type of matrix, as we'll see in this section. </p>
+                  </font>
                 </solution>
               </p>
             </text>
@@ -2884,20 +2863,23 @@ A list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is l
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ We know that if all the scalars equal zero, the equation [mathjaxinline]a_1v_1 + a_2v_2 + \ldots a_ nv_ n = \mathbf{0}[/mathjaxinline] will be true for any set [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline]. The idea of linear dependence is that we can choose a different set of scalars that also makes the equation true; i.e., a set of scalars that is not all zeros. They may very well be all non-zero scalars, but this is not required.  </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
         </vertical>
         <vertical display_name="Linear Independence Problems" refnum="3" url_name="b1linind-vertical3">
-          <html display_name="Definitions of Linearly Independent and Dependent" linenum="77" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-text1">
+          <html display_name="Definitions of Linearly Independent and Dependent" linenum="78" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-text1">
             <p>
 We say that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is <span style="color:#99182C"><b class="bf">linearly independent</b></span> if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p>
             <p>
 A list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is <span style="color:#99182C"><b class="bf">linearly dependent</b></span> if there are scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline], not all zero, such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline]. </p>
           </html>
-          <problem display_name="List 1" linenum="90" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="List 1" linenum="91" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], where </p>
@@ -2924,12 +2906,15 @@ Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly dependent
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ Notice that [mathjaxinline]v_2[/mathjaxinline] is the only vector in the set with non-zero entries in the third and fourth positions; a zero combination of these vectors therefore requires [mathjaxinline]a_2 = 0[/mathjaxinline]. Then, notice that [mathjaxinline]-3 \cdot v_1 = v_3[/mathjaxinline], so that [mathjaxinline]3 \cdot v_1 + 1 \cdot v_3 = \mathbf{0}[/mathjaxinline]. We have that [mathjaxinline]a_1 = 3[/mathjaxinline], [mathjaxinline]a_2 = 0[/mathjaxinline], and [mathjaxinline]a_3 = 1[/mathjaxinline] is a possible set of scalars that satisfies the equation. It follows that any scalar multiple of that triple is also a set that satisfies the equation. Furthermore, it is easy to show that the coefficients that satisfy the equation can only be scalar multiples of that triple. <br/>The set [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly dependent because, as we've just seen, there exist sets of coefficients, not all zero, that make the above equation true.  </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="List 2" linenum="120" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="List 2" linenum="123" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], where </p>
@@ -2956,12 +2941,15 @@ Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly dependent
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ The first answer is immediately "yes" because we have the zero vector in our set; we can choose any non-zero value for [mathjaxinline]a_2[/mathjaxinline], and with [mathjaxinline]a_1 = 0[/mathjaxinline] and [mathjaxinline]a_3 = 0[/mathjaxinline], the above equation will still be true. Because there exist sets of coefficients, not all zero, that make the above equation true, the set [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is a linearly dependent set.  </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="List 3" linenum="149" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="List 3" linenum="151" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]\mathbb {P}[/mathjaxinline] be the vector space of polynomials with real coefficients in the variable [mathjaxinline]t[/mathjaxinline]. Consider the list of vectors [mathjaxinline]\{ f; g\}[/mathjaxinline], where [mathjaxinline]f(t) = 1+t[/mathjaxinline] and [mathjaxinline]g(t) = t+t^2[/mathjaxinline] are vectors in [mathjaxinline]\mathbb {P}[/mathjaxinline]. </p>
@@ -2982,7 +2970,10 @@ Is the list [mathjaxinline]\{ v_1; v_2\}[/mathjaxinline] linearly dependent or l
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ In the case of two vectors, we can determine whether they are linearly independent or not by examination. If we see that the vectors are scalar multiples of each other, we know it will be possible to add non-zero multiples of them to get zero, and they are therefore linearly dependent as a set. If we see that they are not scalar multiples of each other, we know there can't be a way to add non-zero multiples of them to get zero, and they are therefore linearly independent. The case of [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] above is the latter situation; no scalar, multiplied by [mathjaxinline]f[/mathjaxinline], would give us [mathjaxinline]g[/mathjaxinline].  </p>
+                  </font>
                 </solution>
               </p>
             </text>
@@ -2990,7 +2981,7 @@ Is the list [mathjaxinline]\{ v_1; v_2\}[/mathjaxinline] linearly dependent or l
         </vertical>
         <vertical display_name="Geometry of Linear Independence" refnum="4" url_name="b1linind-vertical4">
           <video display_name="Linear Independence for Small Sets" youtube_id_1_0="Mw04hBXVtho" url_name="b1linind-tab4-video1"/>
-          <problem display_name="More Lists" linenum="186" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab4-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="More Lists" linenum="188" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab4-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Consider the vectors [mathjaxinline]v_1, v_2, v_3 \in \mathbb R^2[/mathjaxinline] as given in this picture: </p>
@@ -3029,19 +3020,22 @@ Which of the following lists are linearly independent? Click all that apply. </p
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ The zero vector is not linearly independent as a set because [mathjaxinline]a_1 \cdot \mathbf{0}= \mathbf{0}[/mathjaxinline] for any scalar [mathjaxinline]a_1[/mathjaxinline]. <br/>[mathjaxinline]v_1[/mathjaxinline] is linearly independent as a set because [mathjaxinline]v_1[/mathjaxinline] is not the zero vector, and therefore [mathjaxinline]a_1 \cdot v_1 = \mathbf{0}[/mathjaxinline] implies [mathjaxinline]a_1 = 0[/mathjaxinline]. <br/>It can be seen on the diagram that [mathjaxinline]v_1[/mathjaxinline] is not collinear with [mathjaxinline]v_2[/mathjaxinline], and likewise not with [mathjaxinline]v_3[/mathjaxinline], and so [mathjaxinline]\{ v_1;v_2\}[/mathjaxinline] is linearly independent and [mathjaxinline]\{ v_1;v_3\}[/mathjaxinline] is linearly independent. <br/>[mathjaxinline]v_2[/mathjaxinline] and [mathjaxinline]v_3[/mathjaxinline] appear to be collinear, so [mathjaxinline]\{ v_2;v_3\}[/mathjaxinline] is not linearly independent(i.e. suppose [mathjaxinline]v_3 = 2\cdot v_2[/mathjaxinline]; then 2&#xB7;v_2 + -1 &#xB7;v_3 = 0). <br/>[mathjaxinline]v_3[/mathjaxinline] is of course collinear with itself, so [mathjaxinline]\{ v_3;v_3\}[/mathjaxinline] is not linearly independent. <br/>Finally, since [mathjaxinline]\{ v_2;v_3\}[/mathjaxinline] is not linearly independent and is a subset of [mathjaxinline]\{ v_1;v_2;v_3\}[/mathjaxinline], this last set cannot be linearly independent.  </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <video display_name="A Proposition" youtube_id_1_0="NMB5tCmE2UE" url_name="b1linind-tab4-video2"/>
+          <video display_name="A Proposition" youtube_id_1_0="DK-9-MAIaA8" url_name="b1linind-tab4-video2"/>
         </vertical>
         <vertical display_name="Linear Dependence Proposition" refnum="5" url_name="b1linind-vertical5">
-          <html display_name="Linear Dependence Equivalent Condition" linenum="216" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-text1">
+          <html display_name="Linear Dependence Equivalent Condition" linenum="218" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-text1">
             <p>
 Let [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] be vectors in a vector space [mathjaxinline]V[/mathjaxinline]. The list is linearly dependent if and only if one of the vectors in the list can be expressed as a linear combination of the other vectors. </p>
           </html>
-          <problem display_name="True or False" linenum="224" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="True or False" linenum="226" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or False: Suppose the list [mathjaxinline]\{ v_1; v_2; v_3; v_4\}[/mathjaxinline] is linearly dependent. Then [mathjaxinline]v_4[/mathjaxinline] must be in the span of [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline]. </p>
@@ -3053,12 +3047,15 @@ True or False: Suppose the list [mathjaxinline]\{ v_1; v_2; v_3; v_4\}[/mathjaxi
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ The conclusion is too specific. We proved that if our list is linearly dependent, then at least one of the vectors will be in the span of the others. We can't claim that a particular vector in the list is in the span of the rest of the list, or that all vectors are in the spans of their list complements (without knowing more). Consider the problem on the previous tab with [mathjaxinline]v_1[/mathjaxinline], [mathjaxinline]v_2[/mathjaxinline], and [mathjaxinline]v_3[/mathjaxinline]: it appears that [mathjaxinline]v_3[/mathjaxinline] is not in the span of [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline], and yet the set of three is linearly dependent.  </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Proving Linear Independence" linenum="243" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Proving Linear Independence" linenum="245" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let's think about the definition of linear independence. Recall that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is linearly independent if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p>
@@ -3088,12 +3085,15 @@ Which of the following would be a way to prove that a list [mathjaxinline]\{ v_1
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ The approach in choice 1 won't prove linear independence, because the conclusion will be true regardless of the vectors in the list. <br/>The approach in choice 2 won't prove linear independence, because even if our vector list passes the test in choice 2, there may yet exist some set of coefficients, not all zero but containing at least one zero, that gives a zero linear combination (i.e., the list could still be linearly dependent). <br/>The approach in choice 3 will prove linear independence. If it's true that every set of coefficients, not all zero, will give a non-zero linear combination, then the only way to get a zero linear combination is with all zero coefficients, which is the definition of linear independence. <br/>The approach in choice 4 will prove linear independence. It simply uses the definition. (Notice that choices 3 and 4 are just contrapositives of each other.) <br/>The approach in choice 5 won't prove linear independence, because the conclusion will be true regardless of the vectors in the list.  </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Existence or Uniqueness?" linenum="265" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Existence or Uniqueness?" linenum="272" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Is the linear independence of a list of vectors an existence question, or a uniqueness question? </p>
@@ -3115,7 +3115,7 @@ Is the linear independence of a list of vectors an existence question, or a uniq
           </problem>
         </vertical>
         <vertical display_name="Determining Linear Independence in R^m" refnum="6" url_name="b1linind-vertical6">
-          <problem display_name="Non-trivial Solutions?" linenum="287" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Non-trivial Solutions?" linenum="294" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Use row reduction to determine how many solutions the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has, where </p>
@@ -3146,12 +3146,12 @@ Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly independe
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue">  </font>
+                  <font color="blue"> First, we remind that there must always exist at least one solution to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. We will either have exactly one solution (and that solution will be [mathjaxinline]\mathbf{0}[/mathjaxinline]), or we will have infinitely many solutions (e.g., any scalar multiple of a solution to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] is also a solution to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]). <br/>After row reduction, we have: [mathjaxinline]A = \left[\begin{array}{ccc} 1 &amp;  0 &amp;  -1 \\ 0 &amp;  1 &amp;  2 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjaxinline] <br/>We have only two pivots. The third column represents a free variable; [mathjaxinline]x_3[/mathjaxinline] can equal anything we choose. The equation has infinitely many solutions. Note that, in the product [mathjaxinline]A \cdot x[/mathjaxinline], the columns of the matrix [mathjaxinline]A[/mathjaxinline] are vectors that are combined with the entries of [mathjaxinline]x[/mathjaxinline] as the weights: [mathjaxinline]Ax = x_1v_1 + x_2v_2 + x_3v_3[/mathjaxinline]. We have therefore shown that there are infinitely many sets [mathjaxinline]\{ x_1; x_2; x_3\}[/mathjaxinline] that satisfy [mathjaxinline]x_1v_1 + x_2v_2 + x_3v_3 = 0[/mathjaxinline], and by definition, the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly dependent.  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Fill in the blank" linenum="315" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Fill in the blank" linenum="328" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 What goes in the blank to make a correct statement? </p>
@@ -3175,12 +3175,19 @@ If the matrix [mathjaxinline]A[/mathjaxinline] yields [mathjaxinline]\underline{
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue">  </font>
+                  <font color="blue">
+                    <p>
+ A free variable can be chosen to equal anything in a solution to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]; therefore, the presence of a free variable implies that the columns of [mathjaxinline]A[/mathjaxinline] are not linearly independent. </p>
+                    <p><br/>Now suppose we have a 5x3 matrix, so that the columns represent 3 vectors in [mathjaxinline]\mathbb R^5[/mathjaxinline]: <br/>[mathjaxinline]\left[\begin{array}{ccc} 1 &amp;  1 &amp;  1 \\ 2 &amp;  4 &amp;  8 \\ 3 &amp;  9 &amp;  27 \\ 4 &amp;  16 &amp;  64 \\ 5 &amp;  25 &amp;  125 \end{array} \right][/mathjaxinline] </p>
+                    <p><br/>If the columns are linearly independent, we have no free variables, and so there must be a pivot in every column. Since every pivot in row-reduced form is the only non-zero entry in its column, the row-reduced form of the matrix can only look like this: </p>
+                    <p><br/>[mathjaxinline]\left[\begin{array}{ccc} 1 &amp;  0 &amp;  0 \\ 0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjaxinline] </p>
+                    <p><br/>So, a row-reduced matrix with linearly independent columns can have a row of all zeros, and in particular, if there are more rows than columns, it is guaranteed to have such a row. </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Fill in the blank 2" linenum="329" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Fill in the blank 2" linenum="355" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 What goes in the blank to make a correct statement? </p>
@@ -3201,12 +3208,15 @@ If the matrix [mathjaxinline]A[/mathjaxinline] has [mathjaxinline]\underline{\; 
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue">  </font>
+                  <font color="blue">
+                    <p>
+ Every row has at most one pivot, and every column has at most one pivot. Therefore, whichever is fewer, the number of rows or the number of columns, represents an upper bound on the possible number of pivots of a matrix. For this reason, if there are more columns than rows, there can't be a pivot in every column. As we've seen before, a column without a pivot represents a free variable. So a system with a coefficient matrix with more columns than rows must have a free variable. If there are more rows than columns, it is possible that every column has a pivot, and that there are no free variables in the system.  </p>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Fill in the blank 3" linenum="343" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem4" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Fill in the blank 3" linenum="371" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem4" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Putting the previous two statements together, what goes in the blank to make a correct statement? </p>
@@ -3227,7 +3237,7 @@ A list of [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinli
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue">  </font>
+                  <font color="blue"> A list of 5 vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline] can be written as a 3x5 matrix, which has more columns than rows. As we've established, if such a matrix serves as the coefficient matrix of a system, the system will have a free variable, which means that the columns of the matrix are linearly dependent.  </font>
                 </solution>
               </p>
             </text>
@@ -3235,7 +3245,7 @@ A list of [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinli
           <video display_name="Linear Independence in R^m" youtube_id_1_0="hjQug5gZ2JM" url_name="b1linind-tab6-video1"/>
         </vertical>
         <vertical display_name="Linearly Independent Lists in R^m" refnum="7" url_name="b1linind-vertical7">
-          <html display_name="Linear Independence in R^m" linenum="364" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab7-text1">
+          <html display_name="Linear Independence in R^m" linenum="393" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab7-text1">
             <p>
 We have just shown the following results: </p>
             <p>
@@ -3243,7 +3253,7 @@ If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinlin
             <p>
 If [mathjaxinline]n&gt;m[/mathjaxinline], then any list of [mathjaxinline]n[/mathjaxinline] vectors in [mathjaxinline]\mathbb R^ m[/mathjaxinline] must be linearly dependent. </p>
           </html>
-          <problem display_name="Quick Picks" linenum="382" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab7-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Quick Picks" linenum="411" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab7-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Without doing any row-reduction, you should be able to pick out three of the following lists of vectors that are linearly dependent. Which three? </p>
@@ -3300,7 +3310,10 @@ Without doing any row-reduction, you should be able to pick out three of the fol
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ Choice B has the zero vector and is therefore linearly dependent. Choice C has 5 vectors in [mathjaxinline]\mathbb R^4[/mathjaxinline] and is therefore linearly dependent (expressed as a matrix, there would be more columns than rows). Choice E has a pair of collinear vectors: the third vector is twice the second vector. The list in choice E is therefore linearly dependent.  </p>
+                  </font>
                 </solution>
               </p>
             </text>
@@ -4199,11 +4212,341 @@ Do lines that start perpendicular remain perpendicular after transformation? </p
         </vertical>
       </sequential>
       <sequential display_name="Into and Onto" linenum="341" tex_filename="testcourse.tex" refnum="9" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
-        <vertical display_name="Wait for it" refnum="1" url_name="b1intoonto-vertical1">
-          <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b1intoonto-tab1-text1">
+        <vertical display_name="Page One" refnum="1" url_name="b1intoonto-vertical1">
+          <html display_name="Preliminaries" linenum="5" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab1-text1">
             <p>
-Coming soon! </p>
+At the end of this sequence, and after some practice, you should be able to: </p>
+            <ul class="itemize">
+              <li>
+                <p>
+Determine whether a linear transformation is into or onto; </p>
+              </li>
+              <li>
+                <p>
+Understand the connection between the kernel/image of a linear transformation, and into/onto. </p>
+              </li>
+            </ul>
+            <p>
+For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
           </html>
+        </vertical>
+        <vertical display_name="Image of a Linear Transformation" refnum="2" url_name="b1intoonto-vertical2">
+          <video display_name="Image of a Linear Transformation" youtube_id_1_0="n3RkuIlIfjI" url_name="b1intoonto-tab2-video1"/>
+        </vertical>
+        <vertical display_name="Image Definition" refnum="3" url_name="b1intoonto-vertical3">
+          <html display_name="Image Definition and Relation with Span" linenum="46" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab3-text1">
+            <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">image</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p>
+            <table id="a0000000063" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <tr>
+                <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Image}(T) = \left\{  T(v) \  : \  v \in V\right\} .[/mathjax]</td>
+                <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+              </tr>
+            </table>
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline], then the image of [mathjaxinline]T[/mathjaxinline] is the span of the columns of [mathjaxinline]A[/mathjaxinline]. (This is sometimes also called the column space of [mathjaxinline]A[/mathjaxinline].) </p>
+          </html>
+          <problem display_name="Existence vs. Uniqueness" linenum="62" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformation, and let [mathjaxinline]w\in W[/mathjaxinline]. Is the question of whether [mathjaxinline]w[/mathjaxinline] is in the image of [mathjaxinline]T[/mathjaxinline] an existence question or a uniqueness question? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Existence','Uniqueness')" correct="Existence"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="In the Image?" linenum="75" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab3-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p>
+              <table id="a0000000064" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  1 \\ -1 &amp;  4 &amp;  3 \end{array} \right].[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+Is the vector [mathjaxinline]\left[\begin{array}{c} 1 \\ -1 \\ -7 \end{array} \right][/mathjaxinline] in the image of [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+Is the vector [mathjaxinline]\left[\begin{array}{c} 2 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] in the image of [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Onto" refnum="4" url_name="b1intoonto-vertical4">
+          <video display_name="Onto" youtube_id_1_0="i9Zg8aOTdwc" url_name="b1intoonto-tab4-video1"/>
+          <html display_name="Definition of Onto" linenum="104" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab4-text1">
+            <p><span style="color:#27408C"><b class="bf">Definition.</b></span> A linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is called <span style="color:#99182C"><b class="bf">onto</b></span> if [mathjaxinline]\mathrm{Image(T)} = W[/mathjaxinline]. </p>
+          </html>
+          <problem display_name="Is it onto?" linenum="114" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab4-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p>
+              <table id="a0000000065" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  1 \\ -1 &amp;  4 &amp;  3 \end{array} \right].[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+(This is the same [mathjaxinline]T[/mathjaxinline] as in previous problems; you may wish to review them.) </p>
+              <p>
+Is [mathjaxinline]T[/mathjaxinline] onto? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Row Reduction and Onto" linenum="134" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab4-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] is onto if and only if [mathjaxinline]A[/mathjaxinline] row reduces to have... </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> a row of all zeros</text>
+                    </choice>
+                    <choice correct="true" name="2">
+                      <text> no rows of all zeros</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> a free variable</text>
+                    </choice>
+                    <choice correct="false" name="4">
+                      <text> no free variables</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="True or False" linenum="151" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab4-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+True or False: No linear transformation [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline] can be onto. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('True','False')" correct="True"/>
+                </optionresponse>
+              </p>
+              <p>
+True or False: Every linear transformation [mathjaxinline]T: \mathbb R^8 \rightarrow \mathbb R^6[/mathjaxinline] must be onto. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('True','False')" correct="False"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Into" refnum="5" url_name="b1intoonto-vertical5">
+          <video display_name="Into" youtube_id_1_0="4go4BarPvvY" url_name="b1intoonto-tab5-video1"/>
+        </vertical>
+        <vertical display_name="Into Definition and Exercise" refnum="6" url_name="b1intoonto-vertical6">
+          <html display_name="Into Definition" linenum="182" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab6-text1">
+            <p><span style="color:#27408C"><b class="bf">Definition.</b></span> A linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], is <span style="color:#99182C"><b class="bf">into</b></span> if, for every [mathjaxinline]u, v\in V[/mathjaxinline] with [mathjaxinline]u\ne v[/mathjaxinline], we have [mathjaxinline]T(u) \ne T(v)[/mathjaxinline]. </p>
+          </html>
+          <problem display_name="Is it into?" linenum="191" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]V[/mathjaxinline] be a vector space over [mathjaxinline]\mathbb R[/mathjaxinline], and let [mathjaxinline]T: V\rightarrow V[/mathjaxinline] be given by [mathjaxinline]T(v) = 2v[/mathjaxinline]. </p>
+              <p>
+If we know that [mathjaxinline]T(u) = T(v)[/mathjaxinline], must it be true that [mathjaxinline]u = v[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+Is [mathjaxinline]T[/mathjaxinline] into? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Kernel" refnum="7" url_name="b1intoonto-vertical7">
+          <video display_name="Kernel of a Linear Transformation" youtube_id_1_0="2jd2BhcEOyE" url_name="b1intoonto-tab7-video1"/>
+        </vertical>
+        <vertical display_name="Kernel Definition and Questions" refnum="8" url_name="b1intoonto-vertical8">
+          <html display_name="Kernel Definition" linenum="226" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab8-text1">
+            <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">kernel</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p>
+            <table id="a0000000066" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <tr>
+                <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Ker}(T) = \left\{  v\in V \  : T(v) = \mathbf{0}\} .[/mathjax]</td>
+                <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+              </tr>
+            </table>
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> A linear transformation [mathjaxinline]T: V \rightarrow W[/mathjaxinline] is into if and only if [mathjaxinline]\mathrm{Ker}(T) = \{  \mathbf{0}\}[/mathjaxinline]. </p>
+          </html>
+          <problem display_name="Existence vs. Uniqueness" linenum="240" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformation. Is the question of whether [mathjaxinline]T[/mathjaxinline] is into an existence question or a uniqueness question? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Existence','Uniqueness')" correct="Uniqueness"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Is it into? 2" linenum="255" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab8-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^4[/mathjaxinline] be the linear transformation with standard matrix </p>
+              <table id="a0000000067" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  5 \\ 0 &amp;  1 &amp;  2 \\ -1 &amp;  1 &amp;  1 \\ 2 &amp;  -1 &amp;  0 \end{array} \right].[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+How many solutions does the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] have? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('zero','one','more than one')" correct="more than one"/>
+                </optionresponse>
+              </p>
+              <p>
+Does [mathjaxinline]\mathrm{Ker}(T) = \{ \mathbf{0}\}[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+Is [mathjaxinline]T[/mathjaxinline] into? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Row Reduction and Into" linenum="283" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab8-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. </p>
+              <p>
+[mathjaxinline]T[/mathjaxinline] is into if and only if [mathjaxinline]A[/mathjaxinline] row reduces to have... </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> a row of all zeros</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> no rows of all zeros</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> a free variable</text>
+                    </choice>
+                    <choice correct="true" name="4">
+                      <text> no free variables</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Summarizing" refnum="9" url_name="b1intoonto-vertical9">
+          <video display_name="Summary" youtube_id_1_0="iQUlbQhB1fs" url_name="b1intoonto-tab9-video1"/>
+          <html display_name="Into Proposition" linenum="310" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab9-text1">
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If the linear transformation [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] has standard matrix [mathjaxinline]A[/mathjaxinline], then [mathjaxinline]T[/mathjaxinline] is into if and only if [mathjaxinline]A[/mathjaxinline] has no free variables. It is impossible for [mathjaxinline]T[/mathjaxinline] to be into if [mathjaxinline]n&gt;m[/mathjaxinline]. </p>
+          </html>
+          <problem display_name="True or False 2" linenum="318" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab9-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+True or False: No linear transformation [mathjaxinline]T: \mathbb R^8 \rightarrow \mathbb R^6[/mathjaxinline] can be into. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('True','False')" correct="True"/>
+                </optionresponse>
+              </p>
+              <p>
+True or False: Every linear transformation [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline] must be into. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('True','False')" correct="False"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
         </vertical>
       </sequential>
     </chapter>
