@@ -1,4 +1,4 @@
-<problem display_name="Fill in the blank 2" linenum="355" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Fill in the blank 2" linenum="357" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 What goes in the blank to make a correct statement? </p>
@@ -21,7 +21,7 @@ If the matrix [mathjaxinline]A[/mathjaxinline] has [mathjaxinline]\underline{\; 
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
- Every row has at most one pivot, and every column has at most one pivot. Therefore, whichever is fewer, the number of rows or the number of columns, represents an upper bound on the possible number of pivots of a matrix. For this reason, if there are more columns than rows, there can't be a pivot in every column. As we've seen before, a column without a pivot represents a free variable. So a system with a coefficient matrix with more columns than rows must have a free variable. If there are more rows than columns, it is possible that every column has a pivot, and that there are no free variables in the system.  </p>
+ If there are more columns than rows, there can't be a pivot in every column, so there must be a free variable.  </p>
         </font>
       </solution>
     </p>

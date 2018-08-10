@@ -1,8 +1,8 @@
-<problem display_name="Non-trivial Solutions?" linenum="294" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Non-trivial Solutions?" linenum="306" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Use row reduction to determine how many solutions the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has, where </p>
-    <table id="a0000000058" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <table id="a0000000061" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
       <tr>
         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ -1 &amp;  1 &amp;  3 \\ 3 &amp;  3 &amp;  3 \\ 4 &amp;  1 &amp;  -2 \\ 5 &amp;  3 &amp;  1 \end{array} \right].[/mathjax]</td>
         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -15,7 +15,7 @@ Use row reduction to determine how many solutions the equation [mathjaxinline]Ax
     </p>
     <p>
 Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly independent, where the [mathjaxinline]v_ i[/mathjaxinline] are given below? </p>
-    <table id="a0000000059" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <table id="a0000000062" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
       <tr>
         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v_1 = \left[\begin{array}{c} 1 \\ -1 \\ 3 \\ 4 \\ 5 \end{array} \right], v_2 = \left[\begin{array}{c} 2 \\ 1 \\ 3 \\ 1 \\ 3 \end{array} \right], v_3 = \left[\begin{array}{c} 3 \\ 3 \\ 3 \\ -2 \\ 1 \end{array} \right].[/mathjax]</td>
         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -29,7 +29,7 @@ Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly independe
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"> First, we remind that there must always exist at least one solution to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. We will either have exactly one solution (and that solution will be [mathjaxinline]\mathbf{0}[/mathjaxinline]), or we will have infinitely many solutions (e.g., any scalar multiple of a solution to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] is also a solution to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]). <br/>After row reduction, we have: [mathjaxinline]A = \left[\begin{array}{ccc} 1 &amp;  0 &amp;  -1 \\ 0 &amp;  1 &amp;  2 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjaxinline] <br/>We have only two pivots. The third column represents a free variable; [mathjaxinline]x_3[/mathjaxinline] can equal anything we choose. The equation has infinitely many solutions. Note that, in the product [mathjaxinline]A \cdot x[/mathjaxinline], the columns of the matrix [mathjaxinline]A[/mathjaxinline] are vectors that are combined with the entries of [mathjaxinline]x[/mathjaxinline] as the weights: [mathjaxinline]Ax = x_1v_1 + x_2v_2 + x_3v_3[/mathjaxinline]. We have therefore shown that there are infinitely many sets [mathjaxinline]\{ x_1; x_2; x_3\}[/mathjaxinline] that satisfy [mathjaxinline]x_1v_1 + x_2v_2 + x_3v_3 = 0[/mathjaxinline], and by definition, the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly dependent.  </font>
+        <font color="blue"> First, we recall that there must always exist at least one solution to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. We will either have exactly one solution (and that solution will be [mathjaxinline]\mathbf{0}[/mathjaxinline]), or we will have infinitely many solutions. <br/>After row reduction, we obtain [mathjaxinline]\left[\begin{array}{ccc} 1 &amp;  0 &amp;  -1 \\ 0 &amp;  1 &amp;  2 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 \end{array} \right].[/mathjaxinline] <br/>We have only two pivots. The third column represents a free variable, so the equation has infinitely many solutions. Note that, in the product [mathjaxinline]A x[/mathjaxinline], the columns of the matrix [mathjaxinline]A[/mathjaxinline] are vectors that are combined with the entries of [mathjaxinline]x[/mathjaxinline] as the weights: [mathjaxinline]Ax = a_1v_1 + a_2v_2 + a_3v_3[/mathjaxinline]. We have therefore shown that there are infinitely many sets of coefficients [mathjaxinline]\{ a_1; a_2; a_3\}[/mathjaxinline] that satisfy [mathjaxinline]a_1v_1 + a_2v_2 + a_3v_3 = \mathbf{0}[/mathjaxinline], therefore the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly dependent.  </font>
       </solution>
     </p>
   </text>
