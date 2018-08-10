@@ -1,4 +1,4 @@
-<problem display_name="Matrix 1" linenum="259" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Matrix 1" linenum="271" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p>
@@ -32,7 +32,7 @@ What can you conclude about the original system of equations? </p>
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
-The second row corresponds to an equation of the form [mathjaxinline]0x+0y=1[/mathjaxinline], which has no solutions. Thus, the original system will also have no solutions. This is true even though the second column has no pivot and is therefore a free variable.  </p>
+The second row corresponds to an equation of the form [mathjaxinline]0x+0y=1[/mathjaxinline], which has no solutions. Thus, the original system will also have no solutions. This is true even though the second column has no pivot and therefore represents a free variable.  </p>
         </font>
       </solution>
     </p>

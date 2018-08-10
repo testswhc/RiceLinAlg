@@ -1,4 +1,4 @@
-<problem display_name="Existence vs. Uniqueness" linenum="34" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Existence vs. Uniqueness" linenum="34" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Given a matrix [mathjaxinline]A[/mathjaxinline], consider the equation [mathjaxinline]A\vecx = \mathbf{0}[/mathjaxinline]. </p>
@@ -12,7 +12,10 @@ Regarding such equations, we have discussed two main questions: the existence qu
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+Because [mathjaxinline]A\cdot \mathbf{0}= \mathbf{0}[/mathjaxinline] always, the answer to the existence question is always "yes" for this equation. It's not always the case, however, that the zero vector is the only solution; for some matrices, some other combination of the columns of [mathjaxinline]A[/mathjaxinline] will also give zero. When a matrix [mathjaxinline]A[/mathjaxinline] does in fact have a unique solution to [mathjaxinline]A\vecx = \mathbf{0}[/mathjaxinline], that makes [mathjaxinline]A[/mathjaxinline] a special type of matrix, as we'll see in this section. </p>
+        </font>
       </solution>
     </p>
   </text>

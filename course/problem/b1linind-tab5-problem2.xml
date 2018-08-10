@@ -1,4 +1,4 @@
-<problem display_name="Proving Linear Independence" linenum="243" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+<problem display_name="Proving Linear Independence" linenum="245" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 Let's think about the definition of linear independence. Recall that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is linearly independent if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p>
@@ -28,7 +28,10 @@ Which of the following would be a way to prove that a list [mathjaxinline]\{ v_1
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ The approach in choice 1 won't prove linear independence, because the conclusion will be true regardless of the vectors in the list. <br/>The approach in choice 2 won't prove linear independence, because even if our vector list passes the test in choice 2, there may yet exist some set of coefficients, not all zero but containing at least one zero, that gives a zero linear combination (i.e., the list could still be linearly dependent). <br/>The approach in choice 3 will prove linear independence. If it's true that every set of coefficients, not all zero, will give a non-zero linear combination, then the only way to get a zero linear combination is with all zero coefficients, which is the definition of linear independence. <br/>The approach in choice 4 will prove linear independence. It simply uses the definition. (Notice that choices 3 and 4 are just contrapositives of each other.) <br/>The approach in choice 5 won't prove linear independence, because the conclusion will be true regardless of the vectors in the list.  </p>
+        </font>
       </solution>
     </p>
   </text>

@@ -1,4 +1,4 @@
-<problem display_name="List 1" linenum="90" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="List 1" linenum="91" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], where </p>
@@ -25,7 +25,10 @@ Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly dependent
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ Notice that [mathjaxinline]v_2[/mathjaxinline] is the only vector in the set with non-zero entries in the third and fourth positions; a zero combination of these vectors therefore requires [mathjaxinline]a_2 = 0[/mathjaxinline]. Then, notice that [mathjaxinline]-3 \cdot v_1 = v_3[/mathjaxinline], so that [mathjaxinline]3 \cdot v_1 + 1 \cdot v_3 = \mathbf{0}[/mathjaxinline]. We have that [mathjaxinline]a_1 = 3[/mathjaxinline], [mathjaxinline]a_2 = 0[/mathjaxinline], and [mathjaxinline]a_3 = 1[/mathjaxinline] is a possible set of scalars that satisfies the equation. It follows that any scalar multiple of that triple is also a set that satisfies the equation. Furthermore, it is easy to show that the coefficients that satisfy the equation can only be scalar multiples of that triple. <br/>The set [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly dependent because, as we've just seen, there exist sets of coefficients, not all zero, that make the above equation true.  </p>
+        </font>
       </solution>
     </p>
   </text>

@@ -12,7 +12,7 @@ At the end of this sequence, and after some practice, you should be able to:
 
 \begin{itemize}
 \item Determine whether a linear transformation is into or onto;
-\item Understand the relationship between .  
+\item Understand the connection between the kernel/image of a linear transformation, and into/onto.  
 \end{itemize}
 
 
@@ -34,29 +34,300 @@ plus some questions.
 \doedxvideo{Image of a Linear Transformation}{n3RkuIlIfjI}
 
 
-existence or uniqueness
+
+
 
 \endedxvertical
 
 
 
-\beginedxvertical{Introduction to Linear Combinations}
+\beginedxvertical{Image Definition}
 
+\beginedxtext{Image Definition and Relation with Span}
+
+{\keya{\bf{Definition.}}}  
+Given a linear transformation $T: V\rightarrow W$, the  {\keyb{\bf image}} of $T$ is the set
+\[ \mathrm{Image}(T) =  \left\{ T(v) \ : \ v \in V\right\}. \] 
+
+{\keya{\bf{Proposition.}}}  
+If $T: \R^n \rightarrow \R^m$ is a linear transformation with standard matrix $A$, then the image of $T$
+is the span of the columns of $A$.  (This is sometimes also called the column space of $A$.)  
+
+\endedxtext
+
+
+
+
+
+\beginedxproblem{Existence vs. Uniqueness}{\dpa1}
+
+Suppose $T: V\rightarrow W$ is a linear transformation, and let $w\in W$.  Is the question 
+of whether $w$ is in the image of $T$ an existence question or a uniqueness question?
+
+\edXabox{expect="Existence" options="Existence","Uniqueness"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+\beginedxproblem{In the Image?}{\dpa2}
+
+Let $T: \R^3 \rightarrow \R^3$ be the linear transformation with standard matrix 
+\[ A = \left[\begin{array}{ccc} 1 & 2 & 3 \\ 0 & 1 & 1 \\ -1 & 4 & 3  \end{array} \right]. \]
+
+Is the vector $\left[\begin{array}{c} 1 \\ -1  \\ -7 \end{array} \right]$ in the image of $T$?
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+
+Is the vector $\left[\begin{array}{c} 2 \\ -1  \\ 0 \end{array} \right]$ in the image of $T$?
+
+
+\edXabox{expect="No" options="Yes","No"}
+
+\edXsolution{ 
+
+}
+\endedxproblem
+
+
+\endedxvertical
+
+
+\beginedxvertical{Onto}
 
 
 \doedxvideo{Onto}{i9Zg8aOTdwc}
 
+\beginedxtext{Definition of Onto}
 
-Every from R5 to R3 must be onto.
+{\keya{\bf{Definition.}}}  
+A linear transformation $T: V\rightarrow W$ is called  {\keyb{\bf onto}} if $ \mathrm{Image(T)}  = W$.  
+
+
+\endedxtext
+
+
+
+\beginedxproblem{Is it onto?}{\dpa2}
+
+Let $T: \R^3 \rightarrow \R^3$ be the linear transformation with standard matrix 
+\[ A = \left[\begin{array}{ccc} 1 & 2 & 3 \\ 0 & 1 & 1 \\ -1 & 4 & 3  \end{array} \right]. \]
+
+(This is the same $T$ as in previous problems; you may wish to review them.)  
+
+Is $T$ onto?  
+
+\edXabox{expect="No" options="Yes","No"}
+
+
+\edXsolution{ 
+
+}
+
+\endedxproblem
+
+
+
+\beginedxproblem{Row Reduction and Onto}{\dpa1}
+
+Suppose $T: \R^n \rightarrow \R^m$ is a linear transformation with standard matrix $A$.  
+$T$ is onto if and only if $A$ row reduces to have...
+
+
+\edXabox{type="multichoice" expect="no rows of all zeros" options="a row of all zeros","no rows of all zeros","a free variable","no free variables"}
+
+\edXsolution{
+
+}
+
+\endedxproblem
+
+
+
+
+\beginedxproblem{True or False}{\dpa2}
+
+True or False: No linear transformation $T: \R^6 \rightarrow \R^8$ can be onto.  
+
+\edXabox{expect="True" options="True","False"}
+
+True or False: Every linear transformation $T: \R^8 \rightarrow \R^6$ must be onto.  
+
+\edXabox{expect="False" options="True","False"}
+
+\edXsolution{ 
+
+}
+\endedxproblem
 
 \endedxvertical
+
+\beginedxvertical{Into}
+
+
+
+\doedxvideo{Into}{4go4BarPvvY}
+
+
+\endedxvertical
+
+
+
+\beginedxvertical{Into Definition and Exercise}
+
+
+\beginedxtext{Into Definition}
+
+{\keya{\bf{Definition.}}}  
+A linear transformation $T: V\rightarrow W$, is  {\keyb{\bf into}} if, for every $u, v\in V$ with $u\ne v$,
+we have $T(u) \ne T(v)$.  
+
+\endedxtext
+
+
+\beginedxproblem{Is it into?}{\dpa1}
+
+Let $V$ be a vector space over $\R$, and let $T: V\rightarrow V$ be given by $T(v) = 2v$.  
+
+If we know that $T(u) = T(v)$, must it be true that $u = v$?  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+Is $T$ into?
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+\edXsolution{ 
+
+}
+\endedxproblem
+
+\endedxvertical
+
 
 
 \beginedxvertical{Kernel}
 
 
 
-\doedxvideo{Kernel of a Linear Transformation}{i9Zg8aOTdwc}
+\doedxvideo{Kernel of a Linear Transformation}{2jd2BhcEOyE}
 
+
+\endedxvertical
+
+
+
+\beginedxvertical{Kernel Definition and Questions}
+
+
+\beginedxtext{Kernel Definition}
+
+{\keya{\bf{Definition.}}}  
+Given a linear transformation $T: V\rightarrow W$, the  {\keyb{\bf kernel}} of $T$ is the set
+\[ \mathrm{Ker}(T) =  \left\{ v\in V \ : T(v) = \veco\}. \] 
+
+{\keya{\bf{Proposition.}}}  
+A linear transformation $T: V \rightarrow W$ is into if and only if $\mathrm{Ker}(T) = \{ \veco \}$.  
+
+\endedxtext
+
+
+
+
+\beginedxproblem{Existence vs. Uniqueness}{\dpa1}
+
+Suppose $T: V\rightarrow W$ is a linear transformation.  Is the question 
+of whether $T$ is into an existence question or a uniqueness question?
+
+\edXabox{expect="Uniqueness" options="Existence","Uniqueness"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+
+
+\beginedxproblem{Is it into? 2}{\dpa2}
+
+Let $T: \R^3 \rightarrow \R^4$ be the linear transformation with standard matrix 
+\[ A = \left[\begin{array}{ccc} 1 & 2 & 5 \\ 0 & 1 & 2 \\ -1 & 1 & 1 \\ 2 & -1 & 0 \end{array} \right]. \]
+
+How many solutions does the equation $Ax = \veco$ have?
+
+\edXabox{expect="more than one" options="zero","one","more than one"}
+
+
+Does $\mathrm{Ker}(T) = \{\veco\}$?  
+
+\edXabox{expect="No" options="Yes","No"}
+
+
+Is $T$ into?  
+
+\edXabox{expect="No" options="Yes","No"}
+
+
+
+\edXsolution{ 
+
+}
+\endedxproblem
+
+
+
+\beginedxproblem{Row Reduction and Into}{\dpa2}
+
+
+Let $T: \R^n \rightarrow \R^m$ be a linear transformation with standard matrix $A$.
+
+$T$ is into if and only if $A$ row reduces to have...
+
+\edXabox{type="multichoice" expect="no free variables" options="a row of all zeros","no rows of all zeros","a free variable","no free variables"}
+
+\edXsolution{ 
+
+}
+\endedxproblem
+
+
+\endedxvertical
+
+
+
+\beginedxvertical{Summarizing}
+
+
+
+\doedxvideo{Summary}{iQUlbQhB1fs}
+
+
+
+\beginedxtext{Into Proposition}
+
+
+{\keya{\bf{Proposition.}}}  
+If the linear transformation $T: \R^n \rightarrow \R^m$ has standard matrix $A$, then $T$ is into if and only if $A$ has no free variables.  It is impossible for $T$ to be into if $n>m$.   
+
+\endedxtext
+
+\beginedxproblem{True or False 2}{\dpa2}
+
+True or False: No linear transformation $T: \R^8 \rightarrow \R^6$ can be into.  
+
+\edXabox{expect="True" options="True","False"}
+
+True or False: Every linear transformation $T: \R^6 \rightarrow \R^8$ must be into.  
+
+\edXabox{expect="False" options="True","False"}
+
+\edXsolution{ 
+
+}
+\endedxproblem
 
 \endedxvertical

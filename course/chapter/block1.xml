@@ -34,7 +34,6 @@
       <html url_name="b1rowreduced-tab3-text1"/>
       <problem url_name="b1rowreduced-tab3-problem1"/>
       <problem url_name="b1rowreduced-tab3-problem2"/>
-      <problem url_name="b1rowreduced-tab3-problem3"/>
     </vertical>
     <vertical display_name="Interpretations" refnum="4" url_name="b1rowreduced-vertical4">
       <video url_name="b1rowreduced-tab4-video1"/>
@@ -275,8 +274,44 @@
     </vertical>
   </sequential>
   <sequential display_name="Into and Onto" linenum="341" tex_filename="testcourse.tex" refnum="9" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
-    <vertical display_name="Wait for it" refnum="1" url_name="b1intoonto-vertical1">
+    <vertical display_name="Page One" refnum="1" url_name="b1intoonto-vertical1">
       <html url_name="b1intoonto-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Image of a Linear Transformation" refnum="2" url_name="b1intoonto-vertical2">
+      <video url_name="b1intoonto-tab2-video1"/>
+    </vertical>
+    <vertical display_name="Image Definition" refnum="3" url_name="b1intoonto-vertical3">
+      <html url_name="b1intoonto-tab3-text1"/>
+      <problem url_name="b1intoonto-tab3-problem1"/>
+      <problem url_name="b1intoonto-tab3-problem2"/>
+    </vertical>
+    <vertical display_name="Onto" refnum="4" url_name="b1intoonto-vertical4">
+      <video url_name="b1intoonto-tab4-video1"/>
+      <html url_name="b1intoonto-tab4-text1"/>
+      <problem url_name="b1intoonto-tab4-problem1"/>
+      <problem url_name="b1intoonto-tab4-problem2"/>
+      <problem url_name="b1intoonto-tab4-problem3"/>
+    </vertical>
+    <vertical display_name="Into" refnum="5" url_name="b1intoonto-vertical5">
+      <video url_name="b1intoonto-tab5-video1"/>
+    </vertical>
+    <vertical display_name="Into Definition and Exercise" refnum="6" url_name="b1intoonto-vertical6">
+      <html url_name="b1intoonto-tab6-text1"/>
+      <problem url_name="b1intoonto-tab6-problem1"/>
+    </vertical>
+    <vertical display_name="Kernel" refnum="7" url_name="b1intoonto-vertical7">
+      <video url_name="b1intoonto-tab7-video1"/>
+    </vertical>
+    <vertical display_name="Kernel Definition and Questions" refnum="8" url_name="b1intoonto-vertical8">
+      <html url_name="b1intoonto-tab8-text1"/>
+      <problem url_name="b1intoonto-tab8-problem1"/>
+      <problem url_name="b1intoonto-tab8-problem2"/>
+      <problem url_name="b1intoonto-tab8-problem3"/>
+    </vertical>
+    <vertical display_name="Summarizing" refnum="9" url_name="b1intoonto-vertical9">
+      <video url_name="b1intoonto-tab9-video1"/>
+      <html url_name="b1intoonto-tab9-text1"/>
+      <problem url_name="b1intoonto-tab9-problem1"/>
     </vertical>
   </sequential>
 </chapter>

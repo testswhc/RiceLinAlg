@@ -1,4 +1,4 @@
-<problem display_name="More Lists" linenum="186" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+<problem display_name="More Lists" linenum="188" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 Consider the vectors [mathjaxinline]v_1, v_2, v_3 \in \mathbb R^2[/mathjaxinline] as given in this picture: </p>
@@ -37,7 +37,10 @@ Which of the following lists are linearly independent? Click all that apply. </p
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ The zero vector is not linearly independent as a set because [mathjaxinline]a_1 \cdot \mathbf{0}= \mathbf{0}[/mathjaxinline] for any scalar [mathjaxinline]a_1[/mathjaxinline]. <br/>[mathjaxinline]v_1[/mathjaxinline] is linearly independent as a set because [mathjaxinline]v_1[/mathjaxinline] is not the zero vector, and therefore [mathjaxinline]a_1 \cdot v_1 = \mathbf{0}[/mathjaxinline] implies [mathjaxinline]a_1 = 0[/mathjaxinline]. <br/>It can be seen on the diagram that [mathjaxinline]v_1[/mathjaxinline] is not collinear with [mathjaxinline]v_2[/mathjaxinline], and likewise not with [mathjaxinline]v_3[/mathjaxinline], and so [mathjaxinline]\{ v_1;v_2\}[/mathjaxinline] is linearly independent and [mathjaxinline]\{ v_1;v_3\}[/mathjaxinline] is linearly independent. <br/>[mathjaxinline]v_2[/mathjaxinline] and [mathjaxinline]v_3[/mathjaxinline] appear to be collinear, so [mathjaxinline]\{ v_2;v_3\}[/mathjaxinline] is not linearly independent(i.e. suppose [mathjaxinline]v_3 = 2\cdot v_2[/mathjaxinline]; then 2&#xB7;v_2 + -1 &#xB7;v_3 = 0). <br/>[mathjaxinline]v_3[/mathjaxinline] is of course collinear with itself, so [mathjaxinline]\{ v_3;v_3\}[/mathjaxinline] is not linearly independent. <br/>Finally, since [mathjaxinline]\{ v_2;v_3\}[/mathjaxinline] is not linearly independent and is a subset of [mathjaxinline]\{ v_1;v_2;v_3\}[/mathjaxinline], this last set cannot be linearly independent.  </p>
+        </font>
       </solution>
     </p>
   </text>

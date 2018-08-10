@@ -1,4 +1,4 @@
-<problem display_name="List 3" linenum="149" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="List 3" linenum="151" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]\mathbb {P}[/mathjaxinline] be the vector space of polynomials with real coefficients in the variable [mathjaxinline]t[/mathjaxinline]. Consider the list of vectors [mathjaxinline]\{ f; g\}[/mathjaxinline], where [mathjaxinline]f(t) = 1+t[/mathjaxinline] and [mathjaxinline]g(t) = t+t^2[/mathjaxinline] are vectors in [mathjaxinline]\mathbb {P}[/mathjaxinline]. </p>
@@ -19,7 +19,10 @@ Is the list [mathjaxinline]\{ v_1; v_2\}[/mathjaxinline] linearly dependent or l
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ In the case of two vectors, we can determine whether they are linearly independent or not by examination. If we see that the vectors are scalar multiples of each other, we know it will be possible to add non-zero multiples of them to get zero, and they are therefore linearly dependent as a set. If we see that they are not scalar multiples of each other, we know there can't be a way to add non-zero multiples of them to get zero, and they are therefore linearly independent. The case of [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] above is the latter situation; no scalar, multiplied by [mathjaxinline]f[/mathjaxinline], would give us [mathjaxinline]g[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>

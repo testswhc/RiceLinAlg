@@ -1,4 +1,4 @@
-<problem display_name="Fill in the blank 3" linenum="343" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Fill in the blank 3" linenum="371" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Putting the previous two statements together, what goes in the blank to make a correct statement? </p>
@@ -19,7 +19,7 @@ A list of [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinli
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue">  </font>
+        <font color="blue"> A list of 5 vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline] can be written as a 3x5 matrix, which has more columns than rows. As we've established, if such a matrix serves as the coefficient matrix of a system, the system will have a free variable, which means that the columns of the matrix are linearly dependent.  </font>
       </solution>
     </p>
   </text>

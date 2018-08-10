@@ -1,4 +1,4 @@
-<problem display_name="Non-trivial Solutions?" linenum="287" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Non-trivial Solutions?" linenum="294" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Use row reduction to determine how many solutions the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has, where </p>
@@ -29,7 +29,7 @@ Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly independe
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue">  </font>
+        <font color="blue"> First, we remind that there must always exist at least one solution to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. We will either have exactly one solution (and that solution will be [mathjaxinline]\mathbf{0}[/mathjaxinline]), or we will have infinitely many solutions (e.g., any scalar multiple of a solution to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] is also a solution to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]). <br/>After row reduction, we have: [mathjaxinline]A = \left[\begin{array}{ccc} 1 &amp;  0 &amp;  -1 \\ 0 &amp;  1 &amp;  2 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjaxinline] <br/>We have only two pivots. The third column represents a free variable; [mathjaxinline]x_3[/mathjaxinline] can equal anything we choose. The equation has infinitely many solutions. Note that, in the product [mathjaxinline]A \cdot x[/mathjaxinline], the columns of the matrix [mathjaxinline]A[/mathjaxinline] are vectors that are combined with the entries of [mathjaxinline]x[/mathjaxinline] as the weights: [mathjaxinline]Ax = x_1v_1 + x_2v_2 + x_3v_3[/mathjaxinline]. We have therefore shown that there are infinitely many sets [mathjaxinline]\{ x_1; x_2; x_3\}[/mathjaxinline] that satisfy [mathjaxinline]x_1v_1 + x_2v_2 + x_3v_3 = 0[/mathjaxinline], and by definition, the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly dependent.  </font>
       </solution>
     </p>
   </text>
