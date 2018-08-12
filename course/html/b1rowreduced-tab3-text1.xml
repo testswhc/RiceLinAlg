@@ -1,6 +1,5 @@
 <html display_name="Row-Reduced Echelon Form" linenum="41" tex_filename="./block1/rref.tex">
-  <p>
-A matrix is in Row-Reduced Echelon Form (RREF) if it satisfies the following conditions: </p>
+  <p><span style="color:#27408C"><b class="bf">Definition.</b></span> A matrix is in Row-Reduced Echelon Form (RREF) if it satisfies the following conditions: </p>
   <ul class="itemize">
     <li>
       <p>

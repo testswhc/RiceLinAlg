@@ -22,7 +22,10 @@ When we apply the linear transformation [mathjaxinline]T: \mathbb R^2 \rightarro
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+We see that [mathjaxinline]T\Bigg(\left[ \begin{array}{c} a\\ b\end{array} \right]\Bigg)=\left[ \begin{array}{cc} -1 &amp;  0 \\ 0 &amp;  1 \end{array} \right]\left[ \begin{array}{c} a\\ b\end{array}\right]=\left[ \begin{array}{c} -a\\ b\end{array}\right][/mathjaxinline] and thus [mathjaxinline]T[/mathjaxinline] reflects the original image over the [mathjaxinline]y-[/mathjaxinline]axis. </p>
+        </font>
       </solution>
     </p>
   </text>

@@ -248,7 +248,7 @@
       <problem url_name="b1lintrans2-tab2-problem1"/>
       <problem url_name="b1lintrans2-tab2-problem2"/>
     </vertical>
-    <vertical display_name="General Matrix Multiplication" refnum="3" url_name="b1lintrans2-vertical3">
+    <vertical display_name="Multiplication by a Matrix in General" refnum="3" url_name="b1lintrans2-vertical3">
       <video url_name="b1lintrans2-tab3-video1"/>
       <problem url_name="b1lintrans2-tab3-problem1"/>
       <problem url_name="b1lintrans2-tab3-problem2"/>
