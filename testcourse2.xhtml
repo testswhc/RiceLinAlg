@@ -11,47 +11,144 @@
 <chapter display_name="Vectors and Matrices" attrib_string="url_name=&quot;block1&quot; start=&quot;2018-01-11T16:00&quot;" linenum="73" tex_filename="testcourse2.tex" refnum="1"><p>
 <sequential display_name="Systems of Linear Equations" attrib_string="due=&quot;2018-12-18T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b1lineareqns-sequential&quot;" linenum="85" tex_filename="testcourse2.tex" refnum="1"><p>
 <vertical display_name="Page One" attrib_string="url_name=&quot;b1lineareqns-vertical1&quot;" refnum="1"><p>
-<html display_name="Preliminaries" attrib_string="url_name=&quot;b1lineareqns-tab1-text1&quot;" linenum="5" tex_filename="./block1/lineartransformationsinRn.tex"><p>
+<html display_name="Preliminaries" attrib_string="url_name=&quot;b1lineareqns-tab1-text1&quot;" linenum="5" tex_filename="./block1/lineartransformations.tex"><p>
 At the end of this sequence, and after some practice, you should be able to: </p><ul class="itemize">
 
 <li><p>
-Find the standard matrix for a linear transformation from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline]. </p></li>
+Understand the definition of linear transformation. </p></li>
 <li><p>
-Know what geometric properties are preserved by linear transformations from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline]. </p></li>
+Be able to determine whether a function between vector spaces is a linear transformations. </p></li>
+<li><p>
+Recognize basic properties of linear transformations. </p></li>
 </ul><p>
 For time budgeting purposes, this sequence has 4 videos totaling 14 minutes, plus some questions. </p></html></p></vertical>   </p><p>
 <vertical display_name="Introduction" attrib_string="url_name=&quot;b1lineareqns-vertical2&quot;" refnum="2"><p>
-<video display_name="Matrix Multiplication as Linear Transformation" youtube_id_1_0="jMRJ-efZOJs" attrib_string="url_name=&quot;b1lineareqns-tab2-video1&quot; "></video><problem display_name="Where does it go?" attrib_string="url_name=&quot;b1lineareqns-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="35" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
-Consider the following image. </p><center> <edxxml><img src="/static/images/c1s8imageunderlintrans.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
-When we apply the linear transformation [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] given by [mathjaxinline]T(x) = \left[ \begin{array}{cc} -1 &amp;  0 \\ 0 &amp;  1 \end{array} \right][/mathjaxinline] to the image, which picture is the result? </p><center><p>
- <edxxml><img src="/static/images/c1s8imageunderlintransAB.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> <br /><edxxml><img src="/static/images/c1s8imageunderlintransCD.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </p></center><p>
+<video display_name="Functions" youtube_id_1_0="nMrAAozL4F0" attrib_string="url_name=&quot;b1lineareqns-tab2-video1&quot; "></video><problem display_name="System Consistency?" attrib_string="url_name=&quot;b1lineareqns-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="35" tex_filename="./block1/lineartransformations.tex"><text><p>
+Define the function [mathjaxinline]T[/mathjaxinline] by [mathjaxinline]T(\vecx ) = Ax[/mathjaxinline], where [mathjaxinline]A = \left[ \begin{array}{ccc} 6 &amp;  5 &amp;  3 \\ 2 &amp;  4 &amp;  23 \end{array} \right].[/mathjaxinline] </p><p>
+What is the domain of [mathjaxinline]T[/mathjaxinline]? </p><p>
+<multiplechoiceresponse>
+  <choicegroup direction="vertical">
+    <choice correct="false" name="1">
+      <text> [mathjaxinline]\mathbb R[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="2">
+      <text> [mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
+    </choice>
+    <choice correct="true" name="3">
+      <text> [mathjaxinline]\mathbb R^3[/mathjaxinline]</text>
+    </choice>
+  </choicegroup>
+</multiplechoiceresponse> </p><p>
+What is the codomain of [mathjaxinline]T[/mathjaxinline]? </p><p>
+<multiplechoiceresponse>
+  <choicegroup direction="vertical">
+    <choice correct="false" name="1">
+      <text> [mathjaxinline]\mathbb R[/mathjaxinline]</text>
+    </choice>
+    <choice correct="true" name="2">
+      <text> [mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="3">
+      <text> [mathjaxinline]\mathbb R^3[/mathjaxinline]</text>
+    </choice>
+  </choicegroup>
+</multiplechoiceresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ [mathjaxinline]A[/mathjaxinline] has 3 columns. Therefore, for the product [mathjaxinline]Ax[/mathjaxinline] to be defined, [mathjaxinline]x[/mathjaxinline] must have 3 rows, and will be a vector in [mathjaxinline]\mathbb R^3[/mathjaxinline]. <br />Since [mathjaxinline]A[/mathjaxinline] has two rows, the product [mathjaxinline]Ax[/mathjaxinline] will be a vector in [mathjaxinline]\mathbb R^2[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Defining Linear Transformations" attrib_string="url_name=&quot;b1lineareqns-vertical3&quot;" refnum="3"><p>
+<video display_name="Linear Transformations" youtube_id_1_0="ASQadpJlL94" attrib_string="url_name=&quot;b1lineareqns-tab3-video1&quot; "></video></p></vertical>   </p><p>
+<vertical display_name="Linear Transformation Definition" attrib_string="url_name=&quot;b1lineareqns-vertical4&quot;" refnum="4"><p>
+<html display_name="Definition of Linear Transformation" attrib_string="url_name=&quot;b1lineareqns-tab4-text1&quot;" linenum="83" tex_filename="./block1/lineartransformations.tex"><p>
+<span style="color:#27408C"><b class="bf">Definition.</b></span> Let [mathjaxinline]{\bf {F}}[/mathjaxinline] be a field. A function [mathjaxinline]T: {\bf {F}}^ n \rightarrow {\bf {F}}^ m[/mathjaxinline] is a <span style="color:#99182C"><b class="bf">linear transformation</b></span> if both of the following properties hold: </p><ul class="itemize">
+
+<li><p>
+For any vectors [mathjaxinline]\vecv , \vecw[/mathjaxinline] in the domain, [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw ).[/mathjaxinline] </p></li>
+<li><p>
+For any vector [mathjaxinline]\vecv[/mathjaxinline] in the domain, and any scalar [mathjaxinline]a\in {\bf {F}}[/mathjaxinline], [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline]. </p></li>
+</ul><p>
+Informally, if [mathjaxinline]T[/mathjaxinline] satisfies the first condition we say that “[mathjaxinline]T[/mathjaxinline] respects vector addition", and if [mathjaxinline]T[/mathjaxinline] satisfies the second condition we say that “[mathjaxinline]T[/mathjaxinline] respects scalar multiplication." </p></html></p></vertical>   </p><p>
+<vertical display_name="Some Examples and Non-examples" attrib_string="url_name=&quot;b1lineareqns-vertical5&quot;" refnum="5"><p>
+<problem display_name="Linear Transformation? 1" attrib_string="url_name=&quot;b1lineareqns-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="106" tex_filename="./block1/lineartransformations.tex"><text><p>
+Define [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] by [mathjaxinline]T(\vecv ) = 2\vecv[/mathjaxinline]. </p><p>
+Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw )[/mathjaxinline] for all vectors [mathjaxinline]\vecv ,\vecw[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
 <optionresponse>
-  <optioninput options="('A','B','C','D')" correct="D"/>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline] for all vectors [mathjaxinline]\vecv[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
-We see that [mathjaxinline]T\Bigg(\left[ \begin{array}{c} a\\ b\end{array} \right]\Bigg)=\left[ \begin{array}{cc} -1 &amp;  0 \\ 0 &amp;  1 \end{array} \right]\left[ \begin{array}{c} a\\ b\end{array}\right]=\left[ \begin{array}{c} -a\\ b\end{array}\right][/mathjaxinline] and thus [mathjaxinline]T[/mathjaxinline] reflects the original image over the [mathjaxinline]y-[/mathjaxinline]axis. </p></font></solution></p></text></problem></p><p>
-<problem display_name="Where does it go? 2" attrib_string="url_name=&quot;b1lineareqns-tab2-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="73" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
-Consider the following image. </p><center> <edxxml><img src="/static/images/c1s8imageunderlintrans.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
-When we apply the linear transformation [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] given by [mathjaxinline]T(x) = \left[ \begin{array}{cc} 0.5 &amp;  0 \\ 0 &amp;  2 \end{array} \right][/mathjaxinline] to the image, which picture is the result? </p><center><p>
- <edxxml><img src="/static/images/c1s8imageunderlintransAB2.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </p></center><p>
+It appears that the transformation is linear. We can prove it with algebra: <br /></p><p>
+We have [mathjaxinline]T(v + w) = 2(v+w) = 2v + 2w = T(v) + T(w)[/mathjaxinline]. Therefore [mathjaxinline]T[/mathjaxinline] respects vector addition. </p><p>
+Similarly [mathjaxinline]T(av) = 2(av) = a(2v) = aT(v),[/mathjaxinline] so [mathjaxinline]T[/mathjaxinline] respects scalar multiplication. Thus, [mathjaxinline]T[/mathjaxinline] is a linear transformation. </p></font></solution></p></text></problem></p><p>
+<problem display_name="Linear Transformation? 2" attrib_string="url_name=&quot;b1lineareqns-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="141" tex_filename="./block1/lineartransformations.tex"><text><p>
+Define [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] by [mathjaxinline]T(\vecv ) = \mathbf{0}[/mathjaxinline]. </p><p>
+Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw )[/mathjaxinline] for all vectors [mathjaxinline]\vecv ,\vecw[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
 <optionresponse>
-  <optioninput options="('A','B')" correct="B"/>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline] for all vectors [mathjaxinline]\vecv[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
-We see that </p><table id="a0000000002" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]T\Bigg(\left[ \begin{array}{c} a\\ b\end{array} \right]\Bigg)=\left[ \begin{array}{cc} 0.5 &amp;  0 \\ 0 &amp;  2 \end{array} \right]\left[ \begin{array}{c} a\\ b\end{array}\right]=\left[ \begin{array}{c} 0.5a\\ 2b\end{array}\right],[/mathjax]</td>
-</tr>
-</table><p>
- and thus scales the original image by a factor of 0.5 in the [mathjaxinline]x[/mathjaxinline] direction and a factor of 2 in the [mathjaxinline]y[/mathjaxinline] direction. </p></font></solution></p></text></problem></p></vertical>   </p><p>
-<vertical display_name="Multiplication by a Matrix in General" attrib_string="url_name=&quot;b1lineareqns-vertical3&quot;" refnum="3"><p>
-<video display_name="Multiplication by a General Matrix" youtube_id_1_0="R1uBwxvKIXE" attrib_string="url_name=&quot;b1lineareqns-tab3-video1&quot; "></video><problem display_name="The E Vectors" attrib_string="url_name=&quot;b1lineareqns-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="121" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
-Suppose [mathjaxinline]T: \mathbb R^4\rightarrow \mathbb R^3[/mathjaxinline] is given by [mathjaxinline]T(x) = Ax[/mathjaxinline] where </p><table id="a0000000003" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]A = \left[ \begin{array}{cccc} 1 &amp;  3 &amp;  5 &amp;  7 \\ 2 &amp;  0 &amp;  -1 &amp;  -1 \\ 1 &amp;  1 &amp;  3 &amp;  -2 \end{array} \right].[/mathjax]</td>
-</tr>
-</table><p>
-What is [mathjaxinline]T(e_3)[/mathjaxinline]? </p><p>
+[mathjaxinline]T(v+w) = \mathbf{0}= \mathbf{0}+ \mathbf{0}= T(v) + T(w)[/mathjaxinline], so [mathjaxinline]T[/mathjaxinline] respects addition. Also, [mathjaxinline]T(av) = \mathbf{0}= a\mathbf{0}= aT(v)[/mathjaxinline], so [mathjaxinline]T[/mathjaxinline] respects scalar multiplication. </p><p>
+Hence [mathjaxinline]T[/mathjaxinline] is a linear transformation. </p></font></solution></p></text></problem></p><p>
+<problem display_name="Linear Transformation? 3" attrib_string="url_name=&quot;b1lineareqns-tab5-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="174" tex_filename="./block1/lineartransformations.tex"><text><p>
+Define [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] by [mathjaxinline]T(\vecv ) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. </p><p>
+Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw )[/mathjaxinline] for all vectors [mathjaxinline]\vecv ,\vecw[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="No"/>
+</optionresponse> </p><p>
+Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline] for all vectors [mathjaxinline]\vecv[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="No"/>
+</optionresponse> </p><p>
+Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="No"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Here, trying specific vectors provides a counterexample, which is sufficient to show that [mathjaxinline]T[/mathjaxinline] is not a linear transformation.<br />Let [mathjaxinline]v_1 = \left[ \begin{array}{c} 1\\ 2\\ 5 \end{array} \right][/mathjaxinline], [mathjaxinline]v_2 = \left[ \begin{array}{c} -4\\ 0\\ 9 \end{array} \right][/mathjaxinline]<br />[mathjaxinline]T(v_1) + T(v_2) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right] + \left[\begin{array}{c} 4 \\ 0 \end{array} \right] = \left[\begin{array}{c} 8 \\ 0 \end{array} \right][/mathjaxinline]<br />Meanwhile, [mathjaxinline]T(v_1 + v_2) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] does not respect vector addition and is not linear.<br /></p><p>
+We also see that [mathjaxinline]8\cdotT (v_1) = 8 \left[\begin{array}{c} 4 \\ 0 \end{array} \right] = \left[\begin{array}{c} 32 \\ 0 \end{array} \right][/mathjaxinline]<br />Meanwhile, [mathjaxinline]T(8v_1) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] does not respect scalar multiplication; this on its own would also be enough to know that [mathjaxinline]T[/mathjaxinline] is not linear.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="More Linear Transformations" attrib_string="url_name=&quot;b1lineareqns-vertical6&quot;" refnum="6"><p>
+<video display_name="A Linear Transformation outside of R^n" youtube_id_1_0="Pyv9GXNYJ44" attrib_string="url_name=&quot;b1lineareqns-tab6-video1&quot; "></video><problem display_name="Linear Transformation? 4" attrib_string="url_name=&quot;b1lineareqns-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="231" tex_filename="./block1/lineartransformations.tex"><text><p>
+Define [mathjaxinline]T: \mathbb {P} \rightarrow \mathbb R[/mathjaxinline] by [mathjaxinline]T(f) = f(1)[/mathjaxinline]. </p><p>
+To get a sense of how [mathjaxinline]T[/mathjaxinline] works, let's do a quick example. Suppose [mathjaxinline]f[/mathjaxinline] is the element of [mathjaxinline]\mathbb {P}[/mathjaxinline] given by [mathjaxinline]f(t) = 2t^2 -5[/mathjaxinline]. What is [mathjaxinline]T(f)[/mathjaxinline]? </p><p>
+<numericalresponse answer="-3">
+  <textline>
+    <responseparam type="tolerance" default="0.00001"/>
+  </textline>
+</numericalresponse> </p><p>
+Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(f+g) = T(f) + T(g)[/mathjaxinline] for all vectors [mathjaxinline]f,g \in \mathbb {P}[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(af) = aT(f)[/mathjaxinline] for all vectors [mathjaxinline]f \in \mathbb {P}[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
+<symbolicresponse expect="Yes&quot; options=&quot;Yes&quot;,&quot;No&quot;">
+  <textline correct_answer="Yes&quot; options=&quot;Yes&quot;,&quot;No&quot;" math="1"/>
+</symbolicresponse> </p><p>
+Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ [mathjaxinline]T[/mathjaxinline] respects vector addition because:<br />[mathjaxinline]f(1) + g(1) = (f+g)(1)[/mathjaxinline]<br />i.e. we can evaluate polynomials at 1 separately and add the results, or we can add the polynomials and evaluate the result at 1, and we'll get the same result. </p><p>
+[mathjaxinline]T[/mathjaxinline] respects scalar multiplication because:<br />[mathjaxinline]cT(f) = cf(1) = (cf)(1) = T(cf)[/mathjaxinline]<br />i.e. we can evaluate a polynomial at 1 and multiply the result by a scalar, or multiply the polynomial by the scalar first and then evaluate the result at 1, and we'll get the same result. </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Linear Transformations Properties" attrib_string="url_name=&quot;b1lineareqns-vertical7&quot;" refnum="7"><p>
+<video display_name="Linear Transformation Properties" youtube_id_1_0="oe4fgdPAsgA" attrib_string="url_name=&quot;b1lineareqns-tab7-video1&quot; "></video><problem display_name="Linear Transformation Practice" attrib_string="url_name=&quot;b1lineareqns-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="288" tex_filename="./block1/lineartransformations.tex"><text><p>
+Suppose [mathjaxinline]T: \mathbb {P} \rightarrow \mathbb R^2[/mathjaxinline] is a linear transformation. Let [mathjaxinline]f,g\mathbb {P}[/mathjaxinline] be the polynomials given by [mathjaxinline]f(t) = t^2[/mathjaxinline] and [mathjaxinline]g(t) = t[/mathjaxinline]. </p><p>
+Suppose that [mathjaxinline]T(f) = \left[\begin{array}{c} 1 \\ 2 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(g) = \left[\begin{array}{c} 2 \\ -1 \end{array} \right][/mathjaxinline] </p><p>
+If [mathjaxinline]h \in \mathbb {P}[/mathjaxinline] is the polynomial given by [mathjaxinline]h(t) = -2t^2[/mathjaxinline], what must [mathjaxinline]T(h)[/mathjaxinline] be? </p><p>
 To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
 
 <li><p>
@@ -96,317 +193,24 @@ def VectorEntry(expect, ans):
   		ret['msg'] = 'Wrong input format'
   	return ret 
 </script><p>
-<customresponse cfn="VectorEntry" expect="[[5],[-1],[3]]">
-  <textline correct_answer="[[5],[-1],[3]]"/>
+<customresponse cfn="VectorEntry" expect="[[-2],[-4]]">
+  <textline correct_answer="[[-2],[-4]]"/>
+</customresponse> </p><p>
+If [mathjaxinline]j \in \mathbb {P}[/mathjaxinline] is the polynomial given by [mathjaxinline]h(t) = 3t^2-t[/mathjaxinline], what must [mathjaxinline]T(j)[/mathjaxinline] be? </p><p>
+<customresponse cfn="VectorEntry" expect="[[1],[7]]">
+  <textline correct_answer="[[1],[7]]"/>
 </customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
- Since [mathjaxinline]T: \mathbb R^4\rightarrow \mathbb R^3[/mathjaxinline], we know from context that [mathjaxinline]e_3=\left[ \begin{array}{c} 0 &amp;  0 &amp;  1 &amp;  0 \end{array} \right].[/mathjaxinline] Then </p><table id="a0000000004" class="equation" width="100%" cellspacing="0" cellpadding="7">
+ We are assured that [mathjaxinline]T[/mathjaxinline] is a linear transformation, so we have: </p><table id="a0000000002" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
-    <td class="equation">[mathjax]T(e_3)=\left[ \begin{array}{cccc} 1 &amp;  3 &amp;  5 &amp;  7 \\ 2 &amp;  0 &amp;  -1 &amp;  -1 \\ 1 &amp;  1 &amp;  3 &amp;  -2 \end{array} \right]\left[ \begin{array}{c} 0 &amp;  0 &amp;  1 &amp;  0 \end{array} \right] = \left[ \begin{array}{c} 5 &amp;  -1 &amp;  3 \end{array} \right].[/mathjax]</td>
+    <td class="equation">[mathjax]T(h) = T(-2t^2) = -2T(t^2) = -2T(f) = -2\left[\begin{array}{c} 1 \\ 2 \end{array} \right] = \left[\begin{array}{c} -2 \\ -4 \end{array} \right].[/mathjax]</td>
 </tr>
 </table><p>
-Alternatively, if the four columns of [mathjaxinline]A[/mathjaxinline] are [mathjaxinline]v_1, v_2, v_3, v_4[/mathjaxinline], multiplying [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]\left[ \begin{array}{c} 0 &amp;  0 &amp;  1 &amp;  0 \end{array} \right][/mathjaxinline] should yield the linear combination [mathjaxinline]0v_1 + 0v_2 + 1v_3 + 0v_4,[/mathjaxinline] which is just [mathjaxinline]v_3[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Find a Matrix" attrib_string="url_name=&quot;b1lineareqns-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="146" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
-Suppose the function [mathjaxinline]T: \mathbb R^3\rightarrow \mathbb R^2[/mathjaxinline] is given by </p><table id="a0000000005" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Also, </p><table id="a0000000003" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
-    <td class="equation">[mathjax]T\left( \left[ \begin{array}{c} a_1 \\ a_2\\ a_3 \end{array} \right] \right) =\left[ \begin{array}{c} 2a_1-a_3 \\ -a_1 + a_2 \end{array} \right][/mathjax]</td>
+    <td class="equation">[mathjax]T(j) = T(3t^2-t) = T(3t^2) + T(-t) = 3T(t^2) + -T(t) = 3T(f) - T(g) = 3\left[\begin{array}{c} 1 \\ 2 \end{array} \right] - \left[\begin{array}{c} 2 \\ -1 \end{array} \right] = \left[\begin{array}{c} 1 \\ 7 \end{array} \right].[/mathjax]</td>
 </tr>
-</table><p>
- for all vectors [mathjaxinline]\left[ \begin{array}{c} a_1 \\ a_2\\ a_3 \end{array} \right] \in \mathbb R^3[/mathjaxinline]. </p><p>
-For what matrix [mathjaxinline]A[/mathjaxinline] is [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x \in \mathbb R^3[/mathjaxinline]? </p><p>
-To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p><p>
-Use decimals only. </p><script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
-def MatrixEntry(expect, ans):
-  	import ast
-	import numpy as np 
-	ret= {'ok':False}
-  	atol = 0.01
-  	try:
-		list_ans = ast.literal_eval(ans)
-		list_expect = ast.literal_eval(expect)
-  		matrix_ans = np.matrix(list_ans)
-  		matrix_expect = np.matrix(list_expect) 
-  		if matrix_ans.shape != matrix_expect.shape:
-  			ret['msg'] = 'Wrong shape of matrix'
-  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
-  			ret['ok'] = True
-  		else:
-  			ret['msg'] = 'Something is wrong'
-	except SyntaxError:
-		ret['msg'] = 'Wrong input format'
-  	return ret
-</script><p>
-<customresponse cfn="MatrixEntry" expect="[[2,0,-1],[-1,1,0]]">
-  <textline correct_answer="[[2,0,-1],[-1,1,0]]"/>
-</customresponse> </p><p>
-Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="Yes"/>
-</optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
- We see that </p><table id="a0000000006" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]T\left[ \begin{array}{c} a_1 \\ a_2 \end{array} \right] = \left[ \begin{array}{ccc} 2 &amp;  0 &amp;  -1 \\ -1 &amp;  1 &amp;  0 \end{array} \right] \left[ \begin{array}{c} a_1 \\ a_2 \end{array} \right][/mathjax]</td>
-</tr>
-</table><p>
-, so [mathjaxinline]A = \left[ \begin{array}{ccc} 2 &amp;  0 &amp;  -1 \\ -1 &amp;  1 &amp;  0 \end{array} \right][/mathjaxinline] works. </p><p>
-Since [mathjaxinline]T[/mathjaxinline] is multiplication by a matrix, it is a linear transformation. </p></font></solution></p></text></problem></p></vertical>   </p><p>
-<vertical display_name="Matrix for Rotation" attrib_string="url_name=&quot;b1lineareqns-vertical4&quot;" refnum="4"><p>
-<problem display_name="Rotation" attrib_string="url_name=&quot;b1lineareqns-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="192" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
-For the next two problems, we will be considering the linear transformation [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] given by rotation counterclockwise by [mathjaxinline]45^\circ[/mathjaxinline]. </p><center><p>
- <edxxml><img src="/static/images/c1s8rotation.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </p></center><p>
-From the [mathjaxinline]45^\circ -45^\circ -90^\circ[/mathjaxinline] triangles in the diagram, we can find that [mathjaxinline]T(e_1) = \left[ \begin{array}{c} \frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right] \approx \left[ \begin{array}{c} 0.707 \\ 0.707 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(e_2) = \left[ \begin{array}{c} -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right] \approx \left[ \begin{array}{c} -0.707 \\ 0.707 \end{array} \right].[/mathjaxinline] </p><p>
-What is [mathjaxinline]T\left( \left[ \begin{array}{c} 4 \\ 0 \end{array} \right] \right)[/mathjaxinline]? (Remember to use decimals only, to within two decimal places.) </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
-def VectorEntry(expect, ans):
-	import ast
-	import numpy as np 
-  	atol = 0.01
-	list_expect = ast.literal_eval(expect)
-	vec_expect = np.matrix(list_expect)
-  	ret = {"ok":False}
-	try:
-  		# input format [[1],[2],[3]]
-		list_ans = ast.literal_eval(ans)
-		vec_ans = np.matrix(list_ans)
-  		if vec_ans.shape != vec_expect.shape:
-  			ret['msg'] = 'Wrong shape of vector!'
-  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
-  			ret['ok'] = True
-  		else:
-  		# More error message. Will improve this part
-  			ret['msg'] = 'something is wrong'   			
-	#except SyntaxError:
-		#ret['msg'] = 'Wrong input format'
-	except SyntaxError:
-  		# input format &amp;lt;1,2,3&amp;gt;
-		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
-		list_ans = ast.literal_eval(list_ans)
-		vec_ans = np.transpose(np.matrix(list_ans))
-  		if vec_ans.shape != vec_expect.shape:
-  			ret['msg'] = 'Wrong shape of vector!'
-  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
-  			ret['ok'] = True
-  		else:
-    		# More error message. Will improve this part
-  			ret['msg'] = 'something is wrong' 
-  	except:
-  		ret['msg'] = 'Wrong input format'
-  	return ret 
-</script><p>
-<customresponse cfn="VectorEntry" expect="[[2.83],[2.83]]">
-  <textline correct_answer="[[2.83],[2.83]]"/>
-</customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
- Since [mathjaxinline]T[/mathjaxinline] is a linear transformation, </p><table id="a0000000007" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]T\left( \left[ \begin{array}{c} 4 \\ 0 \end{array} \right] \right)=4 T\left( \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] \right)=4 T(e_1)=4\left[ \begin{array}{c} \frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right]= \left[ \begin{array}{c} 2\sqrt {2} \\ 2\sqrt {2} \end{array} \right]\approx \left[ \begin{array}{c} 2.83 \\ 2.83 \end{array} \right].[/mathjax]</td>
-</tr>
-</table></font></solution></p></text></problem></p><p>
-<problem display_name="Rotation 2" attrib_string="url_name=&quot;b1lineareqns-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="226" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
-What is [mathjaxinline]T\left( \left[ \begin{array}{c} 4 \\ 1 \end{array} \right] \right)[/mathjaxinline]? </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
-def VectorEntry(expect, ans):
-	import ast
-	import numpy as np 
-  	atol = 0.01
-	list_expect = ast.literal_eval(expect)
-	vec_expect = np.matrix(list_expect)
-  	ret = {"ok":False}
-	try:
-  		# input format [[1],[2],[3]]
-		list_ans = ast.literal_eval(ans)
-		vec_ans = np.matrix(list_ans)
-  		if vec_ans.shape != vec_expect.shape:
-  			ret['msg'] = 'Wrong shape of vector!'
-  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
-  			ret['ok'] = True
-  		else:
-  		# More error message. Will improve this part
-  			ret['msg'] = 'something is wrong'   			
-	#except SyntaxError:
-		#ret['msg'] = 'Wrong input format'
-	except SyntaxError:
-  		# input format &amp;lt;1,2,3&amp;gt;
-		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
-		list_ans = ast.literal_eval(list_ans)
-		vec_ans = np.transpose(np.matrix(list_ans))
-  		if vec_ans.shape != vec_expect.shape:
-  			ret['msg'] = 'Wrong shape of vector!'
-  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
-  			ret['ok'] = True
-  		else:
-    		# More error message. Will improve this part
-  			ret['msg'] = 'something is wrong' 
-  	except:
-  		ret['msg'] = 'Wrong input format'
-  	return ret 
-</script><p>
-<customresponse cfn="VectorEntry" expect="[[2.12],[3.54]]">
-  <textline correct_answer="[[2.12],[3.54]]"/>
-</customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
- Since [mathjaxinline]T[/mathjaxinline] is a linear transformation, </p><table id="a0000000008" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]T\left( \left[ \begin{array}{c} 4 \\ 1 \end{array} \right] \right)=T(4e_1+e_2)=4T(e_1)+T(e_2)=4\cdot \left[ \begin{array}{c} \frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right]+\left[ \begin{array}{c} -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right] \approx \left[ \begin{array}{c} 2.12 \\ 3.54 \end{array} \right].[/mathjax]</td>
-</tr>
-</table></font></solution></p></text></problem></p><p>
-<video display_name="Matrix for Rotation by 45 Degrees" youtube_id_1_0="TN4eIiSNzcA" attrib_string="url_name=&quot;b1lineareqns-tab4-video1&quot; "></video><problem display_name="Rotation 3" attrib_string="url_name=&quot;b1lineareqns-tab4-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="247" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
-If [mathjaxinline]T[/mathjaxinline] is still rotation counterclockwise by [mathjaxinline]45^\circ[/mathjaxinline], what is [mathjaxinline]T\left( \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] \right)[/mathjaxinline]? </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
-def VectorEntry(expect, ans):
-	import ast
-	import numpy as np 
-  	atol = 0.01
-	list_expect = ast.literal_eval(expect)
-	vec_expect = np.matrix(list_expect)
-  	ret = {"ok":False}
-	try:
-  		# input format [[1],[2],[3]]
-		list_ans = ast.literal_eval(ans)
-		vec_ans = np.matrix(list_ans)
-  		if vec_ans.shape != vec_expect.shape:
-  			ret['msg'] = 'Wrong shape of vector!'
-  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
-  			ret['ok'] = True
-  		else:
-  		# More error message. Will improve this part
-  			ret['msg'] = 'something is wrong'   			
-	#except SyntaxError:
-		#ret['msg'] = 'Wrong input format'
-	except SyntaxError:
-  		# input format &amp;lt;1,2,3&amp;gt;
-		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
-		list_ans = ast.literal_eval(list_ans)
-		vec_ans = np.transpose(np.matrix(list_ans))
-  		if vec_ans.shape != vec_expect.shape:
-  			ret['msg'] = 'Wrong shape of vector!'
-  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
-  			ret['ok'] = True
-  		else:
-    		# More error message. Will improve this part
-  			ret['msg'] = 'something is wrong' 
-  	except:
-  		ret['msg'] = 'Wrong input format'
-  	return ret 
-</script><p>
-<customresponse cfn="VectorEntry" expect="[[4],[2]]">
-  <textline correct_answer="[[4],[2]]"/>
-</customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
-We could do this using linearity properties, but it is easier to just use the matrix [mathjaxinline]A = \left[ \begin{array}{cc} \frac{\sqrt {2}}{2} &amp;  -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} &amp;  \frac{\sqrt {2}}{2} \end{array} \right][/mathjaxinline] we found in the video. We know that [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x \in \mathbb R^2[/mathjaxinline], so </p><table id="a0000000009" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]T\left( \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] \right) = \left[ \begin{array}{cc} \frac{\sqrt {2}}{2} &amp;  -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} &amp;  \frac{\sqrt {2}}{2} \end{array} \right] \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] = \left[ \begin{array}{c} 4\\ 2 \end{array} \right].[/mathjax]</td>
-</tr>
-</table></font></solution></p></text></problem></p></vertical>   </p><p>
-<vertical display_name="Standard Matrix" attrib_string="url_name=&quot;b1lineareqns-vertical5&quot;" refnum="5"><p>
-<video display_name="The Standard Matrix for a Linear Transformation" youtube_id_1_0="aPUQJWsg9Vw" attrib_string="url_name=&quot;b1lineareqns-tab5-video1&quot; "></video><html display_name="Standard Matrix" attrib_string="url_name=&quot;b1lineareqns-tab5-text1&quot;" linenum="288" tex_filename="./block1/lineartransformationsinRn.tex"><p>
-<span style="color:#27408C"><b class="bf">Proposition/Definition.</b></span> If [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation, then there is a unique [mathjaxinline]m \times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline] such that [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x\in \mathbb R^ n[/mathjaxinline]. This matrix [mathjaxinline]A[/mathjaxinline] is called the <span style="color:#99182C"><b class="bf">standard matrix</b></span> for [mathjaxinline]T[/mathjaxinline], and must be given by the formula </p><table id="a0000000010" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp; &amp;  | \\ T(e_1) &amp;  T(e_2) &amp;  \cdots &amp;  T(e_ n) \\ | &amp;  | &amp; &amp;  | \end{array} \right],[/mathjax]</td>
-</tr>
-</table><p>
- where [mathjaxinline]e_ i \in \mathbb R^ n[/mathjaxinline] is the vector whose [mathjaxinline]i[/mathjaxinline]th entry equals 1, and all of whose other entries are 0. </p></html></p></vertical>   </p><p>
-<vertical display_name="Standard Matrix Questions" attrib_string="url_name=&quot;b1lineareqns-vertical6&quot;" refnum="6"><p>
-<problem display_name="True or False" attrib_string="url_name=&quot;b1lineareqns-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="309" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
-True or false: Every linear transformation from a vector space [mathjaxinline]V[/mathjaxinline] to a vector space [mathjaxinline]W[/mathjaxinline] has a standard matrix. </p><p>
-<optionresponse>
-  <optioninput options="('True','False')" correct="False"/>
-</optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
- False. Only linear transformations from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline] (or, more generally, from [mathjaxinline]F^ n[/mathjaxinline] to [mathjaxinline]F^ m[/mathjaxinline] where [mathjaxinline]F[/mathjaxinline] is a field) have standard matrices.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Standard Matrix 1" attrib_string="url_name=&quot;b1lineareqns-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="327" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
-For all [mathjaxinline]v\in \mathbb R^2[/mathjaxinline], let [mathjaxinline]T(v)[/mathjaxinline] be the reflection of [mathjaxinline]v[/mathjaxinline] across the horizontal axis of [mathjaxinline]\mathbb R^2[/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] is a linear transformation from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]. What is its standard matrix? </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
-def MatrixEntry(expect, ans):
-  	import ast
-	import numpy as np 
-	ret= {'ok':False}
-  	atol = 0.01
-  	try:
-		list_ans = ast.literal_eval(ans)
-		list_expect = ast.literal_eval(expect)
-  		matrix_ans = np.matrix(list_ans)
-  		matrix_expect = np.matrix(list_expect) 
-  		if matrix_ans.shape != matrix_expect.shape:
-  			ret['msg'] = 'Wrong shape of matrix'
-  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
-  			ret['ok'] = True
-  		else:
-  			ret['msg'] = 'Something is wrong'
-	except SyntaxError:
-		ret['msg'] = 'Wrong input format'
-  	return ret
-</script><p>
-<customresponse cfn="MatrixEntry" expect="[[1,0],[0,-1]]">
-  <textline correct_answer="[[1,0],[0,-1]]"/>
-</customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
- If [mathjaxinline]T[/mathjaxinline] is a reflection across the horizontal axis, then [mathjaxinline]e_1[/mathjaxinline] is fixed by [mathjaxinline]T[/mathjaxinline] and thus the first column of the standard matrix is [mathjaxinline]T(e_1)=e_1[/mathjaxinline]. Now, [mathjaxinline]e_2[/mathjaxinline] is reflected to [mathjaxinline]-e_2[/mathjaxinline], and thus the second column of the standard matrix is [mathjaxinline]T(e_2)=-e_2[/mathjaxinline]. So the answer is [mathjaxinline]\left[ \begin{array}{cc} 1&amp;  0 \\ 0 &amp;  -1 \end{array} \right].[/mathjaxinline]  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Standard Matrix 2" attrib_string="url_name=&quot;b1lineareqns-tab6-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="346" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
-For all [mathjaxinline]v\in \mathbb R^2[/mathjaxinline], let [mathjaxinline]S(v)[/mathjaxinline] be the vector obtained by reflecting [mathjaxinline]v[/mathjaxinline] across the diagonal line [mathjaxinline]x=y[/mathjaxinline] and then rotating the result by [mathjaxinline]90^\circ[/mathjaxinline] counterclockwise. [mathjaxinline]S[/mathjaxinline] is a linear transformation from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]. What is its standard matrix? </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
-def MatrixEntry(expect, ans):
-  	import ast
-	import numpy as np 
-	ret= {'ok':False}
-  	atol = 0.01
-  	try:
-		list_ans = ast.literal_eval(ans)
-		list_expect = ast.literal_eval(expect)
-  		matrix_ans = np.matrix(list_ans)
-  		matrix_expect = np.matrix(list_expect) 
-  		if matrix_ans.shape != matrix_expect.shape:
-  			ret['msg'] = 'Wrong shape of matrix'
-  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
-  			ret['ok'] = True
-  		else:
-  			ret['msg'] = 'Something is wrong'
-	except SyntaxError:
-		ret['msg'] = 'Wrong input format'
-  	return ret
-</script><p>
-<customresponse cfn="MatrixEntry" expect="[[-1,0],[0,1]]">
-  <textline correct_answer="[[-1,0],[0,1]]"/>
-</customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
- First, under the reflection, [mathjaxinline]e_1[/mathjaxinline] is taken to [mathjaxinline]e_2[/mathjaxinline]. Then, under the rotation, this vector is taken to [mathjaxinline]-e_1[/mathjaxinline]. Thus, [mathjaxinline]S(e_1)=-e_1[/mathjaxinline]; this will be the first column of the standard matrix. Similarly, [mathjaxinline]e_2[/mathjaxinline] is first taken to [mathjaxinline]e_1[/mathjaxinline] and then to [mathjaxinline]e_2[/mathjaxinline], and thus [mathjaxinline]S(e_2)=e_2[/mathjaxinline]; this is the second column. So the answer is [mathjaxinline]\left[ \begin{array}{cc} -1&amp;  0 \\ 0 &amp;  1 \end{array} \right].[/mathjaxinline]  </p></font></solution></p></text></problem></p><p>
-<problem display_name="How many linear transformations?" attrib_string="url_name=&quot;b1lineareqns-tab6-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="369" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
-How many linear transformations [mathjaxinline]T:\mathbb R^4 \rightarrow \mathbb R^2[/mathjaxinline] satisfy the conditions [mathjaxinline]T(e_1) = T(e_3) = \left[\begin{array}{c} 2 \\ 3 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(e_4) = \mathbf{0}[/mathjaxinline]? </p><p>
-<multiplechoiceresponse>
-  <choicegroup direction="vertical">
-    <choice correct="false" name="1">
-      <text> zero</text>
-    </choice>
-    <choice correct="false" name="2">
-      <text> one</text>
-    </choice>
-    <choice correct="false" name="3">
-      <text> more than one but finitely many</text>
-    </choice>
-    <choice correct="true" name="4">
-      <text> infinitely many</text>
-    </choice>
-  </choicegroup>
-</multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
- This question is equivalent to asking 'how many [mathjaxinline]2\times 4[/mathjaxinline] real matrices [mathjaxinline]A[/mathjaxinline] satisfy [mathjaxinline]A e_1=A\cdot e_3=\left[\begin{array}{c} 2 \\ 3 \end{array} \right][/mathjaxinline] and [mathjaxinline]Ae_4=\mathbf{0}[/mathjaxinline]?'. The first equality forces the first and third columns of [mathjaxinline]A[/mathjaxinline] to both be [mathjaxinline]\left[\begin{array}{c} 2 \\ 3 \end{array} \right][/mathjaxinline], and the second equality forces the fourth column of [mathjaxinline]A[/mathjaxinline] to be [mathjaxinline]\mathbf{0}[/mathjaxinline], but the third column of [mathjaxinline]A[/mathjaxinline] is free to have any real entries. Thus there are infinitely many choices.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
-<vertical display_name="Back to Pictures" attrib_string="url_name=&quot;b1lineareqns-vertical7&quot;" refnum="7"><p>
-<video display_name="More Pictures" youtube_id_1_0="8zRN403o8tg" attrib_string="url_name=&quot;b1lineareqns-tab7-video1&quot; "></video><problem display_name="What is preserved?" attrib_string="url_name=&quot;b1lineareqns-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="400" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
-Take a look at the video again. Which properties seem to be preserved by linear transformations from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p><p>
-For instance, does every transformation preserve the area of regions? </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="No"/>
-</optionresponse> </p><p>
-Do lines that start parallel always go in the same direction after transformation? </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="Yes"/>
-</optionresponse> </p><p>
-Do lines that start perpendicular remain perpendicular after transformation? </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="No"/>
-</optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
-We see from the video that area is not preserved &#8211; the image can be much smaller or bigger after transformation than the original. Similarly, at time 2:12 in the video, we see an example of perpendicular lines not remaining perpendicular after a transformation. </p><p>
-However, parallel lines do always stay in the same direction, as seen in the video. </p><p>
-If you want to see a rigorous proof of this, click below. </p><p>
-<edxshowhide description="Parallel Lines Stay Parallel"><p>
-Note that we can treat each point, [mathjaxinline](x,y)[/mathjaxinline], as a vector in standard position [mathjaxinline]\left[\begin{array}{c} x\\ y \end{array} \right][/mathjaxinline]. Now, suppose [mathjaxinline]\ell _1[/mathjaxinline] and [mathjaxinline]\ell _2[/mathjaxinline] are two parallel lines. If [mathjaxinline]\ell _1[/mathjaxinline] consists of points [mathjaxinline]p_1=\left[\begin{array}{c} x\\ mx+b_1 \end{array} \right][/mathjaxinline] then [mathjaxinline]\ell _2[/mathjaxinline] consists of points [mathjaxinline]p_2=\left[\begin{array}{c} x\\ mx+b_2 \end{array} \right][/mathjaxinline]. We will find the image of two points on each line and use these points to show the slope of the image lines, [mathjaxinline]T(\ell _ i)[/mathjaxinline], are the same. If [mathjaxinline]T[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A=\left[\begin{array}{cc} a &amp;  c\\ b&amp;  d \end{array} \right][/mathjaxinline], then [mathjaxinline]T(\ell _1)[/mathjaxinline] contains the points [mathjaxinline]T(\left[\begin{array}{c} 0\\ b_1 \end{array} \right])=\left[\begin{array}{cc} a &amp;  c\\ b&amp;  d \end{array} \right]\left[\begin{array}{c} 0\\ b_1 \end{array} \right]=\left[\begin{array}{c} cb_1\\ db_1 \end{array} \right][/mathjaxinline], and [mathjaxinline]T(\left[\begin{array}{c} 1\\ m+b_1 \end{array} \right])=\left[\begin{array}{cc} a &amp;  c\\ b&amp;  d \end{array} \right]\left[\begin{array}{c} 1\\ m+b_1 \end{array} \right]=\left[\begin{array}{c} a+cm+cb_1\\ b+dm+db_1 \end{array} \right][/mathjaxinline]. Thus, [mathjaxinline]T(\ell _1)[/mathjaxinline] has slope [mathjaxinline]\frac{b+dm+db_1-db_1}{a+cm+cb_1-cb_1}=\frac{b+dm}{a+cm}[/mathjaxinline]. Similarly [mathjaxinline]T(\ell _2)[/mathjaxinline] contains the points [mathjaxinline]\left[\begin{array}{c} cb_2\\ db_2 \end{array} \right][/mathjaxinline] and [mathjaxinline]\left[\begin{array}{c} a+cm+cb_2\\ b+dm+db_2 \end{array} \right][/mathjaxinline], so [mathjaxinline]T(\ell _2)[/mathjaxinline] has slope [mathjaxinline]\frac{b+dm+db_1-db_1}{a+cm+cb_1-cb_1}=\frac{b+dm}{a+cm}[/mathjaxinline]. Therefore, we see that the image of the two lines have the same slope. </p></edxshowhide> </p></font></solution></p></text></problem></p></vertical>   </p></sequential> </p></chapter> </p></course> </p></div>
+</table></font></solution></p></text></problem></p></vertical>   </p></sequential> </p></chapter> </p></course> </p></div>
 
 
 

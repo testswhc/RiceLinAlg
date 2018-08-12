@@ -1,4 +1,4 @@
-<problem display_name="Linear Transformation? 1" linenum="104" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Linear Transformation? 1" linenum="106" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Define [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] by [mathjaxinline]T(\vecv ) = 2\vecv[/mathjaxinline]. </p>
@@ -26,7 +26,14 @@ Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+It appears that the transformation is linear. We can prove it with algebra: <br/></p>
+          <p>
+We have [mathjaxinline]T(v + w) = 2(v+w) = 2v + 2w = T(v) + T(w)[/mathjaxinline]. Therefore [mathjaxinline]T[/mathjaxinline] respects vector addition. </p>
+          <p>
+Similarly [mathjaxinline]T(av) = 2(av) = a(2v) = aT(v),[/mathjaxinline] so [mathjaxinline]T[/mathjaxinline] respects scalar multiplication. Thus, [mathjaxinline]T[/mathjaxinline] is a linear transformation. </p>
+        </font>
       </solution>
     </p>
   </text>

@@ -1,54 +1,96 @@
-<problem display_name="What is preserved?" linenum="400" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Linear Transformation Practice" linenum="288" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-Take a look at the video again. Which properties seem to be preserved by linear transformations from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>
+Suppose [mathjaxinline]T: \mathbb {P} \rightarrow \mathbb R^2[/mathjaxinline] is a linear transformation. Let [mathjaxinline]f,g\mathbb {P}[/mathjaxinline] be the polynomials given by [mathjaxinline]f(t) = t^2[/mathjaxinline] and [mathjaxinline]g(t) = t[/mathjaxinline]. </p>
     <p>
-For instance, does every transformation preserve the area of regions? </p>
+Suppose that [mathjaxinline]T(f) = \left[\begin{array}{c} 1 \\ 2 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(g) = \left[\begin{array}{c} 2 \\ -1 \end{array} \right][/mathjaxinline] </p>
     <p>
-      <optionresponse>
-        <optioninput options="('Yes','No')" correct="No"/>
-      </optionresponse>
+If [mathjaxinline]h \in \mathbb {P}[/mathjaxinline] is the polynomial given by [mathjaxinline]h(t) = -2t^2[/mathjaxinline], what must [mathjaxinline]T(h)[/mathjaxinline] be? </p>
+    <p>
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
+    <ul class="itemize">
+      <li>
+        <p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
+      </li>
+      <li>
+        <p>
+or, you can enter it as &lt;1,2,3&gt; </p>
+      </li>
+    </ul>
+    <p>
+Use decimals only. </p>
+    <script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script>
+    <p>
+      <customresponse cfn="VectorEntry" expect="[[-2],[-4]]">
+        <textline correct_answer="[[-2],[-4]]"/>
+      </customresponse>
     </p>
     <p>
-Do lines that start parallel always go in the same direction after transformation? </p>
+If [mathjaxinline]j \in \mathbb {P}[/mathjaxinline] is the polynomial given by [mathjaxinline]h(t) = 3t^2-t[/mathjaxinline], what must [mathjaxinline]T(j)[/mathjaxinline] be? </p>
     <p>
-      <optionresponse>
-        <optioninput options="('Yes','No')" correct="Yes"/>
-      </optionresponse>
-    </p>
-    <p>
-Do lines that start perpendicular remain perpendicular after transformation? </p>
-    <p>
-      <optionresponse>
-        <optioninput options="('Yes','No')" correct="No"/>
-      </optionresponse>
+      <customresponse cfn="VectorEntry" expect="[[1],[7]]">
+        <textline correct_answer="[[1],[7]]"/>
+      </customresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
-We see from the video that area is not preserved &#x2013; the image can be much smaller or bigger after transformation than the original. Similarly, at time 2:12 in the video, we see an example of perpendicular lines not remaining perpendicular after a transformation. </p>
+ We are assured that [mathjaxinline]T[/mathjaxinline] is a linear transformation, so we have: </p>
+          <table id="a0000000002" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(h) = T(-2t^2) = -2T(t^2) = -2T(f) = -2\left[\begin{array}{c} 1 \\ 2 \end{array} \right] = \left[\begin{array}{c} -2 \\ -4 \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
           <p>
-However, parallel lines do always stay in the same direction, as seen in the video. </p>
-          <p>
-If you want to see a rigorous proof of this, click below. </p>
-          <p>
-            <div class="hideshowbox">
-              <h4 onclick="hideshow(this);" style="margin: 0px">Parallel Lines Stay Parallel<span class="icon-caret-down toggleimage"/></h4>
-              <div class="hideshowcontent">
-                <p>
-Note that we can treat each point, [mathjaxinline](x,y)[/mathjaxinline], as a vector in standard position [mathjaxinline]\left[\begin{array}{c} x\\ y \end{array} \right][/mathjaxinline]. Now, suppose [mathjaxinline]\ell _1[/mathjaxinline] and [mathjaxinline]\ell _2[/mathjaxinline] are two parallel lines. If [mathjaxinline]\ell _1[/mathjaxinline] consists of points [mathjaxinline]p_1=\left[\begin{array}{c} x\\ mx+b_1 \end{array} \right][/mathjaxinline] then [mathjaxinline]\ell _2[/mathjaxinline] consists of points [mathjaxinline]p_2=\left[\begin{array}{c} x\\ mx+b_2 \end{array} \right][/mathjaxinline]. We will find the image of two points on each line and use these points to show the slope of the image lines, [mathjaxinline]T(\ell _ i)[/mathjaxinline], are the same. If [mathjaxinline]T[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A=\left[\begin{array}{cc} a &amp;  c\\ b&amp;  d \end{array} \right][/mathjaxinline], then [mathjaxinline]T(\ell _1)[/mathjaxinline] contains the points [mathjaxinline]T(\left[\begin{array}{c} 0\\ b_1 \end{array} \right])=\left[\begin{array}{cc} a &amp;  c\\ b&amp;  d \end{array} \right]\left[\begin{array}{c} 0\\ b_1 \end{array} \right]=\left[\begin{array}{c} cb_1\\ db_1 \end{array} \right][/mathjaxinline], and [mathjaxinline]T(\left[\begin{array}{c} 1\\ m+b_1 \end{array} \right])=\left[\begin{array}{cc} a &amp;  c\\ b&amp;  d \end{array} \right]\left[\begin{array}{c} 1\\ m+b_1 \end{array} \right]=\left[\begin{array}{c} a+cm+cb_1\\ b+dm+db_1 \end{array} \right][/mathjaxinline]. Thus, [mathjaxinline]T(\ell _1)[/mathjaxinline] has slope [mathjaxinline]\frac{b+dm+db_1-db_1}{a+cm+cb_1-cb_1}=\frac{b+dm}{a+cm}[/mathjaxinline]. Similarly [mathjaxinline]T(\ell _2)[/mathjaxinline] contains the points [mathjaxinline]\left[\begin{array}{c} cb_2\\ db_2 \end{array} \right][/mathjaxinline] and [mathjaxinline]\left[\begin{array}{c} a+cm+cb_2\\ b+dm+db_2 \end{array} \right][/mathjaxinline], so [mathjaxinline]T(\ell _2)[/mathjaxinline] has slope [mathjaxinline]\frac{b+dm+db_1-db_1}{a+cm+cb_1-cb_1}=\frac{b+dm}{a+cm}[/mathjaxinline]. Therefore, we see that the image of the two lines have the same slope. </p>
-              </div>
-              <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
-                <a href="javascript: {return false;}">Show</a>
-              </p>
-            </div>
-          </p>
+Also, </p>
+          <table id="a0000000003" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(j) = T(3t^2-t) = T(3t^2) + T(-t) = 3T(t^2) + -T(t) = 3T(f) - T(g) = 3\left[\begin{array}{c} 1 \\ 2 \end{array} \right] - \left[\begin{array}{c} 2 \\ -1 \end{array} \right] = \left[\begin{array}{c} 1 \\ 7 \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
         </font>
       </solution>
     </p>
   </text>
-  <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
-  <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
 </problem>

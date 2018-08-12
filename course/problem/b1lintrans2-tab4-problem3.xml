@@ -50,7 +50,7 @@ def VectorEntry(expect, ans):
         <font color="blue">
           <p>
 We could do this using linearity properties, but it is easier to just use the matrix [mathjaxinline]A = \left[ \begin{array}{cc} \frac{\sqrt {2}}{2} &amp;  -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} &amp;  \frac{\sqrt {2}}{2} \end{array} \right][/mathjaxinline] we found in the video. We know that [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x \in \mathbb R^2[/mathjaxinline], so </p>
-          <table id="a0000000070" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <table id="a0000000072" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
             <tr>
               <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T\left( \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] \right) = \left[ \begin{array}{cc} \frac{\sqrt {2}}{2} &amp;  -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} &amp;  \frac{\sqrt {2}}{2} \end{array} \right] \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] = \left[ \begin{array}{c} 4\\ 2 \end{array} \right].[/mathjax]</td>
               <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
