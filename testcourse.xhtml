@@ -445,7 +445,7 @@ For time budgeting purposes, this sequence has X videos totaling X minutes, plus
 <video display_name="RREF" youtube_id_1_0="Qi3O6iLhZ0E" attrib_string="url_name=&quot;b1rowreduced-tab2-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="RREF Defined" attrib_string="url_name=&quot;b1rowreduced-vertical3&quot;" refnum="3"><p>
 <html display_name="Row-Reduced Echelon Form" attrib_string="url_name=&quot;b1rowreduced-tab3-text1&quot;" linenum="41" tex_filename="./block1/rref.tex"><p>
-A matrix is in Row-Reduced Echelon Form (RREF) if it satisfies the following conditions: </p><ul class="itemize">
+<span style="color:#27408C"><b class="bf">Definition.</b></span> A matrix is in Row-Reduced Echelon Form (RREF) if it satisfies the following conditions: </p><ul class="itemize">
 
 <li><p>
 All rows of all zeros are at the bottom. </p></li>
@@ -1743,13 +1743,13 @@ Know conditions on whether a list of vectors in [mathjaxinline]\mathbb R^ n[/mat
 For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p></html></p></vertical>   </p><p>
 <vertical display_name="Linear Independence" attrib_string="url_name=&quot;b1linind-vertical2&quot;" refnum="2"><p>
 <problem display_name="Existence vs. Uniqueness" attrib_string="url_name=&quot;b1linind-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="34" tex_filename="./block1/linearindependence.tex"><text><p>
-Given a matrix [mathjaxinline]A[/mathjaxinline], consider the equation [mathjaxinline]A\vecx = \mathbf{0}[/mathjaxinline]. </p><p>
+Given a matrix [mathjaxinline]A[/mathjaxinline], consider the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. </p><p>
 Regarding such equations, we have discussed two main questions: the existence question (does there exist at least one solution?) and the uniqueness question (is there at most one solution?). For this equation, one of these questions always has the same answer, no matter what [mathjaxinline]A[/mathjaxinline] is. Which question does not always have the same answer? </p><p>
 <optionresponse>
   <optioninput options="('Existence','Uniqueness')" correct="Uniqueness"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
-Because [mathjaxinline]A\cdot \mathbf{0}= \mathbf{0}[/mathjaxinline] always, the answer to the existence question is always "yes" for this equation. It's not always the case, however, that the zero vector is the only solution; for some matrices, some other combination of the columns of [mathjaxinline]A[/mathjaxinline] will also give zero.  </p></font></solution></p></text></problem></p><p>
+Because [mathjaxinline]A\mathbf{0}= \mathbf{0}[/mathjaxinline] always, the answer to the existence question is always "yes" for this equation. It's not always the case, however, that the zero vector is the only solution; for some matrices, some other combination of the columns of [mathjaxinline]A[/mathjaxinline] will also give zero.  </p></font></solution></p></text></problem></p><p>
 <video display_name="Linear Independence" youtube_id_1_0="jQSgCZwOKQU" attrib_string="url_name=&quot;b1linind-tab2-video1&quot; "></video><problem display_name="Definition" attrib_string="url_name=&quot;b1linind-tab2-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="54" tex_filename="./block1/linearindependence.tex"><text><p>
 Which of these is the definition of linearly dependent? </p><p>
 A list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is linearly dependent if... </p><p>
@@ -1853,15 +1853,15 @@ Which of the following lists are linearly independent? Click all that apply. </p
 <video display_name="A Proposition" youtube_id_1_0="DK-9-MAIaA8" attrib_string="url_name=&quot;b1linind-tab4-video2&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Linear Dependence Proposition" attrib_string="url_name=&quot;b1linind-vertical5&quot;" refnum="5"><p>
 <html display_name="Linear Dependence Equivalent Condition" attrib_string="url_name=&quot;b1linind-tab5-text1&quot;" linenum="230" tex_filename="./block1/linearindependence.tex"><p>
-Let [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] be vectors in a vector space [mathjaxinline]V[/mathjaxinline]. The list is linearly dependent if and only if one of the vectors in the list can be expressed as a linear combination of the other vectors. </p></html></p><p>
-<problem display_name="True or False" attrib_string="url_name=&quot;b1linind-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="238" tex_filename="./block1/linearindependence.tex"><text><p>
+<span style="color:#27408C"><b class="bf">Proposition.</b></span> Let [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] be vectors in a vector space [mathjaxinline]V[/mathjaxinline]. The list is linearly dependent if and only if one of the vectors in the list can be expressed as a linear combination of the other vectors. </p></html></p><p>
+<problem display_name="True or False" attrib_string="url_name=&quot;b1linind-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="239" tex_filename="./block1/linearindependence.tex"><text><p>
 True or False: Suppose the list [mathjaxinline]\{ v_1; v_2; v_3; v_4\}[/mathjaxinline] is linearly dependent. Then [mathjaxinline]v_4[/mathjaxinline] must be in the span of [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline]. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="False"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  The conclusion is too specific. We proved that if our list is linearly dependent, then at least one of the vectors will be in the span of the others. We can't claim that a particular vector in the list is in the span of the rest of the list, or that all vectors are in the spans of their list complements (without knowing more). Consider the problem on the previous tab with [mathjaxinline]v_1[/mathjaxinline], [mathjaxinline]v_2[/mathjaxinline], and [mathjaxinline]v_3[/mathjaxinline]: it appears that [mathjaxinline]v_3[/mathjaxinline] is not in the span of [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline], and yet the list of three is linearly dependent.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Proving Linear Independence" attrib_string="url_name=&quot;b1linind-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="257" tex_filename="./block1/linearindependence.tex"><text><p>
+<problem display_name="Proving Linear Independence" attrib_string="url_name=&quot;b1linind-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="258" tex_filename="./block1/linearindependence.tex"><text><p>
 Let's think about the definition of linear independence. Recall that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is linearly independent if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p><p>
 Which of the following would be a way to prove that a list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is linearly independent? Check all that apply. </p><p>
 <choiceresponse>
@@ -1885,7 +1885,7 @@ Which of the following would be a way to prove that a list [mathjaxinline]\{ v_1
 </choiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  The approach in choice 1 won't prove linear independence, because the conclusion will be true regardless of the vectors in the list. <br />The approach in choice 2 won't prove linear independence, because even if our vector list passes the test in choice 2, there may yet exist some set of coefficients, not all zero but containing at least one zero, that gives a zero linear combination (i.e., the list could still be linearly dependent). <br />The approach in choice 3 will prove linear independence. If it's true that every set of coefficients, not all zero, will give a non-zero linear combination, then the only way to get a zero linear combination is with all zero coefficients, which is the definition of linear independence. <br />The approach in choice 4 will prove linear independence. It simply uses the definition. (Notice that choices 3 and 4 are just contrapositives of each other.) <br />The approach in choice 5 won't prove linear independence, because the conclusion will be true regardless of the vectors in the list. (This is the contrapositive of choice 1.)  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Existence or Uniqueness?" attrib_string="url_name=&quot;b1linind-tab5-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="284" tex_filename="./block1/linearindependence.tex"><text><p>
+<problem display_name="Existence or Uniqueness?" attrib_string="url_name=&quot;b1linind-tab5-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="285" tex_filename="./block1/linearindependence.tex"><text><p>
 Is the linear independence of a list of vectors an existence question, or a uniqueness question? </p><p>
 <optionresponse>
   <optioninput options="('Existence','Uniqueness')" correct="Uniqueness"/>
@@ -1893,7 +1893,7 @@ Is the linear independence of a list of vectors an existence question, or a uniq
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  A list of vectors is linearly independent if the <span style="color:#99182C"><b class="bf">only</b></span> way to write [mathjaxinline]\mathbf{0}[/mathjaxinline] as a linear combination of the list is when all coefficients are zero. This is a uniqueness statement.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Determining Linear Independence in R^m" attrib_string="url_name=&quot;b1linind-vertical6&quot;" refnum="6"><p>
-<problem display_name="Non-trivial Solutions?" attrib_string="url_name=&quot;b1linind-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="306" tex_filename="./block1/linearindependence.tex"><text><p>
+<problem display_name="Non-trivial Solutions?" attrib_string="url_name=&quot;b1linind-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="307" tex_filename="./block1/linearindependence.tex"><text><p>
 Use row reduction to determine how many solutions the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has, where </p><table id="a0000000061" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ -1 &amp;  1 &amp;  3 \\ 3 &amp;  3 &amp;  3 \\ 4 &amp;  1 &amp;  -2 \\ 5 &amp;  3 &amp;  1 \end{array} \right].[/mathjax]</td>
@@ -1911,7 +1911,7 @@ Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly independe
   <optioninput options="('Linearly independent','Linearly dependent')" correct="Linearly dependent"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"> First, we recall that there must always exist at least one solution to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. We will either have exactly one solution (and that solution will be [mathjaxinline]\mathbf{0}[/mathjaxinline]), or we will have infinitely many solutions. <br />After row reduction, we obtain [mathjaxinline]\left[\begin{array}{ccc} 1 &amp;  0 &amp;  -1 \\ 0 &amp;  1 &amp;  2 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 \end{array} \right].[/mathjaxinline] <br />We have only two pivots. The third column represents a free variable, so the equation has infinitely many solutions. Note that, in the product [mathjaxinline]A x[/mathjaxinline], the columns of the matrix [mathjaxinline]A[/mathjaxinline] are vectors that are combined with the entries of [mathjaxinline]x[/mathjaxinline] as the weights: [mathjaxinline]Ax = a_1v_1 + a_2v_2 + a_3v_3[/mathjaxinline]. We have therefore shown that there are infinitely many sets of coefficients [mathjaxinline]\{ a_1; a_2; a_3\}[/mathjaxinline] that satisfy [mathjaxinline]a_1v_1 + a_2v_2 + a_3v_3 = \mathbf{0}[/mathjaxinline], therefore the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly dependent.  </font></solution></p></text></problem></p><p>
-<problem display_name="Fill in the blank" attrib_string="url_name=&quot;b1linind-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="340" tex_filename="./block1/linearindependence.tex"><text><p>
+<problem display_name="Fill in the blank" attrib_string="url_name=&quot;b1linind-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="341" tex_filename="./block1/linearindependence.tex"><text><p>
 What goes in the blank to make a correct statement? </p><p>
 If the matrix [mathjaxinline]A[/mathjaxinline] yields [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinline] when row-reduced, then the columns of [mathjaxinline]A[/mathjaxinline] cannot be linearly independent. </p><p>
 <multiplechoiceresponse>
@@ -1930,7 +1930,7 @@ If the matrix [mathjaxinline]A[/mathjaxinline] yields [mathjaxinline]\underline{
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  A free variable implies [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has infinitely many solutions, and thus that the columns of [mathjaxinline]A[/mathjaxinline] are not linearly independent. </p><p>
 The matrix [mathjaxinline]\left[\begin{array}{cc} 1 &amp;  0 \\ 0 &amp;  1 \\ 0 &amp;  0 \end{array} \right][/mathjaxinline] has a row of all zeros, but its columns are still linearly independent.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Fill in the blank 2" attrib_string="url_name=&quot;b1linind-tab6-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="357" tex_filename="./block1/linearindependence.tex"><text><p>
+<problem display_name="Fill in the blank 2" attrib_string="url_name=&quot;b1linind-tab6-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="358" tex_filename="./block1/linearindependence.tex"><text><p>
 What goes in the blank to make a correct statement? </p><p>
 If the matrix [mathjaxinline]A[/mathjaxinline] has [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinline], then there must be a free variable. </p><p>
 <multiplechoiceresponse>
@@ -1945,7 +1945,7 @@ If the matrix [mathjaxinline]A[/mathjaxinline] has [mathjaxinline]\underline{\; 
 </multiplechoiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  If there are more columns than rows, there can't be a pivot in every column, so there must be a free variable.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Fill in the blank 3" attrib_string="url_name=&quot;b1linind-tab6-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="373" tex_filename="./block1/linearindependence.tex"><text><p>
+<problem display_name="Fill in the blank 3" attrib_string="url_name=&quot;b1linind-tab6-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="374" tex_filename="./block1/linearindependence.tex"><text><p>
 Putting the previous two statements together, what goes in the blank to make a correct statement? </p><p>
 A list of [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinline] cannot be linearly independent. </p><p>
 <multiplechoiceresponse>
@@ -1961,11 +1961,11 @@ A list of [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinli
 <solution><font color="blue">Answer: </font><font color="blue"> A list of 5 vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline] can be written as the columns of a [mathjaxinline]3\times 5[/mathjaxinline] matrix, which has more columns than rows. Therefore it will have a free variable, which means that the columns of the matrix are linearly dependent.  </font></solution></p></text></problem></p><p>
 <video display_name="Linear Independence in R^m" youtube_id_1_0="hjQug5gZ2JM" attrib_string="url_name=&quot;b1linind-tab6-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Linearly Independent Lists in R^m" attrib_string="url_name=&quot;b1linind-vertical7&quot;" refnum="7"><p>
-<html display_name="Linear Independence in R^m" attrib_string="url_name=&quot;b1linind-tab7-text1&quot;" linenum="395" tex_filename="./block1/linearindependence.tex"><p>
+<html display_name="Linear Independence in R^m" attrib_string="url_name=&quot;b1linind-tab7-text1&quot;" linenum="396" tex_filename="./block1/linearindependence.tex"><p>
 We have just shown the following results: </p><p>
-If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix with columns [mathjaxinline]v_1, v_2, \ldots v_ n \in \mathbb R^ m[/mathjaxinline], then the list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is linearly independent if and only if [mathjaxinline]A[/mathjaxinline] does not have a free variable. </p><p>
+<span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix with columns [mathjaxinline]v_1, v_2, \ldots v_ n \in \mathbb R^ m[/mathjaxinline], then the list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is linearly independent if and only if [mathjaxinline]A[/mathjaxinline] does not have a free variable. </p><p>
 If [mathjaxinline]n&gt;m[/mathjaxinline], then any list of [mathjaxinline]n[/mathjaxinline] vectors in [mathjaxinline]\mathbb R^ m[/mathjaxinline] must be linearly dependent. </p></html></p><p>
-<problem display_name="Quick Picks" attrib_string="url_name=&quot;b1linind-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="413" tex_filename="./block1/linearindependence.tex"><text><p>
+<problem display_name="Quick Picks" attrib_string="url_name=&quot;b1linind-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="414" tex_filename="./block1/linearindependence.tex"><text><p>
 Without doing any row-reduction, you should be able to pick out three of the following lists of vectors that are linearly dependent. Which three? </p><ol class="enumerate">
 <li value="1"><p>
 [mathjaxinline]\left\{  \left[ \begin{array}{c} 1 \\ 1 \\ 1 \end{array} \right]; \left[ \begin{array}{c} 1 \\ 1 \\ 0 \end{array} \right]; \left[ \begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right] \right\}[/mathjaxinline] </p></li><li value="2"><p>
@@ -2202,20 +2202,27 @@ When we apply the linear transformation [mathjaxinline]T: \mathbb R^2 \rightarro
 <optionresponse>
   <optioninput options="('A','B','C','D')" correct="D"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Where does it go? 2" attrib_string="url_name=&quot;b1lintrans2-tab2-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="69" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+We see that [mathjaxinline]T\Bigg(\left[ \begin{array}{c} a\\ b\end{array} \right]\Bigg)=\left[ \begin{array}{cc} -1 &amp;  0 \\ 0 &amp;  1 \end{array} \right]\left[ \begin{array}{c} a\\ b\end{array}\right]=\left[ \begin{array}{c} -a\\ b\end{array}\right][/mathjaxinline] and thus [mathjaxinline]T[/mathjaxinline] reflects the original image over the [mathjaxinline]y-[/mathjaxinline]axis. </p></font></solution></p></text></problem></p><p>
+<problem display_name="Where does it go? 2" attrib_string="url_name=&quot;b1lintrans2-tab2-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="73" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
 Consider the following image. </p><center> <edxxml><img src="/static/images/c1s8imageunderlintrans.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
 When we apply the linear transformation [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] given by [mathjaxinline]T(x) = \left[ \begin{array}{cc} 0.5 &amp;  0 \\ 0 &amp;  2 \end{array} \right][/mathjaxinline] to the image, which picture is the result? </p><center><p>
  <edxxml><img src="/static/images/c1s8imageunderlintransAB2.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </p></center><p>
 <optionresponse>
   <optioninput options="('A','B')" correct="B"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
-<vertical display_name="General Matrix Multiplication" attrib_string="url_name=&quot;b1lintrans2-vertical3&quot;" refnum="3"><p>
-<video display_name="Multiplication by a General Matrix" youtube_id_1_0="R1uBwxvKIXE" attrib_string="url_name=&quot;b1lintrans2-tab3-video1&quot; "></video><problem display_name="The E Vectors" attrib_string="url_name=&quot;b1lintrans2-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="117" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
-Suppose [mathjaxinline]T: \mathbb R^4\rightarrow \mathbb R^3[/mathjaxinline] is given by [mathjaxinline]T(x) = Ax[/mathjaxinline] where </p><table id="a0000000063" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+We see that </p><table id="a0000000063" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
-    <td class="equation">[mathjax]A = \left[ \begin{array}{cc} 1 &amp;  3 &amp;  5 &amp;  7 \\ 2 &amp;  0 &amp;  -1 &amp;  -1 \\ 1 &amp;  1 &amp;  3 &amp;  -2 \end{array} \right].[/mathjax]</td>
+    <td class="equation">[mathjax]T\Bigg(\left[ \begin{array}{c} a\\ b\end{array} \right]\Bigg)=\left[ \begin{array}{cc} 0.5 &amp;  0 \\ 0 &amp;  2 \end{array} \right]\left[ \begin{array}{c} a\\ b\end{array}\right]=\left[ \begin{array}{c} 0.5a\\ 2b\end{array}\right],[/mathjax]</td>
+</tr>
+</table><p>
+ and thus scales the original image by a factor of 0.5 in the [mathjaxinline]x[/mathjaxinline] direction and a factor of 2 in the [mathjaxinline]y[/mathjaxinline] direction. </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Multiplication by a Matrix in General" attrib_string="url_name=&quot;b1lintrans2-vertical3&quot;" refnum="3"><p>
+<video display_name="Multiplication by a General Matrix" youtube_id_1_0="R1uBwxvKIXE" attrib_string="url_name=&quot;b1lintrans2-tab3-video1&quot; "></video><problem display_name="The E Vectors" attrib_string="url_name=&quot;b1lintrans2-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="121" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+Suppose [mathjaxinline]T: \mathbb R^4\rightarrow \mathbb R^3[/mathjaxinline] is given by [mathjaxinline]T(x) = Ax[/mathjaxinline] where </p><table id="a0000000064" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]A = \left[ \begin{array}{cccc} 1 &amp;  3 &amp;  5 &amp;  7 \\ 2 &amp;  0 &amp;  -1 &amp;  -1 \\ 1 &amp;  1 &amp;  3 &amp;  -2 \end{array} \right].[/mathjax]</td>
 </tr>
 </table><p>
 What is [mathjaxinline]T(e_3)[/mathjaxinline]? </p><p>
@@ -2266,9 +2273,15 @@ def VectorEntry(expect, ans):
 <customresponse cfn="VectorEntry" expect="[[5],[-1],[3]]">
   <textline correct_answer="[[5],[-1],[3]]"/>
 </customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Find a Matrix" attrib_string="url_name=&quot;b1lintrans2-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="137" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
-Suppose the function [mathjaxinline]T: \mathbb R^3\rightarrow \mathbb R^2[/mathjaxinline] is given by </p><table id="a0000000064" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Since [mathjaxinline]T: \mathbb R^4\rightarrow \mathbb R^3[/mathjaxinline], we know from context that [mathjaxinline]e_3=\left[ \begin{array}{c} 0 &amp;  0 &amp;  1 &amp;  0 \end{array} \right].[/mathjaxinline] Then </p><table id="a0000000065" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]T(e_3)=\left[ \begin{array}{cccc} 1 &amp;  3 &amp;  5 &amp;  7 \\ 2 &amp;  0 &amp;  -1 &amp;  -1 \\ 1 &amp;  1 &amp;  3 &amp;  -2 \end{array} \right]\left[ \begin{array}{c} 0 &amp;  0 &amp;  1 &amp;  0 \end{array} \right] = \left[ \begin{array}{c} 5 &amp;  -1 &amp;  3 \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+Alternatively, if the four columns of [mathjaxinline]A[/mathjaxinline] are [mathjaxinline]v_1, v_2, v_3, v_4[/mathjaxinline], multiplying [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]\left[ \begin{array}{c} 0 &amp;  0 &amp;  1 &amp;  0 \end{array} \right][/mathjaxinline] should yield the linear combination [mathjaxinline]0v_1 + 0v_2 + 1v_3 + 0v_4,[/mathjaxinline] which is just [mathjaxinline]v_3[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Find a Matrix" attrib_string="url_name=&quot;b1lintrans2-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="146" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+Suppose the function [mathjaxinline]T: \mathbb R^3\rightarrow \mathbb R^2[/mathjaxinline] is given by </p><table id="a0000000066" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]T\left( \left[ \begin{array}{c} a_1 \\ a_2\\ a_3 \end{array} \right] \right) =\left[ \begin{array}{c} 2a_1-a_3 \\ -a_1 + a_2 \end{array} \right][/mathjax]</td>
 </tr>
@@ -2304,12 +2317,19 @@ Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="Yes"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ We see that </p><table id="a0000000067" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]T\left[ \begin{array}{c} a_1 \\ a_2 \end{array} \right] = \left[ \begin{array}{ccc} 2 &amp;  0 &amp;  -1 \\ -1 &amp;  1 &amp;  0 \end{array} \right] \left[ \begin{array}{c} a_1 \\ a_2 \end{array} \right][/mathjax]</td>
+</tr>
+</table><p>
+, so [mathjaxinline]A = \left[ \begin{array}{ccc} 2 &amp;  0 &amp;  -1 \\ -1 &amp;  1 &amp;  0 \end{array} \right][/mathjaxinline] works. </p><p>
+Since [mathjaxinline]T[/mathjaxinline] is multiplication by a matrix, it is a linear transformation. </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Matrix for Rotation" attrib_string="url_name=&quot;b1lintrans2-vertical4&quot;" refnum="4"><p>
-<problem display_name="Rotation" attrib_string="url_name=&quot;b1lintrans2-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="171" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+<problem display_name="Rotation" attrib_string="url_name=&quot;b1lintrans2-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="192" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
 For the next two problems, we will be considering the linear transformation [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] given by rotation counterclockwise by [mathjaxinline]45^\circ[/mathjaxinline]. </p><center><p>
  <edxxml><img src="/static/images/c1s8rotation.svg" width="400 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </p></center><p>
-From the [mathjaxinline]45^\circ -45^\circ -9045^\circ[/mathjaxinline] triangles in the diagram, we can find that [mathjaxinline]T(e_1) = \left[ \begin{array}{c} \frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right] \approx \left[ \begin{array}{c} 0.707 \\ 0.707 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(e_2) = \left[ \begin{array}{c} -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right] \approx \left[ \begin{array}{c} -0.707 \\ 0.707 \end{array} \right].[/mathjaxinline] </p><p>
+From the [mathjaxinline]45^\circ -45^\circ -90^\circ[/mathjaxinline] triangles in the diagram, we can find that [mathjaxinline]T(e_1) = \left[ \begin{array}{c} \frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right] \approx \left[ \begin{array}{c} 0.707 \\ 0.707 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(e_2) = \left[ \begin{array}{c} -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right] \approx \left[ \begin{array}{c} -0.707 \\ 0.707 \end{array} \right].[/mathjaxinline] </p><p>
 What is [mathjaxinline]T\left( \left[ \begin{array}{c} 4 \\ 0 \end{array} \right] \right)[/mathjaxinline]? (Remember to use decimals only, to within two decimal places.) </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
@@ -2350,8 +2370,13 @@ def VectorEntry(expect, ans):
 <customresponse cfn="VectorEntry" expect="[[2.83],[2.83]]">
   <textline correct_answer="[[2.83],[2.83]]"/>
 </customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Rotation 2" attrib_string="url_name=&quot;b1lintrans2-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="202" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Since [mathjaxinline]T[/mathjaxinline] is a linear transformation, </p><table id="a0000000068" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]T\left( \left[ \begin{array}{c} 4 \\ 0 \end{array} \right] \right)=4 T\left( \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] \right)=4 T(e_1)=4\left[ \begin{array}{c} \frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right]= \left[ \begin{array}{c} 2\sqrt {2} \\ 2\sqrt {2} \end{array} \right]\approx \left[ \begin{array}{c} 2.83 \\ 2.83 \end{array} \right].[/mathjax]</td>
+</tr>
+</table></font></solution></p></text></problem></p><p>
+<problem display_name="Rotation 2" attrib_string="url_name=&quot;b1lintrans2-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="226" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
 What is [mathjaxinline]T\left( \left[ \begin{array}{c} 4 \\ 1 \end{array} \right] \right)[/mathjaxinline]? </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
@@ -2392,8 +2417,13 @@ def VectorEntry(expect, ans):
 <customresponse cfn="VectorEntry" expect="[[2.12],[3.54]]">
   <textline correct_answer="[[2.12],[3.54]]"/>
 </customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<video display_name="Matrix for Rotation by 45 Degrees" youtube_id_1_0="TN4eIiSNzcA" attrib_string="url_name=&quot;b1lintrans2-tab4-video1&quot; "></video><problem display_name="Rotation 3" attrib_string="url_name=&quot;b1lintrans2-tab4-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="222" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Since [mathjaxinline]T[/mathjaxinline] is a linear transformation, </p><table id="a0000000069" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]T\left( \left[ \begin{array}{c} 4 \\ 1 \end{array} \right] \right)=T(4e_1+e_2)=4T(e_1)+T(e_2)=4\cdot \left[ \begin{array}{c} \frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right]+\left[ \begin{array}{c} -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right] \approx \left[ \begin{array}{c} 2.12 \\ 3.54 \end{array} \right].[/mathjax]</td>
+</tr>
+</table></font></solution></p></text></problem></p><p>
+<video display_name="Matrix for Rotation by 45 Degrees" youtube_id_1_0="TN4eIiSNzcA" attrib_string="url_name=&quot;b1lintrans2-tab4-video1&quot; "></video><problem display_name="Rotation 3" attrib_string="url_name=&quot;b1lintrans2-tab4-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="247" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
 If [mathjaxinline]T[/mathjaxinline] is still rotation counterclockwise by [mathjaxinline]45^\circ[/mathjaxinline], what is [mathjaxinline]T\left( \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] \right)[/mathjaxinline]? </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
@@ -2434,24 +2464,29 @@ def VectorEntry(expect, ans):
 <customresponse cfn="VectorEntry" expect="[[4],[2]]">
   <textline correct_answer="[[4],[2]]"/>
 </customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+We could do this using linearity properties, but it is easier to just use the matrix [mathjaxinline]A = \left[ \begin{array}{cc} \frac{\sqrt {2}}{2} &amp;  -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} &amp;  \frac{\sqrt {2}}{2} \end{array} \right][/mathjaxinline] we found in the video. We know that [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x \in \mathbb R^2[/mathjaxinline], so </p><table id="a0000000070" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]T\left( \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] \right) = \left[ \begin{array}{cc} \frac{\sqrt {2}}{2} &amp;  -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} &amp;  \frac{\sqrt {2}}{2} \end{array} \right] \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] = \left[ \begin{array}{c} 4\\ 2 \end{array} \right].[/mathjax]</td>
+</tr>
+</table></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Standard Matrix" attrib_string="url_name=&quot;b1lintrans2-vertical5&quot;" refnum="5"><p>
-<video display_name="The Standard Matrix for a Linear Transformation" youtube_id_1_0="aPUQJWsg9Vw" attrib_string="url_name=&quot;b1lintrans2-tab5-video1&quot; "></video><html display_name="Standard Matrix" attrib_string="url_name=&quot;b1lintrans2-tab5-text1&quot;" linenum="253" tex_filename="./block1/lineartransformationsinRn.tex"><p>
-If [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation, then there is a unique [mathjaxinline]m \times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline] such that [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x\in \mathbb R^ n[/mathjaxinline]. This matrix [mathjaxinline]A[/mathjaxinline] is called the <span style="color:#99182C"><b class="bf">standard matrix</b></span> for [mathjaxinline]T[/mathjaxinline], and must be given by the formula </p><table id="a0000000065" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<video display_name="The Standard Matrix for a Linear Transformation" youtube_id_1_0="aPUQJWsg9Vw" attrib_string="url_name=&quot;b1lintrans2-tab5-video1&quot; "></video><html display_name="Standard Matrix" attrib_string="url_name=&quot;b1lintrans2-tab5-text1&quot;" linenum="288" tex_filename="./block1/lineartransformationsinRn.tex"><p>
+<span style="color:#27408C"><b class="bf">Proposition/Definition.</b></span> If [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation, then there is a unique [mathjaxinline]m \times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline] such that [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x\in \mathbb R^ n[/mathjaxinline]. This matrix [mathjaxinline]A[/mathjaxinline] is called the <span style="color:#99182C"><b class="bf">standard matrix</b></span> for [mathjaxinline]T[/mathjaxinline], and must be given by the formula </p><table id="a0000000071" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp; &amp;  | \\ T(e_1) &amp;  T(e_2) &amp;  \cdots &amp;  T(e_ n) \\ | &amp;  | &amp; &amp;  | \end{array} \right],[/mathjax]</td>
 </tr>
 </table><p>
  where [mathjaxinline]e_ i \in \mathbb R^ n[/mathjaxinline] is the vector whose [mathjaxinline]i[/mathjaxinline]th entry equals 1, and all of whose other entries are 0. </p></html></p></vertical>   </p><p>
 <vertical display_name="Standard Matrix Questions" attrib_string="url_name=&quot;b1lintrans2-vertical6&quot;" refnum="6"><p>
-<problem display_name="True or False" attrib_string="url_name=&quot;b1lintrans2-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="274" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+<problem display_name="True or False" attrib_string="url_name=&quot;b1lintrans2-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="309" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
 True or false: Every linear transformation from a vector space [mathjaxinline]V[/mathjaxinline] to a vector space [mathjaxinline]W[/mathjaxinline] has a standard matrix. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="False"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  False. Only linear transformations from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline] (or, more generally, from [mathjaxinline]F^ n[/mathjaxinline] to [mathjaxinline]F^ m[/mathjaxinline] where [mathjaxinline]F[/mathjaxinline] is a field) have standard matrices.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Standard Matrix 1" attrib_string="url_name=&quot;b1lintrans2-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="292" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+<problem display_name="Standard Matrix 1" attrib_string="url_name=&quot;b1lintrans2-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="327" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
 For all [mathjaxinline]v\in \mathbb R^2[/mathjaxinline], let [mathjaxinline]T(v)[/mathjaxinline] be the reflection of [mathjaxinline]v[/mathjaxinline] across the horizontal axis of [mathjaxinline]\mathbb R^2[/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] is a linear transformation from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]. What is its standard matrix? </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
@@ -2476,8 +2511,9 @@ def MatrixEntry(expect, ans):
 <customresponse cfn="MatrixEntry" expect="[[1,0],[0,-1]]">
   <textline correct_answer="[[1,0],[0,-1]]"/>
 </customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Standard Matrix 2" attrib_string="url_name=&quot;b1lintrans2-tab6-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="310" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ If [mathjaxinline]T[/mathjaxinline] is a reflection across the horizontal axis, then [mathjaxinline]e_1[/mathjaxinline] is fixed by [mathjaxinline]T[/mathjaxinline] and thus the first column of the standard matrix is [mathjaxinline]T(e_1)=e_1[/mathjaxinline]. Now, [mathjaxinline]e_2[/mathjaxinline] is reflected to [mathjaxinline]-e_2[/mathjaxinline], and thus the second column of the standard matrix is [mathjaxinline]T(e_2)=-e_2[/mathjaxinline]. So the answer is [mathjaxinline]\left[ \begin{array}{cc} 1&amp;  0 \\ 0 &amp;  -1 \end{array} \right].[/mathjaxinline]  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Standard Matrix 2" attrib_string="url_name=&quot;b1lintrans2-tab6-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="346" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
 For all [mathjaxinline]v\in \mathbb R^2[/mathjaxinline], let [mathjaxinline]S(v)[/mathjaxinline] be the vector obtained by reflecting [mathjaxinline]v[/mathjaxinline] across the diagonal line [mathjaxinline]x=y[/mathjaxinline] and then rotating the result by [mathjaxinline]90^\circ[/mathjaxinline] counterclockwise. [mathjaxinline]S[/mathjaxinline] is a linear transformation from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]. What is its standard matrix? </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
@@ -2502,8 +2538,9 @@ def MatrixEntry(expect, ans):
 <customresponse cfn="MatrixEntry" expect="[[-1,0],[0,1]]">
   <textline correct_answer="[[-1,0],[0,1]]"/>
 </customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="How many linear transformations?" attrib_string="url_name=&quot;b1lintrans2-tab6-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="331" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ First, under the reflection, [mathjaxinline]e_1[/mathjaxinline] is taken to [mathjaxinline]e_2[/mathjaxinline]. Then, under the rotation, this vector is taken to [mathjaxinline]-e_1[/mathjaxinline]. Thus, [mathjaxinline]S(e_1)=-e_1[/mathjaxinline]; this will be the first column of the standard matrix. Similarly, [mathjaxinline]e_2[/mathjaxinline] is first taken to [mathjaxinline]e_1[/mathjaxinline] and then to [mathjaxinline]e_2[/mathjaxinline], and thus [mathjaxinline]S(e_2)=e_2[/mathjaxinline]; this is the second column. So the answer is [mathjaxinline]\left[ \begin{array}{cc} -1&amp;  0 \\ 0 &amp;  1 \end{array} \right].[/mathjaxinline]  </p></font></solution></p></text></problem></p><p>
+<problem display_name="How many linear transformations?" attrib_string="url_name=&quot;b1lintrans2-tab6-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="369" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
 How many linear transformations [mathjaxinline]T:\mathbb R^4 \rightarrow \mathbb R^2[/mathjaxinline] satisfy the conditions [mathjaxinline]T(e_1) = T(e_3) = \left[\begin{array}{c} 2 \\ 3 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(e_4) = \mathbf{0}[/mathjaxinline]? </p><p>
 <multiplechoiceresponse>
   <choicegroup direction="vertical">
@@ -2521,9 +2558,10 @@ How many linear transformations [mathjaxinline]T:\mathbb R^4 \rightarrow \mathbb
     </choice>
   </choicegroup>
 </multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ This question is equivalent to asking 'how many [mathjaxinline]2\times 4[/mathjaxinline] real matrices [mathjaxinline]A[/mathjaxinline] satisfy [mathjaxinline]A e_1=A\cdot e_3=\left[\begin{array}{c} 2 \\ 3 \end{array} \right][/mathjaxinline] and [mathjaxinline]Ae_4=\mathbf{0}[/mathjaxinline]?'. The first equality forces the first and third columns of [mathjaxinline]A[/mathjaxinline] to both be [mathjaxinline]\left[\begin{array}{c} 2 \\ 3 \end{array} \right][/mathjaxinline], and the second equality forces the fourth column of [mathjaxinline]A[/mathjaxinline] to be [mathjaxinline]\mathbf{0}[/mathjaxinline], but the third column of [mathjaxinline]A[/mathjaxinline] is free to have any real entries. Thus there are infinitely many choices.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Back to Pictures" attrib_string="url_name=&quot;b1lintrans2-vertical7&quot;" refnum="7"><p>
-<video display_name="More Pictures" youtube_id_1_0="8zRN403o8tg" attrib_string="url_name=&quot;b1lintrans2-tab7-video1&quot; "></video><problem display_name="What is preserved?" attrib_string="url_name=&quot;b1lintrans2-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="362" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
+<video display_name="More Pictures" youtube_id_1_0="8zRN403o8tg" attrib_string="url_name=&quot;b1lintrans2-tab7-video1&quot; "></video><problem display_name="What is preserved?" attrib_string="url_name=&quot;b1lintrans2-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="400" tex_filename="./block1/lineartransformationsinRn.tex"><text><p>
 Take a look at the video again. Which properties seem to be preserved by linear transformations from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p><p>
 For instance, does every transformation preserve the area of regions? </p><p>
 <optionresponse>
@@ -2537,7 +2575,12 @@ Do lines that start perpendicular remain perpendicular after transformation? </p
 <optionresponse>
   <optioninput options="('Yes','No')" correct="No"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p></sequential> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+We see from the video that area is not preserved &#8211; the image can be much smaller or bigger after transformation than the original. Similarly, at time 2:12 in the video, we see an example of perpendicular lines not remaining perpendicular after a transformation. </p><p>
+However, parallel lines do always stay in the same direction, as seen in the video. </p><p>
+If you want to see a rigorous proof of this, click below. </p><p>
+<edxshowhide description="Parallel Lines Stay Parallel"><p>
+Note that we can treat each point, [mathjaxinline](x,y)[/mathjaxinline], as a vector in standard position [mathjaxinline]\left[\begin{array}{c} x\\ y \end{array} \right][/mathjaxinline]. Now, suppose [mathjaxinline]\ell _1[/mathjaxinline] and [mathjaxinline]\ell _2[/mathjaxinline] are two parallel lines. If [mathjaxinline]\ell _1[/mathjaxinline] consists of points [mathjaxinline]p_1=\left[\begin{array}{c} x\\ mx+b_1 \end{array} \right][/mathjaxinline] then [mathjaxinline]\ell _2[/mathjaxinline] consists of points [mathjaxinline]p_2=\left[\begin{array}{c} x\\ mx+b_2 \end{array} \right][/mathjaxinline]. We will find the image of two points on each line and use these points to show the slope of the image lines, [mathjaxinline]T(\ell _ i)[/mathjaxinline], are the same. If [mathjaxinline]T[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A=\left[\begin{array}{cc} a &amp;  c\\ b&amp;  d \end{array} \right][/mathjaxinline], then [mathjaxinline]T(\ell _1)[/mathjaxinline] contains the points [mathjaxinline]T(\left[\begin{array}{c} 0\\ b_1 \end{array} \right])=\left[\begin{array}{cc} a &amp;  c\\ b&amp;  d \end{array} \right]\left[\begin{array}{c} 0\\ b_1 \end{array} \right]=\left[\begin{array}{c} cb_1\\ db_1 \end{array} \right][/mathjaxinline], and [mathjaxinline]T(\left[\begin{array}{c} 1\\ m+b_1 \end{array} \right])=\left[\begin{array}{cc} a &amp;  c\\ b&amp;  d \end{array} \right]\left[\begin{array}{c} 1\\ m+b_1 \end{array} \right]=\left[\begin{array}{c} a+cm+cb_1\\ b+dm+db_1 \end{array} \right][/mathjaxinline]. Thus, [mathjaxinline]T(\ell _1)[/mathjaxinline] has slope [mathjaxinline]\frac{b+dm+db_1-db_1}{a+cm+cb_1-cb_1}=\frac{b+dm}{a+cm}[/mathjaxinline]. Similarly [mathjaxinline]T(\ell _2)[/mathjaxinline] contains the points [mathjaxinline]\left[\begin{array}{c} cb_2\\ db_2 \end{array} \right][/mathjaxinline] and [mathjaxinline]\left[\begin{array}{c} a+cm+cb_2\\ b+dm+db_2 \end{array} \right][/mathjaxinline], so [mathjaxinline]T(\ell _2)[/mathjaxinline] has slope [mathjaxinline]\frac{b+dm+db_1-db_1}{a+cm+cb_1-cb_1}=\frac{b+dm}{a+cm}[/mathjaxinline]. Therefore, we see that the image of the two lines have the same slope. </p></edxshowhide> </p></font></solution></p></text></problem></p></vertical>   </p></sequential> </p><p>
 <sequential display_name="Into and Onto" attrib_string="due=&quot;2018-12-18T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b1intoonto-sequential&quot;" linenum="341" tex_filename="testcourse.tex" refnum="9"><p>
 <vertical display_name="Page One" attrib_string="url_name=&quot;b1intoonto-vertical1&quot;" refnum="1"><p>
 <html display_name="Preliminaries" attrib_string="url_name=&quot;b1intoonto-tab1-text1&quot;" linenum="5" tex_filename="./block1/intoonto.tex"><p>
@@ -2553,7 +2596,7 @@ For time budgeting purposes, this sequence has X videos totaling X minutes, plus
 <video display_name="Image of a Linear Transformation" youtube_id_1_0="n3RkuIlIfjI" attrib_string="url_name=&quot;b1intoonto-tab2-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Image Definition" attrib_string="url_name=&quot;b1intoonto-vertical3&quot;" refnum="3"><p>
 <html display_name="Image Definition and Relation with Span" attrib_string="url_name=&quot;b1intoonto-tab3-text1&quot;" linenum="46" tex_filename="./block1/intoonto.tex"><p>
-<span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">image</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p><table id="a0000000066" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">image</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p><table id="a0000000072" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\mathrm{Image}(T) = \left\{  T(v) \  : \  v \in V\right\} .[/mathjax]</td>
 </tr>
@@ -2566,7 +2609,7 @@ Suppose [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformat
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
 <problem display_name="In the Image?" attrib_string="url_name=&quot;b1intoonto-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="75" tex_filename="./block1/intoonto.tex"><text><p>
-Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p><table id="a0000000067" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p><table id="a0000000073" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  1 \\ -1 &amp;  4 &amp;  3 \end{array} \right].[/mathjax]</td>
 </tr>
@@ -2584,7 +2627,7 @@ Is the vector [mathjaxinline]\left[\begin{array}{c} 2 \\ -1 \\ 0 \end{array} \ri
 <video display_name="Onto" youtube_id_1_0="i9Zg8aOTdwc" attrib_string="url_name=&quot;b1intoonto-tab4-video1&quot; "></video><html display_name="Definition of Onto" attrib_string="url_name=&quot;b1intoonto-tab4-text1&quot;" linenum="104" tex_filename="./block1/intoonto.tex"><p>
 <span style="color:#27408C"><b class="bf">Definition.</b></span> A linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is called <span style="color:#99182C"><b class="bf">onto</b></span> if [mathjaxinline]\mathrm{Image(T)} = W[/mathjaxinline]. </p></html></p><p>
 <problem display_name="Is it onto?" attrib_string="url_name=&quot;b1intoonto-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="114" tex_filename="./block1/intoonto.tex"><text><p>
-Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p><table id="a0000000068" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p><table id="a0000000074" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  1 \\ -1 &amp;  4 &amp;  3 \end{array} \right].[/mathjax]</td>
 </tr>
@@ -2644,7 +2687,7 @@ Is [mathjaxinline]T[/mathjaxinline] into? </p><p>
 <video display_name="Kernel of a Linear Transformation" youtube_id_1_0="2jd2BhcEOyE" attrib_string="url_name=&quot;b1intoonto-tab7-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Kernel Definition and Questions" attrib_string="url_name=&quot;b1intoonto-vertical8&quot;" refnum="8"><p>
 <html display_name="Kernel Definition" attrib_string="url_name=&quot;b1intoonto-tab8-text1&quot;" linenum="226" tex_filename="./block1/intoonto.tex"><p>
-<span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">kernel</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p><table id="a0000000069" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">kernel</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p><table id="a0000000075" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\mathrm{Ker}(T) = \left\{  v\in V \  : T(v) = \mathbf{0}\} .[/mathjax]</td>
 </tr>
@@ -2657,7 +2700,7 @@ Suppose [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformat
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
 <problem display_name="Is it into? 2" attrib_string="url_name=&quot;b1intoonto-tab8-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="255" tex_filename="./block1/intoonto.tex"><text><p>
-Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^4[/mathjaxinline] be the linear transformation with standard matrix </p><table id="a0000000070" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^4[/mathjaxinline] be the linear transformation with standard matrix </p><table id="a0000000076" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  5 \\ 0 &amp;  1 &amp;  2 \\ -1 &amp;  1 &amp;  1 \\ 2 &amp;  -1 &amp;  0 \end{array} \right].[/mathjax]</td>
 </tr>

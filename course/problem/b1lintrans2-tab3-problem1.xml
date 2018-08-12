@@ -1,10 +1,10 @@
-<problem display_name="The E Vectors" linenum="117" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="The E Vectors" linenum="121" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Suppose [mathjaxinline]T: \mathbb R^4\rightarrow \mathbb R^3[/mathjaxinline] is given by [mathjaxinline]T(x) = Ax[/mathjaxinline] where </p>
-    <table id="a0000000063" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <table id="a0000000064" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
       <tr>
-        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cc} 1 &amp;  3 &amp;  5 &amp;  7 \\ 2 &amp;  0 &amp;  -1 &amp;  -1 \\ 1 &amp;  1 &amp;  3 &amp;  -2 \end{array} \right].[/mathjax]</td>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} 1 &amp;  3 &amp;  5 &amp;  7 \\ 2 &amp;  0 &amp;  -1 &amp;  -1 \\ 1 &amp;  1 &amp;  3 &amp;  -2 \end{array} \right].[/mathjax]</td>
         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
       </tr>
     </table>
@@ -69,7 +69,18 @@ def VectorEntry(expect, ans):
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ Since [mathjaxinline]T: \mathbb R^4\rightarrow \mathbb R^3[/mathjaxinline], we know from context that [mathjaxinline]e_3=\left[ \begin{array}{c} 0 &amp;  0 &amp;  1 &amp;  0 \end{array} \right].[/mathjaxinline] Then </p>
+          <table id="a0000000065" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(e_3)=\left[ \begin{array}{cccc} 1 &amp;  3 &amp;  5 &amp;  7 \\ 2 &amp;  0 &amp;  -1 &amp;  -1 \\ 1 &amp;  1 &amp;  3 &amp;  -2 \end{array} \right]\left[ \begin{array}{c} 0 &amp;  0 &amp;  1 &amp;  0 \end{array} \right] = \left[ \begin{array}{c} 5 &amp;  -1 &amp;  3 \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+Alternatively, if the four columns of [mathjaxinline]A[/mathjaxinline] are [mathjaxinline]v_1, v_2, v_3, v_4[/mathjaxinline], multiplying [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]\left[ \begin{array}{c} 0 &amp;  0 &amp;  1 &amp;  0 \end{array} \right][/mathjaxinline] should yield the linear combination [mathjaxinline]0v_1 + 0v_2 + 1v_3 + 0v_4,[/mathjaxinline] which is just [mathjaxinline]v_3[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>
