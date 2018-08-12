@@ -48,7 +48,8 @@ What is the codomain of $T$?
 \edXabox{type="multichoice" expect="$\R^2$" options="$\R$","$\R^2$","$\R^3$"}
 
 \edXsolution{ 
-
+$A$ has 3 columns. Therefore, for the product $A\vecx$ to be defined, $\vecx$ must have 3 rows, and will be a vector in $\R^3$. \\
+Since $A$ is 2x3 and $\vecx$ is 3x1, the product $A\vecx$ will be 2x1, a vector in $\R^2$.
 }
 
 \endedxproblem
@@ -123,6 +124,32 @@ Is $T$ a linear transformation?
 \edXabox{expect="Yes" options="Yes","No"}
 
 \edXsolution{ 
+We can demonstrate with a specific example: \\
+Let $v_1 = \left[ \begin{array}{c}
+1\\2\\5 
+\end{array} \right]$, 
+$v_2 = \left[ \begin{array}{c}
+-4\\0\\9 
+\end{array} \right]$\\
+It checks out that $T(v_1) + T(v_2) = T(v_1 + v_2)$:\\
+$\left[ \begin{array}{c} 2\\4\\10 \end{array} \right] 
++ \left[ \begin{array}{c} -8\\0\\18 \end{array} \right]
+= \left[ \begin{array}{c} -6\\4\\28 \end{array} \right]
+= 2 \left( \left[ \begin{array}{c} 1\\2\\5 \end{array} \right]
++ \left[ \begin{array}{c} -4\\0\\9 \end{array} \right] \right) $ \\
+\\
+It also checks out that $cT(v_1) = T(cv_1)$: \\
+$8\left[ \begin{array}{c} 2\\4\\10 \end{array} \right] 
+= 2\left[ \begin{array}{c} 8\\16\\40 \end{array} \right] 
+= \left[ \begin{array}{c} 16\\32\\80 \end{array} \right] $ \\
+\\
+It appears that the transformation is linear. We can also prove it with algebra: \\
+
+$T(v_1) + T(v_2) = 2v_1 + 2v_2
+= 2(v_1 + v_2) = T(v_1 + v_2)$
+
+$cT(v_1) = c \cdot 2(v_1) =  2 \cdot c(v_1) = T(cv_1)$
+
 }
 
 \endedxproblem
@@ -150,6 +177,13 @@ Is $T$ a linear transformation?
 \edXabox{expect="Yes" options="Yes","No"}
 
 \edXsolution{ 
+
+Proof that $T$ is a linear transformation:
+
+$T(v_1) + T(v_2) = 0 + 0 = 0 = T(v_1 + v_2)$
+
+$cT(v_1) = c \cdot 0 = 0 = T(cv_1)$
+
 }
 
 \endedxproblem
@@ -179,8 +213,22 @@ Is $T$ a linear transformation?
 \edXabox{expect="No" options="Yes","No"}
 
 \edXsolution{ 
-}
-
+Here, trying specific vectors provides a counterexample, which is sufficient to show that $T$ is not a linear transformation.\\
+Let $v_1 = \left[ \begin{array}{c}
+1\\2\\5 
+\end{array} \right]$, 
+$v_2 = \left[ \begin{array}{c}
+-4\\0\\9 
+\end{array} \right]$\\
+$T(v_1) + T(v_2) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right] 
++  \left[\begin{array}{c} 4 \\ 0 \end{array} \right]  
+=  \left[\begin{array}{c} 8 \\ 0 \end{array} \right]$\\
+Meanwhile, $T(v_1 + v_2) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right]$.
+$T$ does not respect vector addition and is not linear.\\
+$8\cdotT(v_1) = 8 \left[\begin{array}{c} 4 \\ 0 \end{array} \right] 
+= \left[\begin{array}{c} 32 \\ 0 \end{array} \right]$\\
+Meanwhile, $T(8v_1) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right]$.
+$T$ does not respect scalar multiplication; this on its own would also be enough to know that $T$ is not linear.
 \endedxproblem
 
 
@@ -222,6 +270,15 @@ Is $T$ a linear transformation?
 \edXabox{expect="Yes" options="Yes","No"}
 
 \edXsolution{ 
+$T$ respects vector addition because:\\
+$f(1) + g(1) = (f+g)(1)$\\
+i.e. we can evaluate polynomials at 1 separately and add the results, or we can add the polynomials and evaluate the result at 1, and we'll get the same result.
+This must be true in general for all polynomials $f$ and $g$. We can test this with some specific examples, but we give a (somewhat sketchy) proof here.\\ Suppose $f$ and $g$ contain no like terms between them. Then the right side of the equation, the evaluation of $f+g$ at 1, would be calculated by evaluating the terms of $f$ and $g$ separately and then adding the results, which is precisely the left hand side of the equation. Otherwise, $f$ and $g$ contain like terms, and for any two terms $ax^n$ and $bx^n$ belonging to $f$ and $g$ respectively, $a(1^n) + b(1^n) = a + b = (a+b)(1^n)$.\\
+$T$ respects scalar multiplication because:\\
+$cT(f) = cf(1) = (cf)(1) = T(cf)$\\
+i.e. we can evaluate a polynomial at 1 and multiply the result by a scalar, or multiply the polynomial by the scalar first and then evaluate the result at 1, and we'll get the same result. Again, it is simple to try some examples to observe this, but we can also prove it.\\
+Suppose $f(x) = a_nx^n + a_{n-1}x_{n-1} + ... a_1x + a_0$. Then $cf(1) = c(a_n + ... + a_0) = ca_n + ca_{n-1} + ... + ca_0 = (cf)(1)$.
+
 }
 
 \endedxproblem
@@ -264,6 +321,9 @@ If $j \in \mathbb{P}$ is the polynomial given by $h(t) = 3t^2-t$, what must $T(j
 
 
 \edXsolution{ 
+We are assured that $T$ is a linear transformation, so we have: \\
+$T(h) = T(-2t^2)  = -2T(t^2) = -2T(f) = -2\left[\begin{array}{c} 1 \\ 2  \end{array} \right] = \left[\begin{array}{c} -2 \\ -4  \end{array} \right]$\\ \\
+$T(j) = T(3t^2-t) = T(3t^2) + T(-t) = 3T(t^2) + -T(t) = 3T(f) - T(g)\\ = 3\left[\begin{array}{c} 1 \\ 2  \end{array} \right] - \left[\begin{array}{c} 2 \\ -1  \end{array} \right] = \left[\begin{array}{c} 1 \\ 7  \end{array} \right]$
 }
 
 
