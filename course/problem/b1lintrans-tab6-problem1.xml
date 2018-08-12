@@ -1,4 +1,4 @@
-<problem display_name="Linear Transformation? 4" linenum="196" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Linear Transformation? 4" linenum="231" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Define [mathjaxinline]T: \mathbb {P} \rightarrow \mathbb R[/mathjaxinline] by [mathjaxinline]T(f) = f(1)[/mathjaxinline]. </p>
@@ -35,7 +35,12 @@ Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ [mathjaxinline]T[/mathjaxinline] respects vector addition because:<br/>[mathjaxinline]f(1) + g(1) = (f+g)(1)[/mathjaxinline]<br/>i.e. we can evaluate polynomials at 1 separately and add the results, or we can add the polynomials and evaluate the result at 1, and we'll get the same result. </p>
+          <p>
+[mathjaxinline]T[/mathjaxinline] respects scalar multiplication because:<br/>[mathjaxinline]cT(f) = cf(1) = (cf)(1) = T(cf)[/mathjaxinline]<br/>i.e. we can evaluate a polynomial at 1 and multiply the result by a scalar, or multiply the polynomial by the scalar first and then evaluate the result at 1, and we'll get the same result. </p>
+        </font>
       </solution>
     </p>
   </text>

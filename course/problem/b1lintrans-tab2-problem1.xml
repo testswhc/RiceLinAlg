@@ -1,7 +1,7 @@
 <problem display_name="System Consistency?" linenum="35" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-Define the function [mathjaxinline]T[/mathjaxinline] by [mathjaxinline]T(\vecx ) = A\vecx[/mathjaxinline], where [mathjaxinline]A = \left[ \begin{array}{ccc} 6 &amp;  5 &amp;  3 \\ 2 &amp;  4 &amp;  23 \end{array} \right].[/mathjaxinline] </p>
+Define the function [mathjaxinline]T[/mathjaxinline] by [mathjaxinline]T(\vecx ) = Ax[/mathjaxinline], where [mathjaxinline]A = \left[ \begin{array}{ccc} 6 &amp;  5 &amp;  3 \\ 2 &amp;  4 &amp;  23 \end{array} \right].[/mathjaxinline] </p>
     <p>
 What is the domain of [mathjaxinline]T[/mathjaxinline]? </p>
     <p>
@@ -39,7 +39,10 @@ What is the codomain of [mathjaxinline]T[/mathjaxinline]? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ [mathjaxinline]A[/mathjaxinline] has 3 columns. Therefore, for the product [mathjaxinline]Ax[/mathjaxinline] to be defined, [mathjaxinline]x[/mathjaxinline] must have 3 rows, and will be a vector in [mathjaxinline]\mathbb R^3[/mathjaxinline]. <br/>Since [mathjaxinline]A[/mathjaxinline] has two rows, the product [mathjaxinline]Ax[/mathjaxinline] will be a vector in [mathjaxinline]\mathbb R^2[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>

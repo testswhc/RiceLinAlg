@@ -1,133 +1,38 @@
-<problem display_name="Row-reduction Practice" linenum="152" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Linear Transformation? 1" linenum="106" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-Let </p>
-    <table id="a0000000002" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-      <tr>
-        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 0 &amp;  1 &amp;  2 \\ 3 &amp;  0 &amp;  -3 \\ 2 &amp;  2 &amp;  5 \\ 0 &amp;  -2 &amp;  1\end{array} \right].[/mathjax]</td>
-        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
-      </tr>
-    </table>
+Define [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] by [mathjaxinline]T(\vecv ) = 2\vecv[/mathjaxinline]. </p>
     <p>
-What matrix do you get if you row-reduce [mathjaxinline]A[/mathjaxinline]? </p>
-    <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
-def MatrixEntry(expect, ans):
-  	import ast
-	import numpy as np 
-	ret= {'ok':False}
-  	atol = 0.01
-  	try:
-		list_ans = ast.literal_eval(ans)
-		list_expect = ast.literal_eval(expect)
-  		matrix_ans = np.matrix(list_ans)
-  		matrix_expect = np.matrix(list_expect) 
-  		if matrix_ans.shape != matrix_expect.shape:
-  			ret['msg'] = 'Wrong shape of matrix'
-  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
-  			ret['ok'] = True
-  		else:
-  			ret['msg'] = 'Something is wrong'
-	except SyntaxError:
-		ret['msg'] = 'Wrong input format'
-  	return ret
-</script>
+Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw )[/mathjaxinline] for all vectors [mathjaxinline]\vecv ,\vecw[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
     <p>
-      <customresponse cfn="MatrixEntry" expect="[[1,0,0],[0,1,0],[0,0,1],[0,0,0]]">
-        <textline correct_answer="[[1,0,0],[0,1,0],[0,0,1],[0,0,0]]"/>
-      </customresponse>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline] for all vectors [mathjaxinline]\vecv[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
         <font color="blue">
-          <ul class="itemize">
-            <li>
-              <p>
-Swap two rows to get the left-most remaining non-zero entry to the topmost remaining row. </p>
-            </li>
-            <li>
-              <p>
-Scale that row to make its leading entry a 1. </p>
-            </li>
-            <li>
-              <p>
-Clear all non-zero entries in the column of that pivot (both above and below the pivot) by adding/subtracting multiples of that row to/from other rows. </p>
-            </li>
-            <li>
-              <p>
-With that pivot now set, repeat the procedure with the remaining rows. </p>
-            </li>
-          </ul>
-          <table id="a0000000003" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-            <tr>
-              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 0 &amp;  1 &amp;  2 \\ 3 &amp;  0 &amp;  -3 \\ 2 &amp;  2 &amp;  5 \\ 0 &amp;  -2 &amp;  1\end{array} \right].[/mathjax]</td>
-              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
-            </tr>
-          </table>
-          <ul class="itemize">
-            <li>
-              <p>
-Swap R1 and R2: </p>
-              <table id="a0000000004" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-                <tr>
-                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{ccc} 3 &amp;  0 &amp;  -3 \\ 0 &amp;  1 &amp;  2 \\ 2 &amp;  2 &amp;  5 \\ 0 &amp;  -2 &amp;  1\end{array} \right].[/mathjax]</td>
-                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
-                </tr>
-              </table>
-            </li>
-            <li>
-              <p>
-Scale the new R1 by [mathjaxinline]\frac{1}{3}[/mathjaxinline]: </p>
-              <table id="a0000000005" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-                <tr>
-                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{ccc} 1 &amp;  0 &amp;  -1 \\ 0 &amp;  1 &amp;  2 \\ 2 &amp;  2 &amp;  5 \\ 0 &amp;  -2 &amp;  1\end{array} \right].[/mathjax]</td>
-                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
-                </tr>
-              </table>
-            </li>
-            <li>
-              <p>
-Subtract twice R1 from R3 and replace R3 to clear the non-zero entry below the pivot in the first row: </p>
-              <table id="a0000000006" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-                <tr>
-                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{ccc} 1 &amp;  0 &amp;  -1 \\ 0 &amp;  1 &amp;  2 \\ 0 &amp;  2 &amp;  7 \\ 0 &amp;  -2 &amp;  1\end{array} \right].[/mathjax]</td>
-                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
-                </tr>
-              </table>
-            </li>
-            <li>
-              <p>
-We focus on the remaining rows. The left-most nonzero entries are in row 2 and 3, and the leading entry of the second row is already 1, so we do not need to perform any swap or scaling to satisfy the conditions in the first and second step of the algorithm.<br/>Now, we clear the non-zero entry in the third row below this pivot by replacing R3 with R3[mathjaxinline]-2\cdot[/mathjaxinline]R2. We also clear the non-zero entry in the fourth row below this pivot by replacing R4 with R4[mathjaxinline]+2\cdot[/mathjaxinline]R2. </p>
-              <table id="a0000000007" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-                <tr>
-                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{ccc} 1 &amp;  0 &amp;  -1 \\ 0 &amp;  1 &amp;  2 \\ 0 &amp;  0 &amp;  3 \\ 0 &amp;  0 &amp;  5\end{array} \right].[/mathjax]</td>
-                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
-                </tr>
-              </table>
-            </li>
-            <li>
-              <p>
-Now, the first left-most non-zero entry is already in the topmost remaining row (row 3), so we scale it by [mathjaxinline]\frac{1}{3}[/mathjaxinline] to obtain </p>
-              <table id="a0000000008" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-                <tr>
-                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{ccc} 1 &amp;  0 &amp;  -1 \\ 0 &amp;  1 &amp;  2 \\ 0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  5\end{array} \right].[/mathjax]</td>
-                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
-                </tr>
-              </table>
-            </li>
-            <li>
-              <p>
-Finally, we clear the non-zero entries above and below that pivot by replacing R1 with R1[mathjaxinline]+[/mathjaxinline]R3, replacing R2 with R2[mathjaxinline]-2\cdot[/mathjaxinline]R3 and replacing R4 with R4[mathjaxinline]-5\cdot[/mathjaxinline]R3. </p>
-              <table id="a0000000009" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-                <tr>
-                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{ccc} 1 &amp;  0 &amp;  0 \\ 0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0\end{array} \right].[/mathjax]</td>
-                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
-                </tr>
-              </table>
-            </li>
-          </ul>
           <p>
- We can then check that this final matrix satisfies the conditions of RREF. Applying the algorithm to this final matrix will not require any row operations.  </p>
+It appears that the transformation is linear. We can prove it with algebra: <br/></p>
+          <p>
+We have [mathjaxinline]T(v + w) = 2(v+w) = 2v + 2w = T(v) + T(w)[/mathjaxinline]. Therefore [mathjaxinline]T[/mathjaxinline] respects vector addition. </p>
+          <p>
+Similarly [mathjaxinline]T(av) = 2(av) = a(2v) = aT(v),[/mathjaxinline] so [mathjaxinline]T[/mathjaxinline] respects scalar multiplication. Thus, [mathjaxinline]T[/mathjaxinline] is a linear transformation. </p>
         </font>
       </solution>
     </p>

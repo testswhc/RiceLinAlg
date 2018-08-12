@@ -1,4 +1,4 @@
-<problem display_name="Linear Transformation? 2" linenum="131" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Linear Transformation? 2" linenum="141" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Define [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] by [mathjaxinline]T(\vecv ) = \mathbf{0}[/mathjaxinline]. </p>
@@ -26,7 +26,12 @@ Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+[mathjaxinline]T(v+w) = \mathbf{0}= \mathbf{0}+ \mathbf{0}= T(v) + T(w)[/mathjaxinline], so [mathjaxinline]T[/mathjaxinline] respects addition. Also, [mathjaxinline]T(av) = \mathbf{0}= a\mathbf{0}= aT(v)[/mathjaxinline], so [mathjaxinline]T[/mathjaxinline] respects scalar multiplication. </p>
+          <p>
+Hence [mathjaxinline]T[/mathjaxinline] is a linear transformation. </p>
+        </font>
       </solution>
     </p>
   </text>

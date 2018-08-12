@@ -1,10 +1,35 @@
-<problem display_name="True or False" linenum="309" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Linear Transformation? 4" linenum="231" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-True or false: Every linear transformation from a vector space [mathjaxinline]V[/mathjaxinline] to a vector space [mathjaxinline]W[/mathjaxinline] has a standard matrix. </p>
+Define [mathjaxinline]T: \mathbb {P} \rightarrow \mathbb R[/mathjaxinline] by [mathjaxinline]T(f) = f(1)[/mathjaxinline]. </p>
+    <p>
+To get a sense of how [mathjaxinline]T[/mathjaxinline] works, let's do a quick example. Suppose [mathjaxinline]f[/mathjaxinline] is the element of [mathjaxinline]\mathbb {P}[/mathjaxinline] given by [mathjaxinline]f(t) = 2t^2 -5[/mathjaxinline]. What is [mathjaxinline]T(f)[/mathjaxinline]? </p>
+    <p>
+      <numericalresponse answer="-3">
+        <textline>
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(f+g) = T(f) + T(g)[/mathjaxinline] for all vectors [mathjaxinline]f,g \in \mathbb {P}[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
     <p>
       <optionresponse>
-        <optioninput options="('True','False')" correct="False"/>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(af) = aT(f)[/mathjaxinline] for all vectors [mathjaxinline]f \in \mathbb {P}[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
+    <p>
+      <symbolicresponse expect="Yes&quot; options=&quot;Yes&quot;,&quot;No&quot;">
+        <textline correct_answer="Yes&quot; options=&quot;Yes&quot;,&quot;No&quot;" math="1"/>
+      </symbolicresponse>
+    </p>
+    <p>
+Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
       </optionresponse>
     </p>
     <p>
@@ -12,7 +37,9 @@ True or false: Every linear transformation from a vector space [mathjaxinline]V[
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
- False. Only linear transformations from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline] (or, more generally, from [mathjaxinline]F^ n[/mathjaxinline] to [mathjaxinline]F^ m[/mathjaxinline] where [mathjaxinline]F[/mathjaxinline] is a field) have standard matrices.  </p>
+ [mathjaxinline]T[/mathjaxinline] respects vector addition because:<br/>[mathjaxinline]f(1) + g(1) = (f+g)(1)[/mathjaxinline]<br/>i.e. we can evaluate polynomials at 1 separately and add the results, or we can add the polynomials and evaluate the result at 1, and we'll get the same result. </p>
+          <p>
+[mathjaxinline]T[/mathjaxinline] respects scalar multiplication because:<br/>[mathjaxinline]cT(f) = cf(1) = (cf)(1) = T(cf)[/mathjaxinline]<br/>i.e. we can evaluate a polynomial at 1 and multiply the result by a scalar, or multiply the polynomial by the scalar first and then evaluate the result at 1, and we'll get the same result. </p>
         </font>
       </solution>
     </p>
