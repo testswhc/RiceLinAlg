@@ -1,27 +1,13 @@
-To enter the matrix $\left[ \begin{array}{cc:c}
+\begin{edXshowhide}{How to Enter a Matrix}
+
+To enter the matrix $\left[ \begin{array}{ccc}
 0&1&2 \\
-1&2&3 \end{array} \right],$ type [[0,1,2],[1,2,3]]   
+1&2&3 \end{array} \right]$, type [[0,1,2],[1,2,3]].  (Type the same thing if you want to enter the augmented matrix $\left[ \begin{array}{cc:c}
+0&1&2 \\
+1&2&3 \end{array} \right]$.)
 
 Use decimals only.  
 
-\begin{edXscript}
-def MatrixEntry(expect, ans):
-  	import ast
-	import numpy as np 
-	ret= {'ok':False}
-  	atol = 0.01
-  	try:
-		list_ans = ast.literal_eval(ans)
-		list_expect = ast.literal_eval(expect)
-  		matrix_ans = np.matrix(list_ans)
-  		matrix_expect = np.matrix(list_expect) 
-  		if matrix_ans.shape != matrix_expect.shape:
-  			ret['msg'] = 'Wrong shape of matrix'
-  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
-  			ret['ok'] = True
-  		else:
-  			ret['msg'] = 'Something is wrong'
-	except SyntaxError:
-		ret['msg'] = 'Wrong input format'
-  	return ret
-\end{edXscript}
+\end{edXshowhide}
+
+\input{matrixentry2.tex}
