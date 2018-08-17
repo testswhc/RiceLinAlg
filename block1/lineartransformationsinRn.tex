@@ -383,6 +383,57 @@ Thus there are infinitely many choices.
 \endedxproblem
 
 
+\beginedxproblem{Identity Transformation}{\dpa1}
+
+One very special linear transformation is the transformation $T: \R^n \rightarrow \R^n$ which is defined
+simply by $T(v) = v$ for all $v\in \R^n$.  This is called the identity transformation on $\R^n$, since it takes
+every vector to itself.  
+
+What is the standard matrix for the identity transformation on $\R^3$?
+ 
+\input{matrixentry2.tex}
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[1,0,0],[0,1,0],[0,0,1]]"}
+
+
+\edXsolution{ 
+We know that the columns of the standard matrix will be $T(e_1),T(e_2),T(e_3)$.  When $T$ is the
+identity transformation, this means that the columns will be $e_1, e_2, e_3$.  Hence we get
+the matrix $\left[\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1  \end{array} \right].$ 
+}
+
+
+\endedxproblem
+
+\endedxvertical
+
+
+
+
+
+\beginedxvertical{The Identity Matrix}
+
+
+
+\beginedxtext{Identity Matrix}
+
+
+{\keya{\bf{Definition.}}} The standard matrix for the identity transformation $T: \R^n \rightarrow \R^n$
+is denoted by the symbol $I_n$ and is called the $n\times n$ {\keya{\bf{identity matrix}}}.  Often we simply
+use $I$ to denote the identity matrix when the $n$ is understood.  
+
+As in the previous problem, we see that 
+\[ I_n = \left[ \begin{array}{cccc} | & | & & | \\ 
+e_1 & e_2 & \cdots & e_n \\
+ | & | & & | \end{array} \right] = \left[\begin{array}{cccc} 1 & 0 &\cdots & 0 \\ 0 & 1 & \cdots 0 \\ \vdots & \vdots & \ddots & \vdots
+\\ 0 & 0 & \cdots & 1  \end{array} \right]. \] 
+
+Since $I_n$ is the standard matrix for the identity transformation $T$, we have 
+$I_n v = T(v) = v$ for all $v\in \R^n$.  
+
+\endedxtext
+
+
 
 \endedxvertical
 
