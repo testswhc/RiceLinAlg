@@ -13,10 +13,20 @@ Suppose the function [mathjaxinline]T: \mathbb R^3\rightarrow \mathbb R^2[/mathj
     <p>
 For what matrix [mathjaxinline]A[/mathjaxinline] is [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x \in \mathbb R^3[/mathjaxinline]? </p>
     <p>
-To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p>
-    <p>
+      <div class="hideshowbox">
+        <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Matrix<span class="icon-caret-down toggleimage"/></h4>
+        <div class="hideshowcontent">
+          <p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p>
+          <p>
 Use decimals only. </p>
-    <script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+        </div>
+        <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+          <a href="javascript: {return false;}">Show</a>
+        </p>
+      </div>
+    </p>
+    <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -69,4 +79,6 @@ Since [mathjaxinline]T[/mathjaxinline] is multiplication by a matrix, it is a li
       </solution>
     </p>
   </text>
+  <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+  <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
 </problem>

@@ -1,11 +1,7 @@
-<problem display_name="Make it RREF" linenum="118" tex_filename="./block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Compute the Products" linenum="229" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-The following matrix is not in RREF. </p>
-    <p>
-[mathjaxinline]\left[ \begin{array}{ccccc} 1 &amp;  4 &amp;  0 &amp;  0 &amp;  7 \\ 0 &amp;  0 &amp;  1 &amp;  -2 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  1 \end{array} \right][/mathjaxinline] </p>
-    <p>
-However, you can apply a single row operation to put it into RREF. What matrix is the result? </p>
+Let [mathjaxinline]A = \left[\begin{array}{cc} 1 &amp;  -1 \\ 2 &amp;  0 \end{array} \right][/mathjaxinline] and [mathjaxinline]B = \left[\begin{array}{cc} 0 &amp;  3 \\ 1 &amp;  2 \end{array} \right][/mathjaxinline]. </p>
     <p>
       <div class="hideshowbox">
         <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Matrix<span class="icon-caret-down toggleimage"/></h4>
@@ -42,19 +38,30 @@ def MatrixEntry(expect, ans):
   	return ret
 </script>
     <p>
-      <customresponse cfn="MatrixEntry" expect="[[1,4,0,0,7],[0,0,1,0,5],[0,0,0,1,1]]">
-        <textline correct_answer="[[1,4,0,0,7],[0,0,1,0,5],[0,0,0,1,1]]"/>
+What is [mathjaxinline]AB[/mathjaxinline]? </p>
+    <p>
+      <customresponse cfn="MatrixEntry" expect="[[-1,1],[0,6]">
+        <textline correct_answer="[[-1,1],[0,6]"/>
       </customresponse>
+    </p>
+    <p>
+What is [mathjaxinline]BA[/mathjaxinline]? </p>
+    <p>
+      <customresponse cfn="MatrixEntry" expect="[[6,0],[5,-1]">
+        <textline correct_answer="[[6,0],[5,-1]"/>
+      </customresponse>
+    </p>
+    <p>
+Is [mathjaxinline]AB[/mathjaxinline] the same as [mathjaxinline]BA[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue">
-          <p>
-Note that the matrix currently satisfies all conditions except &#x201C;Each pivot is the only non-zero entry in its column", for there is a [mathjaxinline]-2[/mathjaxinline] above the pivot in the third row. We can add two times row three to row two and replace row 2 with the result. Doing so, we obtain </p>
-          <p>
-[mathjaxinline]\left[ \begin{array}{ccccc} 1 &amp;  4 &amp;  0 &amp;  0 &amp;  7 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  5 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  1 \end{array} \right].[/mathjaxinline] </p>
-        </font>
+        <font color="blue"/>
       </solution>
     </p>
   </text>

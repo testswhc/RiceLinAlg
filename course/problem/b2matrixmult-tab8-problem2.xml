@@ -1,0 +1,30 @@
+<problem display_name="Another Proposition 2" linenum="352" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Our goal is to show that the columns of [mathjaxinline]AB[/mathjaxinline] are linearly independent. This desired conclusion is equivalent to which of the following? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> [mathjaxinline]S\circ T[/mathjaxinline] is into</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> [mathjaxinline]S\circ T[/mathjaxinline] is onto</text>
+          </choice>
+          <choice correct="true" name="3">
+            <text> [mathjaxinline]T\circ S[/mathjaxinline] is into</text>
+          </choice>
+          <choice correct="false" name="4">
+            <text> [mathjaxinline]T\circ S[/mathjaxinline] is onto</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

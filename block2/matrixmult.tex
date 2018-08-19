@@ -116,13 +116,67 @@ What size is $C_2C_1$?
 \endedxproblem
 
 
+\beginedxproblem{Composing with Identity Transformation}{\dpa2}
+
+Suppose $S: \R^n \rightarrow \R^m$ is a linear transformation.
+Let $T: \R^n \rightarrow \R^n$ be the identity transformation (recall that this means 
+$T(v) = v$ for all $v\in \R^n$).  
+
+Which of the following is true?
+
+\edXabox{type="multichoice" expect="$S\circ T = S$" options="$S\circ T = T$","$S\circ T = S$","$T\circ S = T$","$T\circ S = S$"}
+
+
+\edXsolution{ 
+
+}
+\endedxproblem
+
+\beginedxproblem{Multiplying by Identity Matrix}{\dpa1}
+
+
+Given the above scenario, let $A$ be the standard matrix for $S$.  Recall that the $n\times n$ identity matrix
+$I_n$ is the standard matrix for $T$.  Which of the following is true?
+
+\edXabox{type="multichoice" expect="$AI_n = A$" options="$AI_n = A$","$I_nA = A$","Both are true"}
+
+
+\edXsolution{ 
+
+}
+
+\endedxproblem
+
+
+
 \endedxvertical
+
 
 
 \beginedxvertical{Calculating the Product}
 
 
+\beginedxtext{Identity Matrix Properties}
+
+The previous problems show the following:
+
+{\keya{\bf{Proposition.}}}  
+For any $m\times n$ matrix $A$, we have $AI_n = A$.  Similarly, $I_m A = A$.  
+
+\endedxtext
+
+
+
 \doedxvideo{Calculating the Product}{QbFZTxWh_9w}
+
+
+
+\endedxvertical
+
+
+
+\beginedxvertical{Product Practice}
+
 
 \beginedxtext{Definition of Matrix Product}
 
@@ -229,6 +283,150 @@ then $A(BC) = (AB)C$.  In other words, matrix multiplication is associative.
 
 
 \doedxvideo{A Proposition}{HuitPIiVBZ4}
+
+
+\beginedxtext{A Proposition about Matrix Multiplication}
+
+{\keya{\bf{Proposition.}}}  
+If $A$ is an $m\times n$ matrix and $B$ is an $n\times p$ matrix, and the columns of $B$ are
+linearly dependent, then the columns of $AB$ must be linearly dependent. 
+
+\endedxtext
+
+
+
+
+\beginedxproblem{Linearly Independent?}{\dpa1}
+
+     
+
+True or false: If $A$ is an $m\times n$ matrix and $B$ is an $n\times p$ matrix, and the columns of $B$ are
+linearly independent, then the columns of $AB$ must be linearly independent. 
+
+
+\edXabox{expect="False" options="True","False"}
+
+
+\edXsolution{ 
+
+
+ }
+
+\endedxproblem
+
+\endedxvertical
+
+
+
+\beginedxvertical{Proving Another Proposition}
+
+
+
+\beginedxproblem{Another Proposition 1}{\dpa1}
+
+
+Over the next few problems, we're going to apply the same 
+technique of translating matrix properties to linear transformation properties, and exploiting the
+Fundamental Fact of Matrix Multiplication, 
+to prove the following proposition:
+
+{\keya{\bf{Proposition.}}}  
+Suppose $A$ is an $m\times n$ matrix and $B$ is an $n\times p$ matrix. If the columns of $A$ are
+linearly independent, and the columns of $B$ are linearly independent, then the columns of $AB$ are 
+linearly independent. 
+
+
+Let $A$ be the standard matrix for a linear transformation $T$, and let $B$ be the standard matrix
+for a linear transformation $S$.  From the assumption that the columns of $A$ are linearly independent,
+what can we conclude about $T$?
+
+\edXabox{type="multichoice" expect="$T$ is into" options="$T$ is into","$T$ is not into","$T$ is onto","$T$ is not onto"}
+
+
+\edXsolution{ 
+
+}
+
+\endedxproblem
+
+\beginedxproblem{Another Proposition 2}{\dpa1}
+
+Our goal is to show that the columns of $AB$ are linearly independent.  This desired conclusion is equivalent
+to which of the following?
+
+\edXabox{type="multichoice" expect="$T\circ S$ is into" options="$S\circ T$ is into","$S\circ T$ is onto","$T\circ S$ is into","$T\circ S$ is onto" }
+
+
+\edXsolution{ 
+
+}
+
+\endedxproblem
+
+
+\endedxvertical
+
+
+
+\beginedxvertical{Another Proposition Continued}
+
+\beginedxproblem{Another Proposition 3}{\dpa1}
+
+Translating the information about linearly independent columns into 
+facts about linear transformations: We know that $T$ and $S$ are into, and we are trying to prove that
+$T\circ S$ is into.  This is much easier than trying to show that the columns of the product $AB$ are linearly
+independent directly!
+
+In order to prove that $T\circ S$ is into, we should...  
+
+\edXabox{type="multichoice" expect="show that if $u\ne v$, then $T\circ S(u) \ne T\circ S(v)$"  options="show that if $u=v$, then $T\circ S(u) = T\circ S(v)$","show that if $u\ne v$, then $T\circ S(u) \ne T\circ S(v)$" }
+
+
+\edXsolution{ 
+A transformation is into if it sends two different input vectors to two different output vectors. 
+Thus the second option is what we want to show.  
+}
+
+\endedxproblem
+
+\beginedxproblem{Another Proposition 4}{\dpa1}
+
+Now that we know exactly what we need to do, let's do it!
+
+Suppose that $u\ne v$ (for vectors $u,v$ in the domain $\R^p$).  
+
+
+\edXinline{We can then apply the fact that} 
+\edXabox{expect="S is into" options="S is into","T is into" inline="1" size="10"}
+
+to conclude that 
+
+\edXabox{type="multichoice" expect="$S(u)\ne S(v)$" options="$T(u)=T(v)$","$T(u)\ne T(v)$","$S(u)=S(v)$","$S(u)\ne S(v)$" }
+
+
+
+
+
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+\beginedxproblem{Another Proposition 5}{\dpa1}
+
+\edXinline{We use the result of the previous problem, together with the fact that}
+\edXabox{expect="T is into" options="S is into","T is into" inline="1" size="10"}
+
+to give us our desired conclusion that  $T\circ S(u) \ne T\circ S(v)$.  Therefore $T\circ S$ is into,
+and we have proven our proposition!
+
+
+
+\edXsolution{ 
+}
+
+\endedxproblem
 
 
 
