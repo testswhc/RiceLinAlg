@@ -1,4 +1,6 @@
-To enter a vector such as $\left[\begin{array}{c} 1 \\ 2  \\ 3 \end{array} \right]$, you can either:
+\begin{edXshowhide}{How to Enter a Vector}
+
+To enter a vector in $\R^n$ such as $\left[\begin{array}{c} 1 \\ 2  \\ 3 \end{array} \right]$, you can either:
 \begin{itemize}
 \item
 enter it as 
@@ -9,40 +11,6 @@ or, you can enter it as <1,2,3>
 
 Use decimals only.  
 
-\begin{edXscript}
-def VectorEntry(expect, ans):
-	import ast
-	import numpy as np 
-  	atol = 0.01
-	list_expect = ast.literal_eval(expect)
-	vec_expect = np.matrix(list_expect)
-  	ret = {"ok":False}
-	try:
-  		# input format [[1],[2],[3]]
-		list_ans = ast.literal_eval(ans)
-		vec_ans = np.matrix(list_ans)
-  		if vec_ans.shape != vec_expect.shape:
-  			ret['msg'] = 'Wrong shape of vector!'
-  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
-  			ret['ok'] = True
-  		else:
-  		# More error message. Will improve this part
-  			ret['msg'] = 'something is wrong'   			
-	#except SyntaxError:
-		#ret['msg'] = 'Wrong input format'
-	except SyntaxError:
-  		# input format &lt;1,2,3&gt;
-		list_ans = ans.replace('&lt;', '[').replace('&gt;', ']')
-		list_ans = ast.literal_eval(list_ans)
-		vec_ans = np.transpose(np.matrix(list_ans))
-  		if vec_ans.shape != vec_expect.shape:
-  			ret['msg'] = 'Wrong shape of vector!'
-  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
-  			ret['ok'] = True
-  		else:
-    		# More error message. Will improve this part
-  			ret['msg'] = 'something is wrong' 
-  	except:
-  		ret['msg'] = 'Wrong input format'
-  	return ret 
-\end{edXscript}
+\end{edXshowhide}
+
+\input{vectorentry2.tex}

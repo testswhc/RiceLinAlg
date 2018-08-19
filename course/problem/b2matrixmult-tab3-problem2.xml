@@ -1,0 +1,26 @@
+<problem display_name="Matrix Sizes" linenum="82" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]C_1[/mathjaxinline] be the standard matrix for [mathjaxinline]T_1[/mathjaxinline] from the previous question, and let [mathjaxinline]C_2[/mathjaxinline] be the standard matrix for [mathjaxinline]T_2[/mathjaxinline]. </p>
+    <p>
+What size is [mathjaxinline]C_1[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('4 x 7','7 x 4')" correct="4 x 7"/>
+      </optionresponse>
+    </p>
+    <p>
+What size is [mathjaxinline]C_2[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('3 x 7','7 x 3')" correct="7 x 3"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">  </font>
+      </solution>
+    </p>
+  </text>
+</problem>

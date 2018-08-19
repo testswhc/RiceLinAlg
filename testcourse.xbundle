@@ -60,10 +60,20 @@ Consider the following system of linear equations: </p>
               <p>
 Enter the coefficient matrix for the above system. </p>
               <p>
-To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p>
-              <p>
+                <div class="hideshowbox">
+                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Matrix<span class="icon-caret-down toggleimage"/></h4>
+                  <div class="hideshowcontent">
+                    <p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p>
+                    <p>
 Use decimals only. </p>
-              <script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+                  </div>
+                  <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                    <a href="javascript: {return false;}">Show</a>
+                  </p>
+                </div>
+              </p>
+              <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -120,6 +130,8 @@ The coefficient matrix is given by </p>
                 </solution>
               </p>
             </text>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
         </vertical>
         <vertical display_name="Doing Row Operations" refnum="3" url_name="b1lineareqns-vertical3">
@@ -633,10 +645,20 @@ The following matrix is not in RREF. </p>
               <p>
 However, you can apply a single row operation to put it into RREF. What matrix is the result? </p>
               <p>
-To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p>
-              <p>
+                <div class="hideshowbox">
+                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Matrix<span class="icon-caret-down toggleimage"/></h4>
+                  <div class="hideshowcontent">
+                    <p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p>
+                    <p>
 Use decimals only. </p>
-              <script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+                  </div>
+                  <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                    <a href="javascript: {return false;}">Show</a>
+                  </p>
+                </div>
+              </p>
+              <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -674,6 +696,8 @@ Note that the matrix currently satisfies all conditions except &#x201C;Each pivo
                 </solution>
               </p>
             </text>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
           <problem display_name="Pivots vs. Rows" linenum="147" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
@@ -1430,25 +1454,17 @@ For time budgeting purposes, this sequence has X videos totaling X minutes, plus
         </vertical>
         <vertical display_name="The Template Vector Space" refnum="2" url_name="b1vectors-vertical2">
           <video display_name="R^n" youtube_id_1_0="3QM3Lg15Hi8" url_name="b1vectors-tab2-video1"/>
-          <problem display_name="Vector entry" linenum="37" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab2-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Vector entry" linenum="37" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab2-problem1" showanswer="finished" attempts="5" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]v = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and let [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right].[/mathjaxinline] </p>
               <p>
-What is [mathjaxinline]v+w[/mathjaxinline]? To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
-              <ul class="itemize">
-                <li>
-                  <p>
-enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
-                </li>
-                <li>
-                  <p>
-or, you can enter it as &lt;1,2,3&gt; </p>
-                </li>
-              </ul>
-              <p>
-Use decimals only. </p>
-              <script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+What is [mathjaxinline]v+w[/mathjaxinline]? <div class="hideshowbox"><h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Vector<span class="icon-caret-down toggleimage"/></h4><div class="hideshowcontent"><p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize"><li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li><li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li></ul><p>
+Use decimals only. </p></div><p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px"><a href="javascript: {return false;}">Show</a></p></div></p>
+              <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
 	import numpy as np 
@@ -1518,6 +1534,8 @@ What is [mathjaxinline]2w-3v[/mathjaxinline]? </p>
                 </solution>
               </p>
             </text>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
           <problem display_name="Where does it live?" linenum="82" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab2-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
@@ -1555,10 +1573,9 @@ It is not an element of (for instance) [mathjaxinline]\mathbb R^2[/mathjaxinline
             </text>
           </problem>
         </vertical>
-        <vertical display_name="Points and Arrows" refnum="3" url_name="b1vectors-vertical3">
+        <vertical display_name="R^n and the Zero Vector" refnum="3" url_name="b1vectors-vertical3">
           <html display_name="R^n" linenum="107" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab3-text1">
-            <p>
-For a non-negative integer [mathjaxinline]n[/mathjaxinline], [mathjaxinline]\mathbb R^ n[/mathjaxinline] is defined to be the set </p>
+            <p><span style="color:#27408C"><b class="bf">Definition.</b></span> For a non-negative integer [mathjaxinline]n[/mathjaxinline], [mathjaxinline]\mathbb R^ n[/mathjaxinline] is defined to be the set </p>
             <table id="a0000000046" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left\{ \left[\begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right] \  : \  a_1, a_2, \ldots a_ n \in \mathbb R\right\} .[/mathjax]</td>
@@ -1576,8 +1593,10 @@ To distinguish it from the scalar 0, in print we will denote the zero vector by 
             <p>
 Be careful! The zero vector in the space [mathjaxinline]\mathbb R^3[/mathjaxinline] is [mathjaxinline]\mathbf{0}= \left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right],[/mathjaxinline] whereas the zero vector in the space [mathjaxinline]\mathbb R^4[/mathjaxinline] is [mathjaxinline]\mathbf{0}= \left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array} \right].[/mathjaxinline] Even though we use the same symbol, these are different objects! One has to judge from context which space any given [mathjaxinline]\mathbf{0}[/mathjaxinline] lies in. </p>
           </html>
-          <video display_name="Geometry of R^n" youtube_id_1_0="4P4qoU2s1Rs" url_name="b1vectors-tab3-video1"/>
-          <problem display_name="Picture Problem" linenum="151" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab3-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+        </vertical>
+        <vertical display_name="Points and Arrows" refnum="4" url_name="b1vectors-vertical4">
+          <video display_name="Geometry of R^n" youtube_id_1_0="4P4qoU2s1Rs" url_name="b1vectors-tab4-video1"/>
+          <problem display_name="Picture Problem" linenum="156" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab4-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Vectors [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] are given. </p>
@@ -1618,11 +1637,11 @@ If we align the tip of [mathjaxinline]w[/mathjaxinline] and the tail of [mathjax
             </text>
           </problem>
         </vertical>
-        <vertical display_name="Beyond R^n" refnum="4" url_name="b1vectors-vertical4">
-          <video display_name="Other Vector Spaces" youtube_id_1_0="P0vitfigkm4" url_name="b1vectors-tab4-video1"/>
+        <vertical display_name="Beyond R^n" refnum="5" url_name="b1vectors-vertical5">
+          <video display_name="Other Vector Spaces" youtube_id_1_0="P0vitfigkm4" url_name="b1vectors-tab5-video1"/>
         </vertical>
-        <vertical display_name="Vector Spaces" refnum="5" url_name="b1vectors-vertical5">
-          <html display_name="Vector Spaces" linenum="191" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab5-text1">
+        <vertical display_name="Vector Spaces" refnum="6" url_name="b1vectors-vertical6">
+          <html display_name="Vector Spaces" linenum="196" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab6-text1">
             <p>
 A <span style="color:#99182C"><b class="bf">vector space</b></span> over a field [mathjaxinline]F[/mathjaxinline] is, essentially, a set [mathjaxinline]V[/mathjaxinline] in which one can do vector addition and scalar multiplication. For a more formal definition, see below. </p>
             <p>
@@ -1670,7 +1689,7 @@ For all [mathjaxinline]a,b \in F[/mathjaxinline], and [mathjaxinline]v\in V[/mat
             <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
             <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </html>
-          <problem display_name="Vector Spaces" linenum="222" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab5-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Vector Spaces" linenum="227" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab6-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 True or False: The only vector spaces over the scalar field [mathjaxinline]\mathbb R[/mathjaxinline] are the spaces [mathjaxinline]\mathbb R^ n[/mathjaxinline] for [mathjaxinline]n&gt; 0[/mathjaxinline]. </p>
@@ -2210,20 +2229,30 @@ Let </p>
               <p>
  and let [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ax[/mathjaxinline]? </p>
               <p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
-              <ul class="itemize">
-                <li>
-                  <p>
+                <div class="hideshowbox">
+                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Vector<span class="icon-caret-down toggleimage"/></h4>
+                  <div class="hideshowcontent">
+                    <p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
+                    <ul class="itemize">
+                      <li>
+                        <p>
 enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
-                </li>
-                <li>
-                  <p>
+                      </li>
+                      <li>
+                        <p>
 or, you can enter it as &lt;1,2,3&gt; </p>
-                </li>
-              </ul>
-              <p>
+                      </li>
+                    </ul>
+                    <p>
 Use decimals only. </p>
-              <script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+                  </div>
+                  <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                    <a href="javascript: {return false;}">Show</a>
+                  </p>
+                </div>
+              </p>
+              <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
 	import numpy as np 
@@ -2294,6 +2323,8 @@ Note the special nature of vector [mathjaxinline]y[/mathjaxinline]. We can see t
                 </solution>
               </p>
             </text>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
           <problem display_name="Where does it live?" linenum="113" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
@@ -3659,20 +3690,30 @@ Suppose that [mathjaxinline]T(f) = \left[\begin{array}{c} 1 \\ 2 \end{array} \ri
               <p>
 If [mathjaxinline]h \in \mathbb {P}[/mathjaxinline] is the polynomial given by [mathjaxinline]h(t) = -2t^2[/mathjaxinline], what must [mathjaxinline]T(h)[/mathjaxinline] be? </p>
               <p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
-              <ul class="itemize">
-                <li>
-                  <p>
+                <div class="hideshowbox">
+                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Vector<span class="icon-caret-down toggleimage"/></h4>
+                  <div class="hideshowcontent">
+                    <p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
+                    <ul class="itemize">
+                      <li>
+                        <p>
 enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
-                </li>
-                <li>
-                  <p>
+                      </li>
+                      <li>
+                        <p>
 or, you can enter it as &lt;1,2,3&gt; </p>
-                </li>
-              </ul>
-              <p>
+                      </li>
+                    </ul>
+                    <p>
 Use decimals only. </p>
-              <script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+                  </div>
+                  <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                    <a href="javascript: {return false;}">Show</a>
+                  </p>
+                </div>
+              </p>
+              <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
 	import numpy as np 
@@ -3745,6 +3786,8 @@ Also, </p>
                 </solution>
               </p>
             </text>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
         </vertical>
       </sequential>
@@ -3853,20 +3896,30 @@ Suppose [mathjaxinline]T: \mathbb R^4\rightarrow \mathbb R^3[/mathjaxinline] is 
               <p>
 What is [mathjaxinline]T(e_3)[/mathjaxinline]? </p>
               <p>
-To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
-              <ul class="itemize">
-                <li>
-                  <p>
+                <div class="hideshowbox">
+                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Vector<span class="icon-caret-down toggleimage"/></h4>
+                  <div class="hideshowcontent">
+                    <p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
+                    <ul class="itemize">
+                      <li>
+                        <p>
 enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
-                </li>
-                <li>
-                  <p>
+                      </li>
+                      <li>
+                        <p>
 or, you can enter it as &lt;1,2,3&gt; </p>
-                </li>
-              </ul>
-              <p>
+                      </li>
+                    </ul>
+                    <p>
 Use decimals only. </p>
-              <script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+                  </div>
+                  <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                    <a href="javascript: {return false;}">Show</a>
+                  </p>
+                </div>
+              </p>
+              <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
 	import numpy as np 
@@ -3926,6 +3979,8 @@ Alternatively, if the four columns of [mathjaxinline]A[/mathjaxinline] are [math
                 </solution>
               </p>
             </text>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
           <problem display_name="Find a Matrix" linenum="146" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
@@ -3942,10 +3997,20 @@ Suppose the function [mathjaxinline]T: \mathbb R^3\rightarrow \mathbb R^2[/mathj
               <p>
 For what matrix [mathjaxinline]A[/mathjaxinline] is [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x \in \mathbb R^3[/mathjaxinline]? </p>
               <p>
-To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p>
-              <p>
+                <div class="hideshowbox">
+                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Matrix<span class="icon-caret-down toggleimage"/></h4>
+                  <div class="hideshowcontent">
+                    <p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p>
+                    <p>
 Use decimals only. </p>
-              <script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+                  </div>
+                  <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                    <a href="javascript: {return false;}">Show</a>
+                  </p>
+                </div>
+              </p>
+              <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -3998,6 +4063,8 @@ Since [mathjaxinline]T[/mathjaxinline] is multiplication by a matrix, it is a li
                 </solution>
               </p>
             </text>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
         </vertical>
         <vertical display_name="Matrix for Rotation" refnum="4" url_name="b1lintrans2-vertical4">
@@ -4349,10 +4416,68 @@ How many linear transformations [mathjaxinline]T:\mathbb R^4 \rightarrow \mathbb
               </p>
             </text>
           </problem>
+          <problem display_name="Identity Transformation" linenum="386" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab6-problem5" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+One very special linear transformation is the transformation [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ n[/mathjaxinline] which is defined simply by [mathjaxinline]T(v) = v[/mathjaxinline] for all [mathjaxinline]v\in \mathbb R^ n[/mathjaxinline]. This is called the identity transformation on [mathjaxinline]\mathbb R^ n[/mathjaxinline], since it takes every vector to itself. </p>
+              <p>
+What is the standard matrix for the identity transformation on [mathjaxinline]\mathbb R^3[/mathjaxinline]? </p>
+              <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script>
+              <p>
+                <customresponse cfn="MatrixEntry" expect="[[1,0,0],[0,1,0],[0,0,1]]">
+                  <textline correct_answer="[[1,0,0],[0,1,0],[0,0,1]]"/>
+                </customresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ We know that the columns of the standard matrix will be [mathjaxinline]T(e_1),T(e_2),T(e_3)[/mathjaxinline]. When [mathjaxinline]T[/mathjaxinline] is the identity transformation, this means that the columns will be [mathjaxinline]e_1, e_2, e_3[/mathjaxinline]. Hence we get the matrix [mathjaxinline]\left[\begin{array}{ccc} 1 &amp;  0 &amp;  0 \\ 0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  1 \end{array} \right].[/mathjaxinline]  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
         </vertical>
-        <vertical display_name="Back to Pictures" refnum="7" url_name="b1lintrans2-vertical7">
-          <video display_name="More Pictures" youtube_id_1_0="8zRN403o8tg" url_name="b1lintrans2-tab7-video1"/>
-          <problem display_name="What is preserved?" linenum="400" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+        <vertical display_name="The Identity Matrix" refnum="7" url_name="b1lintrans2-vertical7">
+          <html display_name="Identity Matrix" linenum="418" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab7-text1">
+            <p><span style="color:#27408C"><b class="bf">Definition.</b></span> The standard matrix for the identity transformation [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ n[/mathjaxinline] is denoted by the symbol [mathjaxinline]I_ n[/mathjaxinline] and is called the [mathjaxinline]n\times n[/mathjaxinline] <span style="color:#27408C"><b class="bf">identity matrix</b></span>. Often we simply use [mathjaxinline]I[/mathjaxinline] to denote the identity matrix when the [mathjaxinline]n[/mathjaxinline] is understood. </p>
+            <p>
+As in the previous problem, we see that </p>
+            <table id="a0000000074" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <tr>
+                <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]I_ n = \left[ \begin{array}{cccc} | &amp;  | &amp; &amp;  | \\ e_1 &amp;  e_2 &amp;  \cdots &amp;  e_ n \\ | &amp;  | &amp; &amp;  | \end{array} \right] = \left[\begin{array}{cccc} 1 &amp;  0 &amp; \cdots &amp;  0 \\ 0 &amp;  1 &amp;  \cdots 0 \\ \vdots &amp;  \vdots &amp;  \ddots &amp;  \vdots \\ 0 &amp;  0 &amp;  \cdots &amp;  1 \end{array} \right].[/mathjax]</td>
+                <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+              </tr>
+            </table>
+            <p>
+Since [mathjaxinline]I_ n[/mathjaxinline] is the standard matrix for the identity transformation [mathjaxinline]T[/mathjaxinline], we have [mathjaxinline]I_ n v = T(v) = v[/mathjaxinline] for all [mathjaxinline]v\in \mathbb R^ n[/mathjaxinline]. </p>
+          </html>
+        </vertical>
+        <vertical display_name="Back to Pictures" refnum="8" url_name="b1lintrans2-vertical8">
+          <video display_name="More Pictures" youtube_id_1_0="8zRN403o8tg" url_name="b1lintrans2-tab8-video1"/>
+          <problem display_name="What is preserved?" linenum="451" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Take a look at the video again. Which properties seem to be preserved by linear transformations from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>
@@ -4433,7 +4558,7 @@ For time budgeting purposes, this sequence has X videos totaling X minutes, plus
         <vertical display_name="Image Definition" refnum="3" url_name="b1intoonto-vertical3">
           <html display_name="Image Definition and Relation with Span" linenum="46" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab3-text1">
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">image</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p>
-            <table id="a0000000074" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000075" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Image}(T) = \left\{  T(v) \  : \  v \in V\right\} .[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4462,7 +4587,7 @@ Suppose [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformat
             <text>
               <p>
 Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p>
-              <table id="a0000000075" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000076" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  1 \\ -1 &amp;  4 &amp;  3 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4500,7 +4625,7 @@ Is the vector [mathjaxinline]\left[\begin{array}{c} 2 \\ -1 \\ 0 \end{array} \ri
             <text>
               <p>
 Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p>
-              <table id="a0000000076" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000077" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  1 \\ -1 &amp;  4 &amp;  3 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4618,7 +4743,7 @@ Is [mathjaxinline]T[/mathjaxinline] into? </p>
         <vertical display_name="Kernel Definition and Questions" refnum="8" url_name="b1intoonto-vertical8">
           <html display_name="Kernel Definition" linenum="226" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab8-text1">
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">kernel</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p>
-            <table id="a0000000077" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000078" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Ker}(T) = \left\{  v\in V \  : T(v) = \mathbf{0}\} .[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4647,7 +4772,7 @@ Suppose [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformat
             <text>
               <p>
 Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^4[/mathjaxinline] be the linear transformation with standard matrix </p>
-              <table id="a0000000078" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000079" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  5 \\ 0 &amp;  1 &amp;  2 \\ -1 &amp;  1 &amp;  1 \\ 2 &amp;  -1 &amp;  0 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4740,6 +4865,569 @@ True or False: Every linear transformation [mathjaxinline]T: \mathbb R^6 \righta
                 <solution>
                   <font color="blue">Answer: </font>
                   <font color="blue">  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+      </sequential>
+    </chapter>
+    <chapter display_name="Matrix Operations" linenum="380" tex_filename="testcourse.tex" refnum="2" url_name="block2" start="2018-01-11T16:00">
+      <sequential display_name="Matrix Multiplication" linenum="392" tex_filename="testcourse.tex" refnum="1" due="2018-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixmult-sequential">
+        <vertical display_name="Page One" refnum="1" url_name="b2matrixmult-vertical1">
+          <html display_name="Preliminaries" linenum="5" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab1-text1">
+            <p>
+At the end of this sequence, and after some practice, you should be able to: </p>
+            <ul class="itemize">
+              <li>
+                <p>
+Recognize when two matrices can be multiplied. </p>
+              </li>
+              <li>
+                <p>
+Calculate the product of two matrices. </p>
+              </li>
+              <li>
+                <p>
+Draw parallels between matrix multiplication and composition of linear transformations. </p>
+              </li>
+            </ul>
+            <p>
+For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
+          </html>
+        </vertical>
+        <vertical display_name="Composition of Linear Transformation" refnum="2" url_name="b2matrixmult-vertical2">
+          <video display_name="Composition of Linear Transformations" youtube_id_1_0="r-gtj-GO9WI" url_name="b2matrixmult-tab2-video1"/>
+          <html display_name="Fundamental Fact of Matrix Multiplication" linenum="37" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab2-text1">
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]S: \mathbb R^ p \rightarrow \mathbb R^ n[/mathjaxinline] and [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] are linear transformations, then [mathjaxinline]T\circ S: \mathbb R^ p \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation. </p>
+            <p><span style="color:#27408C"><b class="bf">Fundamental Fact of Matrix Multiplication.</b></span> If the [mathjaxinline]m\times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline] is the standard matrix for [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline], and the [mathjaxinline]n\times p[/mathjaxinline] matrix [mathjaxinline]B[/mathjaxinline] is the standard matrix for [mathjaxinline]S: \mathbb R^ p \rightarrow \mathbb R^ n[/mathjaxinline], then [mathjaxinline]AB[/mathjaxinline] will be an [mathjaxinline]m\times p[/mathjaxinline] matrix which is the standard matrix for [mathjaxinline]T\circ S: \mathbb R^ p \rightarrow \mathbb R^ m[/mathjaxinline]. </p>
+            <p>
+(If the number of columns of [mathjaxinline]A[/mathjaxinline] is not equal to the number of rows of [mathjaxinline]B[/mathjaxinline], then [mathjaxinline]AB[/mathjaxinline] is not defined, just as the composition [mathjaxinline]T\circ S[/mathjaxinline] would not be defined.) </p>
+          </html>
+        </vertical>
+        <vertical display_name="Questions about Composition" refnum="3" url_name="b2matrixmult-vertical3">
+          <problem display_name="Composing" linenum="64" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose [mathjaxinline]T_1: \mathbb R^7 \rightarrow \mathbb R^4[/mathjaxinline] and [mathjaxinline]T_2: \mathbb R^3 \rightarrow \mathbb R^7[/mathjaxinline] are both linear transformations. </p>
+              <p>
+Is [mathjaxinline]T_1\circ T_2[/mathjaxinline] a linear transformation? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+Is [mathjaxinline]T_2\circ T_1[/mathjaxinline] a linear transformation? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Matrix Sizes" linenum="82" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab3-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]C_1[/mathjaxinline] be the standard matrix for [mathjaxinline]T_1[/mathjaxinline] from the previous question, and let [mathjaxinline]C_2[/mathjaxinline] be the standard matrix for [mathjaxinline]T_2[/mathjaxinline]. </p>
+              <p>
+What size is [mathjaxinline]C_1[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('4 x 7','7 x 4')" correct="4 x 7"/>
+                </optionresponse>
+              </p>
+              <p>
+What size is [mathjaxinline]C_2[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('3 x 7','7 x 3')" correct="7 x 3"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Product Sizes" linenum="102" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab3-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+What size is [mathjaxinline]C_1C_2[/mathjaxinline]? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> 4 x 7</text>
+                    </choice>
+                    <choice correct="true" name="2">
+                      <text> 4 x 3</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> 3 x 4</text>
+                    </choice>
+                    <choice correct="false" name="4">
+                      <text> 7 x 3</text>
+                    </choice>
+                    <choice correct="false" name="5">
+                      <text> 7 x 7</text>
+                    </choice>
+                    <choice correct="false" name="6">
+                      <text> Not defined</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+What size is [mathjaxinline]C_2C_1[/mathjaxinline]? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> 4 x 7</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> 4 x 3</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> 3 x 4</text>
+                    </choice>
+                    <choice correct="false" name="4">
+                      <text> 7 x 3</text>
+                    </choice>
+                    <choice correct="false" name="5">
+                      <text> 7 x 7</text>
+                    </choice>
+                    <choice correct="true" name="6">
+                      <text> Not defined</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Composing with Identity Transformation" linenum="119" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab3-problem4" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+Suppose [mathjaxinline]S: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation. Let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ n[/mathjaxinline] be the identity transformation (recall that this means [mathjaxinline]T(v) = v[/mathjaxinline] for all [mathjaxinline]v\in \mathbb R^ n[/mathjaxinline]). </p>
+              <p>
+Which of the following is true? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> [mathjaxinline]S\circ T = T[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="true" name="2">
+                      <text> [mathjaxinline]S\circ T = S[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> [mathjaxinline]T\circ S = T[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="4">
+                      <text> [mathjaxinline]T\circ S = S[/mathjaxinline]</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Multiplying by Identity Matrix" linenum="135" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab3-problem5" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Given the above scenario, let [mathjaxinline]A[/mathjaxinline] be the standard matrix for [mathjaxinline]S[/mathjaxinline]. Recall that the [mathjaxinline]n\times n[/mathjaxinline] identity matrix [mathjaxinline]I_ n[/mathjaxinline] is the standard matrix for [mathjaxinline]T[/mathjaxinline]. Which of the following is true? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="true" name="1">
+                      <text> [mathjaxinline]AI_ n = A[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> [mathjaxinline]I_ nA = A[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> Both are true</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Calculating the Product" refnum="4" url_name="b2matrixmult-vertical4">
+          <html display_name="Identity Matrix Properties" linenum="159" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab4-text1">
+            <p>
+The previous problems show the following: </p>
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> For any [mathjaxinline]m\times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline], we have [mathjaxinline]AI_ n = A[/mathjaxinline]. Similarly, [mathjaxinline]I_ m A = A[/mathjaxinline]. </p>
+          </html>
+          <video display_name="Calculating the Product" youtube_id_1_0="QbFZTxWh_9w" url_name="b2matrixmult-tab4-video1"/>
+        </vertical>
+        <vertical display_name="Product Practice" refnum="5" url_name="b2matrixmult-vertical5">
+          <html display_name="Definition of Matrix Product" linenum="181" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab5-text1">
+            <p><span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix, and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix, then [mathjaxinline]AB[/mathjaxinline] is the [mathjaxinline]m\times p[/mathjaxinline] matrix whose [mathjaxinline]i[/mathjaxinline]th column is [mathjaxinline]A[/mathjaxinline] times the [mathjaxinline]i[/mathjaxinline]th column of [mathjaxinline]B[/mathjaxinline]. </p>
+          </html>
+          <problem display_name="Which product?" linenum="191" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Consider the matrices </p>
+              <table id="a0000000080" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]C = \left[\begin{array}{cc} 1 &amp;  -1 \\ 0 &amp;  2 \\ -1 &amp;  1 \end{array} \right].[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+ and </p>
+              <table id="a0000000081" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]D = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  1 \\ -1 &amp;  4 &amp;  3 \end{array} \right][/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+Of [mathjaxinline]CD[/mathjaxinline] and [mathjaxinline]DC[/mathjaxinline], which matrix product is defined? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('CD','DC','Both are defined')" correct="DC"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Compute the Product" linenum="211" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+From the problem above, enter the product which is defined. (If both are, you may enter either one.) </p>
+              <p>
+                <div class="hideshowbox">
+                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Matrix<span class="icon-caret-down toggleimage"/></h4>
+                  <div class="hideshowcontent">
+                    <p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p>
+                    <p>
+Use decimals only. </p>
+                  </div>
+                  <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                    <a href="javascript: {return false;}">Show</a>
+                  </p>
+                </div>
+              </p>
+              <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script>
+              <p>
+                <customresponse cfn="MatrixEntry" expect="[[-2,6],[-1,3],[-4,12]]">
+                  <textline correct_answer="[[-2,6],[-1,3],[-4,12]]"/>
+                </customresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+          </problem>
+          <problem display_name="Compute the Products" linenum="229" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab5-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]A = \left[\begin{array}{cc} 1 &amp;  -1 \\ 2 &amp;  0 \end{array} \right][/mathjaxinline] and [mathjaxinline]B = \left[\begin{array}{cc} 0 &amp;  3 \\ 1 &amp;  2 \end{array} \right][/mathjaxinline]. </p>
+              <p>
+                <div class="hideshowbox">
+                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Matrix<span class="icon-caret-down toggleimage"/></h4>
+                  <div class="hideshowcontent">
+                    <p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p>
+                    <p>
+Use decimals only. </p>
+                  </div>
+                  <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                    <a href="javascript: {return false;}">Show</a>
+                  </p>
+                </div>
+              </p>
+              <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script>
+              <p>
+What is [mathjaxinline]AB[/mathjaxinline]? </p>
+              <p>
+                <customresponse cfn="MatrixEntry" expect="[[-1,1],[0,6]">
+                  <textline correct_answer="[[-1,1],[0,6]"/>
+                </customresponse>
+              </p>
+              <p>
+What is [mathjaxinline]BA[/mathjaxinline]? </p>
+              <p>
+                <customresponse cfn="MatrixEntry" expect="[[6,0],[5,-1]">
+                  <textline correct_answer="[[6,0],[5,-1]"/>
+                </customresponse>
+              </p>
+              <p>
+Is [mathjaxinline]AB[/mathjaxinline] the same as [mathjaxinline]BA[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+          </problem>
+        </vertical>
+        <vertical display_name="Properties of Matrix Multiplication" refnum="6" url_name="b2matrixmult-vertical6">
+          <video display_name="Commutative? Associative?" youtube_id_1_0="D80IuF4bedo" url_name="b2matrixmult-tab6-video1"/>
+          <html display_name="Associativity of Multiplication" linenum="269" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab6-text1">
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix, [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix, and [mathjaxinline]C[/mathjaxinline] is a [mathjaxinline]p\times q[/mathjaxinline] matrix, then [mathjaxinline]A(BC) = (AB)C[/mathjaxinline]. In other words, matrix multiplication is associative. </p>
+          </html>
+        </vertical>
+        <vertical display_name="Applying the Fundamental Fact of Matrix Multiplication" refnum="7" url_name="b2matrixmult-vertical7">
+          <video display_name="A Proposition" youtube_id_1_0="HuitPIiVBZ4" url_name="b2matrixmult-tab7-video1"/>
+          <html display_name="A Proposition about Matrix Multiplication" linenum="288" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab7-text1">
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix, and the columns of [mathjaxinline]B[/mathjaxinline] are linearly dependent, then the columns of [mathjaxinline]AB[/mathjaxinline] must be linearly dependent. </p>
+          </html>
+          <problem display_name="Linearly Independent?" linenum="299" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+True or false: If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix, and the columns of [mathjaxinline]B[/mathjaxinline] are linearly independent, then the columns of [mathjaxinline]AB[/mathjaxinline] must be linearly independent. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('True','False')" correct="False"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Proving Another Proposition" refnum="8" url_name="b2matrixmult-vertical8">
+          <problem display_name="Another Proposition 1" linenum="325" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Over the next few problems, we're going to apply the same technique of translating matrix properties to linear transformation properties, and exploiting the Fundamental Fact of Matrix Multiplication, to prove the following proposition: </p>
+              <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> Suppose [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix. If the columns of [mathjaxinline]A[/mathjaxinline] are linearly independent, and the columns of [mathjaxinline]B[/mathjaxinline] are linearly independent, then the columns of [mathjaxinline]AB[/mathjaxinline] are linearly independent. </p>
+              <p>
+Let [mathjaxinline]A[/mathjaxinline] be the standard matrix for a linear transformation [mathjaxinline]T[/mathjaxinline], and let [mathjaxinline]B[/mathjaxinline] be the standard matrix for a linear transformation [mathjaxinline]S[/mathjaxinline]. From the assumption that the columns of [mathjaxinline]A[/mathjaxinline] are linearly independent, what can we conclude about [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="true" name="1">
+                      <text> [mathjaxinline]T[/mathjaxinline] is into</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> [mathjaxinline]T[/mathjaxinline] is not into</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> [mathjaxinline]T[/mathjaxinline] is onto</text>
+                    </choice>
+                    <choice correct="false" name="4">
+                      <text> [mathjaxinline]T[/mathjaxinline] is not onto</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Another Proposition 2" linenum="352" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Our goal is to show that the columns of [mathjaxinline]AB[/mathjaxinline] are linearly independent. This desired conclusion is equivalent to which of the following? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> [mathjaxinline]S\circ T[/mathjaxinline] is into</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> [mathjaxinline]S\circ T[/mathjaxinline] is onto</text>
+                    </choice>
+                    <choice correct="true" name="3">
+                      <text> [mathjaxinline]T\circ S[/mathjaxinline] is into</text>
+                    </choice>
+                    <choice correct="false" name="4">
+                      <text> [mathjaxinline]T\circ S[/mathjaxinline] is onto</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Another Proposition Continued" refnum="9" url_name="b2matrixmult-vertical9">
+          <problem display_name="Another Proposition 3" linenum="373" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab9-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Translating the information about linearly independent columns into facts about linear transformations: We know that [mathjaxinline]T[/mathjaxinline] and [mathjaxinline]S[/mathjaxinline] are into, and we are trying to prove that [mathjaxinline]T\circ S[/mathjaxinline] is into. This is much easier than trying to show that the columns of the product [mathjaxinline]AB[/mathjaxinline] are linearly independent directly! </p>
+              <p>
+In order to prove that [mathjaxinline]T\circ S[/mathjaxinline] is into, we should... </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> show that if [mathjaxinline]u=v[/mathjaxinline], then [mathjaxinline]T\circ S(u) = T\circ S(v)[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="true" name="2">
+                      <text> show that if [mathjaxinline]u\ne v[/mathjaxinline], then [mathjaxinline]T\circ S(u) \ne T\circ S(v)[/mathjaxinline]</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ A transformation is into if it sends two different input vectors to two different output vectors. Thus the second option is what we want to show.  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Another Proposition 4" linenum="392" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab9-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Now that we know exactly what we need to do, let's do it! </p>
+              <p>
+Suppose that [mathjaxinline]u\ne v[/mathjaxinline] (for vectors [mathjaxinline]u,v[/mathjaxinline] in the domain [mathjaxinline]\mathbb R^ p[/mathjaxinline]). </p>
+              <p>
+                <p style="display:inline">We can then apply the fact that</p>
+                <optionresponse inline="1">
+                  <optioninput options="('S is into','T is into')" correct="S is into" inline="1"/>
+                </optionresponse>
+              </p>
+              <p>
+to conclude that </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> [mathjaxinline]T(u)=T(v)[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> [mathjaxinline]T(u)\ne T(v)[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> [mathjaxinline]S(u)=S(v)[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="true" name="4">
+                      <text> [mathjaxinline]S(u)\ne S(v)[/mathjaxinline]</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Another Proposition 5" linenum="416" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab9-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+                <p style="display:inline">We use the result of the previous problem, together with the fact that</p>
+                <optionresponse inline="1">
+                  <optioninput options="('S is into','T is into')" correct="T is into" inline="1"/>
+                </optionresponse>
+              </p>
+              <p>
+to give us our desired conclusion that [mathjaxinline]T\circ S(u) \ne T\circ S(v)[/mathjaxinline]. Therefore [mathjaxinline]T\circ S[/mathjaxinline] is into, and we have proven our proposition! </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
                 </solution>
               </p>
             </text>

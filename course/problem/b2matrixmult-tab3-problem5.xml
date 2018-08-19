@@ -1,0 +1,27 @@
+<problem display_name="Multiplying by Identity Matrix" linenum="135" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Given the above scenario, let [mathjaxinline]A[/mathjaxinline] be the standard matrix for [mathjaxinline]S[/mathjaxinline]. Recall that the [mathjaxinline]n\times n[/mathjaxinline] identity matrix [mathjaxinline]I_ n[/mathjaxinline] is the standard matrix for [mathjaxinline]T[/mathjaxinline]. Which of the following is true? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="true" name="1">
+            <text> [mathjaxinline]AI_ n = A[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> [mathjaxinline]I_ nA = A[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> Both are true</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

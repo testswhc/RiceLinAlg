@@ -1,0 +1,33 @@
+<problem display_name="Another Proposition 1" linenum="325" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Over the next few problems, we're going to apply the same technique of translating matrix properties to linear transformation properties, and exploiting the Fundamental Fact of Matrix Multiplication, to prove the following proposition: </p>
+    <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> Suppose [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix. If the columns of [mathjaxinline]A[/mathjaxinline] are linearly independent, and the columns of [mathjaxinline]B[/mathjaxinline] are linearly independent, then the columns of [mathjaxinline]AB[/mathjaxinline] are linearly independent. </p>
+    <p>
+Let [mathjaxinline]A[/mathjaxinline] be the standard matrix for a linear transformation [mathjaxinline]T[/mathjaxinline], and let [mathjaxinline]B[/mathjaxinline] be the standard matrix for a linear transformation [mathjaxinline]S[/mathjaxinline]. From the assumption that the columns of [mathjaxinline]A[/mathjaxinline] are linearly independent, what can we conclude about [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="true" name="1">
+            <text> [mathjaxinline]T[/mathjaxinline] is into</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> [mathjaxinline]T[/mathjaxinline] is not into</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> [mathjaxinline]T[/mathjaxinline] is onto</text>
+          </choice>
+          <choice correct="false" name="4">
+            <text> [mathjaxinline]T[/mathjaxinline] is not onto</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

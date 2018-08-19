@@ -1,0 +1,18 @@
+<problem display_name="Another Proposition 5" linenum="416" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+      <p style="display:inline">We use the result of the previous problem, together with the fact that</p>
+      <optionresponse inline="1">
+        <optioninput options="('S is into','T is into')" correct="T is into" inline="1"/>
+      </optionresponse>
+    </p>
+    <p>
+to give us our desired conclusion that [mathjaxinline]T\circ S(u) \ne T\circ S(v)[/mathjaxinline]. Therefore [mathjaxinline]T\circ S[/mathjaxinline] is into, and we have proven our proposition! </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

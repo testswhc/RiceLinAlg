@@ -1,0 +1,40 @@
+<problem display_name="Another Proposition 4" linenum="392" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Now that we know exactly what we need to do, let's do it! </p>
+    <p>
+Suppose that [mathjaxinline]u\ne v[/mathjaxinline] (for vectors [mathjaxinline]u,v[/mathjaxinline] in the domain [mathjaxinline]\mathbb R^ p[/mathjaxinline]). </p>
+    <p>
+      <p style="display:inline">We can then apply the fact that</p>
+      <optionresponse inline="1">
+        <optioninput options="('S is into','T is into')" correct="S is into" inline="1"/>
+      </optionresponse>
+    </p>
+    <p>
+to conclude that </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> [mathjaxinline]T(u)=T(v)[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> [mathjaxinline]T(u)\ne T(v)[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> [mathjaxinline]S(u)=S(v)[/mathjaxinline]</text>
+          </choice>
+          <choice correct="true" name="4">
+            <text> [mathjaxinline]S(u)\ne S(v)[/mathjaxinline]</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>
