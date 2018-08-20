@@ -66,7 +66,7 @@ of whether $w$ is in the image of $T$ an existence question or a uniqueness ques
 
 \edXabox{expect="Existence" options="Existence","Uniqueness"}
 
-\edXsolution{
+\edXsolution{This is equivalent to asking whether there exists $v\in V$ such that $T(v)=w$.
 }
 
 \endedxproblem
@@ -87,7 +87,9 @@ Is the vector $\left[\begin{array}{c} 2 \\ -1  \\ 0 \end{array} \right]$ in the 
 
 \edXabox{expect="No" options="Yes","No"}
 
-\edXsolution{ 
+\edXsolution{The first question is equivalent to asking if there is a solution to $Av=\left[\begin{array}{c} 1 \\ -1  \\ -7 \end{array} \right]$.  Since the augmented matrix \[ \left[\begin{array}{ccc|c} 1 & 2 & 3&1 \\ 0 & 1 & 1&-1 \\ -1 & 4 & 3 &-7 \end{array} \right]\] row reduces to \[ \left[\begin{array}{ccc|c} 1 & 0 & 1&3\\ 0 & 1& 1 &-1 \\ 0 & 0 & 0 & 0 \end{array} \right],\] we see that the system is consistent so a solution exists.\\
+
+The second question is equivalent to asking if there is a solution to $Av=\left[\begin{array}{c} 2 \\ -1  \\ 0 \end{array} \right]$.  Since the augmented matrix \[ \left[\begin{array}{ccc|c} 1 & 2 & 3&2 \\ 0 & 1 & 1&-1 \\ -1 & 4 & 3 &0 \end{array} \right]\] row reduces to \[ \left[\begin{array}{ccc|c} 1 & 0 & 1&0\\ 0 & 1& 1 &0 \\ 0 & 0 & 0 & 1 \end{array} \right],\] we see that the system is inconsistent so no solution exists.  
 
 }
 \endedxproblem
@@ -123,7 +125,7 @@ Is $T$ onto?
 \edXabox{expect="No" options="Yes","No"}
 
 
-\edXsolution{ 
+\edXsolution{If $T$ is onto, then every vector in $\R^3$ is in the image of $T$, but recall that we found that the vector $\left[\begin{array}{c} 2 \\ -1  \\ 0 \end{array} \right]$ is not in the image of $T$.  
 
 }
 
@@ -139,7 +141,7 @@ $T$ is onto if and only if $A$ row reduces to have...
 
 \edXabox{type="multichoice" expect="no rows of all zeros" options="a row of all zeros","no rows of all zeros","a free variable","no free variables"}
 
-\edXsolution{
+\edXsolution{We know that $T$ is onto if and only if the system $Ax=v$ is consistent for all $v\in\R^n$.  This is true if and only if $A$ row reduces to a matrix with no rows of all zeros.
 
 }
 
@@ -158,8 +160,9 @@ True or False: Every linear transformation $T: \R^8 \rightarrow \R^6$ must be on
 
 \edXabox{expect="False" options="True","False"}
 
-\edXsolution{ 
+\edXsolution{ Suppose $T: \R^6 \rightarrow \R^8$ is a linear transformation with standard matrix $A$.  Then $T$ is onto if and only if the columns of $A$ span $\R^8$.  But, $A$ is a $8\times 6$ matrix, and thus cannnot span $\R^8$ (to see this, note that if we row reduce $A$, it can have at most 6 pivots).\\
 
+Next, suppose that $T: \R^8 \rightarrow \R^6$ is a linear transformation with standard matrix $A$.  Then $A$ is a $6\times 8$ matrix.  It may be the case that $A$ row reduces to have strictly less than 6 pivots, and thus, the columns span a proper subspace of $\R^6$.  In this case, $T$ would not be onto.
 }
 \endedxproblem
 
@@ -200,8 +203,9 @@ Is $T$ into?
 
 \edXabox{expect="Yes" options="Yes","No"}
 
-\edXsolution{ 
+\edXsolution{ If  $T(u) = T(v)$, then $2u=2v$.  Dividing both sides of this equation by 2, we see that $u=v$.\\
 
+An equivalent (the contrapositive) statement to the definition of into is: A linear transformation $T: V\rightarrow W$ is into if for every $u,v\in V$, if $T(u)=T(v)$, then $u=v$.
 }
 \endedxproblem
 
@@ -244,7 +248,7 @@ of whether $T$ is into an existence question or a uniqueness question?
 
 \edXabox{expect="Uniqueness" options="Existence","Uniqueness"}
 
-\edXsolution{
+\edXsolution{The question of whether $T$ is into is equivalent to asking if $\mathrm{Ker}(T) = \{ \veco \}$.  This is equivalent to asking if $\veco$ is the unique element in $\mathrm{Ker}(T)$.
 }
 
 \endedxproblem
@@ -273,7 +277,7 @@ Is $T$ into?
 
 
 
-\edXsolution{ 
+\edXsolution{ Matrix $A$ row reduces to \[\left[\begin{array}{ccc} 1 & 0 & 1 \\ 0 & 1 & 2 \\ 0&0&0 \\ 0&0&0 \end{array} \right]. \]  Thus, when augmented with the zero vector, there are infinitely many solutions.  This also tells us that $\veco$ is not the only solution to $Ax=\veco$, and thus $\mathrm{Ker}(T) \neq \{\veco\}$.  Then, $T$ does not satisfy the definition of into.
 
 }
 \endedxproblem
@@ -289,8 +293,7 @@ $T$ is into if and only if $A$ row reduces to have...
 
 \edXabox{type="multichoice" expect="no free variables" options="a row of all zeros","no rows of all zeros","a free variable","no free variables"}
 
-\edXsolution{ 
-
+\edXsolution{ Suppose that $T$ has standard matrix $A$.  If $T$ is into if and only if there is a unique solution (in particular $\veco$) to $Ax=\veco$.  This is true if and only if $A$ does not have any free variables when row reduced. 
 }
 \endedxproblem
 
@@ -325,8 +328,9 @@ True or False: Every linear transformation $T: \R^6 \rightarrow \R^8$ must be in
 
 \edXabox{expect="False" options="True","False"}
 
-\edXsolution{ 
+\edXsolution{ Since $8>6$, by the proposition, a tranformation $T: \R^8 \rightarrow \R^6$ cannot be into.\\
 
+If $T: \R^6 \rightarrow \R^8$, $T$ may be into, or it may not be.  For an example of the latter, take $T$ to be the linear transformation taking every $v\in \R^6$ to the zero vector, $\veco\in \R^8$.  In this case, every vector in $\R^6$ is in the kernal of $T$, and thus $T$ is not into.
 }
 \endedxproblem
 
