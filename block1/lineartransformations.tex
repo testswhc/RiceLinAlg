@@ -34,7 +34,7 @@ plus some questions.
 
 \beginedxproblem{System Consistency?}{\dpa1}
 
-Define the function $T$ by $T(\vecx) = Ax$, where $A = \left[ \begin{array}{ccc}
+Define the function $T$ by $T(x) = Ax$, where $A = \left[ \begin{array}{ccc}
 6 & 5 & 3 \\
 2 & 4 &  23 
 \end{array} \right].$
@@ -87,8 +87,8 @@ Let $\F$ be a field.  A function $T: \F^n \rightarrow \F^m$ is a {\keyb{\bf line
 if both of the following properties hold:
 
 \begin{itemize}
-\item For any vectors $\vecv, \vecw$ in the domain, $T(\vecv + \vecw) = T(\vecv) + T(\vecw).$ 
-\item For any vector $\vecv$ in the domain, and any scalar $a\in \F$, $T(a\vecv) = aT(\vecv)$.    
+\item For any vectors $v, w$ in the domain, $T(v + w) = T(v) + T(w).$ 
+\item For any vector $v$ in the domain, and any scalar $a\in \F$, $T(av) = aT(v)$.    
 \end{itemize}
 
 Informally, if $T$ satisfies the first condition we say that ``$T$ respects vector addition", and 
@@ -105,16 +105,16 @@ if $T$ satisfies the second condition we say that ``$T$ respects scalar multipli
 
 \beginedxproblem{Linear Transformation? 1}{\dpa1}
 
-Define $T: \R^3 \rightarrow \R^3$ by $T(\vecv) = 2\vecv$.  
+Define $T: \R^3 \rightarrow \R^3$ by $T(v) = 2v$.  
 
-Does $T$ respect vector addition?  That is, is $T(\vecv + \vecw) = T(\vecv) + T(\vecw)$ for all 
-vectors $\vecv,\vecw$?
+Does $T$ respect vector addition?  That is, is $T(v + w) = T(v) + T(w)$ for all 
+vectors $v,w$?
 Try a couple of specific numerical examples if you're not sure.  
 
 \edXabox{expect="Yes" options="Yes","No"}
 
 Does $T$ respect scalar multiplication?  
-That is, is $T(a\vecv) = aT(\vecv)$ for all vectors $\vecv$ and scalars $a$?
+That is, is $T(av) = aT(v)$ for all vectors $v$ and scalars $a$?
 Try a couple of specific numerical examples if you're not sure.  
 
 
@@ -140,16 +140,16 @@ $T$ is a linear transformation.
 
 \beginedxproblem{Linear Transformation? 2}{\dpa1}
 
-Define $T: \R^2 \rightarrow \R^2$ by $T(\vecv) = \veco$.  
+Define $T: \R^2 \rightarrow \R^2$ by $T(v) = \veco$.  
 
-Does $T$ respect vector addition?  That is, is $T(\vecv + \vecw) = T(\vecv) + T(\vecw)$ for all 
-vectors $\vecv,\vecw$?
+Does $T$ respect vector addition?  That is, is $T(v + w) = T(v) + T(w)$ for all 
+vectors $v, w$?
 Try a couple of specific numerical examples if you're not sure.  
 
 \edXabox{expect="Yes" options="Yes","No"}
 
 Does $T$ respect scalar multiplication?  
-That is, is $T(a\vecv) = aT(\vecv)$ for all vectors $\vecv$ and scalars $a$?
+That is, is $T(av) = aT(v)$ for all vectors $v$ and scalars $a$?
 Try a couple of specific numerical examples if you're not sure.  
 
 
@@ -173,19 +173,19 @@ Hence $T$ is a linear transformation.
 
 \beginedxproblem{Linear Transformation? 3}{\dpa1}
 
-Define $T: \R^2 \rightarrow \R^2$ by $T(\vecv) = \left[\begin{array}{c}
+Define $T: \R^2 \rightarrow \R^2$ by $T(v) = \left[\begin{array}{c}
 4 \\
 0 
 \end{array} \right]$.  
 
-Does $T$ respect vector addition?  That is, is $T(\vecv + \vecw) = T(\vecv) + T(\vecw)$ for all 
-vectors $\vecv,\vecw$?
+Does $T$ respect vector addition?  That is, is $T(v + w) = T(v) + T(w)$ for all 
+vectors $v,w$?
 Try a couple of specific numerical examples if you're not sure.  
 
 \edXabox{expect="No" options="Yes","No"}
 
 Does $T$ respect scalar multiplication?  
-That is, is $T(a\vecv) = aT(\vecv)$ for all vectors $\vecv$ and scalars $a$?
+That is, is $T(av) = aT(v)$ for all vectors $v$ and scalars $a$?
 Try a couple of specific numerical examples if you're not sure.  
 
 
@@ -210,7 +210,7 @@ Meanwhile, $T(v_1 + v_2) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right]$.
 $T$ does not respect vector addition and is not linear.\\
 
 We also see that 
-$8\cdotT(v_1) = 8 \left[\begin{array}{c} 4 \\ 0 \end{array} \right] 
+$8T(v_1) = 8 \left[\begin{array}{c} 4 \\ 0 \end{array} \right] 
 = \left[\begin{array}{c} 32 \\ 0 \end{array} \right]$\\
 Meanwhile, $T(8v_1) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right]$.
 $T$ does not respect scalar multiplication; this on its own would also be enough to know that $T$ is not linear.
@@ -249,8 +249,7 @@ Does $T$ respect scalar multiplication?
 That is, is $T(af) = aT(f)$ for all vectors $f \in \mathbb{P}$ and scalars $a$?
 Try a couple of specific numerical examples if you're not sure.  
 
-
-\edXabox{expect=Yes" options="Yes","No"}
+\edXabox{expect="Yes" options="Yes","No"}
 
 Is $T$ a linear transformation?
 
