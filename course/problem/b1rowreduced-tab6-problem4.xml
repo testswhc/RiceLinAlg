@@ -1,4 +1,4 @@
-<problem display_name="Free Variables" linenum="324" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Free Variables" linenum="369" tex_filename="./block1/rref.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 If a system of linear equations has free variables when row-reduced, is it possible for the system to be inconsistent? </p>
@@ -13,7 +13,7 @@ If a system of linear equations has free variables when row-reduced, is it possi
         <font color="blue">
           <p>
 We previously saw a system of 3 linear equations in 2 variables with the following augmented matrix in RREF: </p>
-          <table id="a0000000038" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <table id="a0000000041" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
             <tr>
               <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{cc:c} 1 &amp;  -3 &amp;  -2 \\ 0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 \end{array} \right].[/mathjax]</td>
               <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>

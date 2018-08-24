@@ -1,0 +1,46 @@
+<chapter display_name="Matrix Operations" linenum="380" tex_filename="testcourse.tex" refnum="2" start="2018-01-11T16:00">
+  <sequential display_name="Matrix Multiplication" linenum="392" tex_filename="testcourse.tex" refnum="1" due="2018-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixmult-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b2matrixmult-vertical1">
+      <html url_name="b2matrixmult-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Composition of Linear Transformation" refnum="2" url_name="b2matrixmult-vertical2">
+      <video url_name="b2matrixmult-tab2-video1"/>
+      <html url_name="b2matrixmult-tab2-text1"/>
+    </vertical>
+    <vertical display_name="Questions about Composition" refnum="3" url_name="b2matrixmult-vertical3">
+      <problem url_name="b2matrixmult-tab3-problem1"/>
+      <problem url_name="b2matrixmult-tab3-problem2"/>
+      <problem url_name="b2matrixmult-tab3-problem3"/>
+      <problem url_name="b2matrixmult-tab3-problem4"/>
+      <problem url_name="b2matrixmult-tab3-problem5"/>
+    </vertical>
+    <vertical display_name="Calculating the Product" refnum="4" url_name="b2matrixmult-vertical4">
+      <html url_name="b2matrixmult-tab4-text1"/>
+      <video url_name="b2matrixmult-tab4-video1"/>
+    </vertical>
+    <vertical display_name="Product Practice" refnum="5" url_name="b2matrixmult-vertical5">
+      <html url_name="b2matrixmult-tab5-text1"/>
+      <problem url_name="b2matrixmult-tab5-problem1"/>
+      <problem url_name="b2matrixmult-tab5-problem2"/>
+      <problem url_name="b2matrixmult-tab5-problem3"/>
+    </vertical>
+    <vertical display_name="Properties of Matrix Multiplication" refnum="6" url_name="b2matrixmult-vertical6">
+      <video url_name="b2matrixmult-tab6-video1"/>
+      <html url_name="b2matrixmult-tab6-text1"/>
+    </vertical>
+    <vertical display_name="Applying the Fundamental Fact of Matrix Multiplication" refnum="7" url_name="b2matrixmult-vertical7">
+      <video url_name="b2matrixmult-tab7-video1"/>
+      <html url_name="b2matrixmult-tab7-text1"/>
+      <problem url_name="b2matrixmult-tab7-problem1"/>
+    </vertical>
+    <vertical display_name="Proving Another Proposition" refnum="8" url_name="b2matrixmult-vertical8">
+      <problem url_name="b2matrixmult-tab8-problem1"/>
+      <problem url_name="b2matrixmult-tab8-problem2"/>
+    </vertical>
+    <vertical display_name="Another Proposition Continued" refnum="9" url_name="b2matrixmult-vertical9">
+      <problem url_name="b2matrixmult-tab9-problem1"/>
+      <problem url_name="b2matrixmult-tab9-problem2"/>
+      <problem url_name="b2matrixmult-tab9-problem3"/>
+    </vertical>
+  </sequential>
+</chapter>

@@ -1,4 +1,4 @@
-<problem display_name="Definition" linenum="52" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Definition" linenum="54" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Which of these is the definition of linearly dependent? </p>
@@ -22,7 +22,10 @@ A list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is l
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ We know that if all the scalars equal zero, the equation [mathjaxinline]a_1v_1 + a_2v_2 + \ldots a_ nv_ n = \mathbf{0}[/mathjaxinline] will be true. The idea of linear dependence is that we can choose a different set of scalars that also makes the equation true; i.e., a set of scalars that is not all zeros. (They may very well be all non-zero scalars, but this is not required.)  </p>
+        </font>
       </solution>
     </p>
   </text>

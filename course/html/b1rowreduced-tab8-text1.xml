@@ -1,7 +1,7 @@
-<html display_name="The Size of a Matrix" linenum="379" tex_filename="./block1/rref.tex">
+<html display_name="The Size of a Matrix" linenum="424" tex_filename="./block1/rref.tex">
   <p>
 If a matrix [mathjaxinline]M[/mathjaxinline] has [mathjaxinline]m[/mathjaxinline] rows and [mathjaxinline]n[/mathjaxinline] columns, we say that [mathjaxinline]M[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix. For instance, </p>
-  <table id="a0000000040" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+  <table id="a0000000043" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
     <tr>
       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{cccc:c} 1 &amp;  0 &amp;  0 &amp;  1 &amp;  -2 \\ 0 &amp;  0 &amp;  1 &amp;  3 &amp;  3 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>

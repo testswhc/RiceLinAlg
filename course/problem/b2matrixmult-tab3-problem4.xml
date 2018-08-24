@@ -1,0 +1,32 @@
+<problem display_name="Composing with Identity Transformation" linenum="119" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]S: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation. Let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ n[/mathjaxinline] be the identity transformation (recall that this means [mathjaxinline]T(v) = v[/mathjaxinline] for all [mathjaxinline]v\in \mathbb R^ n[/mathjaxinline]). </p>
+    <p>
+Which of the following is true? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> [mathjaxinline]S\circ T = T[/mathjaxinline]</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text> [mathjaxinline]S\circ T = S[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> [mathjaxinline]T\circ S = T[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="4">
+            <text> [mathjaxinline]T\circ S = S[/mathjaxinline]</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">  </font>
+      </solution>
+    </p>
+  </text>
+</problem>

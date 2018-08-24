@@ -1,0 +1,17 @@
+<problem display_name="Existence vs. Uniqueness" linenum="62" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformation, and let [mathjaxinline]w\in W[/mathjaxinline]. Is the question of whether [mathjaxinline]w[/mathjaxinline] is in the image of [mathjaxinline]T[/mathjaxinline] an existence question or a uniqueness question? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Existence','Uniqueness')" correct="Existence"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

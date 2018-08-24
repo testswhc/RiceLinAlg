@@ -1,0 +1,96 @@
+<problem display_name="Linear Transformation Practice" linenum="288" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]T: \mathbb {P} \rightarrow \mathbb R^2[/mathjaxinline] is a linear transformation. Let [mathjaxinline]f,g\mathbb {P}[/mathjaxinline] be the polynomials given by [mathjaxinline]f(t) = t^2[/mathjaxinline] and [mathjaxinline]g(t) = t[/mathjaxinline]. </p>
+    <p>
+Suppose that [mathjaxinline]T(f) = \left[\begin{array}{c} 1 \\ 2 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(g) = \left[\begin{array}{c} 2 \\ -1 \end{array} \right][/mathjaxinline] </p>
+    <p>
+If [mathjaxinline]h \in \mathbb {P}[/mathjaxinline] is the polynomial given by [mathjaxinline]h(t) = -2t^2[/mathjaxinline], what must [mathjaxinline]T(h)[/mathjaxinline] be? </p>
+    <p>
+To enter a vector such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
+    <ul class="itemize">
+      <li>
+        <p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
+      </li>
+      <li>
+        <p>
+or, you can enter it as &lt;1,2,3&gt; </p>
+      </li>
+    </ul>
+    <p>
+Use decimals only. </p>
+    <script linenum="12" filename="./vectorentry.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script>
+    <p>
+      <customresponse cfn="VectorEntry" expect="[[-2],[-4]]">
+        <textline correct_answer="[[-2],[-4]]"/>
+      </customresponse>
+    </p>
+    <p>
+If [mathjaxinline]j \in \mathbb {P}[/mathjaxinline] is the polynomial given by [mathjaxinline]h(t) = 3t^2-t[/mathjaxinline], what must [mathjaxinline]T(j)[/mathjaxinline] be? </p>
+    <p>
+      <customresponse cfn="VectorEntry" expect="[[1],[7]]">
+        <textline correct_answer="[[1],[7]]"/>
+      </customresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ We are assured that [mathjaxinline]T[/mathjaxinline] is a linear transformation, so we have: </p>
+          <table id="a0000000002" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(h) = T(-2t^2) = -2T(t^2) = -2T(f) = -2\left[\begin{array}{c} 1 \\ 2 \end{array} \right] = \left[\begin{array}{c} -2 \\ -4 \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+Also, </p>
+          <table id="a0000000003" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(j) = T(3t^2-t) = T(3t^2) + T(-t) = 3T(t^2) + -T(t) = 3T(f) - T(g) = 3\left[\begin{array}{c} 1 \\ 2 \end{array} \right] - \left[\begin{array}{c} 2 \\ -1 \end{array} \right] = \left[\begin{array}{c} 1 \\ 7 \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

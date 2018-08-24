@@ -1,15 +1,47 @@
 <problem display_name="RREF or not?" linenum="58" tex_filename="./block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
-Which of the following matrices are in RREF? Click all that apply. </p>
+Consider the following matrices. </p>
+    <table id="a0000000022" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccccc} 1 &amp;  9 &amp;  1 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right], B= \left[ \begin{array}{ccccc} 1 &amp;  0 &amp;  3 &amp;  1 &amp;  0 \\ 0 &amp;  1 &amp;  3 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1 \end{array} \right][/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <table id="a0000000023" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]C = \left[ \begin{array}{ccccc} 1 &amp;  9 &amp;  0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  -1 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right], D= \left[ \begin{array}{ccccc} 0 &amp;  1 &amp;  3 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <table id="a0000000024" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]E = \left[ \begin{array}{ccccc} 1 &amp;  1 &amp;  0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1 \end{array} \right], F= \left[ \begin{array}{ccccc} 0 &amp;  1 &amp;  2 &amp;  0 &amp;  0 \\ 1 &amp;  0 &amp;  0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <p>
+Which of them are in RREF? Click all that apply. </p>
     <p>
       <choiceresponse>
         <checkboxgroup>
           <choice correct="true" name="1">
-            <text>mx1</text>
+            <text>A</text>
           </choice>
           <choice correct="false" name="2">
-            <text>mx2</text>
+            <text>B</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text>C</text>
+          </choice>
+          <choice correct="true" name="4">
+            <text>D</text>
+          </choice>
+          <choice correct="true" name="5">
+            <text>E</text>
+          </choice>
+          <choice correct="false" name="6">
+            <text>F</text>
           </choice>
         </checkboxgroup>
       </choiceresponse>
@@ -17,7 +49,14 @@ Which of the following matrices are in RREF? Click all that apply. </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+Matrix [mathjaxinline]B[/mathjaxinline] has a pivot in row 3, column 4, but it is not the only non-zero entry in its column. </p>
+          <p>
+The first non-zero entry in the second row of matrix [mathjaxinline]C[/mathjaxinline] is not 1. </p>
+          <p>
+The pivots in matrix [mathjaxinline]F[/mathjaxinline] do not go down and right.  </p>
+        </font>
       </solution>
     </p>
   </text>

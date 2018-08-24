@@ -1,0 +1,41 @@
+<problem display_name="Standard Matrix 2" linenum="346" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+For all [mathjaxinline]v\in \mathbb R^2[/mathjaxinline], let [mathjaxinline]S(v)[/mathjaxinline] be the vector obtained by reflecting [mathjaxinline]v[/mathjaxinline] across the diagonal line [mathjaxinline]x=y[/mathjaxinline] and then rotating the result by [mathjaxinline]90^\circ[/mathjaxinline] counterclockwise. [mathjaxinline]S[/mathjaxinline] is a linear transformation from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]. What is its standard matrix? </p>
+    <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script>
+    <p>
+      <customresponse cfn="MatrixEntry" expect="[[-1,0],[0,1]]">
+        <textline correct_answer="[[-1,0],[0,1]]"/>
+      </customresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ First, under the reflection, [mathjaxinline]e_1[/mathjaxinline] is taken to [mathjaxinline]e_2[/mathjaxinline]. Then, under the rotation, this vector is taken to [mathjaxinline]-e_1[/mathjaxinline]. Thus, [mathjaxinline]S(e_1)=-e_1[/mathjaxinline]; this will be the first column of the standard matrix. Similarly, [mathjaxinline]e_2[/mathjaxinline] is first taken to [mathjaxinline]e_1[/mathjaxinline] and then to [mathjaxinline]e_2[/mathjaxinline], and thus [mathjaxinline]S(e_2)=e_2[/mathjaxinline]; this is the second column. So the answer is [mathjaxinline]\left[ \begin{array}{cc} -1&amp;  0 \\ 0 &amp;  1 \end{array} \right].[/mathjaxinline]  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

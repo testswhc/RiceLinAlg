@@ -1,43 +1,58 @@
-<problem display_name="Add them up!" linenum="165" tex_filename="C:/Users/swang/Box Sync/LinAlg/355latex2edx/block1/sandbox.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Rotation 3" linenum="247" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
-When we add the volumes of all the shells up, we get a Riemann sum. Taking the limit as the number of slices goes to infinity, we get an integral [mathjaxinline]\int _?^? k(x) \  dx.[/mathjaxinline] </p>
+If [mathjaxinline]T[/mathjaxinline] is still rotation counterclockwise by [mathjaxinline]45^\circ[/mathjaxinline], what is [mathjaxinline]T\left( \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] \right)[/mathjaxinline]? </p>
+    <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script>
     <p>
-What is the function [mathjaxinline]k(x)[/mathjaxinline]? </p>
-    <p>
-      <formularesponse type="cs" samples="x@1:2#5" answer="2*pi*(1-x)*(x-x^3)">
-        <formulaequationinput>
-          <responseparam type="tolerance" default=".01"/>
-        </formulaequationinput>
-      </formularesponse>
-    </p>
-    <p>
-What is the lower limit of integration? </p>
-    <p>
-      <numericalresponse answer="0">
-        <textline>
-          <responseparam type="tolerance" default=".01"/>
-        </textline>
-      </numericalresponse>
-    </p>
-    <p>
-What is the upper limit of integration? </p>
-    <p>
-      <numericalresponse answer="1">
-        <textline>
-          <responseparam type="tolerance" default=".01"/>
-        </textline>
-      </numericalresponse>
+      <customresponse cfn="VectorEntry" expect="[[4],[2]]">
+        <textline correct_answer="[[4],[2]]"/>
+      </customresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
- Adding up and treating the total as a Riemann sum, we end up with </p>
-          <table id="a0000000008" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+We could do this using linearity properties, but it is easier to just use the matrix [mathjaxinline]A = \left[ \begin{array}{cc} \frac{\sqrt {2}}{2} &amp;  -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} &amp;  \frac{\sqrt {2}}{2} \end{array} \right][/mathjaxinline] we found in the video. We know that [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x \in \mathbb R^2[/mathjaxinline], so </p>
+          <table id="a0000000009" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
             <tr>
-              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\int _0^1 2\pi (1-x)(x-x^3)\  dx.[/mathjax]</td>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T\left( \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] \right) = \left[ \begin{array}{cc} \frac{\sqrt {2}}{2} &amp;  -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} &amp;  \frac{\sqrt {2}}{2} \end{array} \right] \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] = \left[ \begin{array}{c} 4\\ 2 \end{array} \right].[/mathjax]</td>
               <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
             </tr>
           </table>

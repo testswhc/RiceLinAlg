@@ -1,0 +1,24 @@
+<problem display_name="True or False" linenum="151" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+True or False: No linear transformation [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline] can be onto. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+True or False: Every linear transformation [mathjaxinline]T: \mathbb R^8 \rightarrow \mathbb R^6[/mathjaxinline] must be onto. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">  </font>
+      </solution>
+    </p>
+  </text>
+</problem>

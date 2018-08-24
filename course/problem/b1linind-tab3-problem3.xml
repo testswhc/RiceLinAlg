@@ -1,4 +1,4 @@
-<problem display_name="List 3" linenum="149" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="List 3" linenum="154" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]\mathbb {P}[/mathjaxinline] be the vector space of polynomials with real coefficients in the variable [mathjaxinline]t[/mathjaxinline]. Consider the list of vectors [mathjaxinline]\{ f; g\}[/mathjaxinline], where [mathjaxinline]f(t) = 1+t[/mathjaxinline] and [mathjaxinline]g(t) = t+t^2[/mathjaxinline] are vectors in [mathjaxinline]\mathbb {P}[/mathjaxinline]. </p>
@@ -19,7 +19,14 @@ Is the list [mathjaxinline]\{ v_1; v_2\}[/mathjaxinline] linearly dependent or l
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ We cannot find scalars [mathjaxinline]a_1, a_2[/mathjaxinline], not both zero, such that [mathjaxinline]a_1f + a_2 g = \mathbf{0}[/mathjaxinline]. If [mathjaxinline]a_1 \ne 0[/mathjaxinline], then [mathjaxinline]a_1 f[/mathjaxinline] will have a non-zero constant term, and [mathjaxinline]a_2 g[/mathjaxinline] must have a zero constant term, so [mathjaxinline]a_1 f + a_2g[/mathjaxinline] will have a non-zero constant term and therefore not be the zero polynomial. </p>
+          <p>
+Similarly, if [mathjaxinline]a_2 \ne 0[/mathjaxinline], then [mathjaxinline]a_2 g[/mathjaxinline] will have a non-zero [mathjaxinline]t^2[/mathjaxinline] term, whereas [mathjaxinline]a_1 f[/mathjaxinline] cannot have a [mathjaxinline]t^2[/mathjaxinline] term, so [mathjaxinline]a_1 f + a_2g[/mathjaxinline] will have a non-zero [mathjaxinline]t^2[/mathjaxinline] term and therefore not be the zero polynomial. </p>
+          <p>
+Note that we cannot set [mathjaxinline]a_1 = -t[/mathjaxinline] and [mathjaxinline]a_2 = 1[/mathjaxinline], since [mathjaxinline]-t[/mathjaxinline] is not a scalar.  </p>
+        </font>
       </solution>
     </p>
   </text>

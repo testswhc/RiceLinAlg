@@ -1,4 +1,4 @@
-<problem display_name="Quick Picks" linenum="363" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Quick Picks" linenum="414" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Without doing any row-reduction, you should be able to pick out three of the following lists of vectors that are linearly dependent. Which three? </p>
@@ -55,7 +55,10 @@ Without doing any row-reduction, you should be able to pick out three of the fol
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ Choice B has the zero vector and is therefore linearly dependent. Choice C has 5 vectors in [mathjaxinline]\mathbb R^4[/mathjaxinline] and is therefore linearly dependent (expressed as a matrix, there would be more columns than rows). Choice E has a pair of collinear vectors: the third vector is twice the second vector. The list in choice E is therefore linearly dependent.  </p>
+        </font>
       </solution>
     </p>
   </text>

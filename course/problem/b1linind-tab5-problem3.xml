@@ -1,0 +1,20 @@
+<problem display_name="Existence or Uniqueness?" linenum="285" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>
+    <p>
+Is the linear independence of a list of vectors an existence question, or a uniqueness question? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Existence','Uniqueness')" correct="Uniqueness"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ A list of vectors is linearly independent if the <span style="color:#99182C"><b class="bf">only</b></span> way to write [mathjaxinline]\mathbf{0}[/mathjaxinline] as a linear combination of the list is when all coefficients are zero. This is a uniqueness statement.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

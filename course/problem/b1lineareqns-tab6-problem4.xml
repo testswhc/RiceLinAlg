@@ -1,0 +1,33 @@
+<problem display_name="How many linear transformations?" linenum="369" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+How many linear transformations [mathjaxinline]T:\mathbb R^4 \rightarrow \mathbb R^2[/mathjaxinline] satisfy the conditions [mathjaxinline]T(e_1) = T(e_3) = \left[\begin{array}{c} 2 \\ 3 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(e_4) = \mathbf{0}[/mathjaxinline]? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> zero</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> one</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> more than one but finitely many</text>
+          </choice>
+          <choice correct="true" name="4">
+            <text> infinitely many</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ This question is equivalent to asking 'how many [mathjaxinline]2\times 4[/mathjaxinline] real matrices [mathjaxinline]A[/mathjaxinline] satisfy [mathjaxinline]A e_1=A\cdot e_3=\left[\begin{array}{c} 2 \\ 3 \end{array} \right][/mathjaxinline] and [mathjaxinline]Ae_4=\mathbf{0}[/mathjaxinline]?'. The first equality forces the first and third columns of [mathjaxinline]A[/mathjaxinline] to both be [mathjaxinline]\left[\begin{array}{c} 2 \\ 3 \end{array} \right][/mathjaxinline], and the second equality forces the fourth column of [mathjaxinline]A[/mathjaxinline] to be [mathjaxinline]\mathbf{0}[/mathjaxinline], but the third column of [mathjaxinline]A[/mathjaxinline] is free to have any real entries. Thus there are infinitely many choices.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

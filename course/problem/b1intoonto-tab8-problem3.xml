@@ -1,0 +1,32 @@
+<problem display_name="Row Reduction and Into" linenum="283" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. </p>
+    <p>
+[mathjaxinline]T[/mathjaxinline] is into if and only if [mathjaxinline]A[/mathjaxinline] row reduces to have... </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> a row of all zeros</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> no rows of all zeros</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> a free variable</text>
+          </choice>
+          <choice correct="true" name="4">
+            <text> no free variables</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">  </font>
+      </solution>
+    </p>
+  </text>
+</problem>

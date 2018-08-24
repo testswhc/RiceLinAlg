@@ -1,4 +1,4 @@
-<problem display_name="Make it RREF" linenum="73" tex_filename="./block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Make it RREF" linenum="118" tex_filename="./block1/rref.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 The following matrix is not in RREF. </p>
@@ -7,10 +7,20 @@ The following matrix is not in RREF. </p>
     <p>
 However, you can apply a single row operation to put it into RREF. What matrix is the result? </p>
     <p>
-To enter the matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right],[/mathjaxinline] type [[0,1,2],[1,2,3]] </p>
-    <p>
+      <div class="hideshowbox">
+        <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Matrix<span class="icon-caret-down toggleimage"/></h4>
+        <div class="hideshowcontent">
+          <p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p>
+          <p>
 Use decimals only. </p>
-    <script linenum="7" filename="./matrixentry.tex" type="text/python" system_path="python_lib">
+        </div>
+        <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+          <a href="javascript: {return false;}">Show</a>
+        </p>
+      </div>
+    </p>
+    <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
   	import ast
 	import numpy as np 
@@ -48,4 +58,6 @@ Note that the matrix currently satisfies all conditions except &#x201C;Each pivo
       </solution>
     </p>
   </text>
+  <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+  <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
 </problem>

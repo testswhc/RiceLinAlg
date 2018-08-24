@@ -1,0 +1,26 @@
+<problem display_name="Is it into?" linenum="191" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]V[/mathjaxinline] be a vector space over [mathjaxinline]\mathbb R[/mathjaxinline], and let [mathjaxinline]T: V\rightarrow V[/mathjaxinline] be given by [mathjaxinline]T(v) = 2v[/mathjaxinline]. </p>
+    <p>
+If we know that [mathjaxinline]T(u) = T(v)[/mathjaxinline], must it be true that [mathjaxinline]u = v[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Is [mathjaxinline]T[/mathjaxinline] into? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">  </font>
+      </solution>
+    </p>
+  </text>
+</problem>

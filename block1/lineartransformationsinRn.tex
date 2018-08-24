@@ -8,9 +8,9 @@
 At the end of this sequence, and after some practice, you should be able to:
 
 \begin{itemize}
-\item Understand the definition of linear transformation.  
-\item Be able to determine whether a function between vector spaces is a linear transformations. 
-\item Recognize basic properties of linear transformations.
+\item Find the standard matrix for a linear transformation from $\R^n$ to $\R^m$.   
+\item Know what geometric properties are preserved by linear transformations from 
+$\R^n$ to $\R^m$.  
 \end{itemize}
 
 For time budgeting purposes, this sequence has 4 videos totaling 14 minutes, 
@@ -29,25 +29,77 @@ plus some questions.
 
 
 
-\doedxvideo{Functions}{nMrAAozL4F0}
+\doedxvideo{Matrix Multiplication as Linear Transformation}{jMRJ-efZOJs}
 
 
-\beginedxproblem{System Consistency?}{\dpa1}
+\beginedxproblem{Where does it go?}{\dpa1}
 
-Define the function $T$ by $T(\vecx) = A\vecx$, where $A = \left[ \begin{array}{ccc}
-6 & 5 & 3 \\
-2 & 4 &  23 
-\end{array} \right].$
+Consider the following image.  
 
-What is the domain of $T$?
+\begin{center}
+\includesvg[400]{c1s8imageunderlintrans} 
+\end{center}
 
-\edXabox{type="multichoice" expect="$\R^3$" options="$\R$","$\R^2$","$\R^3$"}
+When we apply the linear transformation $T: \R^2 \rightarrow \R^2$ given by $T(x) = \left[ \begin{array}{cc}
+-1 & 0 \\ 0 & 1 \end{array} \right]$ to the image, which picture is the result?
 
-What is the codomain of $T$?
+\begin{center}
+\includesvg[400]{c1s8imageunderlintransAB} 
+\\
+\includesvg[400]{c1s8imageunderlintransCD} 
 
-\edXabox{type="multichoice" expect="$\R^2$" options="$\R$","$\R^2$","$\R^3$"}
+\end{center}
 
-\edXsolution{ 
+\edXabox{expect="D" options="A","B","C","D"}
+
+
+% When we apply the linear transformation $T: \R^2 \rightarrow \R^2$ given by $T(x) = \left[ \begin{array}{cc}
+% -1 & 0 \\ 0 & -1 \end{array} \right]$ to the image, which picture is the result?
+
+% \edXabox{expect="A" options="A","B","C","D"}
+
+
+\edXsolution{We see that $T\Bigg(\left[ \begin{array}{c}
+a\\ b\end{array} \right]\Bigg)=\left[ \begin{array}{cc}
+-1 & 0 \\ 0 & 1 \end{array} \right]\left[ \begin{array}{c}
+a\\ b\end{array}\right]=\left[ \begin{array}{c}
+-a\\ b\end{array}\right]$ and thus $T$ reflects the original image over the $y-$axis.
+
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Where does it go? 2}{\dpa1}
+
+Consider the following image.  
+
+\begin{center}
+\includesvg[400]{c1s8imageunderlintrans} 
+\end{center}
+
+When we apply the linear transformation $T: \R^2 \rightarrow \R^2$ given by $T(x) = \left[ \begin{array}{cc}
+0.5 & 0 \\ 0 & 2 \end{array} \right]$ to the image, which picture is the result?
+
+\begin{center}
+\includesvg[400]{c1s8imageunderlintransAB2} 
+
+\end{center}
+
+\edXabox{expect="B" options="A","B"}
+
+
+% When we apply the linear transformation $T: \R^2 \rightarrow \R^2$ given by $T(x) = \left[ \begin{array}{cc}
+% -1 & 0 \\ 0 & -1 \end{array} \right]$ to the image, which picture is the result?
+
+% \edXabox{expect="A" options="A","B","C","D"}
+
+
+\edXsolution{We see that \[ T\Bigg(\left[ \begin{array}{c}
+a\\ b\end{array} \right]\Bigg)=\left[ \begin{array}{cc}
+0.5 & 0 \\ 0 & 2 \end{array} \right]\left[ \begin{array}{c}
+a\\ b\end{array}\right]=\left[ \begin{array}{c}
+0.5a\\ 2b\end{array}\right],\] and thus scales the original image by a factor of 0.5 in the $x$ direction and a factor of 2 in the $y$ direction.
 
 }
 
@@ -55,16 +107,170 @@ What is the codomain of $T$?
 
 
 
+
+\endedxvertical
+
+
+\beginedxvertical{Multiplication by a Matrix in General}
+
+\doedxvideo{Multiplication by a General Matrix}{R1uBwxvKIXE}
+
+
+
+
+\beginedxproblem{The E Vectors}{\dpa1}
+
+Suppose $T: \R^4\rightarrow \R^3$ is given by 
+$T(x) = Ax$ where  
+\[ A = \left[ \begin{array}{cccc} 1 & 3 & 5 & 7 \\ 2 & 0 & -1 & -1 \\ 1 & 1 & 3  & -2 \end{array} \right].\]
+
+
+
+What is $T(e_3)$?  
+
+\input{vectorentry.tex}
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[5],[-1],[3]]"}
+
+
+\edXsolution{ Since $T: \R^4\rightarrow \R^3$, we know from context that $e_3=\left[ \begin{array}{c} 0 & 0 & 1 & 0 \end{array} \right].$  Then \[
+T(e_3)=\left[ \begin{array}{cccc} 1 & 3 & 5 & 7 \\ 2 & 0 & -1 & -1 \\ 1 & 1 & 3  & -2 \end{array} \right]\left[ \begin{array}{c} 0 & 0 & 1 & 0 \end{array} \right] = \left[ \begin{array}{c} 5 & -1 & 3 \end{array} \right].\]
+
+Alternatively, if the four columns of $A$ are $v_1, v_2, v_3, v_4$, multiplying $A$ by $\left[ \begin{array}{c} 0 & 0 & 1 & 0 \end{array} \right]$ should yield the linear combination $0v_1 + 0v_2 + 1v_3 + 0v_4,$ which is just
+$v_3$.  
+}
+
+
+\endedxproblem
+
+\beginedxproblem{Find a Matrix}{\dpa1}
+
+Suppose the function $T: \R^3\rightarrow \R^2$ is given by 
+\[T\left( \left[ \begin{array}{c} a_1 \\ a_2\\ a_3 \end{array} \right] \right) =\left[ \begin{array}{c} 2a_1-a_3 \\ -a_1 + a_2 \end{array} \right] \] 
+for all vectors $\left[ \begin{array}{c} a_1 \\ a_2\\ a_3 \end{array} \right]  \in \R^3$.  
+
+%In the actual program, the directins for how students to enter the matrix includes an augmented matrix.  This seems a bit confusing.
+
+For what matrix $A$ is $T(x) = Ax$ for all $x \in \R^3$?  
+
+\input{matrixentry.tex}
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[2,0,-1],[-1,1,0]]"}
+
+Is $T$ a linear transformation?  
+
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+\edXsolution{ 
+We see that
+\[T\left[ \begin{array}{c} a_1 \\ a_2 \end{array} \right] = 
+\left[ \begin{array}{ccc} 2 & 0 & -1 \\ -1  & 1 & 0 \end{array} \right]
+\left[ \begin{array}{c} a_1 \\ a_2 \end{array} \right] \], so 
+$A = \left[ \begin{array}{ccc} 2 & 0 & -1 \\ -1  & 1 & 0 \end{array} \right]$ works.  
+
+Since $T$ is multiplication by a matrix, it is a linear transformation.
+
+}
+
+
+\endedxproblem
+
+
 \endedxvertical
 
 
 
 
 
-\beginedxvertical{Defining Linear Transformations}
 
-\doedxvideo{Linear Transformations}{ASQadpJlL94}
-%example: rotations, non-example: something quadratic
+
+
+\beginedxvertical{Matrix for Rotation}
+
+
+\beginedxproblem{Rotation}{\dpa2}
+
+For the next two problems, we will be considering the linear transformation $T: \R^2 \rightarrow \R^2$
+given by rotation counterclockwise by $45^\circ$.  
+
+
+\begin{center}
+\includesvg[400]{c1s8rotation} 
+
+\end{center}
+
+%Is the first sentence below as you intended? Should it be "$45^\circ, 45^\circ, 90^\circ$ triangles"?
+
+From the $45^\circ-45^\circ-90^\circ$ triangles in the diagram, we can find that  
+$T(e_1) = \left[ \begin{array}{c} \frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right] \approx
+\left[ \begin{array}{c} 0.707 \\ 0.707 \end{array} \right]$ and
+$T(e_2) = \left[ \begin{array}{c} -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right] \approx
+\left[ \begin{array}{c} -0.707 \\ 0.707  \end{array} \right].$   
+
+What is $T\left( \left[ \begin{array}{c} 4 \\ 0 \end{array} \right] \right)$?  (Remember to use decimals only, to within two decimal places.)  
+
+\input{vectorentry2.tex}
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[2.83],[2.83]]"}
+
+
+\edXsolution{ Since $T$ is a linear transformation, \[T\left( \left[ \begin{array}{c} 4 \\ 0 \end{array} \right] \right)=4 T\left( \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] \right)=4 T(e_1)=4\left[ \begin{array}{c} \frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right]= \left[ \begin{array}{c} 2\sqrt{2} \\ 2\sqrt{2}  \end{array} \right]\approx
+\left[ \begin{array}{c} 2.83 \\ 2.83 \end{array} \right].\]
+
+}
+
+
+\endedxproblem
+
+\beginedxproblem{Rotation 2}{\dpa2}
+
+
+What is $T\left( \left[ \begin{array}{c} 4 \\ 1 \end{array} \right] \right)$?  
+
+\input{vectorentry2.tex}
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[2.12],[3.54]]"}
+
+
+\edXsolution{ Since $T$ is a linear transformation, \[T\left( \left[ \begin{array}{c} 4 \\ 1 \end{array} \right] \right)=T(4e_1+e_2)=4T(e_1)+T(e_2)=4\cdot \left[ \begin{array}{c} \frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right]+\left[ \begin{array}{c} -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right] \approx
+\left[ \begin{array}{c} 2.12 \\ 3.54 \end{array} \right].\]
+
+}
+
+
+\endedxproblem
+
+
+\doedxvideo{Matrix for Rotation by 45 Degrees}{TN4eIiSNzcA}
+
+\beginedxproblem{Rotation 3}{\dpa2}
+
+
+If $T$ is still rotation counterclockwise by $45^\circ$, 
+what is $T\left( \left[ \begin{array}{c} 3\sqrt{2} \\ -\sqrt{2} \end{array} \right] \right)$?  
+
+\input{vectorentry2.tex}
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[4],[2]]"}
+
+
+\edXsolution{
+
+We could do this using linearity properties, but it is easier to just use the matrix $A = \left[ 
+\begin{array}{cc} \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} \end{array} \right]$ we found in the
+video.  We know that $T(x) = Ax$ for all $x \in \R^2$, so
+\[ T\left( \left[ \begin{array}{c} 3\sqrt{2} \\ -\sqrt{2} \end{array} \right] \right) = 
+\left[ 
+\begin{array}{cc} \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} \end{array} \right] \left[ \begin{array}{c} 3\sqrt{2} \\ -\sqrt{2} \end{array} \right] = 
+\left[ \begin{array}{c} 4\\2  \end{array} \right]. \]
+
+%  Again, by linearity properties, $T\left( \left[ \begin{array}{c} 3\sqrt{2} \\ -\sqrt{2} \end{array} \right] \right)=3\sqrt{2}\cdot T(e_1)+-\sqrt{2}\cdot T(e_2)=3\sqrt{2}\cdot \left[ \begin{array}{c} \frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right]+-\sqrt{2}\cdot \left[ \begin{array}{c} -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2}  \end{array} \right]=\left[ \begin{array}{c} 4\\2  \end{array} \right]$.
+
+}
+
+
+\endedxproblem
 
 
 \endedxvertical
@@ -73,215 +279,223 @@ What is the codomain of $T$?
 
 
 
+\beginedxvertical{Standard Matrix}
 
 
 
+\doedxvideo{The Standard Matrix for a Linear Transformation}{aPUQJWsg9Vw}
 
-\beginedxvertical{Linear Transformation Definition}
+\beginedxtext{Standard Matrix}
 
-\beginedxtext{Definition of Linear Transformation}
-
-Let $\F$ be a field.  A function $T: \F^n \rightarrow \F^m$ is a {\keyb{\bf linear transformation}}
-if both of the following properties hold:
-
-\begin{itemize}
-\item For any vectors $\vecv, \vecw$ in the domain, $T(\vecv + \vecw) = T(\vecv) + T(\vecw).$ 
-\item For any vector $\vecv$ in the domain, and any scalar $a\in \F$, $T(a\vecv) = aT(\vecv)$.    
-\end{itemize}
-
-Informally, if $T$ satisfies the first condition we say that ``$T$ respects vector addition", and 
-if $T$ satisfies the second condition we say that ``$T$ respects scalar multiplication."  
+{\keya{\bf{Proposition/Definition.}}} If $T: \R^n \rightarrow \R^m$ is a linear transformation, then there is a unique $m \times n$ matrix
+$A$ such that $T(x) = Ax$ for all $x\in \R^n$.  This matrix $A$
+is called the {\keyb{\bf standard
+matrix}} for $T$, and must be given by the formula
+\[A =  \left[ \begin{array}{cccc} | & | & & | \\ 
+T(e_1) & T(e_2) & \cdots & T(e_n) \\
+ | & | & & | \end{array} \right], \]
+ where $e_i \in \R^n$ is the vector whose $i$th entry equals 1, and all of whose other entries are 0.
 
 \endedxtext
 
 \endedxvertical
 
 
-\beginedxvertical{Some Examples and Non-examples}
 
 
 
-\beginedxproblem{Linear Transformation? 1}{\dpa1}
+\beginedxvertical{Standard Matrix Questions}
 
-Define $T: \R^3 \rightarrow \R^3$ by $T(\vecv) = 2\vecv$.  
-
-Does $T$ respect vector addition?  That is, is $T(\vecv + \vecw) = T(\vecv) + T(\vecw)$ for all 
-vectors $\vecv,\vecw$?
-Try a couple of specific numerical examples if you're not sure.  
-
-\edXabox{expect="Yes" options="Yes","No"}
-
-Does $T$ respect scalar multiplication?  
-That is, is $T(a\vecv) = aT(\vecv)$ for all vectors $\vecv$ and scalars $a$?
-Try a couple of specific numerical examples if you're not sure.  
+\beginedxproblem{True or False}{\dpa1}
 
 
-\edXabox{expect="Yes" options="Yes","No"}
+True or false: Every linear transformation from a vector space $V$ to a vector space $W$
+has a standard matrix.  
+ 
+\edXabox{expect="False" options="True","False"}
 
-Is $T$ a linear transformation?
-
-\edXabox{expect="Yes" options="Yes","No"}
 
 \edXsolution{ 
+False.  Only linear transformations from $\R^n$ to $\R^m$ (or, more generally, from $F^n$ to $F^m$ where
+$F$ is a field) have standard matrices.  
 }
+
 
 \endedxproblem
 
 
-\beginedxproblem{Linear Transformation? 2}{\dpa1}
+\beginedxproblem{Standard Matrix 1}{\dpa1}
 
-Define $T: \R^2 \rightarrow \R^2$ by $T(\vecv) = \veco$.  
+For all $v\in \R^2$, let $T(v)$ be the reflection of $v$ across the horizontal axis of $\R^2$.  
+$T$ is a linear transformation from $\R^2$ to $\R^2$.  What is its standard matrix?
+ 
+\input{matrixentry2.tex}
 
-Does $T$ respect vector addition?  That is, is $T(\vecv + \vecw) = T(\vecv) + T(\vecw)$ for all 
-vectors $\vecv,\vecw$?
-Try a couple of specific numerical examples if you're not sure.  
-
-\edXabox{expect="Yes" options="Yes","No"}
-
-Does $T$ respect scalar multiplication?  
-That is, is $T(a\vecv) = aT(\vecv)$ for all vectors $\vecv$ and scalars $a$?
-Try a couple of specific numerical examples if you're not sure.  
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[1,0],[0,-1]]"}
 
 
-\edXabox{expect="Yes" options="Yes","No"}
-
-Is $T$ a linear transformation?
-
-\edXabox{expect="Yes" options="Yes","No"}
-
-\edXsolution{ 
+\edXsolution{ If $T$ is a reflection across the horizontal axis, then $e_1$ is fixed by $T$ and thus the first column of the standard matrix is $T(e_1)=e_1$.  Now, $e_2$ is reflected to $-e_2$, and thus the second column of the standard matrix is $T(e_2)=-e_2$.  So the answer is 
+$\left[ 
+\begin{array}{cc} 1& 0 \\ 0 & -1 \end{array} \right].$
 }
+
 
 \endedxproblem
 
-\beginedxproblem{Linear Transformation? 3}{\dpa1}
 
-Define $T: \R^2 \rightarrow \R^2$ by $T(\vecv) = \left[\begin{array}{c}
-4 \\
-0 
-\end{array} \right]$.  
+\beginedxproblem{Standard Matrix 2}{\dpa1}
 
-Does $T$ respect vector addition?  That is, is $T(\vecv + \vecw) = T(\vecv) + T(\vecw)$ for all 
-vectors $\vecv,\vecw$?
-Try a couple of specific numerical examples if you're not sure.  
+For all $v\in \R^2$, let $S(v)$ be the vector obtained by reflecting $v$ across the diagonal line $x=y$ 
+and 
+then rotating the result by $90^\circ$ counterclockwise.  
+$S$ is a linear transformation from $\R^2$ to $\R^2$.  What is its standard matrix?
+ 
+\input{matrixentry2.tex}
 
-\edXabox{expect="No" options="Yes","No"}
-
-Does $T$ respect scalar multiplication?  
-That is, is $T(a\vecv) = aT(\vecv)$ for all vectors $\vecv$ and scalars $a$?
-Try a couple of specific numerical examples if you're not sure.  
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[-1,0],[0,1]]"}
 
 
-\edXabox{expect="No" options="Yes","No"}
-
-Is $T$ a linear transformation?
-
-\edXabox{expect="No" options="Yes","No"}
-
-\edXsolution{ 
+\edXsolution{ First, under the reflection, $e_1$ is taken to $e_2$.  Then, under the rotation, this vector is taken to $-e_1$.  Thus, $S(e_1)=-e_1$; this will be the first column of the standard matrix.  Similarly, $e_2$ is first taken to $e_1$ and then to $e_2$, and thus $S(e_2)=e_2$; this is the second column.
+So the answer is 
+$\left[ 
+\begin{array}{cc} -1& 0 \\ 0 & 1 \end{array} \right].$
 }
+
 
 \endedxproblem
 
+
+
+\beginedxproblem{How many linear transformations?}{\dpa1}
+
+How many linear transformations $T:\R^4 \rightarrow \R^2$ satisfy 
+the conditions
+$T(e_1) = T(e_3) =  \left[\begin{array}{c} 2 \\ 3   \end{array} \right]$
+and $T(e_4) = \veco$?  
+
+\edXabox{type="multichoice" expect="infinitely many" options="zero","one","more than one but finitely many","infinitely many"}
+
+\edXsolution{ This question is equivalent to asking 'how many $2\times 4$ real matrices $A$ satisfy $A e_1=A\cdot e_3=\left[\begin{array}{c} 2 \\ 3   \end{array} \right]$ and $Ae_4=\veco$?'.  The first equality forces the first and third columns of $A$ to both be $\left[\begin{array}{c} 2 \\ 3   \end{array} \right]$, and the second equality forces the fourth column of $A$ to be $\veco$, but the third column of $A$ is free to have any real entries.  
+Thus there are infinitely many choices.  
+}
+
+
+\endedxproblem
+
+
+\beginedxproblem{Identity Transformation}{\dpa1}
+
+One very special linear transformation is the transformation $T: \R^n \rightarrow \R^n$ which is defined
+simply by $T(v) = v$ for all $v\in \R^n$.  This is called the identity transformation on $\R^n$, since it takes
+every vector to itself.  
+
+What is the standard matrix for the identity transformation on $\R^3$?
+ 
+\input{matrixentry2.tex}
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[1,0,0],[0,1,0],[0,0,1]]"}
+
+
+\edXsolution{ 
+We know that the columns of the standard matrix will be $T(e_1),T(e_2),T(e_3)$.  When $T$ is the
+identity transformation, this means that the columns will be $e_1, e_2, e_3$.  Hence we get
+the matrix $\left[\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1  \end{array} \right].$ 
+}
+
+
+\endedxproblem
 
 \endedxvertical
 
 
-\beginedxvertical{More Linear Transformations}
-
-\doedxvideo{A Linear Transformation outside of R^n}{Pyv9GXNYJ44}
 
 
 
-\beginedxproblem{Linear Transformation? 4}{\dpa1}
-
-Define $T: \mathbb{P} \rightarrow \R$ by $T(f) = f(1)$.  
-
-To get a sense of how $T$ works, let's do a quick example.  Suppose $f$ is the element of 
-$\mathbb{P}$ given by $f(t) = 2t^2 -5$.  
-What is $T(f)$?  
-
-\edXabox{type="numerical" expect="-3"}
-
-
-Does $T$ respect vector addition?  That is, is $T(f+g) = T(f) + T(g)$ for all 
-vectors $f,g \in \mathbb{P}$?
-Try a couple of specific numerical examples if you're not sure.  
-
-\edXabox{expect="Yes" options="Yes","No"}
-
-Does $T$ respect scalar multiplication?  
-That is, is $T(af) = aT(f)$ for all vectors $f \in \mathbb{P}$ and scalars $a$?
-Try a couple of specific numerical examples if you're not sure.  
-
-
-\edXabox{expect=Yes" options="Yes","No"}
-
-Is $T$ a linear transformation?
-
-\edXabox{expect="Yes" options="Yes","No"}
-
-\edXsolution{ 
-}
-
-\endedxproblem
+\beginedxvertical{The Identity Matrix}
 
 
 
-\endedxvertical
+\beginedxtext{Identity Matrix}
 
 
-\beginedxvertical{Linear Transformations Properties}
+{\keya{\bf{Definition.}}} The standard matrix for the identity transformation $T: \R^n \rightarrow \R^n$
+is denoted by the symbol $I_n$ and is called the $n\times n$ {\keya{\bf{identity matrix}}}.  Often we simply
+use $I$ to denote the identity matrix when the $n$ is understood.  
 
-\doedxvideo{Linear Transformation Properties}{oe4fgdPAsgA}
+As in the previous problem, we see that 
+\[ I_n = \left[ \begin{array}{cccc} | & | & & | \\ 
+e_1 & e_2 & \cdots & e_n \\
+ | & | & & | \end{array} \right] = \left[\begin{array}{cccc} 1 & 0 &\cdots & 0 \\ 0 & 1 & \cdots 0 \\ \vdots & \vdots & \ddots & \vdots
+\\ 0 & 0 & \cdots & 1  \end{array} \right]. \] 
 
+Since $I_n$ is the standard matrix for the identity transformation $T$, we have 
+$I_n v = T(v) = v$ for all $v\in \R^n$.  
 
-
-
-\beginedxproblem{Linear Transformation Practice}{\dpa1}
-
-Suppose $T: \mathbb{P} \rightarrow \R^2$ is a linear transformation.  Let $f,g\mathbb{P}$ be
-the polynomials given by $f(t) = t^2$ and $g(t) = t$.  
-
-Suppose that $T(f) = \left[\begin{array}{c} 1 \\ 2  \end{array} \right]$
-and $T(g) = \left[\begin{array}{c} 2 \\ -1  \end{array} \right]$
-
-
-
-If $h \in \mathbb{P}$ is the polynomial given by $h(t) = -2t^2$, what must $T(h)$ be?
-
-\input{vectorentry.tex}
-
-
-\edXabox{type="custom" cfn="VectorEntry" expect="[[-2],[-4]]"}
-
-
-If $j \in \mathbb{P}$ is the polynomial given by $h(t) = 3t^2-t$, what must $T(j)$ be?
-
-\input{vectorentry.tex}
-
-
-\edXabox{type="custom" cfn="VectorEntry" expect="[[1],[7]]"}
-
-
-\edXsolution{ 
-}
-
-
-\endedxproblem
+\endedxtext
 
 
 
 \endedxvertical
 
 
-% \beginedxvertical{Linear Transformations Properties}
-
-% \doedxvideo{Matrix Multiplication as a Linear Transformation}{jMRJ-efZOJs}
 
 
 
-% \endedxvertical
+\beginedxvertical{Back to Pictures}
+
+
+\doedxvideo{More Pictures}{8zRN403o8tg}
+
+
+
+\beginedxproblem{What is preserved?}{\dpa1}
+
+Take a look at the video again.  Which properties seem to be preserved by linear transformations
+from $\R^2$ to $\R^2$?  
+
+
+For instance, does every transformation preserve the area of regions? 
+
+\edXabox{expect="No" options="Yes","No"}
+
+
+Do lines that start parallel always go in the same direction after transformation?  
+
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+Do lines that start perpendicular remain perpendicular after transformation? 
+
+\edXabox{expect="No" options="Yes","No"}
+
+\edXsolution{We see from the video that area is not preserved -- the image can be much smaller or bigger
+after transformation than the original.  Similarly, at time 2:12 in the video, we see an example of perpendicular lines not remaining perpendicular after a transformation.
+
+However, parallel lines do always stay in the same direction, as seen in the video. 
+
+If you want to see a rigorous proof of this, click below.  
+% will give a counterexample to show that area is not preserved.  Suppose you have a square with the bottom and left edges given by the vectors $e_1$ and $e_2$ respectively.  This square has area 1.  If we have a transformation that scales by a factor of 2 in both the $x$ and $y$ direction, then the new square has sides given by the vectors $2e_1$ and $2e_2$.  This image has area 4.  We can also see this from the video.\\
+
+
+
+\begin{edXshowhide}{Parallel Lines Stay Parallel}
+
+Note that we can treat each point, $(x,y)$, as a vector in standard position $\left[\begin{array}{c}  x\\ y   \end{array} \right]$.  Now, suppose $\ell_1$ and $\ell_2$ are two parallel lines.  If $\ell_1$ consists of points $p_1=\left[\begin{array}{c}  x\\ mx+b_1   \end{array} \right]$ then $\ell_2$ consists of points $p_2=\left[\begin{array}{c}  x\\ mx+b_2   \end{array} \right]$.  We will find the image of two points on each line and use these points to show the slope of the image lines, $T(\ell_i)$, are the same.   If $T$ is a linear transformation with standard matrix $A=\left[\begin{array}{cc} a & c\\ b& d   \end{array} \right]$, then $T(\ell_1)$ contains the points $T(\left[\begin{array}{c}  0\\ b_1   \end{array} \right])=\left[\begin{array}{cc} a & c\\ b& d   \end{array} \right]\left[\begin{array}{c}  0\\ b_1   \end{array} \right]=\left[\begin{array}{c}  cb_1\\ db_1   \end{array} \right]$, and $T(\left[\begin{array}{c}  1\\ m+b_1   \end{array} \right])=\left[\begin{array}{cc} a & c\\ b& d   \end{array} \right]\left[\begin{array}{c}  1\\ m+b_1   \end{array} \right]=\left[\begin{array}{c}  a+cm+cb_1\\ b+dm+db_1   \end{array} \right]$.  Thus, $T(\ell_1)$ has slope $\frac{b+dm+db_1-db_1}{a+cm+cb_1-cb_1}=\frac{b+dm}{a+cm}$.  Similarly $T(\ell_2)$ contains the points $\left[\begin{array}{c}  cb_2\\ db_2  \end{array} \right]$ and $\left[\begin{array}{c} a+cm+cb_2\\ b+dm+db_2  \end{array} \right]$, so $T(\ell_2)$ has slope $\frac{b+dm+db_1-db_1}{a+cm+cb_1-cb_1}=\frac{b+dm}{a+cm}$.  Therefore, we see that the image of the two lines have the same slope.
+
+\end{edXshowhide}
+
+}
+
+\endedxproblem
+
+\endedxvertical
+
+
+
+
+
+
+
 
 
 

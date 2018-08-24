@@ -1,20 +1,17 @@
-<problem display_name="Fill in the blank" linenum="296" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Fill in the blank 2" linenum="358" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 What goes in the blank to make a correct statement? </p>
     <p>
-If the matrix [mathjaxinline]A[/mathjaxinline] when row-reduced yields [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinline], then the columns of [mathjaxinline]A[/mathjaxinline] cannot be linearly independent. </p>
+If the matrix [mathjaxinline]A[/mathjaxinline] has [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinline], then there must be a free variable. </p>
     <p>
       <multiplechoiceresponse>
         <choicegroup direction="vertical">
           <choice correct="false" name="1">
-            <text> a row of all zeros</text>
+            <text> more rows than columns</text>
           </choice>
           <choice correct="true" name="2">
-            <text> a free variable</text>
-          </choice>
-          <choice correct="false" name="3">
-            <text> either of the above</text>
+            <text> more columns than rows</text>
           </choice>
         </choicegroup>
       </multiplechoiceresponse>
@@ -22,7 +19,10 @@ If the matrix [mathjaxinline]A[/mathjaxinline] when row-reduced yields [mathjaxi
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue">  </font>
+        <font color="blue">
+          <p>
+ If there are more columns than rows, there can't be a pivot in every column, so there must be a free variable.  </p>
+        </font>
       </solution>
     </p>
   </text>

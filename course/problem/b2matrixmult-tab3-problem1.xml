@@ -1,0 +1,26 @@
+<problem display_name="Composing" linenum="64" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]T_1: \mathbb R^7 \rightarrow \mathbb R^4[/mathjaxinline] and [mathjaxinline]T_2: \mathbb R^3 \rightarrow \mathbb R^7[/mathjaxinline] are both linear transformations. </p>
+    <p>
+Is [mathjaxinline]T_1\circ T_2[/mathjaxinline] a linear transformation? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Is [mathjaxinline]T_2\circ T_1[/mathjaxinline] a linear transformation? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

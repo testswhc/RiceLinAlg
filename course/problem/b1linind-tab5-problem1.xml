@@ -1,4 +1,4 @@
-<problem display_name="True or False" linenum="224" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="True or False" linenum="239" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 True or False: Suppose the list [mathjaxinline]\{ v_1; v_2; v_3; v_4\}[/mathjaxinline] is linearly dependent. Then [mathjaxinline]v_4[/mathjaxinline] must be in the span of [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline]. </p>
@@ -10,7 +10,10 @@ True or False: Suppose the list [mathjaxinline]\{ v_1; v_2; v_3; v_4\}[/mathjaxi
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ The conclusion is too specific. We proved that if our list is linearly dependent, then at least one of the vectors will be in the span of the others. We can't claim that a particular vector in the list is in the span of the rest of the list, or that all vectors are in the spans of their list complements (without knowing more). Consider the problem on the previous tab with [mathjaxinline]v_1[/mathjaxinline], [mathjaxinline]v_2[/mathjaxinline], and [mathjaxinline]v_3[/mathjaxinline]: it appears that [mathjaxinline]v_3[/mathjaxinline] is not in the span of [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline], and yet the list of three is linearly dependent.  </p>
+        </font>
       </solution>
     </p>
   </text>

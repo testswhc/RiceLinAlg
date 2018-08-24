@@ -1,0 +1,3 @@
+<html display_name="Definition of Onto" linenum="104" tex_filename="./block1/intoonto.tex">
+  <p><span style="color:#27408C"><b class="bf">Definition.</b></span> A linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is called <span style="color:#99182C"><b class="bf">onto</b></span> if [mathjaxinline]\mathrm{Image(T)} = W[/mathjaxinline]. </p>
+</html>

@@ -1,7 +1,6 @@
 <html display_name="R^n" linenum="107" tex_filename="./block1/vectors.tex">
-  <p>
-For a non-negative integer [mathjaxinline]n[/mathjaxinline], [mathjaxinline]\mathbb R^ n[/mathjaxinline] is defined to be the set </p>
-  <table id="a0000000043" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+  <p><span style="color:#27408C"><b class="bf">Definition.</b></span> For a non-negative integer [mathjaxinline]n[/mathjaxinline], [mathjaxinline]\mathbb R^ n[/mathjaxinline] is defined to be the set </p>
+  <table id="a0000000046" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
     <tr>
       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left\{ \left[\begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right] \  : \  a_1, a_2, \ldots a_ n \in \mathbb R\right\} .[/mathjax]</td>
       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>

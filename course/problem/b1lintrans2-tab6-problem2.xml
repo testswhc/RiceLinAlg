@@ -1,0 +1,41 @@
+<problem display_name="Standard Matrix 1" linenum="327" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+For all [mathjaxinline]v\in \mathbb R^2[/mathjaxinline], let [mathjaxinline]T(v)[/mathjaxinline] be the reflection of [mathjaxinline]v[/mathjaxinline] across the horizontal axis of [mathjaxinline]\mathbb R^2[/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] is a linear transformation from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]. What is its standard matrix? </p>
+    <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script>
+    <p>
+      <customresponse cfn="MatrixEntry" expect="[[1,0],[0,-1]]">
+        <textline correct_answer="[[1,0],[0,-1]]"/>
+      </customresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ If [mathjaxinline]T[/mathjaxinline] is a reflection across the horizontal axis, then [mathjaxinline]e_1[/mathjaxinline] is fixed by [mathjaxinline]T[/mathjaxinline] and thus the first column of the standard matrix is [mathjaxinline]T(e_1)=e_1[/mathjaxinline]. Now, [mathjaxinline]e_2[/mathjaxinline] is reflected to [mathjaxinline]-e_2[/mathjaxinline], and thus the second column of the standard matrix is [mathjaxinline]T(e_2)=-e_2[/mathjaxinline]. So the answer is [mathjaxinline]\left[ \begin{array}{cc} 1&amp;  0 \\ 0 &amp;  -1 \end{array} \right].[/mathjaxinline]  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>
