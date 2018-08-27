@@ -2672,7 +2672,8 @@ Suppose [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformat
 <optionresponse>
   <optioninput options="('Existence','Uniqueness')" correct="Existence"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+This is equivalent to asking whether there exists [mathjaxinline]v\in V[/mathjaxinline] such that [mathjaxinline]T(v)=w[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
 <problem display_name="In the Image?" attrib_string="url_name=&quot;b1intoonto-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="75" tex_filename="./block1/intoonto.tex"><text><p>
 Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p><table id="a0000000076" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
@@ -2687,12 +2688,28 @@ Is the vector [mathjaxinline]\left[\begin{array}{c} 2 \\ -1 \\ 0 \end{array} \ri
 <optionresponse>
   <optioninput options="('Yes','No')" correct="No"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue">  </font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue">The first question is equivalent to asking if there is a solution to [mathjaxinline]Ax=\left[\begin{array}{c} 1 \\ -1 \\ -7 \end{array} \right][/mathjaxinline]. Since the augmented matrix <table id="a0000000077" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[\begin{array}{ccc:c} 1 &amp;  2 &amp;  3&amp; 1 \\ 0 &amp;  1 &amp;  1&amp; -1 \\ -1 &amp;  4 &amp;  3 &amp; -7 \end{array} \right][/mathjax]</td>
+</tr>
+</table> row reduces to <table id="a0000000078" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[\begin{array}{ccc:c} 1 &amp;  0 &amp;  1&amp; 3\\ 0 &amp;  1&amp;  1 &amp; -1 \\ 0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right],[/mathjax]</td>
+</tr>
+</table> we see that the system is consistent, so a solution exists.<br />The second question is equivalent to asking if there is a solution to [mathjaxinline]Ax=\left[\begin{array}{c} 2 \\ -1 \\ 0 \end{array} \right][/mathjaxinline]. Since the augmented matrix <table id="a0000000079" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[\begin{array}{ccc:c} 1 &amp;  2 &amp;  3&amp; 2 \\ 0 &amp;  1 &amp;  1&amp; -1 \\ -1 &amp;  4 &amp;  3 &amp; 0 \end{array} \right][/mathjax]</td>
+</tr>
+</table> row reduces to <table id="a0000000080" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[\begin{array}{ccc:c} 1 &amp;  0 &amp;  1&amp; 0\\ 0 &amp;  1&amp;  1 &amp; 0 \\ 0 &amp;  0 &amp;  0 &amp;  1 \end{array} \right],[/mathjax]</td>
+</tr>
+</table> we see that the system is inconsistent, so no solution exists.  </font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Onto" attrib_string="url_name=&quot;b1intoonto-vertical4&quot;" refnum="4"><p>
-<video display_name="Onto" youtube_id_1_0="i9Zg8aOTdwc" attrib_string="url_name=&quot;b1intoonto-tab4-video1&quot; "></video><html display_name="Definition of Onto" attrib_string="url_name=&quot;b1intoonto-tab4-text1&quot;" linenum="104" tex_filename="./block1/intoonto.tex"><p>
+<video display_name="Onto" youtube_id_1_0="i9Zg8aOTdwc" attrib_string="url_name=&quot;b1intoonto-tab4-video1&quot; "></video><html display_name="Definition of Onto" attrib_string="url_name=&quot;b1intoonto-tab4-text1&quot;" linenum="106" tex_filename="./block1/intoonto.tex"><p>
 <span style="color:#27408C"><b class="bf">Definition.</b></span> A linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is called <span style="color:#99182C"><b class="bf">onto</b></span> if [mathjaxinline]\mathrm{Image(T)} = W[/mathjaxinline]. </p></html></p><p>
-<problem display_name="Is it onto?" attrib_string="url_name=&quot;b1intoonto-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="114" tex_filename="./block1/intoonto.tex"><text><p>
-Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p><table id="a0000000077" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<problem display_name="Is it onto?" attrib_string="url_name=&quot;b1intoonto-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="116" tex_filename="./block1/intoonto.tex"><text><p>
+Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p><table id="a0000000081" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  1 \\ -1 &amp;  4 &amp;  3 \end{array} \right].[/mathjax]</td>
 </tr>
@@ -2702,8 +2719,9 @@ Is [mathjaxinline]T[/mathjaxinline] onto? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="No"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Row Reduction and Onto" attrib_string="url_name=&quot;b1intoonto-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="134" tex_filename="./block1/intoonto.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+If [mathjaxinline]T[/mathjaxinline] is onto, then every vector in [mathjaxinline]\mathbb R^3[/mathjaxinline] is in the image of [mathjaxinline]T[/mathjaxinline], but recall that we found that the vector [mathjaxinline]\left[\begin{array}{c} 2 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] is not in the image of [mathjaxinline]T[/mathjaxinline]. </p></font></solution></p></text></problem></p><p>
+<problem display_name="Row Reduction and Onto" attrib_string="url_name=&quot;b1intoonto-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="136" tex_filename="./block1/intoonto.tex"><text><p>
 Suppose [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] is onto if and only if [mathjaxinline]A[/mathjaxinline] row reduces to have... </p><p>
 <multiplechoiceresponse>
   <choicegroup direction="vertical">
@@ -2721,8 +2739,9 @@ Suppose [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] 
     </choice>
   </choicegroup>
 </multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="True or False" attrib_string="url_name=&quot;b1intoonto-tab4-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="151" tex_filename="./block1/intoonto.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+We know that [mathjaxinline]T[/mathjaxinline] is onto if and only if the system [mathjaxinline]Ax=v[/mathjaxinline] is consistent for all [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline]. This is true if and only if [mathjaxinline]A[/mathjaxinline] row reduces to a matrix with no rows of all zeros. </p></font></solution></p></text></problem></p><p>
+<problem display_name="True or False" attrib_string="url_name=&quot;b1intoonto-tab4-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="153" tex_filename="./block1/intoonto.tex"><text><p>
 True or False: No linear transformation [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline] can be onto. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="True"/>
@@ -2731,13 +2750,13 @@ True or False: Every linear transformation [mathjaxinline]T: \mathbb R^8 \righta
 <optionresponse>
   <optioninput options="('True','False')" correct="False"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue">  </font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"> Suppose [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Then [mathjaxinline]T[/mathjaxinline] is onto if and only if the columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^8[/mathjaxinline]. But, [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]8\times 6[/mathjaxinline] matrix, and thus cannnot span [mathjaxinline]\mathbb R^8[/mathjaxinline] (to see this, note that if we row reduce [mathjaxinline]A[/mathjaxinline], it can have at most 6 pivots).<br />Next, suppose that [mathjaxinline]T: \mathbb R^8 \rightarrow \mathbb R^6[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Then [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]6\times 8[/mathjaxinline] matrix. It may be the case that [mathjaxinline]A[/mathjaxinline] row reduces to have strictly less than 6 pivots, and thus, the columns span a proper subspace of [mathjaxinline]\mathbb R^6[/mathjaxinline]. In this case, [mathjaxinline]T[/mathjaxinline] would not be onto.  </font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Into" attrib_string="url_name=&quot;b1intoonto-vertical5&quot;" refnum="5"><p>
 <video display_name="Into" youtube_id_1_0="4go4BarPvvY" attrib_string="url_name=&quot;b1intoonto-tab5-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Into Definition and Exercise" attrib_string="url_name=&quot;b1intoonto-vertical6&quot;" refnum="6"><p>
-<html display_name="Into Definition" attrib_string="url_name=&quot;b1intoonto-tab6-text1&quot;" linenum="182" tex_filename="./block1/intoonto.tex"><p>
+<html display_name="Into Definition" attrib_string="url_name=&quot;b1intoonto-tab6-text1&quot;" linenum="185" tex_filename="./block1/intoonto.tex"><p>
 <span style="color:#27408C"><b class="bf">Definition.</b></span> A linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], is <span style="color:#99182C"><b class="bf">into</b></span> if, for every [mathjaxinline]u, v\in V[/mathjaxinline] with [mathjaxinline]u\ne v[/mathjaxinline], we have [mathjaxinline]T(u) \ne T(v)[/mathjaxinline]. </p></html></p><p>
-<problem display_name="Is it into?" attrib_string="url_name=&quot;b1intoonto-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="191" tex_filename="./block1/intoonto.tex"><text><p>
+<problem display_name="Is it into?" attrib_string="url_name=&quot;b1intoonto-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="194" tex_filename="./block1/intoonto.tex"><text><p>
 Let [mathjaxinline]V[/mathjaxinline] be a vector space over [mathjaxinline]\mathbb R[/mathjaxinline], and let [mathjaxinline]T: V\rightarrow V[/mathjaxinline] be given by [mathjaxinline]T(v) = 2v[/mathjaxinline]. </p><p>
 If we know that [mathjaxinline]T(u) = T(v)[/mathjaxinline], must it be true that [mathjaxinline]u = v[/mathjaxinline]? </p><p>
 <optionresponse>
@@ -2747,25 +2766,26 @@ Is [mathjaxinline]T[/mathjaxinline] into? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="Yes"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue">  </font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"> If [mathjaxinline]T(u) = T(v)[/mathjaxinline], then [mathjaxinline]2u=2v[/mathjaxinline]. Multiplying by [mathjaxinline]\frac{1}{2}[/mathjaxinline], we see that [mathjaxinline]u=v[/mathjaxinline].<br />The fact that [mathjaxinline]T(u) = T(v)[/mathjaxinline] implies [mathjaxinline]u=v[/mathjaxinline] is equivalent to the definition of into.  </font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Kernel" attrib_string="url_name=&quot;b1intoonto-vertical7&quot;" refnum="7"><p>
 <video display_name="Kernel of a Linear Transformation" youtube_id_1_0="2jd2BhcEOyE" attrib_string="url_name=&quot;b1intoonto-tab7-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Kernel Definition and Questions" attrib_string="url_name=&quot;b1intoonto-vertical8&quot;" refnum="8"><p>
-<html display_name="Kernel Definition" attrib_string="url_name=&quot;b1intoonto-tab8-text1&quot;" linenum="226" tex_filename="./block1/intoonto.tex"><p>
-<span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">kernel</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p><table id="a0000000078" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<html display_name="Kernel Definition" attrib_string="url_name=&quot;b1intoonto-tab8-text1&quot;" linenum="230" tex_filename="./block1/intoonto.tex"><p>
+<span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">kernel</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p><table id="a0000000082" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\mathrm{Ker}(T) = \left\{  v\in V \  : T(v) = \mathbf{0}\} .[/mathjax]</td>
 </tr>
 </table><p>
 <span style="color:#27408C"><b class="bf">Proposition.</b></span> A linear transformation [mathjaxinline]T: V \rightarrow W[/mathjaxinline] is into if and only if [mathjaxinline]\mathrm{Ker}(T) = \{  \mathbf{0}\}[/mathjaxinline]. </p></html></p><p>
-<problem display_name="Existence vs. Uniqueness" attrib_string="url_name=&quot;b1intoonto-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="240" tex_filename="./block1/intoonto.tex"><text><p>
+<problem display_name="Existence vs. Uniqueness" attrib_string="url_name=&quot;b1intoonto-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="244" tex_filename="./block1/intoonto.tex"><text><p>
 Suppose [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformation. Is the question of whether [mathjaxinline]T[/mathjaxinline] is into an existence question or a uniqueness question? </p><p>
 <optionresponse>
   <optioninput options="('Existence','Uniqueness')" correct="Uniqueness"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Is it into? 2" attrib_string="url_name=&quot;b1intoonto-tab8-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="255" tex_filename="./block1/intoonto.tex"><text><p>
-Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^4[/mathjaxinline] be the linear transformation with standard matrix </p><table id="a0000000079" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+The question of whether [mathjaxinline]T[/mathjaxinline] is into is equivalent to asking if [mathjaxinline]\mathrm{Ker}(T) = \{  \mathbf{0}\}[/mathjaxinline]. This is equivalent to asking if [mathjaxinline]\mathbf{0}[/mathjaxinline] is the unique element in [mathjaxinline]\mathrm{Ker}(T)[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Is it into? 2" attrib_string="url_name=&quot;b1intoonto-tab8-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="259" tex_filename="./block1/intoonto.tex"><text><p>
+Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^4[/mathjaxinline] be the linear transformation with standard matrix </p><table id="a0000000083" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  5 \\ 0 &amp;  1 &amp;  2 \\ -1 &amp;  1 &amp;  1 \\ 2 &amp;  -1 &amp;  0 \end{array} \right].[/mathjax]</td>
 </tr>
@@ -2782,8 +2802,12 @@ Is [mathjaxinline]T[/mathjaxinline] into? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="No"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue">  </font></solution></p></text></problem></p><p>
-<problem display_name="Row Reduction and Into" attrib_string="url_name=&quot;b1intoonto-tab8-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="283" tex_filename="./block1/intoonto.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"> Matrix [mathjaxinline]A[/mathjaxinline] row reduces to <table id="a0000000084" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[\begin{array}{ccc} 1 &amp;  0 &amp;  1 \\ 0 &amp;  1 &amp;  2 \\ 0&amp; 0&amp; 0 \\ 0&amp; 0&amp; 0 \end{array} \right].[/mathjax]</td>
+</tr>
+</table> Thus, when augmented with the zero vector, there are infinitely many solutions. This also tells us that [mathjaxinline]\mathbf{0}[/mathjaxinline] is not the only solution to [mathjaxinline]Ax=\mathbf{0}[/mathjaxinline], and thus [mathjaxinline]\mathrm{Ker}(T) \neq \{ \mathbf{0}\}[/mathjaxinline]. Then, [mathjaxinline]T[/mathjaxinline] does not satisfy the definition of into.  </font></solution></p></text></problem></p><p>
+<problem display_name="Row Reduction and Into" attrib_string="url_name=&quot;b1intoonto-tab8-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="287" tex_filename="./block1/intoonto.tex"><text><p>
 Let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. </p><p>
 [mathjaxinline]T[/mathjaxinline] is into if and only if [mathjaxinline]A[/mathjaxinline] row reduces to have... </p><p>
 <multiplechoiceresponse>
@@ -2802,11 +2826,11 @@ Let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a
     </choice>
   </choicegroup>
 </multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue">  </font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"> Suppose that [mathjaxinline]T[/mathjaxinline] has standard matrix [mathjaxinline]A[/mathjaxinline]. If [mathjaxinline]T[/mathjaxinline] is into if and only if there is a unique solution (in particular [mathjaxinline]\mathbf{0}[/mathjaxinline]) to [mathjaxinline]Ax=\mathbf{0}[/mathjaxinline]. This is true if and only if [mathjaxinline]A[/mathjaxinline] does not have any free variables when row reduced.  </font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Summarizing" attrib_string="url_name=&quot;b1intoonto-vertical9&quot;" refnum="9"><p>
-<video display_name="Summary" youtube_id_1_0="iQUlbQhB1fs" attrib_string="url_name=&quot;b1intoonto-tab9-video1&quot; "></video><html display_name="Into Proposition" attrib_string="url_name=&quot;b1intoonto-tab9-text1&quot;" linenum="310" tex_filename="./block1/intoonto.tex"><p>
+<video display_name="Summary" youtube_id_1_0="iQUlbQhB1fs" attrib_string="url_name=&quot;b1intoonto-tab9-video1&quot; "></video><html display_name="Into Proposition" attrib_string="url_name=&quot;b1intoonto-tab9-text1&quot;" linenum="313" tex_filename="./block1/intoonto.tex"><p>
 <span style="color:#27408C"><b class="bf">Proposition.</b></span> If the linear transformation [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] has standard matrix [mathjaxinline]A[/mathjaxinline], then [mathjaxinline]T[/mathjaxinline] is into if and only if [mathjaxinline]A[/mathjaxinline] has no free variables. It is impossible for [mathjaxinline]T[/mathjaxinline] to be into if [mathjaxinline]n&gt;m[/mathjaxinline]. </p></html></p><p>
-<problem display_name="True or False 2" attrib_string="url_name=&quot;b1intoonto-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="318" tex_filename="./block1/intoonto.tex"><text><p>
+<problem display_name="True or False 2" attrib_string="url_name=&quot;b1intoonto-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="321" tex_filename="./block1/intoonto.tex"><text><p>
 True or False: No linear transformation [mathjaxinline]T: \mathbb R^8 \rightarrow \mathbb R^6[/mathjaxinline] can be into. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="True"/>
@@ -2815,7 +2839,7 @@ True or False: Every linear transformation [mathjaxinline]T: \mathbb R^6 \righta
 <optionresponse>
   <optioninput options="('True','False')" correct="False"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue">  </font></solution></p></text></problem></p></vertical>    </p></sequential> </p></chapter> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"> Since [mathjaxinline]8&gt;6[/mathjaxinline], by the proposition, a tranformation [mathjaxinline]T: \mathbb R^8 \rightarrow \mathbb R^6[/mathjaxinline] cannot be into.<br />If [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline], [mathjaxinline]T[/mathjaxinline] may be into, or it may not be. For an example of the latter, take [mathjaxinline]T[/mathjaxinline] to be the linear transformation taking every [mathjaxinline]v\in \mathbb R^6[/mathjaxinline] to the zero vector, [mathjaxinline]\mathbf{0}\in \mathbb R^8[/mathjaxinline]. In this case, every vector in [mathjaxinline]\mathbb R^6[/mathjaxinline] is in the kernal of [mathjaxinline]T[/mathjaxinline], and thus [mathjaxinline]T[/mathjaxinline] is not into.  </font></solution></p></text></problem></p></vertical>    </p></sequential> </p></chapter> </p><p>
 <chapter display_name="Matrix Operations" attrib_string="url_name=&quot;block2&quot; start=&quot;2018-01-11T16:00&quot;" linenum="380" tex_filename="testcourse.tex" refnum="2"><p>
 <sequential display_name="Matrix Multiplication" attrib_string="due=&quot;2018-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b2matrixmult-sequential&quot;" linenum="392" tex_filename="testcourse.tex" refnum="1"><p>
 <vertical display_name="Page One" attrib_string="url_name=&quot;b2matrixmult-vertical1&quot;" refnum="1"><p>
@@ -2951,12 +2975,12 @@ The previous problems show the following: </p><p>
 <html display_name="Definition of Matrix Product" attrib_string="url_name=&quot;b2matrixmult-tab5-text1&quot;" linenum="181" tex_filename="./block2/matrixmult.tex"><p>
 <span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix, and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix, then [mathjaxinline]AB[/mathjaxinline] is the [mathjaxinline]m\times p[/mathjaxinline] matrix whose [mathjaxinline]i[/mathjaxinline]th column is [mathjaxinline]A[/mathjaxinline] times the [mathjaxinline]i[/mathjaxinline]th column of [mathjaxinline]B[/mathjaxinline]. </p></html></p><p>
 <problem display_name="Which product?" attrib_string="url_name=&quot;b2matrixmult-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="191" tex_filename="./block2/matrixmult.tex"><text><p>
-Consider the matrices </p><table id="a0000000080" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Consider the matrices </p><table id="a0000000085" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]C = \left[\begin{array}{cc} 1 &amp;  -1 \\ 0 &amp;  2 \\ -1 &amp;  1 \end{array} \right].[/mathjax]</td>
 </tr>
 </table><p>
- and </p><table id="a0000000081" class="equation" width="100%" cellspacing="0" cellpadding="7">
+ and </p><table id="a0000000086" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]D = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  1 \\ -1 &amp;  4 &amp;  3 \end{array} \right][/mathjax]</td>
 </tr>

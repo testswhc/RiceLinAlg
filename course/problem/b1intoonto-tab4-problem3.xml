@@ -1,4 +1,4 @@
-<problem display_name="True or False" linenum="151" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="True or False" linenum="153" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 True or False: No linear transformation [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline] can be onto. </p>
@@ -17,7 +17,7 @@ True or False: Every linear transformation [mathjaxinline]T: \mathbb R^8 \righta
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue">  </font>
+        <font color="blue"> Suppose [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Then [mathjaxinline]T[/mathjaxinline] is onto if and only if the columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^8[/mathjaxinline]. But, [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]8\times 6[/mathjaxinline] matrix, and thus cannnot span [mathjaxinline]\mathbb R^8[/mathjaxinline] (to see this, note that if we row reduce [mathjaxinline]A[/mathjaxinline], it can have at most 6 pivots).<br/>Next, suppose that [mathjaxinline]T: \mathbb R^8 \rightarrow \mathbb R^6[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Then [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]6\times 8[/mathjaxinline] matrix. It may be the case that [mathjaxinline]A[/mathjaxinline] row reduces to have strictly less than 6 pivots, and thus, the columns span a proper subspace of [mathjaxinline]\mathbb R^6[/mathjaxinline]. In this case, [mathjaxinline]T[/mathjaxinline] would not be onto.  </font>
       </solution>
     </p>
   </text>

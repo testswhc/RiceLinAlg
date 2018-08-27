@@ -1,8 +1,8 @@
-<problem display_name="Is it onto?" linenum="114" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Is it onto?" linenum="116" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p>
-    <table id="a0000000077" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <table id="a0000000081" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
       <tr>
         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  1 \\ -1 &amp;  4 &amp;  3 \end{array} \right].[/mathjax]</td>
         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -20,7 +20,10 @@ Is [mathjaxinline]T[/mathjaxinline] onto? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+If [mathjaxinline]T[/mathjaxinline] is onto, then every vector in [mathjaxinline]\mathbb R^3[/mathjaxinline] is in the image of [mathjaxinline]T[/mathjaxinline], but recall that we found that the vector [mathjaxinline]\left[\begin{array}{c} 2 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] is not in the image of [mathjaxinline]T[/mathjaxinline]. </p>
+        </font>
       </solution>
     </p>
   </text>

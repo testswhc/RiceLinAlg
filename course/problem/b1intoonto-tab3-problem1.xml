@@ -10,7 +10,10 @@ Suppose [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformat
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+This is equivalent to asking whether there exists [mathjaxinline]v\in V[/mathjaxinline] such that [mathjaxinline]T(v)=w[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>

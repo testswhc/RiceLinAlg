@@ -1,3 +1,3 @@
-<html display_name="Into Definition" linenum="182" tex_filename="./block1/intoonto.tex">
+<html display_name="Into Definition" linenum="185" tex_filename="./block1/intoonto.tex">
   <p><span style="color:#27408C"><b class="bf">Definition.</b></span> A linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], is <span style="color:#99182C"><b class="bf">into</b></span> if, for every [mathjaxinline]u, v\in V[/mathjaxinline] with [mathjaxinline]u\ne v[/mathjaxinline], we have [mathjaxinline]T(u) \ne T(v)[/mathjaxinline]. </p>
 </html>
