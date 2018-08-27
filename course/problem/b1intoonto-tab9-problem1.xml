@@ -1,4 +1,4 @@
-<problem display_name="True or False 2" linenum="318" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="True or False 2" linenum="321" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 True or False: No linear transformation [mathjaxinline]T: \mathbb R^8 \rightarrow \mathbb R^6[/mathjaxinline] can be into. </p>
@@ -17,7 +17,7 @@ True or False: Every linear transformation [mathjaxinline]T: \mathbb R^6 \righta
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue">  </font>
+        <font color="blue"> Since [mathjaxinline]8&gt;6[/mathjaxinline], by the proposition, a tranformation [mathjaxinline]T: \mathbb R^8 \rightarrow \mathbb R^6[/mathjaxinline] cannot be into.<br/>If [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline], [mathjaxinline]T[/mathjaxinline] may be into, or it may not be. For an example of the latter, take [mathjaxinline]T[/mathjaxinline] to be the linear transformation taking every [mathjaxinline]v\in \mathbb R^6[/mathjaxinline] to the zero vector, [mathjaxinline]\mathbf{0}\in \mathbb R^8[/mathjaxinline]. In this case, every vector in [mathjaxinline]\mathbb R^6[/mathjaxinline] is in the kernal of [mathjaxinline]T[/mathjaxinline], and thus [mathjaxinline]T[/mathjaxinline] is not into.  </font>
       </solution>
     </p>
   </text>
