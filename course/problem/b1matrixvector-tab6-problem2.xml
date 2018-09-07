@@ -1,4 +1,4 @@
-<problem display_name="Span as Verb" linenum="399" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Span as Verb" linenum="401" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinline] matrix. The columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ m[/mathjaxinline] if and only if: </p>

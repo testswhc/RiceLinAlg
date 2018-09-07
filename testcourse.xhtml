@@ -1375,13 +1375,13 @@ def VectorEntry(expect, ans):
   		ret['msg'] = 'Wrong input format'
   	return ret 
 </script><p>
-<optionresponse>
-  <optioninput options="('Placeholder')" correct="Placeholder"/>
-</optionresponse> </p><p>
+<customresponse cfn="VectorEntry" expect="[[8],[-1], [18]]">
+  <textline correct_answer="[[8],[-1], [18]]"/>
+</customresponse> </p><p>
 Let [mathjaxinline]y = \left[\begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ay[/mathjaxinline]? </p><p>
-<optionresponse>
-  <optioninput options="('Placeholder')" correct="Placeholder"/>
-</optionresponse> </p><p>
+<customresponse cfn="VectorEntry" expect="[[0],[-1],[3]]">
+  <textline correct_answer="[[0],[-1],[3]]"/>
+</customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  [mathjaxinline]Ax = 1 \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + 2 \left[ \begin{array}{c} 1 \\ 3 \\ 0 \end{array} \right] + 3 \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] + 4 \left[ \begin{array}{c} 1 \\ -1 \\ 1 \end{array} \right][/mathjaxinline] <br /><br /></p><p>
 [mathjaxinline]= \left[ \begin{array}{c} 2 \\ 0 \\ 5 \end{array} \right] + \left[ \begin{array}{c} 2 \\ 6 \\ 0 \end{array} \right] + \left[ \begin{array}{c} 0 \\ -3 \\ 9 \end{array} \right] + \left[ \begin{array}{c} 4 \\ -4 \\ 4 \end{array} \right][/mathjaxinline] <br /><br /></p><p>
@@ -1390,7 +1390,7 @@ Let [mathjaxinline]y = \left[\begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \righ
 [mathjaxinline]= \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] + \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] + \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right] + \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] <br /><br /></p><p>
 [mathjaxinline]= \left[ \begin{array}{c} 0 \\ -1 \\ 3 \end{array} \right][/mathjaxinline] <br /><br /></p><p>
 Note the special nature of vector [mathjaxinline]y[/mathjaxinline]. We can see that the product [mathjaxinline]Ay[/mathjaxinline] will equal the third column of [mathjaxinline]A[/mathjaxinline] for not just this matrix, but any matrix [mathjaxinline]A[/mathjaxinline] with four columns. </p></font></solution></p></text></problem></p><p>
-<problem display_name="Where does it live?" attrib_string="url_name=&quot;b1matrixvector-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="113" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<problem display_name="Where does it live?" attrib_string="url_name=&quot;b1matrixvector-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="115" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Suppose [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]6\times 4[/mathjaxinline] real matrix. In order for the product [mathjaxinline]Ax[/mathjaxinline] to be defined, the vector [mathjaxinline]x[/mathjaxinline] must live in what space? </p><p>
 <multiplechoiceresponse>
   <choicegroup direction="vertical">
@@ -1421,7 +1421,7 @@ The resulting product [mathjaxinline]Ax[/mathjaxinline] will be an element of wh
 </multiplechoiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 For the matrix-vector product to be defined, the number of columns of the first matrix must equal the number of entries in the vector (otherwise, the mechanics just don't work). Our matrix [mathjaxinline]A[/mathjaxinline] has 4 columns, so [mathjaxinline]x[/mathjaxinline] must then live in [mathjaxinline]\mathbb R^4[/mathjaxinline]. <br />Furthermore, if a matrix-vector product is defined, the result will have the same number of rows as the matrix. Our product [mathjaxinline]Ax[/mathjaxinline] will therefore be a vector living in [mathjaxinline]\mathbb R^6[/mathjaxinline]. </p></font></solution></p></text></problem></p><p>
-<problem display_name="Products and Spans" attrib_string="url_name=&quot;b1matrixvector-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="136" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<problem display_name="Products and Spans" attrib_string="url_name=&quot;b1matrixvector-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="138" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 True or false: If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix </p><table id="a0000000052" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp; &amp;  | \\ v_1 &amp;  v_2 &amp;  \cdots &amp;  v_ n \\ | &amp;  | &amp; &amp;  | \end{array} \right],[/mathjax]</td>
@@ -1434,7 +1434,7 @@ True or false: If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times 
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The span of a list of vectors is the set of all linear combinations of those vectors. [mathjaxinline]Ax[/mathjaxinline] is defined to be a linear combination of the columns of [mathjaxinline]A[/mathjaxinline], and so it is in the span of those columns. </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Matrix-Vector Equations" attrib_string="url_name=&quot;b1matrixvector-vertical4&quot;" refnum="4"><p>
-<video display_name="Matrix-Vector Equations" youtube_id_1_0="HeeVmk25QNU" attrib_string="url_name=&quot;b1matrixvector-tab4-video1&quot; "></video><problem display_name="Solving Matrix-Vector Equations" attrib_string="url_name=&quot;b1matrixvector-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="171" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<video display_name="Matrix-Vector Equations" youtube_id_1_0="HeeVmk25QNU" attrib_string="url_name=&quot;b1matrixvector-tab4-video1&quot; "></video><problem display_name="Solving Matrix-Vector Equations" attrib_string="url_name=&quot;b1matrixvector-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="173" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let </p><table id="a0000000053" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{cc} 1 &amp;  2 \\ 1 &amp;  3 \\ 3 &amp;  -1 \end{array} \right] ,[/mathjax]</td>
@@ -1486,7 +1486,7 @@ Let [mathjaxinline]w = \left[\begin{array}{c} 3 \\ -4 \\ 7 \end{array} \right].[
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  We will row reduce the augmented matrix: <br /><br />[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 1 &amp;  3 &amp;  2\\ 3 &amp;  -1 &amp;  16 \end{array} \right][/mathjaxinline] <br /><br />Multiply the first row by -1, and add this to the second row: <br /><br />[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  -1\\ 3 &amp;  -1 &amp;  16 \end{array} \right][/mathjaxinline] <br /><br />Multiply the first row by -3, and add this to the third row: <br /><br />[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  -1\\ 0 &amp;  -7 &amp;  7 \end{array} \right][/mathjaxinline] <br /><br />Multiply the second row by 7, and add this to the third row: <br /><br />[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  -1\\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjaxinline] <br /><br />Multiply the second row by -2, and add this to the first row: <br /><br />[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  0 &amp;  5 \\ 0 &amp;  1 &amp;  -1\\ 0 &amp;  0 &amp;  0 \end{array} \right][/mathjaxinline] <br /><br />Our vector [mathjaxinline]x[/mathjaxinline] is given by the last column. <br /><br />We can perform the same steps to answer the second question:<br /><br />[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 1 &amp;  3 &amp;  -4\\ 3 &amp;  -1 &amp;  7 \end{array} \right][/mathjaxinline] <br /><br />[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  -7\\ 3 &amp;  -1 &amp;  7 \end{array} \right][/mathjaxinline] <br /><br />[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  -7\\ 0 &amp;  -7 &amp;  -2 \end{array} \right][/mathjaxinline] <br /><br />[mathjaxinline]\left[\begin{array}{cc:c} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  -7\\ 0 &amp;  0 &amp;  -51 \end{array} \right][/mathjaxinline] <br /><br />We can stop here. The last row of the augmented matrix implies the equation [mathjaxinline]x_1 \cdot 0 + x_2 \cdot 0 = -51[/mathjaxinline], which has no solution. Therefore, the original equation has no solution.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Another Matrix-Vector Equation" attrib_string="url_name=&quot;b1matrixvector-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="215" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<problem display_name="Another Matrix-Vector Equation" attrib_string="url_name=&quot;b1matrixvector-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="217" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinline] matrix with columns [mathjaxinline]v_1, v_2, v_3, v_4[/mathjaxinline]. That is, </p><table id="a0000000054" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp;  | &amp;  | \\ v_1 &amp;  v_2 &amp;  v_3 &amp;  v_4 \\ | &amp;  | &amp;  | &amp;  | \end{array} \right].[/mathjax]</td>
@@ -1534,7 +1534,7 @@ def VectorEntry(expect, ans):
 </customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  We need not perform any row reduction here. Our desired result [mathjaxinline]v_2[/mathjaxinline] can be written <br /><br />[mathjaxinline]0v_1 + 1 v_2 + 0 v_3 + 0 v_4[/mathjaxinline] , so <br /><br />[mathjaxinline]x = \left[ \begin{array}{c} 0 \\ 1 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] is a solution to the equation. </p></font></solution></p></text></problem></p><p>
-<problem display_name="Always Consistent?" attrib_string="url_name=&quot;b1matrixvector-tab4-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="240" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<problem display_name="Always Consistent?" attrib_string="url_name=&quot;b1matrixvector-tab4-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="242" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. There is a specific vector [mathjaxinline]v[/mathjaxinline] for which you can conclude the equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution, even without knowing anything else about [mathjaxinline]A[/mathjaxinline]. What is this vector [mathjaxinline]v[/mathjaxinline]? </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
@@ -1578,7 +1578,7 @@ def VectorEntry(expect, ans):
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] always has at least one solution, namely [mathjaxinline]x = \mathbf{0}[/mathjaxinline]. Since [mathjaxinline]A[/mathjaxinline] has 4 columns, [mathjaxinline]v[/mathjaxinline] is the zero vector in [mathjaxinline]\mathbb R^4[/mathjaxinline] specifically. </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Solution Sets" attrib_string="url_name=&quot;b1matrixvector-vertical5&quot;" refnum="5"><p>
-<video display_name="Solving Ax = 0" youtube_id_1_0="HeeVmk25QNU" attrib_string="url_name=&quot;b1matrixvector-tab5-video1&quot; "></video><problem display_name="Non-trivial Solutions" attrib_string="url_name=&quot;b1matrixvector-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="277" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<video display_name="Solving Ax = 0" youtube_id_1_0="HeeVmk25QNU" attrib_string="url_name=&quot;b1matrixvector-tab5-video1&quot; "></video><problem display_name="Non-trivial Solutions" attrib_string="url_name=&quot;b1matrixvector-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="279" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinline] matrix. The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has the solution [mathjaxinline]x = \mathbf{0}[/mathjaxinline], which we call the <span style="color:#99182C"><b class="bf">trivial solution.</b></span> If there are no solutions other than the trivial solutions, how many pivots must [mathjaxinline]A[/mathjaxinline] have when row-reduced? </p><p>
 <numericalresponse answer="4">
   <textline>
@@ -1587,7 +1587,7 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinlin
 </numericalresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  The vector [mathjaxinline]x[/mathjaxinline] lives in [mathjaxinline]\mathbb R^4[/mathjaxinline], so there are four variables in this equation. If the trivial solution is the unique solution, then we cannot have free variables when the augmented matrix [mathjaxinline]\left[ \begin{array}{c:c} A &amp;  \mathbf{0}\end{array} \right][/mathjaxinline] is row-reduced. That means [mathjaxinline]A[/mathjaxinline] will have a pivot in each of its four columns.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Find a Solution Set" attrib_string="url_name=&quot;b1matrixvector-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="303" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<problem display_name="Find a Solution Set" attrib_string="url_name=&quot;b1matrixvector-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="305" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let </p><table id="a0000000055" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{cccc} 1 &amp;  1 &amp;  0 &amp;  -1\\ 5 &amp;  6 &amp;  -1 &amp;  1 \end{array} \right].[/mathjax]</td>
@@ -1607,7 +1607,7 @@ Hence the general solution is </p><table id="a0000000056" class="equation" width
 </table><p>
  for any [mathjaxinline]x_3,\x _4 \in \mathbb R[/mathjaxinline]. Hence the set of solutions is the span of [mathjaxinline]\left\{  \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array} \right]; \left[ \begin{array}{c} 7 \\ -6 \\ 0 \\ 1 \end{array} \right]\} .[/mathjaxinline] </p><p>
 (Note that this is not the only list that spans the solution set, but it is the one that is simplest to find.) </p></font></solution></p></text></problem></p><p>
-<problem display_name="Other Solution Sets" attrib_string="url_name=&quot;b1matrixvector-tab5-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="350" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<problem display_name="Other Solution Sets" attrib_string="url_name=&quot;b1matrixvector-tab5-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="352" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 True or false: If [mathjaxinline]S[/mathjaxinline] is the solution set to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline], then the solution set to [mathjaxinline]Ax = v[/mathjaxinline] must be a translation of [mathjaxinline]S[/mathjaxinline]. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="False"/>
@@ -1616,14 +1616,14 @@ True or false: If [mathjaxinline]S[/mathjaxinline] is the solution set to [mathj
 If the solution set to [mathjaxinline]Ax = v[/mathjaxinline] is empty (i.e. if [mathjaxinline]v[/mathjaxinline] is not a linear combination of the columns of [mathjaxinline]A[/mathjaxinline]), then it can't be a translation of [mathjaxinline]S[/mathjaxinline], which is sure to contain at least one solution (the zero vector). </p><p>
 If [mathjaxinline]Ax = v[/mathjaxinline] is consistent, then the solution set will be a translation of [mathjaxinline]S[/mathjaxinline]. </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Spans and Matrix-Vector Equations" attrib_string="url_name=&quot;b1matrixvector-vertical6&quot;" refnum="6"><p>
-<problem display_name="Span as Noun" attrib_string="url_name=&quot;b1matrixvector-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="380" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<problem display_name="Span as Noun" attrib_string="url_name=&quot;b1matrixvector-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="382" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinline] matrix. A vector [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline] if and only the equation [mathjaxinline]Ax = v[/mathjaxinline] has: </p><p>
 <optionresponse>
   <optioninput options="('no solutions','exactly one solution','at least one solution','more than one solution')" correct="at least one solution"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  The vector [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline] if there is at least one way to write it as a linear combination of the columns of [mathjaxinline]A[/mathjaxinline], or in other words if there is at least one [mathjaxinline]x[/mathjaxinline] which satisfies [mathjaxinline]Ax = v[/mathjaxinline]. </p></font></solution></p></text></problem></p><p>
-<problem display_name="Span as Verb" attrib_string="url_name=&quot;b1matrixvector-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="399" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<problem display_name="Span as Verb" attrib_string="url_name=&quot;b1matrixvector-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="401" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinline] matrix. The columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ m[/mathjaxinline] if and only if: </p><p>
 <multiplechoiceresponse>
   <choicegroup direction="vertical">
@@ -1649,7 +1649,7 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinlin
 </multiplechoiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  In order for the columns of [mathjaxinline]A[/mathjaxinline] to span [mathjaxinline]\mathbb R^ m[/mathjaxinline], every vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline] needs to be in the span of the columns. By the previous problem, this is equivalent to having at least one solution to the equation [mathjaxinline]Ax=v[/mathjaxinline] for every vector [mathjaxinline]v \in \mathbb R^ m[/mathjaxinline]. </p></font></solution></p></text></problem></p><p>
-<problem display_name="Always has Solutions" attrib_string="url_name=&quot;b1matrixvector-tab6-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="418" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<problem display_name="Always has Solutions" attrib_string="url_name=&quot;b1matrixvector-tab6-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="420" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 In light of the previous problem, for which sizes of matrix [mathjaxinline]A[/mathjaxinline] would it be impossible for [mathjaxinline]Ax = v[/mathjaxinline] to have at least one solution for every [mathjaxinline]v \in \mathbb R^5[/mathjaxinline]? Click all that apply. </p><p>
 <choiceresponse>
   <checkboxgroup>
@@ -1670,7 +1670,7 @@ In light of the previous problem, for which sizes of matrix [mathjaxinline]A[/ma
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  If there are fewer than 5 columns, then it is impossible for the columns of [mathjaxinline]A[/mathjaxinline] to span [mathjaxinline]\mathbb R^5[/mathjaxinline]. Therefore, by the previous problem, the equation [mathjaxinline]Ax=v[/mathjaxinline] cannot be consistent for every [mathjaxinline]v\in \mathbb R^5[/mathjaxinline]; there must be some vectors [mathjaxinline]v\in \mathbb R^5[/mathjaxinline] for which it is inconsistent. </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Multiplication Properties" attrib_string="url_name=&quot;b1matrixvector-vertical7&quot;" refnum="7"><p>
-<video display_name="Why do we call it multiplication?" youtube_id_1_0="e67R6kfSRo4" attrib_string="url_name=&quot;b1matrixvector-tab7-video1&quot; "></video><html display_name="Properties of Matrix Multiplication" attrib_string="url_name=&quot;b1matrixvector-tab7-text1&quot;" linenum="449" tex_filename="./block1/matrixtimesvector.tex"><p>
+<video display_name="Why do we call it multiplication?" youtube_id_1_0="e67R6kfSRo4" attrib_string="url_name=&quot;b1matrixvector-tab7-video1&quot; "></video><html display_name="Properties of Matrix Multiplication" attrib_string="url_name=&quot;b1matrixvector-tab7-text1&quot;" linenum="451" tex_filename="./block1/matrixtimesvector.tex"><p>
 For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathjaxinline], vectors [mathjaxinline]w,x \in \mathbb R^ n[/mathjaxinline], and scalar [mathjaxinline]a[/mathjaxinline], we have that </p><table id="a0000000057" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A(w+x) = Aw + Ax[/mathjax]</td>
@@ -1681,7 +1681,7 @@ For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathja
     <td class="equation">[mathjax]A(ax) = a(Ax).[/mathjax]</td>
 </tr>
 </table></html></p><p>
-<problem display_name="Consistent Matrix-Vector Equations" attrib_string="url_name=&quot;b1matrixvector-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="458" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<problem display_name="Consistent Matrix-Vector Equations" attrib_string="url_name=&quot;b1matrixvector-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="460" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline], and suppose that [mathjaxinline]x = \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = w[/mathjaxinline]. </p><p>
 Find a solution to the equation [mathjaxinline]Ax = v+w[/mathjaxinline]. </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
@@ -1725,7 +1725,7 @@ def VectorEntry(expect, ans):
 </customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  We are given: <br /><br />[mathjaxinline]A \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] = v[/mathjaxinline] <br /><br />[mathjaxinline]A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = w[/mathjaxinline] <br /><br />Adding these equations, we get <br /><br />[mathjaxinline]A t \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = v + w[/mathjaxinline] <br /><br />[mathjaxinline]A \Bigg( \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] \Bigg) = v + w[/mathjaxinline] <br /><br />[mathjaxinline]A \left[\begin{array}{c} 3 \\ 1 \\ 7 \end{array} \right] = v + w[/mathjaxinline] <br /><br /></p></font></solution></p></text></problem></p><p>
-<problem display_name="Consistent Matrix-Vector Equations 2" attrib_string="url_name=&quot;b1matrixvector-tab7-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="489" tex_filename="./block1/matrixtimesvector.tex"><text><p>
+<problem display_name="Consistent Matrix-Vector Equations 2" attrib_string="url_name=&quot;b1matrixvector-tab7-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="491" tex_filename="./block1/matrixtimesvector.tex"><text><p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that the equation [mathjaxinline]Ax = v[/mathjaxinline] is consistent. Must the equation [mathjaxinline]Ax = 4v[/mathjaxinline] be consistent? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="Yes"/>
@@ -2750,13 +2750,13 @@ True or False: Every linear transformation [mathjaxinline]T: \mathbb R^8 \righta
 <optionresponse>
   <optioninput options="('True','False')" correct="False"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"> Suppose [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Then [mathjaxinline]T[/mathjaxinline] is onto if and only if the columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^8[/mathjaxinline]. But, [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]8\times 6[/mathjaxinline] matrix, and thus cannnot span [mathjaxinline]\mathbb R^8[/mathjaxinline] (to see this, note that if we row reduce [mathjaxinline]A[/mathjaxinline], it can have at most 6 pivots).<br />Next, suppose that [mathjaxinline]T: \mathbb R^8 \rightarrow \mathbb R^6[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Then [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]6\times 8[/mathjaxinline] matrix. It may be the case that [mathjaxinline]A[/mathjaxinline] row reduces to have strictly less than 6 pivots, and thus, the columns span a proper subspace of [mathjaxinline]\mathbb R^6[/mathjaxinline]. In this case, [mathjaxinline]T[/mathjaxinline] would not be onto.  </font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"> Suppose [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline] is a linear transformation. From the video, since [mathjaxinline]6&lt;8[/mathjaxinline], [mathjaxinline]T[/mathjaxinline] cannot be onto. <br />A linear transformation from [mathjaxinline]\mathbb R^8[/mathjaxinline] to [mathjaxinline]\mathbb R^6[/mathjaxinline] might be onto, but it might not be. For instance, the map sending everything to [mathjaxinline]\mathbf{0}[/mathjaxinline] is a linear transformation which is not onto.  </font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Into" attrib_string="url_name=&quot;b1intoonto-vertical5&quot;" refnum="5"><p>
 <video display_name="Into" youtube_id_1_0="4go4BarPvvY" attrib_string="url_name=&quot;b1intoonto-tab5-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Into Definition and Exercise" attrib_string="url_name=&quot;b1intoonto-vertical6&quot;" refnum="6"><p>
-<html display_name="Into Definition" attrib_string="url_name=&quot;b1intoonto-tab6-text1&quot;" linenum="185" tex_filename="./block1/intoonto.tex"><p>
+<html display_name="Into Definition" attrib_string="url_name=&quot;b1intoonto-tab6-text1&quot;" linenum="191" tex_filename="./block1/intoonto.tex"><p>
 <span style="color:#27408C"><b class="bf">Definition.</b></span> A linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], is <span style="color:#99182C"><b class="bf">into</b></span> if, for every [mathjaxinline]u, v\in V[/mathjaxinline] with [mathjaxinline]u\ne v[/mathjaxinline], we have [mathjaxinline]T(u) \ne T(v)[/mathjaxinline]. </p></html></p><p>
-<problem display_name="Is it into?" attrib_string="url_name=&quot;b1intoonto-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="194" tex_filename="./block1/intoonto.tex"><text><p>
+<problem display_name="Is it into?" attrib_string="url_name=&quot;b1intoonto-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="200" tex_filename="./block1/intoonto.tex"><text><p>
 Let [mathjaxinline]V[/mathjaxinline] be a vector space over [mathjaxinline]\mathbb R[/mathjaxinline], and let [mathjaxinline]T: V\rightarrow V[/mathjaxinline] be given by [mathjaxinline]T(v) = 2v[/mathjaxinline]. </p><p>
 If we know that [mathjaxinline]T(u) = T(v)[/mathjaxinline], must it be true that [mathjaxinline]u = v[/mathjaxinline]? </p><p>
 <optionresponse>
@@ -2770,21 +2770,21 @@ Is [mathjaxinline]T[/mathjaxinline] into? </p><p>
 <vertical display_name="Kernel" attrib_string="url_name=&quot;b1intoonto-vertical7&quot;" refnum="7"><p>
 <video display_name="Kernel of a Linear Transformation" youtube_id_1_0="2jd2BhcEOyE" attrib_string="url_name=&quot;b1intoonto-tab7-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Kernel Definition and Questions" attrib_string="url_name=&quot;b1intoonto-vertical8&quot;" refnum="8"><p>
-<html display_name="Kernel Definition" attrib_string="url_name=&quot;b1intoonto-tab8-text1&quot;" linenum="230" tex_filename="./block1/intoonto.tex"><p>
+<html display_name="Kernel Definition" attrib_string="url_name=&quot;b1intoonto-tab8-text1&quot;" linenum="236" tex_filename="./block1/intoonto.tex"><p>
 <span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">kernel</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p><table id="a0000000082" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\mathrm{Ker}(T) = \left\{  v\in V \  : T(v) = \mathbf{0}\} .[/mathjax]</td>
 </tr>
 </table><p>
 <span style="color:#27408C"><b class="bf">Proposition.</b></span> A linear transformation [mathjaxinline]T: V \rightarrow W[/mathjaxinline] is into if and only if [mathjaxinline]\mathrm{Ker}(T) = \{  \mathbf{0}\}[/mathjaxinline]. </p></html></p><p>
-<problem display_name="Existence vs. Uniqueness" attrib_string="url_name=&quot;b1intoonto-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="244" tex_filename="./block1/intoonto.tex"><text><p>
+<problem display_name="Existence vs. Uniqueness" attrib_string="url_name=&quot;b1intoonto-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="250" tex_filename="./block1/intoonto.tex"><text><p>
 Suppose [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformation. Is the question of whether [mathjaxinline]T[/mathjaxinline] is into an existence question or a uniqueness question? </p><p>
 <optionresponse>
   <optioninput options="('Existence','Uniqueness')" correct="Uniqueness"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
-The question of whether [mathjaxinline]T[/mathjaxinline] is into is equivalent to asking if [mathjaxinline]\mathrm{Ker}(T) = \{  \mathbf{0}\}[/mathjaxinline]. This is equivalent to asking if [mathjaxinline]\mathbf{0}[/mathjaxinline] is the unique element in [mathjaxinline]\mathrm{Ker}(T)[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Is it into? 2" attrib_string="url_name=&quot;b1intoonto-tab8-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="259" tex_filename="./block1/intoonto.tex"><text><p>
+[mathjaxinline]T[/mathjaxinline] is into if, for any [mathjaxinline]v[/mathjaxinline], the equation [mathjaxinline]T(x) = v[/mathjaxinline] never has more than one solution. This is a uniqueness question.  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Is it into? 2" attrib_string="url_name=&quot;b1intoonto-tab8-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="267" tex_filename="./block1/intoonto.tex"><text><p>
 Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^4[/mathjaxinline] be the linear transformation with standard matrix </p><table id="a0000000083" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  5 \\ 0 &amp;  1 &amp;  2 \\ -1 &amp;  1 &amp;  1 \\ 2 &amp;  -1 &amp;  0 \end{array} \right].[/mathjax]</td>
@@ -2806,8 +2806,8 @@ Is [mathjaxinline]T[/mathjaxinline] into? </p><p>
 <tr>
     <td class="equation">[mathjax]\left[\begin{array}{ccc} 1 &amp;  0 &amp;  1 \\ 0 &amp;  1 &amp;  2 \\ 0&amp; 0&amp; 0 \\ 0&amp; 0&amp; 0 \end{array} \right].[/mathjax]</td>
 </tr>
-</table> Thus, when augmented with the zero vector, there are infinitely many solutions. This also tells us that [mathjaxinline]\mathbf{0}[/mathjaxinline] is not the only solution to [mathjaxinline]Ax=\mathbf{0}[/mathjaxinline], and thus [mathjaxinline]\mathrm{Ker}(T) \neq \{ \mathbf{0}\}[/mathjaxinline]. Then, [mathjaxinline]T[/mathjaxinline] does not satisfy the definition of into.  </font></solution></p></text></problem></p><p>
-<problem display_name="Row Reduction and Into" attrib_string="url_name=&quot;b1intoonto-tab8-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="287" tex_filename="./block1/intoonto.tex"><text><p>
+</table> Thus, when augmented with the zero vector, there are infinitely many solutions. This also tells us that [mathjaxinline]\mathbf{0}[/mathjaxinline] is not the only solution to [mathjaxinline]Ax=\mathbf{0}[/mathjaxinline], and thus [mathjaxinline]\mathrm{Ker}(T) \neq \{ \mathbf{0}\}[/mathjaxinline]. Since [mathjaxinline]T[/mathjaxinline] sends multiple vectors to [mathjaxinline]\mathbf{0}[/mathjaxinline], [mathjaxinline]T[/mathjaxinline] does not satisfy the definition of into.  </font></solution></p></text></problem></p><p>
+<problem display_name="Row Reduction and Into" attrib_string="url_name=&quot;b1intoonto-tab8-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="296" tex_filename="./block1/intoonto.tex"><text><p>
 Let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. </p><p>
 [mathjaxinline]T[/mathjaxinline] is into if and only if [mathjaxinline]A[/mathjaxinline] row reduces to have... </p><p>
 <multiplechoiceresponse>
@@ -2826,11 +2826,11 @@ Let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a
     </choice>
   </choicegroup>
 </multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"> Suppose that [mathjaxinline]T[/mathjaxinline] has standard matrix [mathjaxinline]A[/mathjaxinline]. If [mathjaxinline]T[/mathjaxinline] is into if and only if there is a unique solution (in particular [mathjaxinline]\mathbf{0}[/mathjaxinline]) to [mathjaxinline]Ax=\mathbf{0}[/mathjaxinline]. This is true if and only if [mathjaxinline]A[/mathjaxinline] does not have any free variables when row reduced.  </font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"> Suppose that [mathjaxinline]T[/mathjaxinline] has standard matrix [mathjaxinline]A[/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] is into if and only if there is a unique solution (in particular [mathjaxinline]\mathbf{0}[/mathjaxinline]) to [mathjaxinline]Ax=\mathbf{0}[/mathjaxinline]. This is true if and only if [mathjaxinline]A[/mathjaxinline] does not have any free variables when row reduced.  </font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Summarizing" attrib_string="url_name=&quot;b1intoonto-vertical9&quot;" refnum="9"><p>
-<video display_name="Summary" youtube_id_1_0="iQUlbQhB1fs" attrib_string="url_name=&quot;b1intoonto-tab9-video1&quot; "></video><html display_name="Into Proposition" attrib_string="url_name=&quot;b1intoonto-tab9-text1&quot;" linenum="313" tex_filename="./block1/intoonto.tex"><p>
+<video display_name="Summary" youtube_id_1_0="iQUlbQhB1fs" attrib_string="url_name=&quot;b1intoonto-tab9-video1&quot; "></video><html display_name="Into Proposition" attrib_string="url_name=&quot;b1intoonto-tab9-text1&quot;" linenum="322" tex_filename="./block1/intoonto.tex"><p>
 <span style="color:#27408C"><b class="bf">Proposition.</b></span> If the linear transformation [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] has standard matrix [mathjaxinline]A[/mathjaxinline], then [mathjaxinline]T[/mathjaxinline] is into if and only if [mathjaxinline]A[/mathjaxinline] has no free variables. It is impossible for [mathjaxinline]T[/mathjaxinline] to be into if [mathjaxinline]n&gt;m[/mathjaxinline]. </p></html></p><p>
-<problem display_name="True or False 2" attrib_string="url_name=&quot;b1intoonto-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="321" tex_filename="./block1/intoonto.tex"><text><p>
+<problem display_name="True or False 2" attrib_string="url_name=&quot;b1intoonto-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="330" tex_filename="./block1/intoonto.tex"><text><p>
 True or False: No linear transformation [mathjaxinline]T: \mathbb R^8 \rightarrow \mathbb R^6[/mathjaxinline] can be into. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="True"/>
@@ -2839,7 +2839,7 @@ True or False: Every linear transformation [mathjaxinline]T: \mathbb R^6 \righta
 <optionresponse>
   <optioninput options="('True','False')" correct="False"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"> Since [mathjaxinline]8&gt;6[/mathjaxinline], by the proposition, a tranformation [mathjaxinline]T: \mathbb R^8 \rightarrow \mathbb R^6[/mathjaxinline] cannot be into.<br />If [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline], [mathjaxinline]T[/mathjaxinline] may be into, or it may not be. For an example of the latter, take [mathjaxinline]T[/mathjaxinline] to be the linear transformation taking every [mathjaxinline]v\in \mathbb R^6[/mathjaxinline] to the zero vector, [mathjaxinline]\mathbf{0}\in \mathbb R^8[/mathjaxinline]. In this case, every vector in [mathjaxinline]\mathbb R^6[/mathjaxinline] is in the kernal of [mathjaxinline]T[/mathjaxinline], and thus [mathjaxinline]T[/mathjaxinline] is not into.  </font></solution></p></text></problem></p></vertical>    </p></sequential> </p></chapter> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"> Since [mathjaxinline]8&gt;6[/mathjaxinline], by the proposition, a transformation [mathjaxinline]T: \mathbb R^8 \rightarrow \mathbb R^6[/mathjaxinline] cannot be into.<br />If [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline], [mathjaxinline]T[/mathjaxinline] may be into, or it may not be. For an example of the latter, take [mathjaxinline]T[/mathjaxinline] to be the linear transformation taking every [mathjaxinline]v\in \mathbb R^6[/mathjaxinline] to the zero vector, [mathjaxinline]\mathbf{0}\in \mathbb R^8[/mathjaxinline]. In this case, every vector in [mathjaxinline]\mathbb R^6[/mathjaxinline] is in the kernel of [mathjaxinline]T[/mathjaxinline], and thus [mathjaxinline]T[/mathjaxinline] is not into.  </font></solution></p></text></problem></p></vertical>    </p></sequential> </p></chapter> </p><p>
 <chapter display_name="Matrix Operations" attrib_string="url_name=&quot;block2&quot; start=&quot;2018-01-11T16:00&quot;" linenum="380" tex_filename="testcourse.tex" refnum="2"><p>
 <sequential display_name="Matrix Multiplication" attrib_string="due=&quot;2018-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b2matrixmult-sequential&quot;" linenum="392" tex_filename="testcourse.tex" refnum="1"><p>
 <vertical display_name="Page One" attrib_string="url_name=&quot;b2matrixmult-vertical1&quot;" refnum="1"><p>
@@ -3155,6 +3155,350 @@ to conclude that </p><p>
   <optioninput options="('S is into','T is into')" correct="T is into" inline="1"/>
 </optionresponse> </p><p>
 to give us our desired conclusion that [mathjaxinline]T\circ S(u) \ne T\circ S(v)[/mathjaxinline]. Therefore [mathjaxinline]T\circ S[/mathjaxinline] is into, and we have proven our proposition! </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>    </p></sequential> </p><p>
+<sequential display_name="Matrix Inverses" attrib_string="due=&quot;2018-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b2matrixinv-sequential&quot;" linenum="429" tex_filename="testcourse.tex" refnum="2"><p>
+<vertical display_name="Page One" attrib_string="url_name=&quot;b2matrixinv-vertical1&quot;" refnum="1"><p>
+<html display_name="Preliminaries" attrib_string="url_name=&quot;b2matrixinv-tab1-text1&quot;" linenum="5" tex_filename="./block2/matrixinv.tex"><p>
+At the end of this sequence, and after some practice, you should be able to: </p><ul class="itemize">
+
+<li><p>
+Calculate the inverse of a matrix. </p></li>
+<li><p>
+Recognize conditions under which a matrix is invertible. </p></li>
+<li><p>
+Use inverses to solve matrix equations. </p></li>
+</ul><p>
+For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p></html></p></vertical>   </p><p>
+<vertical display_name="What is an inverse function?" attrib_string="url_name=&quot;b2matrixinv-vertical2&quot;" refnum="2"><p>
+<problem display_name="Cube roots" attrib_string="url_name=&quot;b2matrixinv-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="34" tex_filename="./block2/matrixinv.tex"><text><p>
+If [mathjaxinline]\  f(x) = x^3[/mathjaxinline], then here are some values of [mathjaxinline]\  f[/mathjaxinline]: </p><table id="a0000000087" cellpadding="7" width="100%" cellspacing="0" class="eqnarray">
+<tr id="a0000000088">
+    
+    <td style="width:40%">&#160;</td>
+    
+    
+        <td style="vertical-align:middle;                                    text-align:right">
+	    [mathjaxinline]\displaystyle  f(-11)[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:left">
+	    [mathjaxinline]\displaystyle = -1331[/mathjaxinline]
+        </td>
+    
+    
+    
+    <td style="width:40%">&#160;</td>
+    <td style="width:20%" class="eqnnum">&#160;</td>
+</tr><tr id="a0000000089">
+    
+    <td style="width:40%">&#160;</td>
+    
+    
+        <td style="vertical-align:middle;                                    text-align:right">
+	    [mathjaxinline]\displaystyle f(12)[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:left">
+	    [mathjaxinline]\displaystyle = 1728[/mathjaxinline]
+        </td>
+    
+    
+    
+    <td style="width:40%">&#160;</td>
+    <td style="width:20%" class="eqnnum">&#160;</td>
+</tr><tr id="a0000000090">
+    
+    <td style="width:40%">&#160;</td>
+    
+    
+        <td style="vertical-align:middle;                                    text-align:right">
+	    [mathjaxinline]\displaystyle f(-13)[/mathjaxinline]
+        </td>
+    
+    
+    
+        <td style="vertical-align:middle;                                    text-align:left">
+	    [mathjaxinline]\displaystyle = -2197.[/mathjaxinline]
+        </td>
+    
+    
+    
+    <td style="width:40%">&#160;</td>
+    <td style="width:20%" class="eqnnum">&#160;</td>
+</tr>
+</table><p>
+Let [mathjaxinline]g(y) = \displaystyle {\sqrt [3]{y}}[/mathjaxinline]. What is [mathjaxinline]g(-2197)[/mathjaxinline]? </p><p>
+<numericalresponse answer="-13">
+  <textline>
+    <responseparam type="tolerance" default="0.00001"/>
+  </textline>
+</numericalresponse> </p></text></problem></p><p>
+<video display_name="Inverse Transformations and Matrices" youtube_id_1_0="gv2efnioewc" attrib_string="url_name=&quot;b2matrixinv-tab2-video1&quot; "></video></p></vertical>   </p><p>
+<vertical display_name="Inverse Definitions" attrib_string="url_name=&quot;b2matrixinv-vertical3&quot;" refnum="3"><p>
+<html display_name="Inverse Definitions" attrib_string="url_name=&quot;b2matrixinv-tab3-text1&quot;" linenum="54" tex_filename="./block2/matrixinv.tex"><p>
+<span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]T: V \rightarrow W[/mathjaxinline] and [mathjaxinline]S: W \rightarrow V[/mathjaxinline] are linear transformations, we say that [mathjaxinline]S[/mathjaxinline] and [mathjaxinline]T[/mathjaxinline] are <span style="color:#99182C"><b class="bf">inverses</b></span> of one another if [mathjaxinline]S(T(v)) = v[/mathjaxinline] for all [mathjaxinline]v\in V[/mathjaxinline], and [mathjaxinline]T(S(w)) = w[/mathjaxinline] for all [mathjaxinline]w\in W[/mathjaxinline]. If this is the case, we can write [mathjaxinline]S = T^{-1}[/mathjaxinline] and [mathjaxinline]T = S^{-1}[/mathjaxinline]. </p><p>
+If [mathjaxinline]S = T^{-1}[/mathjaxinline] exists we say that [mathjaxinline]T[/mathjaxinline] is <span style="color:#99182C"><b class="bf">invertible</b></span>. </p><p>
+<span style="color:#27408C"><b class="bf">Proposition.</b></span> A linear transformation [mathjaxinline]T[/mathjaxinline] is invertible if and only if it is both into and onto. </p><p>
+<span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times m[/mathjaxinline] matrix, we say that [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are <span style="color:#99182C"><b class="bf">inverses</b></span> of one another if [mathjaxinline]AB = I_ m[/mathjaxinline] and [mathjaxinline]BA = I_ n[/mathjaxinline]. If this is the case, we can write [mathjaxinline]B = A^{-1}[/mathjaxinline] and [mathjaxinline]B = A^{-1}[/mathjaxinline]. </p><p>
+If [mathjaxinline]B = A^{-1}[/mathjaxinline] exists we say that [mathjaxinline]A[/mathjaxinline] is <span style="color:#99182C"><b class="bf">invertible</b></span>. </p></html></p></vertical>   </p><p>
+<vertical display_name="Into, Onto, and Invertibility" attrib_string="url_name=&quot;b2matrixinv-vertical4&quot;" refnum="4"><p>
+<problem display_name="Into and Onto" attrib_string="url_name=&quot;b2matrixinv-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="90" tex_filename="./block2/matrixinv.tex"><text><p>
+We've noted that a linear transformation has an inverse if and only if it is both into and onto. Let's recall our results about when a linear transformation from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline] can or must be into or onto. </p><p>
+Suppose [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation. </p><p>
+If [mathjaxinline]n&lt;m[/mathjaxinline], what can we conclude about [mathjaxinline]T[/mathjaxinline]? </p><p>
+<optionresponse>
+  <optioninput options="('T must be into','T might be into, or might not','T cannot be into')" correct="T might be into, or might not"/>
+</optionresponse> </p><p>
+<optionresponse>
+  <optioninput options="('T must be onto','T might be onto, or might not','T cannot be onto')" correct="T cannot be onto"/>
+</optionresponse> </p><p>
+If [mathjaxinline]n&gt;m[/mathjaxinline], what can we conclude about [mathjaxinline]T[/mathjaxinline]? </p><p>
+<optionresponse>
+  <optioninput options="('T must be into','T might be into, or might not','T cannot be into')" correct="T cannot be into"/>
+</optionresponse> </p><p>
+<optionresponse>
+  <optioninput options="('T must be onto','T might be onto, or might not','T cannot be onto')" correct="T might be onto, or might not"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="When is invertible possible?" attrib_string="url_name=&quot;b2matrixinv-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="125" tex_filename="./block2/matrixinv.tex"><text><p>
+Again, let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a linear transformation. Given the above, if [mathjaxinline]n&lt;m[/mathjaxinline], is it possible for [mathjaxinline]T[/mathjaxinline] to be invertible? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="No"/>
+</optionresponse> </p><p>
+If [mathjaxinline]n&gt;m[/mathjaxinline], is it possible for [mathjaxinline]T[/mathjaxinline] to be invertible? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="No"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Conditions for Invertibility" attrib_string="url_name=&quot;b2matrixinv-vertical5&quot;" refnum="5"><p>
+<video display_name="Conditions for Invertibility" youtube_id_1_0="pYqavDw0wt4" attrib_string="url_name=&quot;b2matrixinv-tab5-video1&quot; "></video><problem display_name="Square Matrices" attrib_string="url_name=&quot;b2matrixinv-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="155" tex_filename="./block2/matrixinv.tex"><text><p>
+True or False: If a matrix [mathjaxinline]A[/mathjaxinline] is not square, it cannot be invertible. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="True"/>
+</optionresponse> </p><p>
+True or False: If a matrix [mathjaxinline]A[/mathjaxinline] is square, it must be invertible. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="False"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"> Watch the last video again! Non-square matrices cannot be invertible, but not every square matrix is invertible. For instance, a square matrix of all zeros is not invertible.  </font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Invertible Matrix Theorem" attrib_string="url_name=&quot;b2matrixinv-vertical6&quot;" refnum="6"><p>
+<html display_name="Inverse Definitions" attrib_string="url_name=&quot;b2matrixinv-tab6-text1&quot;" linenum="180" tex_filename="./block2/matrixinv.tex"><p>
+<span style="color:#27408C"><b class="bf">Invertible Matrix Theorem.</b></span> Suppose that [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ n[/mathjaxinline] is a linear transformation with (square) standard matrix [mathjaxinline]A[/mathjaxinline]. Then the following conditions are all equivalent (i.e., either all of them are true, or all of them are false): </p><ol class="enumerate">
+<li value="1"><p>
+[mathjaxinline]T[/mathjaxinline] is into. </p></li><li value="2"><p>
+[mathjaxinline]\mathrm{Ker}(T) = \{  \mathbf{0}\}[/mathjaxinline]. </p></li><li value="3"><p>
+The columns of [mathjaxinline]A[/mathjaxinline] are linearly independent. </p></li><li value="4"><p>
+[mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has only the trivial solution. </p></li><li value="5"><p>
+[mathjaxinline]A[/mathjaxinline] row reduces to have a pivot in every column (has no free variables). </p></li><li value="6"><p>
+[mathjaxinline]A[/mathjaxinline] row reduces to the identity matrix. </p></li><li value="7"><p>
+[mathjaxinline]A[/mathjaxinline] row reduces to have a pivot in every row. </p></li><li value="8"><p>
+For every [mathjaxinline]v\in \mathbb R^ n[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] is consistent. </p></li><li value="9"><p>
+The columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p></li><li value="10"><p>
+[mathjaxinline]T[/mathjaxinline] is onto. </p></li><li value="11"><p>
+[mathjaxinline]T[/mathjaxinline] is invertible. </p></li><li value="12"><p>
+[mathjaxinline]A[/mathjaxinline] is invertible. </p></li>
+</ol><p>
+Note: There will be more equivalent conditions added to this list in the near future! </p></html></p><p>
+<problem display_name="Using the Invertible Matrix Theorem" attrib_string="url_name=&quot;b2matrixinv-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="209" tex_filename="./block2/matrixinv.tex"><text><p>
+Suppose [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix which has at least one free variable. Can we conclude that the columns of [mathjaxinline]A[/mathjaxinline] do not span [mathjaxinline]\mathbb R^ m[/mathjaxinline]? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="No"/>
+</optionresponse> </p><p>
+Suppose [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]n\times n[/mathjaxinline] matrix which has at least one free variable. Can we conclude that the columns of [mathjaxinline]A[/mathjaxinline] do not span [mathjaxinline]\mathbb R^ n[/mathjaxinline]? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"> For the first question, we cannot make that conclusion, since we are not told the matrix is square. For instance, [mathjaxinline]\left[ \begin{array}{ccc} 1 &amp;  0 &amp;  0 \\ 0 &amp;  1 &amp;  0 \end{array} \right][/mathjaxinline] has a free variable, but its columns span [mathjaxinline]\mathbb R^2[/mathjaxinline]. For the second question, we know the matrix is square, so the Invertible Matrix Theorem applies. Since [mathjaxinline]A[/mathjaxinline] has a free variable, we can conclude that none of the conditions in the Invertible Matrix Theorem are true. In particular, its columns do not span [mathjaxinline]\mathbb R^ n[/mathjaxinline].  </font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Calculating the Inverse" attrib_string="url_name=&quot;b2matrixinv-vertical7&quot;" refnum="7"><p>
+<problem display_name="Is it Invertible?" attrib_string="url_name=&quot;b2matrixinv-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="238" tex_filename="./block2/matrixinv.tex"><text><p>
+Let [mathjaxinline]A = \left[ \begin{array}{cc} 1 &amp;  2 \\ 2 &amp;  5 \end{array} \right][/mathjaxinline]. By row-reducing [mathjaxinline]A[/mathjaxinline], answer the question, is [mathjaxinline]A[/mathjaxinline] invertible? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ [mathjaxinline]A[/mathjaxinline] row reduces to the identity matrix, so it is invertible.  </p></font></solution></p></text></problem></p><p>
+<video display_name="Calculating the Inverse" youtube_id_1_0="qraxzr8nb5o" attrib_string="url_name=&quot;b2matrixinv-tab7-video1&quot; "></video></p></vertical>   </p><p>
+<vertical display_name="Inverse Practice" attrib_string="url_name=&quot;b2matrixinv-vertical8&quot;" refnum="8"><p>
+<problem display_name="Invert a Matrix" attrib_string="url_name=&quot;b2matrixinv-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="264" tex_filename="./block2/matrixinv.tex"><text><p>
+The following [mathjaxinline]3\times 3[/mathjaxinline] matrix is invertible: </p><table id="a0000000091" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  1 &amp;  2 \\ 3 &amp;  0 &amp;  -2 \\ -1 &amp;  1 &amp;  0 \end{array} \right][/mathjax]</td>
+</tr>
+</table><p>
+Find [mathjaxinline]A^{-1}[/mathjaxinline]. </p><p>
+<edxshowhide description="How to Enter a Matrix"><p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p><p>
+Use decimals only. </p></edxshowhide> </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<customresponse cfn="MatrixEntry" expect="[[0.2,0.2,-0.2],[0.2,0.2,0.8],[0.3,-0.2,-0.3]]">
+  <textline correct_answer="[[0.2,0.2,-0.2],[0.2,0.2,0.8],[0.3,-0.2,-0.3]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Solve Using Inverse" attrib_string="url_name=&quot;b2matrixinv-tab8-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="287" tex_filename="./block2/matrixinv.tex"><text><p>
+Let [mathjaxinline]A[/mathjaxinline] be the matrix from above. Without doing any further row-reduction, find the solution to [mathjaxinline]Ax = \left[ \begin{array}{c} 100 \\ 0 \\ 10 \end{array} \right].[/mathjaxinline] </p><p>
+<edxshowhide description="How to Enter a Vector"><p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
+
+<li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
+<li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li>
+</ul><p>
+Use decimals only. </p></edxshowhide> </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[18],[28],[27]]">
+  <textline correct_answer="[[18],[28],[27]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="One-Sided Inverses?" attrib_string="url_name=&quot;b2matrixinv-vertical9&quot;" refnum="9"><p>
+<problem display_name="Non-square inverse? 1" attrib_string="url_name=&quot;b2matrixinv-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="314" tex_filename="./block2/matrixinv.tex"><text><p>
+Is it possible for a [mathjaxinline]2\times 3[/mathjaxinline] matrix to be invertible? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="No"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ We have shown that non-square matrices cannot be invertible.  </p></font></solution></p></text></problem></p><p>
+<problem display_name="An Interesting Product" attrib_string="url_name=&quot;b2matrixinv-tab9-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="326" tex_filename="./block2/matrixinv.tex"><text><p>
+Given </p><table id="a0000000092" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 0 &amp;  1 &amp;  1 \end{array} \right], \   \mathrm{and} \  B = \left[ \begin{array}{cc} 1 &amp;  0 \\ 0 &amp;  0 \\ 0 &amp;  1 \end{array} \right],[/mathjax]</td>
+</tr>
+</table><p>
+ calculate [mathjaxinline]AB[/mathjaxinline]. </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<customresponse cfn="MatrixEntry" expect="[[1,0],[0,1]]">
+  <textline correct_answer="[[1,0],[0,1]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Non-square inverse? 2" attrib_string="url_name=&quot;b2matrixinv-tab9-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="348" tex_filename="./block2/matrixinv.tex"><text><p>
+Look at the result of the previous problem. Does this mean that [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are inverses of one another? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="No"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ No. For [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] to be inverses, <span style="color:#99182C"><b class="bf">both</b></span> [mathjaxinline]AB[/mathjaxinline] and [mathjaxinline]BA[/mathjaxinline] must be the identity.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="One Side Only" attrib_string="url_name=&quot;b2matrixinv-vertical10&quot;" refnum="10"><p>
+<video display_name="One-Sided Inverses" youtube_id_1_0="X5sMleqtvAk" attrib_string="url_name=&quot;b2matrixinv-tab10-video1&quot; "></video><html display_name="One-Sided Inverses" attrib_string="url_name=&quot;b2matrixinv-tab10-text1&quot;" linenum="369" tex_filename="./block2/matrixinv.tex"><p>
+<span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are square matrices, and [mathjaxinline]AB = I[/mathjaxinline], then [mathjaxinline]BA = I[/mathjaxinline], and the two matrices are inverses of each other. </p><p>
+This allows us to add two lines to the Invertible Matrix Theorem: </p><p>
+<span style="color:#27408C"><b class="bf">Invertible Matrix Theorem (updated).</b></span> Suppose that [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ n[/mathjaxinline] is a linear transformation with (square) standard matrix [mathjaxinline]A[/mathjaxinline]. Then the following conditions are all equivalent (i.e., either all of them are true, or all of them are false): </p><ol class="enumerate">
+<li value="1"><p>
+[mathjaxinline]T[/mathjaxinline] is into. </p></li><li value="2"><p>
+[mathjaxinline]\mathrm{Ker}(T) = \{  \mathbf{0}\}[/mathjaxinline]. </p></li><li value="3"><p>
+The columns of [mathjaxinline]A[/mathjaxinline] are linearly independent. </p></li><li value="4"><p>
+[mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has only the trivial solution. </p></li><li value="5"><p>
+[mathjaxinline]A[/mathjaxinline] row reduces to have a pivot in every column (has no free variables). </p></li><li value="6"><p>
+[mathjaxinline]A[/mathjaxinline] row reduces to the identity matrix. </p></li><li value="7"><p>
+[mathjaxinline]A[/mathjaxinline] row reduces to have a pivot in every row. </p></li><li value="8"><p>
+For every [mathjaxinline]v\in \mathbb R^ n[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] is consistent. </p></li><li value="9"><p>
+The columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p></li><li value="10"><p>
+[mathjaxinline]T[/mathjaxinline] is onto. </p></li><li value="11"><p>
+[mathjaxinline]T[/mathjaxinline] is invertible. </p></li><li value="12"><p>
+[mathjaxinline]A[/mathjaxinline] is invertible. </p></li><li value="13"><p>
+There is a matrix [mathjaxinline]B[/mathjaxinline] such that [mathjaxinline]AB = I_ n[/mathjaxinline]. ([mathjaxinline]A[/mathjaxinline] has a right inverse.) </p></li><li value="14"><p>
+There is a matrix [mathjaxinline]B[/mathjaxinline] such that [mathjaxinline]BA = I_ n[/mathjaxinline]. ([mathjaxinline]A[/mathjaxinline] has a left inverse.) </p></li>
+</ol></html></p><p>
+<problem display_name="Using the IMT" attrib_string="url_name=&quot;b2matrixinv-tab10-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="405" tex_filename="./block2/matrixinv.tex"><text><p>
+Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Suppose the columns of [mathjaxinline]A[/mathjaxinline] are linearly independent. Which of the following must be true? Click all that apply. </p><p>
+<choiceresponse>
+  <checkboxgroup>
+    <choice correct="true" name="1">
+      <text>[mathjaxinline]T[/mathjaxinline] is onto</text>
+    </choice>
+    <choice correct="true" name="2">
+      <text>[mathjaxinline]A[/mathjaxinline] is invertible</text>
+    </choice>
+    <choice correct="false" name="3">
+      <text>[mathjaxinline]A[/mathjaxinline] has a free variable</text>
+    </choice>
+    <choice correct="false" name="4">
+      <text>The equation [mathjaxinline]Ax = \left[\begin{array}{c} 1 &amp;  3 &amp;  5 \end{array} \right][/mathjaxinline] has exactly one solution</text>
+    </choice>
+    <choice correct="true" name="5">
+      <text>[mathjaxinline]T[/mathjaxinline] is into</text>
+    </choice>
+    <choice correct="true" name="6">
+      <text>[mathjaxinline]A[/mathjaxinline] row reduces to the identity matrix</text>
+    </choice>
+  </checkboxgroup>
+</choiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>    </p></sequential> </p></chapter> </p></course> </p></div>
 
 
