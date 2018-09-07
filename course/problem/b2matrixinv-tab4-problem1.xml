@@ -1,0 +1,38 @@
+<problem display_name="Into and Onto" linenum="90" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+We've noted that a linear transformation has an inverse if and only if it is both into and onto. Let's recall our results about when a linear transformation from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline] can or must be into or onto. </p>
+    <p>
+Suppose [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation. </p>
+    <p>
+If [mathjaxinline]n&lt;m[/mathjaxinline], what can we conclude about [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('T must be into','T might be into, or might not','T cannot be into')" correct="T might be into, or might not"/>
+      </optionresponse>
+    </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('T must be onto','T might be onto, or might not','T cannot be onto')" correct="T cannot be onto"/>
+      </optionresponse>
+    </p>
+    <p>
+If [mathjaxinline]n&gt;m[/mathjaxinline], what can we conclude about [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('T must be into','T might be into, or might not','T cannot be into')" correct="T cannot be into"/>
+      </optionresponse>
+    </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('T must be onto','T might be onto, or might not','T cannot be onto')" correct="T might be onto, or might not"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

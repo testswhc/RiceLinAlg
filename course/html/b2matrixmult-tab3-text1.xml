@@ -1,0 +1,9 @@
+<html display_name="Inverse Definitions" linenum="54" tex_filename="./block2/matrixinv.tex">
+  <p><span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]T: V \rightarrow W[/mathjaxinline] and [mathjaxinline]S: W \rightarrow V[/mathjaxinline] are linear transformations, we say that [mathjaxinline]S[/mathjaxinline] and [mathjaxinline]T[/mathjaxinline] are <span style="color:#99182C"><b class="bf">inverses</b></span> of one another if [mathjaxinline]S(T(v)) = v[/mathjaxinline] for all [mathjaxinline]v\in V[/mathjaxinline], and [mathjaxinline]T(S(w)) = w[/mathjaxinline] for all [mathjaxinline]w\in W[/mathjaxinline]. If this is the case, we can write [mathjaxinline]S = T^{-1}[/mathjaxinline] and [mathjaxinline]T = S^{-1}[/mathjaxinline]. </p>
+  <p>
+If [mathjaxinline]S = T^{-1}[/mathjaxinline] exists we say that [mathjaxinline]T[/mathjaxinline] is <span style="color:#99182C"><b class="bf">invertible</b></span>. </p>
+  <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> A linear transformation [mathjaxinline]T[/mathjaxinline] is invertible if and only if it is both into and onto. </p>
+  <p><span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times m[/mathjaxinline] matrix, we say that [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are <span style="color:#99182C"><b class="bf">inverses</b></span> of one another if [mathjaxinline]AB = I_ m[/mathjaxinline] and [mathjaxinline]BA = I_ n[/mathjaxinline]. If this is the case, we can write [mathjaxinline]B = A^{-1}[/mathjaxinline] and [mathjaxinline]B = A^{-1}[/mathjaxinline]. </p>
+  <p>
+If [mathjaxinline]B = A^{-1}[/mathjaxinline] exists we say that [mathjaxinline]A[/mathjaxinline] is <span style="color:#99182C"><b class="bf">invertible</b></span>. </p>
+</html>

@@ -1,4 +1,4 @@
-<html display_name="Kernel Definition" linenum="230" tex_filename="./block1/intoonto.tex">
+<html display_name="Kernel Definition" linenum="236" tex_filename="./block1/intoonto.tex">
   <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">kernel</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p>
   <table id="a0000000082" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
     <tr>

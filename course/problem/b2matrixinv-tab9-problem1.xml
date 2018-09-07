@@ -1,0 +1,20 @@
+<problem display_name="Non-square inverse? 1" linenum="314" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Is it possible for a [mathjaxinline]2\times 3[/mathjaxinline] matrix to be invertible? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ We have shown that non-square matrices cannot be invertible.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -1,0 +1,24 @@
+<problem display_name="Square Matrices" linenum="155" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: If a matrix [mathjaxinline]A[/mathjaxinline] is not square, it cannot be invertible. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+True or False: If a matrix [mathjaxinline]A[/mathjaxinline] is square, it must be invertible. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"> Watch the last video again! Non-square matrices cannot be invertible, but not every square matrix is invertible. For instance, a square matrix of all zeros is not invertible.  </font>
+      </solution>
+    </p>
+  </text>
+</problem>

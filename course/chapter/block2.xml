@@ -43,4 +43,46 @@
       <problem url_name="b2matrixmult-tab9-problem3"/>
     </vertical>
   </sequential>
+  <sequential display_name="Matrix Inverses" linenum="429" tex_filename="testcourse.tex" refnum="2" due="2018-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixinv-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b2matrixinv-vertical1">
+      <html url_name="b2matrixinv-tab1-text1"/>
+    </vertical>
+    <vertical display_name="What is an inverse function?" refnum="2" url_name="b2matrixinv-vertical2">
+      <problem url_name="b2matrixinv-tab2-problem1"/>
+      <video url_name="b2matrixinv-tab2-video1"/>
+    </vertical>
+    <vertical display_name="Inverse Definitions" refnum="3" url_name="b2matrixinv-vertical3">
+      <html url_name="b2matrixinv-tab3-text1"/>
+    </vertical>
+    <vertical display_name="Into, Onto, and Invertibility" refnum="4" url_name="b2matrixinv-vertical4">
+      <problem url_name="b2matrixinv-tab4-problem1"/>
+      <problem url_name="b2matrixinv-tab4-problem2"/>
+    </vertical>
+    <vertical display_name="Conditions for Invertibility" refnum="5" url_name="b2matrixinv-vertical5">
+      <video url_name="b2matrixinv-tab5-video1"/>
+      <problem url_name="b2matrixinv-tab5-problem1"/>
+    </vertical>
+    <vertical display_name="Invertible Matrix Theorem" refnum="6" url_name="b2matrixinv-vertical6">
+      <html url_name="b2matrixinv-tab6-text1"/>
+      <problem url_name="b2matrixinv-tab6-problem1"/>
+    </vertical>
+    <vertical display_name="Calculating the Inverse" refnum="7" url_name="b2matrixinv-vertical7">
+      <problem url_name="b2matrixinv-tab7-problem1"/>
+      <video url_name="b2matrixinv-tab7-video1"/>
+    </vertical>
+    <vertical display_name="Inverse Practice" refnum="8" url_name="b2matrixinv-vertical8">
+      <problem url_name="b2matrixinv-tab8-problem1"/>
+      <problem url_name="b2matrixinv-tab8-problem2"/>
+    </vertical>
+    <vertical display_name="One-Sided Inverses?" refnum="9" url_name="b2matrixinv-vertical9">
+      <problem url_name="b2matrixinv-tab9-problem1"/>
+      <problem url_name="b2matrixinv-tab9-problem2"/>
+      <problem url_name="b2matrixinv-tab9-problem3"/>
+    </vertical>
+    <vertical display_name="One Side Only" refnum="10" url_name="b2matrixinv-vertical10">
+      <video url_name="b2matrixinv-tab10-video1"/>
+      <html url_name="b2matrixinv-tab10-text1"/>
+      <problem url_name="b2matrixinv-tab10-problem1"/>
+    </vertical>
+  </sequential>
 </chapter>

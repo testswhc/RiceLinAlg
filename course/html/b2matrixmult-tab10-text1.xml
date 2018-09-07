@@ -1,0 +1,64 @@
+<html display_name="One-Sided Inverses" linenum="369" tex_filename="./block2/matrixinv.tex">
+  <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are square matrices, and [mathjaxinline]AB = I[/mathjaxinline], then [mathjaxinline]BA = I[/mathjaxinline], and the two matrices are inverses of each other. </p>
+  <p>
+This allows us to add two lines to the Invertible Matrix Theorem: </p>
+  <p><span style="color:#27408C"><b class="bf">Invertible Matrix Theorem (updated).</b></span> Suppose that [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ n[/mathjaxinline] is a linear transformation with (square) standard matrix [mathjaxinline]A[/mathjaxinline]. Then the following conditions are all equivalent (i.e., either all of them are true, or all of them are false): </p>
+  <ol class="enumerate">
+    <li value="1">
+      <p>
+[mathjaxinline]T[/mathjaxinline] is into. </p>
+    </li>
+    <li value="2">
+      <p>
+[mathjaxinline]\mathrm{Ker}(T) = \{  \mathbf{0}\}[/mathjaxinline]. </p>
+    </li>
+    <li value="3">
+      <p>
+The columns of [mathjaxinline]A[/mathjaxinline] are linearly independent. </p>
+    </li>
+    <li value="4">
+      <p>
+[mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has only the trivial solution. </p>
+    </li>
+    <li value="5">
+      <p>
+[mathjaxinline]A[/mathjaxinline] row reduces to have a pivot in every column (has no free variables). </p>
+    </li>
+    <li value="6">
+      <p>
+[mathjaxinline]A[/mathjaxinline] row reduces to the identity matrix. </p>
+    </li>
+    <li value="7">
+      <p>
+[mathjaxinline]A[/mathjaxinline] row reduces to have a pivot in every row. </p>
+    </li>
+    <li value="8">
+      <p>
+For every [mathjaxinline]v\in \mathbb R^ n[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] is consistent. </p>
+    </li>
+    <li value="9">
+      <p>
+The columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p>
+    </li>
+    <li value="10">
+      <p>
+[mathjaxinline]T[/mathjaxinline] is onto. </p>
+    </li>
+    <li value="11">
+      <p>
+[mathjaxinline]T[/mathjaxinline] is invertible. </p>
+    </li>
+    <li value="12">
+      <p>
+[mathjaxinline]A[/mathjaxinline] is invertible. </p>
+    </li>
+    <li value="13">
+      <p>
+There is a matrix [mathjaxinline]B[/mathjaxinline] such that [mathjaxinline]AB = I_ n[/mathjaxinline]. ([mathjaxinline]A[/mathjaxinline] has a right inverse.) </p>
+    </li>
+    <li value="14">
+      <p>
+There is a matrix [mathjaxinline]B[/mathjaxinline] such that [mathjaxinline]BA = I_ n[/mathjaxinline]. ([mathjaxinline]A[/mathjaxinline] has a left inverse.) </p>
+    </li>
+  </ol>
+</html>
