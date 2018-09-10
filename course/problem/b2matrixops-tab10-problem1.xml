@@ -1,0 +1,45 @@
+<problem display_name="Solve for A, again" linenum="354" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxinline]n\times n[/mathjaxinline] matrices such that [mathjaxinline]B^ t (A^{-1})^ t = D^ t C^{-1}[/mathjaxinline]. Solve for [mathjaxinline]A[/mathjaxinline]. </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> [mathjaxinline]A=D^{-1}C^ t B[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> [mathjaxinline]A=B^{-1}D^{-1}C^ t[/mathjaxinline]</text>
+          </choice>
+          <choice correct="true" name="3">
+            <text> [mathjaxinline]A=BD^{-1}C^ t[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="4">
+            <text> [mathjaxinline]A=D^{-1}(C^{-1})^ t B[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="5">
+            <text> [mathjaxinline]A=DC^ t B^{-1}[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="6">
+            <text> [mathjaxinline]A=C^ t D^{-1}B^{-1}[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="7">
+            <text> [mathjaxinline]A=BC^ t D^{-1}[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="8">
+            <text> [mathjaxinline]A=C^ t D^{-1}B[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="9">
+            <text> None of the above</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -1,0 +1,43 @@
+<problem display_name="Find a Transpose" linenum="256" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]B = \left[ \begin{array}{cc} 2 &amp;  0 \\ 1 &amp;  3 \\ -2 &amp;  -1 \\ 5 &amp;  0 \end{array} \right].[/mathjaxinline] </p>
+    <p>
+What is [mathjaxinline]B^ t[/mathjaxinline]? </p>
+    <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script>
+    <p>
+      <customresponse cfn="MatrixEntry" expect="[[2, 1, -2, 5],[0,3,-1,0]]">
+        <textline correct_answer="[[2, 1, -2, 5],[0,3,-1,0]]"/>
+      </customresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+The first column of [mathjaxinline]B[/mathjaxinline] becomes the first row of [mathjaxinline]B^ t[/mathjaxinline]. The second column of [mathjaxinline]B[/mathjaxinline] becomes the second row of [mathjaxinline]B^ t[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

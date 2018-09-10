@@ -82,7 +82,51 @@
     <vertical display_name="One Side Only" refnum="10" url_name="b2matrixinv-vertical10">
       <video url_name="b2matrixinv-tab10-video1"/>
       <html url_name="b2matrixinv-tab10-text1"/>
-      <problem url_name="b2matrixinv-tab10-problem1"/>
+    </vertical>
+    <vertical display_name="Some IMT Practice" refnum="11" url_name="b2matrixinv-vertical11">
+      <problem url_name="b2matrixinv-tab11-problem1"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="More Matrix Operations" linenum="468" tex_filename="testcourse.tex" refnum="3" due="2018-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixops-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b2matrixops-vertical1">
+      <html url_name="b2matrixops-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Inverses and Products" refnum="2" url_name="b2matrixops-vertical2">
+      <video url_name="b2matrixops-tab2-video1"/>
+      <html url_name="b2matrixops-tab2-text1"/>
+    </vertical>
+    <vertical display_name="Inverse Questions" refnum="3" url_name="b2matrixops-vertical3">
+      <problem url_name="b2matrixops-tab3-problem1"/>
+      <problem url_name="b2matrixops-tab3-problem2"/>
+    </vertical>
+    <vertical display_name="Introducing Elementary Matrices" refnum="4" url_name="b2matrixops-vertical4">
+      <problem url_name="b2matrixops-tab4-problem1"/>
+      <video url_name="b2matrixops-tab4-video1"/>
+      <problem url_name="b2matrixops-tab4-problem2"/>
+    </vertical>
+    <vertical display_name="Elementary Matrices" refnum="5" url_name="b2matrixops-vertical5">
+      <html url_name="b2matrixops-tab5-text1"/>
+    </vertical>
+    <vertical display_name="Elementary Matrices and Inverses" refnum="6" url_name="b2matrixops-vertical6">
+      <video url_name="b2matrixops-tab6-video1"/>
+    </vertical>
+    <vertical display_name="Transposes" refnum="7" url_name="b2matrixops-vertical7">
+      <html url_name="b2matrixops-tab7-text1"/>
+      <problem url_name="b2matrixops-tab7-problem1"/>
+      <problem url_name="b2matrixops-tab7-problem2"/>
+    </vertical>
+    <vertical display_name="Transposes and Products" refnum="8" url_name="b2matrixops-vertical8">
+      <problem url_name="b2matrixops-tab8-problem1"/>
+      <video url_name="b2matrixops-tab8-video1"/>
+    </vertical>
+    <vertical display_name="Transposes and Inverses" refnum="9" url_name="b2matrixops-vertical9">
+      <problem url_name="b2matrixops-tab9-problem1"/>
+      <video url_name="b2matrixops-tab9-video1"/>
+    </vertical>
+    <vertical display_name="Summary of Results" refnum="10" url_name="b2matrixops-vertical10">
+      <html url_name="b2matrixops-tab10-text1"/>
+      <problem url_name="b2matrixops-tab10-problem1"/>
+      <problem url_name="b2matrixops-tab10-problem2"/>
     </vertical>
   </sequential>
 </chapter>

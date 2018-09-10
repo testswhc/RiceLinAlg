@@ -1,0 +1,36 @@
+<problem display_name="More IMT" linenum="369" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]T: \mathbb R^4 \rightarrow \mathbb R^4[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Suppose the second row of [mathjaxinline]A[/mathjaxinline] is equal to three times the last row of [mathjaxinline]A[/mathjaxinline] minus the first row of [mathjaxinline]A[/mathjaxinline]. Which of the following must be true? Click all that apply. </p>
+    <p>
+      <choiceresponse>
+        <checkboxgroup>
+          <choice correct="true" name="1">
+            <text>[mathjaxinline]T[/mathjaxinline] is not onto</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text>[mathjaxinline]A[/mathjaxinline] is invertible</text>
+          </choice>
+          <choice correct="true" name="3">
+            <text>[mathjaxinline]A[/mathjaxinline] has a free variable</text>
+          </choice>
+          <choice correct="true" name="4">
+            <text>The kernel of [mathjaxinline]T[/mathjaxinline] contains infinitely many vectors</text>
+          </choice>
+          <choice correct="false" name="5">
+            <text>The equation [mathjaxinline]Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \\ 7 \end{array} \right][/mathjaxinline] has more than one solution</text>
+          </choice>
+          <choice correct="true" name="6">
+            <text>The columns of [mathjaxinline]A[/mathjaxinline] do not span [mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

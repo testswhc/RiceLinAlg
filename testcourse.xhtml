@@ -3474,8 +3474,9 @@ The columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ n
 [mathjaxinline]A[/mathjaxinline] is invertible. </p></li><li value="13"><p>
 There is a matrix [mathjaxinline]B[/mathjaxinline] such that [mathjaxinline]AB = I_ n[/mathjaxinline]. ([mathjaxinline]A[/mathjaxinline] has a right inverse.) </p></li><li value="14"><p>
 There is a matrix [mathjaxinline]B[/mathjaxinline] such that [mathjaxinline]BA = I_ n[/mathjaxinline]. ([mathjaxinline]A[/mathjaxinline] has a left inverse.) </p></li>
-</ol></html></p><p>
-<problem display_name="Using the IMT" attrib_string="url_name=&quot;b2matrixinv-tab10-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="405" tex_filename="./block2/matrixinv.tex"><text><p>
+</ol></html></p></vertical>   </p><p>
+<vertical display_name="Some IMT Practice" attrib_string="url_name=&quot;b2matrixinv-vertical11&quot;" refnum="11"><p>
+<problem display_name="Using the IMT" attrib_string="url_name=&quot;b2matrixinv-tab11-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="410" tex_filename="./block2/matrixinv.tex"><text><p>
 Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Suppose the columns of [mathjaxinline]A[/mathjaxinline] are linearly independent. Which of the following must be true? Click all that apply. </p><p>
 <choiceresponse>
   <checkboxgroup>
@@ -3489,13 +3490,323 @@ Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be a l
       <text>[mathjaxinline]A[/mathjaxinline] has a free variable</text>
     </choice>
     <choice correct="false" name="4">
-      <text>The equation [mathjaxinline]Ax = \left[\begin{array}{c} 1 &amp;  3 &amp;  5 \end{array} \right][/mathjaxinline] has exactly one solution</text>
+      <text>The equation [mathjaxinline]Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \end{array} \right][/mathjaxinline] has exactly one solution</text>
     </choice>
     <choice correct="true" name="5">
       <text>[mathjaxinline]T[/mathjaxinline] is into</text>
     </choice>
     <choice correct="true" name="6">
       <text>[mathjaxinline]A[/mathjaxinline] row reduces to the identity matrix</text>
+    </choice>
+  </checkboxgroup>
+</choiceresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>    </p></sequential> </p><p>
+<sequential display_name="More Matrix Operations" attrib_string="due=&quot;2018-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b2matrixops-sequential&quot;" linenum="468" tex_filename="testcourse.tex" refnum="3"><p>
+<vertical display_name="Page One" attrib_string="url_name=&quot;b2matrixops-vertical1&quot;" refnum="1"><p>
+<html display_name="Preliminaries" attrib_string="url_name=&quot;b2matrixops-tab1-text1&quot;" linenum="5" tex_filename="./block2/morematrixops.tex"><p>
+At the end of this sequence, and after some practice, you should be able to: </p><ul class="itemize">
+
+<li><p>
+Understand the relationship between elementary matrices and row operations. </p></li>
+<li><p>
+Find the transpose of a matrix. </p></li>
+<li><p>
+Recognize more conditions under which a matrix is invertible. </p></li>
+</ul><p>
+For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p></html></p></vertical>   </p><p>
+<vertical display_name="Inverses and Products" attrib_string="url_name=&quot;b2matrixops-vertical2&quot;" refnum="2"><p>
+<video display_name="Inverses and Products" youtube_id_1_0="KdbmhHwABYo" attrib_string="url_name=&quot;b2matrixops-tab2-video1&quot; "></video><html display_name="Inverses and Products" attrib_string="url_name=&quot;b2matrixops-tab2-text1&quot;" linenum="37" tex_filename="./block2/morematrixops.tex"><p>
+<span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are [mathjaxinline]n\times n[/mathjaxinline] matrices which are both invertible, then [mathjaxinline]AB[/mathjaxinline] is invertible, and [mathjaxinline](AB)^{-1}= B^{-1}A^{-1}[/mathjaxinline]. </p><p>
+<span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are [mathjaxinline]n\times n[/mathjaxinline] matrices, and their product [mathjaxinline]AB[/mathjaxinline] is invertible, then both [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are invertible. </p></html></p></vertical>   </p><p>
+<vertical display_name="Inverse Questions" attrib_string="url_name=&quot;b2matrixops-vertical3&quot;" refnum="3"><p>
+<problem display_name="Invertible Product" attrib_string="url_name=&quot;b2matrixops-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="60" tex_filename="./block2/morematrixops.tex"><text><p>
+True or false: It is possible for two non-invertible matrices to have an invertible product. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="True"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ The proposition proven on the previous pages states that if the product of two <span style="color:#99182C"><b class="bf">square</b></span> matrices is invertible, then each individual matrix is. However, this problem does not indicate that the matrices are square. </p><p>
+For instance, given </p><table id="a0000000093" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 0 &amp;  1 &amp;  1 \end{array} \right], \   \mathrm{and} \  B = \left[ \begin{array}{cc} 1 &amp;  0 \\ 0 &amp;  0 \\ 0 &amp;  1 \end{array} \right],[/mathjax]</td>
+</tr>
+</table><p>
+ we find that [mathjaxinline]AB[/mathjaxinline] is the [mathjaxinline]2\times 2[/mathjaxinline] identity matrix, which is invertible, yet neither [mathjaxinline]A[/mathjaxinline] nor [mathjaxinline]B[/mathjaxinline] are invertible. </p></font></solution></p></text></problem></p><p>
+<problem display_name="Solve for A" attrib_string="url_name=&quot;b2matrixops-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="83" tex_filename="./block2/morematrixops.tex"><text><p>
+Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxinline]n\times n[/mathjaxinline] matrices such that [mathjaxinline]DA^{-1}B^{-1}= C^{-1}[/mathjaxinline]. Solve for [mathjaxinline]A[/mathjaxinline]. </p><p>
+<multiplechoiceresponse>
+  <choicegroup direction="vertical">
+    <choice correct="false" name="1">
+      <text> [mathjaxinline]A=DCB^{-1}[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="2">
+      <text> [mathjaxinline]A=DB^{-1}C[/mathjaxinline]</text>
+    </choice>
+    <choice correct="true" name="3">
+      <text> [mathjaxinline]A=B^{-1}CD[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="4">
+      <text> [mathjaxinline]A=BCD^{-1}[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="5">
+      <text> [mathjaxinline]A=D^{-1}CB[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="6">
+      <text> [mathjaxinline]A=CB^{-1}D[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="7">
+      <text> None of the above</text>
+    </choice>
+  </choicegroup>
+</multiplechoiceresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Introducing Elementary Matrices" attrib_string="url_name=&quot;b2matrixops-vertical4&quot;" refnum="4"><p>
+<problem display_name="Find a matrix" attrib_string="url_name=&quot;b2matrixops-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="102" tex_filename="./block2/morematrixops.tex"><text><p>
+Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p><table id="a0000000094" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]EA = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ 4a_{31} &amp;  4a_{32} \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+<edxshowhide description="How to Enter a Matrix"><p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p><p>
+Use decimals only. </p></edxshowhide> </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<customresponse cfn="MatrixEntry" expect="[[1,0,0],[0,1,0],[0,0,4]]">
+  <textline correct_answer="[[1,0,0],[0,1,0],[0,0,4]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<video display_name="Introducing Elementary Matrices" youtube_id_1_0="20gbxsXOooY" attrib_string="url_name=&quot;b2matrixops-tab4-video1&quot; "></video><problem display_name="Find another matrix" attrib_string="url_name=&quot;b2matrixops-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="130" tex_filename="./block2/morematrixops.tex"><text><p>
+Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p><table id="a0000000095" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]EA = \left[ \begin{array}{cc} a_{21} &amp;  a_{22} \\ a_{11} &amp;  a_{12} \\ a_{31} &amp;  a_{32} \end{array} \right].[/mathjax]</td>
+</tr>
+</table><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<customresponse cfn="MatrixEntry" expect="[[0,1,0],[1,0,0],[0,0,1]]">
+  <textline correct_answer="[[0,1,0],[1,0,0],[0,0,1]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Elementary Matrices" attrib_string="url_name=&quot;b2matrixops-vertical5&quot;" refnum="5"><p>
+<html display_name="Elementary Matrices" attrib_string="url_name=&quot;b2matrixops-tab5-text1&quot;" linenum="160" tex_filename="./block2/morematrixops.tex"><p>
+<span style="color:#27408C"><b class="bf">Definition.</b></span> An <span style="color:#99182C"><b class="bf">elementary matrix</b></span> is a square matrix of one of three types. </p><p>
+<edxshowhide description="Elementary Matrix of the First Type">An elementary matrix of the first type is one obtained from the identity matrix by changing the diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and column to a number [mathjaxinline]c[/mathjaxinline], where [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000096" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]E_1 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  c &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td>
+</tr>
+</table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_1[/mathjaxinline] (where [mathjaxinline]E_1[/mathjaxinline] is on the left) has the same effect as scaling row [mathjaxinline]i[/mathjaxinline] of [mathjaxinline]A[/mathjaxinline] by the scalar [mathjaxinline]c[/mathjaxinline]. </edxshowhide> </p><p>
+<edxshowhide description="Elementary Matrix of the Second Type">An elementary matrix of the second type is one obtained from the identity matrix by changing the non-diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column ([mathjaxinline]i\ne j[/mathjaxinline]) to a number [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000097" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]E_2 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  \ddots &amp; &amp; &amp; \\ &amp; &amp;  c &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td>
+</tr>
+</table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_2[/mathjaxinline] (where [mathjaxinline]E_2[/mathjaxinline] is on the left) has the same effect as adding [mathjaxinline]c[/mathjaxinline] times the [mathjaxinline]j[/mathjaxinline]th row of [mathjaxinline]A[/mathjaxinline] to row [mathjaxinline]i[/mathjaxinline]. </edxshowhide> </p><p>
+<edxshowhide description="Elementary Matrix of the Third Type">An elementary matrix of the third type is one obtained from the identity matrix by changing the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th diagonal entries to 0, and changing the entries in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column, and the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column, to 1: <table id="a0000000098" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]E_3 = \left[ \begin{array}{ccccccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  0 &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp;  0 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td>
+</tr>
+</table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_3[/mathjaxinline] (where [mathjaxinline]E_3[/mathjaxinline] is on the left) has the same effect as swapping the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th rows of [mathjaxinline]A[/mathjaxinline]. </edxshowhide> </p></html></p></vertical>   </p><p>
+<vertical display_name="Elementary Matrices and Inverses" attrib_string="url_name=&quot;b2matrixops-vertical6&quot;" refnum="6"><p>
+<video display_name="Elementary Matrices and Inverses" youtube_id_1_0="EtoZ2FyFKS4" attrib_string="url_name=&quot;b2matrixops-tab6-video1&quot; "></video></p></vertical>   </p><p>
+<vertical display_name="Transposes" attrib_string="url_name=&quot;b2matrixops-vertical7&quot;" refnum="7"><p>
+<html display_name="Transposes" attrib_string="url_name=&quot;b2matrixops-tab7-text1&quot;" linenum="237" tex_filename="./block2/morematrixops.tex"><p>
+The last matrix operation we will introduce in this section is the transpose. The transpose of a matrix [mathjaxinline]A[/mathjaxinline] is essentially the matrix whose columns are the rows of [mathjaxinline]A[/mathjaxinline] (and whose rows are the columns of [mathjaxinline]A[/mathjaxinline]). Essentially, [mathjaxinline]A[/mathjaxinline] gets flipped across its diagonal. More formally: </p><p>
+<span style="color:#27408C"><b class="bf">Definition.</b></span> Given an [mathjaxinline]m\times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline], the <span style="color:#99182C"><b class="bf">transpose</b></span> of [mathjaxinline]A[/mathjaxinline] is the [mathjaxinline]n\times m[/mathjaxinline] matrix denoted [mathjaxinline]A^ t[/mathjaxinline] whose entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column is the same as the entry in the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column of [mathjaxinline]A[/mathjaxinline]. </p><p>
+For instance, if </p><table id="a0000000099" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 3 &amp;  4 &amp;  -1 \end{array} \right],[/mathjax]</td>
+</tr>
+</table><p>
+ then </p><table id="a0000000100" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]A^ t = \left[ \begin{array}{cc} 1 &amp;  3 \\ 2 &amp;  4 \\ 0 &amp;  -1 \end{array} \right].[/mathjax]</td>
+</tr>
+</table></html></p><p>
+<problem display_name="Find a Transpose" attrib_string="url_name=&quot;b2matrixops-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="256" tex_filename="./block2/morematrixops.tex"><text><p>
+Suppose [mathjaxinline]B = \left[ \begin{array}{cc} 2 &amp;  0 \\ 1 &amp;  3 \\ -2 &amp;  -1 \\ 5 &amp;  0 \end{array} \right].[/mathjaxinline] </p><p>
+What is [mathjaxinline]B^ t[/mathjaxinline]? </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<customresponse cfn="MatrixEntry" expect="[[2, 1, -2, 5],[0,3,-1,0]]">
+  <textline correct_answer="[[2, 1, -2, 5],[0,3,-1,0]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+The first column of [mathjaxinline]B[/mathjaxinline] becomes the first row of [mathjaxinline]B^ t[/mathjaxinline]. The second column of [mathjaxinline]B[/mathjaxinline] becomes the second row of [mathjaxinline]B^ t[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Double Transpose" attrib_string="url_name=&quot;b2matrixops-tab7-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="276" tex_filename="./block2/morematrixops.tex"><text><p>
+True or false: Any matrix [mathjaxinline]A[/mathjaxinline] is equal to the transpose of its transpose. In other words, [mathjaxinline]A = (A^ t)^ t[/mathjaxinline]. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="True"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Switching the rows and columns of the transpose gives the original matrix.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Transposes and Products" attrib_string="url_name=&quot;b2matrixops-vertical8&quot;" refnum="8"><p>
+<problem display_name="Possible Product" attrib_string="url_name=&quot;b2matrixops-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="292" tex_filename="./block2/morematrixops.tex"><text><p>
+Suppose [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]4\times 3[/mathjaxinline] matrix, and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]3 \times 5[/mathjaxinline] matrix, so that [mathjaxinline]AB[/mathjaxinline] is a [mathjaxinline]4\times 5[/mathjaxinline] matrix. </p><p>
+Which of the following matrix products is defined? </p><p>
+<multiplechoiceresponse>
+  <choicegroup direction="vertical">
+    <choice correct="false" name="1">
+      <text> [mathjaxinline]A^ tB^ t[/mathjaxinline]</text>
+    </choice>
+    <choice correct="true" name="2">
+      <text> [mathjaxinline]B^ tA^ t[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="3">
+      <text> Both are defined</text>
+    </choice>
+    <choice correct="false" name="4">
+      <text> Neither are defined</text>
+    </choice>
+  </choicegroup>
+</multiplechoiceresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<video display_name="Transposes and Products" youtube_id_1_0="AT6y-Q3TI_w" attrib_string="url_name=&quot;b2matrixops-tab8-video1&quot; "></video></p></vertical>   </p><p>
+<vertical display_name="Transposes and Inverses" attrib_string="url_name=&quot;b2matrixops-vertical9&quot;" refnum="9"><p>
+<problem display_name="Symmetric Matrices" attrib_string="url_name=&quot;b2matrixops-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="313" tex_filename="./block2/morematrixops.tex"><text><p>
+<span style="color:#27408C"><b class="bf">Definition.</b></span> A matrix [mathjaxinline]A[/mathjaxinline] is <span style="color:#99182C"><b class="bf">symmetric</b></span> if [mathjaxinline]A = A^ t[/mathjaxinline]. </p><p>
+Of the following matrices, which ones are symmetric? Click all that apply. </p><p>
+<choiceresponse>
+  <checkboxgroup>
+    <choice correct="false" name="1">
+      <text>[mathjaxinline]\left[ \begin{array}{ccc} 1 &amp;  0 &amp;  0 \\ 0 &amp;  2 &amp;  0 \end{array} \right][/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="2">
+      <text>[mathjaxinline]\left[ \begin{array}{cc} 1 &amp;  1 \\ 2 &amp;  2 \end{array} \right][/mathjaxinline]</text>
+    </choice>
+    <choice correct="true" name="3">
+      <text>[mathjaxinline]\left[ \begin{array}{cc} \pi &amp;  1 \\ 1 &amp;  4 \end{array} \right][/mathjaxinline]</text>
+    </choice>
+    <choice correct="true" name="4">
+      <text>[mathjaxinline]I_ n[/mathjaxinline]</text>
+    </choice>
+  </checkboxgroup>
+</choiceresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<video display_name="Transposes and Inverses" youtube_id_1_0="bg1nsJJS-ZY" attrib_string="url_name=&quot;b2matrixops-tab9-video1&quot; "></video></p></vertical>   </p><p>
+<vertical display_name="Summary of Results" attrib_string="url_name=&quot;b2matrixops-vertical10&quot;" refnum="10"><p>
+<html display_name="Transpose Results Summary" attrib_string="url_name=&quot;b2matrixops-tab10-text1&quot;" linenum="334" tex_filename="./block2/morematrixops.tex"><p>
+<span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are matrices such that the product [mathjaxinline]AB[/mathjaxinline] is defined, then [mathjaxinline](AB)^ t = B^ t A^ t[/mathjaxinline]. </p><p>
+<span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is invertible, then [mathjaxinline]A^ t[/mathjaxinline] is invertible, and [mathjaxinline](A^ t)^{-1}= (A^{-1})^ t[/mathjaxinline]. </p><p>
+<span style="color:#27408C"><b class="bf">Invertible Matrix Theorem (extended).</b></span> For a square ([mathjaxinline]n\times n[/mathjaxinline]) matrix [mathjaxinline]A[/mathjaxinline], the following statements are all equivalent to one another, and to the conditions previously stated in the Invertible Matrix Theorem: </p><ul class="itemize">
+
+<li><p>
+[mathjaxinline]A[/mathjaxinline] is invertible. </p></li>
+<li><p>
+[mathjaxinline]A^ t[/mathjaxinline] is invertible. </p></li>
+<li><p>
+The rows of [mathjaxinline]A[/mathjaxinline] (viewed as vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline]) span [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p></li>
+<li><p>
+The rows of [mathjaxinline]A[/mathjaxinline] are linearly independent. </p></li>
+</ul></html></p><p>
+<problem display_name="Solve for A, again" attrib_string="url_name=&quot;b2matrixops-tab10-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="354" tex_filename="./block2/morematrixops.tex"><text><p>
+Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxinline]n\times n[/mathjaxinline] matrices such that [mathjaxinline]B^ t (A^{-1})^ t = D^ t C^{-1}[/mathjaxinline]. Solve for [mathjaxinline]A[/mathjaxinline]. </p><p>
+<multiplechoiceresponse>
+  <choicegroup direction="vertical">
+    <choice correct="false" name="1">
+      <text> [mathjaxinline]A=D^{-1}C^ t B[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="2">
+      <text> [mathjaxinline]A=B^{-1}D^{-1}C^ t[/mathjaxinline]</text>
+    </choice>
+    <choice correct="true" name="3">
+      <text> [mathjaxinline]A=BD^{-1}C^ t[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="4">
+      <text> [mathjaxinline]A=D^{-1}(C^{-1})^ t B[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="5">
+      <text> [mathjaxinline]A=DC^ t B^{-1}[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="6">
+      <text> [mathjaxinline]A=C^ t D^{-1}B^{-1}[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="7">
+      <text> [mathjaxinline]A=BC^ t D^{-1}[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="8">
+      <text> [mathjaxinline]A=C^ t D^{-1}B[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="9">
+      <text> None of the above</text>
+    </choice>
+  </choicegroup>
+</multiplechoiceresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="More IMT" attrib_string="url_name=&quot;b2matrixops-tab10-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="369" tex_filename="./block2/morematrixops.tex"><text><p>
+Let [mathjaxinline]T: \mathbb R^4 \rightarrow \mathbb R^4[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Suppose the second row of [mathjaxinline]A[/mathjaxinline] is equal to three times the last row of [mathjaxinline]A[/mathjaxinline] minus the first row of [mathjaxinline]A[/mathjaxinline]. Which of the following must be true? Click all that apply. </p><p>
+<choiceresponse>
+  <checkboxgroup>
+    <choice correct="true" name="1">
+      <text>[mathjaxinline]T[/mathjaxinline] is not onto</text>
+    </choice>
+    <choice correct="false" name="2">
+      <text>[mathjaxinline]A[/mathjaxinline] is invertible</text>
+    </choice>
+    <choice correct="true" name="3">
+      <text>[mathjaxinline]A[/mathjaxinline] has a free variable</text>
+    </choice>
+    <choice correct="true" name="4">
+      <text>The kernel of [mathjaxinline]T[/mathjaxinline] contains infinitely many vectors</text>
+    </choice>
+    <choice correct="false" name="5">
+      <text>The equation [mathjaxinline]Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \\ 7 \end{array} \right][/mathjaxinline] has more than one solution</text>
+    </choice>
+    <choice correct="true" name="6">
+      <text>The columns of [mathjaxinline]A[/mathjaxinline] do not span [mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
     </choice>
   </checkboxgroup>
 </choiceresponse> </p><p>
