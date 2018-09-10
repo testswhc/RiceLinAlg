@@ -1,0 +1,23 @@
+<html display_name="Transpose Results Summary" linenum="334" tex_filename="./block2/morematrixops.tex">
+  <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are matrices such that the product [mathjaxinline]AB[/mathjaxinline] is defined, then [mathjaxinline](AB)^ t = B^ t A^ t[/mathjaxinline]. </p>
+  <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is invertible, then [mathjaxinline]A^ t[/mathjaxinline] is invertible, and [mathjaxinline](A^ t)^{-1}= (A^{-1})^ t[/mathjaxinline]. </p>
+  <p><span style="color:#27408C"><b class="bf">Invertible Matrix Theorem (extended).</b></span> For a square ([mathjaxinline]n\times n[/mathjaxinline]) matrix [mathjaxinline]A[/mathjaxinline], the following statements are all equivalent to one another, and to the conditions previously stated in the Invertible Matrix Theorem: </p>
+  <ul class="itemize">
+    <li>
+      <p>
+[mathjaxinline]A[/mathjaxinline] is invertible. </p>
+    </li>
+    <li>
+      <p>
+[mathjaxinline]A^ t[/mathjaxinline] is invertible. </p>
+    </li>
+    <li>
+      <p>
+The rows of [mathjaxinline]A[/mathjaxinline] (viewed as vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline]) span [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p>
+    </li>
+    <li>
+      <p>
+The rows of [mathjaxinline]A[/mathjaxinline] are linearly independent. </p>
+    </li>
+  </ul>
+</html>

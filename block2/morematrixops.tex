@@ -1,0 +1,384 @@
+
+
+\beginedxvertical{Page One}
+
+\beginedxtext{Preliminaries}
+
+
+
+
+
+At the end of this sequence, and after some practice, you should be able to:
+
+\begin{itemize}
+\item Understand the relationship between elementary matrices and row operations.  
+\item Find the transpose of a matrix.  
+\item Recognize more conditions under which a matrix is invertible.   
+\end{itemize}
+
+
+For time budgeting purposes, this sequence has X videos totaling X minutes, 
+plus some questions.  
+
+
+
+
+\endedxtext
+
+\endedxvertical
+
+
+
+\beginedxvertical{Inverses and Products}
+
+
+\doedxvideo{Inverses and Products}{KdbmhHwABYo}
+
+\beginedxtext{Inverses and Products}
+
+{\keya{\bf{Proposition.}}}  
+If $A$ and $B$ are $n\times n$ matrices which are both invertible, then $AB$ is invertible, and 
+$(AB)\inv = B\inv A\inv$. 
+
+
+{\keya{\bf{Proposition.}}}  If $A$ and $B$ are $n\times n$ matrices, and their product $AB$ is invertible, then
+both $A$ and $B$ are invertible.  
+
+\endedxtext
+
+
+
+
+\endedxvertical
+
+
+\beginedxvertical{Inverse Questions}
+
+
+
+
+\beginedxproblem{Invertible Product}{\dpa1}
+
+True or false: It is possible for two non-invertible matrices to have an invertible product.  
+
+\edXabox{expect="True" options="True","False"}
+
+\edXsolution{ The proposition proven on the previous pages states that if the product of two {\keyb{\bf{square}}}
+matrices is invertible, then each individual matrix is.  However, this problem does not indicate that the matrices
+are square.  
+
+For instance, given 
+\[A = \left[ \begin{array}{ccc} 1 & 2 & 0  \\
+0 & 1 & 1
+ \end{array} \right], \  \mathrm{and} \ B = \left[ \begin{array}{cc} 1 & 0  \\
+0 & 0 \\
+0 & 1
+ \end{array} \right], \]
+we find that $AB$ is the $2\times 2$ identity matrix, which is invertible, yet neither $A$ nor $B$ are invertible.
+
+ }
+
+\endedxproblem
+
+\beginedxproblem{Solve for A}{\dpa1}
+
+Suppose that $A,B,C,D$ are all invertible $n\times n$ matrices such that
+$DA\inv B\inv = C\inv$.  Solve for $A$.  
+
+
+\edXabox{type="multichoice" expect="$A=B\inv CD$" options="$A=DCB\inv$","$A=DB\inv C$","$A=B\inv CD$","$A=BCD\inv$","$A=D\inv CB$","$A=CB\inv D$","None of the above"}
+
+\edXsolution{ 
+ }
+ 
+\endedxproblem
+
+
+\endedxvertical
+
+\beginedxvertical{Introducing Elementary Matrices}
+
+
+\beginedxproblem{Find a matrix}{\dpa3}
+
+Find a matrix $E$ such that, for any matrix
+$A =   \left[ \begin{array}{cc} a_{11} & a_{12}  \\
+a_{21} & a_{22}  \\ 
+a_{31} & a_{32}  
+ \end{array} \right],$ we get
+
+\[EA = \left[ \begin{array}{cc} a_{11} & a_{12}  \\
+a_{21} & a_{22}  \\ 
+4a_{31} & 4a_{32}  
+ \end{array} \right].\]
+
+
+\input{matrixentry.tex}
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[1,0,0],[0,1,0],[0,0,4]]"}
+
+\edXsolution{
+
+}
+
+\endedxproblem
+
+
+\doedxvideo{Introducing Elementary Matrices}{20gbxsXOooY}
+
+
+\beginedxproblem{Find another matrix}{\dpa3}
+
+Find a matrix $E$ such that, for any matrix
+$A =   \left[ \begin{array}{cc} a_{11} & a_{12}  \\
+a_{21} & a_{22}  \\ 
+a_{31} & a_{32}  
+ \end{array} \right],$ we get
+
+\[EA = \left[ \begin{array}{cc} a_{21} & a_{22}  \\
+a_{11} & a_{12}  \\ 
+a_{31} & a_{32}  
+ \end{array} \right].\]
+
+
+\input{matrixentry2.tex}
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[0,1,0],[1,0,0],[0,0,1]]"}
+
+\edXsolution{
+
+}
+
+\endedxproblem
+
+\endedxvertical
+
+\beginedxvertical{Elementary Matrices}
+
+
+
+\beginedxtext{Elementary Matrices}
+
+{\keya{\bf{Definition.}}}  An {\keyb{\bf{elementary matrix}}} is a square matrix of one of three types.  
+
+
+\begin{edXshowhide}{Elementary Matrix of the First Type}
+An elementary matrix of the first type is one obtained from the identity matrix by changing the diagonal entry in the 
+$i$th row and column to a number 
+$c$, where $c \ne 0$:  
+\[ E_1 = \left[ 
+\begin{array}{ccccccc}
+1 &  &  &  &  &  &  \\
+ & \ddots &  &  &  &  &  \\
+ &   & 1& &  &  &  \\
+ &   &  &  c &  &  &  \\
+ &   &  &  & 1 &  &  \\
+ &   &  &  &  & \ddots  &  \\
+ &   &  &  &  &   & 1 
+\end{array}
+\right].  \]
+Multiplying  a matrix $A$ by $E_1$ (where $E_1$ is on the left) has the same effect as scaling row $i$ of $A$ by the scalar $c$.  
+\end{edXshowhide}
+
+\begin{edXshowhide}{Elementary Matrix of the Second Type}
+An elementary matrix of the second type is one obtained from the identity matrix by changing the non-diagonal entry in the $i$th row and $j$th column ($i\ne j$) to a number $c \ne 0$: 
+\[ E_2 = \left[ 
+\begin{array}{ccccccc}
+1 &  &  &  &  &  &  \\
+ & \ddots &  &  &  &  &  \\
+ &   & 1& &  &  &  \\
+ &   &  &  \ddots &  &  &  \\
+ &   &  c &  & 1 &  &  \\
+ &   &  &  &  & \ddots  &  \\
+ &   &  &  &  &   & 1 
+\end{array}
+\right].  \]
+Multiplying  a matrix $A$ by $E_2$ (where $E_2$ is on the left) has the same effect as adding $c$ times the $j$th row of $A$ to row $i$.  
+\end{edXshowhide}
+
+\begin{edXshowhide}{Elementary Matrix of the Third Type}
+An elementary matrix of the third type is one obtained from the identity matrix by changing the $i$th and $j$th diagonal entries to 0, and changing the entries in the $i$th row and $j$th column, and the $j$th row and $i$th column, to 1: 
+\[ E_3 = \left[ 
+\begin{array}{ccccccccccc}
+1 &  &  &  &  &  &  & & & &\\
+ & \ddots &  &  &  &  &  & & & &\\
+ &   & 1& &  &  &  & & & & \\
+ &   &  &  0 &  &  &  & 1 & & & \\
+ &   &   &  & 1 &  &  & & & &\\
+ &   &  &  &  & \ddots  & & & & & \\
+ &   &  &  &  &   & 1 & & & & \\
+&   &  &  1 &  &   &  & 0 & & &  \\ 
+&   &  &  &  &   &  &  & 1 & & \\
+&   &  &  &  &   &  &  &  & \ddots & \\ 
+&   &  &  &  &   &  &  &  & & 1
+ \end{array}
+\right].  \]
+Multiplying  a matrix $A$ by $E_3$ (where $E_3$ is on the left) has the same effect as swapping the $i$th and $j$th rows
+of $A$.  
+\end{edXshowhide}
+
+
+
+
+\endedxtext
+
+\endedxvertical
+
+\beginedxvertical{Elementary Matrices and Inverses}
+
+
+\doedxvideo{Elementary Matrices and Inverses}{EtoZ2FyFKS4}
+
+
+\endedxvertical
+
+\beginedxvertical{Transposes}
+
+\beginedxtext{Transposes}
+
+The last matrix operation we will introduce in this section is the transpose.  The transpose of a matrix $A$
+is essentially the matrix whose columns are the rows of $A$ (and whose rows are the columns of $A$).  Essentially,
+$A$ gets flipped across its diagonal.  More formally:
+
+{\keya{\bf{Definition.}}}  Given an $m\times n$ matrix $A$, the {\keyb{\bf{transpose}}} of $A$ is the
+$n\times m$ matrix denoted $A^t$ whose entry in the $i$th row and $j$th column is the same as the
+entry in the $j$th row and $i$th column of $A$.  
+
+For instance, if \[A = \left[ \begin{array}{ccc} 1 & 2 & 0  \\
+3 & 4 & -1
+ \end{array} \right],\] then \[A^t  = \left[ \begin{array}{cc} 1 & 3  \\
+2 & 4 \\ 0 & -1
+ \end{array} \right].\]
+ 
+\endedxtext
+
+
+\beginedxproblem{Find a Transpose}{\dpa3}
+
+Suppose $B = \left[ \begin{array}{cc} 2 & 0  \\
+1 & 3 \\ -2 & -1 \\ 5 & 0
+ \end{array} \right].$  
+ 
+What is $B^t$?  
+
+\input{matrixentry2.tex}
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[2, 1, -2, 5],[0,3,-1,0]]"}
+
+\edXsolution{The first column of $B$ becomes the first row of $B^t$.  The second column of $B$
+becomes the second row of $B^t$.  
+}
+
+\endedxproblem
+
+
+
+\beginedxproblem{Double Transpose}{\dpa1}
+
+True or false: Any matrix $A$ is equal to the transpose of its transpose.  In other words, $A = (A^t)^t$.  
+
+\edXabox{expect="True" options="True","False"}
+
+\edXsolution{ Switching the rows and columns of the transpose gives the original matrix.  
+ }
+
+\endedxproblem
+
+
+\endedxvertical
+
+\beginedxvertical{Transposes and Products}
+
+\beginedxproblem{Possible Product}{\dpa1}
+
+Suppose $A$ is a $4\times 3$ matrix, and $B$ is an $3 \times 5$ matrix, so that $AB$ is a $4\times 5$ matrix.  
+
+Which of the following matrix products is defined?  
+
+\edXabox{type="multichoice" expect="$B^tA^t$" options="$A^tB^t$","$B^tA^t$","Both are defined","Neither are defined"}
+
+\edXsolution{ 
+ }
+
+\endedxproblem
+
+
+
+\doedxvideo{Transposes and Products}{AT6y-Q3TI_w}
+
+\endedxvertical
+
+\beginedxvertical{Transposes and Inverses}
+
+\beginedxproblem{Symmetric Matrices}{\dpa1}
+
+{\keya{\bf{Definition.}}} A matrix $A$ is {\keyb{\bf{symmetric}}} if $A = A^t$.  
+
+Of the following matrices, which ones are symmetric?  Click all that apply.  
+
+\edXabox{type="oldmultichoice" expect="$\left[ \begin{array}{cc} \pi & 1   \\ 1 & 4 \end{array} \right]$","$I_n$" options="$\left[ \begin{array}{ccc} 1 & 0 & 0  \\ 0 & 2 & 0 \end{array} \right]$","$\left[ \begin{array}{cc} 1 & 1   \\ 2 & 2 \end{array} \right]$","$\left[ \begin{array}{cc} \pi & 1   \\ 1 & 4 \end{array} \right]$","$I_n$"}
+
+\edXsolution{ 
+ }
+
+\endedxproblem
+
+\doedxvideo{Transposes and Inverses}{bg1nsJJS-ZY}
+
+\endedxvertical
+
+\beginedxvertical{Summary of Results}
+
+
+
+\beginedxtext{Transpose Results Summary}
+
+{\keya{\bf{Proposition.}}}  If $A$ and $B$ are matrices such that the product $AB$ is defined, then 
+$(AB)^t = B^t A^t$.  
+
+{\keya{\bf{Proposition.}}}  If $A$ is invertible, then $A^t$ is invertible, and $(A^t)\inv = (A\inv)^t$.  
+
+{\keya{\bf{Invertible Matrix Theorem (extended).}}}  For a square ($n\times n$) matrix $A$, the following statements are all
+equivalent to one another, and to the conditions previously stated in the Invertible Matrix Theorem:
+\begin{itemize}
+\item $A$ is invertible.
+\item $A^t$ is invertible.
+\item The rows of $A$ (viewed as vectors in $\R^n$) span $\R^n$.  
+\item The rows of $A$ are linearly independent.  
+\end{itemize}
+
+ 
+\endedxtext
+
+
+\beginedxproblem{Solve for A, again}{\dpa1}
+
+Suppose that $A,B,C,D$ are all invertible $n\times n$ matrices such that
+$B^t (A\inv)^t = D^t C\inv$.  Solve for $A$.  
+
+
+\edXabox{type="multichoice" expect="$A=BD\inv C^t$" options="$A=D\inv C^t B$","$A=B\inv D\inv C^t$","$A=BD\inv C^t$","$A=D\inv (C\inv )^t B$","$A=DC^t B\inv$","$A=C^t D\inv B\inv$","$A=BC^t D\inv $","$A=C^t D\inv B$","None of the above"}
+
+
+\edXsolution{ 
+ }
+ 
+\endedxproblem
+
+
+\beginedxproblem{More IMT}{\dpa3}
+
+Let $T: \R^4 \rightarrow \R^4$ be a linear transformation with standard matrix $A$.  Suppose the second row of $A$ is equal
+to three times the last row of $A$ minus the first row of $A$.  Which of the following must be true?  Click all that apply.  
+
+\edXabox{type="oldmultichoice" expect="$T$ is not onto","$A$ has a free variable","The kernel of $T$ contains infinitely many vectors","The columns of $A$ do not span $\R^4$" options="$T$ is not onto","$A$ is invertible","$A$ has a free variable","The kernel of $T$ contains infinitely many vectors","The equation $Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \\7 \end{array} \right]$ has more than one solution","The columns of $A$ do not span $\R^4$"}
+
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+
+\endedxvertical
