@@ -73,7 +73,9 @@ Is $T_2\circ T_1$ a linear transformation?
 
 \edXabox{expect="No" options="Yes","No"}
 
-\edXsolution{
+\edXsolution{Note that $T_1\circ T_2$ first applies $T_2$ and then $T_1$, so we need to check that the image of $T_2$ lies in the domain of $T_1$.  This is true since $T_2$ outputs a vector in $\R^7$, which is the domain of $T_1$.  Then, since $T_1$ and $T_2$ are both linear transformations, so it $T_1\circ T_2$.\\
+
+Now, $T_2\circ T_1$ first applies $T_1$, which outputs a vector in $\R^4$.  It would then apply $T_2$, but this is not possible since the domain of $T_2$ is $\R^3$.
 }
 
 \endedxproblem
@@ -93,8 +95,7 @@ What size is $C_2$?
 \edXabox{expect="7 x 3" options="3 x 7","7 x 3"}
 
 
-\edXsolution{ 
-
+\edXsolution{ A transformation from $\R^n$ to $\R^m$ has standard matrix size $m \times n$. If $A$ is the standard matrix for a transformation, $T: \R^n \rightarrow \R^m$, then for a vector $v\in\R^n$, $T(v)$ corresponds to $Av$.  Since $v$ has $n$ entries, $A$ needs to have $n$ columns.   Also, since $T$ outputs a vector in $\R^m$, we see that $A$ needs to have $m$ rows.
 }
 \endedxproblem
 
@@ -110,7 +111,9 @@ What size is $C_2C_1$?
 
 \edXabox{type="multichoice" expect="Not defined" options="4 x 7","4 x 3","3 x 4","7 x 3","7 x 7","Not defined"}
 
-\edXsolution{ 
+\edXsolution{ The matrix $C_1C_2$ corresponds to $T_1\circ T_2$, which was a linear transformation from $\R^3$ to $\R^4$.  Therefore $C_1C_2$ is a $4 \times 3$ matrix.\\
+
+Now, the number of columns of $C_2$ is not equal to the number of rows of $C_1$ and thus $C_2C_1$ is undefined.
 
 }
 \endedxproblem
@@ -127,7 +130,7 @@ Which of the following is true?
 \edXabox{type="multichoice" expect="$S\circ T = S$" options="$S\circ T = T$","$S\circ T = S$","$T\circ S = T$","$T\circ S = S$"}
 
 
-\edXsolution{ 
+\edXsolution{ First, $T\circ S$ is undefined because $S$ outputs a vector in $\R^m$, and the domain of $T$ is $\R^n$.  Now, for every vector, $v\in \R^n$, $S\circ T(v)=S(T(v))=S(v)$ because $T$ acts as the identity transformation.  Therefore $S\circ T=S$.
 
 }
 \endedxproblem
@@ -141,7 +144,7 @@ $I_n$ is the standard matrix for $T$.  Which of the following is true?
 \edXabox{type="multichoice" expect="$AI_n = A$" options="$AI_n = A$","$I_nA = A$","Both are true"}
 
 
-\edXsolution{ 
+\edXsolution{Since $I_n$ has $n$ columns and $A$ has $m$ rows, $I_nA = A$ is undefined.  On the other hand, since $A$ has $n$ columns and $I_n$ has $n$ rows, we know that $AI_n$ is defined.  Also, $AI_n$ is the standard matrix for $S\circ T$ (from the above scenario) and from the previous question, we have $S\circ T=S$.  Thus, $AI_n$ is the standard matrix for $S$, which is $A$, and we find that $AI_n=A$.
 
 }
 
@@ -200,7 +203,7 @@ Of $CD$ and $DC$, which matrix product is defined?
 \edXabox{expect="DC" options="CD","DC","Both are defined"}
 
 
-\edXsolution{ 
+\edXsolution{ Since $D$ has 3 rows, and $C$ has only 2 columns, $CD$ is undefined.  But, $C$ has 3 rows, and $D$ has 3 columns, and thus the produce $DC$ is defined.
 
 }
 
@@ -217,7 +220,7 @@ From the problem above, enter the product which is defined.  (If both are, you m
 
 \edXabox{type="custom" cfn="MatrixEntry" expect="[[-2,6],[-1,3],[-4,12]]"}
 
-\edXsolution{
+\edXsolution{We find \[ DC = \left[\begin{array}{cc} 1+0-3 & -1+4+3 \\ 0+0-1& 0+2+1 \\ -1+0-3 & 1+8+3  \end{array} \right]. \]
 
 }
 
@@ -247,7 +250,11 @@ Is $AB$ the same as $BA$?
 \edXabox{expect="No" options="Yes","No"}
 
 
-\edXsolution{
+\edXsolution{\[ AB= \left[\begin{array}{cc} 0+-1 & 3-2 \\ 0+0 & 6+0  \end{array} \right] \]\\
+
+\[ BA= \left[\begin{array}{cc} 0+6 & 0+0 \\ 1+4 & -1+0  \end{array} \right] \]\\
+
+We observe that $AB\neq BA$.
 
 }
 
@@ -307,7 +314,7 @@ linearly independent, then the columns of $AB$ must be linearly independent.
 \edXabox{expect="False" options="True","False"}
 
 
-\edXsolution{ 
+\edXsolution{ Take as a counterexample: If $A$ is the zero matrix, then $AB$ is also the zero matrix, and thus the columns of $AB$ are linearly dependent.
 
 
  }
@@ -343,7 +350,7 @@ what can we conclude about $T$?
 \edXabox{type="multichoice" expect="$T$ is into" options="$T$ is into","$T$ is not into","$T$ is onto","$T$ is not onto"}
 
 
-\edXsolution{ 
+\edXsolution{ The columns of $A$ are linearly independent if and only if there is a unique solution to $Ax=\veco$.  Thus $\text{Ker}(T)=\{\veco\}$. Thus, $T$ is into.
 
 }
 
@@ -357,7 +364,7 @@ to which of the following?
 \edXabox{type="multichoice" expect="$T\circ S$ is into" options="$S\circ T$ is into","$S\circ T$ is onto","$T\circ S$ is into","$T\circ S$ is onto" }
 
 
-\edXsolution{ 
+\edXsolution{ We know that $AB$ is the standard matrix for the transformation $T\circ S$.  Thus, the columns of $AB$ are linearly independent if and only if $\text{Ker}(T\circ S)=\{\veco\}$ if and only if $T\circ S$ is into.
 
 }
 
@@ -408,7 +415,7 @@ to conclude that
 
 
 
-\edXsolution{ 
+\edXsolution{ When applying $T\circ S$, we first apply $S$.  Thus, we first use the fact that $S$ is into to show that $S(u)\ne S(v)$.
 }
 
 \endedxproblem
@@ -423,7 +430,7 @@ and we have proven our proposition!
 
 
 
-\edXsolution{ 
+\edXsolution{From the previous proposition, we have that $S(u)\ne S(v)$.  Next, we are applying $T$, so we use the fact that $T$ is into to show that $T\circ S(u) \ne T\circ S(v)$.
 }
 
 \endedxproblem
