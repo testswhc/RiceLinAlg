@@ -1,0 +1,20 @@
+<problem display_name="Non-square inverse? 2" linenum="348" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Look at the result of the previous problem. Does this mean that [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are inverses of one another? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ No. For [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] to be inverses, <span style="color:#99182C"><b class="bf">both</b></span> [mathjaxinline]AB[/mathjaxinline] and [mathjaxinline]BA[/mathjaxinline] must be the identity.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

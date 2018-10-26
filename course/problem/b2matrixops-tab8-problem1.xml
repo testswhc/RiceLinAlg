@@ -1,0 +1,32 @@
+<problem display_name="Possible Product" linenum="292" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]4\times 3[/mathjaxinline] matrix, and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]3 \times 5[/mathjaxinline] matrix, so that [mathjaxinline]AB[/mathjaxinline] is a [mathjaxinline]4\times 5[/mathjaxinline] matrix. </p>
+    <p>
+Which of the following matrix products is defined? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> [mathjaxinline]A^ tB^ t[/mathjaxinline]</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text> [mathjaxinline]B^ tA^ t[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> Both are defined</text>
+          </choice>
+          <choice correct="false" name="4">
+            <text> Neither are defined</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

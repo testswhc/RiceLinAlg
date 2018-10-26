@@ -1,4 +1,4 @@
-<problem display_name="Row Reduction and Onto" linenum="134" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Row Reduction and Onto" linenum="136" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Suppose [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] is onto if and only if [mathjaxinline]A[/mathjaxinline] row reduces to have... </p>
@@ -23,7 +23,10 @@ Suppose [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] 
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+We know that [mathjaxinline]T[/mathjaxinline] is onto if and only if the system [mathjaxinline]Ax=v[/mathjaxinline] is consistent for all [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline]. This is true if and only if [mathjaxinline]A[/mathjaxinline] row reduces to a matrix with no rows of all zeros. </p>
+        </font>
       </solution>
     </p>
   </text>

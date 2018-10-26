@@ -72,16 +72,16 @@ def VectorEntry(expect, ans):
   	return ret 
 </script>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <customresponse cfn="VectorEntry" expect="[[8],[-1], [18]]">
+        <textline correct_answer="[[8],[-1], [18]]"/>
+      </customresponse>
     </p>
     <p>
 Let [mathjaxinline]y = \left[\begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ay[/mathjaxinline]? </p>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <customresponse cfn="VectorEntry" expect="[[0],[-1],[3]]">
+        <textline correct_answer="[[0],[-1],[3]]"/>
+      </customresponse>
     </p>
     <p>
       <solution>

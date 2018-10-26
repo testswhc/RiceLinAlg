@@ -1,4 +1,4 @@
-<problem display_name="Is it into?" linenum="191" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Is it into?" linenum="200" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]V[/mathjaxinline] be a vector space over [mathjaxinline]\mathbb R[/mathjaxinline], and let [mathjaxinline]T: V\rightarrow V[/mathjaxinline] be given by [mathjaxinline]T(v) = 2v[/mathjaxinline]. </p>
@@ -19,7 +19,7 @@ Is [mathjaxinline]T[/mathjaxinline] into? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue">  </font>
+        <font color="blue"> If [mathjaxinline]T(u) = T(v)[/mathjaxinline], then [mathjaxinline]2u=2v[/mathjaxinline]. Multiplying by [mathjaxinline]\frac{1}{2}[/mathjaxinline], we see that [mathjaxinline]u=v[/mathjaxinline].<br/>The fact that [mathjaxinline]T(u) = T(v)[/mathjaxinline] implies [mathjaxinline]u=v[/mathjaxinline] is equivalent to the definition of into.  </font>
       </solution>
     </p>
   </text>

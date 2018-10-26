@@ -1,4 +1,4 @@
-<problem display_name="Row Reduction and Into" linenum="283" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Row Reduction and Into" linenum="296" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. </p>
@@ -25,7 +25,7 @@ Let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue">  </font>
+        <font color="blue"> Suppose that [mathjaxinline]T[/mathjaxinline] has standard matrix [mathjaxinline]A[/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] is into if and only if there is a unique solution (in particular [mathjaxinline]\mathbf{0}[/mathjaxinline]) to [mathjaxinline]Ax=\mathbf{0}[/mathjaxinline]. This is true if and only if [mathjaxinline]A[/mathjaxinline] does not have any free variables when row reduced.  </font>
       </solution>
     </p>
   </text>

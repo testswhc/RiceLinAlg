@@ -1,4 +1,4 @@
-<problem display_name="True or False" linenum="151" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="True or False" linenum="153" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 True or False: No linear transformation [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline] can be onto. </p>
@@ -17,7 +17,7 @@ True or False: Every linear transformation [mathjaxinline]T: \mathbb R^8 \righta
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue">  </font>
+        <font color="blue"> Suppose [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline] is a linear transformation. From the video, since [mathjaxinline]6&lt;8[/mathjaxinline], [mathjaxinline]T[/mathjaxinline] cannot be onto. <br/>A linear transformation from [mathjaxinline]\mathbb R^8[/mathjaxinline] to [mathjaxinline]\mathbb R^6[/mathjaxinline] might be onto, but it might not be. For instance, the map sending everything to [mathjaxinline]\mathbf{0}[/mathjaxinline] is a linear transformation which is not onto.  </font>
       </solution>
     </p>
   </text>

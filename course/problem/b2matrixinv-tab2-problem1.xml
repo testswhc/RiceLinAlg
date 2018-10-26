@@ -1,0 +1,50 @@
+<problem display_name="Cube roots" linenum="34" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+If [mathjaxinline]\  f(x) = x^3[/mathjaxinline], then here are some values of [mathjaxinline]\  f[/mathjaxinline]: </p>
+    <table id="a0000000087" cellpadding="7" width="100%" cellspacing="0" class="eqnarray" style="table-layout:auto">
+      <tr id="a0000000088">
+        <td style="width:40%; border:none">&#xA0;</td>
+        <td style="vertical-align:middle;                                    text-align:right; border:none">
+	    [mathjaxinline]\displaystyle  f(-11)[/mathjaxinline]
+        </td>
+        <td style="vertical-align:middle;                                    text-align:left; border:none">
+	    [mathjaxinline]\displaystyle = -1331[/mathjaxinline]
+        </td>
+        <td style="width:40%; border:none">&#xA0;</td>
+        <td style="width:20%; border:none" class="eqnnum"/>
+      </tr>
+      <tr id="a0000000089">
+        <td style="width:40%; border:none">&#xA0;</td>
+        <td style="vertical-align:middle;                                    text-align:right; border:none">
+	    [mathjaxinline]\displaystyle f(12)[/mathjaxinline]
+        </td>
+        <td style="vertical-align:middle;                                    text-align:left; border:none">
+	    [mathjaxinline]\displaystyle = 1728[/mathjaxinline]
+        </td>
+        <td style="width:40%; border:none">&#xA0;</td>
+        <td style="width:20%; border:none" class="eqnnum"/>
+      </tr>
+      <tr id="a0000000090">
+        <td style="width:40%; border:none">&#xA0;</td>
+        <td style="vertical-align:middle;                                    text-align:right; border:none">
+	    [mathjaxinline]\displaystyle f(-13)[/mathjaxinline]
+        </td>
+        <td style="vertical-align:middle;                                    text-align:left; border:none">
+	    [mathjaxinline]\displaystyle = -2197.[/mathjaxinline]
+        </td>
+        <td style="width:40%; border:none">&#xA0;</td>
+        <td style="width:20%; border:none" class="eqnnum"/>
+      </tr>
+    </table>
+    <p>
+Let [mathjaxinline]g(y) = \displaystyle {\sqrt [3]{y}}[/mathjaxinline]. What is [mathjaxinline]g(-2197)[/mathjaxinline]? </p>
+    <p>
+      <numericalresponse answer="-13">
+        <textline>
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+  </text>
+</problem>

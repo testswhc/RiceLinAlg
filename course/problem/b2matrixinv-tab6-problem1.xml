@@ -1,0 +1,24 @@
+<problem display_name="Using the Invertible Matrix Theorem" linenum="209" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix which has at least one free variable. Can we conclude that the columns of [mathjaxinline]A[/mathjaxinline] do not span [mathjaxinline]\mathbb R^ m[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+Suppose [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]n\times n[/mathjaxinline] matrix which has at least one free variable. Can we conclude that the columns of [mathjaxinline]A[/mathjaxinline] do not span [mathjaxinline]\mathbb R^ n[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"> For the first question, we cannot make that conclusion, since we are not told the matrix is square. For instance, [mathjaxinline]\left[ \begin{array}{ccc} 1 &amp;  0 &amp;  0 \\ 0 &amp;  1 &amp;  0 \end{array} \right][/mathjaxinline] has a free variable, but its columns span [mathjaxinline]\mathbb R^2[/mathjaxinline]. For the second question, we know the matrix is square, so the Invertible Matrix Theorem applies. Since [mathjaxinline]A[/mathjaxinline] has a free variable, we can conclude that none of the conditions in the Invertible Matrix Theorem are true. In particular, its columns do not span [mathjaxinline]\mathbb R^ n[/mathjaxinline].  </font>
+      </solution>
+    </p>
+  </text>
+</problem>
