@@ -134,7 +134,7 @@ What is $T(e_3)$?
 
 
 \edXsolution{ Since $T: \R^4\rightarrow \R^3$, we know from context that $e_3=\left[ \begin{array}{c} 0 & 0 & 1 & 0 \end{array} \right].$  Then \[
-T(e_3)=\left[ \begin{array}{cccc} 1 & 3 & 5 & 7 \\ 2 & 0 & -1 & -1 \\ 1 & 1 & 3  & -2 \end{array} \right]\left[ \begin{array}{c} 0 & 0 & 1 & 0 \end{array} \right] = \left[ \begin{array}{c} 5 & -1 & 3 \end{array} \right].\]
+T(e_3)=\left[ \begin{array}{cccc} 1 & 3 & 5 & 7 \\ 2 & 0 & -1 & -1 \\ 1 & 1 & 3  & -2 \end{array} \right]\left[ \begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \right] = \left[ \begin{array}{c} 5 \\ -1 \\ 3 \end{array} \right].\]
 
 Alternatively, if the four columns of $A$ are $v_1, v_2, v_3, v_4$, multiplying $A$ by $\left[ \begin{array}{c} 0 & 0 & 1 & 0 \end{array} \right]$ should yield the linear combination $0v_1 + 0v_2 + 1v_3 + 0v_4,$ which is just
 $v_3$.  
@@ -164,9 +164,9 @@ Is $T$ a linear transformation?
 
 \edXsolution{ 
 We see that
-\[T\left[ \begin{array}{c} a_1 \\ a_2 \end{array} \right] = 
+\[T\left[ \begin{array}{c} a_1 \\ a_2 \\a_3 \end{array} \right] = 
 \left[ \begin{array}{ccc} 2 & 0 & -1 \\ -1  & 1 & 0 \end{array} \right]
-\left[ \begin{array}{c} a_1 \\ a_2 \end{array} \right] \], so 
+\left[ \begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array} \right] \], so 
 $A = \left[ \begin{array}{ccc} 2 & 0 & -1 \\ -1  & 1 & 0 \end{array} \right]$ works.  
 
 Since $T$ is multiplication by a matrix, it is a linear transformation.
