@@ -1,4 +1,4 @@
-<problem display_name="Another Proposition 1" linenum="325" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Another Proposition 1" linenum="338" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Over the next few problems, we're going to apply the same technique of translating matrix properties to linear transformation properties, and exploiting the Fundamental Fact of Matrix Multiplication, to prove the following proposition: </p>
@@ -26,7 +26,10 @@ Let [mathjaxinline]A[/mathjaxinline] be the standard matrix for a linear transfo
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ We have proven that the columns of [mathjaxinline]A[/mathjaxinline] are linearly independent if and only if [mathjaxinline]T[/mathjaxinline] is into. </p>
+        </font>
       </solution>
     </p>
   </text>

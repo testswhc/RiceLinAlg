@@ -1,3 +1,3 @@
-<html display_name="A Proposition about Matrix Multiplication" linenum="288" tex_filename="./block2/matrixmult.tex">
+<html display_name="A Proposition about Matrix Multiplication" linenum="301" tex_filename="./block2/matrixmult.tex">
   <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix, and the columns of [mathjaxinline]B[/mathjaxinline] are linearly dependent, then the columns of [mathjaxinline]AB[/mathjaxinline] must be linearly dependent. </p>
 </html>

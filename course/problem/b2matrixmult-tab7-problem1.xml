@@ -1,4 +1,4 @@
-<problem display_name="Linearly Independent?" linenum="299" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Linearly Independent?" linenum="312" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 True or false: If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix, and the columns of [mathjaxinline]B[/mathjaxinline] are linearly independent, then the columns of [mathjaxinline]AB[/mathjaxinline] must be linearly independent. </p>
@@ -10,7 +10,10 @@ True or false: If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times 
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ Here is a counterexample: If [mathjaxinline]A[/mathjaxinline] is the zero matrix, then [mathjaxinline]AB[/mathjaxinline] is also the zero matrix, and thus the columns of [mathjaxinline]AB[/mathjaxinline] are linearly dependent. </p>
+        </font>
       </solution>
     </p>
   </text>

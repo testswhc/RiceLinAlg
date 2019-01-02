@@ -2870,8 +2870,10 @@ Is [mathjaxinline]T_2\circ T_1[/mathjaxinline] a linear transformation? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="No"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Matrix Sizes" attrib_string="url_name=&quot;b2matrixmult-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="82" tex_filename="./block2/matrixmult.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+Note that [mathjaxinline]T_1\circ T_2[/mathjaxinline] first applies [mathjaxinline]T_2[/mathjaxinline] and then [mathjaxinline]T_1[/mathjaxinline], so we need to check that the image of [mathjaxinline]T_2[/mathjaxinline] lies in the domain of [mathjaxinline]T_1[/mathjaxinline]. This is true since [mathjaxinline]T_2[/mathjaxinline] outputs a vector in [mathjaxinline]\mathbb R^7[/mathjaxinline], which is the domain of [mathjaxinline]T_1[/mathjaxinline]. Then, since [mathjaxinline]T_1[/mathjaxinline] and [mathjaxinline]T_2[/mathjaxinline] are both linear transformations, so it [mathjaxinline]T_1\circ T_2[/mathjaxinline].<br /></p><p>
+Now, [mathjaxinline]T_2\circ T_1[/mathjaxinline] first applies [mathjaxinline]T_1[/mathjaxinline], which outputs a vector in [mathjaxinline]\mathbb R^4[/mathjaxinline]. It would then apply [mathjaxinline]T_2[/mathjaxinline], but this is not possible since the domain of [mathjaxinline]T_2[/mathjaxinline] is [mathjaxinline]\mathbb R^3[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Matrix Sizes" attrib_string="url_name=&quot;b2matrixmult-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="84" tex_filename="./block2/matrixmult.tex"><text><p>
 Let [mathjaxinline]C_1[/mathjaxinline] be the standard matrix for [mathjaxinline]T_1[/mathjaxinline] from the previous question, and let [mathjaxinline]C_2[/mathjaxinline] be the standard matrix for [mathjaxinline]T_2[/mathjaxinline]. </p><p>
 What size is [mathjaxinline]C_1[/mathjaxinline]? </p><p>
 <optionresponse>
@@ -2881,8 +2883,8 @@ What size is [mathjaxinline]C_2[/mathjaxinline]? </p><p>
 <optionresponse>
   <optioninput options="('3 x 7','7 x 3')" correct="7 x 3"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue">  </font></solution></p></text></problem></p><p>
-<problem display_name="Product Sizes" attrib_string="url_name=&quot;b2matrixmult-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="102" tex_filename="./block2/matrixmult.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"> A transformation from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline] has standard matrix of size [mathjaxinline]m \times n[/mathjaxinline].  </font></solution></p></text></problem></p><p>
+<problem display_name="Product Sizes" attrib_string="url_name=&quot;b2matrixmult-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="104" tex_filename="./block2/matrixmult.tex"><text><p>
 What size is [mathjaxinline]C_1C_2[/mathjaxinline]? </p><p>
 <multiplechoiceresponse>
   <choicegroup direction="vertical">
@@ -2929,8 +2931,8 @@ What size is [mathjaxinline]C_2C_1[/mathjaxinline]? </p><p>
     </choice>
   </choicegroup>
 </multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue">  </font></solution></p></text></problem></p><p>
-<problem display_name="Composing with Identity Transformation" attrib_string="url_name=&quot;b2matrixmult-tab3-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="119" tex_filename="./block2/matrixmult.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"> The matrix [mathjaxinline]C_1C_2[/mathjaxinline] is the standard matrix for [mathjaxinline]T_1\circ T_2[/mathjaxinline], which is a linear transformation from [mathjaxinline]\mathbb R^3[/mathjaxinline] to [mathjaxinline]\mathbb R^4[/mathjaxinline]. Therefore [mathjaxinline]C_1C_2[/mathjaxinline] is a [mathjaxinline]4 \times 3[/mathjaxinline] matrix.<br />The number of columns of [mathjaxinline]C_2[/mathjaxinline] is not equal to the number of rows of [mathjaxinline]C_1[/mathjaxinline], and thus [mathjaxinline]C_2C_1[/mathjaxinline] is undefined.  </font></solution></p></text></problem></p><p>
+<problem display_name="Composing with Identity Transformation" attrib_string="url_name=&quot;b2matrixmult-tab3-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="123" tex_filename="./block2/matrixmult.tex"><text><p>
 Suppose [mathjaxinline]S: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation. Let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ n[/mathjaxinline] be the identity transformation (recall that this means [mathjaxinline]T(v) = v[/mathjaxinline] for all [mathjaxinline]v\in \mathbb R^ n[/mathjaxinline]). </p><p>
 Which of the following is true? </p><p>
 <multiplechoiceresponse>
@@ -2949,8 +2951,8 @@ Which of the following is true? </p><p>
     </choice>
   </choicegroup>
 </multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue">  </font></solution></p></text></problem></p><p>
-<problem display_name="Multiplying by Identity Matrix" attrib_string="url_name=&quot;b2matrixmult-tab3-problem5&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="135" tex_filename="./block2/matrixmult.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"> First, [mathjaxinline]T\circ S[/mathjaxinline] is undefined because [mathjaxinline]S[/mathjaxinline] outputs a vector in [mathjaxinline]\mathbb R^ m[/mathjaxinline], and the domain of [mathjaxinline]T[/mathjaxinline] is [mathjaxinline]\mathbb R^ n[/mathjaxinline]. Now, for every vector [mathjaxinline]v\in \mathbb R^ n[/mathjaxinline], [mathjaxinline]S\circ T(v)=S(T(v))=S(v)[/mathjaxinline] because [mathjaxinline]T[/mathjaxinline] acts as the identity transformation. Therefore [mathjaxinline]S\circ T=S[/mathjaxinline].  </font></solution></p></text></problem></p><p>
+<problem display_name="Multiplying by Identity Matrix" attrib_string="url_name=&quot;b2matrixmult-tab3-problem5&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="139" tex_filename="./block2/matrixmult.tex"><text><p>
 Given the above scenario, let [mathjaxinline]A[/mathjaxinline] be the standard matrix for [mathjaxinline]S[/mathjaxinline]. Recall that the [mathjaxinline]n\times n[/mathjaxinline] identity matrix [mathjaxinline]I_ n[/mathjaxinline] is the standard matrix for [mathjaxinline]T[/mathjaxinline]. Which of the following is true? </p><p>
 <multiplechoiceresponse>
   <choicegroup direction="vertical">
@@ -2965,16 +2967,18 @@ Given the above scenario, let [mathjaxinline]A[/mathjaxinline] be the standard m
     </choice>
   </choicegroup>
 </multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ [mathjaxinline]AI_ n[/mathjaxinline] is the standard matrix for [mathjaxinline]S\circ T[/mathjaxinline] (from the above scenario) and from the previous question, we have [mathjaxinline]S\circ T=S[/mathjaxinline]. Thus, [mathjaxinline]AI_ n[/mathjaxinline] equals the standard matrix for [mathjaxinline]S[/mathjaxinline], which is [mathjaxinline]A[/mathjaxinline]. </p><p>
+Since [mathjaxinline]I_ n[/mathjaxinline] has [mathjaxinline]n[/mathjaxinline] columns and [mathjaxinline]A[/mathjaxinline] has [mathjaxinline]m[/mathjaxinline] rows, [mathjaxinline]I_ nA = A[/mathjaxinline] is undefined.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Calculating the Product" attrib_string="url_name=&quot;b2matrixmult-vertical4&quot;" refnum="4"><p>
-<html display_name="Identity Matrix Properties" attrib_string="url_name=&quot;b2matrixmult-tab4-text1&quot;" linenum="159" tex_filename="./block2/matrixmult.tex"><p>
+<html display_name="Identity Matrix Properties" attrib_string="url_name=&quot;b2matrixmult-tab4-text1&quot;" linenum="166" tex_filename="./block2/matrixmult.tex"><p>
 The previous problems show the following: </p><p>
 <span style="color:#27408C"><b class="bf">Proposition.</b></span> For any [mathjaxinline]m\times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline], we have [mathjaxinline]AI_ n = A[/mathjaxinline]. Similarly, [mathjaxinline]I_ m A = A[/mathjaxinline]. </p></html></p><p>
 <video display_name="Calculating the Product" youtube_id_1_0="QbFZTxWh_9w" attrib_string="url_name=&quot;b2matrixmult-tab4-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Product Practice" attrib_string="url_name=&quot;b2matrixmult-vertical5&quot;" refnum="5"><p>
-<html display_name="Definition of Matrix Product" attrib_string="url_name=&quot;b2matrixmult-tab5-text1&quot;" linenum="181" tex_filename="./block2/matrixmult.tex"><p>
+<html display_name="Definition of Matrix Product" attrib_string="url_name=&quot;b2matrixmult-tab5-text1&quot;" linenum="188" tex_filename="./block2/matrixmult.tex"><p>
 <span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix, and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix, then [mathjaxinline]AB[/mathjaxinline] is the [mathjaxinline]m\times p[/mathjaxinline] matrix whose [mathjaxinline]i[/mathjaxinline]th column is [mathjaxinline]A[/mathjaxinline] times the [mathjaxinline]i[/mathjaxinline]th column of [mathjaxinline]B[/mathjaxinline]. </p></html></p><p>
-<problem display_name="Which product?" attrib_string="url_name=&quot;b2matrixmult-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="191" tex_filename="./block2/matrixmult.tex"><text><p>
+<problem display_name="Which product?" attrib_string="url_name=&quot;b2matrixmult-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="198" tex_filename="./block2/matrixmult.tex"><text><p>
 Consider the matrices </p><table id="a0000000085" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]C = \left[\begin{array}{cc} 1 &amp;  -1 \\ 0 &amp;  2 \\ -1 &amp;  1 \end{array} \right].[/mathjax]</td>
@@ -2989,8 +2993,9 @@ Of [mathjaxinline]CD[/mathjaxinline] and [mathjaxinline]DC[/mathjaxinline], whic
 <optionresponse>
   <optioninput options="('CD','DC','Both are defined')" correct="DC"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Compute the Product" attrib_string="url_name=&quot;b2matrixmult-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="211" tex_filename="./block2/matrixmult.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Since [mathjaxinline]D[/mathjaxinline] has 3 rows, and [mathjaxinline]C[/mathjaxinline] has only 2 columns, [mathjaxinline]CD[/mathjaxinline] is undefined. But, [mathjaxinline]C[/mathjaxinline] has 3 rows, and [mathjaxinline]D[/mathjaxinline] has 3 columns, and thus the product [mathjaxinline]DC[/mathjaxinline] is defined. </p></font></solution></p></text></problem></p><p>
+<problem display_name="Compute the Product" attrib_string="url_name=&quot;b2matrixmult-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="218" tex_filename="./block2/matrixmult.tex"><text><p>
 From the problem above, enter the product which is defined. (If both are, you may enter either one.) </p><p>
 <edxshowhide description="How to Enter a Matrix"><p>
 To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p><p>
@@ -3018,8 +3023,13 @@ def MatrixEntry(expect, ans):
 <customresponse cfn="MatrixEntry" expect="[[-2,6],[-1,3],[-4,12]]">
   <textline correct_answer="[[-2,6],[-1,3],[-4,12]]"/>
 </customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Compute the Products" attrib_string="url_name=&quot;b2matrixmult-tab5-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="229" tex_filename="./block2/matrixmult.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+We find </p><table id="a0000000087" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]DC = \left[\begin{array}{cc} 1+0-3 &amp;  -1+4+3 \\ 0+0-1&amp;  0+2+1 \\ -1+0-3 &amp;  1+8+3 \end{array} \right] = \left[\begin{array}{cc} -2 &amp;  6 \\ -1&amp;  3 \\ -4 &amp;  12 \end{array} \right].[/mathjax]</td>
+</tr>
+</table></font></solution></p></text></problem></p><p>
+<problem display_name="Compute the Products" attrib_string="url_name=&quot;b2matrixmult-tab5-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="236" tex_filename="./block2/matrixmult.tex"><text><p>
 Let [mathjaxinline]A = \left[\begin{array}{cc} 1 &amp;  -1 \\ 2 &amp;  0 \end{array} \right][/mathjaxinline] and [mathjaxinline]B = \left[\begin{array}{cc} 0 &amp;  3 \\ 1 &amp;  2 \end{array} \right][/mathjaxinline]. </p><p>
 <edxshowhide description="How to Enter a Matrix"><p>
 To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p><p>
@@ -3056,21 +3066,33 @@ Is [mathjaxinline]AB[/mathjaxinline] the same as [mathjaxinline]BA[/mathjaxinlin
 <optionresponse>
   <optioninput options="('Yes','No')" correct="No"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><table id="a0000000088" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]AB = \left[\begin{array}{cc} 0+-1 &amp;  3-2 \\ 0+0 &amp;  6+0 \end{array} \right] = \left[\begin{array}{cc} -1 &amp;  1 \\ 0 &amp;  6 \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+<br /></p><table id="a0000000089" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]BA = \left[\begin{array}{cc} 0+6 &amp;  0+0 \\ 1+4 &amp;  -1+0 \end{array} \right] = \left[\begin{array}{cc} 6 &amp;  0 \\ 5 &amp;  -1 \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+<br /></p><p>
+We observe that [mathjaxinline]AB\neq BA[/mathjaxinline]. </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Properties of Matrix Multiplication" attrib_string="url_name=&quot;b2matrixmult-vertical6&quot;" refnum="6"><p>
-<video display_name="Commutative? Associative?" youtube_id_1_0="D80IuF4bedo" attrib_string="url_name=&quot;b2matrixmult-tab6-video1&quot; "></video><html display_name="Associativity of Multiplication" attrib_string="url_name=&quot;b2matrixmult-tab6-text1&quot;" linenum="269" tex_filename="./block2/matrixmult.tex"><p>
+<video display_name="Commutative? Associative?" youtube_id_1_0="D80IuF4bedo" attrib_string="url_name=&quot;b2matrixmult-tab6-video1&quot; "></video><html display_name="Associativity of Multiplication" attrib_string="url_name=&quot;b2matrixmult-tab6-text1&quot;" linenum="282" tex_filename="./block2/matrixmult.tex"><p>
 <span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix, [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix, and [mathjaxinline]C[/mathjaxinline] is a [mathjaxinline]p\times q[/mathjaxinline] matrix, then [mathjaxinline]A(BC) = (AB)C[/mathjaxinline]. In other words, matrix multiplication is associative. </p></html></p></vertical>   </p><p>
 <vertical display_name="Applying the Fundamental Fact of Matrix Multiplication" attrib_string="url_name=&quot;b2matrixmult-vertical7&quot;" refnum="7"><p>
-<video display_name="A Proposition" youtube_id_1_0="HuitPIiVBZ4" attrib_string="url_name=&quot;b2matrixmult-tab7-video1&quot; "></video><html display_name="A Proposition about Matrix Multiplication" attrib_string="url_name=&quot;b2matrixmult-tab7-text1&quot;" linenum="288" tex_filename="./block2/matrixmult.tex"><p>
+<video display_name="A Proposition" youtube_id_1_0="HuitPIiVBZ4" attrib_string="url_name=&quot;b2matrixmult-tab7-video1&quot; "></video><html display_name="A Proposition about Matrix Multiplication" attrib_string="url_name=&quot;b2matrixmult-tab7-text1&quot;" linenum="301" tex_filename="./block2/matrixmult.tex"><p>
 <span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix, and the columns of [mathjaxinline]B[/mathjaxinline] are linearly dependent, then the columns of [mathjaxinline]AB[/mathjaxinline] must be linearly dependent. </p></html></p><p>
-<problem display_name="Linearly Independent?" attrib_string="url_name=&quot;b2matrixmult-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="299" tex_filename="./block2/matrixmult.tex"><text><p>
+<problem display_name="Linearly Independent?" attrib_string="url_name=&quot;b2matrixmult-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="312" tex_filename="./block2/matrixmult.tex"><text><p>
 True or false: If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix, and the columns of [mathjaxinline]B[/mathjaxinline] are linearly independent, then the columns of [mathjaxinline]AB[/mathjaxinline] must be linearly independent. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="False"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Here is a counterexample: If [mathjaxinline]A[/mathjaxinline] is the zero matrix, then [mathjaxinline]AB[/mathjaxinline] is also the zero matrix, and thus the columns of [mathjaxinline]AB[/mathjaxinline] are linearly dependent. </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Proving Another Proposition" attrib_string="url_name=&quot;b2matrixmult-vertical8&quot;" refnum="8"><p>
-<problem display_name="Another Proposition 1" attrib_string="url_name=&quot;b2matrixmult-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="325" tex_filename="./block2/matrixmult.tex"><text><p>
+<problem display_name="Another Proposition 1" attrib_string="url_name=&quot;b2matrixmult-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="338" tex_filename="./block2/matrixmult.tex"><text><p>
 Over the next few problems, we're going to apply the same technique of translating matrix properties to linear transformation properties, and exploiting the Fundamental Fact of Matrix Multiplication, to prove the following proposition: </p><p>
 <span style="color:#27408C"><b class="bf">Proposition.</b></span> Suppose [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix. If the columns of [mathjaxinline]A[/mathjaxinline] are linearly independent, and the columns of [mathjaxinline]B[/mathjaxinline] are linearly independent, then the columns of [mathjaxinline]AB[/mathjaxinline] are linearly independent. </p><p>
 Let [mathjaxinline]A[/mathjaxinline] be the standard matrix for a linear transformation [mathjaxinline]T[/mathjaxinline], and let [mathjaxinline]B[/mathjaxinline] be the standard matrix for a linear transformation [mathjaxinline]S[/mathjaxinline]. From the assumption that the columns of [mathjaxinline]A[/mathjaxinline] are linearly independent, what can we conclude about [mathjaxinline]T[/mathjaxinline]? </p><p>
@@ -3090,8 +3112,9 @@ Let [mathjaxinline]A[/mathjaxinline] be the standard matrix for a linear transfo
     </choice>
   </choicegroup>
 </multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Another Proposition 2" attrib_string="url_name=&quot;b2matrixmult-tab8-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="352" tex_filename="./block2/matrixmult.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ We have proven that the columns of [mathjaxinline]A[/mathjaxinline] are linearly independent if and only if [mathjaxinline]T[/mathjaxinline] is into. </p></font></solution></p></text></problem></p><p>
+<problem display_name="Another Proposition 2" attrib_string="url_name=&quot;b2matrixmult-tab8-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="365" tex_filename="./block2/matrixmult.tex"><text><p>
 Our goal is to show that the columns of [mathjaxinline]AB[/mathjaxinline] are linearly independent. This desired conclusion is equivalent to which of the following? </p><p>
 <multiplechoiceresponse>
   <choicegroup direction="vertical">
@@ -3109,9 +3132,10 @@ Our goal is to show that the columns of [mathjaxinline]AB[/mathjaxinline] are li
     </choice>
   </choicegroup>
 </multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ We know that [mathjaxinline]AB[/mathjaxinline] is the standard matrix for the transformation [mathjaxinline]T\circ S[/mathjaxinline]. Thus, the columns of [mathjaxinline]AB[/mathjaxinline] are linearly independent if and only if [mathjaxinline]\text {Ker}(T\circ S)=\{ \mathbf{0}\}[/mathjaxinline] if and only if [mathjaxinline]T\circ S[/mathjaxinline] is into. </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Another Proposition Continued" attrib_string="url_name=&quot;b2matrixmult-vertical9&quot;" refnum="9"><p>
-<problem display_name="Another Proposition 3" attrib_string="url_name=&quot;b2matrixmult-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="373" tex_filename="./block2/matrixmult.tex"><text><p>
+<problem display_name="Another Proposition 3" attrib_string="url_name=&quot;b2matrixmult-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="386" tex_filename="./block2/matrixmult.tex"><text><p>
 Translating the information about linearly independent columns into facts about linear transformations: We know that [mathjaxinline]T[/mathjaxinline] and [mathjaxinline]S[/mathjaxinline] are into, and we are trying to prove that [mathjaxinline]T\circ S[/mathjaxinline] is into. This is much easier than trying to show that the columns of the product [mathjaxinline]AB[/mathjaxinline] are linearly independent directly! </p><p>
 In order to prove that [mathjaxinline]T\circ S[/mathjaxinline] is into, we should... </p><p>
 <multiplechoiceresponse>
@@ -3125,8 +3149,8 @@ In order to prove that [mathjaxinline]T\circ S[/mathjaxinline] is into, we shoul
   </choicegroup>
 </multiplechoiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
- A transformation is into if it sends two different input vectors to two different output vectors. Thus the second option is what we want to show.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Another Proposition 4" attrib_string="url_name=&quot;b2matrixmult-tab9-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="392" tex_filename="./block2/matrixmult.tex"><text><p>
+ A transformation is into if it sends any two different input vectors to two different output vectors. Thus the second option is what we want to show.  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Another Proposition 4" attrib_string="url_name=&quot;b2matrixmult-tab9-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="405" tex_filename="./block2/matrixmult.tex"><text><p>
 Now that we know exactly what we need to do, let's do it! </p><p>
 Suppose that [mathjaxinline]u\ne v[/mathjaxinline] (for vectors [mathjaxinline]u,v[/mathjaxinline] in the domain [mathjaxinline]\mathbb R^ p[/mathjaxinline]). </p><p>
 <p style="display:inline">We can then apply the fact that</p> <optionresponse inline="1">
@@ -3149,13 +3173,15 @@ to conclude that </p><p>
     </choice>
   </choicegroup>
 </multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Another Proposition 5" attrib_string="url_name=&quot;b2matrixmult-tab9-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="416" tex_filename="./block2/matrixmult.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ When applying [mathjaxinline]T\circ S[/mathjaxinline], we first apply [mathjaxinline]S[/mathjaxinline]. Thus, we first use the fact that [mathjaxinline]S[/mathjaxinline] is into to show that [mathjaxinline]S(u)\ne S(v)[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Another Proposition 5" attrib_string="url_name=&quot;b2matrixmult-tab9-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="429" tex_filename="./block2/matrixmult.tex"><text><p>
 <p style="display:inline">We use the result of the previous problem, together with the fact that</p> <optionresponse inline="1">
   <optioninput options="('S is into','T is into')" correct="T is into" inline="1"/>
 </optionresponse> </p><p>
 to give us our desired conclusion that [mathjaxinline]T\circ S(u) \ne T\circ S(v)[/mathjaxinline]. Therefore [mathjaxinline]T\circ S[/mathjaxinline] is into, and we have proven our proposition! </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>    </p></sequential> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+From the previous proposition, we have that [mathjaxinline]S(u)\ne S(v)[/mathjaxinline]. Next, we are applying [mathjaxinline]T[/mathjaxinline], so we use the fact that [mathjaxinline]T[/mathjaxinline] is into to show that [mathjaxinline]T\circ S(u) \ne T\circ S(v)[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>    </p></sequential> </p><p>
 <sequential display_name="Matrix Inverses" attrib_string="due=&quot;2018-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b2matrixinv-sequential&quot;" linenum="429" tex_filename="testcourse.tex" refnum="2"><p>
 <vertical display_name="Page One" attrib_string="url_name=&quot;b2matrixinv-vertical1&quot;" refnum="1"><p>
 <html display_name="Preliminaries" attrib_string="url_name=&quot;b2matrixinv-tab1-text1&quot;" linenum="5" tex_filename="./block2/matrixinv.tex"><p>
@@ -3171,8 +3197,8 @@ Use inverses to solve matrix equations. </p></li>
 For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p></html></p></vertical>   </p><p>
 <vertical display_name="What is an inverse function?" attrib_string="url_name=&quot;b2matrixinv-vertical2&quot;" refnum="2"><p>
 <problem display_name="Cube roots" attrib_string="url_name=&quot;b2matrixinv-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="34" tex_filename="./block2/matrixinv.tex"><text><p>
-If [mathjaxinline]\  f(x) = x^3[/mathjaxinline], then here are some values of [mathjaxinline]\  f[/mathjaxinline]: </p><table id="a0000000087" cellpadding="7" width="100%" cellspacing="0" class="eqnarray">
-<tr id="a0000000088">
+If [mathjaxinline]\  f(x) = x^3[/mathjaxinline], then here are some values of [mathjaxinline]\  f[/mathjaxinline]: </p><table id="a0000000090" cellpadding="7" width="100%" cellspacing="0" class="eqnarray">
+<tr id="a0000000091">
     
     <td style="width:40%">&#160;</td>
     
@@ -3191,7 +3217,7 @@ If [mathjaxinline]\  f(x) = x^3[/mathjaxinline], then here are some values of [m
     
     <td style="width:40%">&#160;</td>
     <td style="width:20%" class="eqnnum">&#160;</td>
-</tr><tr id="a0000000089">
+</tr><tr id="a0000000092">
     
     <td style="width:40%">&#160;</td>
     
@@ -3210,7 +3236,7 @@ If [mathjaxinline]\  f(x) = x^3[/mathjaxinline], then here are some values of [m
     
     <td style="width:40%">&#160;</td>
     <td style="width:20%" class="eqnnum">&#160;</td>
-</tr><tr id="a0000000090">
+</tr><tr id="a0000000093">
     
     <td style="width:40%">&#160;</td>
     
@@ -3324,7 +3350,7 @@ Let [mathjaxinline]A = \left[ \begin{array}{cc} 1 &amp;  2 \\ 2 &amp;  5 \end{ar
 <video display_name="Calculating the Inverse" youtube_id_1_0="qraxzr8nb5o" attrib_string="url_name=&quot;b2matrixinv-tab7-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Inverse Practice" attrib_string="url_name=&quot;b2matrixinv-vertical8&quot;" refnum="8"><p>
 <problem display_name="Invert a Matrix" attrib_string="url_name=&quot;b2matrixinv-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="264" tex_filename="./block2/matrixinv.tex"><text><p>
-The following [mathjaxinline]3\times 3[/mathjaxinline] matrix is invertible: </p><table id="a0000000091" class="equation" width="100%" cellspacing="0" cellpadding="7">
+The following [mathjaxinline]3\times 3[/mathjaxinline] matrix is invertible: </p><table id="a0000000094" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  1 &amp;  2 \\ 3 &amp;  0 &amp;  -2 \\ -1 &amp;  1 &amp;  0 \end{array} \right][/mathjax]</td>
 </tr>
@@ -3417,7 +3443,7 @@ Is it possible for a [mathjaxinline]2\times 3[/mathjaxinline] matrix to be inver
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  We have shown that non-square matrices cannot be invertible.  </p></font></solution></p></text></problem></p><p>
 <problem display_name="An Interesting Product" attrib_string="url_name=&quot;b2matrixinv-tab9-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="326" tex_filename="./block2/matrixinv.tex"><text><p>
-Given </p><table id="a0000000092" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Given </p><table id="a0000000095" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 0 &amp;  1 &amp;  1 \end{array} \right], \   \mathrm{and} \  B = \left[ \begin{array}{cc} 1 &amp;  0 \\ 0 &amp;  0 \\ 0 &amp;  1 \end{array} \right],[/mathjax]</td>
 </tr>
@@ -3526,7 +3552,7 @@ True or false: It is possible for two non-invertible matrices to have an inverti
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  The proposition proven on the previous pages states that if the product of two <span style="color:#99182C"><b class="bf">square</b></span> matrices is invertible, then each individual matrix is. However, this problem does not indicate that the matrices are square. </p><p>
-For instance, given </p><table id="a0000000093" class="equation" width="100%" cellspacing="0" cellpadding="7">
+For instance, given </p><table id="a0000000096" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 0 &amp;  1 &amp;  1 \end{array} \right], \   \mathrm{and} \  B = \left[ \begin{array}{cc} 1 &amp;  0 \\ 0 &amp;  0 \\ 0 &amp;  1 \end{array} \right],[/mathjax]</td>
 </tr>
@@ -3562,7 +3588,7 @@ Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxi
 <solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Introducing Elementary Matrices" attrib_string="url_name=&quot;b2matrixops-vertical4&quot;" refnum="4"><p>
 <problem display_name="Find a matrix" attrib_string="url_name=&quot;b2matrixops-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="102" tex_filename="./block2/morematrixops.tex"><text><p>
-Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p><table id="a0000000094" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p><table id="a0000000097" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]EA = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ 4a_{31} &amp;  4a_{32} \end{array} \right].[/mathjax]</td>
 </tr>
@@ -3595,7 +3621,7 @@ def MatrixEntry(expect, ans):
 </customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
 <video display_name="Introducing Elementary Matrices" youtube_id_1_0="20gbxsXOooY" attrib_string="url_name=&quot;b2matrixops-tab4-video1&quot; "></video><problem display_name="Find another matrix" attrib_string="url_name=&quot;b2matrixops-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="130" tex_filename="./block2/morematrixops.tex"><text><p>
-Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p><table id="a0000000095" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p><table id="a0000000098" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]EA = \left[ \begin{array}{cc} a_{21} &amp;  a_{22} \\ a_{11} &amp;  a_{12} \\ a_{31} &amp;  a_{32} \end{array} \right].[/mathjax]</td>
 </tr>
@@ -3627,17 +3653,17 @@ def MatrixEntry(expect, ans):
 <vertical display_name="Elementary Matrices" attrib_string="url_name=&quot;b2matrixops-vertical5&quot;" refnum="5"><p>
 <html display_name="Elementary Matrices" attrib_string="url_name=&quot;b2matrixops-tab5-text1&quot;" linenum="160" tex_filename="./block2/morematrixops.tex"><p>
 <span style="color:#27408C"><b class="bf">Definition.</b></span> An <span style="color:#99182C"><b class="bf">elementary matrix</b></span> is a square matrix of one of three types. </p><p>
-<edxshowhide description="Elementary Matrix of the First Type">An elementary matrix of the first type is one obtained from the identity matrix by changing the diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and column to a number [mathjaxinline]c[/mathjaxinline], where [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000096" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<edxshowhide description="Elementary Matrix of the First Type">An elementary matrix of the first type is one obtained from the identity matrix by changing the diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and column to a number [mathjaxinline]c[/mathjaxinline], where [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000099" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]E_1 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  c &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td>
 </tr>
 </table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_1[/mathjaxinline] (where [mathjaxinline]E_1[/mathjaxinline] is on the left) has the same effect as scaling row [mathjaxinline]i[/mathjaxinline] of [mathjaxinline]A[/mathjaxinline] by the scalar [mathjaxinline]c[/mathjaxinline]. </edxshowhide> </p><p>
-<edxshowhide description="Elementary Matrix of the Second Type">An elementary matrix of the second type is one obtained from the identity matrix by changing the non-diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column ([mathjaxinline]i\ne j[/mathjaxinline]) to a number [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000097" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<edxshowhide description="Elementary Matrix of the Second Type">An elementary matrix of the second type is one obtained from the identity matrix by changing the non-diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column ([mathjaxinline]i\ne j[/mathjaxinline]) to a number [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000100" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]E_2 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  \ddots &amp; &amp; &amp; \\ &amp; &amp;  c &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td>
 </tr>
 </table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_2[/mathjaxinline] (where [mathjaxinline]E_2[/mathjaxinline] is on the left) has the same effect as adding [mathjaxinline]c[/mathjaxinline] times the [mathjaxinline]j[/mathjaxinline]th row of [mathjaxinline]A[/mathjaxinline] to row [mathjaxinline]i[/mathjaxinline]. </edxshowhide> </p><p>
-<edxshowhide description="Elementary Matrix of the Third Type">An elementary matrix of the third type is one obtained from the identity matrix by changing the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th diagonal entries to 0, and changing the entries in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column, and the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column, to 1: <table id="a0000000098" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<edxshowhide description="Elementary Matrix of the Third Type">An elementary matrix of the third type is one obtained from the identity matrix by changing the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th diagonal entries to 0, and changing the entries in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column, and the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column, to 1: <table id="a0000000101" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]E_3 = \left[ \begin{array}{ccccccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  0 &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp;  0 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td>
 </tr>
@@ -3648,12 +3674,12 @@ def MatrixEntry(expect, ans):
 <html display_name="Transposes" attrib_string="url_name=&quot;b2matrixops-tab7-text1&quot;" linenum="237" tex_filename="./block2/morematrixops.tex"><p>
 The last matrix operation we will introduce in this section is the transpose. The transpose of a matrix [mathjaxinline]A[/mathjaxinline] is essentially the matrix whose columns are the rows of [mathjaxinline]A[/mathjaxinline] (and whose rows are the columns of [mathjaxinline]A[/mathjaxinline]). Essentially, [mathjaxinline]A[/mathjaxinline] gets flipped across its diagonal. More formally: </p><p>
 <span style="color:#27408C"><b class="bf">Definition.</b></span> Given an [mathjaxinline]m\times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline], the <span style="color:#99182C"><b class="bf">transpose</b></span> of [mathjaxinline]A[/mathjaxinline] is the [mathjaxinline]n\times m[/mathjaxinline] matrix denoted [mathjaxinline]A^ t[/mathjaxinline] whose entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column is the same as the entry in the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column of [mathjaxinline]A[/mathjaxinline]. </p><p>
-For instance, if </p><table id="a0000000099" class="equation" width="100%" cellspacing="0" cellpadding="7">
+For instance, if </p><table id="a0000000102" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 3 &amp;  4 &amp;  -1 \end{array} \right],[/mathjax]</td>
 </tr>
 </table><p>
- then </p><table id="a0000000100" class="equation" width="100%" cellspacing="0" cellpadding="7">
+ then </p><table id="a0000000103" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A^ t = \left[ \begin{array}{cc} 1 &amp;  3 \\ 2 &amp;  4 \\ 0 &amp;  -1 \end{array} \right].[/mathjax]</td>
 </tr>

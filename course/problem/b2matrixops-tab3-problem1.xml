@@ -15,7 +15,7 @@ True or false: It is possible for two non-invertible matrices to have an inverti
  The proposition proven on the previous pages states that if the product of two <span style="color:#99182C"><b class="bf">square</b></span> matrices is invertible, then each individual matrix is. However, this problem does not indicate that the matrices are square. </p>
           <p>
 For instance, given </p>
-          <table id="a0000000093" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <table id="a0000000096" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
             <tr>
               <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 0 &amp;  1 &amp;  1 \end{array} \right], \   \mathrm{and} \  B = \left[ \begin{array}{cc} 1 &amp;  0 \\ 0 &amp;  0 \\ 0 &amp;  1 \end{array} \right],[/mathjax]</td>
               <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>

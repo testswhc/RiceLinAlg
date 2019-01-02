@@ -4,7 +4,7 @@ The last matrix operation we will introduce in this section is the transpose. Th
   <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given an [mathjaxinline]m\times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline], the <span style="color:#99182C"><b class="bf">transpose</b></span> of [mathjaxinline]A[/mathjaxinline] is the [mathjaxinline]n\times m[/mathjaxinline] matrix denoted [mathjaxinline]A^ t[/mathjaxinline] whose entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column is the same as the entry in the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column of [mathjaxinline]A[/mathjaxinline]. </p>
   <p>
 For instance, if </p>
-  <table id="a0000000099" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+  <table id="a0000000102" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
     <tr>
       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 3 &amp;  4 &amp;  -1 \end{array} \right],[/mathjax]</td>
       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -12,7 +12,7 @@ For instance, if </p>
   </table>
   <p>
  then </p>
-  <table id="a0000000100" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+  <table id="a0000000103" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
     <tr>
       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A^ t = \left[ \begin{array}{cc} 1 &amp;  3 \\ 2 &amp;  4 \\ 0 &amp;  -1 \end{array} \right].[/mathjax]</td>
       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>

@@ -1,4 +1,4 @@
-<problem display_name="Another Proposition 5" linenum="416" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Another Proposition 5" linenum="429" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
       <p style="display:inline">We use the result of the previous problem, together with the fact that</p>
@@ -11,7 +11,10 @@ to give us our desired conclusion that [mathjaxinline]T\circ S(u) \ne T\circ S(v
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+From the previous proposition, we have that [mathjaxinline]S(u)\ne S(v)[/mathjaxinline]. Next, we are applying [mathjaxinline]T[/mathjaxinline], so we use the fact that [mathjaxinline]T[/mathjaxinline] is into to show that [mathjaxinline]T\circ S(u) \ne T\circ S(v)[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>

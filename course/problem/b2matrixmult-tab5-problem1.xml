@@ -1,4 +1,4 @@
-<problem display_name="Which product?" linenum="191" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Which product?" linenum="198" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Consider the matrices </p>
@@ -26,7 +26,10 @@ Of [mathjaxinline]CD[/mathjaxinline] and [mathjaxinline]DC[/mathjaxinline], whic
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ Since [mathjaxinline]D[/mathjaxinline] has 3 rows, and [mathjaxinline]C[/mathjaxinline] has only 2 columns, [mathjaxinline]CD[/mathjaxinline] is undefined. But, [mathjaxinline]C[/mathjaxinline] has 3 rows, and [mathjaxinline]D[/mathjaxinline] has 3 columns, and thus the product [mathjaxinline]DC[/mathjaxinline] is defined. </p>
+        </font>
       </solution>
     </p>
   </text>

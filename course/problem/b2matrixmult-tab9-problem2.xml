@@ -1,4 +1,4 @@
-<problem display_name="Another Proposition 4" linenum="392" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Another Proposition 4" linenum="405" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Now that we know exactly what we need to do, let's do it! </p>
@@ -33,7 +33,10 @@ to conclude that </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ When applying [mathjaxinline]T\circ S[/mathjaxinline], we first apply [mathjaxinline]S[/mathjaxinline]. Thus, we first use the fact that [mathjaxinline]S[/mathjaxinline] is into to show that [mathjaxinline]S(u)\ne S(v)[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>

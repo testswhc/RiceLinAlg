@@ -1,4 +1,4 @@
-<problem display_name="Another Proposition 3" linenum="373" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Another Proposition 3" linenum="386" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Translating the information about linearly independent columns into facts about linear transformations: We know that [mathjaxinline]T[/mathjaxinline] and [mathjaxinline]S[/mathjaxinline] are into, and we are trying to prove that [mathjaxinline]T\circ S[/mathjaxinline] is into. This is much easier than trying to show that the columns of the product [mathjaxinline]AB[/mathjaxinline] are linearly independent directly! </p>
@@ -21,7 +21,7 @@ In order to prove that [mathjaxinline]T\circ S[/mathjaxinline] is into, we shoul
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
- A transformation is into if it sends two different input vectors to two different output vectors. Thus the second option is what we want to show.  </p>
+ A transformation is into if it sends any two different input vectors to two different output vectors. Thus the second option is what we want to show.  </p>
         </font>
       </solution>
     </p>
