@@ -1,3 +1,3 @@
-<html display_name="Associativity of Multiplication" linenum="269" tex_filename="./block2/matrixmult.tex">
+<html display_name="Associativity of Multiplication" linenum="282" tex_filename="./block2/matrixmult.tex">
   <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix, [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix, and [mathjaxinline]C[/mathjaxinline] is a [mathjaxinline]p\times q[/mathjaxinline] matrix, then [mathjaxinline]A(BC) = (AB)C[/mathjaxinline]. In other words, matrix multiplication is associative. </p>
 </html>

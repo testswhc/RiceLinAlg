@@ -1,4 +1,4 @@
-<problem display_name="Multiplying by Identity Matrix" linenum="135" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Multiplying by Identity Matrix" linenum="139" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Given the above scenario, let [mathjaxinline]A[/mathjaxinline] be the standard matrix for [mathjaxinline]S[/mathjaxinline]. Recall that the [mathjaxinline]n\times n[/mathjaxinline] identity matrix [mathjaxinline]I_ n[/mathjaxinline] is the standard matrix for [mathjaxinline]T[/mathjaxinline]. Which of the following is true? </p>
@@ -20,7 +20,12 @@ Given the above scenario, let [mathjaxinline]A[/mathjaxinline] be the standard m
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ [mathjaxinline]AI_ n[/mathjaxinline] is the standard matrix for [mathjaxinline]S\circ T[/mathjaxinline] (from the above scenario) and from the previous question, we have [mathjaxinline]S\circ T=S[/mathjaxinline]. Thus, [mathjaxinline]AI_ n[/mathjaxinline] equals the standard matrix for [mathjaxinline]S[/mathjaxinline], which is [mathjaxinline]A[/mathjaxinline]. </p>
+          <p>
+Since [mathjaxinline]I_ n[/mathjaxinline] has [mathjaxinline]n[/mathjaxinline] columns and [mathjaxinline]A[/mathjaxinline] has [mathjaxinline]m[/mathjaxinline] rows, [mathjaxinline]I_ nA = A[/mathjaxinline] is undefined.  </p>
+        </font>
       </solution>
     </p>
   </text>

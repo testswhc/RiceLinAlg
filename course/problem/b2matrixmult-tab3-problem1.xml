@@ -19,7 +19,12 @@ Is [mathjaxinline]T_2\circ T_1[/mathjaxinline] a linear transformation? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+Note that [mathjaxinline]T_1\circ T_2[/mathjaxinline] first applies [mathjaxinline]T_2[/mathjaxinline] and then [mathjaxinline]T_1[/mathjaxinline], so we need to check that the image of [mathjaxinline]T_2[/mathjaxinline] lies in the domain of [mathjaxinline]T_1[/mathjaxinline]. This is true since [mathjaxinline]T_2[/mathjaxinline] outputs a vector in [mathjaxinline]\mathbb R^7[/mathjaxinline], which is the domain of [mathjaxinline]T_1[/mathjaxinline]. Then, since [mathjaxinline]T_1[/mathjaxinline] and [mathjaxinline]T_2[/mathjaxinline] are both linear transformations, so it [mathjaxinline]T_1\circ T_2[/mathjaxinline].<br/></p>
+          <p>
+Now, [mathjaxinline]T_2\circ T_1[/mathjaxinline] first applies [mathjaxinline]T_1[/mathjaxinline], which outputs a vector in [mathjaxinline]\mathbb R^4[/mathjaxinline]. It would then apply [mathjaxinline]T_2[/mathjaxinline], but this is not possible since the domain of [mathjaxinline]T_2[/mathjaxinline] is [mathjaxinline]\mathbb R^3[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>

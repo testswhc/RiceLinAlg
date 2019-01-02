@@ -1,4 +1,4 @@
-<problem display_name="Composing with Identity Transformation" linenum="119" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Composing with Identity Transformation" linenum="123" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Suppose [mathjaxinline]S: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation. Let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ n[/mathjaxinline] be the identity transformation (recall that this means [mathjaxinline]T(v) = v[/mathjaxinline] for all [mathjaxinline]v\in \mathbb R^ n[/mathjaxinline]). </p>
@@ -25,7 +25,7 @@ Which of the following is true? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue">  </font>
+        <font color="blue"> First, [mathjaxinline]T\circ S[/mathjaxinline] is undefined because [mathjaxinline]S[/mathjaxinline] outputs a vector in [mathjaxinline]\mathbb R^ m[/mathjaxinline], and the domain of [mathjaxinline]T[/mathjaxinline] is [mathjaxinline]\mathbb R^ n[/mathjaxinline]. Now, for every vector [mathjaxinline]v\in \mathbb R^ n[/mathjaxinline], [mathjaxinline]S\circ T(v)=S(T(v))=S(v)[/mathjaxinline] because [mathjaxinline]T[/mathjaxinline] acts as the identity transformation. Therefore [mathjaxinline]S\circ T=S[/mathjaxinline].  </font>
       </solution>
     </p>
   </text>

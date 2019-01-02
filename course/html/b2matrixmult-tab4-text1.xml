@@ -1,4 +1,4 @@
-<html display_name="Identity Matrix Properties" linenum="159" tex_filename="./block2/matrixmult.tex">
+<html display_name="Identity Matrix Properties" linenum="166" tex_filename="./block2/matrixmult.tex">
   <p>
 The previous problems show the following: </p>
   <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> For any [mathjaxinline]m\times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline], we have [mathjaxinline]AI_ n = A[/mathjaxinline]. Similarly, [mathjaxinline]I_ m A = A[/mathjaxinline]. </p>

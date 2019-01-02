@@ -2,8 +2,8 @@
   <text>
     <p>
 If [mathjaxinline]\  f(x) = x^3[/mathjaxinline], then here are some values of [mathjaxinline]\  f[/mathjaxinline]: </p>
-    <table id="a0000000087" cellpadding="7" width="100%" cellspacing="0" class="eqnarray" style="table-layout:auto">
-      <tr id="a0000000088">
+    <table id="a0000000090" cellpadding="7" width="100%" cellspacing="0" class="eqnarray" style="table-layout:auto">
+      <tr id="a0000000091">
         <td style="width:40%; border:none">&#xA0;</td>
         <td style="vertical-align:middle;                                    text-align:right; border:none">
 	    [mathjaxinline]\displaystyle  f(-11)[/mathjaxinline]
@@ -14,7 +14,7 @@ If [mathjaxinline]\  f(x) = x^3[/mathjaxinline], then here are some values of [m
         <td style="width:40%; border:none">&#xA0;</td>
         <td style="width:20%; border:none" class="eqnnum"/>
       </tr>
-      <tr id="a0000000089">
+      <tr id="a0000000092">
         <td style="width:40%; border:none">&#xA0;</td>
         <td style="vertical-align:middle;                                    text-align:right; border:none">
 	    [mathjaxinline]\displaystyle f(12)[/mathjaxinline]
@@ -25,7 +25,7 @@ If [mathjaxinline]\  f(x) = x^3[/mathjaxinline], then here are some values of [m
         <td style="width:40%; border:none">&#xA0;</td>
         <td style="width:20%; border:none" class="eqnnum"/>
       </tr>
-      <tr id="a0000000090">
+      <tr id="a0000000093">
         <td style="width:40%; border:none">&#xA0;</td>
         <td style="vertical-align:middle;                                    text-align:right; border:none">
 	    [mathjaxinline]\displaystyle f(-13)[/mathjaxinline]

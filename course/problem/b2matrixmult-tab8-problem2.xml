@@ -1,4 +1,4 @@
-<problem display_name="Another Proposition 2" linenum="352" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Another Proposition 2" linenum="365" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Our goal is to show that the columns of [mathjaxinline]AB[/mathjaxinline] are linearly independent. This desired conclusion is equivalent to which of the following? </p>
@@ -23,7 +23,10 @@ Our goal is to show that the columns of [mathjaxinline]AB[/mathjaxinline] are li
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ We know that [mathjaxinline]AB[/mathjaxinline] is the standard matrix for the transformation [mathjaxinline]T\circ S[/mathjaxinline]. Thus, the columns of [mathjaxinline]AB[/mathjaxinline] are linearly independent if and only if [mathjaxinline]\text {Ker}(T\circ S)=\{ \mathbf{0}\}[/mathjaxinline] if and only if [mathjaxinline]T\circ S[/mathjaxinline] is into. </p>
+        </font>
       </solution>
     </p>
   </text>

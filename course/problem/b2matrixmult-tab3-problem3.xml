@@ -1,4 +1,4 @@
-<problem display_name="Product Sizes" linenum="102" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Product Sizes" linenum="104" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 What size is [mathjaxinline]C_1C_2[/mathjaxinline]? </p>
@@ -55,7 +55,7 @@ What size is [mathjaxinline]C_2C_1[/mathjaxinline]? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue">  </font>
+        <font color="blue"> The matrix [mathjaxinline]C_1C_2[/mathjaxinline] is the standard matrix for [mathjaxinline]T_1\circ T_2[/mathjaxinline], which is a linear transformation from [mathjaxinline]\mathbb R^3[/mathjaxinline] to [mathjaxinline]\mathbb R^4[/mathjaxinline]. Therefore [mathjaxinline]C_1C_2[/mathjaxinline] is a [mathjaxinline]4 \times 3[/mathjaxinline] matrix.<br/>The number of columns of [mathjaxinline]C_2[/mathjaxinline] is not equal to the number of rows of [mathjaxinline]C_1[/mathjaxinline], and thus [mathjaxinline]C_2C_1[/mathjaxinline] is undefined.  </font>
       </solution>
     </p>
   </text>

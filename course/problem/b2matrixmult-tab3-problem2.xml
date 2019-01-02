@@ -1,4 +1,4 @@
-<problem display_name="Matrix Sizes" linenum="82" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Matrix Sizes" linenum="84" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]C_1[/mathjaxinline] be the standard matrix for [mathjaxinline]T_1[/mathjaxinline] from the previous question, and let [mathjaxinline]C_2[/mathjaxinline] be the standard matrix for [mathjaxinline]T_2[/mathjaxinline]. </p>
@@ -19,7 +19,7 @@ What size is [mathjaxinline]C_2[/mathjaxinline]? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue">  </font>
+        <font color="blue"> A transformation from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline] has standard matrix of size [mathjaxinline]m \times n[/mathjaxinline].  </font>
       </solution>
     </p>
   </text>
