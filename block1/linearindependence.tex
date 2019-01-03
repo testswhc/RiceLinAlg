@@ -1,5 +1,7 @@
 
 
+\usepackage{enumerate}
+
 \beginedxvertical{Page One}
 
 \beginedxtext{Preliminaries}
@@ -210,7 +212,7 @@ Consider the vectors $v_1, v_2, v_3 \in \R^2$ as given in this picture:
 Which of the following lists are linearly independent?  Click all that apply.  
 
 
-\edXabox{type="oldmultichoice" expect="$\{v_1\}$","$\{v_1;v_2\}$","$\{v_2;v_3\}$" options="$\{\veco\}$","$\{v_1\}$","$\{v_1;v_2\}$","$\{v_1;v_3\}$","$\{v_2;v_3\}$","$\{v_3;v_3\}$","$\{v_1; v_2; v_3\}$"}
+\edXabox{type="oldmultichoice" expect="$\{v_1\}$","$\{v_1;v_2\}$","$\{v_1;v_3\}$" options="$\{\veco\}$","$\{v_1\}$","$\{v_1;v_2\}$","$\{v_1;v_3\}$","$\{v_2;v_3\}$","$\{v_3;v_3\}$","$\{v_1; v_2; v_3\}$"}
 
 
 \edXsolution{ The zero vector is not linearly independent as a list because $a_1  \veco = \veco$ for any scalar $a_1$. \\$\{v_1\}$ is linearly independent because $v_1$ is not the zero vector, and therefore $a_1  v_1 = \veco$ implies $a_1 = 0$. \\It can be seen on the diagram that $v_1$ is not collinear with $v_2$, and likewise not with $v_3$, and so $\{v_1;v_2\}$ is linearly independent and $\{v_1;v_3\}$ is linearly independent. \\$v_2$ and $v_3$ appear to be collinear, so $\{v_2;v_3\}$ is not linearly independent. \\$v_3$ is of course collinear with itself, so $\{v_3;v_3\}$ is not linearly independent. \\Finally, since $\{v_2;v_3\}$ is not linearly independent and is contained in $\{v_1;v_2;v_3\}$, this last list cannot be linearly independent.  
@@ -416,7 +418,7 @@ If $n>m$, then any list of $n$ vectors in $\R^m$ must be linearly dependent.
 Without doing any row-reduction, you should be able to pick out three of the 
 following lists of vectors that are linearly dependent.  Which three?  
 
-\begin{enumerate}
+\begin{enumerate}[A.]
 
 
 \item
@@ -429,7 +431,7 @@ $
 \item
 $\left\{\left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] ; 
 \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] ; 
-\left[ \begin{array}{c} 2 \\ 5 \\ 7 \end{array} \right]\} $
+\left[ \begin{array}{c} 2 \\ 5 \\ 7 \end{array} \right] \right\} $
 
 
 
