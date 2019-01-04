@@ -67,7 +67,7 @@ Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
  We see that </p>
           <table id="a0000000069" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
             <tr>
-              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T\left[ \begin{array}{c} a_1 \\ a_2 \end{array} \right] = \left[ \begin{array}{ccc} 2 &amp;  0 &amp;  -1 \\ -1 &amp;  1 &amp;  0 \end{array} \right] \left[ \begin{array}{c} a_1 \\ a_2 \end{array} \right][/mathjax]</td>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T\left[ \begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array} \right] = \left[ \begin{array}{ccc} 2 &amp;  0 &amp;  -1 \\ -1 &amp;  1 &amp;  0 \end{array} \right] \left[ \begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array} \right][/mathjax]</td>
               <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
             </tr>
           </table>

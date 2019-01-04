@@ -1643,7 +1643,7 @@ If we align the tip of [mathjaxinline]w[/mathjaxinline] and the tail of [mathjax
         <vertical display_name="Vector Spaces" refnum="6" url_name="b1vectors-vertical6">
           <html display_name="Vector Spaces" linenum="196" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab6-text1">
             <p>
-A <span style="color:#99182C"><b class="bf">vector space</b></span> over a field [mathjaxinline]F[/mathjaxinline] is, essentially, a set [mathjaxinline]V[/mathjaxinline] in which one can do vector addition and scalar multiplication. For a more formal definition, see below. </p>
+A <span style="color:#99182C"><b class="bf">vector space</b></span> over a field [mathjaxinline]F[/mathjaxinline] is, essentially, a (non-empty) set [mathjaxinline]V[/mathjaxinline] in which one can do vector addition and scalar multiplication. For a more formal definition, see below. </p>
             <p>
               <div class="hideshowbox">
                 <h4 onclick="hideshow(this);" style="margin: 0px">Formal Definition of a Vector Space<span class="icon-caret-down toggleimage"/></h4>
@@ -2600,7 +2600,7 @@ The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] always has at least 
           </problem>
         </vertical>
         <vertical display_name="Solution Sets" refnum="5" url_name="b1matrixvector-vertical5">
-          <video display_name="Solving Ax = 0" youtube_id_1_0="HeeVmk25QNU" url_name="b1matrixvector-tab5-video1"/>
+          <video display_name="Solving Ax = 0" youtube_id_1_0="VreiYQU_GTA" url_name="b1matrixvector-tab5-video1"/>
           <problem display_name="Non-trivial Solutions" linenum="279" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
@@ -2887,7 +2887,7 @@ Intuitively, if we can produce [mathjaxinline]v[/mathjaxinline] by linear combin
       </sequential>
       <sequential display_name="Linear Independence" linenum="248" tex_filename="testcourse.tex" refnum="6" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1linind-vertical1">
-          <html display_name="Preliminaries" linenum="5" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab1-text1">
+          <html display_name="Preliminaries" linenum="7" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab1-text1">
             <p>
 At the end of this sequence, and after some practice, you should be able to: </p>
             <ul class="itemize">
@@ -2909,7 +2909,7 @@ For time budgeting purposes, this sequence has X videos totaling X minutes, plus
           </html>
         </vertical>
         <vertical display_name="Linear Independence" refnum="2" url_name="b1linind-vertical2">
-          <problem display_name="Existence vs. Uniqueness" linenum="34" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab2-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Existence vs. Uniqueness" linenum="36" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab2-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Given a matrix [mathjaxinline]A[/mathjaxinline], consider the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. </p>
@@ -2932,7 +2932,7 @@ Because [mathjaxinline]A\mathbf{0}= \mathbf{0}[/mathjaxinline] always, the answe
             </text>
           </problem>
           <video display_name="Linear Independence" youtube_id_1_0="jQSgCZwOKQU" url_name="b1linind-tab2-video1"/>
-          <problem display_name="Definition" linenum="54" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab2-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Definition" linenum="56" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab2-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Which of these is the definition of linearly dependent? </p>
@@ -2966,11 +2966,11 @@ A list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is l
           </problem>
         </vertical>
         <vertical display_name="Linear Independence Problems" refnum="3" url_name="b1linind-vertical3">
-          <html display_name="Definitions of Linearly Independent and Dependent" linenum="80" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-text1">
+          <html display_name="Definitions of Linearly Independent and Dependent" linenum="82" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-text1">
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> We say that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is <span style="color:#99182C"><b class="bf">linearly independent</b></span> if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p>
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> A list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is <span style="color:#99182C"><b class="bf">linearly dependent</b></span> if there are scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline], not all zero, such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline]. </p>
           </html>
-          <problem display_name="List 1" linenum="93" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="List 1" linenum="95" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], where </p>
@@ -3007,7 +3007,7 @@ The list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly dependent
               </p>
             </text>
           </problem>
-          <problem display_name="List 2" linenum="126" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="List 2" linenum="128" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], where </p>
@@ -3042,7 +3042,7 @@ Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly dependent
               </p>
             </text>
           </problem>
-          <problem display_name="List 3" linenum="154" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="List 3" linenum="156" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab3-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]\mathbb {P}[/mathjaxinline] be the vector space of polynomials with real coefficients in the variable [mathjaxinline]t[/mathjaxinline]. Consider the list of vectors [mathjaxinline]\{ f; g\}[/mathjaxinline], where [mathjaxinline]f(t) = 1+t[/mathjaxinline] and [mathjaxinline]g(t) = t+t^2[/mathjaxinline] are vectors in [mathjaxinline]\mathbb {P}[/mathjaxinline]. </p>
@@ -3078,7 +3078,7 @@ Note that we cannot set [mathjaxinline]a_1 = -t[/mathjaxinline] and [mathjaxinli
         </vertical>
         <vertical display_name="Geometry of Linear Independence" refnum="4" url_name="b1linind-vertical4">
           <video display_name="Linear Independence for Small Sets" youtube_id_1_0="Mw04hBXVtho" url_name="b1linind-tab4-video1"/>
-          <problem display_name="More Lists" linenum="200" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab4-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="More Lists" linenum="202" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab4-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Consider the vectors [mathjaxinline]v_1, v_2, v_3 \in \mathbb R^2[/mathjaxinline] as given in this picture: </p>
@@ -3099,10 +3099,10 @@ Which of the following lists are linearly independent? Click all that apply. </p
                     <choice correct="true" name="3">
                       <text>[mathjaxinline]\{ v_1;v_2\}[/mathjaxinline]</text>
                     </choice>
-                    <choice correct="false" name="4">
+                    <choice correct="true" name="4">
                       <text>[mathjaxinline]\{ v_1;v_3\}[/mathjaxinline]</text>
                     </choice>
-                    <choice correct="true" name="5">
+                    <choice correct="false" name="5">
                       <text>[mathjaxinline]\{ v_2;v_3\}[/mathjaxinline]</text>
                     </choice>
                     <choice correct="false" name="6">
@@ -3128,10 +3128,10 @@ Which of the following lists are linearly independent? Click all that apply. </p
           <video display_name="A Proposition" youtube_id_1_0="DK-9-MAIaA8" url_name="b1linind-tab4-video2"/>
         </vertical>
         <vertical display_name="Linear Dependence Proposition" refnum="5" url_name="b1linind-vertical5">
-          <html display_name="Linear Dependence Equivalent Condition" linenum="230" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-text1">
+          <html display_name="Linear Dependence Equivalent Condition" linenum="232" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-text1">
             <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> Let [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] be vectors in a vector space [mathjaxinline]V[/mathjaxinline]. The list is linearly dependent if and only if one of the vectors in the list can be expressed as a linear combination of the other vectors. </p>
           </html>
-          <problem display_name="True or False" linenum="239" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="True or False" linenum="241" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or False: Suppose the list [mathjaxinline]\{ v_1; v_2; v_3; v_4\}[/mathjaxinline] is linearly dependent. Then [mathjaxinline]v_4[/mathjaxinline] must be in the span of [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline]. </p>
@@ -3151,7 +3151,7 @@ True or False: Suppose the list [mathjaxinline]\{ v_1; v_2; v_3; v_4\}[/mathjaxi
               </p>
             </text>
           </problem>
-          <problem display_name="Proving Linear Independence" linenum="258" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Proving Linear Independence" linenum="260" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let's think about the definition of linear independence. Recall that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is linearly independent if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p>
@@ -3189,7 +3189,7 @@ Which of the following would be a way to prove that a list [mathjaxinline]\{ v_1
               </p>
             </text>
           </problem>
-          <problem display_name="Existence or Uniqueness?" linenum="285" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Existence or Uniqueness?" linenum="287" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab5-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Is the linear independence of a list of vectors an existence question, or a uniqueness question? </p>
@@ -3211,7 +3211,7 @@ Is the linear independence of a list of vectors an existence question, or a uniq
           </problem>
         </vertical>
         <vertical display_name="Determining Linear Independence in R^m" refnum="6" url_name="b1linind-vertical6">
-          <problem display_name="Non-trivial Solutions?" linenum="307" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Non-trivial Solutions?" linenum="309" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Use row reduction to determine how many solutions the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has, where </p>
@@ -3247,7 +3247,7 @@ Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly independe
               </p>
             </text>
           </problem>
-          <problem display_name="Fill in the blank" linenum="341" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Fill in the blank" linenum="343" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 What goes in the blank to make a correct statement? </p>
@@ -3281,7 +3281,7 @@ The matrix [mathjaxinline]\left[\begin{array}{cc} 1 &amp;  0 \\ 0 &amp;  1 \\ 0 
               </p>
             </text>
           </problem>
-          <problem display_name="Fill in the blank 2" linenum="358" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Fill in the blank 2" linenum="360" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 What goes in the blank to make a correct statement? </p>
@@ -3310,7 +3310,7 @@ If the matrix [mathjaxinline]A[/mathjaxinline] has [mathjaxinline]\underline{\; 
               </p>
             </text>
           </problem>
-          <problem display_name="Fill in the blank 3" linenum="374" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem4" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Fill in the blank 3" linenum="376" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab6-problem4" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Putting the previous two statements together, what goes in the blank to make a correct statement? </p>
@@ -3339,14 +3339,14 @@ A list of [mathjaxinline]\underline{\; \; \; \; \; \; \; \; \; \; }[/mathjaxinli
           <video display_name="Linear Independence in R^m" youtube_id_1_0="hjQug5gZ2JM" url_name="b1linind-tab6-video1"/>
         </vertical>
         <vertical display_name="Linearly Independent Lists in R^m" refnum="7" url_name="b1linind-vertical7">
-          <html display_name="Linear Independence in R^m" linenum="396" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab7-text1">
+          <html display_name="Linear Independence in R^m" linenum="398" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab7-text1">
             <p>
 We have just shown the following results: </p>
             <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix with columns [mathjaxinline]v_1, v_2, \ldots v_ n \in \mathbb R^ m[/mathjaxinline], then the list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is linearly independent if and only if [mathjaxinline]A[/mathjaxinline] does not have a free variable. </p>
             <p>
 If [mathjaxinline]n&gt;m[/mathjaxinline], then any list of [mathjaxinline]n[/mathjaxinline] vectors in [mathjaxinline]\mathbb R^ m[/mathjaxinline] must be linearly dependent. </p>
           </html>
-          <problem display_name="Quick Picks" linenum="414" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab7-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Quick Picks" linenum="416" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab7-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Without doing any row-reduction, you should be able to pick out three of the following lists of vectors that are linearly dependent. Which three? </p>
@@ -3357,7 +3357,7 @@ Without doing any row-reduction, you should be able to pick out three of the fol
                 </li>
                 <li value="2">
                   <p>
-[mathjaxinline]\left\{ \left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] ; \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] ; \left[ \begin{array}{c} 2 \\ 5 \\ 7 \end{array} \right]\}[/mathjaxinline] </p>
+[mathjaxinline]\left\{ \left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] ; \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] ; \left[ \begin{array}{c} 2 \\ 5 \\ 7 \end{array} \right] \right\}[/mathjaxinline] </p>
                 </li>
                 <li value="3">
                   <p>
@@ -3444,7 +3444,7 @@ For time budgeting purposes, this sequence has 4 videos totaling 14 minutes, plu
           <problem display_name="System Consistency?" linenum="35" tex_filename="./block1/lineartransformations.tex" url_name="b1lintrans-tab2-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
-Define the function [mathjaxinline]T[/mathjaxinline] by [mathjaxinline]T(\vecx ) = Ax[/mathjaxinline], where [mathjaxinline]A = \left[ \begin{array}{ccc} 6 &amp;  5 &amp;  3 \\ 2 &amp;  4 &amp;  23 \end{array} \right].[/mathjaxinline] </p>
+Define the function [mathjaxinline]T[/mathjaxinline] by [mathjaxinline]T(x) = Ax[/mathjaxinline], where [mathjaxinline]A = \left[ \begin{array}{ccc} 6 &amp;  5 &amp;  3 \\ 2 &amp;  4 &amp;  23 \end{array} \right].[/mathjaxinline] </p>
               <p>
 What is the domain of [mathjaxinline]T[/mathjaxinline]? </p>
               <p>
@@ -3500,11 +3500,11 @@ What is the codomain of [mathjaxinline]T[/mathjaxinline]? </p>
             <ul class="itemize">
               <li>
                 <p>
-For any vectors [mathjaxinline]\vecv , \vecw[/mathjaxinline] in the domain, [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw ).[/mathjaxinline] </p>
+For any vectors [mathjaxinline]v, w[/mathjaxinline] in the domain, [mathjaxinline]T(v + w) = T(v) + T(w).[/mathjaxinline] </p>
               </li>
               <li>
                 <p>
-For any vector [mathjaxinline]\vecv[/mathjaxinline] in the domain, and any scalar [mathjaxinline]a\in {\bf {F}}[/mathjaxinline], [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline]. </p>
+For any vector [mathjaxinline]v[/mathjaxinline] in the domain, and any scalar [mathjaxinline]a\in {\bf {F}}[/mathjaxinline], [mathjaxinline]T(av) = aT(v)[/mathjaxinline]. </p>
               </li>
             </ul>
             <p>
@@ -3515,16 +3515,16 @@ Informally, if [mathjaxinline]T[/mathjaxinline] satisfies the first condition we
           <problem display_name="Linear Transformation? 1" linenum="106" tex_filename="./block1/lineartransformations.tex" url_name="b1lintrans-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
-Define [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] by [mathjaxinline]T(\vecv ) = 2\vecv[/mathjaxinline]. </p>
+Define [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] by [mathjaxinline]T(v) = 2v[/mathjaxinline]. </p>
               <p>
-Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw )[/mathjaxinline] for all vectors [mathjaxinline]\vecv ,\vecw[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
+Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(v + w) = T(v) + T(w)[/mathjaxinline] for all vectors [mathjaxinline]v,w[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
               <p>
                 <optionresponse>
                   <optioninput options="('Yes','No')" correct="Yes"/>
                 </optionresponse>
               </p>
               <p>
-Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline] for all vectors [mathjaxinline]\vecv[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
+Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(av) = aT(v)[/mathjaxinline] for all vectors [mathjaxinline]v[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
               <p>
                 <optionresponse>
                   <optioninput options="('Yes','No')" correct="Yes"/>
@@ -3555,16 +3555,16 @@ Similarly [mathjaxinline]T(av) = 2(av) = a(2v) = aT(v),[/mathjaxinline] so [math
           <problem display_name="Linear Transformation? 2" linenum="141" tex_filename="./block1/lineartransformations.tex" url_name="b1lintrans-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
-Define [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] by [mathjaxinline]T(\vecv ) = \mathbf{0}[/mathjaxinline]. </p>
+Define [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] by [mathjaxinline]T(v) = \mathbf{0}[/mathjaxinline]. </p>
               <p>
-Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw )[/mathjaxinline] for all vectors [mathjaxinline]\vecv ,\vecw[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
+Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(v + w) = T(v) + T(w)[/mathjaxinline] for all vectors [mathjaxinline]v, w[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
               <p>
                 <optionresponse>
                   <optioninput options="('Yes','No')" correct="Yes"/>
                 </optionresponse>
               </p>
               <p>
-Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline] for all vectors [mathjaxinline]\vecv[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
+Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(av) = aT(v)[/mathjaxinline] for all vectors [mathjaxinline]v[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
               <p>
                 <optionresponse>
                   <optioninput options="('Yes','No')" correct="Yes"/>
@@ -3593,16 +3593,16 @@ Hence [mathjaxinline]T[/mathjaxinline] is a linear transformation. </p>
           <problem display_name="Linear Transformation? 3" linenum="174" tex_filename="./block1/lineartransformations.tex" url_name="b1lintrans-tab5-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
-Define [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] by [mathjaxinline]T(\vecv ) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. </p>
+Define [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] by [mathjaxinline]T(v) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. </p>
               <p>
-Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw )[/mathjaxinline] for all vectors [mathjaxinline]\vecv ,\vecw[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
+Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(v + w) = T(v) + T(w)[/mathjaxinline] for all vectors [mathjaxinline]v,w[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
               <p>
                 <optionresponse>
                   <optioninput options="('Yes','No')" correct="No"/>
                 </optionresponse>
               </p>
               <p>
-Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline] for all vectors [mathjaxinline]\vecv[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
+Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(av) = aT(v)[/mathjaxinline] for all vectors [mathjaxinline]v[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
               <p>
                 <optionresponse>
                   <optioninput options="('Yes','No')" correct="No"/>
@@ -3622,7 +3622,7 @@ Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
                     <p>
  Here, trying specific vectors provides a counterexample, which is sufficient to show that [mathjaxinline]T[/mathjaxinline] is not a linear transformation.<br/>Let [mathjaxinline]v_1 = \left[ \begin{array}{c} 1\\ 2\\ 5 \end{array} \right][/mathjaxinline], [mathjaxinline]v_2 = \left[ \begin{array}{c} -4\\ 0\\ 9 \end{array} \right][/mathjaxinline]<br/>[mathjaxinline]T(v_1) + T(v_2) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right] + \left[\begin{array}{c} 4 \\ 0 \end{array} \right] = \left[\begin{array}{c} 8 \\ 0 \end{array} \right][/mathjaxinline]<br/>Meanwhile, [mathjaxinline]T(v_1 + v_2) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] does not respect vector addition and is not linear.<br/></p>
                     <p>
-We also see that [mathjaxinline]8\cdotT (v_1) = 8 \left[\begin{array}{c} 4 \\ 0 \end{array} \right] = \left[\begin{array}{c} 32 \\ 0 \end{array} \right][/mathjaxinline]<br/>Meanwhile, [mathjaxinline]T(8v_1) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] does not respect scalar multiplication; this on its own would also be enough to know that [mathjaxinline]T[/mathjaxinline] is not linear.  </p>
+We also see that [mathjaxinline]8T(v_1) = 8 \left[\begin{array}{c} 4 \\ 0 \end{array} \right] = \left[\begin{array}{c} 32 \\ 0 \end{array} \right][/mathjaxinline]<br/>Meanwhile, [mathjaxinline]T(8v_1) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] does not respect scalar multiplication; this on its own would also be enough to know that [mathjaxinline]T[/mathjaxinline] is not linear.  </p>
                   </font>
                 </solution>
               </p>
@@ -3654,9 +3654,9 @@ Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [math
               <p>
 Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(af) = aT(f)[/mathjaxinline] for all vectors [mathjaxinline]f \in \mathbb {P}[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
               <p>
-                <symbolicresponse expect="Yes&quot; options=&quot;Yes&quot;,&quot;No&quot;">
-                  <textline correct_answer="Yes&quot; options=&quot;Yes&quot;,&quot;No&quot;" math="1"/>
-                </symbolicresponse>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
               </p>
               <p>
 Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
@@ -3681,7 +3681,7 @@ Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
         </vertical>
         <vertical display_name="Linear Transformations Properties" refnum="7" url_name="b1lintrans-vertical7">
           <video display_name="Linear Transformation Properties" youtube_id_1_0="oe4fgdPAsgA" url_name="b1lintrans-tab7-video1"/>
-          <problem display_name="Linear Transformation Practice" linenum="288" tex_filename="./block1/lineartransformations.tex" url_name="b1lintrans-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Linear Transformation Practice" linenum="287" tex_filename="./block1/lineartransformations.tex" url_name="b1lintrans-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Suppose [mathjaxinline]T: \mathbb {P} \rightarrow \mathbb R^2[/mathjaxinline] is a linear transformation. Let [mathjaxinline]f,g\mathbb {P}[/mathjaxinline] be the polynomials given by [mathjaxinline]f(t) = t^2[/mathjaxinline] and [mathjaxinline]g(t) = t[/mathjaxinline]. </p>
@@ -3969,7 +3969,7 @@ def VectorEntry(expect, ans):
  Since [mathjaxinline]T: \mathbb R^4\rightarrow \mathbb R^3[/mathjaxinline], we know from context that [mathjaxinline]e_3=\left[ \begin{array}{c} 0 &amp;  0 &amp;  1 &amp;  0 \end{array} \right].[/mathjaxinline] Then </p>
                     <table id="a0000000067" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
-                        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(e_3)=\left[ \begin{array}{cccc} 1 &amp;  3 &amp;  5 &amp;  7 \\ 2 &amp;  0 &amp;  -1 &amp;  -1 \\ 1 &amp;  1 &amp;  3 &amp;  -2 \end{array} \right]\left[ \begin{array}{c} 0 &amp;  0 &amp;  1 &amp;  0 \end{array} \right] = \left[ \begin{array}{c} 5 &amp;  -1 &amp;  3 \end{array} \right].[/mathjax]</td>
+                        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(e_3)=\left[ \begin{array}{cccc} 1 &amp;  3 &amp;  5 &amp;  7 \\ 2 &amp;  0 &amp;  -1 &amp;  -1 \\ 1 &amp;  1 &amp;  3 &amp;  -2 \end{array} \right]\left[ \begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \right] = \left[ \begin{array}{c} 5 \\ -1 \\ 3 \end{array} \right].[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
                       </tr>
                     </table>
@@ -4051,7 +4051,7 @@ Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
  We see that </p>
                     <table id="a0000000069" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
-                        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T\left[ \begin{array}{c} a_1 \\ a_2 \end{array} \right] = \left[ \begin{array}{ccc} 2 &amp;  0 &amp;  -1 \\ -1 &amp;  1 &amp;  0 \end{array} \right] \left[ \begin{array}{c} a_1 \\ a_2 \end{array} \right][/mathjax]</td>
+                        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T\left[ \begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array} \right] = \left[ \begin{array}{ccc} 2 &amp;  0 &amp;  -1 \\ -1 &amp;  1 &amp;  0 \end{array} \right] \left[ \begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array} \right][/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
                       </tr>
                     </table>
@@ -4754,7 +4754,7 @@ Is [mathjaxinline]T[/mathjaxinline] into? </p>
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">kernel</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p>
             <table id="a0000000082" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
-                <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Ker}(T) = \left\{  v\in V \  : T(v) = \mathbf{0}\} .[/mathjax]</td>
+                <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Ker}(T) = \left\{  v\in V \  : T(v) = \mathbf{0}\right\} .[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
               </tr>
             </table>
@@ -5255,15 +5255,15 @@ def MatrixEntry(expect, ans):
               <p>
 What is [mathjaxinline]AB[/mathjaxinline]? </p>
               <p>
-                <customresponse cfn="MatrixEntry" expect="[[-1,1],[0,6]">
-                  <textline correct_answer="[[-1,1],[0,6]"/>
+                <customresponse cfn="MatrixEntry" expect="[[-1,1],[0,6]]">
+                  <textline correct_answer="[[-1,1],[0,6]]"/>
                 </customresponse>
               </p>
               <p>
 What is [mathjaxinline]BA[/mathjaxinline]? </p>
               <p>
-                <customresponse cfn="MatrixEntry" expect="[[6,0],[5,-1]">
-                  <textline correct_answer="[[6,0],[5,-1]"/>
+                <customresponse cfn="MatrixEntry" expect="[[6,0],[5,-1]]">
+                  <textline correct_answer="[[6,0],[5,-1]]"/>
                 </customresponse>
               </p>
               <p>
@@ -5576,12 +5576,21 @@ Let [mathjaxinline]g(y) = \displaystyle {\sqrt [3]{y}}[/mathjaxinline]. What is 
                   </textline>
                 </numericalresponse>
               </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ [mathjaxinline]f(x)[/mathjaxinline] and [mathjaxinline]g(y)[/mathjaxinline] are inverse functions. We see above that [mathjaxinline]f(x)[/mathjaxinline] evaluated at -13 has an output of -2197. Since [mathjaxinline]g(y)[/mathjaxinline] and [mathjaxinline]f(x)[/mathjaxinline] perform opposite actions, we know that g evaluated at -2197 has an output of -13.  </p>
+                  </font>
+                </solution>
+              </p>
             </text>
           </problem>
           <video display_name="Inverse Transformations and Matrices" youtube_id_1_0="gv2efnioewc" url_name="b2matrixinv-tab2-video1"/>
         </vertical>
         <vertical display_name="Inverse Definitions" refnum="3" url_name="b2matrixinv-vertical3">
-          <html display_name="Inverse Definitions" linenum="54" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab3-text1">
+          <html display_name="Inverse Definitions" linenum="57" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab3-text1">
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]T: V \rightarrow W[/mathjaxinline] and [mathjaxinline]S: W \rightarrow V[/mathjaxinline] are linear transformations, we say that [mathjaxinline]S[/mathjaxinline] and [mathjaxinline]T[/mathjaxinline] are <span style="color:#99182C"><b class="bf">inverses</b></span> of one another if [mathjaxinline]S(T(v)) = v[/mathjaxinline] for all [mathjaxinline]v\in V[/mathjaxinline], and [mathjaxinline]T(S(w)) = w[/mathjaxinline] for all [mathjaxinline]w\in W[/mathjaxinline]. If this is the case, we can write [mathjaxinline]S = T^{-1}[/mathjaxinline] and [mathjaxinline]T = S^{-1}[/mathjaxinline]. </p>
             <p>
 If [mathjaxinline]S = T^{-1}[/mathjaxinline] exists we say that [mathjaxinline]T[/mathjaxinline] is <span style="color:#99182C"><b class="bf">invertible</b></span>. </p>
@@ -5592,7 +5601,7 @@ If [mathjaxinline]B = A^{-1}[/mathjaxinline] exists we say that [mathjaxinline]A
           </html>
         </vertical>
         <vertical display_name="Into, Onto, and Invertibility" refnum="4" url_name="b2matrixinv-vertical4">
-          <problem display_name="Into and Onto" linenum="90" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Into and Onto" linenum="93" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 We've noted that a linear transformation has an inverse if and only if it is both into and onto. Let's recall our results about when a linear transformation from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline] can or must be into or onto. </p>
@@ -5630,7 +5639,7 @@ If [mathjaxinline]n&gt;m[/mathjaxinline], what can we conclude about [mathjaxinl
               </p>
             </text>
           </problem>
-          <problem display_name="When is invertible possible?" linenum="125" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab4-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="When is invertible possible?" linenum="128" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab4-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Again, let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a linear transformation. Given the above, if [mathjaxinline]n&lt;m[/mathjaxinline], is it possible for [mathjaxinline]T[/mathjaxinline] to be invertible? </p>
@@ -5657,7 +5666,7 @@ If [mathjaxinline]n&gt;m[/mathjaxinline], is it possible for [mathjaxinline]T[/m
         </vertical>
         <vertical display_name="Conditions for Invertibility" refnum="5" url_name="b2matrixinv-vertical5">
           <video display_name="Conditions for Invertibility" youtube_id_1_0="pYqavDw0wt4" url_name="b2matrixinv-tab5-video1"/>
-          <problem display_name="Square Matrices" linenum="155" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Square Matrices" linenum="158" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or False: If a matrix [mathjaxinline]A[/mathjaxinline] is not square, it cannot be invertible. </p>
@@ -5683,7 +5692,7 @@ True or False: If a matrix [mathjaxinline]A[/mathjaxinline] is square, it must b
           </problem>
         </vertical>
         <vertical display_name="Invertible Matrix Theorem" refnum="6" url_name="b2matrixinv-vertical6">
-          <html display_name="Inverse Definitions" linenum="180" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab6-text1">
+          <html display_name="Inverse Definitions" linenum="183" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab6-text1">
             <p><span style="color:#27408C"><b class="bf">Invertible Matrix Theorem.</b></span> Suppose that [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ n[/mathjaxinline] is a linear transformation with (square) standard matrix [mathjaxinline]A[/mathjaxinline]. Then the following conditions are all equivalent (i.e., either all of them are true, or all of them are false): </p>
             <ol class="enumerate">
               <li value="1">
@@ -5738,7 +5747,7 @@ The columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ n
             <p>
 Note: There will be more equivalent conditions added to this list in the near future! </p>
           </html>
-          <problem display_name="Using the Invertible Matrix Theorem" linenum="209" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Using the Invertible Matrix Theorem" linenum="212" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Suppose [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix which has at least one free variable. Can we conclude that the columns of [mathjaxinline]A[/mathjaxinline] do not span [mathjaxinline]\mathbb R^ m[/mathjaxinline]? </p>
@@ -5764,7 +5773,7 @@ Suppose [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]n\times n[/mathjax
           </problem>
         </vertical>
         <vertical display_name="Calculating the Inverse" refnum="7" url_name="b2matrixinv-vertical7">
-          <problem display_name="Is it Invertible?" linenum="238" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Is it Invertible?" linenum="241" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A = \left[ \begin{array}{cc} 1 &amp;  2 \\ 2 &amp;  5 \end{array} \right][/mathjaxinline]. By row-reducing [mathjaxinline]A[/mathjaxinline], answer the question, is [mathjaxinline]A[/mathjaxinline] invertible? </p>
@@ -5787,7 +5796,7 @@ Let [mathjaxinline]A = \left[ \begin{array}{cc} 1 &amp;  2 \\ 2 &amp;  5 \end{ar
           <video display_name="Calculating the Inverse" youtube_id_1_0="qraxzr8nb5o" url_name="b2matrixinv-tab7-video1"/>
         </vertical>
         <vertical display_name="Inverse Practice" refnum="8" url_name="b2matrixinv-vertical8">
-          <problem display_name="Invert a Matrix" linenum="264" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab8-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Invert a Matrix" linenum="267" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab8-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 The following [mathjaxinline]3\times 3[/mathjaxinline] matrix is invertible: </p>
@@ -5849,7 +5858,7 @@ def MatrixEntry(expect, ans):
             <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
             <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
-          <problem display_name="Solve Using Inverse" linenum="287" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Solve Using Inverse" linenum="290" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be the matrix from above. Without doing any further row-reduction, find the solution to [mathjaxinline]Ax = \left[ \begin{array}{c} 100 \\ 0 \\ 10 \end{array} \right].[/mathjaxinline] </p>
@@ -5931,7 +5940,7 @@ def VectorEntry(expect, ans):
           </problem>
         </vertical>
         <vertical display_name="One-Sided Inverses?" refnum="9" url_name="b2matrixinv-vertical9">
-          <problem display_name="Non-square inverse? 1" linenum="314" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab9-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Non-square inverse? 1" linenum="317" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab9-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Is it possible for a [mathjaxinline]2\times 3[/mathjaxinline] matrix to be invertible? </p>
@@ -5951,7 +5960,7 @@ Is it possible for a [mathjaxinline]2\times 3[/mathjaxinline] matrix to be inver
               </p>
             </text>
           </problem>
-          <problem display_name="An Interesting Product" linenum="326" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab9-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="An Interesting Product" linenum="329" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab9-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Given </p>
@@ -5997,7 +6006,7 @@ def MatrixEntry(expect, ans):
               </p>
             </text>
           </problem>
-          <problem display_name="Non-square inverse? 2" linenum="348" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab9-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Non-square inverse? 2" linenum="351" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab9-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Look at the result of the previous problem. Does this mean that [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are inverses of one another? </p>
@@ -6020,7 +6029,7 @@ Look at the result of the previous problem. Does this mean that [mathjaxinline]A
         </vertical>
         <vertical display_name="One Side Only" refnum="10" url_name="b2matrixinv-vertical10">
           <video display_name="One-Sided Inverses" youtube_id_1_0="X5sMleqtvAk" url_name="b2matrixinv-tab10-video1"/>
-          <html display_name="One-Sided Inverses" linenum="369" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab10-text1">
+          <html display_name="One-Sided Inverses" linenum="372" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab10-text1">
             <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are square matrices, and [mathjaxinline]AB = I[/mathjaxinline], then [mathjaxinline]BA = I[/mathjaxinline], and the two matrices are inverses of each other. </p>
             <p>
 This allows us to add two lines to the Invertible Matrix Theorem: </p>
@@ -6086,7 +6095,7 @@ There is a matrix [mathjaxinline]B[/mathjaxinline] such that [mathjaxinline]BA =
           </html>
         </vertical>
         <vertical display_name="Some IMT Practice" refnum="11" url_name="b2matrixinv-vertical11">
-          <problem display_name="Using the IMT" linenum="410" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab11-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Using the IMT" linenum="413" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab11-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Suppose the columns of [mathjaxinline]A[/mathjaxinline] are linearly independent. Which of the following must be true? Click all that apply. </p>

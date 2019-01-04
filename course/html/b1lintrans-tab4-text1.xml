@@ -3,11 +3,11 @@
   <ul class="itemize">
     <li>
       <p>
-For any vectors [mathjaxinline]\vecv , \vecw[/mathjaxinline] in the domain, [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw ).[/mathjaxinline] </p>
+For any vectors [mathjaxinline]v, w[/mathjaxinline] in the domain, [mathjaxinline]T(v + w) = T(v) + T(w).[/mathjaxinline] </p>
     </li>
     <li>
       <p>
-For any vector [mathjaxinline]\vecv[/mathjaxinline] in the domain, and any scalar [mathjaxinline]a\in {\bf {F}}[/mathjaxinline], [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline]. </p>
+For any vector [mathjaxinline]v[/mathjaxinline] in the domain, and any scalar [mathjaxinline]a\in {\bf {F}}[/mathjaxinline], [mathjaxinline]T(av) = aT(v)[/mathjaxinline]. </p>
     </li>
   </ul>
   <p>

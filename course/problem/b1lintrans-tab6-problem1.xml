@@ -21,9 +21,9 @@ Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [math
     <p>
 Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(af) = aT(f)[/mathjaxinline] for all vectors [mathjaxinline]f \in \mathbb {P}[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
     <p>
-      <symbolicresponse expect="Yes&quot; options=&quot;Yes&quot;,&quot;No&quot;">
-        <textline correct_answer="Yes&quot; options=&quot;Yes&quot;,&quot;No&quot;" math="1"/>
-      </symbolicresponse>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
     </p>
     <p>
 Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>

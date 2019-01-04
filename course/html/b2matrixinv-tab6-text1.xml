@@ -1,4 +1,4 @@
-<html display_name="Inverse Definitions" linenum="180" tex_filename="./block2/matrixinv.tex">
+<html display_name="Inverse Definitions" linenum="183" tex_filename="./block2/matrixinv.tex">
   <p><span style="color:#27408C"><b class="bf">Invertible Matrix Theorem.</b></span> Suppose that [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ n[/mathjaxinline] is a linear transformation with (square) standard matrix [mathjaxinline]A[/mathjaxinline]. Then the following conditions are all equivalent (i.e., either all of them are true, or all of them are false): </p>
   <ol class="enumerate">
     <li value="1">

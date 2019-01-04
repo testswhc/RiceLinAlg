@@ -1,4 +1,4 @@
-<problem display_name="Solve Using Inverse" linenum="287" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Solve Using Inverse" linenum="290" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]A[/mathjaxinline] be the matrix from above. Without doing any further row-reduction, find the solution to [mathjaxinline]Ax = \left[ \begin{array}{c} 100 \\ 0 \\ 10 \end{array} \right].[/mathjaxinline] </p>

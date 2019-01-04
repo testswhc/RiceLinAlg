@@ -1,4 +1,4 @@
-<problem display_name="Is it Invertible?" linenum="238" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Is it Invertible?" linenum="241" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]A = \left[ \begin{array}{cc} 1 &amp;  2 \\ 2 &amp;  5 \end{array} \right][/mathjaxinline]. By row-reducing [mathjaxinline]A[/mathjaxinline], answer the question, is [mathjaxinline]A[/mathjaxinline] invertible? </p>

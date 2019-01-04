@@ -1,16 +1,16 @@
 <problem display_name="Linear Transformation? 1" linenum="106" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-Define [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] by [mathjaxinline]T(\vecv ) = 2\vecv[/mathjaxinline]. </p>
+Define [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] by [mathjaxinline]T(v) = 2v[/mathjaxinline]. </p>
     <p>
-Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw )[/mathjaxinline] for all vectors [mathjaxinline]\vecv ,\vecw[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
+Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(v + w) = T(v) + T(w)[/mathjaxinline] for all vectors [mathjaxinline]v,w[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
     <p>
       <optionresponse>
         <optioninput options="('Yes','No')" correct="Yes"/>
       </optionresponse>
     </p>
     <p>
-Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline] for all vectors [mathjaxinline]\vecv[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
+Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(av) = aT(v)[/mathjaxinline] for all vectors [mathjaxinline]v[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
     <p>
       <optionresponse>
         <optioninput options="('Yes','No')" correct="Yes"/>

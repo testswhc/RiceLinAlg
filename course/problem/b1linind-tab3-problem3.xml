@@ -1,4 +1,4 @@
-<problem display_name="List 3" linenum="154" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="List 3" linenum="156" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]\mathbb {P}[/mathjaxinline] be the vector space of polynomials with real coefficients in the variable [mathjaxinline]t[/mathjaxinline]. Consider the list of vectors [mathjaxinline]\{ f; g\}[/mathjaxinline], where [mathjaxinline]f(t) = 1+t[/mathjaxinline] and [mathjaxinline]g(t) = t+t^2[/mathjaxinline] are vectors in [mathjaxinline]\mathbb {P}[/mathjaxinline]. </p>

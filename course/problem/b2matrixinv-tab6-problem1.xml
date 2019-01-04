@@ -1,4 +1,4 @@
-<problem display_name="Using the Invertible Matrix Theorem" linenum="209" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Using the Invertible Matrix Theorem" linenum="212" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Suppose [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix which has at least one free variable. Can we conclude that the columns of [mathjaxinline]A[/mathjaxinline] do not span [mathjaxinline]\mathbb R^ m[/mathjaxinline]? </p>

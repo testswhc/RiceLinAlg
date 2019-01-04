@@ -46,5 +46,14 @@ Let [mathjaxinline]g(y) = \displaystyle {\sqrt [3]{y}}[/mathjaxinline]. What is 
         </textline>
       </numericalresponse>
     </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ [mathjaxinline]f(x)[/mathjaxinline] and [mathjaxinline]g(y)[/mathjaxinline] are inverse functions. We see above that [mathjaxinline]f(x)[/mathjaxinline] evaluated at -13 has an output of -2197. Since [mathjaxinline]g(y)[/mathjaxinline] and [mathjaxinline]f(x)[/mathjaxinline] perform opposite actions, we know that g evaluated at -2197 has an output of -13.  </p>
+        </font>
+      </solution>
+    </p>
   </text>
 </problem>

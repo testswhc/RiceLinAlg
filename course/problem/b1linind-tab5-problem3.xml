@@ -1,4 +1,4 @@
-<problem display_name="Existence or Uniqueness?" linenum="285" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Existence or Uniqueness?" linenum="287" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 Is the linear independence of a list of vectors an existence question, or a uniqueness question? </p>

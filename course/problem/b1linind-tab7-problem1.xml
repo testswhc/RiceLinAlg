@@ -1,4 +1,4 @@
-<problem display_name="Quick Picks" linenum="414" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Quick Picks" linenum="416" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Without doing any row-reduction, you should be able to pick out three of the following lists of vectors that are linearly dependent. Which three? </p>
@@ -9,7 +9,7 @@ Without doing any row-reduction, you should be able to pick out three of the fol
       </li>
       <li value="2">
         <p>
-[mathjaxinline]\left\{ \left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] ; \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] ; \left[ \begin{array}{c} 2 \\ 5 \\ 7 \end{array} \right]\}[/mathjaxinline] </p>
+[mathjaxinline]\left\{ \left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] ; \left[ \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right] ; \left[ \begin{array}{c} 2 \\ 5 \\ 7 \end{array} \right] \right\}[/mathjaxinline] </p>
       </li>
       <li value="3">
         <p>

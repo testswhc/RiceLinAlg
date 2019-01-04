@@ -1,4 +1,4 @@
-<problem display_name="Non-square inverse? 2" linenum="348" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Non-square inverse? 2" linenum="351" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Look at the result of the previous problem. Does this mean that [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are inverses of one another? </p>

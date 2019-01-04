@@ -40,15 +40,15 @@ def MatrixEntry(expect, ans):
     <p>
 What is [mathjaxinline]AB[/mathjaxinline]? </p>
     <p>
-      <customresponse cfn="MatrixEntry" expect="[[-1,1],[0,6]">
-        <textline correct_answer="[[-1,1],[0,6]"/>
+      <customresponse cfn="MatrixEntry" expect="[[-1,1],[0,6]]">
+        <textline correct_answer="[[-1,1],[0,6]]"/>
       </customresponse>
     </p>
     <p>
 What is [mathjaxinline]BA[/mathjaxinline]? </p>
     <p>
-      <customresponse cfn="MatrixEntry" expect="[[6,0],[5,-1]">
-        <textline correct_answer="[[6,0],[5,-1]"/>
+      <customresponse cfn="MatrixEntry" expect="[[6,0],[5,-1]]">
+        <textline correct_answer="[[6,0],[5,-1]]"/>
       </customresponse>
     </p>
     <p>

@@ -1,4 +1,4 @@
-<problem display_name="Square Matrices" linenum="155" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Square Matrices" linenum="158" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 True or False: If a matrix [mathjaxinline]A[/mathjaxinline] is not square, it cannot be invertible. </p>

@@ -2,7 +2,7 @@
   <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">kernel</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p>
   <table id="a0000000082" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
     <tr>
-      <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Ker}(T) = \left\{  v\in V \  : T(v) = \mathbf{0}\} .[/mathjax]</td>
+      <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Ker}(T) = \left\{  v\in V \  : T(v) = \mathbf{0}\right\} .[/mathjax]</td>
       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
     </tr>
   </table>

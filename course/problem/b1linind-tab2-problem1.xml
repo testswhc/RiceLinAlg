@@ -1,4 +1,4 @@
-<problem display_name="Existence vs. Uniqueness" linenum="34" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Existence vs. Uniqueness" linenum="36" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Given a matrix [mathjaxinline]A[/mathjaxinline], consider the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. </p>

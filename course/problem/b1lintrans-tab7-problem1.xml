@@ -1,4 +1,4 @@
-<problem display_name="Linear Transformation Practice" linenum="288" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Linear Transformation Practice" linenum="287" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Suppose [mathjaxinline]T: \mathbb {P} \rightarrow \mathbb R^2[/mathjaxinline] is a linear transformation. Let [mathjaxinline]f,g\mathbb {P}[/mathjaxinline] be the polynomials given by [mathjaxinline]f(t) = t^2[/mathjaxinline] and [mathjaxinline]g(t) = t[/mathjaxinline]. </p>

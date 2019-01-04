@@ -1,4 +1,4 @@
-<problem display_name="True or False" linenum="239" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="True or False" linenum="241" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 True or False: Suppose the list [mathjaxinline]\{ v_1; v_2; v_3; v_4\}[/mathjaxinline] is linearly dependent. Then [mathjaxinline]v_4[/mathjaxinline] must be in the span of [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline]. </p>

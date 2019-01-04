@@ -1,4 +1,4 @@
-<problem display_name="Into and Onto" linenum="90" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Into and Onto" linenum="93" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 We've noted that a linear transformation has an inverse if and only if it is both into and onto. Let's recall our results about when a linear transformation from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline] can or must be into or onto. </p>

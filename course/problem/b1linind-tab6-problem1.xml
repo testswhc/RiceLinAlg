@@ -1,4 +1,4 @@
-<problem display_name="Non-trivial Solutions?" linenum="307" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Non-trivial Solutions?" linenum="309" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Use row reduction to determine how many solutions the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has, where </p>

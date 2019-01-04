@@ -1,4 +1,4 @@
-<html display_name="One-Sided Inverses" linenum="369" tex_filename="./block2/matrixinv.tex">
+<html display_name="One-Sided Inverses" linenum="372" tex_filename="./block2/matrixinv.tex">
   <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are square matrices, and [mathjaxinline]AB = I[/mathjaxinline], then [mathjaxinline]BA = I[/mathjaxinline], and the two matrices are inverses of each other. </p>
   <p>
 This allows us to add two lines to the Invertible Matrix Theorem: </p>

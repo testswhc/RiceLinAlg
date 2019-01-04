@@ -1,4 +1,4 @@
-<problem display_name="Non-square inverse? 1" linenum="314" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Non-square inverse? 1" linenum="317" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Is it possible for a [mathjaxinline]2\times 3[/mathjaxinline] matrix to be invertible? </p>

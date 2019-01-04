@@ -1,4 +1,4 @@
-<problem display_name="Invert a Matrix" linenum="264" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+<problem display_name="Invert a Matrix" linenum="267" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 The following [mathjaxinline]3\times 3[/mathjaxinline] matrix is invertible: </p>

@@ -1,4 +1,4 @@
-<html display_name="Inverse Definitions" linenum="54" tex_filename="./block2/matrixinv.tex">
+<html display_name="Inverse Definitions" linenum="57" tex_filename="./block2/matrixinv.tex">
   <p><span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]T: V \rightarrow W[/mathjaxinline] and [mathjaxinline]S: W \rightarrow V[/mathjaxinline] are linear transformations, we say that [mathjaxinline]S[/mathjaxinline] and [mathjaxinline]T[/mathjaxinline] are <span style="color:#99182C"><b class="bf">inverses</b></span> of one another if [mathjaxinline]S(T(v)) = v[/mathjaxinline] for all [mathjaxinline]v\in V[/mathjaxinline], and [mathjaxinline]T(S(w)) = w[/mathjaxinline] for all [mathjaxinline]w\in W[/mathjaxinline]. If this is the case, we can write [mathjaxinline]S = T^{-1}[/mathjaxinline] and [mathjaxinline]T = S^{-1}[/mathjaxinline]. </p>
   <p>
 If [mathjaxinline]S = T^{-1}[/mathjaxinline] exists we say that [mathjaxinline]T[/mathjaxinline] is <span style="color:#99182C"><b class="bf">invertible</b></span>. </p>

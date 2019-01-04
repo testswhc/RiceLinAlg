@@ -1,16 +1,16 @@
 <problem display_name="Linear Transformation? 3" linenum="174" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-Define [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] by [mathjaxinline]T(\vecv ) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. </p>
+Define [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] by [mathjaxinline]T(v) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. </p>
     <p>
-Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw )[/mathjaxinline] for all vectors [mathjaxinline]\vecv ,\vecw[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
+Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(v + w) = T(v) + T(w)[/mathjaxinline] for all vectors [mathjaxinline]v,w[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
     <p>
       <optionresponse>
         <optioninput options="('Yes','No')" correct="No"/>
       </optionresponse>
     </p>
     <p>
-Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline] for all vectors [mathjaxinline]\vecv[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
+Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(av) = aT(v)[/mathjaxinline] for all vectors [mathjaxinline]v[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p>
     <p>
       <optionresponse>
         <optioninput options="('Yes','No')" correct="No"/>
@@ -30,7 +30,7 @@ Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
           <p>
  Here, trying specific vectors provides a counterexample, which is sufficient to show that [mathjaxinline]T[/mathjaxinline] is not a linear transformation.<br/>Let [mathjaxinline]v_1 = \left[ \begin{array}{c} 1\\ 2\\ 5 \end{array} \right][/mathjaxinline], [mathjaxinline]v_2 = \left[ \begin{array}{c} -4\\ 0\\ 9 \end{array} \right][/mathjaxinline]<br/>[mathjaxinline]T(v_1) + T(v_2) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right] + \left[\begin{array}{c} 4 \\ 0 \end{array} \right] = \left[\begin{array}{c} 8 \\ 0 \end{array} \right][/mathjaxinline]<br/>Meanwhile, [mathjaxinline]T(v_1 + v_2) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] does not respect vector addition and is not linear.<br/></p>
           <p>
-We also see that [mathjaxinline]8\cdotT (v_1) = 8 \left[\begin{array}{c} 4 \\ 0 \end{array} \right] = \left[\begin{array}{c} 32 \\ 0 \end{array} \right][/mathjaxinline]<br/>Meanwhile, [mathjaxinline]T(8v_1) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] does not respect scalar multiplication; this on its own would also be enough to know that [mathjaxinline]T[/mathjaxinline] is not linear.  </p>
+We also see that [mathjaxinline]8T(v_1) = 8 \left[\begin{array}{c} 4 \\ 0 \end{array} \right] = \left[\begin{array}{c} 32 \\ 0 \end{array} \right][/mathjaxinline]<br/>Meanwhile, [mathjaxinline]T(8v_1) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] does not respect scalar multiplication; this on its own would also be enough to know that [mathjaxinline]T[/mathjaxinline] is not linear.  </p>
         </font>
       </solution>
     </p>

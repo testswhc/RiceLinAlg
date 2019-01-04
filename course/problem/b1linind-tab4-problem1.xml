@@ -1,4 +1,4 @@
-<problem display_name="More Lists" linenum="200" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+<problem display_name="More Lists" linenum="202" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 Consider the vectors [mathjaxinline]v_1, v_2, v_3 \in \mathbb R^2[/mathjaxinline] as given in this picture: </p>
@@ -19,10 +19,10 @@ Which of the following lists are linearly independent? Click all that apply. </p
           <choice correct="true" name="3">
             <text>[mathjaxinline]\{ v_1;v_2\}[/mathjaxinline]</text>
           </choice>
-          <choice correct="false" name="4">
+          <choice correct="true" name="4">
             <text>[mathjaxinline]\{ v_1;v_3\}[/mathjaxinline]</text>
           </choice>
-          <choice correct="true" name="5">
+          <choice correct="false" name="5">
             <text>[mathjaxinline]\{ v_2;v_3\}[/mathjaxinline]</text>
           </choice>
           <choice correct="false" name="6">
