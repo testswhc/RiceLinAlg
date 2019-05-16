@@ -7,521 +7,123 @@
 </div>
 
 <div><p>
-<course number="Test" display_name="Test LinAlg" attrib_string="semester=&quot;2018_Summer&quot; info_sidebar_name=&quot;Other Documents&quot; start=&quot;2018-01-11T12:00&quot; end=&quot;2018-12-18T18:00&quot; course_image=&quot;rice-logo.jpg&quot; display_coursenumber=&quot;TestLinAlg&quot; course_organization=&quot;TestRice&quot; graceperiod=&quot;1800 seconds&quot; invitation_only=&quot;true&quot; allow_anonymous=&quot;false&quot; mobile_available=&quot;true&quot; org=&quot;Rice&quot;"><p>
+<course number="Test" display_name="Test LinAlg" attrib_string="semester=&quot;2018_Summer&quot; info_sidebar_name=&quot;Other Documents&quot; start=&quot;2018-01-11T12:00&quot; end=&quot;2019-12-18T18:00&quot; course_image=&quot;rice-logo.jpg&quot; display_coursenumber=&quot;TestLinAlg&quot; course_organization=&quot;TestRice&quot; graceperiod=&quot;1800 seconds&quot; invitation_only=&quot;true&quot; allow_anonymous=&quot;false&quot; mobile_available=&quot;true&quot; org=&quot;Rice&quot;"><p>
 <chapter display_name="Vectors and Matrices" attrib_string="url_name=&quot;block1&quot; start=&quot;2018-01-11T16:00&quot;" linenum="73" tex_filename="testcourse2.tex" refnum="1"><p>
-<sequential display_name="Systems of Linear Equations" attrib_string="due=&quot;2018-12-18T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b1lineareqns-sequential&quot;" linenum="85" tex_filename="testcourse2.tex" refnum="1"><p>
-<vertical display_name="Page One" attrib_string="url_name=&quot;b1lineareqns-vertical1&quot;" refnum="1"><p>
-<html display_name="Preliminaries" attrib_string="url_name=&quot;b1lineareqns-tab1-text1&quot;" linenum="5" tex_filename="./block1/lineartransformations.tex"><p>
-At the end of this sequence, and after some practice, you should be able to: </p><ul class="itemize">
-
-<li><p>
-Understand the definition of linear transformation. </p></li>
-<li><p>
-Be able to determine whether a function between vector spaces is a linear transformations. </p></li>
-<li><p>
-Recognize basic properties of linear transformations. </p></li>
-</ul><p>
-For time budgeting purposes, this sequence has 4 videos totaling 14 minutes, plus some questions. </p></html></p></vertical>   </p><p>
-<vertical display_name="Introduction" attrib_string="url_name=&quot;b1lineareqns-vertical2&quot;" refnum="2"><p>
-<video display_name="Functions" youtube_id_1_0="nMrAAozL4F0" attrib_string="url_name=&quot;b1lineareqns-tab2-video1&quot; "></video><problem display_name="System Consistency?" attrib_string="url_name=&quot;b1lineareqns-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="35" tex_filename="./block1/lineartransformations.tex"><text><p>
-Define the function [mathjaxinline]T[/mathjaxinline] by [mathjaxinline]T(\vecx ) = Ax[/mathjaxinline], where [mathjaxinline]A = \left[ \begin{array}{ccc} 6 &amp;  5 &amp;  3 \\ 2 &amp;  4 &amp;  23 \end{array} \right].[/mathjaxinline] </p><p>
-What is the domain of [mathjaxinline]T[/mathjaxinline]? </p><p>
-<multiplechoiceresponse>
-  <choicegroup direction="vertical">
-    <choice correct="false" name="1">
-      <text> [mathjaxinline]\mathbb R[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="2">
-      <text> [mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
-    </choice>
-    <choice correct="true" name="3">
-      <text> [mathjaxinline]\mathbb R^3[/mathjaxinline]</text>
-    </choice>
-  </choicegroup>
-</multiplechoiceresponse> </p><p>
-What is the codomain of [mathjaxinline]T[/mathjaxinline]? </p><p>
-<multiplechoiceresponse>
-  <choicegroup direction="vertical">
-    <choice correct="false" name="1">
-      <text> [mathjaxinline]\mathbb R[/mathjaxinline]</text>
-    </choice>
-    <choice correct="true" name="2">
-      <text> [mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="3">
-      <text> [mathjaxinline]\mathbb R^3[/mathjaxinline]</text>
-    </choice>
-  </choicegroup>
-</multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
- [mathjaxinline]A[/mathjaxinline] has 3 columns. Therefore, for the product [mathjaxinline]Ax[/mathjaxinline] to be defined, [mathjaxinline]x[/mathjaxinline] must have 3 rows, and will be a vector in [mathjaxinline]\mathbb R^3[/mathjaxinline]. <br />Since [mathjaxinline]A[/mathjaxinline] has two rows, the product [mathjaxinline]Ax[/mathjaxinline] will be a vector in [mathjaxinline]\mathbb R^2[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p><p>
-<vertical display_name="Defining Linear Transformations" attrib_string="url_name=&quot;b1lineareqns-vertical3&quot;" refnum="3"><p>
-<video display_name="Linear Transformations" youtube_id_1_0="ASQadpJlL94" attrib_string="url_name=&quot;b1lineareqns-tab3-video1&quot; "></video></p></vertical>   </p><p>
-<vertical display_name="Linear Transformation Definition" attrib_string="url_name=&quot;b1lineareqns-vertical4&quot;" refnum="4"><p>
-<html display_name="Definition of Linear Transformation" attrib_string="url_name=&quot;b1lineareqns-tab4-text1&quot;" linenum="83" tex_filename="./block1/lineartransformations.tex"><p>
-<span style="color:#27408C"><b class="bf">Definition.</b></span> Let [mathjaxinline]{\bf {F}}[/mathjaxinline] be a field. A function [mathjaxinline]T: {\bf {F}}^ n \rightarrow {\bf {F}}^ m[/mathjaxinline] is a <span style="color:#99182C"><b class="bf">linear transformation</b></span> if both of the following properties hold: </p><ul class="itemize">
-
-<li><p>
-For any vectors [mathjaxinline]\vecv , \vecw[/mathjaxinline] in the domain, [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw ).[/mathjaxinline] </p></li>
-<li><p>
-For any vector [mathjaxinline]\vecv[/mathjaxinline] in the domain, and any scalar [mathjaxinline]a\in {\bf {F}}[/mathjaxinline], [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline]. </p></li>
-</ul><p>
-Informally, if [mathjaxinline]T[/mathjaxinline] satisfies the first condition we say that “[mathjaxinline]T[/mathjaxinline] respects vector addition", and if [mathjaxinline]T[/mathjaxinline] satisfies the second condition we say that “[mathjaxinline]T[/mathjaxinline] respects scalar multiplication." </p></html></p></vertical>   </p><p>
-<vertical display_name="Some Examples and Non-examples" attrib_string="url_name=&quot;b1lineareqns-vertical5&quot;" refnum="5"><p>
-<problem display_name="Linear Transformation? 1" attrib_string="url_name=&quot;b1lineareqns-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="106" tex_filename="./block1/lineartransformations.tex"><text><p>
-Define [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] by [mathjaxinline]T(\vecv ) = 2\vecv[/mathjaxinline]. </p><p>
-Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw )[/mathjaxinline] for all vectors [mathjaxinline]\vecv ,\vecw[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="Yes"/>
-</optionresponse> </p><p>
-Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline] for all vectors [mathjaxinline]\vecv[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="Yes"/>
-</optionresponse> </p><p>
-Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="Yes"/>
-</optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
-It appears that the transformation is linear. We can prove it with algebra: <br /></p><p>
-We have [mathjaxinline]T(v + w) = 2(v+w) = 2v + 2w = T(v) + T(w)[/mathjaxinline]. Therefore [mathjaxinline]T[/mathjaxinline] respects vector addition. </p><p>
-Similarly [mathjaxinline]T(av) = 2(av) = a(2v) = aT(v),[/mathjaxinline] so [mathjaxinline]T[/mathjaxinline] respects scalar multiplication. Thus, [mathjaxinline]T[/mathjaxinline] is a linear transformation. </p></font></solution></p></text></problem></p><p>
-<problem display_name="Linear Transformation? 2" attrib_string="url_name=&quot;b1lineareqns-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="141" tex_filename="./block1/lineartransformations.tex"><text><p>
-Define [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] by [mathjaxinline]T(\vecv ) = \mathbf{0}[/mathjaxinline]. </p><p>
-Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw )[/mathjaxinline] for all vectors [mathjaxinline]\vecv ,\vecw[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="Yes"/>
-</optionresponse> </p><p>
-Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline] for all vectors [mathjaxinline]\vecv[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="Yes"/>
-</optionresponse> </p><p>
-Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="Yes"/>
-</optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
-[mathjaxinline]T(v+w) = \mathbf{0}= \mathbf{0}+ \mathbf{0}= T(v) + T(w)[/mathjaxinline], so [mathjaxinline]T[/mathjaxinline] respects addition. Also, [mathjaxinline]T(av) = \mathbf{0}= a\mathbf{0}= aT(v)[/mathjaxinline], so [mathjaxinline]T[/mathjaxinline] respects scalar multiplication. </p><p>
-Hence [mathjaxinline]T[/mathjaxinline] is a linear transformation. </p></font></solution></p></text></problem></p><p>
-<problem display_name="Linear Transformation? 3" attrib_string="url_name=&quot;b1lineareqns-tab5-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="174" tex_filename="./block1/lineartransformations.tex"><text><p>
-Define [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] by [mathjaxinline]T(\vecv ) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. </p><p>
-Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(\vecv + \vecw ) = T(\vecv ) + T(\vecw )[/mathjaxinline] for all vectors [mathjaxinline]\vecv ,\vecw[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="No"/>
-</optionresponse> </p><p>
-Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(a\vecv ) = aT(\vecv )[/mathjaxinline] for all vectors [mathjaxinline]\vecv[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="No"/>
-</optionresponse> </p><p>
-Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="No"/>
-</optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
- Here, trying specific vectors provides a counterexample, which is sufficient to show that [mathjaxinline]T[/mathjaxinline] is not a linear transformation.<br />Let [mathjaxinline]v_1 = \left[ \begin{array}{c} 1\\ 2\\ 5 \end{array} \right][/mathjaxinline], [mathjaxinline]v_2 = \left[ \begin{array}{c} -4\\ 0\\ 9 \end{array} \right][/mathjaxinline]<br />[mathjaxinline]T(v_1) + T(v_2) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right] + \left[\begin{array}{c} 4 \\ 0 \end{array} \right] = \left[\begin{array}{c} 8 \\ 0 \end{array} \right][/mathjaxinline]<br />Meanwhile, [mathjaxinline]T(v_1 + v_2) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] does not respect vector addition and is not linear.<br /></p><p>
-We also see that [mathjaxinline]8\cdotT (v_1) = 8 \left[\begin{array}{c} 4 \\ 0 \end{array} \right] = \left[\begin{array}{c} 32 \\ 0 \end{array} \right][/mathjaxinline]<br />Meanwhile, [mathjaxinline]T(8v_1) = \left[\begin{array}{c} 4 \\ 0 \end{array} \right][/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] does not respect scalar multiplication; this on its own would also be enough to know that [mathjaxinline]T[/mathjaxinline] is not linear.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
-<vertical display_name="More Linear Transformations" attrib_string="url_name=&quot;b1lineareqns-vertical6&quot;" refnum="6"><p>
-<video display_name="A Linear Transformation outside of R^n" youtube_id_1_0="Pyv9GXNYJ44" attrib_string="url_name=&quot;b1lineareqns-tab6-video1&quot; "></video><problem display_name="Linear Transformation? 4" attrib_string="url_name=&quot;b1lineareqns-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="231" tex_filename="./block1/lineartransformations.tex"><text><p>
-Define [mathjaxinline]T: \mathbb {P} \rightarrow \mathbb R[/mathjaxinline] by [mathjaxinline]T(f) = f(1)[/mathjaxinline]. </p><p>
-To get a sense of how [mathjaxinline]T[/mathjaxinline] works, let's do a quick example. Suppose [mathjaxinline]f[/mathjaxinline] is the element of [mathjaxinline]\mathbb {P}[/mathjaxinline] given by [mathjaxinline]f(t) = 2t^2 -5[/mathjaxinline]. What is [mathjaxinline]T(f)[/mathjaxinline]? </p><p>
-<numericalresponse answer="-3">
-  <textline>
-    <responseparam type="tolerance" default="0.00001"/>
-  </textline>
-</numericalresponse> </p><p>
-Does [mathjaxinline]T[/mathjaxinline] respect vector addition? That is, is [mathjaxinline]T(f+g) = T(f) + T(g)[/mathjaxinline] for all vectors [mathjaxinline]f,g \in \mathbb {P}[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="Yes"/>
-</optionresponse> </p><p>
-Does [mathjaxinline]T[/mathjaxinline] respect scalar multiplication? That is, is [mathjaxinline]T(af) = aT(f)[/mathjaxinline] for all vectors [mathjaxinline]f \in \mathbb {P}[/mathjaxinline] and scalars [mathjaxinline]a[/mathjaxinline]? Try a couple of specific numerical examples if you're not sure. </p><p>
-<symbolicresponse expect="Yes&quot; options=&quot;Yes&quot;,&quot;No&quot;">
-  <textline correct_answer="Yes&quot; options=&quot;Yes&quot;,&quot;No&quot;" math="1"/>
-</symbolicresponse> </p><p>
-Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p><p>
-<optionresponse>
-  <optioninput options="('Yes','No')" correct="Yes"/>
-</optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
- [mathjaxinline]T[/mathjaxinline] respects vector addition because:<br />[mathjaxinline]f(1) + g(1) = (f+g)(1)[/mathjaxinline]<br />i.e. we can evaluate polynomials at 1 separately and add the results, or we can add the polynomials and evaluate the result at 1, and we'll get the same result. </p><p>
-[mathjaxinline]T[/mathjaxinline] respects scalar multiplication because:<br />[mathjaxinline]cT(f) = cf(1) = (cf)(1) = T(cf)[/mathjaxinline]<br />i.e. we can evaluate a polynomial at 1 and multiply the result by a scalar, or multiply the polynomial by the scalar first and then evaluate the result at 1, and we'll get the same result. </p></font></solution></p></text></problem></p></vertical>   </p><p>
-<vertical display_name="Linear Transformations Properties" attrib_string="url_name=&quot;b1lineareqns-vertical7&quot;" refnum="7"><p>
-<video display_name="Linear Transformation Properties" youtube_id_1_0="oe4fgdPAsgA" attrib_string="url_name=&quot;b1lineareqns-tab7-video1&quot; "></video><problem display_name="Linear Transformation Practice" attrib_string="url_name=&quot;b1lineareqns-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="288" tex_filename="./block1/lineartransformations.tex"><text><p>
-Suppose [mathjaxinline]T: \mathbb {P} \rightarrow \mathbb R^2[/mathjaxinline] is a linear transformation. Let [mathjaxinline]f,g\mathbb {P}[/mathjaxinline] be the polynomials given by [mathjaxinline]f(t) = t^2[/mathjaxinline] and [mathjaxinline]g(t) = t[/mathjaxinline]. </p><p>
-Suppose that [mathjaxinline]T(f) = \left[\begin{array}{c} 1 \\ 2 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(g) = \left[\begin{array}{c} 2 \\ -1 \end{array} \right][/mathjaxinline] </p><p>
-If [mathjaxinline]h \in \mathbb {P}[/mathjaxinline] is the polynomial given by [mathjaxinline]h(t) = -2t^2[/mathjaxinline], what must [mathjaxinline]T(h)[/mathjaxinline] be? </p><p>
-<edxshowhide description="How to Enter a Vector"><p>
-To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
-
-<li><p>
-enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
-<li><p>
-or, you can enter it as &lt;1,2,3&gt; </p></li>
-</ul><p>
-Use decimals only. </p></edxshowhide> </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
-def VectorEntry(expect, ans):
-	import ast
-	import numpy as np 
-  	atol = 0.01
-	list_expect = ast.literal_eval(expect)
-	vec_expect = np.matrix(list_expect)
-  	ret = {"ok":False}
-	try:
-  		# input format [[1],[2],[3]]
-		list_ans = ast.literal_eval(ans)
-		vec_ans = np.matrix(list_ans)
-  		if vec_ans.shape != vec_expect.shape:
-  			ret['msg'] = 'Wrong shape of vector!'
-  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
-  			ret['ok'] = True
-  		else:
-  		# More error message. Will improve this part
-  			ret['msg'] = 'something is wrong'   			
-	#except SyntaxError:
-		#ret['msg'] = 'Wrong input format'
-	except SyntaxError:
-  		# input format &amp;lt;1,2,3&amp;gt;
-		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
-		list_ans = ast.literal_eval(list_ans)
-		vec_ans = np.transpose(np.matrix(list_ans))
-  		if vec_ans.shape != vec_expect.shape:
-  			ret['msg'] = 'Wrong shape of vector!'
-  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
-  			ret['ok'] = True
-  		else:
-    		# More error message. Will improve this part
-  			ret['msg'] = 'something is wrong' 
-  	except:
-  		ret['msg'] = 'Wrong input format'
-  	return ret 
-</script><p>
-<customresponse cfn="VectorEntry" expect="[[-2],[-4]]">
-  <textline correct_answer="[[-2],[-4]]"/>
-</customresponse> </p><p>
-If [mathjaxinline]j \in \mathbb {P}[/mathjaxinline] is the polynomial given by [mathjaxinline]h(t) = 3t^2-t[/mathjaxinline], what must [mathjaxinline]T(j)[/mathjaxinline] be? </p><p>
-<customresponse cfn="VectorEntry" expect="[[1],[7]]">
-  <textline correct_answer="[[1],[7]]"/>
-</customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
- We are assured that [mathjaxinline]T[/mathjaxinline] is a linear transformation, so we have: </p><table id="a0000000002" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]T(h) = T(-2t^2) = -2T(t^2) = -2T(f) = -2\left[\begin{array}{c} 1 \\ 2 \end{array} \right] = \left[\begin{array}{c} -2 \\ -4 \end{array} \right].[/mathjax]</td>
-</tr>
-</table><p>
-Also, </p><table id="a0000000003" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]T(j) = T(3t^2-t) = T(3t^2) + T(-t) = 3T(t^2) + -T(t) = 3T(f) - T(g) = 3\left[\begin{array}{c} 1 \\ 2 \end{array} \right] - \left[\begin{array}{c} 2 \\ -1 \end{array} \right] = \left[\begin{array}{c} 1 \\ 7 \end{array} \right].[/mathjax]</td>
-</tr>
-</table></font></solution></p></text></problem></p></vertical>   </p></sequential> </p><p>
-<sequential display_name="More Matrix Operations" attrib_string="due=&quot;2018-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b2matrixops-sequential&quot;" linenum="126" tex_filename="testcourse2.tex" refnum="2"><p>
+<sequential display_name="LinInd" attrib_string="due=&quot;2019-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b2matrixops-sequential&quot;" linenum="89" tex_filename="testcourse2.tex" refnum="1"><p>
 <vertical display_name="Page One" attrib_string="url_name=&quot;b2matrixops-vertical1&quot;" refnum="1"><p>
-<html display_name="Preliminaries" attrib_string="url_name=&quot;b2matrixops-tab1-text1&quot;" linenum="5" tex_filename="./block2/morematrixops2.tex"><p>
+<html display_name="Preliminaries" attrib_string="url_name=&quot;b2matrixops-tab1-text1&quot;" linenum="7" tex_filename="./block1/linearindependence2.tex"><p>
 At the end of this sequence, and after some practice, you should be able to: </p><ul class="itemize">
 
 <li><p>
-Understand the relationship between elementary matrices and row operations. </p></li>
+Understand the definition of linear independence. </p></li>
 <li><p>
-Find the transpose of a matrix. </p></li>
+Be able to determine whether a list of vectors is linearly independent. </p></li>
 <li><p>
-Recognize more conditions under which a matrix is invertible. </p></li>
+Know conditions on whether a list of vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline] can be linearly independent. </p></li>
 </ul><p>
 For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p></html></p></vertical>   </p><p>
-<vertical display_name="Inverses and Products" attrib_string="url_name=&quot;b2matrixops-vertical2&quot;" refnum="2"><p>
-<video display_name="Inverses and Products" youtube_id_1_0="KdbmhHwABYo" attrib_string="url_name=&quot;b2matrixops-tab2-video1&quot; "></video><html display_name="Inverses and Products" attrib_string="url_name=&quot;b2matrixops-tab2-text1&quot;" linenum="37" tex_filename="./block2/morematrixops2.tex"><p>
-<span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are [mathjaxinline]n\times n[/mathjaxinline] matrices which are both invertible, then [mathjaxinline]AB[/mathjaxinline] is invertible, and [mathjaxinline](AB)^{-1}= B^{-1}A^{-1}[/mathjaxinline]. </p><p>
-<span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are [mathjaxinline]n\times n[/mathjaxinline] matrices, and their product [mathjaxinline]AB[/mathjaxinline] is invertible, then both [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are invertible. </p></html></p></vertical>   </p><p>
-<vertical display_name="Inverse Questions" attrib_string="url_name=&quot;b2matrixops-vertical3&quot;" refnum="3"><p>
-<problem display_name="Invertible Product" attrib_string="url_name=&quot;b2matrixops-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="60" tex_filename="./block2/morematrixops2.tex"><text><p>
-True or false: It is possible for two non-invertible matrices to have an invertible product. </p><p>
-<optionresponse>
-  <optioninput options="('True','False')" correct="True"/>
-</optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
- The proposition proven on the previous pages states that if the product of two <span style="color:#99182C"><b class="bf">square</b></span> matrices is invertible, then each individual matrix is. However, this problem does not indicate that the matrices are square. </p><p>
-For instance, given </p><table id="a0000000004" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 0 &amp;  1 &amp;  1 \end{array} \right], \   \mathrm{and} \  B = \left[ \begin{array}{cc} 1 &amp;  0 \\ 0 &amp;  0 \\ 0 &amp;  1 \end{array} \right],[/mathjax]</td>
-</tr>
-</table><p>
- we find that [mathjaxinline]AB[/mathjaxinline] is the [mathjaxinline]2\times 2[/mathjaxinline] identity matrix, which is invertible, yet neither [mathjaxinline]A[/mathjaxinline] nor [mathjaxinline]B[/mathjaxinline] are invertible. </p></font></solution></p></text></problem></p><p>
-<problem display_name="Solve for A" attrib_string="url_name=&quot;b2matrixops-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="83" tex_filename="./block2/morematrixops2.tex"><text><p>
-Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxinline]n\times n[/mathjaxinline] matrices such that [mathjaxinline]DA^{-1}B^{-1}= C^{-1}[/mathjaxinline]. Solve for [mathjaxinline]A[/mathjaxinline]. </p><p>
-<multiplechoiceresponse>
-  <choicegroup direction="vertical">
-    <choice correct="false" name="1">
-      <text> [mathjaxinline]A=DCB^{-1}[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="2">
-      <text> [mathjaxinline]A=DB^{-1}C[/mathjaxinline]</text>
-    </choice>
-    <choice correct="true" name="3">
-      <text> [mathjaxinline]A=B^{-1}CD[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="4">
-      <text> [mathjaxinline]A=BCD^{-1}[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="5">
-      <text> [mathjaxinline]A=D^{-1}CB[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="6">
-      <text> [mathjaxinline]A=CB^{-1}D[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="7">
-      <text> None of the above</text>
-    </choice>
-  </choicegroup>
-</multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
-<vertical display_name="Introducing Elementary Matrices" attrib_string="url_name=&quot;b2matrixops-vertical4&quot;" refnum="4"><p>
-<problem display_name="Find a matrix" attrib_string="url_name=&quot;b2matrixops-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="102" tex_filename="./block2/morematrixops2.tex"><text><p>
-Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p><table id="a0000000005" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]EA = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ 4a_{31} &amp;  4a_{32} \end{array} \right].[/mathjax]</td>
-</tr>
-</table><p>
-<edxshowhide description="How to Enter a Matrix"><p>
-To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p><p>
-Use decimals only. </p></edxshowhide> </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
-def MatrixEntry(expect, ans):
-  	import ast
-	import numpy as np 
-	ret= {'ok':False}
-  	atol = 0.01
-  	try:
-		list_ans = ast.literal_eval(ans)
-		list_expect = ast.literal_eval(expect)
-  		matrix_ans = np.matrix(list_ans)
-  		matrix_expect = np.matrix(list_expect) 
-  		if matrix_ans.shape != matrix_expect.shape:
-  			ret['msg'] = 'Wrong shape of matrix'
-  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
-  			ret['ok'] = True
-  		else:
-  			ret['msg'] = 'Something is wrong'
-	except SyntaxError:
-		ret['msg'] = 'Wrong input format'
-  	return ret
-</script><p>
-<customresponse cfn="MatrixEntry" expect="[[1,0,0],[0,1,0],[0,0,4]]">
-  <textline correct_answer="[[1,0,0],[0,1,0],[0,0,4]]"/>
-</customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<video display_name="Introducing Elementary Matrices" youtube_id_1_0="20gbxsXOooY" attrib_string="url_name=&quot;b2matrixops-tab4-video1&quot; "></video><problem display_name="Find another matrix" attrib_string="url_name=&quot;b2matrixops-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="130" tex_filename="./block2/morematrixops2.tex"><text><p>
-Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p><table id="a0000000006" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]EA = \left[ \begin{array}{cc} a_{21} &amp;  a_{22} \\ a_{11} &amp;  a_{12} \\ a_{31} &amp;  a_{32} \end{array} \right].[/mathjax]</td>
-</tr>
-</table><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
-def MatrixEntry(expect, ans):
-  	import ast
-	import numpy as np 
-	ret= {'ok':False}
-  	atol = 0.01
-  	try:
-		list_ans = ast.literal_eval(ans)
-		list_expect = ast.literal_eval(expect)
-  		matrix_ans = np.matrix(list_ans)
-  		matrix_expect = np.matrix(list_expect) 
-  		if matrix_ans.shape != matrix_expect.shape:
-  			ret['msg'] = 'Wrong shape of matrix'
-  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
-  			ret['ok'] = True
-  		else:
-  			ret['msg'] = 'Something is wrong'
-	except SyntaxError:
-		ret['msg'] = 'Wrong input format'
-  	return ret
-</script><p>
-<customresponse cfn="MatrixEntry" expect="[[0,1,0],[1,0,0],[0,0,1]]">
-  <textline correct_answer="[[0,1,0],[1,0,0],[0,0,1]]"/>
-</customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
-<vertical display_name="Elementary Matrices" attrib_string="url_name=&quot;b2matrixops-vertical5&quot;" refnum="5"><p>
-<html display_name="Elementary Matrices" attrib_string="url_name=&quot;b2matrixops-tab5-text1&quot;" linenum="160" tex_filename="./block2/morematrixops2.tex"><p>
-<span style="color:#27408C"><b class="bf">Definition.</b></span> An <span style="color:#99182C"><b class="bf">elementary matrix</b></span> is a square matrix of one of three types. </p><p>
-<edxshowhide description="Elementary Matrix of the First Type">An elementary matrix of the first type is one obtained from the identity matrix by changing the diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and column to a number [mathjaxinline]c[/mathjaxinline], where [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000007" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]E_1 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  c &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td>
-</tr>
-</table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_1[/mathjaxinline] (where [mathjaxinline]E_1[/mathjaxinline] is on the left) has the same effect as scaling row [mathjaxinline]i[/mathjaxinline] of [mathjaxinline]A[/mathjaxinline] by the scalar [mathjaxinline]c[/mathjaxinline]. </edxshowhide> </p><p>
-<edxshowhide description="Elementary Matrix of the Second Type">An elementary matrix of the second type is one obtained from the identity matrix by changing the non-diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column ([mathjaxinline]i\ne j[/mathjaxinline]) to a number [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000008" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]E_2 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  \ddots &amp; &amp; &amp; \\ &amp; &amp;  c &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td>
-</tr>
-</table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_2[/mathjaxinline] (where [mathjaxinline]E_2[/mathjaxinline] is on the left) has the same effect as adding [mathjaxinline]c[/mathjaxinline] times the [mathjaxinline]j[/mathjaxinline]th row of [mathjaxinline]A[/mathjaxinline] to row [mathjaxinline]i[/mathjaxinline]. </edxshowhide> </p><p>
-<edxshowhide description="Elementary Matrix of the Third Type">An elementary matrix of the third type is one obtained from the identity matrix by changing the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th diagonal entries to 0, and changing the entries in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column, and the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column, to 1: <table id="a0000000009" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]E_3 = \left[ \begin{array}{ccccccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  0 &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp;  0 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td>
-</tr>
-</table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_3[/mathjaxinline] (where [mathjaxinline]E_3[/mathjaxinline] is on the left) has the same effect as swapping the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th rows of [mathjaxinline]A[/mathjaxinline]. </edxshowhide> </p></html></p></vertical>   </p><p>
-<vertical display_name="Elementary Matrices and Inverses" attrib_string="url_name=&quot;b2matrixops-vertical6&quot;" refnum="6"><p>
-<video display_name="Elementary Matrices and Inverses" youtube_id_1_0="EtoZ2FyFKS4" attrib_string="url_name=&quot;b2matrixops-tab6-video1&quot; "></video></p></vertical>   </p><p>
-<vertical display_name="Transposes" attrib_string="url_name=&quot;b2matrixops-vertical7&quot;" refnum="7"><p>
-<html display_name="Transposes" attrib_string="url_name=&quot;b2matrixops-tab7-text1&quot;" linenum="237" tex_filename="./block2/morematrixops2.tex"><p>
-The last matrix operation we will introduce in this section is the transpose. The transpose of a matrix [mathjaxinline]A[/mathjaxinline] is essentially the matrix whose columns are the rows of [mathjaxinline]A[/mathjaxinline] (and whose rows are the columns of [mathjaxinline]A[/mathjaxinline]). Essentially, [mathjaxinline]A[/mathjaxinline] gets flipped across its diagonal. More formally: </p><p>
-<span style="color:#27408C"><b class="bf">Definition.</b></span> Given an [mathjaxinline]m\times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline], the <span style="color:#99182C"><b class="bf">transpose</b></span> of [mathjaxinline]A[/mathjaxinline] is the [mathjaxinline]n\times m[/mathjaxinline] matrix denoted [mathjaxinline]A^ t[/mathjaxinline] whose entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column is the same as the entry in the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column of [mathjaxinline]A[/mathjaxinline]. </p><p>
-For instance, if </p><table id="a0000000010" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 3 &amp;  4 &amp;  -1 \end{array} \right],[/mathjax]</td>
-</tr>
-</table><p>
- then </p><table id="a0000000011" class="equation" width="100%" cellspacing="0" cellpadding="7">
-<tr>
-    <td class="equation">[mathjax]A^ t = \left[ \begin{array}{cc} 1 &amp;  3 \\ 2 &amp;  4 \\ 0 &amp;  -1 \end{array} \right].[/mathjax]</td>
-</tr>
-</table></html></p><p>
-<problem display_name="Find a Transpose" attrib_string="url_name=&quot;b2matrixops-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="256" tex_filename="./block2/morematrixops2.tex"><text><p>
-Suppose [mathjaxinline]B = \left[ \begin{array}{cc} 2 &amp;  0 \\ 1 &amp;  3 \\ -2 &amp;  -1 \\ 5 &amp;  0 \end{array} \right].[/mathjaxinline] </p><p>
-What is [mathjaxinline]B^ t[/mathjaxinline]? </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
-def MatrixEntry(expect, ans):
-  	import ast
-	import numpy as np 
-	ret= {'ok':False}
-  	atol = 0.01
-  	try:
-		list_ans = ast.literal_eval(ans)
-		list_expect = ast.literal_eval(expect)
-  		matrix_ans = np.matrix(list_ans)
-  		matrix_expect = np.matrix(list_expect) 
-  		if matrix_ans.shape != matrix_expect.shape:
-  			ret['msg'] = 'Wrong shape of matrix'
-  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
-  			ret['ok'] = True
-  		else:
-  			ret['msg'] = 'Something is wrong'
-	except SyntaxError:
-		ret['msg'] = 'Wrong input format'
-  	return ret
-</script><p>
-<customresponse cfn="MatrixEntry" expect="[[2, 1, -2, 5],[0,3,-1,0]]">
-  <textline correct_answer="[[2, 1, -2, 5],[0,3,-1,0]]"/>
-</customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
-The first column of [mathjaxinline]B[/mathjaxinline] becomes the first row of [mathjaxinline]B^ t[/mathjaxinline]. The second column of [mathjaxinline]B[/mathjaxinline] becomes the second row of [mathjaxinline]B^ t[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Double Transpose" attrib_string="url_name=&quot;b2matrixops-tab7-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="276" tex_filename="./block2/morematrixops2.tex"><text><p>
-True or false: Any matrix [mathjaxinline]A[/mathjaxinline] is equal to the transpose of its transpose. In other words, [mathjaxinline]A = (A^ t)^ t[/mathjaxinline]. </p><p>
-<optionresponse>
-  <optioninput options="('True','False')" correct="True"/>
-</optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
- Switching the rows and columns of the transpose gives the original matrix.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
-<vertical display_name="Transposes and Products" attrib_string="url_name=&quot;b2matrixops-vertical8&quot;" refnum="8"><p>
-<problem display_name="Possible Product" attrib_string="url_name=&quot;b2matrixops-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="292" tex_filename="./block2/morematrixops2.tex"><text><p>
-Suppose [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]4\times 3[/mathjaxinline] matrix, and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]3 \times 5[/mathjaxinline] matrix, so that [mathjaxinline]AB[/mathjaxinline] is a [mathjaxinline]4\times 5[/mathjaxinline] matrix. </p><p>
-Which of the following matrix products is defined? </p><p>
-<multiplechoiceresponse>
-  <choicegroup direction="vertical">
-    <choice correct="false" name="1">
-      <text> [mathjaxinline]A^ tB^ t[/mathjaxinline]</text>
-    </choice>
-    <choice correct="true" name="2">
-      <text> [mathjaxinline]B^ tA^ t[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="3">
-      <text> Both are defined</text>
-    </choice>
-    <choice correct="false" name="4">
-      <text> Neither are defined</text>
-    </choice>
-  </choicegroup>
-</multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<video display_name="Transposes and Products" youtube_id_1_0="AT6y-Q3TI_w" attrib_string="url_name=&quot;b2matrixops-tab8-video1&quot; "></video></p></vertical>   </p><p>
-<vertical display_name="Transposes and Inverses" attrib_string="url_name=&quot;b2matrixops-vertical9&quot;" refnum="9"><p>
-<problem display_name="Symmetric Matrices" attrib_string="url_name=&quot;b2matrixops-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="313" tex_filename="./block2/morematrixops2.tex"><text><p>
-<span style="color:#27408C"><b class="bf">Definition.</b></span> A matrix [mathjaxinline]A[/mathjaxinline] is <span style="color:#99182C"><b class="bf">symmetric</b></span> if [mathjaxinline]A = A^ t[/mathjaxinline]. </p><p>
-Of the following matrices, which ones are symmetric? Click all that apply. </p><p>
-<choiceresponse>
-  <checkboxgroup>
-    <choice correct="false" name="1">
-      <text>[mathjaxinline]\left[ \begin{array}{ccc} 1 &amp;  0 &amp;  0 \\ 0 &amp;  2 &amp;  0 \end{array} \right][/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="2">
-      <text>[mathjaxinline]\left[ \begin{array}{cc} 1 &amp;  1 \\ 2 &amp;  2 \end{array} \right][/mathjaxinline]</text>
-    </choice>
-    <choice correct="true" name="3">
-      <text>[mathjaxinline]\left[ \begin{array}{cc} \pi &amp;  1 \\ 1 &amp;  4 \end{array} \right][/mathjaxinline]</text>
-    </choice>
-    <choice correct="true" name="4">
-      <text>[mathjaxinline]I_ n[/mathjaxinline]</text>
-    </choice>
-  </checkboxgroup>
-</choiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<video display_name="Transposes and Inverses" youtube_id_1_0="bg1nsJJS-ZY" attrib_string="url_name=&quot;b2matrixops-tab9-video1&quot; "></video></p></vertical>   </p><p>
-<vertical display_name="Summary of Results" attrib_string="url_name=&quot;b2matrixops-vertical10&quot;" refnum="10"><p>
-<html display_name="Transpose Results Summary" attrib_string="url_name=&quot;b2matrixops-tab10-text1&quot;" linenum="334" tex_filename="./block2/morematrixops2.tex"><p>
-<span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are matrices such that the product [mathjaxinline]AB[/mathjaxinline] is defined, then [mathjaxinline](AB)^ t = B^ t A^ t[/mathjaxinline]. </p><p>
-<span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is invertible, then [mathjaxinline]A^ t[/mathjaxinline] is invertible, and [mathjaxinline](A^ t)^{-1}= (A^{-1})^ t[/mathjaxinline]. </p><p>
-<span style="color:#27408C"><b class="bf">Invertible Matrix Theorem (extended).</b></span> For a square ([mathjaxinline]n\times n[/mathjaxinline]) matrix [mathjaxinline]A[/mathjaxinline], the following statements are all equivalent to one another, and to the conditions previously stated in the Invertible Matrix Theorem: </p><ul class="itemize">
+<vertical display_name="Linear Independence" attrib_string="url_name=&quot;b2matrixops-vertical2&quot;" refnum="2"><p>
+<vertical display_name="Linear Independence Problems" attrib_string="url_name=&quot;b2matrixops-vertical3&quot;" refnum="3"><p>
+<html display_name="Definitions of Linearly Independent and Dependent" attrib_string="url_name=&quot;b2matrixops-tab3-text1&quot;" linenum="39" tex_filename="./block1/linearindependence2.tex"><p>
+<span style="color:#27408C"><b class="bf">Definition.</b></span> We say that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is <span style="color:#99182C"><b class="bf">linearly independent</b></span> if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p><p>
+<span style="color:#27408C"><b class="bf">Definition.</b></span> A list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is <span style="color:#99182C"><b class="bf">linearly dependent</b></span> if there are scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline], not all zero, such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline]. </p></html></p><p>
+<problem display_name="List 1" attrib_string="url_name=&quot;b2matrixops-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;5&quot; rerandomize=&quot;per_student&quot;" linenum="52" tex_filename="./block1/linearindependence2.tex"><text><script linenum="54" filename="./block1/linearindependence2.tex" type="text/python" system_path="python_lib">
 
-<li><p>
-[mathjaxinline]A[/mathjaxinline] is invertible. </p></li>
-<li><p>
-[mathjaxinline]A^ t[/mathjaxinline] is invertible. </p></li>
-<li><p>
-The rows of [mathjaxinline]A[/mathjaxinline] (viewed as vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline]) span [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p></li>
-<li><p>
-The rows of [mathjaxinline]A[/mathjaxinline] are linearly independent. </p></li>
-</ul></html></p><p>
-<problem display_name="Solve for A, again" attrib_string="url_name=&quot;b2matrixops-tab10-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="354" tex_filename="./block2/morematrixops2.tex"><text><p>
-Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxinline]n\times n[/mathjaxinline] matrices such that [mathjaxinline]B^ t (A^{-1})^ t = D^ t C^{-1}[/mathjaxinline]. Solve for [mathjaxinline]A[/mathjaxinline]. </p><p>
-<multiplechoiceresponse>
-  <choicegroup direction="vertical">
-    <choice correct="false" name="1">
-      <text> [mathjaxinline]A=D^{-1}C^ t B[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="2">
-      <text> [mathjaxinline]A=B^{-1}D^{-1}C^ t[/mathjaxinline]</text>
-    </choice>
-    <choice correct="true" name="3">
-      <text> [mathjaxinline]A=BD^{-1}C^ t[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="4">
-      <text> [mathjaxinline]A=D^{-1}(C^{-1})^ t B[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="5">
-      <text> [mathjaxinline]A=DC^ t B^{-1}[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="6">
-      <text> [mathjaxinline]A=C^ t D^{-1}B^{-1}[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="7">
-      <text> [mathjaxinline]A=BC^ t D^{-1}[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="8">
-      <text> [mathjaxinline]A=C^ t D^{-1}B[/mathjaxinline]</text>
-    </choice>
-    <choice correct="false" name="9">
-      <text> None of the above</text>
-    </choice>
-  </choicegroup>
-</multiplechoiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="More IMT" attrib_string="url_name=&quot;b2matrixops-tab10-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="369" tex_filename="./block2/morematrixops2.tex"><text><p>
-Let [mathjaxinline]T: \mathbb R^4 \rightarrow \mathbb R^4[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Suppose the second row of [mathjaxinline]A[/mathjaxinline] is equal to three times the last row of [mathjaxinline]A[/mathjaxinline] minus the first row of [mathjaxinline]A[/mathjaxinline]. Which of the following must be true? Click all that apply. </p><p>
-<choiceresponse>
-  <checkboxgroup>
-    <choice correct="true" name="1">
-      <text>[mathjaxinline]T[/mathjaxinline] is not onto</text>
-    </choice>
-    <choice correct="false" name="2">
-      <text>[mathjaxinline]A[/mathjaxinline] is invertible</text>
-    </choice>
-    <choice correct="true" name="3">
-      <text>[mathjaxinline]A[/mathjaxinline] has a free variable</text>
-    </choice>
-    <choice correct="true" name="4">
-      <text>The kernel of [mathjaxinline]T[/mathjaxinline] contains infinitely many vectors</text>
-    </choice>
-    <choice correct="false" name="5">
-      <text>The equation [mathjaxinline]Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \\ 7 \end{array} \right][/mathjaxinline] has more than one solution</text>
-    </choice>
-    <choice correct="true" name="6">
-      <text>The columns of [mathjaxinline]A[/mathjaxinline] do not span [mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
-    </choice>
-  </checkboxgroup>
-</choiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>    </p></sequential> </p></chapter> </p></course> </p></div>
+def test_ld_1(expect,ans):
+    import ast
+    import numpy as np 
+    if (ans=='No') or (ans=='NO') or (ans=='no'):
+        return {'ok': False, 'msg': 'The answer is not no'}
+    list_expect = ast.literal_eval('[[1,-1,0,0],[2,-1,3,5],[-3,3,0,0]]')
+    list_vec = []
+    for vec in list_expect:
+        list_vec.append(np.array(vec))
+    list_scalars = [float(s) for s in ans.split(',')]
+    ret = {'ok':False}
+    # check scalars are not all zero
+    max_sca = max(list_scalars)
+    min_sca = min(list_scalars)
+    if (max_sca == 0) and (min_sca ==0):
+        ret['msg'] = 'Your answer should contain at least one non-zero scalar.'
+        return ret
+    # check there are enough scalars
+    if (len(list_scalars) != len(list_vec)):
+        ret['msg'] = 'Your answer contains too many/too few scalars.'
+        return ret    
+    # check if a0*v0 + a1*v1 + ... + a_n*vn = 0
+    n = len(list_scalars)
+    sum = 0
+    for i in range(0,n):
+        sum += list_scalars[i] * list_vec[i]
+    print(sum)
+    if np.allclose(sum, np.zeros(4)):
+        ret['ok'] = True
+    return ret  
+</script><p>
+Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], where </p><table id="a0000000002" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]v_1 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{array} \right], v_2 = \left[\begin{array}{c} 2 \\ -1 \\ 3 \\ 5 \end{array} \right], v_3 = \left[\begin{array}{c} -3 \\ 3 \\ 0 \\ 0 \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+Can you find scalars [mathjaxinline]a_1, a_2, a_3[/mathjaxinline], not all zero, such that [mathjaxinline]a_1v_1 + a_2 v_2 + a_3 v_3 = \mathbf{0}[/mathjaxinline]? If so, enter an example of such scalars below. If not, enter ‘No' </p><p>
+<customresponse cfn="test_ld_1" expect="3,0,1">
+  <textline correct_answer="3,0,1"/>
+</customresponse> </p><p>
+Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly dependent or linearly independent? </p><p>
+<optionresponse>
+  <optioninput options="('Linearly dependent','Linearly independent')" correct="Linearly dependent"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ We notice that [mathjaxinline]-3v_1 = v_3[/mathjaxinline], so that [mathjaxinline]3 v_1 + 0 v_2 + 1 v_3 = \mathbf{0}[/mathjaxinline]. Therefore, [mathjaxinline]a_1 = 3[/mathjaxinline], [mathjaxinline]a_2 = 0[/mathjaxinline], and [mathjaxinline]a_3 = 1[/mathjaxinline] is a possible set of scalars that satisfies the equation. (Any scalar multiple of that triple is also a set that satisfies the equation.) </p><p>
+The list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly dependent because, as we've just seen, there exist sets of coefficients, not all zero, that yield [mathjaxinline]a_1v_1 + a_2 v_2 + a_3 v_3 = \mathbf{0}[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
+<problem display_name="List 2" attrib_string="url_name=&quot;b2matrixops-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="120" tex_filename="./block1/linearindependence2.tex"><text><script linenum="123" filename="./block1/linearindependence2.tex" type="text/python" system_path="python_lib">
+
+def test_ld_12(expect,ans):
+    import ast
+    import numpy as np 
+    if (ans=='No') or (ans=='NO') or (ans=='no'):
+        return {'ok': False, 'msg': 'The answer is not no'}
+    list_expect = ast.literal_eval('[[1,-1,3,4,5],[0,0,0,0,0],[-3,3,3,5,1]]')
+    list_vec = []
+    for vec in list_expect:
+        list_vec.append(np.array(vec))
+    list_scalars = [float(s) for s in ans.split(',')]
+    ret = {'ok':False}
+    # check scalars are not all zero
+    max_sca = max(list_scalars)
+    min_sca = min(list_scalars)
+    if (max_sca == 0) and (min_sca ==0):
+        ret['msg'] = 'Your answer should contain at least one non-zero scalar.'
+        return ret
+    # check there are enough scalars
+    if (len(list_scalars) != len(list_vec)):
+        ret['msg'] = 'Your answer contains too many/too few scalars.'
+        return ret    
+    # check if a0*v0 + a1*v1 + ... + a_n*vn = 0
+    n = len(list_scalars)
+    sum = 0
+    for i in range(0,n):
+        sum += list_scalars[i] * list_vec[i]
+    print(sum)
+    if np.allclose(sum, np.zeros(5)):
+        ret['ok'] = True
+    return ret  
+</script><p>
+Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], where </p><table id="a0000000003" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]v_1 = \left[\begin{array}{c} 1 \\ -1 \\ 3 \\ 4 \\ 5 \end{array} \right], v_2 = \left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \\ 0 \end{array} \right], v_3 = \left[\begin{array}{c} -3 \\ 3 \\ 3 \\ 5 \\ 1 \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+Can you find scalars [mathjaxinline]a_1, a_2, a_3[/mathjaxinline], not all zero, such that [mathjaxinline]a_1v_1 + a_2 v_2 + a_3 v_3 = \mathbf{0}[/mathjaxinline]? If so, enter an example of such scalars below. If not, enter ‘No'. </p><p>
+<customresponse cfn="test_ld_12" expect="0,1,0">
+  <textline correct_answer="0,1,0"/>
+</customresponse> </p><p>
+Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly dependent or linearly independent? </p><p>
+<optionresponse>
+  <optioninput options="('Linearly dependent','Linearly independent')" correct="Linearly dependent"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ The first answer is immediately "yes" because we have the zero vector in our set; we can choose any non-zero value for [mathjaxinline]a_2[/mathjaxinline], and with [mathjaxinline]a_1 = 0[/mathjaxinline] and [mathjaxinline]a_3 = 0[/mathjaxinline], the above equation will still be true. Because there exist sets of coefficients, not all zero, that make the above equation true, the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly dependent.  </p></font></solution></p></text></problem></p></vertical>   </p></vertical></p></sequential> </p></chapter> </p></course> </p></div>
 
 
 

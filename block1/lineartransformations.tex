@@ -32,7 +32,7 @@ plus some questions.
 \doedxvideo{Functions}{nMrAAozL4F0}
 
 
-\beginedxproblem{System Consistency?}{\dpa1}
+\beginedxproblem{Matrix Multiplication Domain and Codomain}{\dpa1}
 
 Define the function $T$ by $T(x) = Ax$, where $A = \left[ \begin{array}{ccc}
 6 & 5 & 3 \\
@@ -83,12 +83,12 @@ Since $A$ has two rows, the product $Ax$ will be a vector in $\R^2$.
 \beginedxtext{Definition of Linear Transformation}
 
 {\keya{\bf{Definition.}}} 
-Let $\F$ be a field.  A function $T: \F^n \rightarrow \F^m$ is a {\keyb{\bf linear transformation}}
+Let $V,W$ be vector spaces over a field $F$.    A function $T: V\rightarrow W$ is a {\keyb{\bf linear transformation}}
 if both of the following properties hold:
 
 \begin{itemize}
 \item For any vectors $v, w$ in the domain, $T(v + w) = T(v) + T(w).$ 
-\item For any vector $v$ in the domain, and any scalar $a\in \F$, $T(av) = aT(v)$.    
+\item For any vector $v$ in the domain, and any scalar $a\in F$, $T(av) = aT(v)$.    
 \end{itemize}
 
 Informally, if $T$ satisfies the first condition we say that ``$T$ respects vector addition", and 
@@ -286,7 +286,7 @@ i.e. we can evaluate a polynomial at 1 and multiply the result by a scalar, or m
 
 \beginedxproblem{Linear Transformation Practice}{\dpa1}
 
-Suppose $T: \mathbb{P} \rightarrow \R^2$ is a linear transformation.  Let $f,g\mathbb{P}$ be
+Suppose $T: \mathbb{P} \rightarrow \R^2$ is a linear transformation.  Let $f,g\in \mathbb{P}$ be
 the polynomials given by $f(t) = t^2$ and $g(t) = t$.  
 
 Suppose that $T(f) = \left[\begin{array}{c} 1 \\ 2  \end{array} \right]$

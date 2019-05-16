@@ -1,38 +1,67 @@
-<problem display_name="Solve for A" linenum="83" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="List 2" linenum="120" tex_filename="./block1/linearindependence2.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
+    <script linenum="123" filename="./block1/linearindependence2.tex" type="text/python" system_path="python_lib">
+
+def test_ld_12(expect,ans):
+    import ast
+    import numpy as np 
+    if (ans=='No') or (ans=='NO') or (ans=='no'):
+        return {'ok': False, 'msg': 'The answer is not no'}
+    list_expect = ast.literal_eval('[[1,-1,3,4,5],[0,0,0,0,0],[-3,3,3,5,1]]')
+    list_vec = []
+    for vec in list_expect:
+        list_vec.append(np.array(vec))
+    list_scalars = [float(s) for s in ans.split(',')]
+    ret = {'ok':False}
+    # check scalars are not all zero
+    max_sca = max(list_scalars)
+    min_sca = min(list_scalars)
+    if (max_sca == 0) and (min_sca ==0):
+        ret['msg'] = 'Your answer should contain at least one non-zero scalar.'
+        return ret
+    # check there are enough scalars
+    if (len(list_scalars) != len(list_vec)):
+        ret['msg'] = 'Your answer contains too many/too few scalars.'
+        return ret    
+    # check if a0*v0 + a1*v1 + ... + a_n*vn = 0
+    n = len(list_scalars)
+    sum = 0
+    for i in range(0,n):
+        sum += list_scalars[i] * list_vec[i]
+    print(sum)
+    if np.allclose(sum, np.zeros(5)):
+        ret['ok'] = True
+    return ret  
+</script>
     <p>
-Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxinline]n\times n[/mathjaxinline] matrices such that [mathjaxinline]DA^{-1}B^{-1}= C^{-1}[/mathjaxinline]. Solve for [mathjaxinline]A[/mathjaxinline]. </p>
+Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], where </p>
+    <table id="a0000000003" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v_1 = \left[\begin{array}{c} 1 \\ -1 \\ 3 \\ 4 \\ 5 \end{array} \right], v_2 = \left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \\ 0 \end{array} \right], v_3 = \left[\begin{array}{c} -3 \\ 3 \\ 3 \\ 5 \\ 1 \end{array} \right].[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
     <p>
-      <multiplechoiceresponse>
-        <choicegroup direction="vertical">
-          <choice correct="false" name="1">
-            <text> [mathjaxinline]A=DCB^{-1}[/mathjaxinline]</text>
-          </choice>
-          <choice correct="false" name="2">
-            <text> [mathjaxinline]A=DB^{-1}C[/mathjaxinline]</text>
-          </choice>
-          <choice correct="true" name="3">
-            <text> [mathjaxinline]A=B^{-1}CD[/mathjaxinline]</text>
-          </choice>
-          <choice correct="false" name="4">
-            <text> [mathjaxinline]A=BCD^{-1}[/mathjaxinline]</text>
-          </choice>
-          <choice correct="false" name="5">
-            <text> [mathjaxinline]A=D^{-1}CB[/mathjaxinline]</text>
-          </choice>
-          <choice correct="false" name="6">
-            <text> [mathjaxinline]A=CB^{-1}D[/mathjaxinline]</text>
-          </choice>
-          <choice correct="false" name="7">
-            <text> None of the above</text>
-          </choice>
-        </choicegroup>
-      </multiplechoiceresponse>
+Can you find scalars [mathjaxinline]a_1, a_2, a_3[/mathjaxinline], not all zero, such that [mathjaxinline]a_1v_1 + a_2 v_2 + a_3 v_3 = \mathbf{0}[/mathjaxinline]? If so, enter an example of such scalars below. If not, enter &#x2018;No'. </p>
+    <p>
+      <customresponse cfn="test_ld_12" expect="0,1,0">
+        <textline correct_answer="0,1,0"/>
+      </customresponse>
+    </p>
+    <p>
+Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly dependent or linearly independent? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Linearly dependent','Linearly independent')" correct="Linearly dependent"/>
+      </optionresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ The first answer is immediately "yes" because we have the zero vector in our set; we can choose any non-zero value for [mathjaxinline]a_2[/mathjaxinline], and with [mathjaxinline]a_1 = 0[/mathjaxinline] and [mathjaxinline]a_3 = 0[/mathjaxinline], the above equation will still be true. Because there exist sets of coefficients, not all zero, that make the above equation true, the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly dependent.  </p>
+        </font>
       </solution>
     </p>
   </text>

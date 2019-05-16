@@ -47,7 +47,7 @@ in $V$ is a vector of the form $a_1v_1 + a_2v_2 + \ldots + a_n v_n$, where the $
 \beginedxvertical{Linear Combinations}
 
 
-\beginedxproblem{Linear Combo 1}{\dpa1}
+\beginedxproblem{Linear Combo 1}{\dpa2}
 
 
 Let $v_1 = \left[\begin{array}{c} 2 \\ 3  \\ 4 \end{array} \right]$ and  
@@ -71,7 +71,7 @@ $a_2$.  If not, enter No in both boxes.
 
 \endedxproblem
 
-\beginedxproblem{Linear Combo 2}{\dpa1}
+\beginedxproblem{Linear Combo 2}{\dpa2}
 
 
 Let $v_1 = \left[\begin{array}{c} 2 \\ 3  \\ 4 \end{array} \right]$ and  
@@ -113,7 +113,7 @@ as a linear combination of $v_1$?
 \endedxproblem
 
 
-\beginedxproblem{Linear Combo 4}{\dpa1}
+\beginedxproblem{Linear Combo 4}{\dpa2}
 
 \begin{center}
 \includesvg[300]{c1s4lincombo}   
@@ -135,7 +135,7 @@ $a_2$.  If not, enter No in both boxes.
 
 \endedxproblem
 
-\beginedxproblem{Linear Combo 5}{\dpa1}
+\beginedxproblem{Linear Combo 5}{\dpa2}
 
 
 Let $f$ denote the polynomial $t^3  + 1$, and let $g$ denote the
@@ -197,7 +197,7 @@ $j = 3t\cdot f + 0g,$ but $3t$ is not a scalar.
 \doedxvideo{Linear Combinations in R^n}{v8XhmvbzIEU}
 
 
-\beginedxproblem{Linear Combo 6}{\dpa1}
+\beginedxproblem{Linear Combo 6}{\dpa3}
 
 
 Let $v_1 = \left[\begin{array}{c} 1 \\ 3  \\ 1 \end{array} \right]$ and  
@@ -270,7 +270,7 @@ the {\keyb{\bf span}} of $\{v_1; v_2; \ldots v_n\}$ to be the set of all linear 
 of  $v_1, v_2, \ldots v_n$.  In other words, 
 \[ \mathrm{Span}\{v_1; v_2; \ldots v_n\} = \{a_1 v_1  + a_2 v_2 + \ldots + a_nv_n  : a_i \in F \}.\]
 
-The span of a list with zero vectors is defined to be $\{\veco\}$.  
+The span of the list with no vectors in it is defined to be $\{\veco\}$.  
 
 % In $\R^m$,...
 
@@ -448,10 +448,10 @@ Does every list of two non-zero vectors in $\R^2$ span $\R^2$?
 \edXsolution{ 
 If the two vectors are scalar multiples of each other, then they lie along the same line, and their span cannot
 include anything off that line.  For instance, in the following picture, $w$ is not a linear combination of
-$v_1$ and $v_2$.  
+$v_1$ and $v_2$, so $w$ is not in the span of $\{v_1; v_2\}$ -- the list does not span all of $\R^2$.  
 
 \begin{center}
-\includesvg[300]{c1s4lincombo2}   
+\includesvg[300]{c1s4nospan}   
 \end{center}
 
 }
