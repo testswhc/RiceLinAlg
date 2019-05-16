@@ -304,6 +304,7 @@ Which of the following matrix products is defined?
 \edXabox{type="multichoice" expect="$B^tA^t$" options="$A^tB^t$","$B^tA^t$","Both are defined","Neither are defined"}
 
 \edXsolution{ 
+$A^t$ is a $3\times 4$ matrix, and $B^t$ is a $5 \times 3$ matrix. For the product to be defined, the first matrix must have as many columns as the second matrix has rows. This is true in one arrangement, but not the other. 
  }
 
 \endedxproblem
@@ -325,6 +326,7 @@ Of the following matrices, which ones are symmetric?  Click all that apply.
 \edXabox{type="oldmultichoice" expect="$\left[ \begin{array}{cc} \pi & 1   \\ 1 & 4 \end{array} \right]$","$I_n$" options="$\left[ \begin{array}{ccc} 1 & 0 & 0  \\ 0 & 2 & 0 \end{array} \right]$","$\left[ \begin{array}{cc} 1 & 1   \\ 2 & 2 \end{array} \right]$","$\left[ \begin{array}{cc} \pi & 1   \\ 1 & 4 \end{array} \right]$","$I_n$"}
 
 \edXsolution{ 
+ Note that only a square matrix can be symmetric.
  }
 
 \endedxproblem
@@ -367,6 +369,12 @@ $B^t (A\inv)^t = D^t C\inv$.  Solve for $A$.
 
 
 \edXsolution{ 
+One possible procedure: left-multiply on both sides of the equation by $(B^t)\inv$ to obtain 
+\[(A\inv)^t = (B^t)\inv D^t C\inv .\] 
+Take the transpose of both sides:
+\[A\inv = ((B^t)\inv D^t C\inv)^t = (C\inv)^t D ((B^t)\inv)^t = (C^t)\inv D B\inv.\] 
+Now we can take the inverse of both sides, and we get
+\[A = B D\inv C^t.\]
  }
  
 \endedxproblem
@@ -377,12 +385,15 @@ $B^t (A\inv)^t = D^t C\inv$.  Solve for $A$.
 Let $T: \R^4 \rightarrow \R^4$ be a linear transformation with standard matrix $A$.  Suppose the second row of $A$ is equal
 to three times the last row of $A$ minus the first row of $A$.  Which of the following must be true?  Click all that apply.  
 
-\edXabox{type="oldmultichoice" expect="$T$ is onto","$A$ is invertible","The equation $Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \end{array} \right]$ has exactly one solution","$T$ is into","$A$ row reduces to the identity matrix" options="$T$ is onto","$A$ is invertible","$A$ has a free variable","The equation $Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \end{array} \right]$ has exactly one solution","$T$ is into","$A$ row reduces to the identity matrix"}
+\edXabox{type="oldmultichoice" expect="$A$ has a free variable" options="$T$ is onto","$A$ is invertible","$A$ has a free variable","The equation $Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \end{array} \right]$ has exactly one solution","$T$ is into","$A$ row reduces to the identity matrix"}
 
 
 
 
 \edXsolution{
+Because one of the rows is a linear combination of the others, the rows are not linearly independent and 
+the matrix is not invertible.  If we row reduce this matrix, we will not get the identity matrix, but will instead have a row of all zeros and  at least one free variable.  Therefore none of the conditions of the Invertible Matrix Theorem are satisfied:  $T$ is neither onto nor into, etc.  Since $A$ has a free variable,
+no $Ax = v$ equation can have a unique solution (it might have zero solutions, or infinitely many).  
 }
 
 \endedxproblem
@@ -390,3 +401,4 @@ to three times the last row of $A$ minus the first row of $A$.  Which of the fol
 
 
 \endedxvertical
+
