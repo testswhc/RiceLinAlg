@@ -1,0 +1,52 @@
+<problem display_name="Diagonal Line" linenum="170" tex_filename="./block3/subspaces.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]Y[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie on the line [mathjaxinline]x_1 = x_2[/mathjaxinline] That is, </p>
+    <table id="a0000000112" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]Y = \left\{  \left[ \begin{array}{c} c \\ c \end{array} \right] : c \in \mathbb R\right\} .[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <center>
+      <img src="/static/images/c3s1subspace3.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+    </center>
+    <p>
+Is [mathjaxinline]Y[/mathjaxinline] closed under addition? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Is [mathjaxinline]Y[/mathjaxinline] closed under scalar multiplication? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Does [mathjaxinline]Y[/mathjaxinline] contain the zero vector? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Is [mathjaxinline]Y[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ If you add or scale vectors in [mathjaxinline]Y[/mathjaxinline], the result is still in [mathjaxinline]Y[/mathjaxinline]. [mathjaxinline]Y[/mathjaxinline] also contains the zero vector. Thus [mathjaxinline]Y[/mathjaxinline] is a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

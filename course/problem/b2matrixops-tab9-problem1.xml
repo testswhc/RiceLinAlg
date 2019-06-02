@@ -1,4 +1,4 @@
-<problem display_name="Symmetric Matrices" linenum="313" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Symmetric Matrices" linenum="320" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p><span style="color:#27408C"><b class="bf">Definition.</b></span> A matrix [mathjaxinline]A[/mathjaxinline] is <span style="color:#99182C"><b class="bf">symmetric</b></span> if [mathjaxinline]A = A^ t[/mathjaxinline]. </p>
     <p>
@@ -24,7 +24,10 @@ Of the following matrices, which ones are symmetric? Click all that apply. </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ Note that only a square matrix can be symmetric. A [mathjaxinline]2\times 3[/mathjaxinline] matrix has a transpose which is [mathjaxinline]3\times 2[/mathjaxinline], so it can never be equal to its transpose.  </p>
+        </font>
       </solution>
     </p>
   </text>

@@ -8,5 +8,5 @@ Given vectors [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline] in a vector s
     </tr>
   </table>
   <p>
-The span of a list with zero vectors is defined to be [mathjaxinline]\{ \mathbf{0}\}[/mathjaxinline]. </p>
+The span of the list with no vectors in it is defined to be [mathjaxinline]\{ \mathbf{0}\}[/mathjaxinline]. </p>
 </html>

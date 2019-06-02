@@ -1,9 +1,9 @@
 <chapter display_name="Matrix Operations" linenum="380" tex_filename="testcourse.tex" refnum="2" start="2018-01-11T16:00">
-  <sequential display_name="Matrix Multiplication" linenum="392" tex_filename="testcourse.tex" refnum="1" due="2018-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixmult-sequential">
+  <sequential display_name="Matrix Multiplication" linenum="392" tex_filename="testcourse.tex" refnum="1" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixmult-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b2matrixmult-vertical1">
       <html url_name="b2matrixmult-tab1-text1"/>
     </vertical>
-    <vertical display_name="Composition of Linear Transformation" refnum="2" url_name="b2matrixmult-vertical2">
+    <vertical display_name="Composition of Linear Transformations" refnum="2" url_name="b2matrixmult-vertical2">
       <video url_name="b2matrixmult-tab2-video1"/>
       <html url_name="b2matrixmult-tab2-text1"/>
     </vertical>
@@ -43,7 +43,7 @@
       <problem url_name="b2matrixmult-tab9-problem3"/>
     </vertical>
   </sequential>
-  <sequential display_name="Matrix Inverses" linenum="429" tex_filename="testcourse.tex" refnum="2" due="2018-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixinv-sequential">
+  <sequential display_name="Matrix Inverses" linenum="429" tex_filename="testcourse.tex" refnum="2" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixinv-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b2matrixinv-vertical1">
       <html url_name="b2matrixinv-tab1-text1"/>
     </vertical>
@@ -87,7 +87,7 @@
       <problem url_name="b2matrixinv-tab11-problem1"/>
     </vertical>
   </sequential>
-  <sequential display_name="More Matrix Operations" linenum="468" tex_filename="testcourse.tex" refnum="3" due="2018-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixops-sequential">
+  <sequential display_name="More Matrix Operations" linenum="468" tex_filename="testcourse.tex" refnum="3" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixops-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b2matrixops-vertical1">
       <html url_name="b2matrixops-tab1-text1"/>
     </vertical>
@@ -127,6 +127,17 @@
       <html url_name="b2matrixops-tab10-text1"/>
       <problem url_name="b2matrixops-tab10-problem1"/>
       <problem url_name="b2matrixops-tab10-problem2"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="Leontief Input-Output System" linenum="503" tex_filename="testcourse.tex" refnum="4" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2leontief-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b2leontief-vertical1">
+      <html url_name="b2leontief-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Using Gasoline" refnum="2" url_name="b2leontief-vertical2">
+      <problem url_name="b2leontief-tab2-problem1"/>
+    </vertical>
+    <vertical display_name="Leontief Input-Output Model" refnum="3" url_name="b2leontief-vertical3">
+      <video url_name="b2leontief-tab3-video1"/>
     </vertical>
   </sequential>
 </chapter>

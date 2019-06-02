@@ -3,7 +3,7 @@
     <p>
 Let [mathjaxinline]v = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and let [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right].[/mathjaxinline] </p>
     <p>
-What is [mathjaxinline]v+w[/mathjaxinline]? <div class="hideshowbox"><h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Vector<span class="icon-caret-down toggleimage"/></h4><div class="hideshowcontent"><p>
+What is [mathjaxinline]v+w[/mathjaxinline]? <div class="hideshowbox"><h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4><div class="hideshowcontent"><p>
 To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize"><li><p>
 enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li><li><p>
 or, you can enter it as &lt;1,2,3&gt; </p></li></ul><p>

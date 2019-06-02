@@ -1,18 +1,18 @@
-<html display_name="Preliminaries" linenum="7" tex_filename="./block1/linearindependence2.tex">
+<html display_name="Preliminaries" linenum="5" tex_filename="./block2/morematrixops.tex">
   <p>
 At the end of this sequence, and after some practice, you should be able to: </p>
   <ul class="itemize">
     <li>
       <p>
-Understand the definition of linear independence. </p>
+Understand the relationship between elementary matrices and row operations. </p>
     </li>
     <li>
       <p>
-Be able to determine whether a list of vectors is linearly independent. </p>
+Find the transpose of a matrix. </p>
     </li>
     <li>
       <p>
-Know conditions on whether a list of vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline] can be linearly independent. </p>
+Recognize more conditions under which a matrix is invertible. </p>
     </li>
   </ul>
   <p>

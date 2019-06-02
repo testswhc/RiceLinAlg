@@ -1,8 +1,8 @@
 <xbundle>
   <metadata/>
-  <course number="Test" display_name="Test LinAlg" semester="2018_Summer" info_sidebar_name="Other Documents" start="2018-01-11T12:00" end="2018-12-18T18:00" course_image="rice-logo.jpg" display_coursenumber="TestLinAlg" course_organization="TestRice" graceperiod="1800 seconds" invitation_only="true" allow_anonymous="false" mobile_available="true" org="Rice">
+  <course number="Test" display_name="Test LinAlg" semester="2018_Summer" info_sidebar_name="Other Documents" start="2018-01-11T12:00" end="2019-12-18T18:00" course_image="rice-logo.jpg" display_coursenumber="TestLinAlg" course_organization="TestRice" graceperiod="1800 seconds" invitation_only="true" allow_anonymous="false" mobile_available="true" org="Rice">
     <chapter display_name="Vectors and Matrices" linenum="77" tex_filename="testcourse.tex" refnum="1" url_name="block1" start="2018-01-11T16:00">
-      <sequential display_name="Systems of Linear Equations" linenum="89" tex_filename="testcourse.tex" refnum="1" due="2018-12-13T14:15" graded="true" format="Exercises" url_name="b1lineareqns-sequential">
+      <sequential display_name="Systems of Linear Equations" linenum="89" tex_filename="testcourse.tex" refnum="1" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b1lineareqns-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1lineareqns-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block1/linearequations.tex" url_name="b1lineareqns-tab1-text1">
             <p>
@@ -529,7 +529,7 @@ If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are row
           </html>
         </vertical>
       </sequential>
-      <sequential display_name="Row-Reduced Form" linenum="122" tex_filename="testcourse.tex" refnum="2" due="2018-12-15T14:15" graded="true" format="Lab" url_name="b1rowreduced-sequential">
+      <sequential display_name="Row-Reduced Form" linenum="122" tex_filename="testcourse.tex" refnum="2" due="2019-12-15T14:15" graded="true" format="Lab" url_name="b1rowreduced-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1rowreduced-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab1-text1">
             <p>
@@ -720,7 +720,7 @@ In fact, a matrix with [mathjaxinline]6[/mathjaxinline] rows may have any number
             </text>
           </problem>
         </vertical>
-        <vertical display_name="Interpretations" refnum="4" url_name="b1rowreduced-vertical4">
+        <vertical display_name="Row Reduction Algorithm" refnum="4" url_name="b1rowreduced-vertical4">
           <video display_name="The Row Reduction Algorithm" youtube_id_1_0="oXO9Iw9KyPo" url_name="b1rowreduced-tab4-video1"/>
           <html display_name="The Row-Reduction Algorithm" linenum="174" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab4-text1">
             <p>
@@ -1433,7 +1433,7 @@ Multiplication distributes over addition; that is, for all [mathjaxinline]a,b,c 
           </html>
         </vertical>
       </sequential>
-      <sequential display_name="Vectors" linenum="151" tex_filename="testcourse.tex" refnum="3" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1vectors-sequential">
+      <sequential display_name="Vectors" linenum="151" tex_filename="testcourse.tex" refnum="3" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1vectors-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1vectors-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab1-text1">
             <p>
@@ -1459,7 +1459,7 @@ For time budgeting purposes, this sequence has X videos totaling X minutes, plus
               <p>
 Let [mathjaxinline]v = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and let [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right].[/mathjaxinline] </p>
               <p>
-What is [mathjaxinline]v+w[/mathjaxinline]? <div class="hideshowbox"><h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Vector<span class="icon-caret-down toggleimage"/></h4><div class="hideshowcontent"><p>
+What is [mathjaxinline]v+w[/mathjaxinline]? <div class="hideshowbox"><h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4><div class="hideshowcontent"><p>
 To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize"><li><p>
 enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li><li><p>
 or, you can enter it as &lt;1,2,3&gt; </p></li></ul><p>
@@ -1689,7 +1689,7 @@ For all [mathjaxinline]a,b \in F[/mathjaxinline], and [mathjaxinline]v\in V[/mat
             <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
             <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </html>
-          <problem display_name="Vector Spaces" linenum="227" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab6-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Vector Spaces" linenum="227" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or False: The only vector spaces over the scalar field [mathjaxinline]\mathbb R[/mathjaxinline] are the spaces [mathjaxinline]\mathbb R^ n[/mathjaxinline] for [mathjaxinline]n&gt; 0[/mathjaxinline]. </p>
@@ -1711,7 +1711,7 @@ False. We have seen other examples such as the set of polynomials.  </p>
           </problem>
         </vertical>
       </sequential>
-      <sequential display_name="Linear Combinations and Span" linenum="180" tex_filename="testcourse.tex" refnum="4" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1lincombos-sequential">
+      <sequential display_name="Linear Combinations and Span" linenum="180" tex_filename="testcourse.tex" refnum="4" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1lincombos-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1lincombos-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab1-text1">
             <p>
@@ -1738,7 +1738,7 @@ Let [mathjaxinline]V[/mathjaxinline] be a vector space over a field [mathjaxinli
           </html>
         </vertical>
         <vertical display_name="Linear Combinations" refnum="3" url_name="b1lincombos-vertical3">
-          <problem display_name="Linear Combo 1" linenum="50" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Linear Combo 1" linenum="50" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab3-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]v_1 = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p>
@@ -1771,7 +1771,7 @@ Can you write the vector [mathjaxinline]x = \left[\begin{array}{c} -4 \\ -6 \\ -
               </p>
             </text>
           </problem>
-          <problem display_name="Linear Combo 2" linenum="74" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Linear Combo 2" linenum="74" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab3-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]v_1 = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p>
@@ -1826,7 +1826,7 @@ Can you write [mathjaxinline]v_2[/mathjaxinline] as a linear combination of [mat
               </p>
             </text>
           </problem>
-          <problem display_name="Linear Combo 4" linenum="116" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab3-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Linear Combo 4" linenum="116" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab3-problem4" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <center>
                 <img src="/static/images/c1s4lincombo.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
@@ -1860,7 +1860,7 @@ Given the picture above in [mathjaxinline]\mathbb R^2[/mathjaxinline], can you w
               </p>
             </text>
           </problem>
-          <problem display_name="Linear Combo 5" linenum="138" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab3-problem5" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Linear Combo 5" linenum="138" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab3-problem5" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]f[/mathjaxinline] denote the polynomial [mathjaxinline]t^3 + 1[/mathjaxinline], and let [mathjaxinline]g[/mathjaxinline] denote the </p>
@@ -1916,7 +1916,7 @@ Let [mathjaxinline]j[/mathjaxinline] denote [mathjaxinline]3t^4 + 3t[/mathjaxinl
         </vertical>
         <vertical display_name="Is it a linear combination?" refnum="4" url_name="b1lincombos-vertical4">
           <video display_name="Linear Combinations in R^n" youtube_id_1_0="v8XhmvbzIEU" url_name="b1lincombos-tab4-video1"/>
-          <problem display_name="Linear Combo 6" linenum="200" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Linear Combo 6" linenum="200" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab4-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]v_1 = \left[\begin{array}{c} 1 \\ 3 \\ 1 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 3 \\ 10 \\ 2 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p>
@@ -1964,7 +1964,7 @@ Given vectors [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline] in a vector s
               </tr>
             </table>
             <p>
-The span of a list with zero vectors is defined to be [mathjaxinline]\{ \mathbf{0}\}[/mathjaxinline]. </p>
+The span of the list with no vectors in it is defined to be [mathjaxinline]\{ \mathbf{0}\}[/mathjaxinline]. </p>
           </html>
           <problem display_name="Span Question" linenum="281" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
@@ -2095,9 +2095,9 @@ Does every list of two non-zero vectors in [mathjaxinline]\mathbb R^2[/mathjaxin
                   <font color="blue">Answer: </font>
                   <font color="blue">
                     <p>
- If the two vectors are scalar multiples of each other, then they lie along the same line, and their span cannot include anything off that line. For instance, in the following picture, [mathjaxinline]w[/mathjaxinline] is not a linear combination of [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline]. </p>
+ If the two vectors are scalar multiples of each other, then they lie along the same line, and their span cannot include anything off that line. For instance, in the following picture, [mathjaxinline]w[/mathjaxinline] is not a linear combination of [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline], so [mathjaxinline]w[/mathjaxinline] is not in the span of [mathjaxinline]\{ v_1; v_2\}[/mathjaxinline] &#x2013; the list does not span all of [mathjaxinline]\mathbb R^2[/mathjaxinline]. </p>
                     <center>
-                      <img src="/static/images/c1s4lincombo2.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+                      <img src="/static/images/c1s4nospan.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
                     </center>
                   </font>
                 </solution>
@@ -2171,7 +2171,7 @@ Given above are six lists of vectors. <span style="color:#99182C"><b class="bf">
           </problem>
         </vertical>
       </sequential>
-      <sequential display_name="Matrix-Vector Multiplication" linenum="213" tex_filename="testcourse.tex" refnum="5" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1matrixvector-sequential">
+      <sequential display_name="Matrix-Vector Multiplication" linenum="213" tex_filename="testcourse.tex" refnum="5" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1matrixvector-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1matrixvector-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab1-text1">
             <p>
@@ -2216,7 +2216,7 @@ If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinlin
           </html>
         </vertical>
         <vertical display_name="Multiplication Practice" refnum="3" url_name="b1matrixvector-vertical3">
-          <problem display_name="Products" linenum="57" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Products" linenum="57" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -2230,7 +2230,7 @@ Let </p>
  and let [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ax[/mathjaxinline]? </p>
               <p>
                 <div class="hideshowbox">
-                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Vector<span class="icon-caret-down toggleimage"/></h4>
+                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4>
                   <div class="hideshowcontent">
                     <p>
 To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
@@ -2404,7 +2404,7 @@ The span of a list of vectors is the set of all linear combinations of those vec
         </vertical>
         <vertical display_name="Matrix-Vector Equations" refnum="4" url_name="b1matrixvector-vertical4">
           <video display_name="Matrix-Vector Equations" youtube_id_1_0="HeeVmk25QNU" url_name="b1matrixvector-tab4-video1"/>
-          <problem display_name="Solving Matrix-Vector Equations" linenum="173" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Solving Matrix-Vector Equations" linenum="173" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -2476,7 +2476,7 @@ Let [mathjaxinline]w = \left[\begin{array}{c} 3 \\ -4 \\ 7 \end{array} \right].[
               </p>
             </text>
           </problem>
-          <problem display_name="Another Matrix-Vector Equation" linenum="217" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Another Matrix-Vector Equation" linenum="217" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinline] matrix with columns [mathjaxinline]v_1, v_2, v_3, v_4[/mathjaxinline]. That is, </p>
@@ -2541,10 +2541,34 @@ def VectorEntry(expect, ans):
               </p>
             </text>
           </problem>
-          <problem display_name="Always Consistent?" linenum="242" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Always Consistent?" linenum="242" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. There is a specific vector [mathjaxinline]v[/mathjaxinline] for which you can conclude the equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution, even without knowing anything else about [mathjaxinline]A[/mathjaxinline]. What is this vector [mathjaxinline]v[/mathjaxinline]? </p>
+              <p>
+                <div class="hideshowbox">
+                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4>
+                  <div class="hideshowcontent">
+                    <p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
+                    <ul class="itemize">
+                      <li>
+                        <p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
+                      </li>
+                      <li>
+                        <p>
+or, you can enter it as &lt;1,2,3&gt; </p>
+                      </li>
+                    </ul>
+                    <p>
+Use decimals only. </p>
+                  </div>
+                  <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                    <a href="javascript: {return false;}">Show</a>
+                  </p>
+                </div>
+              </p>
               <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
@@ -2597,6 +2621,8 @@ The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] always has at least 
                 </solution>
               </p>
             </text>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
         </vertical>
         <vertical display_name="Solution Sets" refnum="5" url_name="b1matrixvector-vertical5">
@@ -2855,7 +2881,7 @@ def VectorEntry(expect, ans):
                   <font color="blue">Answer: </font>
                   <font color="blue">
                     <p>
- We are given: <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] = v[/mathjaxinline] <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = w[/mathjaxinline] <br/><br/>Adding these equations, we get <br/><br/>[mathjaxinline]A t \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \Bigg( \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] \Bigg) = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 3 \\ 1 \\ 7 \end{array} \right] = v + w[/mathjaxinline] <br/><br/></p>
+ We are given: <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] = v[/mathjaxinline] <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = w[/mathjaxinline] <br/><br/>Adding these equations, we get <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \Bigg( \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] \Bigg) = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 3 \\ 1 \\ 7 \end{array} \right] = v + w[/mathjaxinline] <br/><br/></p>
                   </font>
                 </solution>
               </p>
@@ -2885,7 +2911,7 @@ Intuitively, if we can produce [mathjaxinline]v[/mathjaxinline] by linear combin
           </problem>
         </vertical>
       </sequential>
-      <sequential display_name="Linear Independence" linenum="248" tex_filename="testcourse.tex" refnum="6" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">
+      <sequential display_name="Linear Independence" linenum="248" tex_filename="testcourse.tex" refnum="6" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1linind-vertical1">
           <html display_name="Preliminaries" linenum="7" tex_filename="./block1/linearindependence.tex" url_name="b1linind-tab1-text1">
             <p>
@@ -3416,7 +3442,7 @@ Without doing any row-reduction, you should be able to pick out three of the fol
           <video display_name="Completing the Chart" youtube_id_1_0="Pumr8h6X7Gs" url_name="b1linind-tab8-video1"/>
         </vertical>
       </sequential>
-      <sequential display_name="Linear Transformations" linenum="281" tex_filename="testcourse.tex" refnum="7" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1lintrans-sequential">
+      <sequential display_name="Linear Transformations" linenum="281" tex_filename="testcourse.tex" refnum="7" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1lintrans-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1lintrans-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block1/lineartransformations.tex" url_name="b1lintrans-tab1-text1">
             <p>
@@ -3441,7 +3467,7 @@ For time budgeting purposes, this sequence has 4 videos totaling 14 minutes, plu
         </vertical>
         <vertical display_name="Introduction" refnum="2" url_name="b1lintrans-vertical2">
           <video display_name="Functions" youtube_id_1_0="nMrAAozL4F0" url_name="b1lintrans-tab2-video1"/>
-          <problem display_name="System Consistency?" linenum="35" tex_filename="./block1/lineartransformations.tex" url_name="b1lintrans-tab2-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Matrix Multiplication Domain and Codomain" linenum="35" tex_filename="./block1/lineartransformations.tex" url_name="b1lintrans-tab2-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Define the function [mathjaxinline]T[/mathjaxinline] by [mathjaxinline]T(x) = Ax[/mathjaxinline], where [mathjaxinline]A = \left[ \begin{array}{ccc} 6 &amp;  5 &amp;  3 \\ 2 &amp;  4 &amp;  23 \end{array} \right].[/mathjaxinline] </p>
@@ -3496,7 +3522,7 @@ What is the codomain of [mathjaxinline]T[/mathjaxinline]? </p>
         </vertical>
         <vertical display_name="Linear Transformation Definition" refnum="4" url_name="b1lintrans-vertical4">
           <html display_name="Definition of Linear Transformation" linenum="83" tex_filename="./block1/lineartransformations.tex" url_name="b1lintrans-tab4-text1">
-            <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Let [mathjaxinline]{\bf {F}}[/mathjaxinline] be a field. A function [mathjaxinline]T: {\bf {F}}^ n \rightarrow {\bf {F}}^ m[/mathjaxinline] is a <span style="color:#99182C"><b class="bf">linear transformation</b></span> if both of the following properties hold: </p>
+            <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Let [mathjaxinline]V,W[/mathjaxinline] be vector spaces over a field [mathjaxinline]F[/mathjaxinline]. A function [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a <span style="color:#99182C"><b class="bf">linear transformation</b></span> if both of the following properties hold: </p>
             <ul class="itemize">
               <li>
                 <p>
@@ -3504,7 +3530,7 @@ For any vectors [mathjaxinline]v, w[/mathjaxinline] in the domain, [mathjaxinlin
               </li>
               <li>
                 <p>
-For any vector [mathjaxinline]v[/mathjaxinline] in the domain, and any scalar [mathjaxinline]a\in {\bf {F}}[/mathjaxinline], [mathjaxinline]T(av) = aT(v)[/mathjaxinline]. </p>
+For any vector [mathjaxinline]v[/mathjaxinline] in the domain, and any scalar [mathjaxinline]a\in F[/mathjaxinline], [mathjaxinline]T(av) = aT(v)[/mathjaxinline]. </p>
               </li>
             </ul>
             <p>
@@ -3684,14 +3710,14 @@ Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
           <problem display_name="Linear Transformation Practice" linenum="287" tex_filename="./block1/lineartransformations.tex" url_name="b1lintrans-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
-Suppose [mathjaxinline]T: \mathbb {P} \rightarrow \mathbb R^2[/mathjaxinline] is a linear transformation. Let [mathjaxinline]f,g\mathbb {P}[/mathjaxinline] be the polynomials given by [mathjaxinline]f(t) = t^2[/mathjaxinline] and [mathjaxinline]g(t) = t[/mathjaxinline]. </p>
+Suppose [mathjaxinline]T: \mathbb {P} \rightarrow \mathbb R^2[/mathjaxinline] is a linear transformation. Let [mathjaxinline]f,g\in \mathbb {P}[/mathjaxinline] be the polynomials given by [mathjaxinline]f(t) = t^2[/mathjaxinline] and [mathjaxinline]g(t) = t[/mathjaxinline]. </p>
               <p>
 Suppose that [mathjaxinline]T(f) = \left[\begin{array}{c} 1 \\ 2 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(g) = \left[\begin{array}{c} 2 \\ -1 \end{array} \right][/mathjaxinline] </p>
               <p>
 If [mathjaxinline]h \in \mathbb {P}[/mathjaxinline] is the polynomial given by [mathjaxinline]h(t) = -2t^2[/mathjaxinline], what must [mathjaxinline]T(h)[/mathjaxinline] be? </p>
               <p>
                 <div class="hideshowbox">
-                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Vector<span class="icon-caret-down toggleimage"/></h4>
+                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4>
                   <div class="hideshowcontent">
                     <p>
 To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
@@ -3791,7 +3817,7 @@ Also, </p>
           </problem>
         </vertical>
       </sequential>
-      <sequential display_name="Linear Transformations in R^n" linenum="310" tex_filename="testcourse.tex" refnum="8" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1lintrans2-sequential">
+      <sequential display_name="Linear Transformations in R^n" linenum="310" tex_filename="testcourse.tex" refnum="8" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1lintrans2-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1lintrans2-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab1-text1">
             <p>
@@ -3897,7 +3923,7 @@ Suppose [mathjaxinline]T: \mathbb R^4\rightarrow \mathbb R^3[/mathjaxinline] is 
 What is [mathjaxinline]T(e_3)[/mathjaxinline]? </p>
               <p>
                 <div class="hideshowbox">
-                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Vector<span class="icon-caret-down toggleimage"/></h4>
+                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4>
                   <div class="hideshowcontent">
                     <p>
 To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
@@ -4533,7 +4559,7 @@ Note that we can treat each point, [mathjaxinline](x,y)[/mathjaxinline], as a ve
           </problem>
         </vertical>
       </sequential>
-      <sequential display_name="Into and Onto" linenum="341" tex_filename="testcourse.tex" refnum="9" due="2018-12-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
+      <sequential display_name="Into and Onto" linenum="341" tex_filename="testcourse.tex" refnum="9" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b1intoonto-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab1-text1">
             <p>
@@ -4586,7 +4612,7 @@ This is equivalent to asking whether there exists [mathjaxinline]v\in V[/mathjax
               </p>
             </text>
           </problem>
-          <problem display_name="In the Image?" linenum="75" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab3-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="In the Image?" linenum="75" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p>
@@ -4624,7 +4650,7 @@ Is the vector [mathjaxinline]\left[\begin{array}{c} 2 \\ -1 \\ 0 \end{array} \ri
           <html display_name="Definition of Onto" linenum="106" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab4-text1">
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> A linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is called <span style="color:#99182C"><b class="bf">onto</b></span> if [mathjaxinline]\mathrm{Image(T)} = W[/mathjaxinline]. </p>
           </html>
-          <problem display_name="Is it onto?" linenum="116" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab4-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Is it onto?" linenum="116" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p>
@@ -4687,7 +4713,7 @@ We know that [mathjaxinline]T[/mathjaxinline] is onto if and only if the system 
               </p>
             </text>
           </problem>
-          <problem display_name="True or False" linenum="153" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab4-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="True or False" linenum="153" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab4-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or False: No linear transformation [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline] can be onto. </p>
@@ -4885,7 +4911,7 @@ True or False: Every linear transformation [mathjaxinline]T: \mathbb R^6 \righta
       </sequential>
     </chapter>
     <chapter display_name="Matrix Operations" linenum="380" tex_filename="testcourse.tex" refnum="2" url_name="block2" start="2018-01-11T16:00">
-      <sequential display_name="Matrix Multiplication" linenum="392" tex_filename="testcourse.tex" refnum="1" due="2018-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixmult-sequential">
+      <sequential display_name="Matrix Multiplication" linenum="392" tex_filename="testcourse.tex" refnum="1" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixmult-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b2matrixmult-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab1-text1">
             <p>
@@ -4908,7 +4934,7 @@ Draw parallels between matrix multiplication and composition of linear transform
 For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
           </html>
         </vertical>
-        <vertical display_name="Composition of Linear Transformation" refnum="2" url_name="b2matrixmult-vertical2">
+        <vertical display_name="Composition of Linear Transformations" refnum="2" url_name="b2matrixmult-vertical2">
           <video display_name="Composition of Linear Transformations" youtube_id_1_0="r-gtj-GO9WI" url_name="b2matrixmult-tab2-video1"/>
           <html display_name="Fundamental Fact of Matrix Multiplication" linenum="37" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab2-text1">
             <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]S: \mathbb R^ p \rightarrow \mathbb R^ n[/mathjaxinline] and [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] are linear transformations, then [mathjaxinline]T\circ S: \mathbb R^ p \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation. </p>
@@ -4949,7 +4975,7 @@ Now, [mathjaxinline]T_2\circ T_1[/mathjaxinline] first applies [mathjaxinline]T_
               </p>
             </text>
           </problem>
-          <problem display_name="Matrix Sizes" linenum="84" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab3-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Matrix Sizes" linenum="84" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]C_1[/mathjaxinline] be the standard matrix for [mathjaxinline]T_1[/mathjaxinline] from the previous question, and let [mathjaxinline]C_2[/mathjaxinline] be the standard matrix for [mathjaxinline]T_2[/mathjaxinline]. </p>
@@ -4975,7 +5001,7 @@ What size is [mathjaxinline]C_2[/mathjaxinline]? </p>
               </p>
             </text>
           </problem>
-          <problem display_name="Product Sizes" linenum="104" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab3-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Product Sizes" linenum="104" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab3-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 What size is [mathjaxinline]C_1C_2[/mathjaxinline]? </p>
@@ -5150,7 +5176,7 @@ Of [mathjaxinline]CD[/mathjaxinline] and [mathjaxinline]DC[/mathjaxinline], whic
               </p>
             </text>
           </problem>
-          <problem display_name="Compute the Product" linenum="218" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Compute the Product" linenum="218" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab5-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 From the problem above, enter the product which is defined. (If both are, you may enter either one.) </p>
@@ -5312,7 +5338,7 @@ We observe that [mathjaxinline]AB\neq BA[/mathjaxinline]. </p>
           </html>
         </vertical>
         <vertical display_name="Applying the Fundamental Fact of Matrix Multiplication" refnum="7" url_name="b2matrixmult-vertical7">
-          <video display_name="A Proposition" youtube_id_1_0="HuitPIiVBZ4" url_name="b2matrixmult-tab7-video1"/>
+          <video display_name="A Proposition" youtube_id_1_0="asgBUVRSvjE" url_name="b2matrixmult-tab7-video1"/>
           <html display_name="A Proposition about Matrix Multiplication" linenum="301" tex_filename="./block2/matrixmult.tex" url_name="b2matrixmult-tab7-text1">
             <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times p[/mathjaxinline] matrix, and the columns of [mathjaxinline]B[/mathjaxinline] are linearly dependent, then the columns of [mathjaxinline]AB[/mathjaxinline] must be linearly dependent. </p>
           </html>
@@ -5504,7 +5530,7 @@ From the previous proposition, we have that [mathjaxinline]S(u)\ne S(v)[/mathjax
           </problem>
         </vertical>
       </sequential>
-      <sequential display_name="Matrix Inverses" linenum="429" tex_filename="testcourse.tex" refnum="2" due="2018-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixinv-sequential">
+      <sequential display_name="Matrix Inverses" linenum="429" tex_filename="testcourse.tex" refnum="2" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixinv-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b2matrixinv-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block2/matrixinv.tex" url_name="b2matrixinv-tab1-text1">
             <p>
@@ -5864,7 +5890,7 @@ def MatrixEntry(expect, ans):
 Let [mathjaxinline]A[/mathjaxinline] be the matrix from above. Without doing any further row-reduction, find the solution to [mathjaxinline]Ax = \left[ \begin{array}{c} 100 \\ 0 \\ 10 \end{array} \right].[/mathjaxinline] </p>
               <p>
                 <div class="hideshowbox">
-                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Vector<span class="icon-caret-down toggleimage"/></h4>
+                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4>
                   <div class="hideshowcontent">
                     <p>
 To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
@@ -6133,7 +6159,7 @@ Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be a l
           </problem>
         </vertical>
       </sequential>
-      <sequential display_name="More Matrix Operations" linenum="468" tex_filename="testcourse.tex" refnum="3" due="2018-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixops-sequential">
+      <sequential display_name="More Matrix Operations" linenum="468" tex_filename="testcourse.tex" refnum="3" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixops-sequential">
         <vertical display_name="Page One" refnum="1" url_name="b2matrixops-vertical1">
           <html display_name="Preliminaries" linenum="5" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab1-text1">
             <p>
@@ -6228,18 +6254,43 @@ Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxi
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ If we multiply on both sides of the equation by [mathjaxinline]D^{-1}[/mathjaxinline] from the left, we obtain </p>
+                    <table id="a0000000097" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                      <tr>
+                        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A^{-1}B^{-1}= D^{-1}C^{-1}.[/mathjax]</td>
+                        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                      </tr>
+                    </table>
+                    <p>
+ Multiplying by [mathjaxinline]B[/mathjaxinline] on the right yields </p>
+                    <table id="a0000000098" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                      <tr>
+                        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A^{-1}= D^{-1}C^{-1}B.[/mathjax]</td>
+                        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                      </tr>
+                    </table>
+                    <p>
+ Finally, we invert both sides: </p>
+                    <table id="a0000000099" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                      <tr>
+                        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = (D^{-1}C^{-1}B)^{-1}= B^{-1}CD.[/mathjax]</td>
+                        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                      </tr>
+                    </table>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
         </vertical>
         <vertical display_name="Introducing Elementary Matrices" refnum="4" url_name="b2matrixops-vertical4">
-          <problem display_name="Find a matrix" linenum="102" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab4-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Find a matrix" linenum="108" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab4-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p>
-              <table id="a0000000097" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000100" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]EA = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ 4a_{31} &amp;  4a_{32} \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6296,11 +6347,11 @@ def MatrixEntry(expect, ans):
             <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
           <video display_name="Introducing Elementary Matrices" youtube_id_1_0="20gbxsXOooY" url_name="b2matrixops-tab4-video1"/>
-          <problem display_name="Find another matrix" linenum="130" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab4-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Find another matrix" linenum="136" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab4-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p>
-              <table id="a0000000098" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000101" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]EA = \left[ \begin{array}{cc} a_{21} &amp;  a_{22} \\ a_{11} &amp;  a_{12} \\ a_{31} &amp;  a_{32} \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6342,12 +6393,12 @@ def MatrixEntry(expect, ans):
           </problem>
         </vertical>
         <vertical display_name="Elementary Matrices" refnum="5" url_name="b2matrixops-vertical5">
-          <html display_name="Elementary Matrices" linenum="160" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab5-text1">
+          <html display_name="Elementary Matrices" linenum="166" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab5-text1">
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> An <span style="color:#99182C"><b class="bf">elementary matrix</b></span> is a square matrix of one of three types. </p>
             <p>
               <div class="hideshowbox">
                 <h4 onclick="hideshow(this);" style="margin: 0px">Elementary Matrix of the First Type<span class="icon-caret-down toggleimage"/></h4>
-                <div class="hideshowcontent">An elementary matrix of the first type is one obtained from the identity matrix by changing the diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and column to a number [mathjaxinline]c[/mathjaxinline], where [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000099" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]E_1 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  c &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_1[/mathjaxinline] (where [mathjaxinline]E_1[/mathjaxinline] is on the left) has the same effect as scaling row [mathjaxinline]i[/mathjaxinline] of [mathjaxinline]A[/mathjaxinline] by the scalar [mathjaxinline]c[/mathjaxinline]. </div>
+                <div class="hideshowcontent">An elementary matrix of the first type is one obtained from the identity matrix by changing the diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and column to a number [mathjaxinline]c[/mathjaxinline], where [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000102" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]E_1 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  c &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_1[/mathjaxinline] (where [mathjaxinline]E_1[/mathjaxinline] is on the left) has the same effect as scaling row [mathjaxinline]i[/mathjaxinline] of [mathjaxinline]A[/mathjaxinline] by the scalar [mathjaxinline]c[/mathjaxinline]. </div>
                 <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
                   <a href="javascript: {return false;}">Show</a>
                 </p>
@@ -6356,7 +6407,7 @@ def MatrixEntry(expect, ans):
             <p>
               <div class="hideshowbox">
                 <h4 onclick="hideshow(this);" style="margin: 0px">Elementary Matrix of the Second Type<span class="icon-caret-down toggleimage"/></h4>
-                <div class="hideshowcontent">An elementary matrix of the second type is one obtained from the identity matrix by changing the non-diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column ([mathjaxinline]i\ne j[/mathjaxinline]) to a number [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000100" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]E_2 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  \ddots &amp; &amp; &amp; \\ &amp; &amp;  c &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_2[/mathjaxinline] (where [mathjaxinline]E_2[/mathjaxinline] is on the left) has the same effect as adding [mathjaxinline]c[/mathjaxinline] times the [mathjaxinline]j[/mathjaxinline]th row of [mathjaxinline]A[/mathjaxinline] to row [mathjaxinline]i[/mathjaxinline]. </div>
+                <div class="hideshowcontent">An elementary matrix of the second type is one obtained from the identity matrix by changing the non-diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column ([mathjaxinline]i\ne j[/mathjaxinline]) to a number [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000103" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]E_2 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  \ddots &amp; &amp; &amp; \\ &amp; &amp;  c &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_2[/mathjaxinline] (where [mathjaxinline]E_2[/mathjaxinline] is on the left) has the same effect as adding [mathjaxinline]c[/mathjaxinline] times the [mathjaxinline]j[/mathjaxinline]th row of [mathjaxinline]A[/mathjaxinline] to row [mathjaxinline]i[/mathjaxinline]. </div>
                 <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
                   <a href="javascript: {return false;}">Show</a>
                 </p>
@@ -6365,7 +6416,7 @@ def MatrixEntry(expect, ans):
             <p>
               <div class="hideshowbox">
                 <h4 onclick="hideshow(this);" style="margin: 0px">Elementary Matrix of the Third Type<span class="icon-caret-down toggleimage"/></h4>
-                <div class="hideshowcontent">An elementary matrix of the third type is one obtained from the identity matrix by changing the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th diagonal entries to 0, and changing the entries in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column, and the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column, to 1: <table id="a0000000101" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]E_3 = \left[ \begin{array}{ccccccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  0 &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp;  0 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_3[/mathjaxinline] (where [mathjaxinline]E_3[/mathjaxinline] is on the left) has the same effect as swapping the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th rows of [mathjaxinline]A[/mathjaxinline]. </div>
+                <div class="hideshowcontent">An elementary matrix of the third type is one obtained from the identity matrix by changing the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th diagonal entries to 0, and changing the entries in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column, and the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column, to 1: <table id="a0000000104" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]E_3 = \left[ \begin{array}{ccccccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  0 &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp;  0 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_3[/mathjaxinline] (where [mathjaxinline]E_3[/mathjaxinline] is on the left) has the same effect as swapping the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th rows of [mathjaxinline]A[/mathjaxinline]. </div>
                 <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
                   <a href="javascript: {return false;}">Show</a>
                 </p>
@@ -6379,13 +6430,13 @@ def MatrixEntry(expect, ans):
           <video display_name="Elementary Matrices and Inverses" youtube_id_1_0="EtoZ2FyFKS4" url_name="b2matrixops-tab6-video1"/>
         </vertical>
         <vertical display_name="Transposes" refnum="7" url_name="b2matrixops-vertical7">
-          <html display_name="Transposes" linenum="237" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab7-text1">
+          <html display_name="Transposes" linenum="243" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab7-text1">
             <p>
 The last matrix operation we will introduce in this section is the transpose. The transpose of a matrix [mathjaxinline]A[/mathjaxinline] is essentially the matrix whose columns are the rows of [mathjaxinline]A[/mathjaxinline] (and whose rows are the columns of [mathjaxinline]A[/mathjaxinline]). Essentially, [mathjaxinline]A[/mathjaxinline] gets flipped across its diagonal. More formally: </p>
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given an [mathjaxinline]m\times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline], the <span style="color:#99182C"><b class="bf">transpose</b></span> of [mathjaxinline]A[/mathjaxinline] is the [mathjaxinline]n\times m[/mathjaxinline] matrix denoted [mathjaxinline]A^ t[/mathjaxinline] whose entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column is the same as the entry in the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column of [mathjaxinline]A[/mathjaxinline]. </p>
             <p>
 For instance, if </p>
-            <table id="a0000000102" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000105" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 3 &amp;  4 &amp;  -1 \end{array} \right],[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6393,14 +6444,14 @@ For instance, if </p>
             </table>
             <p>
  then </p>
-            <table id="a0000000103" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000106" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A^ t = \left[ \begin{array}{cc} 1 &amp;  3 \\ 2 &amp;  4 \\ 0 &amp;  -1 \end{array} \right].[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
               </tr>
             </table>
           </html>
-          <problem display_name="Find a Transpose" linenum="256" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab7-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Find a Transpose" linenum="262" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab7-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Suppose [mathjaxinline]B = \left[ \begin{array}{cc} 2 &amp;  0 \\ 1 &amp;  3 \\ -2 &amp;  -1 \\ 5 &amp;  0 \end{array} \right].[/mathjaxinline] </p>
@@ -6443,7 +6494,7 @@ The first column of [mathjaxinline]B[/mathjaxinline] becomes the first row of [m
               </p>
             </text>
           </problem>
-          <problem display_name="Double Transpose" linenum="276" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab7-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Double Transpose" linenum="282" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab7-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or false: Any matrix [mathjaxinline]A[/mathjaxinline] is equal to the transpose of its transpose. In other words, [mathjaxinline]A = (A^ t)^ t[/mathjaxinline]. </p>
@@ -6465,7 +6516,7 @@ True or false: Any matrix [mathjaxinline]A[/mathjaxinline] is equal to the trans
           </problem>
         </vertical>
         <vertical display_name="Transposes and Products" refnum="8" url_name="b2matrixops-vertical8">
-          <problem display_name="Possible Product" linenum="292" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Possible Product" linenum="298" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Suppose [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]4\times 3[/mathjaxinline] matrix, and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]3 \times 5[/mathjaxinline] matrix, so that [mathjaxinline]AB[/mathjaxinline] is a [mathjaxinline]4\times 5[/mathjaxinline] matrix. </p>
@@ -6492,7 +6543,10 @@ Which of the following matrix products is defined? </p>
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ [mathjaxinline]A^ t[/mathjaxinline] is a [mathjaxinline]3\times 4[/mathjaxinline] matrix, and [mathjaxinline]B^ t[/mathjaxinline] is a [mathjaxinline]5 \times 3[/mathjaxinline] matrix. For the product to be defined, the first matrix must have as many columns as the second matrix has rows. This is true in one arrangement, but not the other.  </p>
+                  </font>
                 </solution>
               </p>
             </text>
@@ -6500,7 +6554,7 @@ Which of the following matrix products is defined? </p>
           <video display_name="Transposes and Products" youtube_id_1_0="AT6y-Q3TI_w" url_name="b2matrixops-tab8-video1"/>
         </vertical>
         <vertical display_name="Transposes and Inverses" refnum="9" url_name="b2matrixops-vertical9">
-          <problem display_name="Symmetric Matrices" linenum="313" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab9-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Symmetric Matrices" linenum="320" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab9-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p><span style="color:#27408C"><b class="bf">Definition.</b></span> A matrix [mathjaxinline]A[/mathjaxinline] is <span style="color:#99182C"><b class="bf">symmetric</b></span> if [mathjaxinline]A = A^ t[/mathjaxinline]. </p>
               <p>
@@ -6526,7 +6580,10 @@ Of the following matrices, which ones are symmetric? Click all that apply. </p>
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ Note that only a square matrix can be symmetric. A [mathjaxinline]2\times 3[/mathjaxinline] matrix has a transpose which is [mathjaxinline]3\times 2[/mathjaxinline], so it can never be equal to its transpose.  </p>
+                  </font>
                 </solution>
               </p>
             </text>
@@ -6534,7 +6591,7 @@ Of the following matrices, which ones are symmetric? Click all that apply. </p>
           <video display_name="Transposes and Inverses" youtube_id_1_0="bg1nsJJS-ZY" url_name="b2matrixops-tab9-video1"/>
         </vertical>
         <vertical display_name="Summary of Results" refnum="10" url_name="b2matrixops-vertical10">
-          <html display_name="Transpose Results Summary" linenum="334" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab10-text1">
+          <html display_name="Transpose Results Summary" linenum="343" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab10-text1">
             <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are matrices such that the product [mathjaxinline]AB[/mathjaxinline] is defined, then [mathjaxinline](AB)^ t = B^ t A^ t[/mathjaxinline]. </p>
             <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is invertible, then [mathjaxinline]A^ t[/mathjaxinline] is invertible, and [mathjaxinline](A^ t)^{-1}= (A^{-1})^ t[/mathjaxinline]. </p>
             <p><span style="color:#27408C"><b class="bf">Invertible Matrix Theorem (extended).</b></span> For a square ([mathjaxinline]n\times n[/mathjaxinline]) matrix [mathjaxinline]A[/mathjaxinline], the following statements are all equivalent to one another, and to the conditions previously stated in the Invertible Matrix Theorem: </p>
@@ -6557,7 +6614,7 @@ The rows of [mathjaxinline]A[/mathjaxinline] are linearly independent. </p>
               </li>
             </ul>
           </html>
-          <problem display_name="Solve for A, again" linenum="354" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab10-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Solve for A, again" linenum="363" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab10-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxinline]n\times n[/mathjaxinline] matrices such that [mathjaxinline]B^ t (A^{-1})^ t = D^ t C^{-1}[/mathjaxinline]. Solve for [mathjaxinline]A[/mathjaxinline]. </p>
@@ -6597,20 +6654,45 @@ Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxi
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+ One possible procedure: left-multiply on both sides of the equation by [mathjaxinline](B^ t)^{-1}[/mathjaxinline] to obtain </p>
+                    <table id="a0000000107" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                      <tr>
+                        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax](A^{-1})^ t = (B^ t)^{-1}D^ t C^{-1}.[/mathjax]</td>
+                        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                      </tr>
+                    </table>
+                    <p>
+ Take the transpose of both sides: </p>
+                    <table id="a0000000108" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                      <tr>
+                        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A^{-1}= ((B^ t)^{-1}D^ t C^{-1})^ t = (C^{-1})^ t D ((B^ t)^{-1})^ t = (C^ t)^{-1}D B^{-1}.[/mathjax]</td>
+                        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                      </tr>
+                    </table>
+                    <p>
+ Now we can take the inverse of both sides, and we get </p>
+                    <table id="a0000000109" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                      <tr>
+                        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = B D^{-1}C^ t.[/mathjax]</td>
+                        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                      </tr>
+                    </table>
+                  </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="More IMT" linenum="369" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab10-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="More IMT" linenum="384" tex_filename="./block2/morematrixops.tex" url_name="b2matrixops-tab10-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]T: \mathbb R^4 \rightarrow \mathbb R^4[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Suppose the second row of [mathjaxinline]A[/mathjaxinline] is equal to three times the last row of [mathjaxinline]A[/mathjaxinline] minus the first row of [mathjaxinline]A[/mathjaxinline]. Which of the following must be true? Click all that apply. </p>
               <p>
                 <choiceresponse>
                   <checkboxgroup>
-                    <choice correct="true" name="1">
-                      <text>[mathjaxinline]T[/mathjaxinline] is not onto</text>
+                    <choice correct="false" name="1">
+                      <text>[mathjaxinline]T[/mathjaxinline] is onto</text>
                     </choice>
                     <choice correct="false" name="2">
                       <text>[mathjaxinline]A[/mathjaxinline] is invertible</text>
@@ -6618,14 +6700,14 @@ Let [mathjaxinline]T: \mathbb R^4 \rightarrow \mathbb R^4[/mathjaxinline] be a l
                     <choice correct="true" name="3">
                       <text>[mathjaxinline]A[/mathjaxinline] has a free variable</text>
                     </choice>
-                    <choice correct="true" name="4">
-                      <text>The kernel of [mathjaxinline]T[/mathjaxinline] contains infinitely many vectors</text>
+                    <choice correct="false" name="4">
+                      <text>The equation [mathjaxinline]Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \end{array} \right][/mathjaxinline] has exactly one solution</text>
                     </choice>
                     <choice correct="false" name="5">
-                      <text>The equation [mathjaxinline]Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \\ 7 \end{array} \right][/mathjaxinline] has more than one solution</text>
+                      <text>[mathjaxinline]T[/mathjaxinline] is into</text>
                     </choice>
-                    <choice correct="true" name="6">
-                      <text>The columns of [mathjaxinline]A[/mathjaxinline] do not span [mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
+                    <choice correct="false" name="6">
+                      <text>[mathjaxinline]A[/mathjaxinline] row reduces to the identity matrix</text>
                     </choice>
                   </checkboxgroup>
                 </choiceresponse>
@@ -6633,7 +6715,356 @@ Let [mathjaxinline]T: \mathbb R^4 \rightarrow \mathbb R^4[/mathjaxinline] be a l
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ Because one of the rows is a linear combination of the others, the rows are not linearly independent and the matrix is not invertible. If we row reduce this matrix, we will not get the identity matrix, but will instead have a row of all zeros and at least one free variable. Therefore none of the conditions of the Invertible Matrix Theorem are satisfied: [mathjaxinline]T[/mathjaxinline] is neither onto nor into, etc. Since [mathjaxinline]A[/mathjaxinline] has a free variable, no [mathjaxinline]Ax = v[/mathjaxinline] equation can have a unique solution (it might have zero solutions, or infinitely many).  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+      </sequential>
+      <sequential display_name="Leontief Input-Output System" linenum="503" tex_filename="testcourse.tex" refnum="4" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2leontief-sequential">
+        <vertical display_name="Page One" refnum="1" url_name="b2leontief-vertical1">
+          <html display_name="Preliminaries" linenum="5" tex_filename="./block2/leontief.tex" url_name="b2leontief-tab1-text1">
+            <p>
+The goal of this sequence is to introduce an application of matrix algebra to economics, called the Leontief Input-Output Model. This will not be covered on the midterm. </p>
+            <p>
+For time budgeting purposes, this sequence has 1 videos totaling 12 minutes, plus some questions. </p>
+          </html>
+        </vertical>
+        <vertical display_name="Using Gasoline" refnum="2" url_name="b2leontief-vertical2">
+          <problem display_name="A Race" linenum="28" tex_filename="./block2/leontief.tex" url_name="b2leontief-tab2-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+There's going to be a cross-country auto race in the Namib Desert (sort of like Mad Max)! There are expected to be 1000 cars participating, each of which will travel 600 miles. In this terrain, each car is only able to travel 2 miles per gallon of gasoline. </p>
+              <p>
+How much gasoline will be required to put this race on? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> [mathjaxinline]\le 100,000[/mathjaxinline] gallons</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> [mathjaxinline]&gt;100,000[/mathjaxinline] but [mathjaxinline]\le 200,000[/mathjaxinline] gallons</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> [mathjaxinline]&gt;200,000[/mathjaxinline] but [mathjaxinline]\le 300,000[/mathjaxinline] gallons</text>
+                    </choice>
+                    <choice correct="true" name="4">
+                      <text> [mathjaxinline]&gt;300000[/mathjaxinline] gallons</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ See the next video!  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Leontief Input-Output Model" refnum="3" url_name="b2leontief-vertical3">
+          <video display_name="Leontief Input-Output Model" youtube_id_1_0="m0yU2P6Lv-0" url_name="b2leontief-tab3-video1"/>
+        </vertical>
+      </sequential>
+    </chapter>
+    <chapter display_name="Basis and Dimension" linenum="542" tex_filename="testcourse.tex" refnum="3" url_name="block3" start="2018-01-11T16:00">
+      <sequential display_name="Leontief Input-Output System" linenum="550" tex_filename="testcourse.tex" refnum="1" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b3subspaces-sequential">
+        <vertical display_name="Page One" refnum="1" url_name="b3subspaces-vertical1">
+          <html display_name="Preliminaries" linenum="5" tex_filename="./block3/subspaces.tex" url_name="b3subspaces-tab1-text1">
+            <p>
+At the end of this sequence, and after some practice, you should be able to: </p>
+            <ul class="itemize">
+              <li/>
+            </ul>
+            <p>
+For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
+          </html>
+        </vertical>
+        <vertical display_name="Subspaces" refnum="2" url_name="b3subspaces-vertical2">
+          <video display_name="Subspaces" youtube_id_1_0="Q0kn88woMvU" url_name="b3subspaces-tab2-video1"/>
+          <problem display_name="Subset? Subspace?" linenum="38" tex_filename="./block3/subspaces.tex" url_name="b3subspaces-tab2-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Is [mathjaxinline]\mathbb R^4[/mathjaxinline] a subset of [mathjaxinline]\mathbb R^5[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+Is [mathjaxinline]\mathbb R^4[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^5[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
                   <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Criteria for being a Subspace" refnum="3" url_name="b3subspaces-vertical3">
+          <video display_name="Subspace Criteria" youtube_id_1_0="pQWBhzg_6Bc" url_name="b3subspaces-tab3-video1"/>
+          <html display_name="Subspaces" linenum="63" tex_filename="./block3/subspaces.tex" url_name="b3subspaces-tab3-text1">
+            <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Suppose [mathjaxinline]V[/mathjaxinline] is a vector space over a field [mathjaxinline]F[/mathjaxinline]. A subset [mathjaxinline]W \subset V[/mathjaxinline] is a <span style="color:#99182C"><b class="bf">subspace</b></span> of [mathjaxinline]V[/mathjaxinline] if [mathjaxinline]W[/mathjaxinline] is a vector space over [mathjaxinline]F[/mathjaxinline] in its own right, using the same vector operations as in [mathjaxinline]V[/mathjaxinline]. </p>
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> A subset [mathjaxinline]W[/mathjaxinline] of a vector space [mathjaxinline]V[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline] if the following conditions hold: </p>
+            <ul class="itemize">
+              <li>
+                <p>
+[mathjaxinline]W[/mathjaxinline] is closed under addition; that is, for all vectors [mathjaxinline]w_1,w_2 \in W[/mathjaxinline], the sum [mathjaxinline]w_1+w_2[/mathjaxinline] is also an element of [mathjaxinline]W[/mathjaxinline]. </p>
+              </li>
+              <li>
+                <p>
+[mathjaxinline]W[/mathjaxinline] is closed under scalar multiplication; that is, for any vector [mathjaxinline]w\in W[/mathjaxinline] and scalar [mathjaxinline]a \in F[/mathjaxinline], the product [mathjaxinline]aw[/mathjaxinline] is also an element of [mathjaxinline]W[/mathjaxinline]. </p>
+              </li>
+              <li>
+                <p>
+[mathjaxinline]W[/mathjaxinline] contains [mathjaxinline]\mathbf{0}[/mathjaxinline]. </p>
+              </li>
+            </ul>
+          </html>
+        </vertical>
+        <vertical display_name="Subspace Examples" refnum="4" url_name="b3subspaces-vertical4">
+          <problem display_name="First Quadrant" linenum="96" tex_filename="./block3/subspaces.tex" url_name="b3subspaces-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]W[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie in (or on the boundary of) the first quadrant. That is, </p>
+              <table id="a0000000110" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]W = \left\{  \left[ \begin{array}{c} x_1 \\ x_2 \end{array} \right] : x_1, x_2 \ge 0\right\} .[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <center>
+                <img src="/static/images/c3s1subspace1.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+              </center>
+              <p>
+Is [mathjaxinline]W[/mathjaxinline] closed under addition? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+Is [mathjaxinline]W[/mathjaxinline] closed under scalar multiplication? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+Does [mathjaxinline]W[/mathjaxinline] contain the zero vector? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+Is [mathjaxinline]W[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ [mathjaxinline]W[/mathjaxinline] contains [mathjaxinline]\mathbf{0}[/mathjaxinline] and is closed under vector addition, but if you scale a vector such as [mathjaxinline]\left[ \begin{array}{c} 1 \\ 1 \end{array} \right][/mathjaxinline] in [mathjaxinline]W[/mathjaxinline] by, say, [mathjaxinline]-2[/mathjaxinline], the result is not in [mathjaxinline]W[/mathjaxinline]. Thus [mathjaxinline]W[/mathjaxinline] is not closed under scalar multiplication and is not a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline].  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="First and Third Quadrant" linenum="133" tex_filename="./block3/subspaces.tex" url_name="b3subspaces-tab4-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]U[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie in (or on the boundary of) the first quadrant or the third quadrant. That is, </p>
+              <table id="a0000000111" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]U = \left\{  \left[ \begin{array}{c} x_1 \\ x_2 \end{array} \right] : x_1, x_2 \ge 0 \  \mathrm{or} \  x_1,x_2 \le 0\right\} .[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <center>
+                <img src="/static/images/c3s1subspace2.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+              </center>
+              <p>
+Is [mathjaxinline]U[/mathjaxinline] closed under addition? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+Is [mathjaxinline]U[/mathjaxinline] closed under scalar multiplication? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+Does [mathjaxinline]U[/mathjaxinline] contain the zero vector? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+Is [mathjaxinline]U[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ [mathjaxinline]U[/mathjaxinline] contains [mathjaxinline]\mathbf{0}[/mathjaxinline] and is closed under scalar multiplication, but if you add [mathjaxinline]\left[ \begin{array}{c} 3 \\ 1 \end{array} \right][/mathjaxinline] to [mathjaxinline]\left[ \begin{array}{c} -1 \\ -3 \end{array} \right][/mathjaxinline], the result is not in [mathjaxinline]U[/mathjaxinline]. Thus [mathjaxinline]U[/mathjaxinline] is not closed under addition and is not a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline].  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Diagonal Line" linenum="170" tex_filename="./block3/subspaces.tex" url_name="b3subspaces-tab4-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]Y[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie on the line [mathjaxinline]x_1 = x_2[/mathjaxinline] That is, </p>
+              <table id="a0000000112" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]Y = \left\{  \left[ \begin{array}{c} c \\ c \end{array} \right] : c \in \mathbb R\right\} .[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <center>
+                <img src="/static/images/c3s1subspace3.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+              </center>
+              <p>
+Is [mathjaxinline]Y[/mathjaxinline] closed under addition? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+Is [mathjaxinline]Y[/mathjaxinline] closed under scalar multiplication? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+Does [mathjaxinline]Y[/mathjaxinline] contain the zero vector? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+Is [mathjaxinline]Y[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ If you add or scale vectors in [mathjaxinline]Y[/mathjaxinline], the result is still in [mathjaxinline]Y[/mathjaxinline]. [mathjaxinline]Y[/mathjaxinline] also contains the zero vector. Thus [mathjaxinline]Y[/mathjaxinline] is a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline].  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Horizontal Plane" linenum="203" tex_filename="./block3/subspaces.tex" url_name="b3subspaces-tab4-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]Z[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline] whose third coordinate is -1. That is, </p>
+              <table id="a0000000113" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]Z = \left\{  \left[ \begin{array}{c} x_1 \\ x_2 \\ -1 \end{array} \right] : x_1, x_2 \in \mathbb R\right\} .[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <center>
+                <img src="/static/images/c3s1subspace5.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+              </center>
+              <p>
+Is [mathjaxinline]Z[/mathjaxinline] closed under addition? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+Is [mathjaxinline]Z[/mathjaxinline] closed under scalar multiplication? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+Does [mathjaxinline]Z[/mathjaxinline] contain the zero vector? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+Is [mathjaxinline]Z[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ This is one where you have to remember that the vectors contained in [mathjaxinline]Z[/mathjaxinline] are not the arrows that lie <em>"along"</em> the pictured set, but rather are the points within the set (or the arrows that are based at the origin and end in the set). For instance, [mathjaxinline]\left[ \begin{array}{c} 2 \\ 0 \\ -1 \end{array} \right][/mathjaxinline] and [mathjaxinline]\left[ \begin{array}{c} 0 \\ 3 \\ -1 \end{array} \right][/mathjaxinline] are elements of [mathjaxinline]Z[/mathjaxinline], but their sum is not.  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Span" refnum="5" url_name="b3subspaces-vertical5">
+          <video display_name="Span as Subspace" youtube_id_1_0="hjeYq1Ly0BE" url_name="b3subspaces-tab5-video1"/>
+          <problem display_name="Number of Subspaces" linenum="251" tex_filename="./block3/subspaces.tex" url_name="b3subspaces-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+True or false: Every non-zero vector space has at least two subspaces. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('True','False')" correct="True"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ If [mathjaxinline]V[/mathjaxinline] is a vector space, then [mathjaxinline]\{ \mathbf{0}\}[/mathjaxinline] and [mathjaxinline]V[/mathjaxinline] are both subspaces of [mathjaxinline]V[/mathjaxinline]. If [mathjaxinline]V[/mathjaxinline] is non-zero, then these two subspaces are different from one another.  </p>
+                  </font>
                 </solution>
               </p>
             </text>

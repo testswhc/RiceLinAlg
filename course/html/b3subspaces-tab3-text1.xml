@@ -1,0 +1,18 @@
+<html display_name="Subspaces" linenum="63" tex_filename="./block3/subspaces.tex">
+  <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Suppose [mathjaxinline]V[/mathjaxinline] is a vector space over a field [mathjaxinline]F[/mathjaxinline]. A subset [mathjaxinline]W \subset V[/mathjaxinline] is a <span style="color:#99182C"><b class="bf">subspace</b></span> of [mathjaxinline]V[/mathjaxinline] if [mathjaxinline]W[/mathjaxinline] is a vector space over [mathjaxinline]F[/mathjaxinline] in its own right, using the same vector operations as in [mathjaxinline]V[/mathjaxinline]. </p>
+  <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> A subset [mathjaxinline]W[/mathjaxinline] of a vector space [mathjaxinline]V[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline] if the following conditions hold: </p>
+  <ul class="itemize">
+    <li>
+      <p>
+[mathjaxinline]W[/mathjaxinline] is closed under addition; that is, for all vectors [mathjaxinline]w_1,w_2 \in W[/mathjaxinline], the sum [mathjaxinline]w_1+w_2[/mathjaxinline] is also an element of [mathjaxinline]W[/mathjaxinline]. </p>
+    </li>
+    <li>
+      <p>
+[mathjaxinline]W[/mathjaxinline] is closed under scalar multiplication; that is, for any vector [mathjaxinline]w\in W[/mathjaxinline] and scalar [mathjaxinline]a \in F[/mathjaxinline], the product [mathjaxinline]aw[/mathjaxinline] is also an element of [mathjaxinline]W[/mathjaxinline]. </p>
+    </li>
+    <li>
+      <p>
+[mathjaxinline]W[/mathjaxinline] contains [mathjaxinline]\mathbf{0}[/mathjaxinline]. </p>
+    </li>
+  </ul>
+</html>

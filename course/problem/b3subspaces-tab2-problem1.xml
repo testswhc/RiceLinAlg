@@ -1,0 +1,24 @@
+<problem display_name="Subset? Subspace?" linenum="38" tex_filename="./block3/subspaces.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Is [mathjaxinline]\mathbb R^4[/mathjaxinline] a subset of [mathjaxinline]\mathbb R^5[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+Is [mathjaxinline]\mathbb R^4[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^5[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

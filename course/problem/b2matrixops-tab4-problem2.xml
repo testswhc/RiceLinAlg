@@ -1,8 +1,8 @@
-<problem display_name="Find another matrix" linenum="130" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+<problem display_name="Find another matrix" linenum="136" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p>
-    <table id="a0000000098" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <table id="a0000000101" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
       <tr>
         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]EA = \left[ \begin{array}{cc} a_{21} &amp;  a_{22} \\ a_{11} &amp;  a_{12} \\ a_{31} &amp;  a_{32} \end{array} \right].[/mathjax]</td>
         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>

@@ -1,4 +1,4 @@
-<problem display_name="Find a Transpose" linenum="256" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+<problem display_name="Find a Transpose" linenum="262" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 Suppose [mathjaxinline]B = \left[ \begin{array}{cc} 2 &amp;  0 \\ 1 &amp;  3 \\ -2 &amp;  -1 \\ 5 &amp;  0 \end{array} \right].[/mathjaxinline] </p>

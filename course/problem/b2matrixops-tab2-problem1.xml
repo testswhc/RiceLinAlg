@@ -1,0 +1,35 @@
+<problem display_name="A Race" linenum="28" tex_filename="./block2/leontief.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+There's going to be a cross-country auto race in the Namib Desert (sort of like Mad Max)! There are expected to be 1000 cars participating, each of which will travel 600 miles. In this terrain, each car is only able to travel 2 miles per gallon of gasoline. </p>
+    <p>
+How much gasoline will be required to put this race on? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> [mathjaxinline]\le 100,000[/mathjaxinline] gallons</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> [mathjaxinline]&gt;100,000[/mathjaxinline] but [mathjaxinline]\le 200,000[/mathjaxinline] gallons</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> [mathjaxinline]&gt;200,000[/mathjaxinline] but [mathjaxinline]\le 300,000[/mathjaxinline] gallons</text>
+          </choice>
+          <choice correct="true" name="4">
+            <text> [mathjaxinline]&gt;300000[/mathjaxinline] gallons</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ See the next video!  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

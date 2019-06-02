@@ -1,4 +1,4 @@
-<problem display_name="Solve for A, again" linenum="354" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Solve for A, again" linenum="363" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxinline]n\times n[/mathjaxinline] matrices such that [mathjaxinline]B^ t (A^{-1})^ t = D^ t C^{-1}[/mathjaxinline]. Solve for [mathjaxinline]A[/mathjaxinline]. </p>
@@ -38,7 +38,32 @@ Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxi
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ One possible procedure: left-multiply on both sides of the equation by [mathjaxinline](B^ t)^{-1}[/mathjaxinline] to obtain </p>
+          <table id="a0000000107" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax](A^{-1})^ t = (B^ t)^{-1}D^ t C^{-1}.[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ Take the transpose of both sides: </p>
+          <table id="a0000000108" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A^{-1}= ((B^ t)^{-1}D^ t C^{-1})^ t = (C^{-1})^ t D ((B^ t)^{-1})^ t = (C^ t)^{-1}D B^{-1}.[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ Now we can take the inverse of both sides, and we get </p>
+          <table id="a0000000109" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = B D^{-1}C^ t.[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+        </font>
       </solution>
     </p>
   </text>

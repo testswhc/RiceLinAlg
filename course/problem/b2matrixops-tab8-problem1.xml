@@ -1,4 +1,4 @@
-<problem display_name="Possible Product" linenum="292" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Possible Product" linenum="298" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Suppose [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]4\times 3[/mathjaxinline] matrix, and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]3 \times 5[/mathjaxinline] matrix, so that [mathjaxinline]AB[/mathjaxinline] is a [mathjaxinline]4\times 5[/mathjaxinline] matrix. </p>
@@ -25,7 +25,10 @@ Which of the following matrix products is defined? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ [mathjaxinline]A^ t[/mathjaxinline] is a [mathjaxinline]3\times 4[/mathjaxinline] matrix, and [mathjaxinline]B^ t[/mathjaxinline] is a [mathjaxinline]5 \times 3[/mathjaxinline] matrix. For the product to be defined, the first matrix must have as many columns as the second matrix has rows. This is true in one arrangement, but not the other.  </p>
+        </font>
       </solution>
     </p>
   </text>

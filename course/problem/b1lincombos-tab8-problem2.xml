@@ -12,9 +12,9 @@ Does every list of two non-zero vectors in [mathjaxinline]\mathbb R^2[/mathjaxin
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
- If the two vectors are scalar multiples of each other, then they lie along the same line, and their span cannot include anything off that line. For instance, in the following picture, [mathjaxinline]w[/mathjaxinline] is not a linear combination of [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline]. </p>
+ If the two vectors are scalar multiples of each other, then they lie along the same line, and their span cannot include anything off that line. For instance, in the following picture, [mathjaxinline]w[/mathjaxinline] is not a linear combination of [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline], so [mathjaxinline]w[/mathjaxinline] is not in the span of [mathjaxinline]\{ v_1; v_2\}[/mathjaxinline] &#x2013; the list does not span all of [mathjaxinline]\mathbb R^2[/mathjaxinline]. </p>
           <center>
-            <img src="/static/images/c1s4lincombo2.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+            <img src="/static/images/c1s4nospan.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
           </center>
         </font>
       </solution>

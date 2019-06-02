@@ -4,7 +4,7 @@
 Let [mathjaxinline]A[/mathjaxinline] be the matrix from above. Without doing any further row-reduction, find the solution to [mathjaxinline]Ax = \left[ \begin{array}{c} 100 \\ 0 \\ 10 \end{array} \right].[/mathjaxinline] </p>
     <p>
       <div class="hideshowbox">
-        <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Vector<span class="icon-caret-down toggleimage"/></h4>
+        <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4>
         <div class="hideshowcontent">
           <p>
 To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>

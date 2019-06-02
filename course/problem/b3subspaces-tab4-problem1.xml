@@ -1,0 +1,52 @@
+<problem display_name="First Quadrant" linenum="96" tex_filename="./block3/subspaces.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]W[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie in (or on the boundary of) the first quadrant. That is, </p>
+    <table id="a0000000110" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]W = \left\{  \left[ \begin{array}{c} x_1 \\ x_2 \end{array} \right] : x_1, x_2 \ge 0\right\} .[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <center>
+      <img src="/static/images/c3s1subspace1.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+    </center>
+    <p>
+Is [mathjaxinline]W[/mathjaxinline] closed under addition? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Is [mathjaxinline]W[/mathjaxinline] closed under scalar multiplication? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+Does [mathjaxinline]W[/mathjaxinline] contain the zero vector? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Is [mathjaxinline]W[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ [mathjaxinline]W[/mathjaxinline] contains [mathjaxinline]\mathbf{0}[/mathjaxinline] and is closed under vector addition, but if you scale a vector such as [mathjaxinline]\left[ \begin{array}{c} 1 \\ 1 \end{array} \right][/mathjaxinline] in [mathjaxinline]W[/mathjaxinline] by, say, [mathjaxinline]-2[/mathjaxinline], the result is not in [mathjaxinline]W[/mathjaxinline]. Thus [mathjaxinline]W[/mathjaxinline] is not closed under scalar multiplication and is not a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

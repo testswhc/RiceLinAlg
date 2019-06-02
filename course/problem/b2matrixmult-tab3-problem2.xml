@@ -1,4 +1,4 @@
-<problem display_name="Matrix Sizes" linenum="84" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Matrix Sizes" linenum="84" tex_filename="./block2/matrixmult.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]C_1[/mathjaxinline] be the standard matrix for [mathjaxinline]T_1[/mathjaxinline] from the previous question, and let [mathjaxinline]C_2[/mathjaxinline] be the standard matrix for [mathjaxinline]T_2[/mathjaxinline]. </p>

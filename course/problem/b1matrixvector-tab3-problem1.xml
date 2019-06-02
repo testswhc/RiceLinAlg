@@ -1,4 +1,4 @@
-<problem display_name="Products" linenum="57" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Products" linenum="57" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 Let </p>
@@ -12,7 +12,7 @@ Let </p>
  and let [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \end{array} \right].[/mathjaxinline] What is [mathjaxinline]Ax[/mathjaxinline]? </p>
     <p>
       <div class="hideshowbox">
-        <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Vector<span class="icon-caret-down toggleimage"/></h4>
+        <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4>
         <div class="hideshowcontent">
           <p>
 To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>

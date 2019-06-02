@@ -1,3 +1,5 @@
 <course number="Test" display_name="Test LinAlg" semester="2018_Summer" info_sidebar_name="Other Documents" start="2018-01-11T12:00" end="2019-12-18T18:00" course_image="rice-logo.jpg" display_coursenumber="TestLinAlg" course_organization="TestRice" graceperiod="1800 seconds" invitation_only="true" allow_anonymous="false" mobile_available="true" org="Rice">
   <chapter url_name="block1"/>
+  <chapter url_name="block2"/>
+  <chapter url_name="block3"/>
 </course>

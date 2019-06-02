@@ -1,4 +1,4 @@
-<problem display_name="Another Matrix-Vector Equation" linenum="217" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Another Matrix-Vector Equation" linenum="217" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinline] matrix with columns [mathjaxinline]v_1, v_2, v_3, v_4[/mathjaxinline]. That is, </p>

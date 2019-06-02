@@ -1,7 +1,31 @@
-<problem display_name="Always Consistent?" linenum="242" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Always Consistent?" linenum="242" tex_filename="./block1/matrixtimesvector.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. There is a specific vector [mathjaxinline]v[/mathjaxinline] for which you can conclude the equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution, even without knowing anything else about [mathjaxinline]A[/mathjaxinline]. What is this vector [mathjaxinline]v[/mathjaxinline]? </p>
+    <p>
+      <div class="hideshowbox">
+        <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4>
+        <div class="hideshowcontent">
+          <p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
+          <ul class="itemize">
+            <li>
+              <p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
+            </li>
+            <li>
+              <p>
+or, you can enter it as &lt;1,2,3&gt; </p>
+            </li>
+          </ul>
+          <p>
+Use decimals only. </p>
+        </div>
+        <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+          <a href="javascript: {return false;}">Show</a>
+        </p>
+      </div>
+    </p>
     <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
@@ -54,4 +78,6 @@ The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] always has at least 
       </solution>
     </p>
   </text>
+  <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+  <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
 </problem>

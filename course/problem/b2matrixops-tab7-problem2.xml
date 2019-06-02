@@ -1,4 +1,4 @@
-<problem display_name="Double Transpose" linenum="276" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Double Transpose" linenum="282" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 True or false: Any matrix [mathjaxinline]A[/mathjaxinline] is equal to the transpose of its transpose. In other words, [mathjaxinline]A = (A^ t)^ t[/mathjaxinline]. </p>

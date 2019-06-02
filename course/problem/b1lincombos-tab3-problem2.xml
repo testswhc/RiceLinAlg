@@ -1,4 +1,4 @@
-<problem display_name="Linear Combo 2" linenum="74" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Linear Combo 2" linenum="74" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]v_1 = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p>

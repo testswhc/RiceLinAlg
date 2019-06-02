@@ -1,4 +1,4 @@
-<problem display_name="True or False" linenum="153" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="True or False" linenum="153" tex_filename="./block1/intoonto.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 True or False: No linear transformation [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^8[/mathjaxinline] can be onto. </p>

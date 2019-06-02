@@ -51,7 +51,7 @@ def VectorEntry(expect, ans):
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
- We are given: <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] = v[/mathjaxinline] <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = w[/mathjaxinline] <br/><br/>Adding these equations, we get <br/><br/>[mathjaxinline]A t \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \Bigg( \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] \Bigg) = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 3 \\ 1 \\ 7 \end{array} \right] = v + w[/mathjaxinline] <br/><br/></p>
+ We are given: <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] = v[/mathjaxinline] <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = w[/mathjaxinline] <br/><br/>Adding these equations, we get <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + A \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \Bigg( \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] + \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right] \Bigg) = v + w[/mathjaxinline] <br/><br/>[mathjaxinline]A \left[\begin{array}{c} 3 \\ 1 \\ 7 \end{array} \right] = v + w[/mathjaxinline] <br/><br/></p>
         </font>
       </solution>
     </p>

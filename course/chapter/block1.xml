@@ -1,14 +1,324 @@
-<chapter display_name="Vectors and Matrices" linenum="73" tex_filename="testcourse2.tex" refnum="1" start="2018-01-11T16:00">
-  <sequential display_name="LinInd" linenum="89" tex_filename="testcourse2.tex" refnum="1" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixops-sequential">
-    <vertical display_name="Page One" refnum="1" url_name="b2matrixops-vertical1">
-      <html url_name="b2matrixops-tab1-text1"/>
+<chapter display_name="Vectors and Matrices" linenum="77" tex_filename="testcourse.tex" refnum="1" start="2018-01-11T16:00">
+  <sequential display_name="Systems of Linear Equations" linenum="89" tex_filename="testcourse.tex" refnum="1" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b1lineareqns-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b1lineareqns-vertical1">
+      <html url_name="b1lineareqns-tab1-text1"/>
     </vertical>
-    <vertical display_name="Linear Independence" refnum="2" url_name="b2matrixops-vertical2">
-      <vertical display_name="Linear Independence Problems" refnum="3" url_name="b2matrixops-vertical3">
-        <html url_name="b2matrixops-tab3-text1"/>
-        <problem url_name="b2matrixops-tab3-problem1"/>
-        <problem url_name="b2matrixops-tab3-problem2"/>
-      </vertical>
+    <vertical display_name="Introduction" refnum="2" url_name="b1lineareqns-vertical2">
+      <video url_name="b1lineareqns-tab2-video1"/>
+      <problem url_name="b1lineareqns-tab2-problem1"/>
+    </vertical>
+    <vertical display_name="Doing Row Operations" refnum="3" url_name="b1lineareqns-vertical3">
+      <video url_name="b1lineareqns-tab3-video1"/>
+      <problem url_name="b1lineareqns-tab3-problem1"/>
+      <problem url_name="b1lineareqns-tab3-problem2"/>
+      <problem url_name="b1lineareqns-tab3-problem3"/>
+      <problem url_name="b1lineareqns-tab3-problem4"/>
+      <problem url_name="b1lineareqns-tab3-problem5"/>
+    </vertical>
+    <vertical display_name="A Few Questions" refnum="4" url_name="b1lineareqns-vertical4">
+      <problem url_name="b1lineareqns-tab4-problem1"/>
+      <problem url_name="b1lineareqns-tab4-problem2"/>
+    </vertical>
+    <vertical display_name="Elementary Row Operations" refnum="5" url_name="b1lineareqns-vertical5">
+      <html url_name="b1lineareqns-tab5-text1"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="Row-Reduced Form" linenum="122" tex_filename="testcourse.tex" refnum="2" due="2019-12-15T14:15" graded="true" format="Lab" url_name="b1rowreduced-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b1rowreduced-vertical1">
+      <html url_name="b1rowreduced-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Row-Reduced Echelon Form" refnum="2" url_name="b1rowreduced-vertical2">
+      <video url_name="b1rowreduced-tab2-video1"/>
+    </vertical>
+    <vertical display_name="RREF Defined" refnum="3" url_name="b1rowreduced-vertical3">
+      <html url_name="b1rowreduced-tab3-text1"/>
+      <problem url_name="b1rowreduced-tab3-problem1"/>
+      <problem url_name="b1rowreduced-tab3-problem2"/>
+      <problem url_name="b1rowreduced-tab3-problem3"/>
+    </vertical>
+    <vertical display_name="Row Reduction Algorithm" refnum="4" url_name="b1rowreduced-vertical4">
+      <video url_name="b1rowreduced-tab4-video1"/>
+      <html url_name="b1rowreduced-tab4-text1"/>
+    </vertical>
+    <vertical display_name="Row-Reducing Practice" refnum="5" url_name="b1rowreduced-vertical5">
+      <problem url_name="b1rowreduced-tab5-problem1"/>
+      <problem url_name="b1rowreduced-tab5-problem2"/>
+    </vertical>
+    <vertical display_name="Interpretations" refnum="6" url_name="b1rowreduced-vertical6">
+      <video url_name="b1rowreduced-tab6-video1"/>
+      <problem url_name="b1rowreduced-tab6-problem1"/>
+      <problem url_name="b1rowreduced-tab6-problem2"/>
+      <problem url_name="b1rowreduced-tab6-problem3"/>
+      <problem url_name="b1rowreduced-tab6-problem4"/>
+    </vertical>
+    <vertical display_name="Finding Solutions" refnum="7" url_name="b1rowreduced-vertical7">
+      <problem url_name="b1rowreduced-tab7-problem1"/>
+    </vertical>
+    <vertical display_name="Going Further" refnum="8" url_name="b1rowreduced-vertical8">
+      <html url_name="b1rowreduced-tab8-text1"/>
+      <problem url_name="b1rowreduced-tab8-problem1"/>
+      <problem url_name="b1rowreduced-tab8-problem2"/>
+      <problem url_name="b1rowreduced-tab8-problem3"/>
+      <problem url_name="b1rowreduced-tab8-problem4"/>
+      <problem url_name="b1rowreduced-tab8-problem5"/>
+    </vertical>
+    <vertical display_name="Fields" refnum="9" url_name="b1rowreduced-vertical9">
+      <problem url_name="b1rowreduced-tab9-problem1"/>
+      <problem url_name="b1rowreduced-tab9-problem2"/>
+      <problem url_name="b1rowreduced-tab9-problem3"/>
+      <video url_name="b1rowreduced-tab9-video1"/>
+    </vertical>
+    <vertical display_name="Fields Defined" refnum="10" url_name="b1rowreduced-vertical10">
+      <html url_name="b1rowreduced-tab10-text1"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="Vectors" linenum="151" tex_filename="testcourse.tex" refnum="3" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1vectors-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b1vectors-vertical1">
+      <html url_name="b1vectors-tab1-text1"/>
+    </vertical>
+    <vertical display_name="The Template Vector Space" refnum="2" url_name="b1vectors-vertical2">
+      <video url_name="b1vectors-tab2-video1"/>
+      <problem url_name="b1vectors-tab2-problem1"/>
+      <problem url_name="b1vectors-tab2-problem2"/>
+    </vertical>
+    <vertical display_name="R^n and the Zero Vector" refnum="3" url_name="b1vectors-vertical3">
+      <html url_name="b1vectors-tab3-text1"/>
+      <html url_name="b1vectors-tab3-text2"/>
+    </vertical>
+    <vertical display_name="Points and Arrows" refnum="4" url_name="b1vectors-vertical4">
+      <video url_name="b1vectors-tab4-video1"/>
+      <problem url_name="b1vectors-tab4-problem1"/>
+    </vertical>
+    <vertical display_name="Beyond R^n" refnum="5" url_name="b1vectors-vertical5">
+      <video url_name="b1vectors-tab5-video1"/>
+    </vertical>
+    <vertical display_name="Vector Spaces" refnum="6" url_name="b1vectors-vertical6">
+      <html url_name="b1vectors-tab6-text1"/>
+      <problem url_name="b1vectors-tab6-problem1"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="Linear Combinations and Span" linenum="180" tex_filename="testcourse.tex" refnum="4" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1lincombos-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b1lincombos-vertical1">
+      <html url_name="b1lincombos-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Introduction to Linear Combinations" refnum="2" url_name="b1lincombos-vertical2">
+      <video url_name="b1lincombos-tab2-video1"/>
+      <html url_name="b1lincombos-tab2-text1"/>
+    </vertical>
+    <vertical display_name="Linear Combinations" refnum="3" url_name="b1lincombos-vertical3">
+      <problem url_name="b1lincombos-tab3-problem1"/>
+      <problem url_name="b1lincombos-tab3-problem2"/>
+      <problem url_name="b1lincombos-tab3-problem3"/>
+      <problem url_name="b1lincombos-tab3-problem4"/>
+      <problem url_name="b1lincombos-tab3-problem5"/>
+    </vertical>
+    <vertical display_name="Is it a linear combination?" refnum="4" url_name="b1lincombos-vertical4">
+      <video url_name="b1lincombos-tab4-video1"/>
+      <problem url_name="b1lincombos-tab4-problem1"/>
+    </vertical>
+    <vertical display_name="Span as Noun" refnum="5" url_name="b1lincombos-vertical5">
+      <video url_name="b1lincombos-tab5-video1"/>
+    </vertical>
+    <vertical display_name="Span Questions" refnum="6" url_name="b1lincombos-vertical6">
+      <html url_name="b1lincombos-tab6-text1"/>
+      <problem url_name="b1lincombos-tab6-problem1"/>
+      <problem url_name="b1lincombos-tab6-problem2"/>
+    </vertical>
+    <vertical display_name="Span as Verb" refnum="7" url_name="b1lincombos-vertical7">
+      <video url_name="b1lincombos-tab7-video1"/>
+      <html url_name="b1lincombos-tab7-text1"/>
+      <html url_name="b1lincombos-tab7-text2"/>
+    </vertical>
+    <vertical display_name="Questions about spanning" refnum="8" url_name="b1lincombos-vertical8">
+      <problem url_name="b1lincombos-tab8-problem1"/>
+      <problem url_name="b1lincombos-tab8-problem2"/>
+      <problem url_name="b1lincombos-tab8-problem3"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="Matrix-Vector Multiplication" linenum="213" tex_filename="testcourse.tex" refnum="5" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1matrixvector-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b1matrixvector-vertical1">
+      <html url_name="b1matrixvector-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Defining Matrix-Vector Multiplication" refnum="2" url_name="b1matrixvector-vertical2">
+      <video url_name="b1matrixvector-tab2-video1"/>
+      <html url_name="b1matrixvector-tab2-text1"/>
+    </vertical>
+    <vertical display_name="Multiplication Practice" refnum="3" url_name="b1matrixvector-vertical3">
+      <problem url_name="b1matrixvector-tab3-problem1"/>
+      <problem url_name="b1matrixvector-tab3-problem2"/>
+      <problem url_name="b1matrixvector-tab3-problem3"/>
+    </vertical>
+    <vertical display_name="Matrix-Vector Equations" refnum="4" url_name="b1matrixvector-vertical4">
+      <video url_name="b1matrixvector-tab4-video1"/>
+      <problem url_name="b1matrixvector-tab4-problem1"/>
+      <problem url_name="b1matrixvector-tab4-problem2"/>
+      <problem url_name="b1matrixvector-tab4-problem3"/>
+    </vertical>
+    <vertical display_name="Solution Sets" refnum="5" url_name="b1matrixvector-vertical5">
+      <video url_name="b1matrixvector-tab5-video1"/>
+      <problem url_name="b1matrixvector-tab5-problem1"/>
+      <problem url_name="b1matrixvector-tab5-problem2"/>
+      <problem url_name="b1matrixvector-tab5-problem3"/>
+    </vertical>
+    <vertical display_name="Spans and Matrix-Vector Equations" refnum="6" url_name="b1matrixvector-vertical6">
+      <problem url_name="b1matrixvector-tab6-problem1"/>
+      <problem url_name="b1matrixvector-tab6-problem2"/>
+      <problem url_name="b1matrixvector-tab6-problem3"/>
+    </vertical>
+    <vertical display_name="Multiplication Properties" refnum="7" url_name="b1matrixvector-vertical7">
+      <video url_name="b1matrixvector-tab7-video1"/>
+      <html url_name="b1matrixvector-tab7-text1"/>
+      <problem url_name="b1matrixvector-tab7-problem1"/>
+      <problem url_name="b1matrixvector-tab7-problem2"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="Linear Independence" linenum="248" tex_filename="testcourse.tex" refnum="6" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b1linind-vertical1">
+      <html url_name="b1linind-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Linear Independence" refnum="2" url_name="b1linind-vertical2">
+      <problem url_name="b1linind-tab2-problem1"/>
+      <video url_name="b1linind-tab2-video1"/>
+      <problem url_name="b1linind-tab2-problem2"/>
+    </vertical>
+    <vertical display_name="Linear Independence Problems" refnum="3" url_name="b1linind-vertical3">
+      <html url_name="b1linind-tab3-text1"/>
+      <problem url_name="b1linind-tab3-problem1"/>
+      <problem url_name="b1linind-tab3-problem2"/>
+      <problem url_name="b1linind-tab3-problem3"/>
+    </vertical>
+    <vertical display_name="Geometry of Linear Independence" refnum="4" url_name="b1linind-vertical4">
+      <video url_name="b1linind-tab4-video1"/>
+      <problem url_name="b1linind-tab4-problem1"/>
+      <video url_name="b1linind-tab4-video2"/>
+    </vertical>
+    <vertical display_name="Linear Dependence Proposition" refnum="5" url_name="b1linind-vertical5">
+      <html url_name="b1linind-tab5-text1"/>
+      <problem url_name="b1linind-tab5-problem1"/>
+      <problem url_name="b1linind-tab5-problem2"/>
+      <problem url_name="b1linind-tab5-problem3"/>
+    </vertical>
+    <vertical display_name="Determining Linear Independence in R^m" refnum="6" url_name="b1linind-vertical6">
+      <problem url_name="b1linind-tab6-problem1"/>
+      <problem url_name="b1linind-tab6-problem2"/>
+      <problem url_name="b1linind-tab6-problem3"/>
+      <problem url_name="b1linind-tab6-problem4"/>
+      <video url_name="b1linind-tab6-video1"/>
+    </vertical>
+    <vertical display_name="Linearly Independent Lists in R^m" refnum="7" url_name="b1linind-vertical7">
+      <html url_name="b1linind-tab7-text1"/>
+      <problem url_name="b1linind-tab7-problem1"/>
+    </vertical>
+    <vertical display_name="Summarizing" refnum="8" url_name="b1linind-vertical8">
+      <video url_name="b1linind-tab8-video1"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="Linear Transformations" linenum="281" tex_filename="testcourse.tex" refnum="7" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1lintrans-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b1lintrans-vertical1">
+      <html url_name="b1lintrans-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Introduction" refnum="2" url_name="b1lintrans-vertical2">
+      <video url_name="b1lintrans-tab2-video1"/>
+      <problem url_name="b1lintrans-tab2-problem1"/>
+    </vertical>
+    <vertical display_name="Defining Linear Transformations" refnum="3" url_name="b1lintrans-vertical3">
+      <video url_name="b1lintrans-tab3-video1"/>
+    </vertical>
+    <vertical display_name="Linear Transformation Definition" refnum="4" url_name="b1lintrans-vertical4">
+      <html url_name="b1lintrans-tab4-text1"/>
+    </vertical>
+    <vertical display_name="Some Examples and Non-examples" refnum="5" url_name="b1lintrans-vertical5">
+      <problem url_name="b1lintrans-tab5-problem1"/>
+      <problem url_name="b1lintrans-tab5-problem2"/>
+      <problem url_name="b1lintrans-tab5-problem3"/>
+    </vertical>
+    <vertical display_name="More Linear Transformations" refnum="6" url_name="b1lintrans-vertical6">
+      <video url_name="b1lintrans-tab6-video1"/>
+      <problem url_name="b1lintrans-tab6-problem1"/>
+    </vertical>
+    <vertical display_name="Linear Transformations Properties" refnum="7" url_name="b1lintrans-vertical7">
+      <video url_name="b1lintrans-tab7-video1"/>
+      <problem url_name="b1lintrans-tab7-problem1"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="Linear Transformations in R^n" linenum="310" tex_filename="testcourse.tex" refnum="8" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1lintrans2-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b1lintrans2-vertical1">
+      <html url_name="b1lintrans2-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Introduction" refnum="2" url_name="b1lintrans2-vertical2">
+      <video url_name="b1lintrans2-tab2-video1"/>
+      <problem url_name="b1lintrans2-tab2-problem1"/>
+      <problem url_name="b1lintrans2-tab2-problem2"/>
+    </vertical>
+    <vertical display_name="Multiplication by a Matrix in General" refnum="3" url_name="b1lintrans2-vertical3">
+      <video url_name="b1lintrans2-tab3-video1"/>
+      <problem url_name="b1lintrans2-tab3-problem1"/>
+      <problem url_name="b1lintrans2-tab3-problem2"/>
+    </vertical>
+    <vertical display_name="Matrix for Rotation" refnum="4" url_name="b1lintrans2-vertical4">
+      <problem url_name="b1lintrans2-tab4-problem1"/>
+      <problem url_name="b1lintrans2-tab4-problem2"/>
+      <video url_name="b1lintrans2-tab4-video1"/>
+      <problem url_name="b1lintrans2-tab4-problem3"/>
+    </vertical>
+    <vertical display_name="Standard Matrix" refnum="5" url_name="b1lintrans2-vertical5">
+      <video url_name="b1lintrans2-tab5-video1"/>
+      <html url_name="b1lintrans2-tab5-text1"/>
+    </vertical>
+    <vertical display_name="Standard Matrix Questions" refnum="6" url_name="b1lintrans2-vertical6">
+      <problem url_name="b1lintrans2-tab6-problem1"/>
+      <problem url_name="b1lintrans2-tab6-problem2"/>
+      <problem url_name="b1lintrans2-tab6-problem3"/>
+      <problem url_name="b1lintrans2-tab6-problem4"/>
+      <problem url_name="b1lintrans2-tab6-problem5"/>
+    </vertical>
+    <vertical display_name="The Identity Matrix" refnum="7" url_name="b1lintrans2-vertical7">
+      <html url_name="b1lintrans2-tab7-text1"/>
+    </vertical>
+    <vertical display_name="Back to Pictures" refnum="8" url_name="b1lintrans2-vertical8">
+      <video url_name="b1lintrans2-tab8-video1"/>
+      <problem url_name="b1lintrans2-tab8-problem1"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="Into and Onto" linenum="341" tex_filename="testcourse.tex" refnum="9" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b1intoonto-vertical1">
+      <html url_name="b1intoonto-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Image of a Linear Transformation" refnum="2" url_name="b1intoonto-vertical2">
+      <video url_name="b1intoonto-tab2-video1"/>
+    </vertical>
+    <vertical display_name="Image Definition" refnum="3" url_name="b1intoonto-vertical3">
+      <html url_name="b1intoonto-tab3-text1"/>
+      <problem url_name="b1intoonto-tab3-problem1"/>
+      <problem url_name="b1intoonto-tab3-problem2"/>
+    </vertical>
+    <vertical display_name="Onto" refnum="4" url_name="b1intoonto-vertical4">
+      <video url_name="b1intoonto-tab4-video1"/>
+      <html url_name="b1intoonto-tab4-text1"/>
+      <problem url_name="b1intoonto-tab4-problem1"/>
+      <problem url_name="b1intoonto-tab4-problem2"/>
+      <problem url_name="b1intoonto-tab4-problem3"/>
+    </vertical>
+    <vertical display_name="Into" refnum="5" url_name="b1intoonto-vertical5">
+      <video url_name="b1intoonto-tab5-video1"/>
+    </vertical>
+    <vertical display_name="Into Definition and Exercise" refnum="6" url_name="b1intoonto-vertical6">
+      <html url_name="b1intoonto-tab6-text1"/>
+      <problem url_name="b1intoonto-tab6-problem1"/>
+    </vertical>
+    <vertical display_name="Kernel" refnum="7" url_name="b1intoonto-vertical7">
+      <video url_name="b1intoonto-tab7-video1"/>
+    </vertical>
+    <vertical display_name="Kernel Definition and Questions" refnum="8" url_name="b1intoonto-vertical8">
+      <html url_name="b1intoonto-tab8-text1"/>
+      <problem url_name="b1intoonto-tab8-problem1"/>
+      <problem url_name="b1intoonto-tab8-problem2"/>
+      <problem url_name="b1intoonto-tab8-problem3"/>
+    </vertical>
+    <vertical display_name="Summarizing" refnum="9" url_name="b1intoonto-vertical9">
+      <video url_name="b1intoonto-tab9-video1"/>
+      <html url_name="b1intoonto-tab9-text1"/>
+      <problem url_name="b1intoonto-tab9-problem1"/>
     </vertical>
   </sequential>
 </chapter>

@@ -1,0 +1,20 @@
+<problem display_name="Number of Subspaces" linenum="251" tex_filename="./block3/subspaces.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or false: Every non-zero vector space has at least two subspaces. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ If [mathjaxinline]V[/mathjaxinline] is a vector space, then [mathjaxinline]\{ \mathbf{0}\}[/mathjaxinline] and [mathjaxinline]V[/mathjaxinline] are both subspaces of [mathjaxinline]V[/mathjaxinline]. If [mathjaxinline]V[/mathjaxinline] is non-zero, then these two subspaces are different from one another.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

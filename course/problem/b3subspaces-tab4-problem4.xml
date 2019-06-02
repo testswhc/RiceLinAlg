@@ -1,0 +1,52 @@
+<problem display_name="Horizontal Plane" linenum="203" tex_filename="./block3/subspaces.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]Z[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline] whose third coordinate is -1. That is, </p>
+    <table id="a0000000113" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]Z = \left\{  \left[ \begin{array}{c} x_1 \\ x_2 \\ -1 \end{array} \right] : x_1, x_2 \in \mathbb R\right\} .[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <center>
+      <img src="/static/images/c3s1subspace5.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+    </center>
+    <p>
+Is [mathjaxinline]Z[/mathjaxinline] closed under addition? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+Is [mathjaxinline]Z[/mathjaxinline] closed under scalar multiplication? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+Does [mathjaxinline]Z[/mathjaxinline] contain the zero vector? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+Is [mathjaxinline]Z[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ This is one where you have to remember that the vectors contained in [mathjaxinline]Z[/mathjaxinline] are not the arrows that lie <em>"along"</em> the pictured set, but rather are the points within the set (or the arrows that are based at the origin and end in the set). For instance, [mathjaxinline]\left[ \begin{array}{c} 2 \\ 0 \\ -1 \end{array} \right][/mathjaxinline] and [mathjaxinline]\left[ \begin{array}{c} 0 \\ 3 \\ -1 \end{array} \right][/mathjaxinline] are elements of [mathjaxinline]Z[/mathjaxinline], but their sum is not.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -1,0 +1,52 @@
+<problem display_name="First and Third Quadrant" linenum="133" tex_filename="./block3/subspaces.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]U[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie in (or on the boundary of) the first quadrant or the third quadrant. That is, </p>
+    <table id="a0000000111" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]U = \left\{  \left[ \begin{array}{c} x_1 \\ x_2 \end{array} \right] : x_1, x_2 \ge 0 \  \mathrm{or} \  x_1,x_2 \le 0\right\} .[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <center>
+      <img src="/static/images/c3s1subspace2.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+    </center>
+    <p>
+Is [mathjaxinline]U[/mathjaxinline] closed under addition? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+Is [mathjaxinline]U[/mathjaxinline] closed under scalar multiplication? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Does [mathjaxinline]U[/mathjaxinline] contain the zero vector? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Is [mathjaxinline]U[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ [mathjaxinline]U[/mathjaxinline] contains [mathjaxinline]\mathbf{0}[/mathjaxinline] and is closed under scalar multiplication, but if you add [mathjaxinline]\left[ \begin{array}{c} 3 \\ 1 \end{array} \right][/mathjaxinline] to [mathjaxinline]\left[ \begin{array}{c} -1 \\ -3 \end{array} \right][/mathjaxinline], the result is not in [mathjaxinline]U[/mathjaxinline]. Thus [mathjaxinline]U[/mathjaxinline] is not closed under addition and is not a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>
