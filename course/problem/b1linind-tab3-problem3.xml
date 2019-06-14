@@ -1,13 +1,40 @@
-<problem display_name="List 3" linenum="156" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="List 3" linenum="226" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
+    <script linenum="230" filename="./block1/linearindependence.tex" type="text/python" system_path="python_lib">
+
+def test_ld_no(expect,ans):
+    import ast
+    import numpy as np 
+    if (ans=='No') or (ans=='NO') or (ans=='no'):
+        ret['ok'] = True
+        return ret    
+    list_expect = ast.literal_eval('[[1,-1,3,4,5],[0,0,0,0,0],[-3,3,3,5,1]]')
+    list_vec = []
+    for vec in list_expect:
+        list_vec.append(np.array(vec))
+    list_scalars = [float(s) for s in ans.split(',')]
+    ret = {'ok':False}
+    # check scalars are not all zero
+    max_sca = max(list_scalars)
+    min_sca = min(list_scalars)
+    if (max_sca == 0) and (min_sca ==0):
+        ret['msg'] = 'Your answer should contain at least one non-zero scalar.'
+        return ret
+    # check there are enough scalars
+    if (len(list_scalars) != 2):
+        ret['msg'] = 'Your answer contains too many/too few scalars.'
+        return ret    
+    ret['msg'] = 'Your linear combination does not equal the zero polynomial.'
+    return ret  
+</script>
     <p>
 Let [mathjaxinline]\mathbb {P}[/mathjaxinline] be the vector space of polynomials with real coefficients in the variable [mathjaxinline]t[/mathjaxinline]. Consider the list of vectors [mathjaxinline]\{ f; g\}[/mathjaxinline], where [mathjaxinline]f(t) = 1+t[/mathjaxinline] and [mathjaxinline]g(t) = t+t^2[/mathjaxinline] are vectors in [mathjaxinline]\mathbb {P}[/mathjaxinline]. </p>
     <p>
 Can you find scalars [mathjaxinline]a_1, a_2[/mathjaxinline], not both zero, such that [mathjaxinline]a_1f + a_2 g = \mathbf{0}[/mathjaxinline]? If so, enter an example of such scalars below. If not, type &#x2018;No'. </p>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <customresponse cfn="test_ld_no" expect="no">
+        <textline correct_answer="no"/>
+      </customresponse>
     </p>
     <p>
 Is the list [mathjaxinline]\{ v_1; v_2\}[/mathjaxinline] linearly dependent or linearly independent? </p>

@@ -1,4 +1,4 @@
-<html display_name="Linear Independence in R^m" linenum="398" tex_filename="./block1/linearindependence.tex">
+<html display_name="Linear Independence in R^m" linenum="497" tex_filename="./block1/linearindependence.tex">
   <p>
 We have just shown the following results: </p>
   <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix with columns [mathjaxinline]v_1, v_2, \ldots v_ n \in \mathbb R^ m[/mathjaxinline], then the list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is linearly independent if and only if [mathjaxinline]A[/mathjaxinline] does not have a free variable. </p>

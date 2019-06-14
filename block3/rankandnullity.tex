@@ -1,0 +1,135 @@
+
+
+\beginedxvertical{Page One}
+
+\beginedxtext{Preliminaries}
+
+
+
+
+
+At the end of this sequence, and after some practice, you should be able to:
+
+\begin{itemize}
+\item
+\item
+
+\item Determine the rank and nullity of a linear transformation $T: \R^n \rightarrow \R^m$, given its
+standard matrix
+\item Find bases for the image and kernel of  a linear transformation $T: \R^n \rightarrow \R^m$, given its standard matrix
+\end{itemize}
+
+
+For time budgeting purposes, this sequence has 2 videos totaling 12 minutes, 
+plus some questions.  
+
+
+
+
+\endedxtext
+
+\endedxvertical
+
+
+
+\beginedxvertical{Rank and Nullity}
+
+
+\beginedxtext{Definitions}
+
+
+{\keya{\bf{Definitions.}}}  
+Given a linear transformation $T: V\rightarrow W$, the {\keyb{\bf{nullity}}} of $T$ is the
+dimension of the kernel of $T$, and the {\keyb{\bf{rank}}} of $T$ is the
+dimension of the image of $T$. 
+
+If a matrix $A$ is the standard matrix for a linear transformation $T:\R^n \rightarrow \R^m$, 
+then the rank and nullity of $A$ are the same as the rank and nullity of $T$.  
+
+
+\endedxtext
+
+
+\endedxvertical
+
+
+
+\beginedxvertical{Nullity}
+
+
+\doedxvideo{Calculating Nullity}{vKR7ciBTuCc}
+
+
+\beginedxproblem{Example 1}{\dpa2}
+
+
+Let $T: \R^{8}\rightarrow \R^{11}$ be a linear transformation with standard matrix $A$.  If 
+there are six pivots when $A$ is row-reduced, what is the nullity of $T$?  
+
+\edXabox{type="numerical" expect="2" feqin="1"}
+
+\edXsolution{
+We showed in the video that the nullity of $T$ equals the number of free variables in $A$.  $A$ has eight columns, and six pivots when row reduce, so there must be $8-6$, or 2, free variables.  
+}
+
+\endedxproblem
+
+\endedxvertical
+
+
+
+\beginedxvertical{Rank}
+
+
+\doedxvideo{Calculating Rank}{rnePz12JGvk}
+
+
+\beginedxproblem{Basis for Image}{\dpa1}
+
+Suppose $T$ has a standard matrix $A$ which row reduces to the matrix 
+\[
+R = \left[\begin{array}{ccccc} 1 & 2 & 0 & 0 & -3 \\ 0 & 0 & 1 & 0 & -2 \\ 0 & 0 & 0 & 1  & 2 \\ 
+0 & 0 & 0 & 0  & 0 
+\end{array} \right].
+\]
+
+True or False: We can conclude that the list
+\[ \left\{ \left[\begin{array}{c} 1 \\ 0 \\ 0 \\ 0
+\end{array} \right];  
+\left[\begin{array}{c} 0 \\ 1 \\ 0 \\ 0
+\end{array} \right];  \left[\begin{array}{c} 0 \\ 0 \\ 1 \\ 0
+\end{array} \right] \right\} \]
+is a basis for the image of $T$.  
+
+
+
+\edXabox{expect="False" options="True","False"}
+
+\edXsolution{False.  The first, third, and fourth columns have pivots, but this means that the
+first, third, and fourth columns of $A$ will form a basis for $\mathrm{Image}(T)$, not necessarily
+the first, third, and fourth columns of $R$.}
+
+\endedxproblem
+
+
+
+
+
+
+\endedxvertical
+
+
+\beginedxvertical{Summary}
+
+\beginedxtext{Summary}
+
+
+Let $T: \R^{n}\rightarrow \R^{m}$ be a linear transformation with standard matrix $A$. 
+The nullity of $T$ will equal the number of free variables when $A$ is row reduced, and the
+rank of $T$ will equal the number of pivot columns when $A$ is row reduced.  The columns of $A$ which
+correspond to the pivots will form a basis of the image of $T$.  
+
+
+\endedxtext
+
+\endedxvertical

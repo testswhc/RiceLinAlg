@@ -11,7 +11,7 @@ Let </p>
     <p>
  Find a list of vectors whose span is the set of solutions to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. </p>
     <p>
-Enter the list of vectors below, separated by semicolons. For instance, to enter the list [mathjaxinline]\{ \left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right]; \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] \}[/mathjaxinline], type &lt;1,0,1&gt;;&lt;1,2,3&gt;. </p>
+Enter the list of vectors below, separated by semicolons. For instance, to enter the list [mathjaxinline]\left\{ \left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right]; \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] \right\}[/mathjaxinline], type &lt;1,0,1&gt;;&lt;1,2,3&gt;. </p>
     <p>
       <optionresponse>
         <optioninput options="('Placeholder')" correct="Placeholder"/>

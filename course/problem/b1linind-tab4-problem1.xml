@@ -1,4 +1,4 @@
-<problem display_name="More Lists" linenum="202" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+<problem display_name="More Lists" linenum="301" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 Consider the vectors [mathjaxinline]v_1, v_2, v_3 \in \mathbb R^2[/mathjaxinline] as given in this picture: </p>

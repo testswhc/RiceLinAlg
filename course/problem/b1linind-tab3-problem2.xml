@@ -1,5 +1,38 @@
-<problem display_name="List 2" linenum="128" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="List 2" linenum="164" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="5" rerandomize="per_student">
   <text>
+    <script linenum="167" filename="./block1/linearindependence.tex" type="text/python" system_path="python_lib">
+
+def test_ld_12(expect,ans):
+    import ast
+    import numpy as np 
+    if (ans=='No') or (ans=='NO') or (ans=='no'):
+        return {'ok': False, 'msg': 'The answer is not no'}
+    list_expect = ast.literal_eval('[[1,-1,3,4,5],[0,0,0,0,0],[-3,3,3,5,1]]')
+    list_vec = []
+    for vec in list_expect:
+        list_vec.append(np.array(vec))
+    list_scalars = [float(s) for s in ans.split(',')]
+    ret = {'ok':False}
+    # check scalars are not all zero
+    max_sca = max(list_scalars)
+    min_sca = min(list_scalars)
+    if (max_sca == 0) and (min_sca ==0):
+        ret['msg'] = 'Your answer should contain at least one non-zero scalar.'
+        return ret
+    # check there are enough scalars
+    if (len(list_scalars) != len(list_vec)):
+        ret['msg'] = 'Your answer contains too many/too few scalars.'
+        return ret    
+    # check if a0*v0 + a1*v1 + ... + a_n*vn = 0
+    n = len(list_scalars)
+    sum = 0
+    for i in range(0,n):
+        sum += list_scalars[i] * list_vec[i]
+    print(sum)
+    if np.allclose(sum, np.zeros(5)):
+        ret['ok'] = True
+    return ret  
+</script>
     <p>
 Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], where </p>
     <table id="a0000000060" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
@@ -9,11 +42,11 @@ Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], 
       </tr>
     </table>
     <p>
-Can you find scalars [mathjaxinline]a_1, a_2, a_3[/mathjaxinline], not all zero, such that [mathjaxinline]a_1v_1 + a_2 v_2 + a_3 v_3 = \mathbf{0}[/mathjaxinline]? If so, enter an example of such scalars below. If not, enter &#x2018;No'. </p>
+Can you find scalars [mathjaxinline]a_1, a_2, a_3[/mathjaxinline], not all zero, such that [mathjaxinline]a_1v_1 + a_2 v_2 + a_3 v_3 = \mathbf{0}[/mathjaxinline]? If so, enter an example of such scalars below. (Use decimals only, separated by commas. For instance, enter 3,2,5 if you want [mathjaxinline]a_1 = 3, a_2=2, a_3=5[/mathjaxinline].) If not, enter &#x2018;No'. </p>
     <p>
-      <optionresponse>
-        <optioninput options="('Placeholder')" correct="Placeholder"/>
-      </optionresponse>
+      <customresponse cfn="test_ld_12" expect="0,1,0">
+        <textline correct_answer="0,1,0"/>
+      </customresponse>
     </p>
     <p>
 Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly dependent or linearly independent? </p>

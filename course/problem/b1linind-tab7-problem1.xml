@@ -1,4 +1,4 @@
-<problem display_name="Quick Picks" linenum="416" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Quick Picks" linenum="515" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Without doing any row-reduction, you should be able to pick out three of the following lists of vectors that are linearly dependent. Which three? </p>

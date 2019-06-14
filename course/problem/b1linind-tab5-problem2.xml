@@ -1,4 +1,4 @@
-<problem display_name="Proving Linear Independence" linenum="260" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+<problem display_name="Proving Linear Independence" linenum="359" tex_filename="./block1/linearindependence.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 Let's think about the definition of linear independence. Recall that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is linearly independent if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p>

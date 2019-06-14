@@ -1,0 +1,365 @@
+
+
+\beginedxvertical{Page One}
+
+\beginedxtext{Preliminaries}
+
+
+
+
+
+At the end of this sequence, and after some practice, you should be able to:
+
+\begin{itemize}
+\item Determine when a list of vectors in $\R^n$ is a basis of $\R^n$.    
+\item Find coordinates of a vector relative to a basis.  
+\item Dimension... 
+\end{itemize}
+
+
+For time budgeting purposes, this sequence has x videos totaling X minutes, 
+plus some questions.  
+
+
+
+
+\endedxtext
+
+\endedxvertical
+
+
+
+\beginedxvertical{Basis}
+
+\doedxvideo{Definition of Basis}{cmx119UrFwg}
+
+
+\beginedxtext{Basis Definition}
+
+
+{\keya{\bf{Definition.}}}  
+Suppose $V$ is a vector space over a field $F$.  A list of vectors $\{v_1; v_2; \ldots v_n\}$ in $V$ is a 
+{\keyb{\bf{basis}}}  
+of $V$ if the list is linearly independent and spans $V$.  
+
+{\keya{\bf{Definition.}}}  
+The list $\{e_1; e_2; \ldots e_n\}$ in $\R^n$ is called the {\keyb{\bf{standard basis}}} of $\R^n$.  
+
+
+
+
+\endedxtext
+
+\endedxvertical
+
+
+
+\beginedxvertical{Basis Questions}
+
+\beginedxproblem{Is it a basis? 1}{\dpa1}
+
+
+Let $v_1 = \left[ \begin{array}{c} 1 \\ 0 \\1 \end{array} \right]$, 
+$v_2 = \left[ \begin{array}{c} 1 \\ 1 \\ 0 \end{array} \right]$, and 
+$v_3 = \left[ \begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right]$ be three vectors in $\R^3$.  
+
+Is the list $\{v_1; v_2; v_3\}$ linearly independent?  (You may need to do some row reduction.)  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+Does the list $\{v_1; v_2; v_3\}$ span $\R^3$?  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+Is the list  $\{v_1; v_2; v_3\}$ a basis of $\R^3$?  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+\edXsolution{
+We can answer these questions by row reducing the matrix with columns $v_1$, $v_2$, and $v_3$.  If we
+do this row reduction, we obtain the $3\times 3$ identity matrix.  This has a pivot in every column (i.e., no free variables),
+so the list $\{v_1; v_2; v_3\}$ is linearly independent.  In addition, it has a pivot in every row, so the 
+list spans $\R^3$.  Since both conditions hold, the list is a basis of $\R^3$.  
+}
+
+\endedxproblem
+
+
+
+\beginedxproblem{Is it a basis? 2}{\dpa1}
+
+
+Now consider the matrix $A = \left[ \begin{array}{ccc} 1 & 1 & 2 \\ 0 & 1 & -1 \\ 1 & 0 & 4 \end{array}\right].$  
+
+$A$ is a vector in the vector space of $3\times 3$ matrices $M_{3\times 3}$.  
+
+
+Is the list $\{A\}$ linearly independent in 
+$M_{3\times 3}$?
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+Does $\{A\}$ span $M_{3\times 3}$? 
+
+\edXabox{expect="No" options="Yes","No"}
+
+Is the list $\{A\}$ a basis of  $M_{3\times 3}$? 
+
+\edXabox{expect="No" options="Yes","No"}
+
+\edXsolution{
+A list which only has one non-zero vector in it is automatically linearly independent.  
+However, $\{A\}$ does not span the space $M_{3\times 3}$, since there are many matrices that cannot
+be expressed as $cA$ for some scalar $c$.  Hence the list is not a basis of $M_{3\times 3}$.  
+}
+
+\endedxproblem
+
+\endedxvertical
+
+
+
+\beginedxvertical{Bases in R^n}
+
+
+
+\beginedxproblem{Short list}{\dpa1}
+
+Let's go back to $\R^n$ and recall a few facts.  
+
+If a list of vectors in $\R^n$ has $k$ vectors with $k<n$, is it possible for the 
+list to be linearly independent?
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+Is it possible for the list to span $\R^n$?  
+
+\edXabox{expect="No" options="Yes","No"}
+ 
+\edXsolution{
+We have shown in previous sections that $k$ vectors in $\R^n$ cannot span $\R^n$ if $k<n$.  
+}
+
+\endedxproblem
+
+\beginedxproblem{Long list}{\dpa1}
+
+If a list of vectors in $\R^n$ has $k$ vectors with $k>n$, is it possible for the 
+list to be linearly independent?
+
+\edXabox{expect="No" options="Yes","No"}
+
+Is it possible for the list to span $\R^n$?  
+
+\edXabox{expect="Yes" options="Yes","No"}
+ 
+\edXsolution{
+We have shown in previous sections that $k$ vectors in $\R^n$ cannot be linearly independent if $k>n$.  
+}
+
+\endedxproblem
+
+
+\doedxvideo{Bases in R^n}{NHgCtsjsArY}
+
+
+\endedxvertical
+
+
+
+\beginedxvertical{Title}
+
+
+\beginedxtext{Bases of R^n}
+
+{\keya{\bf{Proposition.}}}  Every basis of $\R^n$ has exactly $n$ vectors.  
+
+\endedxtext
+
+
+\endedxvertical
+
+
+
+\beginedxvertical{Coordinates}
+
+
+
+\doedxvideo{Coordinates}{_m8lE_c9L3I}
+
+
+\beginedxproblem{Where does it live?}{\dpa1}
+
+Suppose $\mathcal{B} = \{v_1; v_2; \ldots v_9\}$ is a basis of a vector space $V$ (over the field $\R$).  Let $w \in V$.  Then  $[w]_{\mathcal{B}}$ is an element of what space?  
+
+
+\edXabox{type="multichoice" expect="$\R^9$" options="$V$","$\R$","$\R^9$","None of the above"}
+
+\edXsolution{
+$[w]_{\mathcal{B}}$ is defined to be a column of nine scalars; specifically, the nine scalars $a_1, a_2, \ldots a_9$ such that $w = a_1 v_1 + \ldots a_9v_9$.  
+}
+
+\endedxproblem
+
+\endedxvertical
+
+
+
+\beginedxvertical{Coordinates Defined}
+
+\beginedxtext{Subspaces}
+
+{\keya{\bf{Proposition.}}}  If $\{v_1; v_2; \ldots ; v_n\}$ is a basis of $V$, then every $w\in V$
+can be written as a linear combination of $v_1, v_2, \ldots v_n$ in exactly one way.  
+
+
+{\keya{\bf{Definition.}}} If  $\mathcal{B} = \{v_1; v_2; \ldots ; v_n\}$ is a basis of a vector space $V$ over the field $F$, and 
+$w\in V$ can be written as $w = a_1v_1 + a_2v_2 + \ldots + a_n v_n$ for scalars $a_i$, then 
+the {\keyb{\bf{coordinates of $w$ relative to $\mathcal{B}$}}} is the vector $[w]_{\mathcal{B}} \in F^n$
+given by 
+\[ [w]_{\mathcal{B}} = \left[ \begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_n \end{array} \right]. \]
+
+\endedxtext
+
+
+
+
+\endedxvertical
+
+
+
+\beginedxvertical{Some Examples}
+
+\beginedxproblem{Example 1}{\dpa3}
+
+Suppose $\mathcal{B} = \{v_1; v_2; v_3\}$ is a basis of a vector space $V$ (over $\R$).  
+
+Let $w = 3v_3 - 2v_2$.  What is $[w]_{\mathcal{B}}$?  
+
+\input{vectorentry.tex}
+
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[0],[-2],[3]]"}
+
+
+\edXsolution{
+We can write $w$ as a linear combination of the basis vectors in order:
+$w = 0 v_1 + (-2)v_2 + 3v_3$.  Hence $[w]_{\mathcal{B}} =\left[\begin{array}{c} 0 \\ -2  \\ 3 \end{array} \right]$.  
+
+}
+
+\endedxproblem
+
+
+
+\beginedxproblem{Example 2}{\dpa3}
+
+Let $p_1 = 1+t$, $p_2 = 2+t^2$, and $p_3 = t-t^2$.  Fact: $\mathcal{B} = \{p_1; p_2; p_3\}$ is a basis of  $\mathbb{P}_2$.  
+
+What polynomial $q$ has the property that  $[q]_{\mathcal{B}} = \left[\begin{array}{c} 1 \\ 2  \\ 3 \end{array} \right]$?
+
+Remember to type * for multiplication (so to enter $3t^2$, type 3*t^2).  
+
+\edXabox{type="formula" expect="5+4*t-t^2" samples="t@1:10#10" tolerance=".001" feqin="1"}
+
+\edXsolution{
+If $[q]_{\mathcal{B}} = \left[\begin{array}{c} 1 \\ 2  \\ 3 \end{array} \right]$,
+then $q = 1p_1 + 2p_2 + 3p_3.$  Thus we compute $q$ to be $5+4t -t^2$.  
+
+}
+
+\endedxproblem
+
+
+\endedxvertical
+
+
+
+\beginedxvertical{More Coordinates}
+
+
+\doedxvideo{More Coordinates}{8v4ocK_SsL8}
+
+
+\beginedxproblem{Where does it live? 2}{\dpa1}
+
+Let $W$ be a subspace of $\R^9$.  
+Suppose $\mathcal{B} = \{v_1; v_2; \ldots v_5\}$ is a basis of $W$.  Let $w \in W$.  Then  $[w]_{\mathcal{B}}$ is an element of what space?  
+
+
+\edXabox{type="multichoice" expect="$\R^5$" options="$W$","$\R$","$\R^5$","$\R^9$","None of the above"}
+
+\edXsolution{
+$[w]_{\mathcal{B}}$ is defined to be a column of five scalars; specifically, the five scalars $a_1, a_2, \ldots a_5$ such that $w = a_1 v_1 + \ldots a_5v_5$.  
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Example 3}{\dpa3}
+
+
+\begin{center}
+\includesvg[450]{c3s2coords}
+\end{center}
+
+Let $\mathcal{B} = \{v_1; v_2\}$ as pictured; this is a basis of $\R^2$.  
+
+Given the $w$ in the image, what is $[w]_{\mathcal{B}}$?  
+
+\input{vectorentry2.tex}
+
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[-1],[2]]"}
+
+
+\edXsolution{
+We can write $w$ as a linear combination of the basis vectors in order:
+$w = -1 v_1 + 2v_2$.  Hence $[w]_{\mathcal{B}} =\left[\begin{array}{c}  -1  \\ 2 \end{array} \right]$.  
+
+}
+
+\endedxproblem
+
+\beginedxproblem{Example 4}{\dpa3}
+
+Let $v_1=\left[\begin{array}{c} 1 \\ 2  \\ 3 \end{array} \right]$ and $v_2 = \left[\begin{array}{c} 3 \\ 0 \\ 1 \end{array} \right]$.  Then $\mathcal{B} = \{v_1; v_2\}$ is a basis for some subspace $W$
+in $\R^3$.  
+
+What vector $w$ has the property that  $[w]_{\mathcal{B}} = \left[\begin{array}{c} 1 \\ 2 \end{array} \right]$?
+
+\input{vectorentry2.tex}
+
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[7],[2],[5]]"}
+
+\edXsolution{
+If $[w]_{\mathcal{B}} = \left[\begin{array}{c} 1 \\ 2  \end{array} \right]$,
+then $w = 1v_1 + 2v_2.$  Thus we compute $q$ to be $\left[\begin{array}{c} 7 \\ 2  \\ 5 \end{array} \right].$ 
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Example 5}{\dpa3}
+
+Use the same $\mathcal{B}$ and $W$ as in the previous problem.  The vector 
+$z = \left[\begin{array}{c} -3 \\ 6  \\ 7 \end{array} \right]$ is an element of $W$.  
+
+What is $[z]_{\mathcal{B}}$?
+
+\input{vectorentry2.tex}
+
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[3],[-2]]"}
+
+\edXsolution{
+We can find $z$ as a linear combination of $v_1$ and $v_2$ by row reduction.  
+We get that $z = 3v_1 - 2v_2$, so $[z]_{\mathcal{B}} = \left[\begin{array}{c} 3 \\ -2 \end{array} \right]$.
+}
+
+\endedxproblem
+
+
+\endedxvertical
+

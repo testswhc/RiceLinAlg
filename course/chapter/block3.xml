@@ -1,5 +1,5 @@
 <chapter display_name="Basis and Dimension" linenum="542" tex_filename="testcourse.tex" refnum="3" start="2018-01-11T16:00">
-  <sequential display_name="Leontief Input-Output System" linenum="550" tex_filename="testcourse.tex" refnum="1" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b3subspaces-sequential">
+  <sequential display_name="Subspaces" linenum="550" tex_filename="testcourse.tex" refnum="1" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b3subspaces-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b3subspaces-vertical1">
       <html url_name="b3subspaces-tab1-text1"/>
     </vertical>
